@@ -42,6 +42,7 @@ jobs:
       TIKTOK_REFRESH_TOKEN: ${{ secrets.TIKTOK_REFRESH_TOKEN }}
       IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
       IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      YTDLP_COOKIES: ${{ secrets.YTDLP_COOKIES }}
       GH_TOKEN: ${{ github.token }}
       WHISPER_MODEL: small
       RUN_BUDGET_MIN: "300"

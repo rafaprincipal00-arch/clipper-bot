@@ -22,6 +22,12 @@ SEEN = ROOT / "data" / "seen.json"
 
 
 def sh(cmd: list[str]) -> str:
+    if cmd[0] == "yt-dlp" and os.environ.get("YTDLP_COOKIES"):
+        # Netscape cookies.txt from a throwaway YouTube account; YouTube blocks datacenter IPs without it.
+        jar = WORK / "cookies.txt"
+        WORK.mkdir(exist_ok=True)
+        jar.write_text(os.environ["YTDLP_COOKIES"], encoding="utf-8")
+        cmd = [cmd[0], "--cookies", str(jar), *cmd[1:]]
     p = subprocess.run(cmd, capture_output=True, text=True, errors="ignore")
     if p.returncode != 0:
         print(f"  $ {' '.join(cmd[:3])}... failed:\n{p.stderr[-1200:]}")
@@ -137,8 +143,9 @@ def process(url: str, creator: str, clips: int, campaign: dict | None, do_publis
                  "score": pick["score"], "hook": pick["hook"], "caption": caption,
                  "campaign": campaign.get("campaign_url") if campaign else None,
                  "created": datetime.now(timezone.utc).isoformat(), "posts": {}}
+        public_url = public_url_for(final)  # also feeds the panel's mp4 links
         if do_publish:
-            entry["posts"] = publish.publish_all(final, pick["title"], caption, public_url_for(final))
+            entry["posts"] = publish.publish_all(final, pick["title"], caption, public_url)
         results.append(entry)
         print(f"  clip {final.name}  score={pick['score']}  {pick['hook']}")
     return results
