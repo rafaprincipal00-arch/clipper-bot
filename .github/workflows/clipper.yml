@@ -1,0 +1,93 @@
+name: clipper
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"   # every 6 h: discover campaigns + clip new VODs
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "Clip this one URL instead of the auto sources"
+        required: false
+      creator:
+        description: "Creator name for the manual URL"
+        required: false
+        default: "creator"
+      clips:
+        description: "Clips per source"
+        required: false
+        default: "3"
+      publish:
+        description: "Publish to connected platforms"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: clipper
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+      TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+      TIKTOK_REFRESH_TOKEN: ${{ secrets.TIKTOK_REFRESH_TOKEN }}
+      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      GH_TOKEN: ${{ github.token }}
+      WHISPER_MODEL: small
+      RUN_BUDGET_MIN: "300"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: System deps
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-noto-core > /dev/null
+          # Arial Black is not on Linux; libass falls back to the closest bold sans.
+      - run: pip install -r requirements.txt
+      - name: Discover top campaigns
+        run: python -m clipper.discover data/campaigns.json
+      - name: Clip
+        run: |
+          PUB=""
+          if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ inputs.publish }}" = "true" ]; then PUB="--publish"; fi
+          if [ -n "${{ inputs.url }}" ]; then
+            python -m clipper.pipeline --url "${{ inputs.url }}" --creator "${{ inputs.creator }}" --clips "${{ inputs.clips || 3 }}" $PUB
+          else
+            python -m clipper.pipeline --auto --clips 2 $PUB
+          fi
+      - name: Rotate TikTok refresh token
+        if: always()
+        run: |
+          if [ -f tiktok_refresh_token.new ]; then
+            echo "TikTok issued a new refresh token; update the TIKTOK_REFRESH_TOKEN secret (see README)."
+            rm tiktok_refresh_token.new
+          fi
+      - name: Upload clips as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: clips-${{ github.run_id }}
+          path: out/*.mp4
+          retention-days: 14
+          if-no-files-found: ignore
+      - name: Commit manifest
+        if: always()
+        run: |
+          git config user.name "clipper-bot"
+          git config user.email "clipper-bot@users.noreply.github.com"
+          git add data/ config/sources.json
+          git diff --cached --quiet || git commit -m "bot: update clips/campaigns [skip ci]"
+          git pull --rebase -q && git push -q

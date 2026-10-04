@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Clipper Bot · panel</title>
+<style>
+  :root { --bg:#0d0f12; --card:#161a20; --line:#262c35; --fg:#e8ebef; --mut:#8a94a3; --acc:#4ade80; --warn:#fbbf24; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.5 system-ui, sans-serif; }
+  main { max-width:1100px; margin:0 auto; padding:32px 20px 80px; }
+  h1 { font-size:22px; margin:0 0 4px; }
+  h2 { font-size:16px; margin:36px 0 12px; color:var(--mut); font-weight:600; text-transform:uppercase; letter-spacing:.04em; }
+  p.sub { color:var(--mut); margin:0 0 20px; }
+  table { width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+  th, td { text-align:left; padding:9px 12px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { color:var(--mut); font-weight:500; font-size:13px; }
+  td.num { font-variant-numeric:tabular-nums; white-space:nowrap; }
+  a { color:var(--acc); }
+  .tag { display:inline-block; padding:1px 7px; border-radius:4px; font-size:12px; border:1px solid var(--line); color:var(--mut); margin:1px; }
+  .app { color:var(--warn); border-color:var(--warn); }
+  .clips { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:14px; }
+  .clip { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:12px; }
+  .clip b { display:block; margin-bottom:4px; }
+  .clip small { color:var(--mut); display:block; }
+  .links a { margin-right:10px; font-size:13px; }
+  .empty { color:var(--mut); padding:20px; background:var(--card); border:1px dashed var(--line); border-radius:8px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Clipper Bot</h1>
+  <p class="sub">Campañas mejor pagadas de Content Rewards (Whop) y clips generados en la nube. <span id="updated"></span></p>
+  <div class="links">
+    <a id="actions" href="#">Ejecutar ahora / ver logs (GitHub Actions)</a>
+    <a href="/connect.html">Conectar cuentas</a>
+  </div>
+
+  <h2>Top 15 campañas</h2>
+  <div id="campaigns" class="empty">Cargando…</div>
+
+  <h2>Últimos clips</h2>
+  <div id="clips" class="empty">Cargando…</div>
+</main>
+<script>
+const REPO = "rafaprincipal00-arch/clipper-bot";
+const RAW = `https://raw.githubusercontent.com/${REPO}/main/data/`;
+document.getElementById("actions").href = `https://github.com/${REPO}/actions/workflows/clipper.yml`;
+
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const money = n => "$" + Math.round(n).toLocaleString("en-US");
+
+async function load(name) {
+  const r = await fetch(RAW + name + "?t=" + Date.now());
+  if (!r.ok) throw new Error(name + " " + r.status);
+  return r.json();
+}
+
+load("campaigns.json").then(d => {
+  const rows = d.top.map((c, i) => `<tr>
+    <td class="num">${i + 1}</td>
+    <td><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.title)}</a><br><small>${esc(c.brand)}</small>
+      ${c.requires_application ? '<span class="tag app">requiere solicitud</span>' : ""}
+      ${(c.platforms || []).map(p => `<span class="tag">${esc(p)}</span>`).join("")}</td>
+    <td class="num">$${c.cpm.toFixed(2)}/1K</td>
+    <td class="num">${money(c.budget_left)}</td>
+    <td class="num">${c.max_payout ? money(c.max_payout) : "–"}</td>
+    <td><small>${esc(c.requirements || "")}</small></td></tr>`).join("");
+  const el = document.getElementById("campaigns");
+  el.className = "";
+  el.innerHTML = `<table><tr><th>#</th><th>Campaña</th><th>CPM</th><th>Presupuesto libre</th><th>Máx/clip</th><th>Reglas</th></tr>${rows}</table>`;
+}).catch(e => { document.getElementById("campaigns").textContent = "Sin datos todavía (" + e.message + ")"; });
+
+load("clips.json").then(list => {
+  const el = document.getElementById("clips");
+  if (!list.length) { el.textContent = "Aún no hay clips."; return; }
+  document.getElementById("updated").textContent = "Último clip: " + new Date(list[0].created).toLocaleString("es-ES");
+  el.className = "clips";
+  el.innerHTML = list.slice(0, 60).map(c => {
+    const file = `https://github.com/${REPO}/releases/download/clips/${encodeURIComponent(c.file)}`;
+    const posts = Object.entries(c.posts || {}).map(([k, v]) => `<small>${esc(k)}: ${esc(v)}</small>`).join("");
+    return `<div class="clip"><b>${esc(c.hook)}</b><small>${esc(c.creator)} · score ${c.score}</small>
+      <small>${esc(c.caption)}</small>${posts}
+      <div class="links"><a href="${file}">mp4</a><a href="${esc(c.source)}&t=${Math.floor(c.start)}" target="_blank" rel="noopener">origen</a>
+      ${c.campaign ? `<a href="${esc(c.campaign)}" target="_blank" rel="noopener">campaña</a>` : ""}</div></div>`;
+  }).join("");
+}).catch(e => { document.getElementById("clips").textContent = "Sin clips todavía (" + e.message + ")"; });
+</script>
+</body>
+</html>

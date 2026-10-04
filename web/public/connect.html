@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Clipper Bot · conectar cuentas</title>
+<style>
+  body { margin:0; background:#0d0f12; color:#e8ebef; font:15px/1.6 system-ui, sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:32px 20px; }
+  a.btn { display:inline-block; padding:10px 16px; margin:6px 8px 6px 0; border-radius:6px; background:#4ade80; color:#0d0f12; text-decoration:none; font-weight:600; }
+  code { background:#161a20; padding:2px 6px; border-radius:4px; }
+  li { margin-bottom:6px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Conectar cuentas</h1>
+  <p>Cada botón abre el login oficial de la plataforma. Al volver, la página te da el token que hay que guardar como secret del repo.</p>
+  <a class="btn" href="/api/oauth/youtube">YouTube</a>
+  <a class="btn" href="/api/oauth/tiktok">TikTok</a>
+  <a class="btn" href="/api/oauth/instagram">Instagram</a>
+  <h2>Antes de pulsar</h2>
+  <ol>
+    <li>YouTube: proyecto en Google Cloud con YouTube Data API v3 y cliente OAuth web con redirect <code>https://&lt;este-dominio&gt;/api/oauth/youtube</code>.</li>
+    <li>TikTok: app en developers.tiktok.com con Login Kit + Content Posting API (Direct Post), scopes <code>user.info.basic,video.publish,video.upload</code>.</li>
+    <li>Instagram: cuenta profesional (Creator) y app de Meta con «Instagram API with Instagram Login», permisos <code>instagram_business_basic,instagram_business_content_publish</code>.</li>
+  </ol>
+  <p><a href="/">Volver al panel</a> · <a href="/privacy.html">Privacidad</a> · <a href="/terms.html">Términos</a></p>
+</main>
+</body>
+</html>

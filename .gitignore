@@ -1,0 +1,8 @@
+__pycache__/
+work/
+out/
+*.pyc
+.env
+tiktok_refresh_token.new
+.vercel
+node_modules/
