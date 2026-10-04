@@ -22,7 +22,11 @@ SEEN = ROOT / "data" / "seen.json"
 
 
 def sh(cmd: list[str]) -> str:
-    return subprocess.run(cmd, check=True, capture_output=True, text=True, errors="ignore").stdout
+    p = subprocess.run(cmd, capture_output=True, text=True, errors="ignore")
+    if p.returncode != 0:
+        print(f"  $ {' '.join(cmd[:3])}... failed:\n{p.stderr[-1200:]}")
+        raise subprocess.CalledProcessError(p.returncode, cmd, p.stdout, p.stderr)
+    return p.stdout
 
 
 def normalize_source(source: str) -> str:
