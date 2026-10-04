@@ -126,7 +126,10 @@ def process(url: str, creator: str, clips: int, campaign: dict | None, do_publis
             break
         words = transcribe(audio, w_start, w_end - w_start)
         pick = highlights.pick_with_llm(words, creator) or highlights.fallback_pick(words, w_start, w_end)
-        if pick["score"] < min_score:
+        if not words:
+            print(f"  skip {w_start}s: no speech")
+            continue
+        if pick.get("fallback") is None and pick["score"] < min_score:
             print(f"  skip {w_start}s: score {pick['score']}")
             continue
         start, end = float(pick["start"]), float(pick["end"])

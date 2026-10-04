@@ -11,7 +11,7 @@ def loudness_per_second(audio: str) -> list[float]:
     """Mean volume (dB) per second via ffmpeg astats; cheap even on 6 h VODs."""
     cmd = [
         "ffmpeg", "-hide_banner", "-nostats", "-i", audio, "-vn", "-ac", "1", "-ar", "8000",
-        "-af", "asetnsamples=8000,astats=metadata=1:reset=1,ametadata=print:key=lavfi.astats.Overall.RMS_level",
+        "-af", "aresample=8000,asetnsamples=n=8000:p=0,astats=metadata=1:reset=1,ametadata=print:key=lavfi.astats.Overall.RMS_level",
         "-f", "null", "-",
     ]
     proc = subprocess.run(cmd, capture_output=True, text=True, errors="ignore")
@@ -97,4 +97,4 @@ def fallback_pick(words: list[dict], win_start: float, win_end: float) -> dict:
     start, end = max(win_start, mid - 22), min(win_end, mid + 18)
     inside = [w["word"] for w in words if start <= w["start"] <= end]
     hook = " ".join(inside[:5]).upper() if inside else "WAIT FOR IT"
-    return {"start": start, "end": end, "score": 50, "hook": hook, "title": " ".join(inside[:14])}
+    return {"start": start, "end": end, "score": 50, "hook": hook, "title": " ".join(inside[:14]), "fallback": True}
