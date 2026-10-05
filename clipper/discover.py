@@ -105,7 +105,7 @@ def build_sources(top: list[dict], path: Path) -> None:
                 continue
             existing.append({
                 "creator": c["brand"] or c["title"], "source": src, "campaign": c["title"],
-                "campaign_url": c["url"], "cpm": c["cpm"], "enabled": not c["requires_application"],
+                "campaign_url": c["url"], "cpm": c["cpm"], "enabled": False,  # curated list in sources.json decides what runs
                 "hashtags": [], "credit": "", "requirements": c.get("requirements", ""),
             })
             known.add(src)
