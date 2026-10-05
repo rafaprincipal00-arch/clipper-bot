@@ -1,21 +1,5 @@
 [
  {
-  "creator": "N3ON / Neon / Zach Justice (HardScope)",
-  "source": "https://www.youtube.com/@hardscopetv/videos",
-  "campaign": "HardScope x ClipFarm",
-  "campaign_url": "https://contentrewards.com/discover/7a237c80-a03b-4741-9f8e-de800275c9b7",
-  "cpm": 1.0,
-  "enabled": true,
-  "hashtags": [
-   "n3on",
-   "neon",
-   "hardscope",
-   "streamer"
-  ],
-  "credit": "@hardscopetv",
-  "why": "Grandes de Kick (N3ON), 12,3k$ libres, solo 56 clippers"
- },
- {
   "creator": "TJR",
   "source": "https://kick.com/tjr",
   "campaign": "TJR $23,100 Weekly Clipping Campaign",
@@ -29,7 +13,8 @@
    "kick"
   ],
   "credit": "@tjr",
-  "why": "Mayor presupuesto (20k$/semana), stream diario en Kick"
+  "why": "Mayor presupuesto (20k$/semana), stream diario en Kick",
+  "join_status": "unido (Reach)"
  },
  {
   "creator": "Shuffle streamers (Kick)",
@@ -44,7 +29,8 @@
   ],
   "credit": "",
   "requirements": "Caption: \"Get a $1,000 deposit match on Shuffle\". Min 12s. Sin reposts. Gambling: riesgo de shadowban.",
-  "why": "16k$ libres, 9 clippers; requiere solicitud y clips propios"
+  "why": "16k$ libres, 9 clippers; requiere solicitud y clips propios",
+  "join_status": "sin solicitar"
  },
  {
   "creator": "Michael Porter Jr. (Curious Mike)",
@@ -59,7 +45,8 @@
    "podcast"
   ],
   "credit": "",
-  "why": "Estrella NBA, 5k$ libres, 97 clippers"
+  "why": "Estrella NBA, 5k$ libres, 97 clippers",
+  "join_status": "unido (ClipUp)"
  },
  {
   "creator": "Michael Sartain",
@@ -74,7 +61,8 @@
    "podcast"
   ],
   "credit": "@michaelsartain",
-  "why": "2$ CPM, 3,6k$ libres, 18 clippers; ya unido"
+  "why": "2$ CPM, 3,6k$ libres, 18 clippers; ya unido",
+  "join_status": "lista de espera"
  },
  {
   "creator": "Alpha Futures (TJR, Tori Trades...)",
@@ -89,7 +77,8 @@
    "propfirm"
   ],
   "credit": "",
-  "why": "2$ CPM, 4,4k$ libres"
+  "why": "2$ CPM, 4,4k$ libres",
+  "join_status": "lista de espera (Click Culture)"
  },
  {
   "creator": "ARZ Urus",
@@ -104,7 +93,8 @@
    "dinero"
   ],
   "credit": "@arzurus",
-  "why": "Top campaña en español, 1,5$ CPM, 27 clippers"
+  "why": "Top campaña en español, 1,5$ CPM, 27 clippers",
+  "join_status": "solicitud enviada"
  },
  {
   "creator": "Howieazy (Twitch)",
@@ -119,7 +109,8 @@
   ],
   "credit": "twitch.tv/howieazy",
   "requirements": "Add link in bio https://www.twitch.tv/howieazy",
-  "why": "Twitch, 984$ libres, poca competencia"
+  "why": "Twitch, 984$ libres, poca competencia",
+  "join_status": "unido (Pervasive)"
  },
  {
   "creator": "Lanah Cherry (Twitch)",
@@ -134,7 +125,8 @@
    "irl"
   ],
   "credit": "twitch.tv/lanahcherry",
-  "why": "Streamer IRL de Twitch, 908$ libres"
+  "why": "Streamer IRL de Twitch, 908$ libres",
+  "join_status": "unido (Reach)"
  },
  {
   "creator": "Stanley Meng (Streamer University)",
@@ -148,6 +140,23 @@
    "kaicenat"
   ],
   "credit": "",
-  "why": "Streamer University (entorno Kai Cenat), solo TikTok, 346$ libres"
+  "why": "Streamer University (entorno Kai Cenat), solo TikTok, 346$ libres",
+  "join_status": "unido (ClippedIn)"
+ },
+ {
+  "creator": "Ryan Zofay",
+  "source": "https://www.youtube.com/@ryanzofay/videos",
+  "campaign": "Ryan Zofay - Clipping Campaign 01",
+  "campaign_url": "https://contentrewards.com/discover/926e1b7f-1030-4333-a557-f99d9f891437",
+  "cpm": 0.75,
+  "enabled": true,
+  "hashtags": [
+   "ryanzofay",
+   "motivation",
+   "podcast"
+  ],
+  "credit": "@ryanzofay",
+  "why": "Podcast/charlas, 2,5k$ libres, 37 clippers; sustituye a HardScope (cerrada)",
+  "join_status": "unido"
  }
 ]
