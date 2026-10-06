@@ -12,7 +12,7 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-from . import highlights, publish, render
+from . import highlights, publish, render, submit
 
 ROOT = Path(__file__).resolve().parent.parent
 WORK = ROOT / "work"
@@ -182,6 +182,14 @@ def process(url: str, creator: str, clips: int, campaign: dict | None, do_publis
         public_url = public_url_for(final)  # also feeds the panel's mp4 links
         if do_publish:
             entry["posts"] = publish.publish_all(final, pick["title"], caption, public_url)
+            links = [v for v in entry["posts"].values() if isinstance(v, str) and v.startswith("https://")]
+            if links and entry["campaign"]:
+                # Content Rewards only accepts links posted <30 min ago, so submit right away.
+                try:
+                    entry["submission"] = submit.submit(entry["campaign"], links)
+                except Exception as e:  # never lose the publish record over a submit failure
+                    entry["submission"] = {"error": str(e)[:300]}
+                print(f"  submit: {entry['submission']}")
         results.append(entry)
         print(f"  clip {final.name}  score={pick['score']}  {pick['hook']}")
     return results
