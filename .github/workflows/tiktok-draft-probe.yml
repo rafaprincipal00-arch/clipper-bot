@@ -1,0 +1,19 @@
+name: tiktok-draft-probe
+on: workflow_dispatch
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    env:
+      TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+      TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+      TIKTOK_REFRESH_TOKEN: ${{ secrets.TIKTOK_REFRESH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Upload a test clip to the TikTok inbox
+        run: |
+          sudo apt-get install -y ffmpeg >/dev/null
+          ffmpeg -loglevel error -f lavfi -i testsrc2=s=1080x1920:d=4 -f lavfi -i sine=d=4 -shortest -pix_fmt yuv420p probe.mp4
+          python -c "from pathlib import Path; from clipper import publish; print(publish.tiktok_draft(Path('probe.mp4')))"

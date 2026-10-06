@@ -84,6 +84,24 @@ def tiktok(path: Path, caption: str) -> str | None:
     return f"tiktok:{init['publish_id']} ({privacy})"
 
 
+def tiktok_draft(path: Path) -> str | None:
+    """Upload to the creator's TikTok inbox as a draft (video.upload scope, works without the app audit).
+    The creator gets a notification, adds a trending sound from TikTok's licensed library and posts it
+    publicly from the app."""
+    tok = _tiktok_token()
+    if not tok:
+        return None
+    auth = {"Authorization": f"Bearer {tok}", "Content-Type": "application/json; charset=UTF-8"}
+    size = path.stat().st_size
+    init = _req("https://open.tiktokapis.com/v2/post/publish/inbox/video/init/", json.dumps({
+        "source_info": {"source": "FILE_UPLOAD", "video_size": size, "chunk_size": size, "total_chunk_count": 1},
+    }).encode(), auth)["data"]
+    _req(init["upload_url"], path.read_bytes(), {
+        "Content-Type": "video/mp4", "Content-Length": str(size),
+        "Content-Range": f"bytes 0-{size - 1}/{size}"}, "PUT")
+    return f"tiktok-draft:{init['publish_id']}"
+
+
 # ---------------- Instagram (Instagram API with Instagram Login) ----------------
 def instagram(public_url: str | None, caption: str) -> str | None:
     tok, uid = os.environ.get("IG_ACCESS_TOKEN"), os.environ.get("IG_USER_ID")
