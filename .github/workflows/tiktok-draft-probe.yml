@@ -15,5 +15,23 @@ jobs:
       - name: Upload a test clip to the TikTok inbox
         run: |
           sudo apt-get install -y ffmpeg >/dev/null
-          ffmpeg -loglevel error -f lavfi -i testsrc2=s=1080x1920:d=4 -f lavfi -i sine=d=4 -shortest -pix_fmt yuv420p probe.mp4
-          python -c "from pathlib import Path; from clipper import publish; print(publish.tiktok_draft(Path('probe.mp4')))"
+          ffmpeg -loglevel error -f lavfi -i testsrc2=s=1080x1920:r=30:d=8 -f lavfi -i sine=d=8 -shortest -c:v libx264 -pix_fmt yuv420p -c:a aac -movflags +faststart probe.mp4
+          python - <<'PY'
+          import json, urllib.request, urllib.error
+          from pathlib import Path
+          from clipper import publish
+          tok = publish._tiktok_token()
+          auth = {"Authorization": f"Bearer {tok}", "Content-Type": "application/json; charset=UTF-8"}
+          size = Path("probe.mp4").stat().st_size
+          init = publish._req("https://open.tiktokapis.com/v2/post/publish/inbox/video/init/", json.dumps({"source_info": {"source": "FILE_UPLOAD", "video_size": size, "chunk_size": size, "total_chunk_count": 1}}).encode(), auth)
+          print("init", json.dumps({k: (v if k != "upload_url" else v.split("?")[0]) for k, v in init["data"].items()}), init.get("error"))
+          url = init["data"]["upload_url"]
+          for method in ("PUT", "POST"):
+              req = urllib.request.Request(url, data=Path("probe.mp4").read_bytes(), method=method, headers={"Content-Type": "video/mp4", "Content-Range": f"bytes 0-{size-1}/{size}"})
+              try:
+                  with urllib.request.urlopen(req, timeout=120) as r:
+                      print(method, r.status, r.read()[:300]); break
+              except urllib.error.HTTPError as e:
+                  print(method, e.code, dict(e.headers), e.read()[:300])
+          print(publish._req("https://open.tiktokapis.com/v2/post/publish/status/fetch/", json.dumps({"publish_id": init["data"]["publish_id"]}).encode(), auth))
+          PY
