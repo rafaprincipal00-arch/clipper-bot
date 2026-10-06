@@ -27,29 +27,6 @@
   }
  },
  {
-  "file": "tjr-5ecc2a80-3e78-4658-87ba-b544078d976f-370.mp4",
-  "creator": "TJR",
-  "source": "https://kick.com/tjr/videos/5ecc2a80-3e78-4658-87ba-b544078d976f",
-  "start": 370.0,
-  "end": 420.0,
-  "score": 80,
-  "hook": "SHOULD I BUY THIS COIN?",
-  "caption": "My $2M profit prediction for this coin. Should you buy? #tjr #trading #daytrading #kick\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
-  "campaign": "https://contentrewards.com/discover/70baf344-d80f-4ba2-910a-10340f2ea591",
-  "created": "2026-10-06T09:41:22.589346+00:00",
-  "posts": {
-   "youtube": "https://youtube.com/shorts/wldllZR8Znc",
-   "tiktok": "error: HTTP 403: {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202610060941301BE1E67F167A4803F0E3\"}}",
-   "instagram": "skipped (no credentials)"
-  },
-  "submission": {
-   "submitted": [],
-   "rejected": {
-    "https://youtube.com/shorts/wldllZR8Znc": "y Clipping Campaign\n$0.75/1k\n$3.9k/$23.1k\nSubmit video link\nPost a video link\nPosted from one of your linked accounts\nNot already submitted to this campaign\nPosted within the last 30 minutes\nI've read the requirements and accept that non-compliant submissions may be auto-rejected.\nCancel\nSubmitting…"
-   }
-  }
- },
- {
   "file": "tjr-5ecc2a80-3e78-4658-87ba-b544078d976f-5004.mp4",
   "creator": "TJR",
   "source": "https://kick.com/tjr/videos/5ecc2a80-3e78-4658-87ba-b544078d976f",
@@ -73,20 +50,26 @@
   }
  },
  {
-  "file": "lanah-cherry-twitch-v2893163336-1727.mp4",
-  "creator": "Lanah Cherry (Twitch)",
-  "source": "https://www.twitch.tv/videos/2893163336",
-  "start": 1727.1,
-  "end": 1765.2,
-  "score": 75,
-  "hook": "THEY LET THIS SHIT SLIDE",
-  "caption": "TikTok moderation is actually so broken twitch streamer irl",
-  "campaign": "https://contentrewards.com/discover/6e379737-96ef-4980-8565-08df4e6d39d9",
-  "created": "2026-10-06T07:03:32.063787+00:00",
+  "file": "tjr-5ecc2a80-3e78-4658-87ba-b544078d976f-370.mp4",
+  "creator": "TJR",
+  "source": "https://kick.com/tjr/videos/5ecc2a80-3e78-4658-87ba-b544078d976f",
+  "start": 370.0,
+  "end": 420.0,
+  "score": 80,
+  "hook": "SHOULD I BUY THIS COIN?",
+  "caption": "My $2M profit prediction for this coin. Should you buy? #tjr #trading #daytrading #kick\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "campaign": "https://contentrewards.com/discover/70baf344-d80f-4ba2-910a-10340f2ea591",
+  "created": "2026-10-06T09:41:22.589346+00:00",
   "posts": {
-   "youtube": "https://youtube.com/shorts/Tv0M9ZRfVTc",
-   "tiktok": "error: HTTP Error 403: Forbidden",
+   "youtube": "https://youtube.com/shorts/wldllZR8Znc",
+   "tiktok": "error: HTTP 403: {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202610060941301BE1E67F167A4803F0E3\"}}",
    "instagram": "skipped (no credentials)"
+  },
+  "submission": {
+   "submitted": [],
+   "rejected": {
+    "https://youtube.com/shorts/wldllZR8Znc": "y Clipping Campaign\n$0.75/1k\n$3.9k/$23.1k\nSubmit video link\nPost a video link\nPosted from one of your linked accounts\nNot already submitted to this campaign\nPosted within the last 30 minutes\nI've read the requirements and accept that non-compliant submissions may be auto-rejected.\nCancel\nSubmitting…"
+   }
   }
  },
  {
@@ -102,6 +85,23 @@
   "created": "2026-10-06T07:05:13.627874+00:00",
   "posts": {
    "youtube": "https://youtube.com/shorts/SHORn6fpgoY",
+   "tiktok": "error: HTTP Error 403: Forbidden",
+   "instagram": "skipped (no credentials)"
+  }
+ },
+ {
+  "file": "lanah-cherry-twitch-v2893163336-1727.mp4",
+  "creator": "Lanah Cherry (Twitch)",
+  "source": "https://www.twitch.tv/videos/2893163336",
+  "start": 1727.1,
+  "end": 1765.2,
+  "score": 75,
+  "hook": "THEY LET THIS SHIT SLIDE",
+  "caption": "TikTok moderation is actually so broken twitch streamer irl",
+  "campaign": "https://contentrewards.com/discover/6e379737-96ef-4980-8565-08df4e6d39d9",
+  "created": "2026-10-06T07:03:32.063787+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/Tv0M9ZRfVTc",
    "tiktok": "error: HTTP Error 403: Forbidden",
    "instagram": "skipped (no credentials)"
   }
@@ -124,23 +124,6 @@
   }
  },
  {
-  "file": "tjr-625cdde0-f1f9-4948-92c2-7041e963dd29-2378.mp4",
-  "creator": "TJR",
-  "source": "https://kick.com/tjr/videos/625cdde0-f1f9-4948-92c2-7041e963dd29",
-  "start": 2378.0,
-  "end": 2425.0,
-  "score": 85,
-  "hook": "THERE'S A FAKE ACCOUNT OF YOU",
-  "caption": "TJR loses it over chat spamming about a fake Kick account tjr trading daytrading kick",
-  "campaign": "https://contentrewards.com/discover/70baf344-d80f-4ba2-910a-10340f2ea591",
-  "created": "2026-10-06T00:12:52.818909+00:00",
-  "posts": {
-   "youtube": "https://youtube.com/shorts/7wxPt0O0__I",
-   "tiktok": "error: HTTP Error 403: Forbidden",
-   "instagram": "skipped (no credentials)"
-  }
- },
- {
   "file": "tjr-625cdde0-f1f9-4948-92c2-7041e963dd29-2592.mp4",
   "creator": "TJR",
   "source": "https://kick.com/tjr/videos/625cdde0-f1f9-4948-92c2-7041e963dd29",
@@ -158,19 +141,19 @@
   }
  },
  {
-  "file": "reach-418215ee-c133-48de-84fd-f1d1ffd8e9a0-749.mp4",
-  "creator": "Reach",
-  "source": "https://kick.com/tjr/videos/418215ee-c133-48de-84fd-f1d1ffd8e9a0",
-  "start": 749.8,
-  "end": 785.6,
+  "file": "tjr-625cdde0-f1f9-4948-92c2-7041e963dd29-2378.mp4",
+  "creator": "TJR",
+  "source": "https://kick.com/tjr/videos/625cdde0-f1f9-4948-92c2-7041e963dd29",
+  "start": 2378.0,
+  "end": 2425.0,
   "score": 85,
-  "hook": "IT WORKS IT WORKS IT WORKS",
-  "caption": "When you finally fix the tech issue after 30 minutes of pain",
+  "hook": "THERE'S A FAKE ACCOUNT OF YOU",
+  "caption": "TJR loses it over chat spamming about a fake Kick account tjr trading daytrading kick",
   "campaign": "https://contentrewards.com/discover/70baf344-d80f-4ba2-910a-10340f2ea591",
-  "created": "2026-10-04T21:49:04.439049+00:00",
+  "created": "2026-10-06T00:12:52.818909+00:00",
   "posts": {
-   "youtube": "skipped (no credentials)",
-   "tiktok": "skipped (no credentials)",
+   "youtube": "https://youtube.com/shorts/7wxPt0O0__I",
+   "tiktok": "error: HTTP Error 403: Forbidden",
    "instagram": "skipped (no credentials)"
   }
  },
@@ -192,16 +175,16 @@
   }
  },
  {
-  "file": "motion-clipping-v2886769137-425.mp4",
-  "creator": "Motion Clipping",
-  "source": "https://www.twitch.tv/videos/2886769137",
-  "start": 425.8,
-  "end": 475.0,
-  "score": 62,
-  "hook": "A LOT OF DRAMA WITH REGGIE",
-  "caption": "Reacting to the Reggie drama and Clover Boys truth",
-  "campaign": "https://contentrewards.com/discover/1634558e-eae2-4d03-bd7d-a51ab44999a1",
-  "created": "2026-10-04T21:42:43.416642+00:00",
+  "file": "reach-418215ee-c133-48de-84fd-f1d1ffd8e9a0-749.mp4",
+  "creator": "Reach",
+  "source": "https://kick.com/tjr/videos/418215ee-c133-48de-84fd-f1d1ffd8e9a0",
+  "start": 749.8,
+  "end": 785.6,
+  "score": 85,
+  "hook": "IT WORKS IT WORKS IT WORKS",
+  "caption": "When you finally fix the tech issue after 30 minutes of pain",
+  "campaign": "https://contentrewards.com/discover/70baf344-d80f-4ba2-910a-10340f2ea591",
+  "created": "2026-10-04T21:49:04.439049+00:00",
   "posts": {
    "youtube": "skipped (no credentials)",
    "tiktok": "skipped (no credentials)",
@@ -226,16 +209,33 @@
   }
  },
  {
-  "file": "megamcqueen-v2891192031-5824.mp4",
+  "file": "motion-clipping-v2886769137-425.mp4",
+  "creator": "Motion Clipping",
+  "source": "https://www.twitch.tv/videos/2886769137",
+  "start": 425.8,
+  "end": 475.0,
+  "score": 62,
+  "hook": "A LOT OF DRAMA WITH REGGIE",
+  "caption": "Reacting to the Reggie drama and Clover Boys truth",
+  "campaign": "https://contentrewards.com/discover/1634558e-eae2-4d03-bd7d-a51ab44999a1",
+  "created": "2026-10-04T21:42:43.416642+00:00",
+  "posts": {
+   "youtube": "skipped (no credentials)",
+   "tiktok": "skipped (no credentials)",
+   "instagram": "skipped (no credentials)"
+  }
+ },
+ {
+  "file": "megamcqueen-v2891192031-7366.mp4",
   "creator": "MegaMcqueen",
   "source": "https://www.twitch.tv/videos/2891192031",
-  "start": 5824.5,
-  "end": 5851.4,
+  "start": 7366.8,
+  "end": 7402.8,
   "score": 85,
-  "hook": "THIS IS MANIPULATION 101",
-  "caption": "When the gaslighting is just way too obvious to ignore",
+  "hook": "OH, SHOOT! GET OFF ME!",
+  "caption": "Bro got jumped on stream and went insane",
   "campaign": null,
-  "created": "2026-10-04T17:32:54.418999+00:00",
+  "created": "2026-10-04T17:37:06.655677+00:00",
   "posts": {}
  },
  {
@@ -252,16 +252,16 @@
   "posts": {}
  },
  {
-  "file": "megamcqueen-v2891192031-7366.mp4",
+  "file": "megamcqueen-v2891192031-5824.mp4",
   "creator": "MegaMcqueen",
   "source": "https://www.twitch.tv/videos/2891192031",
-  "start": 7366.8,
-  "end": 7402.8,
+  "start": 5824.5,
+  "end": 5851.4,
   "score": 85,
-  "hook": "OH, SHOOT! GET OFF ME!",
-  "caption": "Bro got jumped on stream and went insane",
+  "hook": "THIS IS MANIPULATION 101",
+  "caption": "When the gaslighting is just way too obvious to ignore",
   "campaign": null,
-  "created": "2026-10-04T17:37:06.655677+00:00",
+  "created": "2026-10-04T17:32:54.418999+00:00",
   "posts": {}
  }
 ]
