@@ -39,7 +39,12 @@ def submit(campaign_url: str, links: list[str]) -> dict:
             dialog.get_by_text(re.compile(r"(I've read the requirements|He leído los requisitos)")).first.click()
             submit_btn = dialog.get_by_role("button", name=re.compile(r"^(Submit clip|Enviar clip)$")).last
             submit_btn.click()
-            page.wait_for_timeout(9000)
+            page.wait_for_timeout(4000)
+            # Wait out the "Submitting…" state before judging the result.
+            for _ in range(30):
+                if not (dialog.count() and dialog.is_visible() and re.search(r"Submitting|Enviando", dialog.inner_text())):
+                    break
+                page.wait_for_timeout(1000)
             # Links that failed stay in the box, with their reason shown in the dialog.
             still_open = dialog.count() and dialog.is_visible()
             remaining = box.input_value() if still_open and box.is_visible() else ""
