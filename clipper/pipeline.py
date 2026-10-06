@@ -155,7 +155,7 @@ def make_clip(moment: dict, creator: str, campaign: dict | None, do_publish: boo
         if not edit.get("fallback") and edit["score"] < min_score:
             print(f"  skip {moment['id']}: score {edit['score']}")
             return None
-        segs = edit["segments"]
+        segs = highlights.micro_cut(edit["segments"], words)
         info = layout.analyse(str(raw), min(s for s, _ in segs), max(e for _, e in segs))
         # A/B test: alternate blurred-horizontal and full-vertical framing (stable per clip name).
         style = "blur" if zlib.crc32(name.encode()) % 2 else "vertical"
@@ -209,7 +209,8 @@ def run_auto(do_publish: bool, min_score: int, per_source: int) -> None:
     queues: dict[str, list[dict]] = {}
     for src in sources:
         try:
-            queues[src["creator"]] = [m for m in moments.moments_for(src["source"]) if m["id"] not in seen]
+            queues[src["creator"]] = [m for m in moments.strongest(moments.moments_for(src["source"]))
+                                      if m["id"] not in seen]
         except (OSError, ValueError, KeyError, subprocess.CalledProcessError) as e:
             print(f"[{src['creator']}] cannot list moments: {e}")
             queues[src["creator"]] = []
@@ -256,7 +257,7 @@ def main() -> None:
     ap.add_argument("--clips", type=int, default=1, help="clips per source per run")
     ap.add_argument("--auto", action="store_true")
     ap.add_argument("--publish", action="store_true")
-    ap.add_argument("--min-score", type=int, default=55)
+    ap.add_argument("--min-score", type=int, default=70)
     a = ap.parse_args()
     if a.auto:
         run_auto(a.publish, a.min_score, a.clips)

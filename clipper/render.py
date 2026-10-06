@@ -69,16 +69,9 @@ def _rel(p: Path) -> str:
         return p.as_posix().replace(":", "\\:")
 
 
-MOODS = {
-    "funny": ["Sneaky_Snitch", "Monkeys_Spinning_Monkeys", "Fluffing_a_Duck", "Pixel_Peeker_Polka_faster",
-              "Spazzmatica_Polka", "The_Show_Must_Be_Go"],
-    "awkward": ["Local_Forecast_Elevator", "Hep_Cats"],
-    "sus": ["Scheming_Weasel_faster", "Investigations"],
-    "chaos": ["Run_Amok"],
-    "drama": ["Hitman", "Five_Armies"],
-    "hype": ["Volatile_Reaction", "Voxel_Revolution"],
-    "chill": ["Itty_Bitty_8_Bit"],
-}
+# Only beds the user confirmed he hears in Reels/TikToks; the rest were dropped as "never goes viral".
+APPROVED = ["Run_Amok"]
+MOODS = dict.fromkeys(("funny", "awkward", "sus", "chaos", "drama", "hype", "chill"), APPROVED)
 
 
 def pick_music(seed: str, mood: str = "funny") -> Path | None:
@@ -99,7 +92,7 @@ def remap_words(words: list[dict], segments: list[tuple[float, float]]) -> list[
     return out
 
 
-ZOOM = 1.12  # punch-in on every other cut hides the jump, like hand-edited clips
+ZOOMS = (1.0, 1.18, 1.06, 1.28)  # a different punch-in on each cut hides the jump and keeps it moving
 
 
 def render_edit(src: str, segments: list[tuple[float, float]], info: dict, ass: Path, out: Path,
@@ -114,8 +107,9 @@ def render_edit(src: str, segments: list[tuple[float, float]], info: dict, ass: 
     for i, (s, e) in enumerate(segments):
         g.append(f"[r{i}]trim={s:.3f}:{e:.3f},setpts=PTS-STARTPTS[t{i}]")
         g.append(layout.filtergraph(info, f"[t{i}]", f"[l{i}]", t_off=s, t_end=e, sfx=str(i), style=style))
-        if i % 2:
-            g.append(f"[l{i}]scale={int(1080 * ZOOM) // 2 * 2}:{int(1920 * ZOOM) // 2 * 2}:flags=lanczos,"
+        z = ZOOMS[i % len(ZOOMS)]
+        if z > 1:
+            g.append(f"[l{i}]scale={int(1080 * z) // 2 * 2}:{int(1920 * z) // 2 * 2}:flags=lanczos,"
                      f"crop=1080:1920,setsar=1[z{i}]")
         else:
             g.append(f"[l{i}]setsar=1[z{i}]")

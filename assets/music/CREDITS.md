@@ -4,12 +4,5 @@ These are the most-reused meme/clip beds on YouTube and TikTok (the "funny momen
 sounds viewers recognise), and the license allows commercial use with credit. Copyrighted chart songs would
 get Content ID claims and void campaign payouts.
 
-Moods (see MOODS in clipper/render.py):
-- funny: Sneaky Snitch, Monkeys Spinning Monkeys, Fluffing a Duck, Pixel Peeker Polka - faster, Spazzmatica Polka, The Show Must Be Go
-- awkward: Local Forecast - Elevator, Hep Cats
-- sus: Scheming Weasel faster, Investigations
-- chaos: Run Amok
-- drama: Hitman, Five Armies
-- hype: Volatile Reaction, Voxel Revolution
-- chill: Itty Bitty 8 Bit
+Track in use: Run Amok (the only bed approved so far; others removed as not recognisable in Reels).
 Font: Montserrat Black (SIL Open Font License), github.com/JulietaUla/Montserrat

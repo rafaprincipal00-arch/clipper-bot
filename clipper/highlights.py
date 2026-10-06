@@ -17,7 +17,9 @@ aim for {min_len}-{max_len}s) from many kept segments:
   every pause, side-tangents and chat-reading that adds nothing. Long moments must be compressed, not truncated.
 - NEVER cut mid-word or mid-sentence and never remove context the payoff depends on.
 - Segments must use the transcript's timestamps, each at least 1.0 s long.
-Score viral potential 0-100 (be harsh: boring = under 40).
+Score viral potential 0-100 and be harsh. It needs a real payoff: a reaction, a fail, a roast, drama, a
+shocking line, a funny exchange with a punchline. Someone just commenting, reading chat, explaining or
+chatting without a payoff scores under 40 even if it is mildly amusing.
 Pick the music mood of the moment: one of funny, awkward, sus, chaos, drama, hype, chill.
 Hook and title must be brand-safe: no slurs or profanity (campaigns auto-reject them).
 Reply ONLY with JSON: {{"segments": [[start, end], ...], "score": int, "mood": "funny",
@@ -111,6 +113,40 @@ def ensure_min(segs: list[tuple[float, float]], lo: float, hi: float, min_total:
     span = min(max(min_total + 5, 20.0), max_len, hi - lo)
     s = min(max(lo, mid - span / 2), hi - span)
     return [(s, s + span)]
+
+
+
+def micro_cut(segs: list[tuple[float, float]], words: list[dict], gap: float = 0.25,
+              beat: float = 3.0) -> list[tuple[float, float]]:
+    """Fast-cut pass: drop every pause > `gap` inside the kept segments (jump cuts) and split anything
+    longer than `beat` s at a word boundary, so the renderer changes zoom at least every ~3 s."""
+    out = []
+    for s, e in segs:
+        inside = [w for w in words if w["start"] >= s - 0.05 and w["end"] <= e + 0.05]
+        parts, cur = [], None
+        for w in inside:
+            ws, we = max(s, w["start"] - 0.06), min(e, w["end"] + 0.08)
+            if cur and ws - cur[1] <= gap:
+                cur[1] = we
+            else:
+                if cur:
+                    parts.append(cur)
+                cur = [ws, we]
+        if cur:
+            parts.append(cur)
+        if not parts:  # no speech in it (gameplay): keep it whole, the beat split below still adds cuts
+            parts = [[s, e]]
+        for ps, pe in parts:
+            while pe - ps > beat + 1.0:
+                cut = ps + beat
+                ends = [w["end"] + 0.08 for w in inside if ps + 1.5 < w["end"] + 0.08 <= ps + beat + 0.8]
+                if ends:
+                    cut = min(ends, key=lambda x: abs(x - (ps + beat)))
+                out.append((ps, cut))
+                ps = cut
+            if pe - ps >= 0.4:
+                out.append((ps, pe))
+    return out or segs
 
 
 def pick_edit(words: list[dict], creator: str, title: str, lo: float, hi: float,

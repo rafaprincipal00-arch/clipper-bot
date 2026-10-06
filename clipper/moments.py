@@ -157,3 +157,15 @@ if __name__ == "__main__":
     import sys
     for mo in moments_for(sys.argv[1])[:8]:
         print(f"{mo['views']:>7}  {mo['start']:>8.0f}-{mo['end']:<8.0f} {mo['signal']:<26} {mo['title'][:50]}  {mo['url']}")
+
+
+def strongest(found: list[dict], rel: float = 0.2, floor: int = 20) -> list[dict]:
+    """Only moments viewers really rewatched: at least `rel` of the channel's top clip views and `floor`
+    views. Chat peaks are a fallback signal, used only when no viewer clip qualifies."""
+    clips = [m for m in found if "clip" in m["signal"]]
+    if clips:
+        top = max(m["views"] for m in clips)
+        keep = [m for m in clips if m["views"] >= max(floor, rel * top)]
+        if keep:
+            return sorted(keep, key=lambda m: -m["views"])
+    return [m for m in found if "clip" not in m["signal"]]
