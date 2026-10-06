@@ -1,10 +1,14 @@
 name: clipper
 
 on:
-  schedule:
-    - cron: "17 */6 * * *"   # every 6 h: a paced run (1 clip / ~6 min) until caps or moments run out
+  # No cron for now: the PC starts a "batch" run at the first Windows logon of the day
+  # (scripts/logon_trigger.pyw) -> 3 different clips, one per account, every 8-9 min.
   workflow_dispatch:
     inputs:
+      batch:
+        description: "Clips for this run, one per account (0 = classic auto run)"
+        required: false
+        default: "0"
       url:
         description: "Clip this one URL instead of the auto sources"
         required: false
@@ -73,7 +77,10 @@ jobs:
         run: |
           PUB=""
           if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ inputs.publish }}" = "true" ]; then PUB="--publish"; fi
-          if [ -n "${{ inputs.url }}" ]; then
+          if [ "${{ inputs.batch }}" != "" ] && [ "${{ inputs.batch }}" != "0" ]; then
+            CLIP_GAP_MIN=8 CLIP_GAP_MAX_MIN=9 python -m clipper.pipeline --auto --clips 3 \
+              --total "${{ inputs.batch }}" --per-account $PUB
+          elif [ -n "${{ inputs.url }}" ]; then
             python -m clipper.pipeline --url "${{ inputs.url }}" --creator "${{ inputs.creator }}" --start "${{ inputs.start }}" --end "${{ inputs.end }}" $PUB
           else
             python -m clipper.pipeline --auto --clips 10 $PUB

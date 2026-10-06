@@ -9,6 +9,7 @@ intermediate file are deleted as soon as the clip is rendered (see `scratch`).
 import argparse
 import json
 import os
+import random
 import re
 import shutil
 import subprocess
@@ -136,7 +137,8 @@ def public_url_for(path: Path) -> str | None:
     return f"https://github.com/{repo}/releases/download/{tag}/{path.name}"
 
 
-def make_clip(moment: dict, creator: str, campaign: dict | None, do_publish: bool, min_score: int) -> dict | None:
+def make_clip(moment: dict, creator: str, campaign: dict | None, do_publish: bool, min_score: int,
+              account: int | None = None) -> dict | None:
     """One moment -> one published clip. Returns the manifest entry or None if skipped."""
     t0 = time.time()
     WORK.mkdir(exist_ok=True)
@@ -176,7 +178,10 @@ def make_clip(moment: dict, creator: str, campaign: dict | None, do_publish: boo
              "created": datetime.now(timezone.utc).isoformat(), "posts": {}}
     public_url = public_url_for(final)  # also feeds the panel's mp4 links
     if do_publish:
-        entry["posts"] = publish.publish_all(final, edit["title"], caption, public_url, skip=capped_platforms())
+        entry["posts"] = publish.publish_all(final, edit["title"], caption, public_url, skip=capped_platforms(),
+                                             account=account)
+        if account is not None:
+            entry["account"] = account + 1
         links = [v for v in entry["posts"].values() if isinstance(v, str) and v.startswith("https://")]
         if links and entry["campaign"]:
             # Content Rewards only accepts links posted <30 min ago, so submit right away.
@@ -198,9 +203,17 @@ def save(entries: list[dict]) -> None:
     MANIFEST.write_text(json.dumps(entries + old, indent=1, ensure_ascii=False), encoding="utf-8")
 
 
-def run_auto(do_publish: bool, min_score: int, per_source: int) -> None:
+def gap_seconds() -> float:
+    """CLIP_GAP_MIN, or a random gap inside CLIP_GAP_MAX_MIN when set (e.g. 8-9 min looks less robotic)."""
+    lo = CLIP_GAP_MIN
+    hi = float(os.environ.get("CLIP_GAP_MAX_MIN") or lo)
+    return random.uniform(lo, max(lo, hi)) * 60
+
+
+def run_auto(do_publish: bool, min_score: int, per_source: int, total: int = 0, per_account: bool = False) -> None:
     """Round-robin over sources, best unseen moment each, paced to one clip every CLIP_GAP_MIN minutes
-    until the run budget ends (the next scheduled run carries on)."""
+    until the run budget ends (the next scheduled run carries on).
+    total > 0 stops after that many clips; per_account sends clip 1 to account 1, clip 2 to account 2..."""
     sources = [s for s in json.loads((ROOT / "config" / "sources.json").read_text(encoding="utf-8")) if s.get("enabled")]
     seen = set(json.loads(SEEN.read_text())) if SEEN.exists() else set()
     budget_s = float(os.environ.get("RUN_BUDGET_MIN", "300")) * 60
@@ -216,25 +229,32 @@ def run_auto(do_publish: bool, min_score: int, per_source: int) -> None:
             queues[src["creator"]] = []
         print(f"[{src['creator']}] {len(queues[src['creator']])} new moments")
     made = dict.fromkeys(queues, 0)
+    done = 0
     last_clip = 0.0
+    next_gap = gap_seconds()
     while time.time() - t0 < budget_s:
         progressed = False
         for src in sources:
             q = queues[src["creator"]]
+            if total and done >= total:
+                print(f"Done: {done} clips.")
+                return
             if not q or made[src["creator"]] >= per_source or time.time() - t0 > budget_s:
                 continue
             if do_publish and capped_platforms() >= working_platforms():
                 print("Every working platform hit its daily cap; stopping.")
                 return
-            wait = CLIP_GAP_MIN * 60 - (time.time() - last_clip)
+            wait = next_gap - (time.time() - last_clip)
             if do_publish and last_clip and wait > 0:
+                print(f"  next clip in {wait / 60:.1f} min")
                 time.sleep(wait)
             m = q.pop(0)
             progressed = True
             print(f"[{src['creator']}] {m['signal']} {m['views']} views: {m['title'][:60]}")
             seen.add(m["id"])  # mark even on failure so a broken moment is not retried forever
             try:
-                entry = make_clip(m, src["creator"], src, do_publish, min_score)
+                entry = make_clip(m, src["creator"], src, do_publish, min_score,
+                                  account=done if per_account else None)
             except subprocess.CalledProcessError as e:
                 print(f"  failed: {(e.stderr or str(e))[-400:]}")
                 entry = None
@@ -242,9 +262,11 @@ def run_auto(do_publish: bool, min_score: int, per_source: int) -> None:
             if entry:
                 save([entry])
                 made[src["creator"]] += 1
+                done += 1
                 last_clip = time.time()
+                next_gap = gap_seconds()
         if not progressed:
-            print("No moments left this run.")
+            print(f"No moments left this run ({done} clips made).")
             return
 
 
@@ -258,9 +280,11 @@ def main() -> None:
     ap.add_argument("--auto", action="store_true")
     ap.add_argument("--publish", action="store_true")
     ap.add_argument("--min-score", type=int, default=70)
+    ap.add_argument("--total", type=int, default=0, help="stop after this many clips (0 = no limit)")
+    ap.add_argument("--per-account", action="store_true", help="clip N goes to account N (YT channel + TikTok)")
     a = ap.parse_args()
     if a.auto:
-        run_auto(a.publish, a.min_score, a.clips)
+        run_auto(a.publish, a.min_score, a.clips, a.total, a.per_account)
     elif a.url:
         m = {"id": f"manual-{int(time.time())}", "url": a.url, "start": a.start, "end": a.end or a.start + 90,
              "views": 0, "title": "", "signal": "manual"}

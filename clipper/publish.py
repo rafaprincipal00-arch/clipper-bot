@@ -29,7 +29,12 @@ def _form(d: dict) -> bytes:
 
 
 # ---------------- YouTube ----------------
-def youtube(path: Path, title: str, description: str) -> str | None:
+def _pick(tokens: list[str], name: str, account: int | None) -> str:
+    """Account `account` (0-based) when the run assigns one clip per account; otherwise turns by clip name."""
+    return tokens[account % len(tokens)] if account is not None else tokens[zlib.crc32(name.encode()) % len(tokens)]
+
+
+def youtube(path: Path, title: str, description: str, account: int | None = None) -> str | None:
     """Channels (YT_REFRESH_TOKEN, _2, _3...) take turns by clip name, like the TikTok accounts.
     The upload quota belongs to the Google Cloud project, so it is shared by every channel."""
     cid, secret = os.environ.get("YT_CLIENT_ID"), os.environ.get("YT_CLIENT_SECRET")
@@ -37,7 +42,7 @@ def youtube(path: Path, title: str, description: str) -> str | None:
     tokens = [os.environ[k] for k in keys if os.environ.get(k)]
     if not (cid and secret and tokens):
         return None
-    refresh = tokens[zlib.crc32(path.stem.encode()) % len(tokens)]
+    refresh = _pick(tokens, path.stem, account)
     tok = _req("https://oauth2.googleapis.com/token", _form({
         "client_id": cid, "client_secret": secret, "refresh_token": refresh, "grant_type": "refresh_token"}))["access_token"]
     meta = {
@@ -63,14 +68,14 @@ def _tiktok_refresh_tokens() -> list[str]:
     return [os.environ[k] for k in keys if os.environ.get(k)]
 
 
-def _tiktok_token(account: str = "") -> str | None:
+def _tiktok_token(name: str = "", account: int | None = None) -> str | None:
     """Access token for the account that gets this clip: accounts take turns by clip name, so each
     account posts different clips (identical uploads across accounts get flagged as duplicates)."""
     key, secret = os.environ.get("TIKTOK_CLIENT_KEY"), os.environ.get("TIKTOK_CLIENT_SECRET")
     tokens = _tiktok_refresh_tokens()
     if not (key and secret and tokens):
         return None
-    refresh = tokens[zlib.crc32(account.encode()) % len(tokens)]
+    refresh = _pick(tokens, name, account)
     res = _req("https://open.tiktokapis.com/v2/oauth/token/", _form({
         "client_key": key, "client_secret": secret, "grant_type": "refresh_token", "refresh_token": refresh}),
         {"Content-Type": "application/x-www-form-urlencoded"})
@@ -79,8 +84,8 @@ def _tiktok_token(account: str = "") -> str | None:
     return res["access_token"]
 
 
-def tiktok(path: Path, caption: str) -> str | None:
-    tok = _tiktok_token(path.name)
+def tiktok(path: Path, caption: str, account: int | None = None) -> str | None:
+    tok = _tiktok_token(path.name, account)
     if not tok:
         return None
     auth = {"Authorization": f"Bearer {tok}", "Content-Type": "application/json; charset=UTF-8"}
@@ -100,11 +105,11 @@ def tiktok(path: Path, caption: str) -> str | None:
     return f"tiktok:{init['publish_id']} ({privacy})"
 
 
-def tiktok_draft(path: Path) -> str | None:
+def tiktok_draft(path: Path, account: int | None = None) -> str | None:
     """Upload to the creator's TikTok inbox as a draft (video.upload scope, works without the app audit).
     The creator gets a notification, adds a trending sound from TikTok's licensed library and posts it
     publicly from the app."""
-    tok = _tiktok_token(path.name)
+    tok = _tiktok_token(path.name, account)
     if not tok:
         return None
     auth = {"Authorization": f"Bearer {tok}", "Content-Type": "application/json; charset=UTF-8"}
@@ -137,10 +142,13 @@ def instagram(public_url: str | None, caption: str) -> str | None:
     return f"instagram:{pub['id']}"
 
 
-def publish_all(path: Path, title: str, caption: str, public_url: str | None, skip: set[str] | None = None) -> dict:
+def publish_all(path: Path, title: str, caption: str, public_url: str | None, skip: set[str] | None = None,
+                account: int | None = None) -> dict:
+    """account: 0-based index of the YouTube channel + TikTok account that get this clip (None = by clip name)."""
     results = {}
-    for name, fn in (("youtube", lambda: youtube(path, title, caption)),
-                     ("tiktok", lambda: tiktok_draft(path) if os.environ.get("TIKTOK_MODE", "draft") == "draft" else tiktok(path, caption)),
+    for name, fn in (("youtube", lambda: youtube(path, title, caption, account)),
+                     ("tiktok", lambda: tiktok_draft(path, account) if os.environ.get("TIKTOK_MODE", "draft") == "draft"
+                      else tiktok(path, caption, account)),
                      ("instagram", lambda: instagram(public_url, caption))):
         if skip and name in skip:
             results[name] = "skipped (daily cap)"

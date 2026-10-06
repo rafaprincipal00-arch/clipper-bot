@@ -6,3 +6,5 @@ out/
 tiktok_refresh_token.new
 .vercel
 node_modules/
+data/logon_trigger.log
+data/logon_trigger_state.json
