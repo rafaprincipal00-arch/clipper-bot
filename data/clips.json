@@ -1,5 +1,51 @@
 [
  {
+  "file": "tjr-5ecc2a80-3e78-4658-87ba-b544078d976f-370.mp4",
+  "creator": "TJR",
+  "source": "https://kick.com/tjr/videos/5ecc2a80-3e78-4658-87ba-b544078d976f",
+  "start": 370.0,
+  "end": 420.0,
+  "score": 80,
+  "hook": "SHOULD I BUY THIS COIN?",
+  "caption": "My $2M profit prediction for this coin. Should you buy? #tjr #trading #daytrading #kick\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "campaign": "https://contentrewards.com/discover/70baf344-d80f-4ba2-910a-10340f2ea591",
+  "created": "2026-10-06T09:41:22.589346+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/wldllZR8Znc",
+   "tiktok": "error: HTTP 403: {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202610060941301BE1E67F167A4803F0E3\"}}",
+   "instagram": "skipped (no credentials)"
+  },
+  "submission": {
+   "submitted": [],
+   "rejected": {
+    "https://youtube.com/shorts/wldllZR8Znc": "y Clipping Campaign\n$0.75/1k\n$3.9k/$23.1k\nSubmit video link\nPost a video link\nPosted from one of your linked accounts\nNot already submitted to this campaign\nPosted within the last 30 minutes\nI've read the requirements and accept that non-compliant submissions may be auto-rejected.\nCancel\nSubmitting…"
+   }
+  }
+ },
+ {
+  "file": "tjr-5ecc2a80-3e78-4658-87ba-b544078d976f-5004.mp4",
+  "creator": "TJR",
+  "source": "https://kick.com/tjr/videos/5ecc2a80-3e78-4658-87ba-b544078d976f",
+  "start": 5004.5,
+  "end": 5013.5,
+  "score": 85,
+  "hook": "Why is he sneak-dissing his boy?",
+  "caption": "Bro actually just roasted his boy on stage #tjr #trading #daytrading #kick\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "campaign": "https://contentrewards.com/discover/70baf344-d80f-4ba2-910a-10340f2ea591",
+  "created": "2026-10-06T09:44:22.690180+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/aTghBz7sxWE",
+   "tiktok": "error: HTTP 403: {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261006094429425E2F31162D7889DADA\"}}",
+   "instagram": "skipped (no credentials)"
+  },
+  "submission": {
+   "submitted": [
+    "https://youtube.com/shorts/aTghBz7sxWE"
+   ],
+   "rejected": {}
+  }
+ },
+ {
   "file": "lanah-cherry-twitch-v2893163336-1727.mp4",
   "creator": "Lanah Cherry (Twitch)",
   "source": "https://www.twitch.tv/videos/2893163336",
