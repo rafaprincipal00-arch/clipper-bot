@@ -22,14 +22,23 @@ def loudness_per_second(audio: str) -> list[float]:
     return levels
 
 
-def peak_windows(levels: list[float], count: int, window: int = 90, skip_start: int = 120) -> list[tuple[int, int]]:
-    """Top `count` non-overlapping windows by the loudest 10 s burst inside each."""
+def peak_windows(levels: list[float], count: int, window: int = 90, skip_start: int = 120,
+                 heat: list[tuple[float, float, float]] | None = None) -> list[tuple[int, int]]:
+    """Top `count` non-overlapping windows by the loudest 10 s burst inside each.
+
+    `heat` (YouTube 'most replayed' segments, intensity 0-1) adds up to 20 dB to a second, so the
+    moments viewers actually rewatch win over merely loud ones.
+    """
     n = len(levels)
     if n <= window:
         return [(0, n)]
+    boost = [0.0] * n
+    for h_start, h_end, value in heat or []:
+        for s in range(int(h_start), min(n, int(h_end) + 1)):
+            boost[s] = max(boost[s], 20.0 * value)
     burst = []
     for i in range(n - 10):
-        burst.append(sum(levels[i:i + 10]) / 10)
+        burst.append(sum(levels[i:i + 10]) / 10 + boost[i + 5])
     order = sorted(range(skip_start if n > skip_start * 3 else 0, len(burst)), key=lambda i: -burst[i])
     chosen: list[tuple[int, int]] = []
     for i in order:

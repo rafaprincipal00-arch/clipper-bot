@@ -46,29 +46,57 @@ def normalize_source(source: str) -> str:
     return source
 
 
-def latest_kick_vod(channel: str) -> dict:
+def kick_vods(channel: str) -> list[dict]:
     """yt-dlp's Kick extractor only handles live/VOD URLs, so list VODs via Kick's API."""
     import urllib.request
     req = urllib.request.Request(f"https://kick.com/api/v2/channels/{channel}/videos",
                                  headers={"User-Agent": "Mozilla/5.0 Chrome/130", "Accept": "application/json"})
     with urllib.request.urlopen(req, timeout=30) as r:
         vods = json.load(r)
-    v = vods[0]
-    uuid = v["video"]["uuid"]
-    return {"id": uuid, "url": f"https://kick.com/{channel}/videos/{uuid}",
-            "title": v.get("session_title", ""), "duration": (v.get("duration") or 0) / 1000}
+    return [{"id": v["video"]["uuid"], "url": f"https://kick.com/{channel}/videos/{v['video']['uuid']}",
+             "title": v.get("session_title", ""), "duration": (v.get("duration") or 0) / 1000,
+             "views": v.get("views") or v["video"].get("views") or 0} for v in vods[:RECENT]]
+
+
+RECENT = 8          # look at this many recent uploads per source
+MIN_DURATION = 120  # skip shorts/teasers: nothing to cut from them
+
+
+def recent_videos(source: str) -> list[dict]:
+    """Recent uploads of a channel/VOD page with their view counts."""
+    kick = re.match(r"https?://(www\.)?kick\.com/([^/?]+)/?$", source)
+    if kick:
+        return kick_vods(kick.group(2))
+    raw = sh(["yt-dlp", "--no-warnings", "--flat-playlist", "--playlist-items", f"1-{RECENT}", "-J",
+              normalize_source(source)])
+    data = json.loads(raw)
+    entries = data.get("entries") or [data]
+    return [{"id": e["id"], "url": e.get("url") if str(e.get("url", "")).startswith("http") else e.get("webpage_url") or source,
+             "title": e.get("title", ""), "duration": e.get("duration") or 0, "views": e.get("view_count") or 0}
+            for e in entries if e.get("id")]
+
+
+def best_video(source: str, seen: set[str]) -> dict | None:
+    """The most-viewed recent upload not clipped yet: more views = proven interest = clips travel further."""
+    vids = [v for v in recent_videos(source) if v["id"] not in seen and (not v["duration"] or v["duration"] >= MIN_DURATION)]
+    return max(vids, key=lambda v: v["views"]) if vids else None
+
+
+def most_replayed(url: str) -> list[tuple[float, float, float]]:
+    """YouTube's 'most replayed' heatmap (start, end, intensity 0-1); empty for other platforms."""
+    if "youtube.com" not in url and "youtu.be" not in url:
+        return []
+    try:
+        info = json.loads(sh(["yt-dlp", "--no-warnings", "--skip-download", "-J", url]))
+    except (subprocess.CalledProcessError, ValueError):
+        return []
+    return [(h["start_time"], h["end_time"], h["value"]) for h in info.get("heatmap") or []]
 
 
 def latest_video(source: str) -> dict:
-    """Resolve a channel/VOD page to its newest video (id, url, title, duration)."""
-    kick = re.match(r"https?://(www\.)?kick\.com/([^/?]+)/?$", source)
-    if kick:
-        return latest_kick_vod(kick.group(2))
-    raw = sh(["yt-dlp", "--no-warnings", "--playlist-items", "1", "--dump-json", "--skip-download",
-              normalize_source(source)])
-    info = json.loads(raw.strip().splitlines()[0])
-    return {"id": info["id"], "url": info.get("webpage_url") or source,
-            "title": info.get("title", ""), "duration": info.get("duration") or 0}
+    """A direct video URL resolves to itself; a channel resolves to its newest upload."""
+    vids = recent_videos(source)
+    return vids[0]
 
 
 def download_audio(url: str, dest: Path) -> Path:
@@ -112,14 +140,18 @@ def public_url_for(path: Path) -> str | None:
     return f"https://github.com/{repo}/releases/download/{tag}/{path.name}"
 
 
-def process(url: str, creator: str, clips: int, campaign: dict | None, do_publish: bool, min_score: int) -> list[dict]:
+def process(url: str, creator: str, clips: int, campaign: dict | None, do_publish: bool, min_score: int,
+            vid: dict | None = None) -> list[dict]:
     WORK.mkdir(exist_ok=True)
     OUT.mkdir(exist_ok=True)
-    vid = latest_video(url)
-    print(f"Source: {vid['title']} ({vid['duration'] / 60:.0f} min) {vid['url']}")
+    vid = vid or latest_video(url)
+    print(f"Source: {vid['title']} ({vid['duration'] / 60:.0f} min, {vid.get('views', 0)} views) {vid['url']}")
     audio = download_audio(vid["url"], WORK / slug(vid["id"]))
     levels = highlights.loudness_per_second(str(audio))
-    windows = highlights.peak_windows(levels, count=clips * 2)
+    heat = most_replayed(vid["url"])
+    if heat:
+        print(f"  using YouTube most-replayed heatmap ({len(heat)} segments)")
+    windows = highlights.peak_windows(levels, count=clips * 2, heat=heat)
     results = []
     for (w_start, w_end) in windows:
         if len(results) >= clips:
@@ -140,8 +172,9 @@ def process(url: str, creator: str, clips: int, campaign: dict | None, do_publis
         render.write_ass(shifted, 1, 1 + end - start, pick["hook"], ass)
         final = OUT / f"{name}.mp4"
         render.render_vertical(str(raw), 1, 1 + end - start, ass, final, credit=campaign.get("credit", "") if campaign else "")
-        tags = " ".join(campaign.get("hashtags", [])) if campaign else ""
-        caption = f"{pick['title']} {tags}".strip()
+        tags = " ".join(f"#{t.lstrip('#')}" for t in campaign.get("hashtags", [])) if campaign else ""
+        # CC BY music must be credited in the post text.
+        caption = f"{pick['title']} {tags}\n{render.MUSIC_CREDIT}".strip()
         entry = {"file": final.name, "creator": creator, "source": vid["url"], "start": start, "end": end,
                  "score": pick["score"], "hook": pick["hook"], "caption": caption,
                  "campaign": campaign.get("campaign_url") if campaign else None,
@@ -170,16 +203,16 @@ def run_auto(do_publish: bool, min_score: int, per_source: int) -> None:
             print("Run budget used up; remaining sources next run.")
             break
         try:
-            vid = latest_video(src["source"])
+            vid = best_video(src["source"], seen)
         except subprocess.CalledProcessError as e:
             print(f"[{src['creator']}] cannot resolve source: {e.stderr[-300:] if e.stderr else e}")
             continue
-        if vid["id"] in seen:
+        if not vid:
             print(f"[{src['creator']}] nothing new")
             continue
-        print(f"[{src['creator']}] new: {vid['title']}")
+        print(f"[{src['creator']}] picked most-viewed new upload: {vid['title']} ({vid['views']} views)")
         try:
-            save(process(vid["url"], src["creator"], per_source, src, do_publish, min_score))
+            save(process(vid["url"], src["creator"], per_source, src, do_publish, min_score, vid=vid))
             seen.add(vid["id"])
         except subprocess.CalledProcessError as e:
             print(f"[{src['creator']}] failed: {e.stderr[-500:] if e.stderr else e}")
