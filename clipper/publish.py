@@ -124,7 +124,7 @@ def instagram(public_url: str | None, caption: str) -> str | None:
 def publish_all(path: Path, title: str, caption: str, public_url: str | None, skip: set[str] | None = None) -> dict:
     results = {}
     for name, fn in (("youtube", lambda: youtube(path, title, caption)),
-                     ("tiktok", lambda: tiktok(path, caption)),
+                     ("tiktok", lambda: tiktok_draft(path) if os.environ.get("TIKTOK_MODE", "draft") == "draft" else tiktok(path, caption)),
                      ("instagram", lambda: instagram(public_url, caption))):
         if skip and name in skip:
             results[name] = "skipped (daily cap)"
