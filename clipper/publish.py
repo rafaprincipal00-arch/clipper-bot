@@ -103,11 +103,14 @@ def instagram(public_url: str | None, caption: str) -> str | None:
     return f"instagram:{pub['id']}"
 
 
-def publish_all(path: Path, title: str, caption: str, public_url: str | None) -> dict:
+def publish_all(path: Path, title: str, caption: str, public_url: str | None, skip: set[str] | None = None) -> dict:
     results = {}
     for name, fn in (("youtube", lambda: youtube(path, title, caption)),
                      ("tiktok", lambda: tiktok(path, caption)),
                      ("instagram", lambda: instagram(public_url, caption))):
+        if skip and name in skip:
+            results[name] = "skipped (daily cap)"
+            continue
         try:
             results[name] = fn() or "skipped (no credentials)"
         except Exception as e:  # one platform failing must not block the others

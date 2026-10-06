@@ -1,24 +1,63 @@
-"""End-to-end run: source URL -> clips -> publish -> manifest.
+"""End-to-end run: viral moment -> short multi-cut edit -> publish -> campaign submit -> manifest.
 
-    python -m clipper.pipeline --url <vod/video url> --creator "Name" --clips 3
-    python -m clipper.pipeline --auto        # every enabled source in config/sources.json
+    python -m clipper.pipeline --auto                 # next best moment of every enabled source
+    python -m clipper.pipeline --url <vod/clip url> --start 1200 --end 1290 --creator "Name"
+
+Only the moment's window (~1-2 min) is downloaded, never the whole VOD; the raw window and every
+intermediate file are deleted as soon as the clip is rendered (see `scratch`).
 """
 import argparse
 import json
 import os
 import re
+import shutil
 import subprocess
 import time
+from contextlib import contextmanager
 from datetime import datetime, timezone
 from pathlib import Path
 
-from . import highlights, publish, render, submit
+from . import highlights, layout, moments, publish, render, submit
 
 ROOT = Path(__file__).resolve().parent.parent
 WORK = ROOT / "work"
 OUT = ROOT / "out"
 MANIFEST = ROOT / "data" / "clips.json"
 SEEN = ROOT / "data" / "seen.json"
+KEEP_FINAL_HOURS = float(os.environ.get("KEEP_FINAL_HOURS", "24"))
+CLIP_GAP_MIN = float(os.environ.get("CLIP_GAP_MIN", "6"))  # one clip every 5-8 min
+# YouTube Data API: 10,000 units/day and an upload costs 1,600 -> 6 uploads/day per project.
+DAILY_CAP = {"youtube": int(os.environ.get("YT_DAILY_MAX", "6")),
+             "tiktok": int(os.environ.get("TIKTOK_DAILY_MAX", "15")),
+             "instagram": int(os.environ.get("IG_DAILY_MAX", "25"))}
+
+
+def capped_platforms() -> set[str]:
+    """Platforms that already got their daily maximum of successful posts in the last 24 h."""
+    if not MANIFEST.exists():
+        return set()
+    since = datetime.now(timezone.utc).timestamp() - 86400
+    counts = dict.fromkeys(DAILY_CAP, 0)
+    for e in json.loads(MANIFEST.read_text(encoding="utf-8")):
+        if datetime.fromisoformat(e["created"]).timestamp() < since:
+            continue
+        for k, v in (e.get("posts") or {}).items():
+            if k in counts and isinstance(v, str) and not v.startswith(("error", "skipped")):
+                counts[k] += 1
+    return {k for k, n in counts.items() if n >= DAILY_CAP[k]}
+
+
+def working_platforms() -> set[str]:
+    """Platforms that posted successfully in the last 3 days (YouTube assumed if none yet).
+    Clips are only worth making while at least one of these still has daily room."""
+    ok = set()
+    if MANIFEST.exists():
+        since = datetime.now(timezone.utc).timestamp() - 3 * 86400
+        for e in json.loads(MANIFEST.read_text(encoding="utf-8")):
+            if datetime.fromisoformat(e["created"]).timestamp() >= since:
+                ok |= {k for k, v in (e.get("posts") or {}).items()
+                       if k in DAILY_CAP and isinstance(v, str) and not v.startswith(("error", "skipped"))}
+    return ok or {"youtube"}
 
 
 def sh(cmd: list[str]) -> str:
@@ -35,94 +74,50 @@ def sh(cmd: list[str]) -> str:
     return p.stdout
 
 
-def normalize_source(source: str) -> str:
-    """Channel pages -> their VOD/upload listings so item 1 is the newest video."""
-    s = source.split("?")[0].rstrip("/")
-    if re.search(r"youtube\.com/(@[^/]+|c/[^/]+|channel/[^/]+)$", s):
-        return s + "/videos"
-    m = re.match(r"https?://(www\.)?twitch\.tv/([^/]+)$", s)
-    if m:
-        return f"https://www.twitch.tv/{m.group(2)}/videos?filter=archives&sort=time"
-    return source
-
-
-def kick_vods(channel: str) -> list[dict]:
-    """yt-dlp's Kick extractor only handles live/VOD URLs, so list VODs via Kick's API."""
-    import urllib.request
-    req = urllib.request.Request(f"https://kick.com/api/v2/channels/{channel}/videos",
-                                 headers={"User-Agent": "Mozilla/5.0 Chrome/130", "Accept": "application/json"})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        vods = json.load(r)
-    return [{"id": v["video"]["uuid"], "url": f"https://kick.com/{channel}/videos/{v['video']['uuid']}",
-             "title": v.get("session_title", ""), "duration": (v.get("duration") or 0) / 1000,
-             "views": v.get("views") or v["video"].get("views") or 0} for v in vods[:RECENT]]
-
-
-RECENT = 8          # look at this many recent uploads per source
-MIN_DURATION = 120  # skip shorts/teasers: nothing to cut from them
-
-
-def recent_videos(source: str) -> list[dict]:
-    """Recent uploads of a channel/VOD page with their view counts."""
-    kick = re.match(r"https?://(www\.)?kick\.com/([^/?]+)/?$", source)
-    if kick:
-        return kick_vods(kick.group(2))
-    raw = sh(["yt-dlp", "--no-warnings", "--flat-playlist", "--playlist-items", f"1-{RECENT}", "-J",
-              normalize_source(source)])
-    data = json.loads(raw)
-    entries = data.get("entries") or [data]
-    return [{"id": e["id"], "url": e.get("url") if str(e.get("url", "")).startswith("http") else e.get("webpage_url") or source,
-             "title": e.get("title", ""), "duration": e.get("duration") or 0, "views": e.get("view_count") or 0}
-            for e in entries if e.get("id")]
-
-
-def best_video(source: str, seen: set[str]) -> dict | None:
-    """The most-viewed recent upload not clipped yet: more views = proven interest = clips travel further."""
-    vids = [v for v in recent_videos(source) if v["id"] not in seen and (not v["duration"] or v["duration"] >= MIN_DURATION)]
-    return max(vids, key=lambda v: v["views"]) if vids else None
-
-
-def most_replayed(url: str) -> list[tuple[float, float, float]]:
-    """YouTube's 'most replayed' heatmap (start, end, intensity 0-1); empty for other platforms."""
-    if "youtube.com" not in url and "youtu.be" not in url:
-        return []
+@contextmanager
+def scratch(name: str):
+    """Per-clip work dir that is ALWAYS deleted (success or failure): the raw, unedited window never stays on disk."""
+    d = WORK / name
+    d.mkdir(parents=True, exist_ok=True)
     try:
-        info = json.loads(sh(["yt-dlp", "--no-warnings", "--skip-download", "-J", url]))
-    except (subprocess.CalledProcessError, ValueError):
-        return []
-    return [(h["start_time"], h["end_time"], h["value"]) for h in info.get("heatmap") or []]
+        yield d
+    finally:
+        shutil.rmtree(d, ignore_errors=True)
 
 
-def latest_video(source: str) -> dict:
-    """A direct video URL resolves to itself; a channel resolves to its newest upload."""
-    vids = recent_videos(source)
-    return vids[0]
+def prune_outputs(max_age_h: float = KEEP_FINAL_HOURS) -> None:
+    """Rendered clips are already on the platforms + GitHub release; keep only the last day locally."""
+    if not OUT.exists():
+        return
+    cutoff = time.time() - max_age_h * 3600
+    for f in OUT.glob("*.mp4"):
+        if f.stat().st_mtime < cutoff:
+            f.unlink(missing_ok=True)
 
 
-def download_audio(url: str, dest: Path) -> Path:
-    sh(["yt-dlp", "--no-warnings", "-f", "ba/b", "-x", "--audio-format", "m4a",
-        "--audio-quality", "5", "-o", str(dest.with_suffix(".%(ext)s")), url])
-    return dest.with_suffix(".m4a")
-
-
-def download_section(url: str, start: float, end: float, dest: Path) -> Path:
-    sh(["yt-dlp", "--no-warnings", "-f", "bv*[height<=1080]+ba/b[height<=1080]/b",
-        "--download-sections", f"*{start:.0f}-{end:.0f}", "--force-keyframes-at-cuts",
+def download_window(url: str, start: float, end: float, dest: Path) -> Path:
+    """Just the moment's window. Clip URLs (Kick HLS / Twitch clip) are short already: take them whole."""
+    sec = [] if start <= 0 and end <= 75 else ["--download-sections", f"*{start:.0f}-{end:.0f}"]
+    sh(["yt-dlp", "--no-warnings", "-f", "bv*[height<=1080]+ba/b[height<=1080]/b", *sec,
         "--merge-output-format", "mp4", "-o", str(dest), url])
     return dest
 
 
-def transcribe(audio: Path, offset: float, length: float) -> list[dict]:
+def transcribe(media: Path) -> list[dict]:
     from faster_whisper import WhisperModel
-    seg_file = audio.with_name(f"{audio.stem}_{int(offset)}.wav")
-    sh(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{offset}", "-t", f"{length}",
-        "-i", str(audio), "-ac", "1", "-ar", "16000", str(seg_file)])
+    wav = media.with_suffix(".wav")
+    sh(["ffmpeg", "-y", "-loglevel", "error", "-i", str(media), "-vn", "-ac", "1", "-ar", "16000", str(wav)])
     model = WhisperModel(os.environ.get("WHISPER_MODEL", "small"), device="cpu", compute_type="int8")
-    segments, _ = model.transcribe(str(seg_file), word_timestamps=True, vad_filter=True)
-    words = [{"word": w.word.strip(), "start": w.start + offset, "end": w.end + offset}
+    segments, _ = model.transcribe(str(wav), word_timestamps=True, vad_filter=True)
+    words = [{"word": w.word.strip(), "start": w.start, "end": w.end}
              for s in segments for w in (s.words or []) if w.word.strip()]
-    seg_file.unlink(missing_ok=True)
+    wav.unlink(missing_ok=True)
     return words
+
+
+def duration(media: Path) -> float:
+    out = sh(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(media)])
+    return float(out.strip() or 0)
 
 
 def slug(s: str) -> str:
@@ -140,59 +135,56 @@ def public_url_for(path: Path) -> str | None:
     return f"https://github.com/{repo}/releases/download/{tag}/{path.name}"
 
 
-def process(url: str, creator: str, clips: int, campaign: dict | None, do_publish: bool, min_score: int,
-            vid: dict | None = None) -> list[dict]:
+def make_clip(moment: dict, creator: str, campaign: dict | None, do_publish: bool, min_score: int) -> dict | None:
+    """One moment -> one published clip. Returns the manifest entry or None if skipped."""
+    t0 = time.time()
     WORK.mkdir(exist_ok=True)
     OUT.mkdir(exist_ok=True)
-    vid = vid or latest_video(url)
-    print(f"Source: {vid['title']} ({vid['duration'] / 60:.0f} min, {vid.get('views', 0)} views) {vid['url']}")
-    audio = download_audio(vid["url"], WORK / slug(vid["id"]))
-    levels = highlights.loudness_per_second(str(audio))
-    heat = most_replayed(vid["url"])
-    if heat:
-        print(f"  using YouTube most-replayed heatmap ({len(heat)} segments)")
-    windows = highlights.peak_windows(levels, count=clips * 2, heat=heat)
-    results = []
-    for (w_start, w_end) in windows:
-        if len(results) >= clips:
-            break
-        words = transcribe(audio, w_start, w_end - w_start)
-        pick = highlights.pick_with_llm(words, creator) or highlights.fallback_pick(words, w_start, w_end)
+    name = f"{slug(creator)}-{slug(moment['id'])}"
+    with scratch(name) as d:
+        raw = download_window(moment["url"], moment["start"], moment["end"], d / "raw.mp4")
+        t_dl = time.time()
+        words = transcribe(raw)
+        length = duration(raw)
         if not words:
-            print(f"  skip {w_start}s: no speech")
-            continue
-        if pick.get("fallback") is None and pick["score"] < min_score:
-            print(f"  skip {w_start}s: score {pick['score']}")
-            continue
-        start, end = float(pick["start"]), float(pick["end"])
-        name = f"{slug(creator)}-{vid['id']}-{int(start)}"
-        raw = download_section(vid["url"], start - 1, end + 1, WORK / f"{name}_raw.mp4")
-        ass = WORK / f"{name}.ass"
-        shifted = [{**w, "start": w["start"] - (start - 1), "end": w["end"] - (start - 1)} for w in words]
-        render.write_ass(shifted, 1, 1 + end - start, pick["hook"], ass)
+            print(f"  skip {moment['id']}: no speech")
+            return None
+        edit = (highlights.pick_edit(words, creator, moment["title"], 0, length)
+                or highlights.fallback_edit(words, 0, length))
+        if not edit.get("fallback") and edit["score"] < min_score:
+            print(f"  skip {moment['id']}: score {edit['score']}")
+            return None
+        segs = edit["segments"]
+        info = layout.analyse(str(raw), segs[0][0], segs[-1][1])
+        ass = d / "captions.ass"
+        render.write_ass(render.remap_words(words, segs), 0, sum(e - s for s, e in segs), edit["hook"], ass)
         final = OUT / f"{name}.mp4"
-        render.render_vertical(str(raw), 1, 1 + end - start, ass, final, credit=campaign.get("credit", "") if campaign else "")
-        tags = " ".join(f"#{t.lstrip('#')}" for t in campaign.get("hashtags", [])) if campaign else ""
-        # CC BY music must be credited in the post text.
-        caption = f"{pick['title']} {tags}\n{render.MUSIC_CREDIT}".strip()
-        entry = {"file": final.name, "creator": creator, "source": vid["url"], "start": start, "end": end,
-                 "score": pick["score"], "hook": pick["hook"], "caption": caption,
-                 "campaign": campaign.get("campaign_url") if campaign else None,
-                 "created": datetime.now(timezone.utc).isoformat(), "posts": {}}
-        public_url = public_url_for(final)  # also feeds the panel's mp4 links
-        if do_publish:
-            entry["posts"] = publish.publish_all(final, pick["title"], caption, public_url)
-            links = [v for v in entry["posts"].values() if isinstance(v, str) and v.startswith("https://")]
-            if links and entry["campaign"]:
-                # Content Rewards only accepts links posted <30 min ago, so submit right away.
-                try:
-                    entry["submission"] = submit.submit(entry["campaign"], links)
-                except Exception as e:  # never lose the publish record over a submit failure
-                    entry["submission"] = {"error": str(e)[:300]}
-                print(f"  submit: {entry['submission']}")
-        results.append(entry)
-        print(f"  clip {final.name}  score={pick['score']}  {pick['hook']}")
-    return results
+        render.render_edit(str(raw), segs, info, ass, final, credit=(campaign or {}).get("credit", ""))
+    # scratch dir (raw window, wav, captions) is gone here; only the edited clip remains.
+    t_render = time.time()
+    tags = " ".join(f"#{t.lstrip('#')}" for t in (campaign or {}).get("hashtags", []))
+    caption = f"{edit['title']} {tags}\n{render.MUSIC_CREDIT}".strip()  # CC BY music must be credited
+    entry = {"file": final.name, "creator": creator, "source": moment["url"], "start": moment["start"] + segs[0][0],
+             "end": moment["start"] + segs[-1][1], "cuts": len(segs), "length": round(sum(e - s for s, e in segs), 1),
+             "layout": info["kind"], "signal": moment["signal"], "score": edit["score"], "hook": edit["hook"],
+             "caption": caption, "campaign": (campaign or {}).get("campaign_url"),
+             "created": datetime.now(timezone.utc).isoformat(), "posts": {}}
+    public_url = public_url_for(final)  # also feeds the panel's mp4 links
+    if do_publish:
+        entry["posts"] = publish.publish_all(final, edit["title"], caption, public_url, skip=capped_platforms())
+        links = [v for v in entry["posts"].values() if isinstance(v, str) and v.startswith("https://")]
+        if links and entry["campaign"]:
+            # Content Rewards only accepts links posted <30 min ago, so submit right away.
+            try:
+                entry["submission"] = submit.submit(entry["campaign"], links)
+            except Exception as e:  # never lose the publish record over a submit failure
+                entry["submission"] = {"error": str(e)[:300]}
+            print(f"  submit: {entry['submission']}")
+    entry["timing_s"] = {"download": round(t_dl - t0), "transcribe+edit+render": round(t_render - t_dl),
+                         "publish+submit": round(time.time() - t_render), "total": round(time.time() - t0)}
+    print(f"  clip {final.name}  {entry['length']}s/{entry['cuts']} cuts/{entry['layout']}  score={edit['score']}"
+          f"  {edit['hook']}  timing={entry['timing_s']}")
+    return entry
 
 
 def save(entries: list[dict]) -> None:
@@ -202,36 +194,61 @@ def save(entries: list[dict]) -> None:
 
 
 def run_auto(do_publish: bool, min_score: int, per_source: int) -> None:
-    sources = json.loads((ROOT / "config" / "sources.json").read_text(encoding="utf-8"))
+    """Round-robin over sources, best unseen moment each, paced to one clip every CLIP_GAP_MIN minutes
+    until the run budget ends (the next scheduled run carries on)."""
+    sources = [s for s in json.loads((ROOT / "config" / "sources.json").read_text(encoding="utf-8")) if s.get("enabled")]
     seen = set(json.loads(SEEN.read_text())) if SEEN.exists() else set()
     budget_s = float(os.environ.get("RUN_BUDGET_MIN", "300")) * 60
     t0 = time.time()
-    for src in [s for s in sources if s.get("enabled")]:
-        if time.time() - t0 > budget_s:
-            print("Run budget used up; remaining sources next run.")
-            break
+    prune_outputs()
+    queues: dict[str, list[dict]] = {}
+    for src in sources:
         try:
-            vid = best_video(src["source"], seen)
-        except subprocess.CalledProcessError as e:
-            print(f"[{src['creator']}] cannot resolve source: {e.stderr[-300:] if e.stderr else e}")
-            continue
-        if not vid:
-            print(f"[{src['creator']}] nothing new")
-            continue
-        print(f"[{src['creator']}] picked most-viewed new upload: {vid['title']} ({vid['views']} views)")
-        try:
-            save(process(vid["url"], src["creator"], per_source, src, do_publish, min_score, vid=vid))
-            seen.add(vid["id"])
-        except subprocess.CalledProcessError as e:
-            print(f"[{src['creator']}] failed: {e.stderr[-500:] if e.stderr else e}")
-        SEEN.write_text(json.dumps(sorted(seen)))
+            queues[src["creator"]] = [m for m in moments.moments_for(src["source"]) if m["id"] not in seen]
+        except (OSError, ValueError, KeyError, subprocess.CalledProcessError) as e:
+            print(f"[{src['creator']}] cannot list moments: {e}")
+            queues[src["creator"]] = []
+        print(f"[{src['creator']}] {len(queues[src['creator']])} new moments")
+    made = dict.fromkeys(queues, 0)
+    last_clip = 0.0
+    while time.time() - t0 < budget_s:
+        progressed = False
+        for src in sources:
+            q = queues[src["creator"]]
+            if not q or made[src["creator"]] >= per_source or time.time() - t0 > budget_s:
+                continue
+            if do_publish and capped_platforms() >= working_platforms():
+                print("Every working platform hit its daily cap; stopping.")
+                return
+            wait = CLIP_GAP_MIN * 60 - (time.time() - last_clip)
+            if do_publish and last_clip and wait > 0:
+                time.sleep(wait)
+            m = q.pop(0)
+            progressed = True
+            print(f"[{src['creator']}] {m['signal']} {m['views']} views: {m['title'][:60]}")
+            seen.add(m["id"])  # mark even on failure so a broken moment is not retried forever
+            try:
+                entry = make_clip(m, src["creator"], src, do_publish, min_score)
+            except subprocess.CalledProcessError as e:
+                print(f"  failed: {(e.stderr or str(e))[-400:]}")
+                entry = None
+            SEEN.write_text(json.dumps(sorted(seen)))
+            if entry:
+                save([entry])
+                made[src["creator"]] += 1
+                last_clip = time.time()
+        if not progressed:
+            print("No moments left this run.")
+            return
 
 
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--url")
+    ap.add_argument("--start", type=float, default=0)
+    ap.add_argument("--end", type=float, default=0)
     ap.add_argument("--creator", default="creator")
-    ap.add_argument("--clips", type=int, default=3)
+    ap.add_argument("--clips", type=int, default=1, help="clips per source per run")
     ap.add_argument("--auto", action="store_true")
     ap.add_argument("--publish", action="store_true")
     ap.add_argument("--min-score", type=int, default=55)
@@ -239,7 +256,11 @@ def main() -> None:
     if a.auto:
         run_auto(a.publish, a.min_score, a.clips)
     elif a.url:
-        save(process(a.url, a.creator, a.clips, None, a.publish, a.min_score))
+        m = {"id": f"manual-{int(time.time())}", "url": a.url, "start": a.start, "end": a.end or a.start + 90,
+             "views": 0, "title": "", "signal": "manual"}
+        entry = make_clip(m, a.creator, None, a.publish, a.min_score)
+        if entry:
+            save([entry])
     else:
         ap.error("--url or --auto")
 

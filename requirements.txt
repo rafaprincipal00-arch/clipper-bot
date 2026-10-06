@@ -1,2 +1,4 @@
 faster-whisper==1.2.1
 yt-dlp==2026.8.19
+opencv-python-headless==5.0.0.93
+playwright==1.63.0

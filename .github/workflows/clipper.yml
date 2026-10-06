@@ -2,7 +2,7 @@ name: clipper
 
 on:
   schedule:
-    - cron: "17 */6 * * *"   # every 6 h: discover campaigns + clip new VODs
+    - cron: "17 */6 * * *"   # every 6 h: a paced run (1 clip / ~6 min) until caps or moments run out
   workflow_dispatch:
     inputs:
       url:
@@ -12,10 +12,14 @@ on:
         description: "Creator name for the manual URL"
         required: false
         default: "creator"
-      clips:
-        description: "Clips per source"
+      start:
+        description: "Manual URL: window start (s)"
         required: false
-        default: "3"
+        default: "0"
+      end:
+        description: "Manual URL: window end (s)"
+        required: false
+        default: "0"
       publish:
         description: "Publish to connected platforms"
         type: boolean
@@ -58,7 +62,7 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg fonts-noto-core > /dev/null
           # Arial Black is not on Linux; libass falls back to the closest bold sans.
-      - run: pip install -r requirements.txt playwright && python -m playwright install --with-deps chromium-headless-shell > /dev/null
+      - run: pip install -r requirements.txt && python -m playwright install --with-deps chromium-headless-shell > /dev/null
       - name: Discover top campaigns
         run: python -m clipper.discover data/campaigns.json
       - name: Clip
@@ -66,9 +70,9 @@ jobs:
           PUB=""
           if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ inputs.publish }}" = "true" ]; then PUB="--publish"; fi
           if [ -n "${{ inputs.url }}" ]; then
-            python -m clipper.pipeline --url "${{ inputs.url }}" --creator "${{ inputs.creator }}" --clips "${{ inputs.clips || 3 }}" $PUB
+            python -m clipper.pipeline --url "${{ inputs.url }}" --creator "${{ inputs.creator }}" --start "${{ inputs.start }}" --end "${{ inputs.end }}" $PUB
           else
-            python -m clipper.pipeline --auto --clips 2 $PUB
+            python -m clipper.pipeline --auto --clips 10 $PUB
           fi
       - name: Rotate TikTok refresh token
         if: always()
@@ -77,6 +81,9 @@ jobs:
             echo "TikTok issued a new refresh token; update the TIKTOK_REFRESH_TOKEN secret (see README)."
             rm tiktok_refresh_token.new
           fi
+      - name: Delete raw windows
+        if: always()
+        run: rm -rf work   # unedited source never outlives the run
       - name: Upload clips as artifact
         if: always()
         uses: actions/upload-artifact@v4

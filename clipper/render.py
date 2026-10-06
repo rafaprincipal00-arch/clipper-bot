@@ -74,37 +74,57 @@ def pick_music(seed: str) -> Path | None:
     return random.Random(seed).choice(tracks) if tracks else None
 
 
-def render_vertical(src: str, start: float, end: float, ass: Path, out: Path, credit: str = "") -> None:
-    """Blurred background + sharpened, graded 16:9 source + captions + music ducked under the voice."""
+def remap_words(words: list[dict], segments: list[tuple[float, float]]) -> list[dict]:
+    """Source-time words -> edited-timeline words (words in cut-out parts are dropped)."""
+    out, acc = [], 0.0
+    for s, e in segments:
+        for w in words:
+            if s <= w["start"] < e:
+                out.append({**w, "start": w["start"] - s + acc, "end": min(w["end"], e) - s + acc})
+        acc += e - s
+    return out
+
+
+ZOOM = 1.12  # punch-in on every other cut hides the jump, like hand-edited clips
+
+
+def render_edit(src: str, segments: list[tuple[float, float]], info: dict, ass: Path, out: Path,
+                credit: str = "") -> None:
+    """Cut `segments` out of `src`, frame each for 9:16 (layout `info`), alternate punch-in zoom on the
+    cuts, then burn captions, add a fade-in and the ducked music bed. One ffmpeg pass."""
+    from . import layout
+
+    n = len(segments)
+    g = [f"[0:v]split={n}" + "".join(f"[r{i}]" for i in range(n)) if n > 1 else "[0:v]null[r0]",
+         f"[0:a]asplit={n}" + "".join(f"[q{i}]" for i in range(n)) if n > 1 else "[0:a]anull[q0]"]
+    for i, (s, e) in enumerate(segments):
+        g.append(f"[r{i}]trim={s:.3f}:{e:.3f},setpts=PTS-STARTPTS[t{i}]")
+        g.append(layout.filtergraph(info, f"[t{i}]", f"[l{i}]", t_off=s, sfx=str(i)))
+        if i % 2:
+            g.append(f"[l{i}]scale={int(1080 * ZOOM) // 2 * 2}:{int(1920 * ZOOM) // 2 * 2}:flags=lanczos,"
+                     f"crop=1080:1920,setsar=1[z{i}]")
+        else:
+            g.append(f"[l{i}]setsar=1[z{i}]")
+        g.append(f"[q{i}]atrim={s:.3f}:{e:.3f},asetpts=PTS-STARTPTS,afade=t=in:d=0.02[p{i}]")
+    g.append("".join(f"[z{i}][p{i}]" for i in range(n)) + f"concat=n={n}:v=1:a=1[vc][ac]")
     credit_f = ""
     if credit:
         safe = credit.replace(":", "\\:").replace("'", "")
         credit_f = (f",drawtext=fontfile='{_rel(FONT_FILE)}':text='{safe}':fontcolor=white@0.9:fontsize=38"
                     ":x=(w-tw)/2:y=h-190:box=1:boxcolor=black@0.4:boxborderw=14")
-    vf = (
-        "[0:v]split=2[a][b];"
-        "[a]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=28:2,eq=brightness=-0.12:saturation=1.3[bg];"
-        # Slight centre crop = tighter framing; lanczos + unsharp + grade = crisp, punchy look.
-        "[b]crop=iw*0.86:ih*0.86,scale=1080:-2:flags=lanczos,unsharp=5:5:0.9:3:3:0.3,"
-        "eq=contrast=1.07:saturation=1.22:gamma=0.98[fg];"
-        f"[bg][fg]overlay=(W-w)/2:(H-h)/2-60,"
-        f"subtitles='{_rel(ass)}':fontsdir='{_rel(FONTS)}'{credit_f},"
-        "fade=in:st=0:d=0.12:color=white[v]"
-    )
+    g.append(f"[vc]subtitles='{_rel(ass)}':fontsdir='{_rel(FONTS)}'{credit_f},fade=in:st=0:d=0.12:color=white[v]")
     music = pick_music(out.stem)
-    cmd = ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error",
-           "-ss", f"{start:.2f}", "-to", f"{end:.2f}", "-i", src]
+    cmd = ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", src]
     if music:
         cmd += ["-stream_loop", "-1", "-i", _rel(music)]
-        af = (";[0:a]aresample=48000,asplit=2[voice][key];"
-              "[1:a]aresample=48000,volume=0.22[bgm];"
-              "[bgm][key]sidechaincompress=threshold=0.04:ratio=10:attack=15:release=350[duck];"
-              "[voice][duck]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11[aout]")
-        maps = ["-map", "[v]", "-map", "[aout]"]
+        g.append("[ac]aresample=48000,asplit=2[voice][key]")
+        g.append("[1:a]aresample=48000,volume=0.22[bgm]")
+        g.append("[bgm][key]sidechaincompress=threshold=0.04:ratio=10:attack=15:release=350[duck]")
+        g.append("[voice][duck]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11[aout]")
     else:
-        af = ";[0:a]loudnorm=I=-14:TP=-1.5:LRA=11[aout]"
-        maps = ["-map", "[v]", "-map", "[aout]"]
-    cmd += ["-filter_complex", vf + af, *maps, "-shortest",
-            "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p", "-r", "30",
+        g.append("[ac]loudnorm=I=-14:TP=-1.5:LRA=11[aout]")
+    cmd += ["-filter_complex", ";".join(g), "-map", "[v]", "-map", "[aout]", "-shortest",
+            "-c:v", "libx264", "-preset", "veryfast", "-crf", "19", "-pix_fmt", "yuv420p", "-r", "30",
             "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", str(out.resolve())]
     subprocess.run(cmd, check=True, cwd=ROOT)
+
