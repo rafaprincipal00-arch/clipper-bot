@@ -6,6 +6,7 @@ pipeline works before every account is connected.
 import json
 import os
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -13,9 +14,13 @@ from pathlib import Path
 
 def _req(url: str, data: bytes | None = None, headers: dict | None = None, method: str | None = None) -> dict:
     req = urllib.request.Request(url, data=data, headers=headers or {}, method=method)
-    with urllib.request.urlopen(req, timeout=300) as r:
-        body = r.read()
-        return json.loads(body) if body else {"_headers": dict(r.headers)}
+    try:
+        with urllib.request.urlopen(req, timeout=300) as r:
+            body = r.read()
+            return json.loads(body) if body else {"_headers": dict(r.headers)}
+    except urllib.error.HTTPError as e:
+        # The API's JSON body says *why* (e.g. TikTok's unaudited_client_can_only_post_to_private_accounts).
+        raise RuntimeError(f"HTTP {e.code}: {e.read()[:400].decode(errors='ignore')}") from None
 
 
 def _form(d: dict) -> bytes:
