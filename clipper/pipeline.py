@@ -13,6 +13,7 @@ import re
 import shutil
 import subprocess
 import time
+import zlib
 from contextlib import contextmanager
 from datetime import datetime, timezone
 from pathlib import Path
@@ -155,18 +156,22 @@ def make_clip(moment: dict, creator: str, campaign: dict | None, do_publish: boo
             print(f"  skip {moment['id']}: score {edit['score']}")
             return None
         segs = edit["segments"]
-        info = layout.analyse(str(raw), segs[0][0], segs[-1][1])
+        info = layout.analyse(str(raw), min(s for s, _ in segs), max(e for _, e in segs))
+        # A/B test: alternate blurred-horizontal and full-vertical framing (stable per clip name).
+        style = "blur" if zlib.crc32(name.encode()) % 2 else "vertical"
+        mood = edit.get("mood") if edit.get("mood") in render.MOODS else "funny"
         ass = d / "captions.ass"
         render.write_ass(render.remap_words(words, segs), 0, sum(e - s for s, e in segs), edit["hook"], ass)
         final = OUT / f"{name}.mp4"
-        render.render_edit(str(raw), segs, info, ass, final, credit=(campaign or {}).get("credit", ""))
+        render.render_edit(str(raw), segs, info, ass, final, credit=(campaign or {}).get("credit", ""),
+                           mood=mood, style=style)
     # scratch dir (raw window, wav, captions) is gone here; only the edited clip remains.
     t_render = time.time()
     tags = " ".join(f"#{t.lstrip('#')}" for t in (campaign or {}).get("hashtags", []))
     caption = f"{edit['title']} {tags}\n{render.MUSIC_CREDIT}".strip()  # CC BY music must be credited
     entry = {"file": final.name, "creator": creator, "source": moment["url"], "start": moment["start"] + segs[0][0],
              "end": moment["start"] + segs[-1][1], "cuts": len(segs), "length": round(sum(e - s for s, e in segs), 1),
-             "layout": info["kind"], "signal": moment["signal"], "score": edit["score"], "hook": edit["hook"],
+             "layout": info["kind"], "style": style, "mood": mood, "signal": moment["signal"], "score": edit["score"], "hook": edit["hook"],
              "caption": caption, "campaign": (campaign or {}).get("campaign_url"),
              "created": datetime.now(timezone.utc).isoformat(), "posts": {}}
     public_url = public_url_for(final)  # also feeds the panel's mp4 links
@@ -182,7 +187,7 @@ def make_clip(moment: dict, creator: str, campaign: dict | None, do_publish: boo
             print(f"  submit: {entry['submission']}")
     entry["timing_s"] = {"download": round(t_dl - t0), "transcribe+edit+render": round(t_render - t_dl),
                          "publish+submit": round(time.time() - t_render), "total": round(time.time() - t0)}
-    print(f"  clip {final.name}  {entry['length']}s/{entry['cuts']} cuts/{entry['layout']}  score={edit['score']}"
+    print(f"  clip {final.name}  {entry['length']}s/{entry['cuts']} cuts/{style}/{info['kind']}/{mood}  score={edit['score']}"
           f"  {edit['hook']}  timing={entry['timing_s']}")
     return entry
 

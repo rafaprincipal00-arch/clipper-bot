@@ -9,16 +9,19 @@ EDIT_PROMPT = """You are a top short-form editor (TikTok / YouTube Shorts / Reel
 Viewers marked this moment as viral: "{title}". Below is the word-timestamped transcript (seconds) of the
 source window around it.
 
-Build a {min_len}-{max_len} second edit (HARD max {max_len}s total) from several kept segments:
-- Open on the strongest line or reaction (the hook) — it may come from later in the window; then the set-up
-  needed to understand it, then the payoff. Keep chronological order unless opening on the hook.
-- Use many cuts: drop filler ("uh", "like", repeats), dead air, side-tangents and chat-reading that adds nothing.
+Build a fast, dopamine-heavy edit of AT MOST {max_len} seconds total (shorter is fine if the moment is complete;
+aim for {min_len}-{max_len}s) from many kept segments:
+- Second 0 is the hook: the strongest line or reaction, even if it comes later in the window. Then only the
+  set-up needed to understand it, then the payoff. Keep chronological order apart from that opening hook.
+- Cut hard and often: a new cut every 2-5 seconds is ideal. Drop filler ("uh", "like", "you know"), repeats,
+  every pause, side-tangents and chat-reading that adds nothing. Long moments must be compressed, not truncated.
 - NEVER cut mid-word or mid-sentence and never remove context the payoff depends on.
-- Segments must use the transcript's timestamps, each at least 1.2 s long.
+- Segments must use the transcript's timestamps, each at least 1.0 s long.
 Score viral potential 0-100 (be harsh: boring = under 40).
+Pick the music mood of the moment: one of funny, awkward, sus, chaos, drama, hype, chill.
 Hook and title must be brand-safe: no slurs or profanity (campaigns auto-reject them).
-Reply ONLY with JSON: {{"segments": [[start, end], ...], "score": int, "hook": "max 6 words, caps ok",
-"title": "post caption under 90 chars, no hashtags"}}
+Reply ONLY with JSON: {{"segments": [[start, end], ...], "score": int, "mood": "funny",
+"hook": "max 6 words, caps ok", "title": "post caption under 90 chars, no hashtags"}}
 
 Transcript:
 {transcript}"""
@@ -96,8 +99,22 @@ def clean_segments(raw: list, words: list[dict], lo: float, hi: float, max_len: 
     return out
 
 
+MIN_TOTAL = 15.0  # below this a clip has no context (happens on gameplay with little speech)
+
+
+def ensure_min(segs: list[tuple[float, float]], lo: float, hi: float, min_total: float = MIN_TOTAL,
+               max_len: float = 40) -> list[tuple[float, float]]:
+    """Too little kept? Use one continuous stretch around the chosen action instead (the visuals carry it)."""
+    if sum(e - s for s, e in segs) >= min_total or hi - lo <= 0:
+        return segs
+    mid = (segs[0][0] + segs[-1][1]) / 2 if segs else (lo + hi) / 2
+    span = min(max(min_total + 5, 20.0), max_len, hi - lo)
+    s = min(max(lo, mid - span / 2), hi - span)
+    return [(s, s + span)]
+
+
 def pick_edit(words: list[dict], creator: str, title: str, lo: float, hi: float,
-              min_len: int = 22, max_len: int = 44) -> dict | None:
+              min_len: int = 20, max_len: int = 40) -> dict | None:
     if not words:
         return None
     res = _gemini_json(EDIT_PROMPT.format(creator=creator, title=title, min_len=min_len, max_len=max_len,
@@ -105,22 +122,14 @@ def pick_edit(words: list[dict], creator: str, title: str, lo: float, hi: float,
     if not res:
         return None
     segs = clean_segments(res.get("segments"), words, lo, hi, max_len)
-    total = sum(e - s for s, e in segs)
-    if total < min_len:
-        # Too short to hold context: widen with the speech around the chosen cuts.
-        fb = fallback_edit(words, lo, hi, max_len)["segments"]
-        if sum(e - s for s, e in fb) > total:
-            segs = fb
-    if sum(e - s for s, e in segs) < 8:
-        return None
-    return {**res, "segments": segs}
+    return {**res, "segments": ensure_min(segs, lo, hi, max_len=max_len)}
 
 
-def fallback_edit(words: list[dict], lo: float, hi: float, max_len: int = 44) -> dict:
-    """No LLM: keep speech, drop pauses > 0.7 s, capped at max_len."""
+def fallback_edit(words: list[dict], lo: float, hi: float, max_len: int = 40) -> dict:
+    """No LLM: keep speech, cut every pause > 0.35 s (jump cuts), capped at max_len."""
     raw, cur = [], None
     for w in words:
-        if cur and w["start"] - cur[1] <= 0.7:
+        if cur and w["start"] - cur[1] <= 0.35:
             cur[1] = w["end"]
         else:
             if cur:
@@ -128,8 +137,8 @@ def fallback_edit(words: list[dict], lo: float, hi: float, max_len: int = 44) ->
             cur = [w["start"], w["end"]]
     if cur:
         raw.append(cur)
-    segs = clean_segments(raw, words, lo, hi, max_len) or [(lo, min(hi, lo + max_len))]
+    segs = ensure_min(clean_segments(raw, words, lo, hi, max_len), lo, hi, max_len=max_len)
     inside = [w["word"] for w in words if segs[0][0] <= w["start"]]
     return {"segments": segs, "score": 50, "hook": " ".join(inside[:5]).upper() or "WAIT FOR IT",
-            "title": " ".join(inside[:14]), "fallback": True}
+            "title": " ".join(inside[:14]), "mood": "funny", "fallback": True}
 

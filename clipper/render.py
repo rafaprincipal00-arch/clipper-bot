@@ -69,8 +69,22 @@ def _rel(p: Path) -> str:
         return p.as_posix().replace(":", "\\:")
 
 
-def pick_music(seed: str) -> Path | None:
-    tracks = sorted(MUSIC.glob("*.m4a"))
+MOODS = {
+    "funny": ["Sneaky_Snitch", "Monkeys_Spinning_Monkeys", "Fluffing_a_Duck", "Pixel_Peeker_Polka_faster",
+              "Spazzmatica_Polka", "The_Show_Must_Be_Go"],
+    "awkward": ["Local_Forecast_Elevator", "Hep_Cats"],
+    "sus": ["Scheming_Weasel_faster", "Investigations"],
+    "chaos": ["Run_Amok"],
+    "drama": ["Hitman", "Five_Armies"],
+    "hype": ["Volatile_Reaction", "Voxel_Revolution"],
+    "chill": ["Itty_Bitty_8_Bit"],
+}
+
+
+def pick_music(seed: str, mood: str = "funny") -> Path | None:
+    """A recognisable meme bed matching the clip's mood (picked by the LLM), falling back to any track."""
+    names = MOODS.get(mood) or MOODS["funny"]
+    tracks = [MUSIC / f"{n}.m4a" for n in names if (MUSIC / f"{n}.m4a").exists()] or sorted(MUSIC.glob("*.m4a"))
     return random.Random(seed).choice(tracks) if tracks else None
 
 
@@ -89,7 +103,7 @@ ZOOM = 1.12  # punch-in on every other cut hides the jump, like hand-edited clip
 
 
 def render_edit(src: str, segments: list[tuple[float, float]], info: dict, ass: Path, out: Path,
-                credit: str = "") -> None:
+                credit: str = "", mood: str = "funny", style: str = "vertical") -> None:
     """Cut `segments` out of `src`, frame each for 9:16 (layout `info`), alternate punch-in zoom on the
     cuts, then burn captions, add a fade-in and the ducked music bed. One ffmpeg pass."""
     from . import layout
@@ -99,7 +113,7 @@ def render_edit(src: str, segments: list[tuple[float, float]], info: dict, ass: 
          f"[0:a]asplit={n}" + "".join(f"[q{i}]" for i in range(n)) if n > 1 else "[0:a]anull[q0]"]
     for i, (s, e) in enumerate(segments):
         g.append(f"[r{i}]trim={s:.3f}:{e:.3f},setpts=PTS-STARTPTS[t{i}]")
-        g.append(layout.filtergraph(info, f"[t{i}]", f"[l{i}]", t_off=s, sfx=str(i)))
+        g.append(layout.filtergraph(info, f"[t{i}]", f"[l{i}]", t_off=s, t_end=e, sfx=str(i), style=style))
         if i % 2:
             g.append(f"[l{i}]scale={int(1080 * ZOOM) // 2 * 2}:{int(1920 * ZOOM) // 2 * 2}:flags=lanczos,"
                      f"crop=1080:1920,setsar=1[z{i}]")
@@ -113,7 +127,7 @@ def render_edit(src: str, segments: list[tuple[float, float]], info: dict, ass: 
         credit_f = (f",drawtext=fontfile='{_rel(FONT_FILE)}':text='{safe}':fontcolor=white@0.9:fontsize=38"
                     ":x=(w-tw)/2:y=h-190:box=1:boxcolor=black@0.4:boxborderw=14")
     g.append(f"[vc]subtitles='{_rel(ass)}':fontsdir='{_rel(FONTS)}'{credit_f},fade=in:st=0:d=0.12:color=white[v]")
-    music = pick_music(out.stem)
+    music = pick_music(out.stem, mood)
     cmd = ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", src]
     if music:
         cmd += ["-stream_loop", "-1", "-i", _rel(music)]
