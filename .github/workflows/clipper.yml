@@ -97,6 +97,4 @@ jobs:
         run: |
           git config user.name "clipper-bot"
           git config user.email "clipper-bot@users.noreply.github.com"
-          git add data/ config/sources.json
-          git diff --cached --quiet || git commit -m "bot: update clips/campaigns [skip ci]"
-          git pull --rebase -q && git push -q
+          python scripts/commit_data.py

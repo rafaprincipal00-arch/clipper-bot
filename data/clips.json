@@ -1,5 +1,32 @@
 [
  {
+  "file": "tjr-kc-clip-01m3vmxaven5zgeh5esv3yzrrw.mp4",
+  "creator": "TJR",
+  "source": "https://clips.kick.com/clips/e6/clip_01M3VMXAVEN5ZGEH5ESV3YZRRW/playlist.m3u8",
+  "start": 0,
+  "end": 13,
+  "cuts": 3,
+  "length": 13.0,
+  "layout": "face",
+  "signal": "kick-clip",
+  "score": 85,
+  "hook": "MODS BAN THAT GUY",
+  "caption": "",
+  "campaign": "https://contentrewards.com/discover/70baf344-d80f-4ba2-910a-10340f2ea591",
+  "created": "2026-10-06T10:31:30+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/LMfF-6HKEXQ",
+   "tiktok": "error: unaudited_client_can_only_post_to_private_accounts",
+   "instagram": "skipped (no credentials)"
+  },
+  "submission": {
+   "submitted": [
+    "https://youtube.com/shorts/LMfF-6HKEXQ"
+   ],
+   "rejected": {}
+  }
+ },
+ {
   "file": "tjr-5ecc2a80-3e78-4658-87ba-b544078d976f-370.mp4",
   "creator": "TJR",
   "source": "https://kick.com/tjr/videos/5ecc2a80-3e78-4658-87ba-b544078d976f",
