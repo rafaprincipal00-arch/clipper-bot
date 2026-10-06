@@ -158,5 +158,27 @@
   "credit": "@ryanzofay",
   "why": "Podcast/charlas, 2,5k$ libres, 37 clippers; sustituye a HardScope (cerrada)",
   "join_status": "unido"
+ },
+ {
+  "creator": "Michael Sartain's Clipper Army",
+  "source": "https://www.youtube.com/@MichaelSartain",
+  "campaign": "Michael Sartain's Clipping Army",
+  "campaign_url": "https://contentrewards.com/discover/86842687-ba2b-4638-a024-995dcf3d25a3",
+  "cpm": 2.0,
+  "enabled": false,
+  "hashtags": [],
+  "credit": "",
+  "requirements": "Include demographic information"
+ },
+ {
+  "creator": "Reach",
+  "source": "https://www.youtube.com/@TJRTrades",
+  "campaign": "TJR $23,100 Weekly Clipping Campaign",
+  "campaign_url": "https://contentrewards.com/discover/70baf344-d80f-4ba2-910a-10340f2ea591",
+  "cpm": 0.75,
+  "enabled": false,
+  "hashtags": [],
+  "credit": "",
+  "requirements": ""
  }
 ]
