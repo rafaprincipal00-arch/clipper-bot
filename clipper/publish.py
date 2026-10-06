@@ -30,9 +30,14 @@ def _form(d: dict) -> bytes:
 
 # ---------------- YouTube ----------------
 def youtube(path: Path, title: str, description: str) -> str | None:
-    cid, secret, refresh = (os.environ.get(k) for k in ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN"))
-    if not (cid and secret and refresh):
+    """Channels (YT_REFRESH_TOKEN, _2, _3...) take turns by clip name, like the TikTok accounts.
+    The upload quota belongs to the Google Cloud project, so it is shared by every channel."""
+    cid, secret = os.environ.get("YT_CLIENT_ID"), os.environ.get("YT_CLIENT_SECRET")
+    keys = ["YT_REFRESH_TOKEN"] + [f"YT_REFRESH_TOKEN_{i}" for i in range(2, 6)]
+    tokens = [os.environ[k] for k in keys if os.environ.get(k)]
+    if not (cid and secret and tokens):
         return None
+    refresh = tokens[zlib.crc32(path.stem.encode()) % len(tokens)]
     tok = _req("https://oauth2.googleapis.com/token", _form({
         "client_id": cid, "client_secret": secret, "refresh_token": refresh, "grant_type": "refresh_token"}))["access_token"]
     meta = {
