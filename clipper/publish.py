@@ -9,6 +9,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+import zlib
 from pathlib import Path
 
 
@@ -51,10 +52,20 @@ def youtube(path: Path, title: str, description: str) -> str | None:
 
 
 # ---------------- TikTok ----------------
-def _tiktok_token() -> str | None:
-    key, secret, refresh = (os.environ.get(k) for k in ("TIKTOK_CLIENT_KEY", "TIKTOK_CLIENT_SECRET", "TIKTOK_REFRESH_TOKEN"))
-    if not (key and secret and refresh):
+def _tiktok_refresh_tokens() -> list[str]:
+    """TIKTOK_REFRESH_TOKEN, TIKTOK_REFRESH_TOKEN_2, _3... one per connected TikTok account."""
+    keys = ["TIKTOK_REFRESH_TOKEN"] + [f"TIKTOK_REFRESH_TOKEN_{i}" for i in range(2, 6)]
+    return [os.environ[k] for k in keys if os.environ.get(k)]
+
+
+def _tiktok_token(account: str = "") -> str | None:
+    """Access token for the account that gets this clip: accounts take turns by clip name, so each
+    account posts different clips (identical uploads across accounts get flagged as duplicates)."""
+    key, secret = os.environ.get("TIKTOK_CLIENT_KEY"), os.environ.get("TIKTOK_CLIENT_SECRET")
+    tokens = _tiktok_refresh_tokens()
+    if not (key and secret and tokens):
         return None
+    refresh = tokens[zlib.crc32(account.encode()) % len(tokens)]
     res = _req("https://open.tiktokapis.com/v2/oauth/token/", _form({
         "client_key": key, "client_secret": secret, "grant_type": "refresh_token", "refresh_token": refresh}),
         {"Content-Type": "application/x-www-form-urlencoded"})
@@ -64,7 +75,7 @@ def _tiktok_token() -> str | None:
 
 
 def tiktok(path: Path, caption: str) -> str | None:
-    tok = _tiktok_token()
+    tok = _tiktok_token(path.name)
     if not tok:
         return None
     auth = {"Authorization": f"Bearer {tok}", "Content-Type": "application/json; charset=UTF-8"}
@@ -88,7 +99,7 @@ def tiktok_draft(path: Path) -> str | None:
     """Upload to the creator's TikTok inbox as a draft (video.upload scope, works without the app audit).
     The creator gets a notification, adds a trending sound from TikTok's licensed library and posts it
     publicly from the app."""
-    tok = _tiktok_token()
+    tok = _tiktok_token(path.name)
     if not tok:
         return None
     auth = {"Authorization": f"Bearer {tok}", "Content-Type": "application/json; charset=UTF-8"}

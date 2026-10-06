@@ -29,7 +29,7 @@ KEEP_FINAL_HOURS = float(os.environ.get("KEEP_FINAL_HOURS", "24"))
 CLIP_GAP_MIN = float(os.environ.get("CLIP_GAP_MIN", "6"))  # one clip every 5-8 min
 # YouTube Data API: 10,000 units/day and an upload costs 1,600 -> 6 uploads/day per project.
 DAILY_CAP = {"youtube": int(os.environ.get("YT_DAILY_MAX", "6")),
-             "tiktok": int(os.environ.get("TIKTOK_DAILY_MAX", "15")),
+             "tiktok": int(os.environ.get("TIKTOK_DAILY_MAX", "8")),
              "instagram": int(os.environ.get("IG_DAILY_MAX", "25"))}
 
 
