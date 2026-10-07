@@ -21,7 +21,7 @@ BRAVE = r"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"
 UPLOAD = "https://www.tiktok.com/tiktokstudio/upload"
 HANDLES = {1: "pepe854146", 2: "streammoments.daily", 3: "rafael.benitez656"}
 # Gmail used with "Continuar con Google" for each account (all already signed in to Brave).
-GMAILS = {1: "pepetiktok00.4@gmail.com", 2: "pepetiktok00.2@gmail.com", 3: None}
+GMAILS = {1: "pepetiktok00.4@gmail.com", 2: "pepetiktok00.2@gmail.com", 3: "rafacryptoairdrops@gmail.com"}
 # Songs from assets/music/WISHLIST.md, added from TikTok's own library (licensed there, never embedded).
 SONGS = {
     "hype": [("PASSO BEM SOLTO", "ATLXS"), ("FUNK ABNORMAL", "DJ V12"), ("HOTEL LOBBY", "Quavo")],
