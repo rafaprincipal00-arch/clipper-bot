@@ -15,6 +15,7 @@ import random
 import subprocess
 import sys
 import time
+import traceback
 import urllib.error
 import urllib.request
 from datetime import datetime, timedelta
@@ -153,6 +154,7 @@ def do_item(plan: dict, item: dict) -> None:
         if item["status"] == "pending":
             item["at"] = (datetime.now() + timedelta(minutes=20)).isoformat(timespec="seconds")
         log(f"FAILED {item['file']} (try {item['tries']}): {e}")
+        log("  " + traceback.format_exc().strip().replace("\n", "\n  ")[-1500:])
     save_plan(plan)
 
 

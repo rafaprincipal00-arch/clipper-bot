@@ -100,6 +100,8 @@ class Brave:
         return res[0]
 
     def click(self, c=None, x: int | None = None, y: int | None = None) -> None:
+        if c is None and (x is None or y is None):
+            raise RuntimeError(f"element to click not found (page: {self.url()[:80]})")
         if c is not None:
             r = c.BoundingRectangle
             x, y = (r.left + r.right) // 2, (r.top + r.bottom) // 2
