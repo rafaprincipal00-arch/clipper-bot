@@ -1,5 +1,215 @@
 [
  {
+  "file": "lanah-cherry-twitch-tw-2893163336-1972.mp4",
+  "creator": "Lanah Cherry (Twitch)",
+  "source": "https://www.twitch.tv/videos/2893163336",
+  "start": 1957.6,
+  "end": 2019.32,
+  "cuts": 11,
+  "length": 28.0,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "Why is she even famous?",
+  "caption": "When you finally find out why someone is famous and it ruins a relationship #twitch #streamer #irl\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "When you finally find out why someone is famous and it ruins a relationship",
+  "campaign": "https://contentrewards.com/discover/6e379737-96ef-4980-8565-08df4e6d39d9",
+  "created": "2026-10-07T13:16:29.851706+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lanah-cherry-twitch-tw-2893163336-1972.mp4",
+  "account": 3,
+  "timing_s": {
+   "download": 2,
+   "transcribe+edit+render": 166,
+   "publish+submit": 2,
+   "total": 170
+  }
+ },
+ {
+  "file": "lanah-cherry-twitch-tw-2883285366-2487.mp4",
+  "creator": "Lanah Cherry (Twitch)",
+  "source": "https://www.twitch.tv/videos/2883285366",
+  "start": 2470.22,
+  "end": 2505.52,
+  "cuts": 9,
+  "length": 22.1,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "FIT CHECK GONE WRONG",
+  "caption": "Doing a fit check went completely off the rails #twitch #streamer #irl\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Doing a fit check went completely off the rails",
+  "campaign": "https://contentrewards.com/discover/6e379737-96ef-4980-8565-08df4e6d39d9",
+  "created": "2026-10-07T13:05:05.529037+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lanah-cherry-twitch-tw-2883285366-2487.mp4",
+  "account": 2,
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 131,
+   "publish+submit": 3,
+   "total": 138
+  }
+ },
+ {
+  "file": "tjr-kc-clip-01m3vy7ptxnkp69km56ykdty1e.mp4",
+  "creator": "TJR",
+  "source": "https://clips.kick.com/clips/99/clip_01M3VY7PTXNKP69KM56YKDTY1E/playlist.m3u8",
+  "start": 17.110000000000003,
+  "end": 80.38,
+  "cuts": 13,
+  "length": 34.6,
+  "layout": "face",
+  "style": "blur",
+  "mood": "hype",
+  "signal": "kick-clip",
+  "score": 75,
+  "hook": "Officially signed with Stake!",
+  "caption": "TJR finally makes the big announcement and kicks off the new era #tjr #trading #daytrading #kick\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "TJR finally makes the big announcement and kicks off the new era",
+  "campaign": "https://contentrewards.com/discover/70baf344-d80f-4ba2-910a-10340f2ea591",
+  "created": "2026-10-07T12:54:32.808451+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/tjr-kc-clip-01m3vy7ptxnkp69km56ykdty1e.mp4",
+  "account": 1,
+  "timing_s": {
+   "download": 11,
+   "transcribe+edit+render": 213,
+   "publish+submit": 3,
+   "total": 226
+  }
+ },
+ {
+  "file": "lanah-cherry-twitch-tw-2884165245-700.mp4",
+  "creator": "Lanah Cherry (Twitch)",
+  "source": "https://www.twitch.tv/videos/2884165245",
+  "start": 681.54,
+  "end": 749.06,
+  "cuts": 9,
+  "length": 22.7,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "hype",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "I would love to fight someone!",
+  "caption": "Lanah Cherry is ready to step into the NMS boxing ring #twitch #streamer #irl\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Lanah Cherry is ready to step into the NMS boxing ring",
+  "campaign": "https://contentrewards.com/discover/6e379737-96ef-4980-8565-08df4e6d39d9",
+  "created": "2026-10-07T12:41:58.334329+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/bg5fXjs_MEo",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lanah-cherry-twitch-tw-2884165245-700.mp4",
+  "account": 3,
+  "submission": {
+   "submitted": [
+    "https://youtube.com/shorts/bg5fXjs_MEo"
+   ],
+   "rejected": {}
+  },
+  "timing_s": {
+   "download": 6,
+   "transcribe+edit+render": 159,
+   "publish+submit": 41,
+   "total": 207
+  }
+ },
+ {
+  "file": "tjr-kc-clip-01m463jragqhpxagk1d253d81j.mp4",
+  "creator": "TJR",
+  "source": "https://clips.kick.com/clips/8f/clip_01M463JRAGQHPXAGK1D253D81J/playlist.m3u8",
+  "start": 11.559999999999999,
+  "end": 22.019999999999996,
+  "cuts": 9,
+  "length": 20.0,
+  "layout": "face",
+  "style": "blur",
+  "mood": "hype",
+  "signal": "kick-clip",
+  "score": 85,
+  "hook": "W'S IN THE CHAT!",
+  "caption": "Huge respect to this legend crushing his goals #tjr #trading #daytrading #kick\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Huge respect to this legend crushing his goals",
+  "campaign": "https://contentrewards.com/discover/70baf344-d80f-4ba2-910a-10340f2ea591",
+  "created": "2026-10-07T12:29:45.216213+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/wHrTGqsftPM",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/tjr-kc-clip-01m463jragqhpxagk1d253d81j.mp4",
+  "account": 2,
+  "submission": {
+   "submitted": [
+    "https://youtube.com/shorts/wHrTGqsftPM"
+   ],
+   "rejected": {}
+  },
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 122,
+   "publish+submit": 41,
+   "total": 168
+  }
+ },
+ {
+  "file": "tjr-kc-clip-01m3zsnw27cf3w1hmsbyj8znkk.mp4",
+  "creator": "TJR",
+  "source": "https://clips.kick.com/clips/78/clip_01M3ZSNW27CF3W1HMSBYJ8ZNKK/playlist.m3u8",
+  "start": 4.880000000000001,
+  "end": 33.32,
+  "cuts": 9,
+  "length": 22.5,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "kick-clip",
+  "score": 85,
+  "hook": "WHAT WAS THAT?!",
+  "caption": "Bro got completely blindsided by that soul bomb #tjr #trading #daytrading #kick\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Bro got completely blindsided by that soul bomb",
+  "campaign": "https://contentrewards.com/discover/70baf344-d80f-4ba2-910a-10340f2ea591",
+  "created": "2026-10-07T12:17:40.972815+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/IFNXM1O7WdY",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/tjr-kc-clip-01m3zsnw27cf3w1hmsbyj8znkk.mp4",
+  "account": 1,
+  "submission": {
+   "submitted": [
+    "https://youtube.com/shorts/IFNXM1O7WdY"
+   ],
+   "rejected": {}
+  },
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 145,
+   "publish+submit": 41,
+   "total": 191
+  }
+ },
+ {
   "file": "lanah-cherry-twitch-tw-2887753552-3697.mp4",
   "creator": "Lanah Cherry (Twitch)",
   "source": "https://www.twitch.tv/videos/2887753552",
