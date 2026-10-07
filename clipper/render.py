@@ -6,12 +6,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 FONTS = ROOT / "assets" / "fonts"
 MUSIC = ROOT / "assets" / "music"
+SFX = ROOT / "assets" / "sfx"
 FONT_FILE = FONTS / "Montserrat-Black.ttf"
 MUSIC_CREDIT = "Music: Kevin MacLeod (incompetech.com) CC BY 4.0"
 
 # ASS colours are &HAABBGGRR.
 WHITE, BLACK = "&H00FFFFFF", "&H00000000"
 HIGHLIGHTS = ["&H0000E5FF", "&H0055FF3C", "&H002E7AFF"]  # yellow, green, orange
+EMPHASIS = "&H003030FF"  # red: the words that carry the joke or the stakes
 
 ASS_HEADER = f"""[Script Info]
 ScriptType: v4.00+
@@ -38,8 +40,15 @@ def _clean(word: str) -> str:
     return word.strip().upper().replace("{", "").replace("}", "")
 
 
-def write_ass(words: list[dict], start: float, end: float, hook: str, path: Path, per_line: int = 3) -> None:
-    """2-3 big words on screen; the spoken word pops (scale) in a highlight colour that rotates per line."""
+def _key(word: str) -> str:
+    return "".join(ch for ch in word.lower() if ch.isalnum())
+
+
+def write_ass(words: list[dict], start: float, end: float, hook: str, path: Path, per_line: int = 3,
+              emphasis: list[str] | None = None) -> None:
+    """2-3 big words on screen; the spoken word pops (scale) in a highlight colour that rotates per line.
+    Emphasis words (picked by the LLM) pop bigger and red."""
+    strong = {_key(w) for e in (emphasis or []) for w in e.split()}
     rel = [w for w in words if start <= w["start"] < end]
     events = [f"Dialogue: 2,{_ts(0)},{_ts(min(3.0, end - start))},Hook,,0,0,0,,"
               f"{{\\fad(0,250)}}{_clean(hook)}"]
@@ -53,7 +62,9 @@ def write_ass(words: list[dict], start: float, end: float, hook: str, path: Path
             parts = []
             for k, other in enumerate(group):
                 txt = _clean(other["word"])
-                if k == j:
+                if k == j and _key(other["word"]) in strong:
+                    parts.append(f"{{\\c{EMPHASIS}\\fscx135\\fscy135\\t(0,120,\\fscx118\\fscy118)}}{txt}{{\\r}}")
+                elif k == j:
                     parts.append(f"{{\\c{colour}\\fscx112\\fscy112\\t(0,90,\\fscx100\\fscy100)}}{txt}{{\\r}}")
                 else:
                     parts.append(txt)
@@ -94,6 +105,23 @@ def remap_words(words: list[dict], segments: list[tuple[float, float]]) -> list[
 
 ZOOMS = (1.0, 1.18, 1.06, 1.28)  # a different punch-in on each cut hides the jump and keeps it moving
 
+# Self-made SFX (scripts/make_sfx.py, no licence needed), kept low under the voice.
+SFX_GAIN = {"pop": 0.35, "whoosh": 0.22, "boom": 0.45}
+
+
+def sfx_plan(segments: list[tuple[float, float]]) -> list[tuple[str, float]]:
+    """Pop when the hook lands, a whoosh on every cut, a bass hit when the last (payoff) shot starts."""
+    if not SFX.exists():
+        return []
+    hits, t = [("pop", 0.0)], 0.0
+    starts = []
+    for s, e in segments:
+        starts.append(t)
+        t += e - s
+    for k, st in enumerate(starts[1:], 1):
+        hits.append(("boom" if k == len(starts) - 1 and len(starts) > 2 else "whoosh", max(0.0, st - 0.08)))
+    return [(n, x) for n, x in hits if (SFX / f"{n}.wav").exists()]
+
 
 def render_edit(src: str, segments: list[tuple[float, float]], info: dict, ass: Path, out: Path,
                 credit: str = "", mood: str = "funny", style: str = "vertical") -> None:
@@ -108,7 +136,11 @@ def render_edit(src: str, segments: list[tuple[float, float]], info: dict, ass: 
         g.append(f"[r{i}]trim={s:.3f}:{e:.3f},setpts=PTS-STARTPTS[t{i}]")
         g.append(layout.filtergraph(info, f"[t{i}]", f"[l{i}]", t_off=s, t_end=e, sfx=str(i), style=style))
         z = ZOOMS[i % len(ZOOMS)]
-        if z > 1:
+        if i == 0:
+            # Opening punch: starts 25 % in and eases out over 0.5 s, so frame 1 already moves.
+            g.append(f"[l{i}]scale=w='trunc(1080*(1+0.25*pow(max(0,1-t/0.5),2))/2)*2':h=-2:eval=frame:flags=lanczos,"
+                     f"crop=1080:1920,setsar=1[z{i}]")
+        elif z > 1:
             g.append(f"[l{i}]scale={int(1080 * z) // 2 * 2}:{int(1920 * z) // 2 * 2}:flags=lanczos,"
                      f"crop=1080:1920,setsar=1[z{i}]")
         else:
@@ -123,14 +155,32 @@ def render_edit(src: str, segments: list[tuple[float, float]], info: dict, ass: 
     g.append(f"[vc]subtitles='{_rel(ass)}':fontsdir='{_rel(FONTS)}'{credit_f},fade=in:st=0:d=0.12:color=white[v]")
     music = pick_music(out.stem, mood)
     cmd = ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", src]
+    voice = "[ac]"
+    hits = sfx_plan(segments)
+    if hits:
+        first = 2 if music else 1
+        names = sorted({name for name, _ in hits})
+        for name in names:
+            cmd += ["-i", _rel(SFX / f"{name}.wav")]
+        for k, name in enumerate(names):
+            uses = [t for nm, t in hits if nm == name]
+            g.append(f"[{first + k}:a]aresample=48000,volume={SFX_GAIN[name]},asplit={len(uses)}"
+                     + "".join(f"[{name}{m}]" for m in range(len(uses))))
+            for m, t in enumerate(uses):
+                ms = int(t * 1000)
+                g.append(f"[{name}{m}]adelay={ms}|{ms}[{name}d{m}]")
+        tags = "".join(f"[{name}d{m}]" for name in names for m in range(sum(1 for nm, _ in hits if nm == name)))
+        g.append("[ac]aresample=48000[ac48]")
+        g.append(f"[ac48]{tags}amix=inputs={len(hits) + 1}:duration=first:normalize=0[vfx]")
+        voice = "[vfx]"
     if music:
-        cmd += ["-stream_loop", "-1", "-i", _rel(music)]
-        g.append("[ac]aresample=48000,asplit=2[voice][key]")
+        cmd[cmd.index(src) + 1:cmd.index(src) + 1] = ["-stream_loop", "-1", "-i", _rel(music)]
+        g.append(f"{voice}aresample=48000,asplit=2[voice][key]")
         g.append("[1:a]aresample=48000,volume=0.22[bgm]")
         g.append("[bgm][key]sidechaincompress=threshold=0.04:ratio=10:attack=15:release=350[duck]")
         g.append("[voice][duck]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11[aout]")
     else:
-        g.append("[ac]loudnorm=I=-14:TP=-1.5:LRA=11[aout]")
+        g.append(f"{voice}loudnorm=I=-14:TP=-1.5:LRA=11[aout]")
     cmd += ["-filter_complex", ";".join(g), "-map", "[v]", "-map", "[aout]", "-shortest",
             "-c:v", "libx264", "-preset", "veryfast", "-crf", "19", "-pix_fmt", "yuv420p", "-r", "30",
             "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", str(out.resolve())]

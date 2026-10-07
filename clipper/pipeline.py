@@ -172,7 +172,8 @@ def make_clip(moment: dict, creator: str, campaign: dict | None, do_publish: boo
         style = "blur" if zlib.crc32(name.encode()) % 2 else "vertical"
         mood = edit.get("mood") if edit.get("mood") in render.MOODS else "funny"
         ass = d / "captions.ass"
-        render.write_ass(render.remap_words(words, segs), 0, sum(e - s for s, e in segs), edit["hook"], ass)
+        render.write_ass(render.remap_words(words, segs), 0, sum(e - s for s, e in segs), edit["hook"], ass,
+                         emphasis=edit.get("emphasis") or [])
         final = OUT / f"{name}.mp4"
         render.render_edit(str(raw), segs, info, ass, final, credit=(campaign or {}).get("credit", ""),
                            mood=mood, style=style)
@@ -183,6 +184,7 @@ def make_clip(moment: dict, creator: str, campaign: dict | None, do_publish: boo
     entry = {"file": final.name, "creator": creator, "source": moment["url"], "start": moment["start"] + segs[0][0],
              "end": moment["start"] + segs[-1][1], "cuts": len(segs), "length": round(sum(e - s for s, e in segs), 1),
              "layout": info["kind"], "style": style, "mood": mood, "signal": moment["signal"], "score": edit["score"], "hook": edit["hook"],
+             "hook_type": edit.get("hook_type"), "emphasis": edit.get("emphasis"),
              "caption": caption, "title": edit["title"], "campaign": (campaign or {}).get("campaign_url"),
              "created": datetime.now(timezone.utc).isoformat(), "posts": {}}
     public_url = public_url_for(final)  # also feeds the panel's mp4 links

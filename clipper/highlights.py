@@ -3,9 +3,16 @@ import json
 import os
 import time
 import urllib.request
+from pathlib import Path
 
+
+PLAYBOOK = (Path(__file__).with_name("EDITING_PLAYBOOK.md")).read_text(encoding="utf-8")
 
 EDIT_PROMPT = """You are a top short-form editor (TikTok / YouTube Shorts / Reels) cutting a clip of {creator}.
+Follow this editing playbook strictly:
+
+{playbook}
+
 Viewers marked this moment as viral: "{title}". Below is the word-timestamped transcript (seconds) of the
 source window around it.
 
@@ -22,9 +29,14 @@ Score viral potential 0-100 and be harsh. It needs a real payoff: a reaction, a 
 shocking line, a funny exchange with a punchline. Someone just commenting, reading chat, explaining or
 chatting without a payoff scores under 40 even if it is mildly amusing.
 Pick the music mood of the moment: one of funny, awkward, sus, chaos, drama, hype, chill.
+Pick the hook type (revelation, contrarian or stakes) and write the hook text in that style.
+List 2-5 emphasis words: words spoken inside the kept segments that carry the joke or the stakes
+(copy them exactly as they appear in the transcript).
+The last segment must end on the payoff (within ~0.3 s of its last word); no trailing chatter.
 Hook and title must be brand-safe: no slurs or profanity (campaigns auto-reject them).
 Reply ONLY with JSON: {{"segments": [[start, end], ...], "score": int, "mood": "funny",
-"hook": "max 6 words, caps ok", "title": "post caption under 90 chars, no hashtags"}}
+"hook_type": "revelation|contrarian|stakes", "hook": "max 6 words, caps ok",
+"emphasis": ["word", ...], "title": "post caption under 90 chars, no hashtags (emotion + niche + outcome)"}}
 
 Transcript:
 {transcript}"""
@@ -208,7 +220,7 @@ def pick_edit(words: list[dict], creator: str, title: str, lo: float, hi: float,
     if not words:
         return None
     res = _gemini_json(EDIT_PROMPT.format(creator=creator, title=title, min_len=min_len, max_len=max_len,
-                                          transcript=_transcript_lines(words)))
+                                          playbook=PLAYBOOK, transcript=_transcript_lines(words)))
     if not res:
         return None
     segs = clean_segments(res.get("segments"), words, lo, hi, max_len)
