@@ -20,6 +20,8 @@ import win32gui
 BRAVE = r"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"
 UPLOAD = "https://www.tiktok.com/tiktokstudio/upload"
 HANDLES = {1: "pepe854146", 2: "streammoments.daily", 3: "rafael.benitez656"}
+# Gmail used with "Continuar con Google" for each account (all already signed in to Brave).
+GMAILS = {1: "pepetiktok00.4@gmail.com", 2: "pepetiktok00.2@gmail.com", 3: None}
 # Songs from assets/music/WISHLIST.md, added from TikTok's own library (licensed there, never embedded).
 SONGS = {
     "hype": [("PASSO BEM SOLTO", "ATLXS"), ("FUNK ABNORMAL", "DJ V12"), ("HOTEL LOBBY", "Quavo")],
@@ -143,7 +145,7 @@ class Brave:
         return edit.GetValuePattern().Value
 
     def selected_tab(self):
-        for c in self.all(lambda c: c.ControlTypeName == "TabItemControl", depth=20):
+        for c in self.all(lambda c: c.ControlTypeName == "TabItemControl", depth=40):
             try:
                 if c.GetSelectionItemPattern().IsSelected:
                     return c
@@ -164,7 +166,7 @@ class Brave:
             time.sleep(1)
         prev = getattr(self, "user_tab", None)
         if prev:
-            for c in self.all(lambda c: c.ControlTypeName == "TabItemControl" and c.Name == prev, depth=20):
+            for c in self.all(lambda c: c.ControlTypeName == "TabItemControl" and c.Name == prev, depth=40):
                 try:
                     c.GetSelectionItemPattern().Select()
                 except Exception:  # noqa: BLE001
@@ -213,17 +215,29 @@ def open_tab(url: str = UPLOAD) -> Brave:
     b.user_fg = fg
     prev = b.selected_tab()
     b.user_tab = prev.Name if prev is not None else None
-    before = len(b.all(lambda c: c.ControlTypeName == "TabItemControl", depth=20))
+    host = url.split("//", 1)[-1].split("/", 1)[0].removeprefix("www.")
     subprocess.Popen([BRAVE, url])  # Brave opens it as a tab in its last active window
     for _ in range(40):
         time.sleep(0.5)
         b.restore()
-        if len(b.all(lambda c: c.ControlTypeName == "TabItemControl", depth=20)) > before:
+        if host in b.url():
             break
     else:
         raise RuntimeError("Brave did not open the tab")
     b.restore()
     return b
+
+
+def goto(b: Brave, url: str) -> None:
+    """Navigate the selected tab (address bar via UIA, then the exact-URL suggestion)."""
+    bar = b.by("Edit", "Barra de direcciones", starts=True)
+    bar.GetValuePattern().SetValue(url)
+    time.sleep(2)
+    li = b.find(lambda c: c.ControlTypeName == "ListItemControl" and c.Name.startswith(url)
+                and "Búsqueda" not in c.Name, timeout=5)
+    if li:
+        li.GetInvokePattern().Invoke()
+    b.restore()
 
 
 def _file_dialog(path: str, timeout: float = 20) -> bool:
@@ -254,12 +268,18 @@ def _file_dialog(path: str, timeout: float = 20) -> bool:
     return False
 
 
-def _dismiss(b: Brave) -> None:
-    for name in ("Entendido", "Activar", "Got it", "Turn on"):
-        btn = b.by("Button", name)
-        if btn:
-            b.click(btn)
-            time.sleep(1)
+def _dismiss(b: Brave, rounds: int = 3) -> None:
+    """TikTok stacks onboarding popups (content-check opt-in, then 'new editing features'): clear them all."""
+    for _ in range(rounds):
+        hit = False
+        for name in ("Activar", "Entendido", "Turn on", "Got it"):
+            btn = b.by("Button", name)
+            if btn:
+                b.click(btn)
+                hit = True
+                time.sleep(1.5)
+        if not hit:
+            return
 
 
 def add_music(b: Brave, mood: str, log=print) -> str | None:
@@ -269,8 +289,13 @@ def add_music(b: Brave, mood: str, log=print) -> str | None:
     if not sounds:
         log("  music: no 'Sonidos' button, posting with original audio")
         return None
-    b.click(sounds)
-    search = b.by("Edit", "Buscar sonidos", timeout=40)
+    search = None
+    for _ in range(3):
+        _dismiss(b)
+        b.click(sounds)
+        search = b.by("Edit", "Buscar sonidos", timeout=20)
+        if search:
+            break
     if not search:
         log("  music: editor did not open")
         return None
@@ -393,19 +418,120 @@ def active_handle(b: Brave) -> str | None:
     if link:
         v = link.GetValuePattern().Value
         handle = v.split("/@", 1)[1].split("?")[0] if "/@" in v else None
-    b.click(x=b.root().BoundingRectangle.left + 900, y=b.root().BoundingRectangle.top + 900)  # close menu
+    b.click(avatar)  # toggle the menu closed (a click elsewhere can hit page banners, e.g. CapCut)
+    time.sleep(0.5)
     return handle
 
 
-def post(account: int, video: Path, caption: str, mood: str = "hype", log=print) -> dict:
-    """Full flow for one clip. Returns {"url", "music", "check"}."""
-    b = open_tab()
+def logout(b: Brave) -> None:
+    goto(b, "https://www.tiktok.com/tiktokstudio")
+    time.sleep(9)
+    avatar = b.find(lambda c: c.ControlTypeName == "ButtonControl" and not c.Name and c.BoundingRectangle.width() > 0
+                    and c.BoundingRectangle.top < 150 and c.BoundingRectangle.left > b.root().BoundingRectangle.right - 120,
+                    timeout=20)
+    if avatar:
+        b.click(avatar)
+        item = b.by("Text", "Cerrar sesión", timeout=5)
+        if item:
+            b.click(item)
+            time.sleep(6)
+
+
+def google_login(b: Brave, email: str) -> str | None:
+    """'Continuar con Google' with a Gmail already in Brave. Returns the TikTok handle, None if no account."""
+    goto(b, "https://www.tiktok.com/login")
+    time.sleep(8)
+    known: set[int] = set()
+
+    @EnumProc
+    def snap(h, _):
+        known.add(h)
+        return True
+
+    u.EnumWindows(snap, 0)
+    b.click(b.by("Hyperlink", "Continuar con Google", timeout=10))
+    pop = None
+    for _ in range(20):
+        time.sleep(1)
+        b.restore()
+        found: list[int] = []
+
+        @EnumProc
+        def cb(h, _):
+            if u.IsWindowVisible(h) and h not in known:
+                t = ctypes.create_unicode_buffer(300)
+                u.GetWindowTextW(h, t, 300)
+                if "accounts.google.com" in t.value or "Cuentas de Google" in t.value:
+                    found.append(h)
+            return True
+
+        u.EnumWindows(cb, 0)
+        if found:
+            pop = found[0]
+            break
+    if not pop:
+        raise RuntimeError("Google sign-in popup did not open")
+    p = Brave(pop)
+    p.user_fg = b.user_fg
+    link = p.find(lambda c: c.ControlTypeName == "HyperlinkControl" and c.Name.endswith(email), timeout=15)
+    if not link:
+        u.PostMessageW(pop, 0x0010, 0, 0)
+        raise RuntimeError(f"{email} is not signed in to Brave")
+    link.GetInvokePattern().Invoke()
+    for _ in range(20):
+        time.sleep(2)
+        p.restore()
+        if not u.IsWindow(pop):
+            break
+        cont = p.find(lambda c: c.ControlTypeName == "ButtonControl" and c.Name in ("Continuar", "Continue"))
+        if cont:
+            cont.GetInvokePattern().Invoke()
+    time.sleep(6)
+    if "signup" in b.url():
+        goto(b, "https://www.tiktok.com/login")  # never create accounts
+        return None
+    goto(b, UPLOAD)
+    time.sleep(10)
+    # First login in this browser shows TikTok's ads-consent dialog: choose generic ads.
+    sel = sorted(b.all(lambda c: c.ControlTypeName == "TextControl" and c.Name == "Seleccionar"
+                       and c.BoundingRectangle.width() > 0), key=lambda c: c.BoundingRectangle.top)
+    if sel:
+        b.click(sel[-1])
+        time.sleep(3)
+    return active_handle(b)
+
+
+def switch_to(b: Brave, account: int) -> None:
+    """Make the Brave TikTok session belong to `account` (log out + Google login when needed)."""
+    if "tiktokstudio" not in b.url():
+        goto(b, UPLOAD)
+        time.sleep(8)
+    if active_handle(b) == HANDLES[account]:
+        return
+    if not GMAILS.get(account):
+        raise RuntimeError(f"no Gmail configured for @{HANDLES[account]}")
+    logout(b)
+    who = google_login(b, GMAILS[account])
+    if who != HANDLES[account]:
+        raise RuntimeError(f"{GMAILS[account]} opened @{who}, expected @{HANDLES[account]}")
+
+
+def post(account: int, video: Path, caption: str, mood: str = "hype", log=print, b: "Brave | None" = None) -> dict:
+    """Full flow for one clip. Returns {"url", "music", "check"}. Pass `b` to reuse an open TikTok tab."""
+    own_tab = b is None
+    if b is None:
+        b = open_tab()
     try:
+        switch_to(b, account)
+        if "tiktokstudio/upload" not in b.url():
+            goto(b, UPLOAD)
+            time.sleep(8)
         time.sleep(4)
         if "login" in b.url():
             raise RuntimeError("TikTok is not logged in in Brave")
-        if active_handle(b) != HANDLES[account]:
-            raise RuntimeError(f"Brave is logged into @{active_handle(b)}, not @{HANDLES[account]}")
+        who = active_handle(b)
+        if who != HANDLES[account]:
+            raise RuntimeError(f"Brave is logged into @{who}, not @{HANDLES[account]}")
         btn = b.by("Button", "Seleccionar vídeo", timeout=60)
         if not btn:
             raise RuntimeError("upload page did not load")
@@ -426,5 +552,6 @@ def post(account: int, video: Path, caption: str, mood: str = "hype", log=print)
         return {"url": url, "music": music, "check": check}
     finally:
         time.sleep(random.uniform(1, 3))
-        b.close()
+        if own_tab:
+            b.close()
         b.restore()
