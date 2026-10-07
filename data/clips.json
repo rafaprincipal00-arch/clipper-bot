@@ -1,5 +1,113 @@
 [
  {
+  "file": "lanah-cherry-twitch-tw-2887753552-3697.mp4",
+  "creator": "Lanah Cherry (Twitch)",
+  "source": "https://www.twitch.tv/videos/2887753552",
+  "start": 3700.04,
+  "end": 3719.91,
+  "cuts": 4,
+  "length": 8.6,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "All I have is a flashlight!",
+  "caption": "Trying to survive a horror game alone is a huge mistake #twitch #streamer #irl\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "campaign": "https://contentrewards.com/discover/6e379737-96ef-4980-8565-08df4e6d39d9",
+  "created": "2026-10-07T09:46:41.126242+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/ScBBwR-PAtw",
+   "tiktok": "tiktok-draft:v_inbox_file~v2.7693859819077879830",
+   "instagram": "skipped (no credentials)"
+  },
+  "account": 3,
+  "submission": {
+   "submitted": [
+    "https://youtube.com/shorts/ScBBwR-PAtw"
+   ],
+   "rejected": {}
+  },
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 55,
+   "publish+submit": 42,
+   "total": 101
+  }
+ },
+ {
+  "file": "lanah-cherry-twitch-tw-2893163336-244.mp4",
+  "creator": "Lanah Cherry (Twitch)",
+  "source": "https://www.twitch.tv/videos/2893163336",
+  "start": 224.31,
+  "end": 245.82999999999998,
+  "cuts": 7,
+  "length": 14.7,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "I gotta scam old people",
+  "caption": "When the side hustle goes a bit too far #twitch #streamer #irl\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "campaign": "https://contentrewards.com/discover/6e379737-96ef-4980-8565-08df4e6d39d9",
+  "created": "2026-10-07T09:34:33.174103+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/Et3rAIR30iQ",
+   "tiktok": "tiktok-draft:v_inbox_file~v2.7693856787623577622",
+   "instagram": "skipped (no credentials)"
+  },
+  "account": 2,
+  "submission": {
+   "submitted": [
+    "https://youtube.com/shorts/Et3rAIR30iQ"
+   ],
+   "rejected": {}
+  },
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 132,
+   "publish+submit": 43,
+   "total": 180
+  }
+ },
+ {
+  "file": "tjr-kc-clip-01m3s7aa2ge5vjy8xd3e8vkpe3.mp4",
+  "creator": "TJR",
+  "source": "https://clips.kick.com/clips/ae/clip_01M3S7AA2GE5VJY8XD3E8VKPE3/playlist.m3u8",
+  "start": 15.379999999999999,
+  "end": 9.68,
+  "cuts": 7,
+  "length": 19.0,
+  "layout": "face",
+  "style": "blur",
+  "mood": "hype",
+  "signal": "kick-clip",
+  "score": 85,
+  "hook": "SITTING UP $317,000",
+  "caption": "When FOMO actually pays off massively #tjr #trading #daytrading #kick\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "campaign": "https://contentrewards.com/discover/70baf344-d80f-4ba2-910a-10340f2ea591",
+  "created": "2026-10-07T09:22:46.272883+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/u5o9D0TuUcE",
+   "tiktok": "tiktok-draft:v_inbox_file~v2.7693853584405858326",
+   "instagram": "skipped (no credentials)"
+  },
+  "account": 1,
+  "submission": {
+   "submitted": [
+    "https://youtube.com/shorts/u5o9D0TuUcE"
+   ],
+   "rejected": {}
+  },
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 84,
+   "publish+submit": 44,
+   "total": 132
+  }
+ },
+ {
   "file": "tjr-kc-clip-01m3vmxaven5zgeh5esv3yzrrw.mp4",
   "creator": "TJR",
   "source": "https://clips.kick.com/clips/e6/clip_01M3VMXAVEN5ZGEH5ESV3YZRRW/playlist.m3u8",
