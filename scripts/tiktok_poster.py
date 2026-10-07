@@ -1,10 +1,10 @@
 """Post today's clips to TikTok from the PC at staggered times, then submit each link to Content Rewards.
 
 Why from the PC: the TikTok API app is unaudited (drafts only), so posting publicly needs a real
-logged-in browser. Each TikTok account has its own Chrome profile under data/tt_profiles/<n>
-(never committed). The clipper workflow publishes YouTube and leaves TikTok as "scheduled (PC poster)".
+logged-in browser. Each TikTok account has its own Brave profile under data/tt_profiles/<n>
+(Brave, never committed). The clipper workflow publishes YouTube and leaves TikTok as "scheduled (PC poster)".
 
-    python scripts/tiktok_poster.py login 1      # one-off: opens Chrome so the user logs into account 1
+    python scripts/tiktok_poster.py login 1      # one-off: opens Brave so the user logs into account 1
     python scripts/tiktok_poster.py check        # which profiles are logged in
     python scripts/tiktok_poster.py run          # daemon: wait for today's clips, post at planned times
     python scripts/tiktok_poster.py post <file>  # post one clip now (manual)
@@ -33,6 +33,8 @@ FIRST_DELAY_MIN = (45, 90)
 SPACING_MIN = (110, 170)
 LAST_HOUR = 23
 NO_WINDOW = 0x08000000
+# Brave (the user's browser) with its own per-account profile; his normal Brave profile is never touched.
+BROWSER = r"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"
 
 
 def log(*a: object) -> None:
@@ -127,9 +129,9 @@ def profile_dir(account: int) -> Path:
 
 
 def open_ctx(p, account: int, headless: bool):
-    """Real Chrome with a persistent per-account profile, on the TOP monitor, never focused by us."""
+    """Brave with a persistent per-account profile, on the TOP monitor."""
     return p.chromium.launch_persistent_context(
-        str(profile_dir(account)), channel="chrome", headless=headless,
+        str(profile_dir(account)), executable_path=BROWSER, headless=headless,
         viewport=None if not headless else {"width": 1280, "height": 900},
         args=["--window-position=40,40", "--window-size=1280,900", "--disable-blink-features=AutomationControlled",
               "--no-first-run", "--no-default-browser-check"],
@@ -279,7 +281,7 @@ def login(account: int) -> None:
         ctx = open_ctx(p, account, headless=False)
         page = ctx.pages[0] if ctx.pages else ctx.new_page()
         page.goto("https://www.tiktok.com/login", wait_until="domcontentloaded")
-        print(f"Log into TikTok account {account} in the Chrome window; it closes by itself once done.")
+        print(f"Log into TikTok account {account} in the Brave window; it closes by itself once done.")
         for _ in range(600):
             time.sleep(3)
             try:
