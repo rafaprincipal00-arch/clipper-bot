@@ -1,8 +1,8 @@
 """Publish one clip on TikTok through the user's own Brave (TikTok Studio web), fully in the background.
 
-Each TikTok account lives in its own Brave profile (TikTok only allows one logged-in account per browser
-profile). A new window of that profile is opened on the TOP monitor without taking focus, driven through
-UI Automation + PostMessage (never the real mouse/keyboard), and closed at the end.
+Works in a NEW TAB of the user's already-open Brave window (his session, no extra windows or profiles),
+driven through UI Automation + PostMessage (never the real mouse/keyboard). The user's previous tab is
+re-selected and the bot's tab closed at the end; his foreground window gets focus back after every step.
 
 Flow: upload file -> TikTok editor: add a song from TikTok's licensed library at -12 dB with fade-out ->
 caption + hashtags -> wait for the content check -> Publicar -> read the public video URL.
@@ -19,8 +19,6 @@ import win32gui
 
 BRAVE = r"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"
 UPLOAD = "https://www.tiktok.com/tiktokstudio/upload"
-# account number (clip N goes to account N) -> Brave profile directory
-PROFILES = {1: "TikTok pepe854146", 2: "TikTok streammoments", 3: "Default"}
 HANDLES = {1: "pepe854146", 2: "streammoments.daily", 3: "rafael.benitez656"}
 # Songs from assets/music/WISHLIST.md, added from TikTok's own library (licensed there, never embedded).
 SONGS = {
@@ -144,9 +142,35 @@ class Brave:
         time.sleep(0.8)
         return edit.GetValuePattern().Value
 
+    def selected_tab(self):
+        for c in self.all(lambda c: c.ControlTypeName == "TabItemControl", depth=20):
+            try:
+                if c.GetSelectionItemPattern().IsSelected:
+                    return c
+            except Exception:  # noqa: BLE001
+                continue
+        return None
+
     def close(self) -> None:
-        if u.IsWindow(self.h):
-            u.PostMessageW(self.h, 0x0010, 0, 0)
+        """Close the bot's tab and give the user his previous tab back."""
+        tab = self.selected_tab()
+        if tab is not None and tab.Name != getattr(self, "user_tab", None):
+            btn = tab.ButtonControl(Name="Cerrar")
+            if btn.Exists(1):
+                try:
+                    btn.GetInvokePattern().Invoke()
+                except Exception:  # noqa: BLE001
+                    self.click(btn)
+            time.sleep(1)
+        prev = getattr(self, "user_tab", None)
+        if prev:
+            for c in self.all(lambda c: c.ControlTypeName == "TabItemControl" and c.Name == prev, depth=20):
+                try:
+                    c.GetSelectionItemPattern().Select()
+                except Exception:  # noqa: BLE001
+                    pass
+                break
+        self.restore()
 
 
 def _brave_windows() -> set[int]:
@@ -167,23 +191,39 @@ def _brave_windows() -> set[int]:
     return res
 
 
-def open_window(profile: str, url: str = UPLOAD) -> Brave:
+def user_window() -> int:
+    """The user's open Brave window (default profile). Raises if Brave is not open."""
+    wins = _brave_windows()
+    if not wins:
+        raise RuntimeError("Brave is not open")
+    # Most recently used = highest in z-order among Brave windows.
+    h = u.GetTopWindow(0)
+    while h:
+        if h in wins:
+            return h
+        h = u.GetWindow(h, 2)  # GW_HWNDNEXT
+    return wins.pop()
+
+
+def open_tab(url: str = UPLOAD) -> Brave:
+    """New tab in the user's existing Brave window; focus goes straight back to whatever he was using."""
     fg = u.GetForegroundWindow()
-    before = _brave_windows()
-    subprocess.Popen([BRAVE, f"--profile-directory={profile}", "--new-window", url])
-    for _ in range(60):
-        time.sleep(1)
-        new = _brave_windows() - before
-        if new:
-            h = new.pop()
-            # Top monitor only (the user works on the bottom one), no activation.
-            u.ShowWindow(h, 4)
-            u.SetWindowPos(h, 0, 60, 40, 1500, 1000, 0x0004 | 0x0010 | 0x0040)
-            b = Brave(h)
-            b.user_fg = fg
-            b.restore()
-            return b
-    raise RuntimeError(f"Brave window for profile {profile!r} did not open")
+    h = user_window()
+    b = Brave(h)
+    b.user_fg = fg
+    prev = b.selected_tab()
+    b.user_tab = prev.Name if prev is not None else None
+    before = len(b.all(lambda c: c.ControlTypeName == "TabItemControl", depth=20))
+    subprocess.Popen([BRAVE, url])  # Brave opens it as a tab in its last active window
+    for _ in range(40):
+        time.sleep(0.5)
+        b.restore()
+        if len(b.all(lambda c: c.ControlTypeName == "TabItemControl", depth=20)) > before:
+            break
+    else:
+        raise RuntimeError("Brave did not open the tab")
+    b.restore()
+    return b
 
 
 def _file_dialog(path: str, timeout: float = 20) -> bool:
@@ -340,13 +380,32 @@ def publish(b: Brave, caption_start: str, handle: str) -> str:
     raise RuntimeError("posted, but the video link did not show up in TikTok Studio")
 
 
+def active_handle(b: Brave) -> str | None:
+    """@handle of the TikTok account logged in (from the avatar menu's Perfil link)."""
+    avatar = b.find(lambda c: c.ControlTypeName == "ButtonControl" and not c.Name and c.BoundingRectangle.width() > 0
+                    and c.BoundingRectangle.top < 150 and c.BoundingRectangle.left > b.root().BoundingRectangle.right - 120,
+                    timeout=20)
+    if not avatar:
+        return None
+    b.click(avatar)
+    link = b.by("Hyperlink", "Perfil", timeout=5)
+    handle = None
+    if link:
+        v = link.GetValuePattern().Value
+        handle = v.split("/@", 1)[1].split("?")[0] if "/@" in v else None
+    b.click(x=b.root().BoundingRectangle.left + 900, y=b.root().BoundingRectangle.top + 900)  # close menu
+    return handle
+
+
 def post(account: int, video: Path, caption: str, mood: str = "hype", log=print) -> dict:
     """Full flow for one clip. Returns {"url", "music", "check"}."""
-    b = open_window(PROFILES[account])
+    b = open_tab()
     try:
         time.sleep(4)
         if "login" in b.url():
-            raise RuntimeError(f"TikTok account {account} ({HANDLES[account]}) is not logged in")
+            raise RuntimeError("TikTok is not logged in in Brave")
+        if active_handle(b) != HANDLES[account]:
+            raise RuntimeError(f"Brave is logged into @{active_handle(b)}, not @{HANDLES[account]}")
         btn = b.by("Button", "Seleccionar vídeo", timeout=60)
         if not btn:
             raise RuntimeError("upload page did not load")
