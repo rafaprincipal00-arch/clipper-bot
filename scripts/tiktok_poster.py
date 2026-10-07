@@ -26,10 +26,12 @@ REPO = "rafaprincipal00-arch/clipper-bot"
 PLAN = ROOT / "data" / "tiktok_plan.json"
 LOG = ROOT / "data" / "tiktok_poster.log"
 WORK = ROOT / "work" / "tiktok"
-# Posting windows (local time): first post ~1 h after the clips exist, then spread over the day.
+# Posting windows (local time): first post ~1 h after the clips exist, the rest spread evenly until
+# LAST_POST, with some jitter. EXPECTED = clips per day (3 per TikTok account).
 FIRST_DELAY_MIN = (45, 90)
-SPACING_MIN = (110, 170)
-LAST_HOUR = 23
+MIN_SPACING_MIN = 35
+LAST_POST = (23, 40)
+EXPECTED = 9
 NO_WINDOW = 0x08000000
 
 
@@ -95,20 +97,23 @@ def todays_clips() -> list[dict]:
         if created.date() == today and e.get("account") and e.get("video_url") \
                 and (e.get("posts") or {}).get("tiktok", "").startswith("scheduled"):
             out.append(e)
-    return sorted(out, key=lambda e: e["account"])
+    return sorted(out, key=lambda e: e["created"])
 
 
 def schedule(plan: dict, clips: list[dict]) -> None:
     known = {i["file"] for i in plan["items"]}
     last = max((datetime.fromisoformat(i["at"]) for i in plan["items"]), default=None)
+    end = datetime.now().replace(hour=LAST_POST[0], minute=LAST_POST[1], second=0)
     for e in clips:
         if e["file"] in known:
             continue
         if last is None:
             at = datetime.now() + timedelta(minutes=random.randint(*FIRST_DELAY_MIN))
         else:
-            at = last + timedelta(minutes=random.randint(*SPACING_MIN))
-        at = min(at, datetime.now().replace(hour=LAST_HOUR, minute=random.randint(0, 40)))
+            left = max(1, EXPECTED - len(plan["items"]))  # posts still to place, this one included
+            even = (end - last).total_seconds() / 60 / left
+            at = last + timedelta(minutes=max(MIN_SPACING_MIN, even * random.uniform(0.85, 1.15)))
+        at = max(datetime.now() + timedelta(minutes=2), min(at, end))
         last = at
         plan["items"].append({"file": e["file"], "account": e["account"], "video_url": e["video_url"],
                               "caption": e["caption"], "campaign": e.get("campaign"), "mood": e.get("mood"),
@@ -152,7 +157,8 @@ def do_item(plan: dict, item: dict) -> None:
 
 
 def run() -> None:
-    """Started at logon. Waits (up to 3 h) for today's clips, plans them, posts each at its time."""
+    """Started at logon. Waits (up to 3 h) for today's clips, plans them, posts each at its time.
+    Exits when EXPECTED clips are handled or, if the cloud run made fewer, at the end of the day."""
     log("poster started")
     deadline = datetime.now() + timedelta(hours=3)
     plan = load_plan()
@@ -164,11 +170,15 @@ def run() -> None:
             clips = []
         schedule(plan, clips)
         pending = [i for i in plan["items"] if i["status"] == "pending"]
-        if len(plan["items"]) >= 3 and not pending:
+        if len(plan["items"]) >= EXPECTED and not pending:
             log("all of today's clips handled; exiting")
             return
         if not plan["items"] and datetime.now() > deadline:
             log("no clips for today after 3 h; exiting")
+            return
+        last_call = datetime.now().replace(hour=LAST_POST[0], minute=LAST_POST[1]) + timedelta(minutes=15)
+        if plan["items"] and not pending and datetime.now() > last_call:
+            log("end of the day; exiting")
             return
         due = [i for i in pending if datetime.fromisoformat(i["at"]) <= datetime.now()]
         for item in due[:1]:

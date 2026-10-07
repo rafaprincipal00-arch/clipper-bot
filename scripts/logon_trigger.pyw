@@ -1,7 +1,9 @@
 """Windows logon trigger (Startup shortcut, runs hidden with pythonw).
 
 First logon of each day (from ARM_FROM on) -> dispatches the GitHub workflow in batch mode:
-3 different clips, clip N to account N (YouTube channel N + TikTok account N), one every 8-9 min.
+9 different clips, accounts in turn (1, 2, 3, 1...), one every 8-9 min. That is the daily limit:
+TikTok 3 per account (posted later from the PC) and YouTube 6 (the Google project's API quota, so the
+first 6 clips also go to YouTube Shorts, 2 per channel).
 Processing happens in GitHub Actions, so the PC only sends one HTTP request.
 Log: data/logon_trigger.log (local only, gitignored).
 """
@@ -16,7 +18,7 @@ from pathlib import Path
 
 REPO = "rafaprincipal00-arch/clipper-bot"
 WORKFLOW = "clipper.yml"
-BATCH = "3"
+BATCH = "9"
 ARM_FROM = datetime(2026, 10, 7, 6, 0)  # never before the morning after it was set up
 HERE = Path(__file__).resolve().parent.parent
 STATE = HERE / "data" / "logon_trigger_state.json"
@@ -69,7 +71,7 @@ def main() -> None:
         try:
             dispatch(github_token())
             STATE.write_text(json.dumps({"last_run": today, "at": now.isoformat(timespec="seconds")}), encoding="utf-8")
-            log(f"workflow dispatched: batch={BATCH} (3 clips, 1 per account, every 8-9 min)")
+            log(f"workflow dispatched: batch={BATCH} (accounts in turn, every 8-9 min)")
             start_tiktok_poster()
             return
         except (OSError, RuntimeError, urllib.error.URLError, subprocess.SubprocessError) as e:

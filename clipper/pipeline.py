@@ -17,6 +17,7 @@ import time
 import zlib
 from contextlib import contextmanager
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
 from . import highlights, layout, moments, publish, render, submit
@@ -35,10 +36,11 @@ DAILY_CAP = {"youtube": int(os.environ.get("YT_DAILY_MAX", "6")),
 
 
 def capped_platforms() -> set[str]:
-    """Platforms that already got their daily maximum of successful posts in the last 24 h."""
+    """Platforms that already got their daily maximum of successful posts today. "Today" is the YouTube
+    quota day, which resets at midnight Pacific time (09:00 in Spain)."""
     if not MANIFEST.exists():
         return set()
-    since = datetime.now(timezone.utc).timestamp() - 86400
+    since = datetime.now(ZoneInfo("America/Los_Angeles")).replace(hour=0, minute=0, second=0).timestamp()
     counts = dict.fromkeys(DAILY_CAP, 0)
     for e in json.loads(MANIFEST.read_text(encoding="utf-8")):
         if datetime.fromisoformat(e["created"]).timestamp() < since:
@@ -211,6 +213,9 @@ def save(entries: list[dict]) -> None:
     MANIFEST.write_text(json.dumps(entries + old, indent=1, ensure_ascii=False), encoding="utf-8")
 
 
+ACCOUNTS = int(os.environ.get("ACCOUNTS", "3"))  # YouTube channels / TikTok accounts, used in turn
+
+
 def gap_seconds() -> float:
     """CLIP_GAP_MIN, or a random gap inside CLIP_GAP_MAX_MIN when set (e.g. 8-9 min looks less robotic)."""
     lo = CLIP_GAP_MIN
@@ -221,7 +226,8 @@ def gap_seconds() -> float:
 def run_auto(do_publish: bool, min_score: int, per_source: int, total: int = 0, per_account: bool = False) -> None:
     """Round-robin over sources, best unseen moment each, paced to one clip every CLIP_GAP_MIN minutes
     until the run budget ends (the next scheduled run carries on).
-    total > 0 stops after that many clips; per_account sends clip 1 to account 1, clip 2 to account 2..."""
+    total > 0 stops after that many clips; per_account sends the clips to the accounts in turn
+    (1, 2, 3, 1, 2, 3...). A platform at its daily cap is skipped, the others keep getting clips."""
     sources = [s for s in json.loads((ROOT / "config" / "sources.json").read_text(encoding="utf-8")) if s.get("enabled")]
     seen = set(json.loads(SEEN.read_text())) if SEEN.exists() else set()
     budget_s = float(os.environ.get("RUN_BUDGET_MIN", "300")) * 60
@@ -262,7 +268,7 @@ def run_auto(do_publish: bool, min_score: int, per_source: int, total: int = 0, 
             seen.add(m["id"])  # mark even on failure so a broken moment is not retried forever
             try:
                 entry = make_clip(m, src["creator"], src, do_publish, min_score,
-                                  account=done if per_account else None)
+                                  account=done % ACCOUNTS if per_account else None)
             except subprocess.CalledProcessError as e:
                 print(f"  failed: {(e.stderr or str(e))[-400:]}")
                 entry = None

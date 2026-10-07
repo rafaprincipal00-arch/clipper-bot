@@ -2,11 +2,12 @@ name: clipper
 
 on:
   # No cron for now: the PC starts a "batch" run at the first Windows logon of the day
-  # (scripts/logon_trigger.pyw) -> 3 different clips, one per account, every 8-9 min.
+  # (scripts/logon_trigger.pyw) -> one clip every 8-9 min, accounts in turn, up to each platform's daily
+  # cap: YouTube 6/day (API quota of the Google project, shared by the 3 channels), TikTok 3/account.
   workflow_dispatch:
     inputs:
       batch:
-        description: "Clips for this run, one per account (0 = classic auto run)"
+        description: "Clips for this run, accounts in turn (0 = classic auto run)"
         required: false
         default: "0"
       url:
@@ -79,7 +80,7 @@ jobs:
           if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ inputs.publish }}" = "true" ]; then PUB="--publish"; fi
           if [ "${{ inputs.batch }}" != "" ] && [ "${{ inputs.batch }}" != "0" ]; then
             # TikTok is posted later from the PC at scheduled times (scripts/tiktok_poster.py).
-            TIKTOK_MODE=off CLIP_GAP_MIN=8 CLIP_GAP_MAX_MIN=9 python -m clipper.pipeline --auto --clips 3 \
+            TIKTOK_MODE=off TIKTOK_DAILY_MAX=9 CLIP_GAP_MIN=8 CLIP_GAP_MAX_MIN=9 python -m clipper.pipeline --auto --clips 3 \
               --total "${{ inputs.batch }}" --per-account $PUB
           elif [ -n "${{ inputs.url }}" ]; then
             python -m clipper.pipeline --url "${{ inputs.url }}" --creator "${{ inputs.creator }}" --start "${{ inputs.start }}" --end "${{ inputs.end }}" $PUB
