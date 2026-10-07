@@ -158,6 +158,13 @@ def make_clip(moment: dict, creator: str, campaign: dict | None, do_publish: boo
             print(f"  skip {moment['id']}: score {edit['score']}")
             return None
         segs = highlights.micro_cut(edit["segments"], words)
+        if highlights.total(segs) < highlights.MIN_TOTAL:
+            # micro-cuts removed pauses: top up with more surrounding context, then cut that too.
+            # Added phrases are already pause-free; words=[] keeps silent run-ons and only splits into ~3 s beats.
+            segs = highlights.micro_cut(highlights.pad_to_min(segs, words, 0, length), [])
+        if highlights.total(segs) < highlights.MIN_TOTAL - 0.5:
+            print(f"  skip {moment['id']}: only {highlights.total(segs):.1f}s of material (min {highlights.MIN_TOTAL:.0f}s)")
+            return None
         info = layout.analyse(str(raw), min(s for s, _ in segs), max(e for _, e in segs))
         # A/B test: alternate blurred-horizontal and full-vertical framing (stable per clip name).
         style = "blur" if zlib.crc32(name.encode()) % 2 else "vertical"

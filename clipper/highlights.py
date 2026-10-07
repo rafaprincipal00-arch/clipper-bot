@@ -9,13 +9,14 @@ EDIT_PROMPT = """You are a top short-form editor (TikTok / YouTube Shorts / Reel
 Viewers marked this moment as viral: "{title}". Below is the word-timestamped transcript (seconds) of the
 source window around it.
 
-Build a fast, dopamine-heavy edit of AT MOST {max_len} seconds total (shorter is fine if the moment is complete;
-aim for {min_len}-{max_len}s) from many kept segments:
+Build a fast, dopamine-heavy edit of {min_len}-{max_len} seconds total (NEVER under {min_len}s: viewers need the
+context to get the payoff) from many kept segments:
 - Second 0 is the hook: the strongest line or reaction, even if it comes later in the window. Then only the
   set-up needed to understand it, then the payoff. Keep chronological order apart from that opening hook.
 - Cut hard and often: a new cut every 2-5 seconds is ideal. Drop filler ("uh", "like", "you know"), repeats,
   every pause, side-tangents and chat-reading that adds nothing. Long moments must be compressed, not truncated.
-- NEVER cut mid-word or mid-sentence and never remove context the payoff depends on.
+- NEVER cut mid-word or mid-sentence and never remove context the payoff depends on. Keep enough set-up
+  (what is happening, who says what to whom) that a stranger scrolling past understands the moment.
 - Segments must use the transcript's timestamps, each at least 1.0 s long.
 Score viral potential 0-100 and be harsh. It needs a real payoff: a reaction, a fail, a roast, drama, a
 shocking line, a funny exchange with a punchline. Someone just commenting, reading chat, explaining or
@@ -101,7 +102,9 @@ def clean_segments(raw: list, words: list[dict], lo: float, hi: float, max_len: 
     return out
 
 
-MIN_TOTAL = 15.0  # below this a clip has no context (happens on gameplay with little speech)
+# Below this a clip has no context; the user wants 20-30 s minimum (CLIP_MIN_S overrides).
+MIN_TOTAL = float(os.environ.get("CLIP_MIN_S", "20"))
+MAX_TOTAL = float(os.environ.get("CLIP_MAX_S", "40"))
 
 
 def ensure_min(segs: list[tuple[float, float]], lo: float, hi: float, min_total: float = MIN_TOTAL,
@@ -149,8 +152,58 @@ def micro_cut(segs: list[tuple[float, float]], words: list[dict], gap: float = 0
     return out or segs
 
 
+def _phrases(words: list[dict], lo: float, hi: float, pause: float = 0.35) -> list[tuple[float, float]]:
+    """Speech stretches inside [lo, hi], split on pauses."""
+    out: list[list[float]] = []
+    for w in words:
+        if w["start"] < lo or w["end"] > hi:
+            continue
+        if out and w["start"] - out[-1][1] <= pause:
+            out[-1][1] = w["end"]
+        else:
+            out.append([w["start"], w["end"]])
+    return [(max(lo, s - 0.06), min(hi, e + 0.08)) for s, e in out]
+
+
+def total(segs: list[tuple[float, float]]) -> float:
+    return sum(e - s for s, e in segs)
+
+
+def pad_to_min(segs: list[tuple[float, float]], words: list[dict], lo: float, hi: float,
+               min_total: float = MIN_TOTAL, max_len: float = MAX_TOTAL) -> list[tuple[float, float]]:
+    """Grow a too-short edit with the surrounding speech (context), nearest first, keeping the opening
+    hook in place; if the window runs out of speech, extend the last shot with what follows (visuals)."""
+    if not segs or total(segs) >= min_total:
+        return segs
+    hook, body = (segs[:1], segs[1:]) if len(segs) > 1 and segs[0][0] > segs[1][0] else ([], list(segs))
+    kept = hook + body
+
+    def overlaps(p: tuple[float, float]) -> bool:
+        return any(p[0] < e and p[1] > s for s, e in kept)
+
+    span_s, span_e = (min(s for s, _ in body), max(e for _, e in body)) if body else segs[0]
+    extra = sorted((p for p in _phrases(words, lo, hi) if not overlaps(p)),
+                   key=lambda p: max(span_s - p[1], p[0] - span_e, 0))
+    for p in extra:
+        if total(hook + body) >= min_total:
+            break
+        room = max_len - total(hook + body)
+        if room < 1.0:
+            break
+        p = (p[0], min(p[1], p[0] + room))
+        body = sorted(body + [p])
+    if total(hook + body) < min_total and body:
+        # Not enough speech around it (gameplay): let the last shot run on.
+        s, e = body[-1]
+        body[-1] = (s, min(hi, e + (min_total - total(hook + body))))
+    if total(hook + body) < min_total and body:
+        s, e = body[0]
+        body[0] = (max(lo, s - (min_total - total(hook + body))), e)
+    return hook + body
+
+
 def pick_edit(words: list[dict], creator: str, title: str, lo: float, hi: float,
-              min_len: int = 20, max_len: int = 40) -> dict | None:
+              min_len: int = int(MIN_TOTAL), max_len: int = int(MAX_TOTAL)) -> dict | None:
     if not words:
         return None
     res = _gemini_json(EDIT_PROMPT.format(creator=creator, title=title, min_len=min_len, max_len=max_len,
@@ -158,10 +211,12 @@ def pick_edit(words: list[dict], creator: str, title: str, lo: float, hi: float,
     if not res:
         return None
     segs = clean_segments(res.get("segments"), words, lo, hi, max_len)
-    return {**res, "segments": ensure_min(segs, lo, hi, max_len=max_len)}
+    if not segs:
+        return {**res, "segments": ensure_min(segs, lo, hi, max_len=max_len)}
+    return {**res, "segments": pad_to_min(segs, words, lo, hi, max_len=max_len)}
 
 
-def fallback_edit(words: list[dict], lo: float, hi: float, max_len: int = 40) -> dict:
+def fallback_edit(words: list[dict], lo: float, hi: float, max_len: int = int(MAX_TOTAL)) -> dict:
     """No LLM: keep speech, cut every pause > 0.35 s (jump cuts), capped at max_len."""
     raw, cur = [], None
     for w in words:
