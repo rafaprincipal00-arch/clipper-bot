@@ -173,6 +173,7 @@ def pad_to_min(segs: list[tuple[float, float]], words: list[dict], lo: float, hi
                min_total: float = MIN_TOTAL, max_len: float = MAX_TOTAL) -> list[tuple[float, float]]:
     """Grow a too-short edit with the surrounding speech (context), nearest first, keeping the opening
     hook in place; if the window runs out of speech, extend the last shot with what follows (visuals)."""
+    min_total = min(min_total, max_len)
     if not segs or total(segs) >= min_total:
         return segs
     hook, body = (segs[:1], segs[1:]) if len(segs) > 1 and segs[0][0] > segs[1][0] else ([], list(segs))
