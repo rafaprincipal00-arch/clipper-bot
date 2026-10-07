@@ -540,7 +540,8 @@ def post(account: int, video: Path, caption: str, mood: str = "hype", log=print,
             raise RuntimeError("file dialog did not accept the clip")
         time.sleep(8)
         _dismiss(b)
-        music = add_music(b, mood, log)
+        # The clip already carries the bot's own background music (render.py), so no second track here.
+        music = None
         _dismiss(b)
         set_caption(b, video.stem, caption)
         check = wait_checks(b)
