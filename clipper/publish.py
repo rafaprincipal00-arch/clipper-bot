@@ -150,6 +150,9 @@ def publish_all(path: Path, title: str, caption: str, public_url: str | None, sk
                      ("tiktok", lambda: tiktok_draft(path, account) if os.environ.get("TIKTOK_MODE", "draft") == "draft"
                       else tiktok(path, caption, account)),
                      ("instagram", lambda: instagram(public_url, caption))):
+        if name == "tiktok" and os.environ.get("TIKTOK_MODE") == "off":
+            results[name] = "scheduled (PC poster)"
+            continue
         if skip and name in skip:
             results[name] = "skipped (daily cap)"
             continue

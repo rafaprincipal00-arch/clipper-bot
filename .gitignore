@@ -8,3 +8,6 @@ tiktok_refresh_token.new
 node_modules/
 data/logon_trigger.log
 data/logon_trigger_state.json
+data/tt_profiles/
+data/tiktok_plan.json
+data/tiktok_poster.log

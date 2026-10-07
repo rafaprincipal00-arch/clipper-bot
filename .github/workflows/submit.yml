@@ -1,0 +1,29 @@
+name: submit
+# Content Rewards submission for links posted outside the clipper run (TikTok from the PC poster).
+on:
+  workflow_dispatch:
+    inputs:
+      campaign:
+        description: "Content Rewards campaign URL"
+        required: true
+      links:
+        description: "Post URLs, space separated"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      CR_STATE: ${{ secrets.CR_STATE }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -q playwright && python -m playwright install --with-deps chromium-headless-shell > /dev/null
+      - name: Submit
+        run: python -m clipper.submit "${{ inputs.campaign }}" ${{ inputs.links }}
