@@ -48,6 +48,13 @@ def dispatch(token: str) -> None:
             raise RuntimeError(f"GitHub answered {r.status}")
 
 
+def start_tiktok_poster() -> None:
+    """Hidden daemon that posts today's clips to TikTok at staggered times (scripts/tiktok_poster.py)."""
+    subprocess.Popen([sys.executable, str(HERE / "scripts" / "tiktok_poster.py"), "run"], cwd=str(HERE),
+                     creationflags=NO_WINDOW, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    log("TikTok poster started")
+
+
 def main() -> None:
     now = datetime.now()
     if now < ARM_FROM:
@@ -63,6 +70,7 @@ def main() -> None:
             dispatch(github_token())
             STATE.write_text(json.dumps({"last_run": today, "at": now.isoformat(timespec="seconds")}), encoding="utf-8")
             log(f"workflow dispatched: batch={BATCH} (3 clips, 1 per account, every 8-9 min)")
+            start_tiktok_poster()
             return
         except (OSError, RuntimeError, urllib.error.URLError, subprocess.SubprocessError) as e:
             log(f"attempt {attempt + 1} failed: {e}")
