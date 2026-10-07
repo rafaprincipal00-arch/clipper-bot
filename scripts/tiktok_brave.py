@@ -474,7 +474,8 @@ def google_login(b: Brave, email: str) -> str | None:
     p = Brave(pop)
     p.user_fg = b.user_fg
     # The account list can take a while to render when the PC is short on RAM.
-    link = p.find(lambda c: c.ControlTypeName == "HyperlinkControl" and c.Name.endswith(email), timeout=60)
+    # Google's account list sits deeper than 70 levels in the UIA tree; render can be slow on low RAM.
+    link = p.find(lambda c: c.ControlTypeName == "HyperlinkControl" and c.Name.endswith(email), timeout=60, depth=110)
     if not link:
         seen = [c.Name[:60] for c, _ in auto.WalkControl(p.root(), maxDepth=70)
                 if c.ControlTypeName in ("HyperlinkControl", "ButtonControl", "TextControl") and c.Name][:25]
