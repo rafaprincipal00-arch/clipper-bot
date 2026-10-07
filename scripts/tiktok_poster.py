@@ -137,8 +137,8 @@ def do_item(plan: dict, item: dict) -> None:
     save_plan(plan)
     try:
         video = download(item["video_url"], WORK / item["file"])
-        import tiktok_brave  # the user's Brave, one profile per TikTok account (scripts/tiktok_brave.py)
-        res = tiktok_brave.post(item["account"], video, item["caption"], item.get("mood") or "hype", log)
+        import tiktok_bg  # the bot's own headless browser; never the user's Brave, mouse or keyboard
+        res = tiktok_bg.post(item["account"], video, item["caption"], log)
         url = res["url"]
         item.update(status="posted", url=url, music=res["music"], posted_at=datetime.now().isoformat(timespec="seconds"))
         log(f"posted {item['file']} -> {url}")

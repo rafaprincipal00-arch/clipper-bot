@@ -72,7 +72,7 @@ def main() -> None:
             dispatch(github_token())
             STATE.write_text(json.dumps({"last_run": today, "at": now.isoformat(timespec="seconds")}), encoding="utf-8")
             log(f"workflow dispatched: batch={BATCH} (accounts in turn, every 8-9 min)")
-            pass  # TikTok poster paused: it must not touch the user's Brave (needs its own browser first)
+            start_tiktok_poster()  # headless, own browser (scripts/tiktok_bg.py)
             return
         except (OSError, RuntimeError, urllib.error.URLError, subprocess.SubprocessError) as e:
             log(f"attempt {attempt + 1} failed: {e}")
