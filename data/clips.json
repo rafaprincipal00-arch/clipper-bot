@@ -1,5 +1,140 @@
 [
  {
+  "file": "tjr-kc-clip-01m464qttzsetbes3q5ymp9s0j.mp4",
+  "creator": "TJR",
+  "source": "https://clips.kick.com/clips/73/clip_01M464QTTZSETBES3Q5YMP9S0J/playlist.m3u8",
+  "start": 27.44,
+  "end": 24.599332999999998,
+  "cuts": 7,
+  "length": 20.0,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "kick-clip",
+  "score": 85,
+  "hook": "NOBODY CARES EXCEPT FOR YOU",
+  "hook_type": "stakes",
+  "emphasis": [
+   "nobody",
+   "fucking",
+   "cares",
+   "money"
+  ],
+  "caption": "I can't believe he lost it over fake channels #tjr #trading #daytrading #kick\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "I can't believe he lost it over fake channels",
+  "campaign": "https://contentrewards.com/discover/70baf344-d80f-4ba2-910a-10340f2ea591",
+  "created": "2026-10-08T10:55:57.641269+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/ysbNur90rsA",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/tjr-kc-clip-01m464qttzsetbes3q5ymp9s0j.mp4",
+  "account": 3,
+  "submission": {
+   "submitted": [
+    "https://youtube.com/shorts/ysbNur90rsA"
+   ],
+   "rejected": {}
+  },
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 57,
+   "publish+submit": 30,
+   "total": 92
+  }
+ },
+ {
+  "file": "tjr-kc-clip-01m3vwettbzxbj9ktehxbw7jh1.mp4",
+  "creator": "TJR",
+  "source": "https://clips.kick.com/clips/55/clip_01M3VWETTBZXBJ9KTEHXBW7JH1/playlist.m3u8",
+  "start": 6.79,
+  "end": 62.519667,
+  "cuts": 8,
+  "length": 24.3,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "drama",
+  "signal": "kick-clip",
+  "score": 85,
+  "hook": "Risked 30K to make 12K",
+  "hook_type": "stakes",
+  "emphasis": [
+   "12,907",
+   "break",
+   "ungrateful",
+   "30,000"
+  ],
+  "caption": "I can't believe he risked thirty grand just for this #tjr #trading #daytrading #kick\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "I can't believe he risked thirty grand just for this",
+  "campaign": "https://contentrewards.com/discover/70baf344-d80f-4ba2-910a-10340f2ea591",
+  "created": "2026-10-08T10:46:01.990920+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/DTLd99-HgQk",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/tjr-kc-clip-01m3vwettbzxbj9ktehxbw7jh1.mp4",
+  "account": 2,
+  "submission": {
+   "submitted": [
+    "https://youtube.com/shorts/DTLd99-HgQk"
+   ],
+   "rejected": {}
+  },
+  "timing_s": {
+   "download": 11,
+   "transcribe+edit+render": 80,
+   "publish+submit": 30,
+   "total": 121
+  }
+ },
+ {
+  "file": "tjr-kc-clip-01m493anse56j2kspd1wt7q2y8.mp4",
+  "creator": "TJR",
+  "source": "https://clips.kick.com/clips/4d/clip_01M493ANSE56J2KSPD1WT7Q2Y8/playlist.m3u8",
+  "start": 29.880000000000003,
+  "end": 57.28,
+  "cuts": 9,
+  "length": 21.5,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "kick-clip",
+  "score": 85,
+  "hook": "They literally oiled him up",
+  "hook_type": "revelation",
+  "emphasis": [
+   "oiled",
+   "lubed",
+   "What",
+   "Riz"
+  ],
+  "caption": "I can't believe they actually lubed him up live #tjr #trading #daytrading #kick\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "I can't believe they actually lubed him up live",
+  "campaign": "https://contentrewards.com/discover/70baf344-d80f-4ba2-910a-10340f2ea591",
+  "created": "2026-10-08T10:33:44.402402+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/dau-HEkJZuA",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/tjr-kc-clip-01m493anse56j2kspd1wt7q2y8.mp4",
+  "account": 1,
+  "submission": {
+   "submitted": [
+    "https://youtube.com/shorts/dau-HEkJZuA"
+   ],
+   "rejected": {}
+  },
+  "timing_s": {
+   "download": 7,
+   "transcribe+edit+render": 86,
+   "publish+submit": 31,
+   "total": 124
+  }
+ },
+ {
   "file": "lanah-cherry-twitch-tw-2893163336-1972.mp4",
   "creator": "Lanah Cherry (Twitch)",
   "source": "https://www.twitch.tv/videos/2893163336",
