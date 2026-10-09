@@ -1,0 +1,21 @@
+name: cr-earnings
+# Read-only: prints the Content Rewards dashboard (earnings, submissions) to the run log.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  earnings:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      CR_STATE: ${{ secrets.CR_STATE }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -q playwright && python -m playwright install --with-deps chromium-headless-shell > /dev/null
+      - run: python scripts/cr_earnings.py
