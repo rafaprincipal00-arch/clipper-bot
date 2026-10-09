@@ -44,6 +44,8 @@ def main(ids: list[str]) -> None:
             body = page.inner_text("body").split("Connect Discord", 1)[-1]
             print("JOINED:", "Submit clip" in body or "Leave campaign" in body)
             print(body[:5000])
+            print("LINKS:", page.eval_on_selector_all(
+                "a[href]", "els => els.filter(e => !e.href.includes('contentrewards.com')).map(e => e.innerText.trim() + ' -> ' + e.href)"))
             # Expand the unlocked rule/requirement sections.
             for t in ("Content requirements", "Creator requirements"):
                 el = page.get_by_text(t, exact=True)
