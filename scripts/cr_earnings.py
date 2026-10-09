@@ -8,9 +8,8 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
-PAGES = ["https://contentrewards.com/dashboard", "https://contentrewards.com/earnings",
-         "https://contentrewards.com/submissions", "https://contentrewards.com/wallet",
-         "https://contentrewards.com/profile"]
+PAGES = ["https://contentrewards.com/discover", "https://contentrewards.com/discover/1634558e-eae2-4d03-bd7d-a51ab44999a1"]
+KEYS = ("earn", "wallet", "payout", "submission", "balance", "account", "stats", "analytics", "my-")
 
 
 def main() -> None:
@@ -22,7 +21,13 @@ def main() -> None:
         ctx = browser.new_context(storage_state=str(state_file), viewport={"width": 1280, "height": 900},
                                   locale="en-US")
         page = ctx.new_page()
-        for url in PAGES:
+        seen: set[str] = set()
+        queue = list(PAGES)
+        while queue and len(seen) < 9:
+            url = queue.pop(0)
+            if url in seen:
+                continue
+            seen.add(url)
             page.goto(url, wait_until="domcontentloaded")
             page.wait_for_timeout(8000)
             print(f"===== {url} -> {page.url}")
@@ -31,7 +36,9 @@ def main() -> None:
                 break
             print(page.inner_text("body")[:4000])
             links = page.eval_on_selector_all("a[href]", "els => [...new Set(els.map(e => e.href))]")
-            print("LINKS:", [h for h in links if "contentrewards.com" in h][:40])
+            print("LINKS:", [h for h in links if "contentrewards.com" in h][:60])
+            queue += [h for h in links if "contentrewards.com" in h and any(k in h.lower() for k in KEYS)
+                      and h not in seen]
         browser.close()
 
 
