@@ -117,8 +117,11 @@ def youtube_heat_moments(channel_videos_url: str, count: int = 5, recent: int = 
         try:
             info = json.loads(subprocess.run(["yt-dlp", "--no-warnings", "--skip-download", "-J", url],
                                              capture_output=True, text=True, check=True).stdout)
-        except subprocess.CalledProcessError:
+        except subprocess.CalledProcessError as err:  # e.g. YouTube's bot check on datacenter IPs
+            print(f"  yt-dlp failed on {url}: {(err.stderr or '').strip()[-200:]}")
             continue
+        if not info.get("heatmap"):
+            print(f"  no most-replayed data yet: {url}")
         heat = sorted(info.get("heatmap") or [], key=lambda h: -h["value"])
         used = []
         for h in heat:

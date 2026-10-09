@@ -35,18 +35,21 @@
  {
   "creator": "Michael Porter Jr. (Curious Mike)",
   "source": "https://www.youtube.com/channel/UC3ZStupBLNVY4wVVOn7-e3w/videos",
-  "campaign": "Curious Mike(MPJ) Clipping",
+  "campaign": "N3ON X MPJ Podcast clips (Curious Mike)",
   "campaign_url": "https://contentrewards.com/discover/e80b84f7-6085-4761-8d5e-be01ca506454",
-  "cpm": 1.25,
+  "cpm": 1.0,
   "enabled": true,
   "hashtags": [
-   "nba",
-   "michaelporterjr",
-   "podcast"
+   "curiousmike",
+   "mpj",
+   "n3on",
+   "podcast",
+   "nba"
   ],
-  "credit": "",
+  "credit": "YT: @mpj",
   "why": "Estrella NBA, 5k$ libres, 97 clippers",
-  "join_status": "unido (ClipUp)"
+  "join_status": "unido 2026-10-09",
+  "requirements": "Min payout 2$ = 2.000 vistas. Referencia: texto 'YT: @mpj' en pantalla."
  },
  {
   "creator": "Michael Sartain",
