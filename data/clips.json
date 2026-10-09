@@ -1,5 +1,185 @@
 [
  {
+  "file": "tjr-kc-clip-01m48qhpzmr54rd7cvr5n5jycq.mp4",
+  "creator": "TJR",
+  "source": "https://clips.kick.com/clips/34/clip_01M48QHPZMR54RD7CVR5N5JYCQ/playlist.m3u8",
+  "start": 33.61,
+  "end": 13.6,
+  "cuts": 7,
+  "length": 21.2,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "kick-clip",
+  "score": 92,
+  "hook": "Mods ban everyone right now",
+  "hook_type": "stakes",
+  "emphasis": [
+   "ban",
+   "everyone",
+   "signals",
+   "platter"
+  ],
+  "caption": "I can't believe he actually lost his mind at chat over one bad trade #tjr #trading #daytrading #kick\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "I can't believe he actually lost his mind at chat over one bad trade",
+  "campaign": "https://contentrewards.com/discover/70baf344-d80f-4ba2-910a-10340f2ea591",
+  "created": "2026-10-09T10:21:36.684387+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/gjLvE6XzQvk",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/tjr-kc-clip-01m48qhpzmr54rd7cvr5n5jycq.mp4",
+  "account": 1,
+  "submission": {
+   "submitted": [
+    "https://youtube.com/shorts/gjLvE6XzQvk"
+   ],
+   "rejected": {}
+  },
+  "timing_s": {
+   "download": 8,
+   "transcribe+edit+render": 100,
+   "publish+submit": 40,
+   "total": 148
+  }
+ },
+ {
+  "file": "tjr-kc-clip-01m48s0w6tg3xvcp00cc2v5682.mp4",
+  "creator": "TJR",
+  "source": "https://clips.kick.com/clips/c0/clip_01M48S0W6TG3XVCP00CC2V5682/playlist.m3u8",
+  "start": 5.300000000000001,
+  "end": 45.08,
+  "cuts": 10,
+  "length": 25.7,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "kick-clip",
+  "score": 85,
+  "hook": "The book trading indicator",
+  "hook_type": "revelation",
+  "emphasis": [
+   "indicator",
+   "advanced",
+   "launch",
+   "bounce"
+  ],
+  "caption": "I can't believe he invented a literal book trading indicator #tjr #trading #daytrading #kick\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "I can't believe he invented a literal book trading indicator",
+  "campaign": "https://contentrewards.com/discover/70baf344-d80f-4ba2-910a-10340f2ea591",
+  "created": "2026-10-09T10:09:09.230661+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/OutwdEqpXOw",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/tjr-kc-clip-01m48s0w6tg3xvcp00cc2v5682.mp4",
+  "account": 3,
+  "submission": {
+   "submitted": [
+    "https://youtube.com/shorts/OutwdEqpXOw"
+   ],
+   "rejected": {}
+  },
+  "timing_s": {
+   "download": 11,
+   "transcribe+edit+render": 92,
+   "publish+submit": 41,
+   "total": 144
+  }
+ },
+ {
+  "file": "lanah-cherry-twitch-tw-2894775624-451.mp4",
+  "creator": "Lanah Cherry (Twitch)",
+  "source": "https://www.twitch.tv/videos/2894775624",
+  "start": 416,
+  "end": 514.06,
+  "cuts": 12,
+  "length": 29.7,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "James crashed the car!",
+  "hook_type": "revelation",
+  "emphasis": [
+   "hell",
+   "stress",
+   "James",
+   "driving"
+  ],
+  "caption": "I can't believe he actually crashed the car live #twitch #streamer #irl\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "I can't believe he actually crashed the car live",
+  "campaign": "https://contentrewards.com/discover/6e379737-96ef-4980-8565-08df4e6d39d9",
+  "created": "2026-10-09T09:58:21.163798+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/8ztcuGDbrGc",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lanah-cherry-twitch-tw-2894775624-451.mp4",
+  "account": 2,
+  "submission": {
+   "submitted": [
+    "https://youtube.com/shorts/8ztcuGDbrGc"
+   ],
+   "rejected": {}
+  },
+  "timing_s": {
+   "download": 8,
+   "transcribe+edit+render": 205,
+   "publish+submit": 39,
+   "total": 253
+  }
+ },
+ {
+  "file": "tjr-kc-clip-01m40441ht7r64dvn0rn6hzms1.mp4",
+  "creator": "TJR",
+  "source": "https://clips.kick.com/clips/07/clip_01M40441HT7R64DVN0RN6HZMS1/playlist.m3u8",
+  "start": 10.11,
+  "end": 43.6,
+  "cuts": 10,
+  "length": 25.9,
+  "layout": "face",
+  "style": "blur",
+  "mood": "hype",
+  "signal": "kick-clip",
+  "score": 85,
+  "hook": "He chose day trading over college",
+  "hook_type": "revelation",
+  "emphasis": [
+   "broke",
+   "profitable",
+   "50,000",
+   "work"
+  ],
+  "caption": "I can't believe day trading actually made him rich #tjr #trading #daytrading #kick\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "I can't believe day trading actually made him rich",
+  "campaign": "https://contentrewards.com/discover/70baf344-d80f-4ba2-910a-10340f2ea591",
+  "created": "2026-10-09T09:46:07.682508+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/aNTLOZEOJ5g",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/tjr-kc-clip-01m40441ht7r64dvn0rn6hzms1.mp4",
+  "account": 1,
+  "submission": {
+   "submitted": [
+    "https://youtube.com/shorts/aNTLOZEOJ5g"
+   ],
+   "rejected": {}
+  },
+  "timing_s": {
+   "download": 22,
+   "transcribe+edit+render": 127,
+   "publish+submit": 39,
+   "total": 187
+  }
+ },
+ {
   "file": "tjr-kc-clip-01m464qttzsetbes3q5ymp9s0j.mp4",
   "creator": "TJR",
   "source": "https://clips.kick.com/clips/73/clip_01M464QTTZSETBES3Q5YMP9S0J/playlist.m3u8",
