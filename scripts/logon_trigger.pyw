@@ -4,7 +4,9 @@ First logon of each day (from ARM_FROM on) -> dispatches the GitHub workflow in 
 9 different clips, accounts in turn (1, 2, 3, 1...), one every 8-9 min. That is the daily limit:
 TikTok 3 per account (posted later from the PC) and YouTube 6 (the Google project's API quota, so the
 first 6 clips also go to YouTube Shorts, 2 per channel).
-Processing happens in GitHub Actions, so the PC only sends one HTTP request.
+Processing happens in GitHub Actions. Before dispatching, the PC downloads the YouTube moment windows that
+GitHub's runners cannot fetch (scripts/yt_prefetch.py: idle priority, waits while the CPU is busy, skips on
+low battery, at most PREFETCH_MAX_MIN minutes so the daily run is never held back for long).
 Log: data/logon_trigger.log (local only, gitignored).
 """
 import json
@@ -24,6 +26,7 @@ HERE = Path(__file__).resolve().parent.parent
 STATE = HERE / "data" / "logon_trigger_state.json"
 LOG = HERE / "data" / "logon_trigger.log"
 NO_WINDOW = 0x08000000
+PREFETCH_MAX_MIN = 25
 
 
 def log(*a: object) -> None:
@@ -57,6 +60,17 @@ def start_tiktok_poster() -> None:
     log("TikTok poster started")
 
 
+def prefetch_youtube() -> None:
+    """Download YouTube moment windows on the PC for the cloud run; never blocks the day's run for long."""
+    try:
+        r = subprocess.run([sys.executable, str(HERE / "scripts" / "yt_prefetch.py")], cwd=str(HERE),
+                           creationflags=NO_WINDOW | 0x00000040, stdout=subprocess.DEVNULL,
+                           stderr=subprocess.DEVNULL, timeout=PREFETCH_MAX_MIN * 60)
+        log(f"YouTube prefetch finished (exit {r.returncode}, details in data/yt_prefetch.log)")
+    except subprocess.TimeoutExpired:
+        log(f"YouTube prefetch stopped after {PREFETCH_MAX_MIN} min; dispatching with what is uploaded")
+
+
 def main() -> None:
     now = datetime.now()
     if now < ARM_FROM:
@@ -67,6 +81,8 @@ def main() -> None:
     if state.get("last_run") == today and "--force" not in sys.argv:
         log("already launched today")
         return
+    time.sleep(120)  # let the user's own startup apps load first
+    prefetch_youtube()
     for attempt in range(20):  # network may not be up right after logon
         try:
             dispatch(github_token())

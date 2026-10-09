@@ -20,7 +20,7 @@ from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 from pathlib import Path
 
-from . import highlights, layout, moments, performance, publish, render, submit
+from . import highlights, layout, moments, performance, prefetch, publish, render, submit
 
 ROOT = Path(__file__).resolve().parent.parent
 WORK = ROOT / "work"
@@ -147,7 +147,11 @@ def make_clip(moment: dict, creator: str, campaign: dict | None, do_publish: boo
     OUT.mkdir(exist_ok=True)
     name = f"{slug(creator)}-{slug(moment['id'])}"
     with scratch(name) as d:
-        raw = download_window(moment["url"], moment["start"], moment["end"], d / "raw.mp4")
+        if moment.get("local"):  # window already downloaded on the PC (scripts/yt_prefetch.py)
+            raw = d / "raw.mp4"
+            shutil.move(moment["local"], raw)
+        else:
+            raw = download_window(moment["url"], moment["start"], moment["end"], d / "raw.mp4")
         t_dl = time.time()
         words = transcribe(raw)
         length = duration(raw)
@@ -249,7 +253,16 @@ def run_auto(do_publish: bool, min_score: int, per_source: int, total: int = 0, 
     t0 = time.time()
     prune_outputs()
     queues: dict[str, list[dict]] = {}
+    try:
+        from_pc = prefetch.load()
+    except Exception as e:  # the cloud run must still work without the PC
+        print(f"  prefetch unavailable: {e}")
+        from_pc = {}
     for src in sources:
+        if from_pc.get(src["creator"]):
+            queues[src["creator"]] = [m for m in from_pc[src["creator"]] if m["id"] not in seen]
+            print(f"[{src['creator']}] {len(queues[src['creator']])} new moments (downloaded on the PC)")
+            continue
         try:
             queues[src["creator"]] = [m for m in moments.strongest(moments.moments_for(src["source"]))
                                       if m["id"] not in seen]
