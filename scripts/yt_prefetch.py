@@ -92,20 +92,32 @@ def wait_for_idle(max_wait_s: int = 900) -> None:
         time.sleep(25)
 
 
-def download(m: dict, dest: Path) -> bool:
+def _run(cmd: list[str], timeout: int) -> subprocess.CompletedProcess:
+    return subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace",
+                          creationflags=NO_WINDOW | IDLE, timeout=timeout)
+
+
+def download(m: dict, dest: Path, cache: dict[str, Path]) -> bool:
+    """Whole episode once (yt-dlp's chunked downloader is ~50x faster than ffmpeg seeking a YouTube
+    stream, which stalls), then a stream-copy cut of the window: no re-encode, almost no CPU."""
     wait_for_idle()
-    cmd = [sys.executable, "-m", "yt_dlp", "--no-warnings", "--no-progress",
-           "-f", "bv*[height<=1080]+ba/b[height<=1080]/b",
-           "--download-sections", f"*{max(0, m['start']):.0f}-{m['end']:.0f}",
-           "--merge-output-format", "mp4", "--limit-rate", "8M",
-           "--downloader-args", "ffmpeg:-threads 2", "--postprocessor-args", "ffmpeg:-threads 2",
-           "-o", str(dest), m["url"]]
-    if FFMPEG.exists():
-        cmd[3:3] = ["--ffmpeg-location", str(FFMPEG)]
-    r = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace",
-                       creationflags=NO_WINDOW | IDLE, timeout=900)
+    ff = str(FFMPEG) if FFMPEG.exists() else "ffmpeg"
+    full = cache.get(m["url"])
+    if not full:
+        full = WORK / f"full-{m['id'].split('-')[1]}.mp4"
+        r = _run([sys.executable, "-m", "yt_dlp", "--no-warnings", "--no-progress", "--ffmpeg-location", ff,
+                  "-f", "bv*[height<=1080][vcodec^=avc1]+ba[ext=m4a]/bv*[height<=1080]+ba/b",
+                  "--merge-output-format", "mp4", "--postprocessor-args", "ffmpeg:-threads 2",
+                  "-o", str(full), m["url"]], 1500)
+        if r.returncode != 0 or not full.exists():
+            log(f"  download failed {m['id']}: {(r.stderr or '')[-300:]}")
+            return False
+        cache[m["url"]] = full
+    start = max(0.0, m["start"])
+    r = _run([ff, "-y", "-hide_banner", "-loglevel", "error", "-ss", f"{start:.2f}", "-i", str(full),
+              "-t", f"{m['end'] - start:.2f}", "-c", "copy", "-avoid_negative_ts", "make_zero", str(dest)], 300)
     if r.returncode != 0 or not dest.exists():
-        log(f"  download failed {m['id']}: {(r.stderr or '')[-300:]}")
+        log(f"  cut failed {m['id']}: {(r.stderr or '')[-300:]}")
         return False
     return True
 
@@ -146,6 +158,7 @@ def main() -> None:
                 manifest = []
     have = {e["moment"]["id"] for e in manifest}
     WORK.mkdir(parents=True, exist_ok=True)
+    cache: dict[str, Path] = {}
     for src in sources:
         try:
             found = [m for m in moments.strongest(moments.moments_for(src["source"]))
@@ -157,12 +170,14 @@ def main() -> None:
         for m in found[:PER_SOURCE]:
             name = f"{m['id']}.mp4"
             dest = WORK / name
-            if not download(m, dest):
+            if not download(m, dest, cache):
                 continue
             upload(rel, dest, "video/mp4")
             dest.unlink(missing_ok=True)
             manifest.append({"creator": src["creator"], "asset": name, "moment": m})
             log(f"  uploaded {name} ({m['title'][:50]})")
+    for full in cache.values():  # whole episodes never stay on disk
+        full.unlink(missing_ok=True)
     mf = WORK / "prefetch.json"
     mf.write_text(json.dumps(manifest, ensure_ascii=False), encoding="utf-8")
     upload(draft_release(), mf, "application/json")
