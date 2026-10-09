@@ -28,7 +28,8 @@ def main() -> None:
             print("SESSION EXPIRED")
             return
         for name in SECTIONS:
-            page.get_by_role("link", name=name, exact=True).first.click()
+            # An overlay panel covers the sidebar icons: trigger the client-side navigation from the DOM.
+            page.get_by_role("link", name=name, exact=True).first.evaluate("el => el.click()")
             page.wait_for_timeout(9000)
             print(f"===== {name} -> {page.url}")
             print(page.inner_text("body")[:6000])
