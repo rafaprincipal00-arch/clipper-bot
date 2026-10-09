@@ -17,6 +17,9 @@ PROFILES = ROOT / "data" / "tt_profiles"
 UPLOAD = "https://www.tiktok.com/tiktokstudio/upload"
 HANDLES = {1: "pepe854146", 2: "streammoments.daily", 3: "rafael.benitez656"}
 ARGS = ["--disable-blink-features=AutomationControlled", "--no-first-run", "--no-default-browser-check"]
+# Headless Chromium announces itself as "HeadlessChrome"; TikTok's login/risk checks reject that session.
+UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
+      "Chrome/148.0.0.0 Safari/537.36")
 
 
 def profile(account: int) -> Path:
@@ -28,7 +31,7 @@ def profile(account: int) -> Path:
 def _ctx(p, account: int):
     return p.chromium.launch_persistent_context(
         str(profile(account)), headless=True, args=ARGS, ignore_default_args=["--enable-automation"],
-        viewport={"width": 1366, "height": 900}, locale="en-US")
+        viewport={"width": 1366, "height": 900}, locale="en-US", user_agent=UA)
 
 
 def _signed_in(page) -> bool:
@@ -49,8 +52,9 @@ def _dismiss(page) -> None:
 
 
 def _latest(page, handle: str) -> str:
+    # TikTok Studio's content list (the public profile renders no video grid in a headless browser).
     for _ in range(12):
-        page.goto(f"https://www.tiktok.com/@{handle}", wait_until="domcontentloaded", timeout=90_000)
+        page.goto("https://www.tiktok.com/tiktokstudio/content", wait_until="domcontentloaded", timeout=90_000)
         page.wait_for_timeout(6000)
         hrefs = page.eval_on_selector_all("a[href*='/video/']", "els => els.map(e => e.href)")
         vids = sorted({h.split("?")[0] for h in hrefs if f"/@{handle}/video/" in h},
