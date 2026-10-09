@@ -1,6 +1,8 @@
 """Print what Content Rewards shows about our earnings and submissions (read-only, uses the CR_STATE session).
 
-Run by .github/workflows/cr_earnings.yml; the session secret only exists in GitHub Actions.
+Run by .github/workflows/cr_earnings.yml; the session secret only exists in GitHub Actions. The creator
+pages only render when reached through the app's own sidebar (a direct load bounces to the landing page),
+so the script opens Discover and clicks Earnings / Submissions / Analytics.
 """
 import os
 import tempfile
@@ -8,8 +10,7 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
-PAGES = ["https://contentrewards.com/discover", "https://contentrewards.com/discover/1634558e-eae2-4d03-bd7d-a51ab44999a1"]
-KEYS = ("earn", "wallet", "payout", "submission", "balance", "account", "stats", "analytics", "my-")
+SECTIONS = ["Earnings", "Submissions", "Analytics", "Home"]
 
 
 def main() -> None:
@@ -18,27 +19,19 @@ def main() -> None:
         state_file = Path(tmp) / "state.json"
         state_file.write_text(state, encoding="utf-8")
         browser = p.chromium.launch(headless=True)
-        ctx = browser.new_context(storage_state=str(state_file), viewport={"width": 1280, "height": 900},
+        ctx = browser.new_context(storage_state=str(state_file), viewport={"width": 1400, "height": 1000},
                                   locale="en-US")
         page = ctx.new_page()
-        seen: set[str] = set()
-        queue = list(PAGES)
-        while queue and len(seen) < 9:
-            url = queue.pop(0)
-            if url in seen:
-                continue
-            seen.add(url)
-            page.goto(url, wait_until="domcontentloaded")
-            page.wait_for_timeout(8000)
-            print(f"===== {url} -> {page.url}")
-            if "/login" in page.url:
-                print("SESSION EXPIRED")
-                break
-            print(page.inner_text("body")[:4000])
-            links = page.eval_on_selector_all("a[href]", "els => [...new Set(els.map(e => e.href))]")
-            print("LINKS:", [h for h in links if "contentrewards.com" in h][:60])
-            queue += [h for h in links if "contentrewards.com" in h and any(k in h.lower() for k in KEYS)
-                      and h not in seen]
+        page.goto("https://contentrewards.com/c/discover", wait_until="domcontentloaded")
+        page.wait_for_timeout(8000)
+        if "/login" in page.url:
+            print("SESSION EXPIRED")
+            return
+        for name in SECTIONS:
+            page.get_by_role("link", name=name, exact=True).first.click()
+            page.wait_for_timeout(9000)
+            print(f"===== {name} -> {page.url}")
+            print(page.inner_text("body")[:6000])
         browser.close()
 
 
