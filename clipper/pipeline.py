@@ -20,7 +20,7 @@ from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 from pathlib import Path
 
-from . import highlights, layout, moments, publish, render, submit
+from . import highlights, layout, moments, performance, publish, render, submit
 
 ROOT = Path(__file__).resolve().parent.parent
 WORK = ROOT / "work"
@@ -177,6 +177,10 @@ def make_clip(moment: dict, creator: str, campaign: dict | None, do_publish: boo
         final = OUT / f"{name}.mp4"
         render.render_edit(str(raw), segs, info, ass, final, credit=(campaign or {}).get("credit", ""),
                            mood=mood, style=style)
+        # Same edit without the music bed for TikTok, where the poster adds a song from TikTok's library.
+        tt_final = OUT / f"{name}.tt.mp4"
+        render.render_edit(str(raw), segs, info, ass, tt_final, credit=(campaign or {}).get("credit", ""),
+                           mood=mood, style=style, with_music=False)
     # scratch dir (raw window, wav, captions) is gone here; only the edited clip remains.
     t_render = time.time()
     tags = " ".join(f"#{t.lstrip('#')}" for t in (campaign or {}).get("hashtags", []))
@@ -189,6 +193,8 @@ def make_clip(moment: dict, creator: str, campaign: dict | None, do_publish: boo
              "created": datetime.now(timezone.utc).isoformat(), "posts": {}}
     public_url = public_url_for(final)  # also feeds the panel's mp4 links
     entry["video_url"] = public_url  # the PC TikTok poster downloads the clip from here
+    entry["tiktok_url"] = public_url_for(tt_final)  # no music bed: TikTok adds its own licensed song
+    entry["tiktok_caption"] = f"{edit['title']} {tags}".strip()
     if do_publish:
         entry["posts"] = publish.publish_all(final, edit["title"], caption, public_url, skip=capped_platforms(),
                                              account=account)
@@ -231,6 +237,13 @@ def run_auto(do_publish: bool, min_score: int, per_source: int, total: int = 0, 
     total > 0 stops after that many clips; per_account sends the clips to the accounts in turn
     (1, 2, 3, 1, 2, 3...). A platform at its daily cap is skipped, the others keep getting clips."""
     sources = [s for s in json.loads((ROOT / "config" / "sources.json").read_text(encoding="utf-8")) if s.get("enabled")]
+    try:  # learn from our own views: best creators get their clips made first
+        perf = performance.refresh()
+        if perf:
+            print("  performance:", {k: v["avg_views"] for k, v in perf["by_creator"].items()})
+    except Exception as e:  # stats are a bonus, never block a run
+        print(f"  performance refresh failed: {e}")
+    sources = performance.source_order(sources)
     seen = set(json.loads(SEEN.read_text())) if SEEN.exists() else set()
     budget_s = float(os.environ.get("RUN_BUDGET_MIN", "300")) * 60
     t0 = time.time()

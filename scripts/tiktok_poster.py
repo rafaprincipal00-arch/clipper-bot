@@ -116,8 +116,9 @@ def schedule(plan: dict, clips: list[dict]) -> None:
             at = last + timedelta(minutes=max(MIN_SPACING_MIN, even * random.uniform(0.85, 1.15)))
         at = max(datetime.now() + timedelta(minutes=2), min(at, end))
         last = at
-        plan["items"].append({"file": e["file"], "account": e["account"], "video_url": e["video_url"],
-                              "caption": e["caption"], "campaign": e.get("campaign"), "mood": e.get("mood"),
+        plan["items"].append({"file": e["file"], "account": e["account"], "video_url": e.get("tiktok_url") or e["video_url"],
+                              "caption": e.get("tiktok_caption") or e["caption"], "campaign": e.get("campaign"),
+                              "mood": e.get("mood"), "song": bool(e.get("tiktok_url")),
                               "at": at.isoformat(timespec="seconds"), "status": "pending"})
         log(f"planned {e['file']} -> TikTok account {e['account']} at {at:%H:%M}")
     save_plan(plan)
@@ -138,7 +139,8 @@ def do_item(plan: dict, item: dict) -> None:
     try:
         video = download(item["video_url"], WORK / item["file"])
         import tiktok_bg  # the bot's own headless browser; never the user's Brave, mouse or keyboard
-        res = tiktok_bg.post(item["account"], video, item["caption"], log)
+        res = tiktok_bg.post(item["account"], video, item["caption"], log, mood=item.get("mood"),
+                             song=item.get("song", False))
         url = res["url"]
         item.update(status="posted", url=url, music=res["music"], posted_at=datetime.now().isoformat(timespec="seconds"))
         log(f"posted {item['file']} -> {url}")

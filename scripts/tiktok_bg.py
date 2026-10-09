@@ -7,6 +7,7 @@ Posting runs headless: no window, no focus change, input goes through the DevToo
                                             # the user signs in to TikTok there, then closes it
     python scripts/tiktok_bg.py check       # which accounts are signed in
 """
+import json
 import subprocess
 import sys
 import time
@@ -16,6 +17,7 @@ ROOT = Path(__file__).resolve().parent.parent
 PROFILES = ROOT / "data" / "tt_profiles"
 UPLOAD = "https://www.tiktok.com/tiktokstudio/upload"
 HANDLES = {1: "pepe854146", 2: "streammoments.daily", 3: "rafael.benitez656"}
+DEBUG_SHOTS = False
 ARGS = ["--disable-blink-features=AutomationControlled", "--no-first-run", "--no-default-browser-check"]
 # Headless Chromium announces itself as "HeadlessChrome"; TikTok's login/risk checks reject that session.
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -65,8 +67,77 @@ def _latest(page, handle: str) -> str:
     raise RuntimeError("posted, but the video did not show up on the profile yet")
 
 
-def post(account: int, video: Path, caption: str, log=print) -> dict:
-    """Upload + publish publicly. Returns {"url", "music": None, "check"}."""
+def add_song(page, mood: str | None, log=print) -> str | None:
+    """Add a trending song from TikTok's own (licensed) library in Studio's editor, quiet under the voice.
+    Songs per mood live in config/music.json. Returns "title - artist" or None (posts with the clip's audio)."""
+    cfg = json.loads((ROOT / "config" / "music.json").read_text(encoding="utf-8"))
+    songs = cfg["tiktok"].get(mood or "", []) + [s for m in cfg["tiktok"].values() for s in m]
+    songs = list(dict.fromkeys(tuple(s) for s in songs))
+    cookies = page.get_by_role("button", name="Decline optional cookies")
+    if cookies.count():
+        cookies.first.click()
+    sounds = page.get_by_role("button", name="Sounds", exact=True)
+    if not sounds.count():
+        log("  music: no Sounds button, posting with the clip's own audio")
+        return None
+    sounds.first.click()
+    search = page.get_by_placeholder("Search sounds")
+    try:
+        search.wait_for(timeout=30_000)
+    except Exception:  # noqa: BLE001 — editor did not open
+        log("  music: sound editor did not open")
+        return None
+    page.wait_for_timeout(2000)
+    for title, artist in songs:
+        search.fill(f"{title} {artist}")
+        search.press("Enter")
+        page.wait_for_timeout(6000)
+        # The result row holds the title text and a "+" button: click the button of the first matching row.
+        added = page.evaluate("""([title, artist]) => {
+            const norm = s => (s || "").toLowerCase();
+            const rows = [...document.querySelectorAll("div")].filter(d => d.offsetWidth > 0
+                && d.querySelector("button") && norm(d.innerText).startsWith(norm(title))
+                && norm(d.innerText).includes(norm(artist).split(" ")[0]) && d.innerText.length < 160);
+            rows.sort((a, b) => a.innerText.length - b.innerText.length);
+            const btn = rows.length && [...rows[0].querySelectorAll("button")].pop();
+            if (!btn) return false;
+            btn.click();
+            return true;
+        }""", [title, artist])
+        if not added:
+            continue
+        page.wait_for_timeout(5000)
+        nums = page.locator("input[type=text]").filter(has_not_text="x")
+        boxes = [b for b in nums.all() if b.is_visible() and (b.get_attribute("value") or "") in ("0", "0.0")]
+        if boxes:  # Volume (dB), fade-in (s), fade-out (s)
+            boxes[0].fill(cfg.get("tiktok_db", "-14"))
+            boxes[0].press("Enter")
+            if len(boxes) >= 3:
+                boxes[2].fill("1")
+                boxes[2].press("Enter")
+        page.wait_for_timeout(1500)
+        if DEBUG_SHOTS:
+            page.screenshot(path=str(ROOT / "data" / "tiktok_song_before_save.png"))
+        page.get_by_role("button", name="Save", exact=True).first.click()
+        page.wait_for_timeout(6000)
+        log(f"  music: {title} - {artist} (TikTok library) at {cfg.get('tiktok_db', '-14')} dB")
+        return f"{title} - {artist}"
+    log("  music: none of the songs found; posting with the clip's own audio")
+    cancel = page.get_by_role("button", name="Cancel", exact=True)
+    if cancel.count():
+        cancel.first.click()
+        page.wait_for_timeout(2000)
+        for label in ("Discard", "Leave", "Exit"):  # "discard edits?" confirmation
+            b = page.get_by_role("button", name=label, exact=True)
+            if b.count() and b.last.is_visible():
+                b.last.click()
+                break
+    return None
+
+
+def post(account: int, video: Path, caption: str, log=print, mood: str | None = None, song: bool = False) -> dict:
+    """Upload + publish publicly. `song=True` adds a TikTok-library song for `mood` (only for clips
+    rendered without their own music bed). Returns {"url", "music", "check"}."""
     from playwright.sync_api import sync_playwright
 
     handle = HANDLES[account]
@@ -79,6 +150,8 @@ def post(account: int, video: Path, caption: str, log=print) -> dict:
             page.locator("input[type=file]").first.set_input_files(str(video))
             editor = page.locator("div[contenteditable='true']").first
             editor.wait_for(timeout=180_000)
+            _dismiss(page)
+            music = add_song(page, mood, log) if song else None
             _dismiss(page)
             editor.click()
             page.keyboard.press("Control+A")
@@ -110,7 +183,7 @@ def post(account: int, video: Path, caption: str, log=print) -> dict:
             page.wait_for_url("**/tiktokstudio/content**", timeout=180_000)
             log(f"  published on @{handle}")
             url = _latest(page, handle)
-            return {"url": url, "music": None, "check": "ok"}
+            return {"url": url, "music": music, "check": "ok"}
         except Exception:
             page.screenshot(path=str(ROOT / "data" / f"tiktok_fail_{account}.png"))
             raise

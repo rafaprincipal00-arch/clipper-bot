@@ -5,6 +5,7 @@ import time
 import urllib.request
 from pathlib import Path
 
+from . import performance
 
 PLAYBOOK = (Path(__file__).with_name("EDITING_PLAYBOOK.md")).read_text(encoding="utf-8")
 
@@ -12,6 +13,8 @@ EDIT_PROMPT = """You are a top short-form editor (TikTok / YouTube Shorts / Reel
 Follow this editing playbook strictly:
 
 {playbook}
+
+{perf}
 
 Viewers marked this moment as viral: "{title}". Below is the word-timestamped transcript (seconds) of the
 source window around it.
@@ -220,7 +223,8 @@ def pick_edit(words: list[dict], creator: str, title: str, lo: float, hi: float,
     if not words:
         return None
     res = _gemini_json(EDIT_PROMPT.format(creator=creator, title=title, min_len=min_len, max_len=max_len,
-                                          playbook=PLAYBOOK, transcript=_transcript_lines(words)))
+                                          playbook=PLAYBOOK, perf=performance.notes(creator),
+                                          transcript=_transcript_lines(words)))
     if not res:
         return None
     segs = clean_segments(res.get("segments"), words, lo, hi, max_len)

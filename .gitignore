@@ -11,3 +11,5 @@ data/logon_trigger_state.json
 data/tt_profiles/
 data/tiktok_plan.json
 data/tiktok_poster.log
+data/*.png
+data/qr_login.log

@@ -124,7 +124,7 @@ def sfx_plan(segments: list[tuple[float, float]]) -> list[tuple[str, float]]:
 
 
 def render_edit(src: str, segments: list[tuple[float, float]], info: dict, ass: Path, out: Path,
-                credit: str = "", mood: str = "funny", style: str = "vertical") -> None:
+                credit: str = "", mood: str = "funny", style: str = "vertical", with_music: bool = True) -> None:
     """Cut `segments` out of `src`, frame each for 9:16 (layout `info`), alternate punch-in zoom on the
     cuts, then burn captions, add a fade-in and the ducked music bed. One ffmpeg pass."""
     from . import layout
@@ -153,7 +153,8 @@ def render_edit(src: str, segments: list[tuple[float, float]], info: dict, ass: 
         credit_f = (f",drawtext=fontfile='{_rel(FONT_FILE)}':text='{safe}':fontcolor=white@0.9:fontsize=38"
                     ":x=(w-tw)/2:y=h-190:box=1:boxcolor=black@0.4:boxborderw=14")
     g.append(f"[vc]subtitles='{_rel(ass)}':fontsdir='{_rel(FONTS)}'{credit_f},fade=in:st=0:d=0.12:color=white[v]")
-    music = pick_music(out.stem, mood)
+    # TikTok copy is rendered without a bed: the poster adds a trending song from TikTok's licensed library.
+    music = pick_music(out.stem, mood) if with_music else None
     cmd = ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", src]
     voice = "[ac]"
     hits = sfx_plan(segments)
