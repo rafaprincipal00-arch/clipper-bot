@@ -1,0 +1,25 @@
+name: cr-join
+# Join Content Rewards campaigns by id and print their unlocked rules.
+on:
+  workflow_dispatch:
+    inputs:
+      ids:
+        description: "Campaign ids, space separated"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  join:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      CR_STATE: ${{ secrets.CR_STATE }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -q playwright && python -m playwright install --with-deps chromium-headless-shell > /dev/null
+      - run: python scripts/cr_join.py ${{ inputs.ids }}
