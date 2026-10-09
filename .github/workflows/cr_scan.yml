@@ -1,0 +1,25 @@
+name: cr-scan
+# Read-only: scan Content Rewards campaigns with our session and upload data/cr_scan.json as an artifact.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      CR_STATE: ${{ secrets.CR_STATE }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -q playwright && python -m playwright install --with-deps chromium-headless-shell > /dev/null
+      - run: python scripts/cr_scan.py > /dev/null
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cr_scan
+          path: data/cr_scan.json
