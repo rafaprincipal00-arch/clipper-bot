@@ -33,7 +33,29 @@ def main() -> None:
             page.wait_for_timeout(9000)
             print(f"===== {name} -> {page.url}")
             print(page.inner_text("body")[:6000])
+            if name == "Submissions":
+                show_reviewed(page)
         browser.close()
+
+
+def show_reviewed(page) -> None:
+    """Print the clips the brands already reviewed (Approved / Rejected tabs) with their detail panels."""
+    for tab in ("Approved", "Rejected"):
+        btn = page.get_by_text(tab, exact=True).first
+        if not btn.count():
+            continue
+        btn.evaluate("el => el.click()")
+        page.wait_for_timeout(5000)
+        body = page.inner_text("body")
+        print(f"===== Submissions / {tab}")
+        print(body[body.find("History"):][:5000])
+        for i, det in enumerate(page.get_by_text("View details", exact=True).all()[:6]):
+            det.evaluate("el => el.click()")
+            page.wait_for_timeout(3000)
+            dlg = page.locator("[role=dialog]").first
+            print(f"--- {tab} #{i + 1}:", (dlg.inner_text() if dlg.count() else "")[:1200])
+            page.keyboard.press("Escape")
+            page.wait_for_timeout(1000)
 
 
 if __name__ == "__main__":
