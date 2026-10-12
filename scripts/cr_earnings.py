@@ -49,11 +49,14 @@ def show_reviewed(page) -> None:
         body = page.inner_text("body")
         print(f"===== Submissions / {tab}")
         print(body[body.find("History"):][:5000])
-        for i, det in enumerate(page.get_by_text("View details", exact=True).all()[:6]):
+        for i, det in enumerate(page.get_by_text("Rejection reason" if tab == "Rejected" else "View details",
+                                                 exact=True).all()[:6]):
+            before = page.inner_text("body")
             det.evaluate("el => el.click()")
             page.wait_for_timeout(3000)
-            dlg = page.locator("[role=dialog]").first
-            print(f"--- {tab} #{i + 1}:", (dlg.inner_text() if dlg.count() else "")[:1200])
+            after = page.inner_text("body")
+            new = [ln for ln in after.splitlines() if ln.strip() and ln not in before]
+            print(f"--- {tab} #{i + 1}:", " | ".join(new)[:1200])
             page.keyboard.press("Escape")
             page.wait_for_timeout(1000)
 
