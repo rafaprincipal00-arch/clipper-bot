@@ -72,8 +72,9 @@ def main() -> None:
         page.wait_for_timeout(8000)
         if "/login" in page.url:
             raise SystemExit("SESSION EXPIRED")
-        links: list[str] = []
-        for _ in range(40):  # infinite scroll on "All campaigns"
+        ids = os.environ.get("CR_SCAN_IDS", "").split()
+        links: list[str] = [f"https://contentrewards.com/c/campaigns/{i}" for i in ids]
+        for _ in range(0 if ids else 40):  # infinite scroll on "All campaigns"
             found = page.eval_on_selector_all("a[href*='/c/campaigns/']", "els => els.map(e => e.href.split('?')[0])")
             new = [u for u in dict.fromkeys(found) if u not in links]
             links += new

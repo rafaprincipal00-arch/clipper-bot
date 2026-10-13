@@ -2,6 +2,11 @@ name: cr-scan
 # Read-only: scan Content Rewards campaigns with our session and upload data/cr_scan.json as an artifact.
 on:
   workflow_dispatch:
+    inputs:
+      ids:
+        description: "Space-separated campaign ids to scan instead of the whole Discover list"
+        required: false
+        default: ""
 
 permissions:
   contents: read
@@ -12,6 +17,7 @@ jobs:
     timeout-minutes: 40
     env:
       CR_STATE: ${{ secrets.CR_STATE }}
+      CR_SCAN_IDS: ${{ inputs.ids }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
