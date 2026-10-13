@@ -285,7 +285,8 @@ def run_auto(do_publish: bool, min_score: int, per_source: int, total: int = 0, 
             if total and done >= total:
                 print(f"Done: {done} clips.")
                 return
-            if not q or made[src["creator"]] >= per_source or time.time() - t0 > budget_s:
+            if not q or made[src["creator"]] >= performance.quota(src["creator"], per_source) \
+                    or time.time() - t0 > budget_s:
                 continue
             if per_account and total and src.get("account") \
                     and per_acct.get(src["account"], 0) >= -(-total // ACCOUNTS):

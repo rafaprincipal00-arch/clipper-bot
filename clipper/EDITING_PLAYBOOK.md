@@ -40,6 +40,9 @@ Score honestly: 85+ only if it fits a family above AND the payoff is visible/aud
 - On-screen hook text (max 6 words) frames the moment: who + what is about to happen, a question, or the
   stakes. Name the streamer when he is famous ("Speed vs the scariest game"). It must not repeat the first
   spoken line word for word.
+- Add something of our own (YouTube cut the reach of plain re-uploads on 1 Oct 2026): the hook text gives
+  context the clip itself does not say (who this is, what led to it, why it matters), so the Short reads
+  as a curated story, not a raw re-upload.
 
 ## 3. A good edit
 - Fast, but readable: the viewer must always know who is talking and why it matters.

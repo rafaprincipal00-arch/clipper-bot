@@ -128,3 +128,19 @@ def source_order(sources: list[dict]) -> list[dict]:
     avg = {k: v["avg_views"] for k, v in (d.get("by_creator") or {}).items() if v["clips"] >= 2}
     mid = (min(avg.values()) + max(avg.values())) / 2 if avg else 0
     return sorted(sources, key=lambda s: -avg.get(s["creator"], mid))
+
+
+def quota(creator: str, base: int) -> int:
+    """Clips per run for a creator, driven by our own views (double down on what works, Musa's rule):
+    top third of creators x2, bottom third (with 4+ settled clips) 1, the rest and new creators `base`."""
+    d = load() or {}
+    rows = {k: v for k, v in (d.get("by_creator") or {}).items() if v["clips"] >= 2}
+    if creator not in rows or len(rows) < 3:
+        return base
+    ranked = sorted(rows, key=lambda k: -rows[k]["avg_views"])
+    pos = ranked.index(creator) / len(ranked)
+    if pos < 1 / 3:
+        return base * 2
+    if pos >= 2 / 3 and rows[creator]["clips"] >= 4:
+        return 1
+    return base
