@@ -1,474 +1,661 @@
 [
- {
-  "creator": "TJR",
-  "source": "https://kick.com/tjr",
-  "campaign": "TJR $23,100 Weekly Clipping Campaign",
-  "campaign_url": "https://contentrewards.com/discover/70baf344-d80f-4ba2-910a-10340f2ea591",
-  "cpm": 0.75,
-  "enabled": true,
-  "hashtags": [
-   "tjr",
-   "trading",
-   "daytrading",
-   "kick"
-  ],
-  "credit": "@tjr",
-  "why": "Mayor presupuesto (20k$/semana), stream diario en Kick",
-  "join_status": "unido (Reach)",
-  "account": 1,
-  "lang": "English"
- },
- {
-  "creator": "Shuffle streamers (Kick)",
-  "source": "",
-  "campaign": "Shuffle Streamers - Clipping",
-  "campaign_url": "https://contentrewards.com/discover/a900b95b-85be-4113-9d74-5bdb6a6a0952",
-  "cpm": 1.5,
-  "enabled": false,
-  "hashtags": [
-   "kick",
-   "streamer"
-  ],
-  "credit": "",
-  "requirements": "Caption: \"Get a $1,000 deposit match on Shuffle\". Min 12s. Sin reposts. Gambling: riesgo de shadowban.",
-  "why": "16k$ libres, 9 clippers; requiere solicitud y clips propios",
-  "join_status": "sin solicitar"
- },
- {
-  "creator": "Michael Porter Jr. (Curious Mike)",
-  "source": "https://www.youtube.com/channel/UC3ZStupBLNVY4wVVOn7-e3w/videos",
-  "campaign": "N3ON X MPJ Podcast clips (Curious Mike)",
-  "campaign_url": "https://contentrewards.com/discover/e80b84f7-6085-4761-8d5e-be01ca506454",
-  "cpm": 1.0,
-  "enabled": true,
-  "hashtags": [
-   "curiousmike",
-   "mpj",
-   "n3on",
-   "podcast",
-   "nba"
-  ],
-  "credit": "YT: @mpj",
-  "why": "Estrella NBA, 5k$ libres, 97 clippers",
-  "join_status": "unido 2026-10-09",
-  "requirements": "Min payout 2$ = 2.000 vistas. Referencia: texto 'YT: @mpj' en pantalla.",
-  "account": 1,
-  "lang": "English"
- },
- {
-  "creator": "Michael Sartain",
-  "source": "https://www.youtube.com/@MichaelSartain/videos",
-  "campaign": "Michael Sartain's Clipping Army",
-  "campaign_url": "https://contentrewards.com/discover/86842687-ba2b-4638-a024-995dcf3d25a3",
-  "cpm": 2.0,
-  "enabled": false,
-  "hashtags": [
-   "michaelsartain",
-   "dating",
-   "podcast"
-  ],
-  "credit": "@michaelsartain",
-  "why": "2$ CPM, 3,6k$ libres, 18 clippers; ya unido",
-  "join_status": "lista de espera"
- },
- {
-  "creator": "Alpha Futures (TJR, Tori Trades...)",
-  "source": "https://www.youtube.com/channel/UC0gILG4tv-PW4ig7YihyPNw/videos",
-  "campaign": "Alpha Futures Clipping Campaign",
-  "campaign_url": "https://contentrewards.com/discover/2c65001c-d6a8-4b14-9ba6-52400794b085",
-  "cpm": 2.0,
-  "enabled": false,
-  "hashtags": [
-   "trading",
-   "alphafutures",
-   "propfirm"
-  ],
-  "credit": "",
-  "why": "2$ CPM, 4,4k$ libres",
-  "join_status": "lista de espera (Click Culture)"
- },
- {
-  "creator": "ARZ Urus",
-  "source": "https://www.youtube.com/@arzurus/videos",
-  "campaign": "ARZ Urus Clipping Campaign",
-  "campaign_url": "https://contentrewards.com/discover/ebc7847a-91ea-4545-aac7-9249b84df001",
-  "cpm": 1.5,
-  "enabled": false,
-  "hashtags": [
-   "arzurus",
-   "emprendimiento",
-   "dinero"
-  ],
-  "credit": "@arzurus",
-  "why": "Top campaña en español, 1,5$ CPM, 27 clippers",
-  "join_status": "solicitud enviada"
- },
- {
-  "creator": "Howieazy (Twitch)",
-  "source": "https://www.twitch.tv/howieazy/videos?filter=archives",
-  "campaign": "Howieazy Twitch Clipping (VIRAL)",
-  "campaign_url": "https://contentrewards.com/discover/db10500c-f508-41df-bb20-299690b627a4",
-  "cpm": 1.0,
-  "enabled": true,
-  "hashtags": [
-   "twitch",
-   "gaming"
-  ],
-  "credit": "twitch.tv/howieazy",
-  "requirements": "Add link in bio https://www.twitch.tv/howieazy",
-  "why": "Twitch, 984$ libres, poca competencia",
-  "join_status": "unido (Pervasive)",
-  "account": 1,
-  "lang": "English"
- },
- {
-  "creator": "Lanah Cherry (Twitch)",
-  "source": "https://www.twitch.tv/lanahcherry/videos?filter=archives",
-  "campaign": "Lanah Cherry $1500 Clipping Campaign",
-  "campaign_url": "https://contentrewards.com/discover/6e379737-96ef-4980-8565-08df4e6d39d9",
-  "cpm": 0.85,
-  "enabled": true,
-  "hashtags": [
-   "twitch",
-   "streamer",
-   "irl"
-  ],
-  "credit": "twitch.tv/lanahcherry",
-  "why": "Streamer IRL de Twitch, 908$ libres",
-  "join_status": "unido (Reach)",
-  "account": 1,
-  "lang": "English"
- },
- {
-  "creator": "Stanley Meng (Streamer University)",
-  "source": "https://www.youtube.com/channel/UC6ty9iJOskeI0TKylgTfIHQ/videos",
-  "campaign": "$1,000 Stanley Meng Streamer Clipping Campaign",
-  "campaign_url": "https://contentrewards.com/discover/8a91bc4a-feb8-455d-87de-95d82f69e5eb",
-  "cpm": 1.0,
-  "enabled": false,
-  "hashtags": [
-   "streameruniversity",
-   "kaicenat"
-  ],
-  "credit": "",
-  "why": "Streamer University (entorno Kai Cenat), solo TikTok, 346$ libres",
-  "join_status": "unido (ClippedIn)",
-  "why_off": "0 momentos incluso desde el PC (2026-10-13)"
- },
- {
-  "creator": "Ryan Zofay",
-  "source": "https://www.youtube.com/@ryanzofay/videos",
-  "campaign": "Ryan Zofay - Clipping Campaign 01",
-  "campaign_url": "https://contentrewards.com/discover/926e1b7f-1030-4333-a557-f99d9f891437",
-  "cpm": 0.75,
-  "enabled": false,
-  "hashtags": [
-   "ryanzofay",
-   "motivation",
-   "podcast"
-  ],
-  "credit": "@ryanzofay",
-  "why": "Podcast/charlas, 2,5k$ libres, 37 clippers; sustituye a HardScope (cerrada)",
-  "join_status": "unido",
-  "why_off": "0 momentos incluso desde el PC (2026-10-13)"
- },
- {
-  "creator": "N3on R3born (HardScope)",
-  "source": "https://www.youtube.com/watch?v=Xyo-mst-qPE",
-  "campaign": "N3on R3born x ClipFarm Ep 1.",
-  "campaign_url": "https://contentrewards.com/discover/219735c8-328b-415b-bee1-20fdd00c2f7f",
-  "cpm": 1.0,
-  "enabled": true,
-  "account": 1,
-  "lang": "English",
-  "hashtags": [
-   "r3born",
-   "n3on"
-  ],
-  "mention": "@hardscope",
-  "credit": "@hardscope",
-  "requirements": "Solo episodio 1. @hardscope (YT @HardScopeTV) + #r3born en cada post. Nunca mencionar FaZe ni politica. Min 7s. 70% del presupuesto en YT Shorts. 40%+ T1.",
-  "join_status": "unido 2026-10-13"
- },
- {
-  "creator": "N3on (Kick)",
-  "source": "https://kick.com/n3on",
-  "enabled": true,
-  "account": 2,
-  "lang": "English",
-  "hashtags": [
-   "n3on",
-   "kick",
-   "streamer"
-  ],
-  "credit": "kick.com/n3on",
-  "why": "famoso, sin campaña abierta: crecer cuenta para el programa de N3on"
- },
- {
-  "creator": "xQc (Kick)",
-  "source": "https://kick.com/xqc",
-  "enabled": true,
-  "account": 2,
-  "lang": "English",
-  "hashtags": [
-   "xqc",
-   "kick",
-   "streamer"
-  ],
-  "credit": "kick.com/xqc",
-  "why": "famoso, sin campaña abierta"
- },
- {
-  "creator": "Kai Cenat (Twitch)",
-  "source": "https://www.twitch.tv/kaicenat",
-  "enabled": true,
-  "account": 2,
-  "lang": "English",
-  "hashtags": [
-   "kaicenat",
-   "twitch",
-   "streamer"
-  ],
-  "credit": "twitch.tv/kaicenat",
-  "why": "famoso, sin campaña abierta"
- },
- {
-  "creator": "Adin Ross (Kick)",
-  "source": "https://kick.com/adinross",
-  "enabled": true,
-  "account": 2,
-  "lang": "English",
-  "hashtags": [
-   "adinross",
-   "kick",
-   "streamer"
-  ],
-  "credit": "kick.com/adinross",
-  "why": "famoso, sin campaña abierta"
- },
- {
-  "creator": "Westcol (Kick)",
-  "source": "https://kick.com/westcol",
-  "enabled": true,
-  "account": 3,
-  "lang": "Spanish",
-  "hashtags": [
-   "westcol",
-   "kick",
-   "streamer"
-  ],
-  "credit": "kick.com/westcol",
-  "why": "famoso hispano, sin campaña abierta"
- },
- {
-  "creator": "Spreen (Kick)",
-  "source": "https://kick.com/spreen",
-  "enabled": true,
-  "account": 3,
-  "lang": "Spanish",
-  "hashtags": [
-   "spreen",
-   "kick",
-   "streamer"
-  ],
-  "credit": "kick.com/spreen",
-  "why": "famoso hispano, sin campaña abierta"
- },
- {
-  "creator": "elZeein (Kick)",
-  "source": "https://kick.com/elzeein",
-  "enabled": true,
-  "account": 3,
-  "lang": "Spanish",
-  "hashtags": [
-   "elzeein",
-   "kick",
-   "streamer"
-  ],
-  "credit": "kick.com/elzeein",
-  "why": "famoso hispano, sin campaña abierta"
- },
- {
-  "creator": "Ibai (Twitch)",
-  "source": "https://www.twitch.tv/ibai",
-  "enabled": true,
-  "account": 3,
-  "lang": "Spanish",
-  "hashtags": [
-   "ibai",
-   "twitch",
-   "streamer"
-  ],
-  "credit": "twitch.tv/ibai",
-  "why": "famoso hispano, sin campaña abierta"
- },
- {
-  "creator": "Daniel Curto",
-  "source": "https://www.youtube.com/@dcmfx/videos",
-  "campaign": "CLIPPING ESPAÑOL - Daniel Curto",
-  "campaign_url": "https://contentrewards.com/discover/ebc7dd27-5d08-4d06-86d5-659706286077",
-  "cpm": 1.0,
-  "enabled": false,
-  "lang": "Spanish",
-  "why_off": "exige pagina dedicada con su nombre y su foto (@danielcurto.clips); solo TikTok/IG; caption fija 'Este es solo un fragmento. Más contenido en @dcm_fx o dcmfx'"
- },
- {
-  "creator": "Matías Matti",
-  "source": "https://youtu.be/e7KyTiKb5EY",
-  "campaign": "@matiasmatti campaign #1",
-  "campaign_url": "https://contentrewards.com/discover/8e776e0c-9225-4ec0-8dce-2beba746435b",
-  "cpm": 1.0,
-  "enabled": false,
-  "lang": "Spanish",
-  "why_off": "cada borrador necesita aprobacion manual antes de publicar"
- },
- {
-  "creator": "Irubyana (Twitch)",
-  "source": "https://www.twitch.tv/irubyana",
-  "campaign": "Irubyana Twitch Clips",
-  "campaign_url": "https://contentrewards.com/discover/d8f10d9f-5207-4268-8069-b6da45a23b67",
-  "cpm": 1.0,
-  "enabled": false,
-  "why_off": "borradores con aprobacion previa + banner de Twitch"
- },
- {
-  "creator": "Clavicular",
-  "source": "https://kick.com/clavicular",
-  "campaign": "Clavicular Dedicated Clipping",
-  "campaign_url": "https://contentrewards.com/discover/9a99d9cc-ae77-443a-8733-1ec8d3c0586c",
-  "cpm": 1.0,
-  "enabled": false,
-  "why_off": "exige pagina nueva dedicada con su nombre y 40%+ EEUU"
- },
- {
-  "creator": "Jake Paul",
-  "source": "",
-  "campaign": "Jake Paul Clipping",
-  "campaign_url": "https://contentrewards.com/discover/88c16d1a-c184-489c-a896-b3e947829f38",
-  "cpm": 0.75,
-  "enabled": false,
-  "why_off": "prohibe theme pages/networks"
- },
- {
-  "creator": "Jay Guapo (Kick)",
-  "source": "https://kick.com/jayguap00",
-  "campaign": "Jay Guapo X Mypip Streamer Clips",
-  "campaign_url": "https://contentrewards.com/discover/132508cb-f9d7-4077-8344-467d148cf9df",
-  "cpm": 1.5,
-  "enabled": false,
-  "why_off": "0 clips en Kick; solo su VOD de Mypip; reglas en Notion sin leer"
- },
- {
-  "creator": "Boxabl x Enes Yilmazer",
-  "source": "https://www.youtube.com/watch?v=8JMrfSFQdpo",
-  "campaign": "Boxabl x ASG",
-  "campaign_url": "https://contentrewards.com/c/campaigns/c821e1c6-ba7e-4fd1-b5d2-449c2c1e2df6",
-  "cpm": 2.0,
-  "enabled": true,
-  "account": 1,
-  "lang": "English",
-  "hashtags": [
-   "boxabl",
-   "casita",
-   "foldablehome"
-  ],
-  "mention": "@boxabl",
-  "credit": "@boxabl",
-  "requirements": "Solo metraje del doc oficial. Mostrar la casa ENTERA. 'BOXABL' dicho o en pantalla (bien escrito). Caption menciona Boxabl/Casita, tag @boxabl. Editado (cortes, overlays), nada de raw rips. Positivo. Nada de Kanye ni la accion/ticker. 40%+ T1. Min 750 vistas, $2/1K, max $500/clip.",
-  "join_status": "unido 2026-10-13"
- },
- {
-  "creator": "Boxabl x Orkun Isitmak",
-  "source": "https://www.youtube.com/watch?v=eS-fnedN2yI",
-  "campaign": "Boxabl x ASG",
-  "campaign_url": "https://contentrewards.com/c/campaigns/c821e1c6-ba7e-4fd1-b5d2-449c2c1e2df6",
-  "cpm": 2.0,
-  "enabled": true,
-  "account": 1,
-  "lang": "English",
-  "hashtags": [
-   "boxabl",
-   "casita",
-   "foldablehome"
-  ],
-  "mention": "@boxabl",
-  "credit": "@boxabl",
-  "requirements": "Solo metraje del doc oficial. Mostrar la casa ENTERA. 'BOXABL' dicho o en pantalla (bien escrito). Caption menciona Boxabl/Casita, tag @boxabl. Editado (cortes, overlays), nada de raw rips. Positivo. Nada de Kanye ni la accion/ticker. 40%+ T1. Min 750 vistas, $2/1K, max $500/clip.",
-  "join_status": "unido 2026-10-13"
- },
- {
-  "creator": "Boxabl x FaZe Rug",
-  "source": "https://www.youtube.com/watch?v=uu5aORByttg",
-  "campaign": "Boxabl x ASG",
-  "campaign_url": "https://contentrewards.com/c/campaigns/c821e1c6-ba7e-4fd1-b5d2-449c2c1e2df6",
-  "cpm": 2.0,
-  "enabled": true,
-  "account": 1,
-  "lang": "English",
-  "hashtags": [
-   "boxabl",
-   "casita",
-   "foldablehome"
-  ],
-  "mention": "@boxabl",
-  "credit": "@boxabl",
-  "requirements": "Solo metraje del doc oficial. Mostrar la casa ENTERA. 'BOXABL' dicho o en pantalla (bien escrito). Caption menciona Boxabl/Casita, tag @boxabl. Editado (cortes, overlays), nada de raw rips. Positivo. Nada de Kanye ni la accion/ticker. 40%+ T1. Min 750 vistas, $2/1K, max $500/clip.",
-  "join_status": "unido 2026-10-13"
- },
- {
-  "creator": "Boxabl x Graham Stephan",
-  "source": "https://www.youtube.com/watch?v=0Cdqs2Q1Vis",
-  "campaign": "Boxabl x ASG",
-  "campaign_url": "https://contentrewards.com/c/campaigns/c821e1c6-ba7e-4fd1-b5d2-449c2c1e2df6",
-  "cpm": 2.0,
-  "enabled": true,
-  "account": 1,
-  "lang": "English",
-  "hashtags": [
-   "boxabl",
-   "casita",
-   "foldablehome"
-  ],
-  "mention": "@boxabl",
-  "credit": "@boxabl",
-  "requirements": "Solo metraje del doc oficial. Mostrar la casa ENTERA. 'BOXABL' dicho o en pantalla (bien escrito). Caption menciona Boxabl/Casita, tag @boxabl. Editado (cortes, overlays), nada de raw rips. Positivo. Nada de Kanye ni la accion/ticker. 40%+ T1. Min 750 vistas, $2/1K, max $500/clip.",
-  "join_status": "unido 2026-10-13"
- },
- {
-  "creator": "Boxabl x Airrack",
-  "source": "https://www.youtube.com/watch?v=7rX5cPQrx_s",
-  "campaign": "Boxabl x ASG",
-  "campaign_url": "https://contentrewards.com/c/campaigns/c821e1c6-ba7e-4fd1-b5d2-449c2c1e2df6",
-  "cpm": 2.0,
-  "enabled": true,
-  "account": 1,
-  "lang": "English",
-  "hashtags": [
-   "boxabl",
-   "casita",
-   "foldablehome"
-  ],
-  "mention": "@boxabl",
-  "credit": "@boxabl",
-  "requirements": "Solo metraje del doc oficial. Mostrar la casa ENTERA. 'BOXABL' dicho o en pantalla (bien escrito). Caption menciona Boxabl/Casita, tag @boxabl. Editado (cortes, overlays), nada de raw rips. Positivo. Nada de Kanye ni la accion/ticker. 40%+ T1. Min 750 vistas, $2/1K, max $500/clip.",
-  "join_status": "unido 2026-10-13"
- },
- {
-  "creator": "Antoine Sallis",
-  "source": "",
-  "campaign": "Antoine Sallis Clipping | $2 CPM",
-  "campaign_url": "https://contentrewards.com/c/campaigns/b46e43fd-8879-4ce6-a0fa-167d5f3e830d",
-  "cpm": 2.0,
-  "enabled": false,
-  "why_off": "solo material de su carpeta de Drive; 70% T1; @antoinesallis en caption y bio; pagina con su nombre o de finanzas. Pendiente de bajar el Drive."
- },
- {
-  "creator": "Eneba",
-  "source": "",
-  "campaign": "Eneba Campaign",
-  "campaign_url": "https://contentrewards.com/c/campaigns/e4eabfb5-a4c0-41ff-927c-39cb28c00828",
-  "cpm": 1.0,
-  "enabled": false,
-  "why_off": "prohibe clipping automatizado: exige video original grabando la web con el codigo de descuento"
- }
+  {
+    "creator": "TJR",
+    "source": "https://kick.com/tjr",
+    "campaign": "TJR $23,100 Weekly Clipping Campaign",
+    "campaign_url": "https://contentrewards.com/discover/70baf344-d80f-4ba2-910a-10340f2ea591",
+    "cpm": 0.75,
+    "enabled": true,
+    "hashtags": [
+      "tjr",
+      "trading",
+      "daytrading",
+      "kick"
+    ],
+    "credit": "@tjr",
+    "why": "Mayor presupuesto (20k$/semana), stream diario en Kick",
+    "join_status": "unido (Reach)",
+    "account": 1,
+    "lang": "English"
+  },
+  {
+    "creator": "Shuffle streamers (Kick)",
+    "source": "",
+    "campaign": "Shuffle Streamers - Clipping",
+    "campaign_url": "https://contentrewards.com/discover/a900b95b-85be-4113-9d74-5bdb6a6a0952",
+    "cpm": 1.5,
+    "enabled": false,
+    "hashtags": [
+      "kick",
+      "streamer"
+    ],
+    "credit": "",
+    "requirements": "Caption: \"Get a $1,000 deposit match on Shuffle\". Min 12s. Sin reposts. Gambling: riesgo de shadowban.",
+    "why": "16k$ libres, 9 clippers; requiere solicitud y clips propios",
+    "join_status": "sin solicitar"
+  },
+  {
+    "creator": "Michael Porter Jr. (Curious Mike)",
+    "source": "https://www.youtube.com/channel/UC3ZStupBLNVY4wVVOn7-e3w/videos",
+    "campaign": "N3ON X MPJ Podcast clips (Curious Mike)",
+    "campaign_url": "https://contentrewards.com/discover/e80b84f7-6085-4761-8d5e-be01ca506454",
+    "cpm": 1.0,
+    "enabled": true,
+    "hashtags": [
+      "curiousmike",
+      "mpj",
+      "n3on",
+      "podcast",
+      "nba"
+    ],
+    "credit": "YT: @mpj",
+    "why": "Estrella NBA, 5k$ libres, 97 clippers",
+    "join_status": "unido 2026-10-09",
+    "requirements": "Min payout 2$ = 2.000 vistas. Referencia: texto 'YT: @mpj' en pantalla.",
+    "account": 1,
+    "lang": "English"
+  },
+  {
+    "creator": "Michael Sartain",
+    "source": "https://www.youtube.com/@MichaelSartain/videos",
+    "campaign": "Michael Sartain's Clipping Army",
+    "campaign_url": "https://contentrewards.com/discover/86842687-ba2b-4638-a024-995dcf3d25a3",
+    "cpm": 2.0,
+    "enabled": false,
+    "hashtags": [
+      "michaelsartain",
+      "dating",
+      "podcast"
+    ],
+    "credit": "@michaelsartain",
+    "why": "2$ CPM, 3,6k$ libres, 18 clippers; ya unido",
+    "join_status": "lista de espera"
+  },
+  {
+    "creator": "Alpha Futures (TJR, Tori Trades...)",
+    "source": "https://www.youtube.com/channel/UC0gILG4tv-PW4ig7YihyPNw/videos",
+    "campaign": "Alpha Futures Clipping Campaign",
+    "campaign_url": "https://contentrewards.com/discover/2c65001c-d6a8-4b14-9ba6-52400794b085",
+    "cpm": 2.0,
+    "enabled": false,
+    "hashtags": [
+      "trading",
+      "alphafutures",
+      "propfirm"
+    ],
+    "credit": "",
+    "why": "2$ CPM, 4,4k$ libres",
+    "join_status": "lista de espera (Click Culture)"
+  },
+  {
+    "creator": "ARZ Urus",
+    "source": "https://www.youtube.com/@arzurus/videos",
+    "campaign": "ARZ Urus Clipping Campaign",
+    "campaign_url": "https://contentrewards.com/discover/ebc7847a-91ea-4545-aac7-9249b84df001",
+    "cpm": 1.5,
+    "enabled": false,
+    "hashtags": [
+      "arzurus",
+      "emprendimiento",
+      "dinero"
+    ],
+    "credit": "@arzurus",
+    "why": "Top campaña en español, 1,5$ CPM, 27 clippers",
+    "join_status": "solicitud enviada"
+  },
+  {
+    "creator": "Howieazy (Twitch)",
+    "source": "https://www.twitch.tv/howieazy/videos?filter=archives",
+    "campaign": "Howieazy Twitch Clipping (VIRAL)",
+    "campaign_url": "https://contentrewards.com/discover/db10500c-f508-41df-bb20-299690b627a4",
+    "cpm": 1.0,
+    "enabled": true,
+    "hashtags": [
+      "twitch",
+      "gaming"
+    ],
+    "credit": "twitch.tv/howieazy",
+    "requirements": "Add link in bio https://www.twitch.tv/howieazy",
+    "why": "Twitch, 984$ libres, poca competencia",
+    "join_status": "unido (Pervasive)",
+    "account": 1,
+    "lang": "English"
+  },
+  {
+    "creator": "Lanah Cherry (Twitch)",
+    "source": "https://www.twitch.tv/lanahcherry/videos?filter=archives",
+    "campaign": "Lanah Cherry $1500 Clipping Campaign",
+    "campaign_url": "https://contentrewards.com/discover/6e379737-96ef-4980-8565-08df4e6d39d9",
+    "cpm": 0.85,
+    "enabled": true,
+    "hashtags": [
+      "twitch",
+      "streamer",
+      "irl"
+    ],
+    "credit": "twitch.tv/lanahcherry",
+    "why": "Streamer IRL de Twitch, 908$ libres",
+    "join_status": "unido (Reach)",
+    "account": 1,
+    "lang": "English"
+  },
+  {
+    "creator": "Stanley Meng (Streamer University)",
+    "source": "https://www.youtube.com/channel/UC6ty9iJOskeI0TKylgTfIHQ/videos",
+    "campaign": "$1,000 Stanley Meng Streamer Clipping Campaign",
+    "campaign_url": "https://contentrewards.com/discover/8a91bc4a-feb8-455d-87de-95d82f69e5eb",
+    "cpm": 1.0,
+    "enabled": false,
+    "hashtags": [
+      "streameruniversity",
+      "kaicenat"
+    ],
+    "credit": "",
+    "why": "Streamer University (entorno Kai Cenat), solo TikTok, 346$ libres",
+    "join_status": "unido (ClippedIn)",
+    "why_off": "0 momentos incluso desde el PC (2026-10-13)"
+  },
+  {
+    "creator": "Ryan Zofay",
+    "source": "https://www.youtube.com/@ryanzofay/videos",
+    "campaign": "Ryan Zofay - Clipping Campaign 01",
+    "campaign_url": "https://contentrewards.com/discover/926e1b7f-1030-4333-a557-f99d9f891437",
+    "cpm": 0.75,
+    "enabled": false,
+    "hashtags": [
+      "ryanzofay",
+      "motivation",
+      "podcast"
+    ],
+    "credit": "@ryanzofay",
+    "why": "Podcast/charlas, 2,5k$ libres, 37 clippers; sustituye a HardScope (cerrada)",
+    "join_status": "unido",
+    "why_off": "0 momentos incluso desde el PC (2026-10-13)"
+  },
+  {
+    "creator": "N3on R3born (HardScope)",
+    "source": "https://www.youtube.com/watch?v=Xyo-mst-qPE",
+    "campaign": "N3on R3born x ClipFarm Ep 1.",
+    "campaign_url": "https://contentrewards.com/discover/219735c8-328b-415b-bee1-20fdd00c2f7f",
+    "cpm": 1.0,
+    "enabled": true,
+    "account": 1,
+    "lang": "English",
+    "hashtags": [
+      "r3born",
+      "n3on"
+    ],
+    "mention": "@hardscope",
+    "credit": "@hardscope",
+    "requirements": "Solo episodio 1. @hardscope (YT @HardScopeTV) + #r3born en cada post. Nunca mencionar FaZe ni politica. Min 7s. 70% del presupuesto en YT Shorts. 40%+ T1.",
+    "join_status": "unido 2026-10-13"
+  },
+  {
+    "creator": "N3on (Kick)",
+    "source": "https://kick.com/n3on",
+    "enabled": true,
+    "account": 2,
+    "lang": "English",
+    "hashtags": [
+      "n3on",
+      "kick",
+      "streamer"
+    ],
+    "credit": "kick.com/n3on",
+    "why": "famoso, sin campaña abierta: crecer cuenta para el programa de N3on"
+  },
+  {
+    "creator": "xQc (Kick)",
+    "source": "https://kick.com/xqc",
+    "enabled": true,
+    "account": 2,
+    "lang": "English",
+    "hashtags": [
+      "xqc",
+      "kick",
+      "streamer"
+    ],
+    "credit": "kick.com/xqc",
+    "why": "famoso, sin campaña abierta"
+  },
+  {
+    "creator": "Kai Cenat (Twitch)",
+    "source": "https://www.twitch.tv/kaicenat",
+    "enabled": true,
+    "account": 2,
+    "lang": "English",
+    "hashtags": [
+      "kaicenat",
+      "twitch",
+      "streamer"
+    ],
+    "credit": "twitch.tv/kaicenat",
+    "why": "famoso, sin campaña abierta"
+  },
+  {
+    "creator": "Adin Ross (Kick)",
+    "source": "https://kick.com/adinross",
+    "enabled": true,
+    "account": 2,
+    "lang": "English",
+    "hashtags": [
+      "adinross",
+      "kick",
+      "streamer"
+    ],
+    "credit": "kick.com/adinross",
+    "why": "famoso, sin campaña abierta"
+  },
+  {
+    "creator": "Westcol (Kick)",
+    "source": "https://kick.com/westcol",
+    "enabled": true,
+    "account": 3,
+    "lang": "Spanish",
+    "hashtags": [
+      "westcol",
+      "kick",
+      "streamer"
+    ],
+    "credit": "kick.com/westcol",
+    "why": "famoso hispano, sin campaña abierta"
+  },
+  {
+    "creator": "Spreen (Kick)",
+    "source": "https://kick.com/spreen",
+    "enabled": true,
+    "account": 3,
+    "lang": "Spanish",
+    "hashtags": [
+      "spreen",
+      "kick",
+      "streamer"
+    ],
+    "credit": "kick.com/spreen",
+    "why": "famoso hispano, sin campaña abierta"
+  },
+  {
+    "creator": "elZeein (Kick)",
+    "source": "https://kick.com/elzeein",
+    "enabled": true,
+    "account": 3,
+    "lang": "Spanish",
+    "hashtags": [
+      "elzeein",
+      "kick",
+      "streamer"
+    ],
+    "credit": "kick.com/elzeein",
+    "why": "famoso hispano, sin campaña abierta"
+  },
+  {
+    "creator": "Ibai (Twitch)",
+    "source": "https://www.twitch.tv/ibai",
+    "enabled": true,
+    "account": 3,
+    "lang": "Spanish",
+    "hashtags": [
+      "ibai",
+      "twitch",
+      "streamer"
+    ],
+    "credit": "twitch.tv/ibai",
+    "why": "famoso hispano, sin campaña abierta"
+  },
+  {
+    "creator": "Daniel Curto",
+    "source": "https://www.youtube.com/@dcmfx/videos",
+    "campaign": "CLIPPING ESPAÑOL - Daniel Curto",
+    "campaign_url": "https://contentrewards.com/discover/ebc7dd27-5d08-4d06-86d5-659706286077",
+    "cpm": 1.0,
+    "enabled": false,
+    "lang": "Spanish",
+    "why_off": "exige pagina dedicada con su nombre y su foto (@danielcurto.clips); solo TikTok/IG; caption fija 'Este es solo un fragmento. Más contenido en @dcm_fx o dcmfx'"
+  },
+  {
+    "creator": "Matías Matti",
+    "source": "https://youtu.be/e7KyTiKb5EY",
+    "campaign": "@matiasmatti campaign #1",
+    "campaign_url": "https://contentrewards.com/discover/8e776e0c-9225-4ec0-8dce-2beba746435b",
+    "cpm": 1.0,
+    "enabled": false,
+    "lang": "Spanish",
+    "why_off": "cada borrador necesita aprobacion manual antes de publicar"
+  },
+  {
+    "creator": "Irubyana (Twitch)",
+    "source": "https://www.twitch.tv/irubyana",
+    "campaign": "Irubyana Twitch Clips",
+    "campaign_url": "https://contentrewards.com/discover/d8f10d9f-5207-4268-8069-b6da45a23b67",
+    "cpm": 1.0,
+    "enabled": false,
+    "why_off": "borradores con aprobacion previa + banner de Twitch"
+  },
+  {
+    "creator": "Clavicular",
+    "source": "https://kick.com/clavicular",
+    "campaign": "Clavicular Dedicated Clipping",
+    "campaign_url": "https://contentrewards.com/discover/9a99d9cc-ae77-443a-8733-1ec8d3c0586c",
+    "cpm": 1.0,
+    "enabled": false,
+    "why_off": "exige pagina nueva dedicada con su nombre y 40%+ EEUU"
+  },
+  {
+    "creator": "Jake Paul",
+    "source": "",
+    "campaign": "Jake Paul Clipping",
+    "campaign_url": "https://contentrewards.com/discover/88c16d1a-c184-489c-a896-b3e947829f38",
+    "cpm": 0.75,
+    "enabled": false,
+    "why_off": "prohibe theme pages/networks"
+  },
+  {
+    "creator": "Jay Guapo (Kick)",
+    "source": "https://kick.com/jayguap00",
+    "campaign": "Jay Guapo X Mypip Streamer Clips",
+    "campaign_url": "https://contentrewards.com/discover/132508cb-f9d7-4077-8344-467d148cf9df",
+    "cpm": 1.5,
+    "enabled": false,
+    "why_off": "0 clips en Kick; solo su VOD de Mypip; reglas en Notion sin leer"
+  },
+  {
+    "creator": "Boxabl x Enes Yilmazer",
+    "source": "https://www.youtube.com/watch?v=8JMrfSFQdpo",
+    "campaign": "Boxabl x ASG",
+    "campaign_url": "https://contentrewards.com/c/campaigns/c821e1c6-ba7e-4fd1-b5d2-449c2c1e2df6",
+    "cpm": 2.0,
+    "enabled": true,
+    "account": 1,
+    "lang": "English",
+    "hashtags": [
+      "boxabl",
+      "casita",
+      "foldablehome"
+    ],
+    "mention": "@boxabl",
+    "credit": "@boxabl",
+    "requirements": "Solo metraje del doc oficial. Mostrar la casa ENTERA. 'BOXABL' dicho o en pantalla (bien escrito). Caption menciona Boxabl/Casita, tag @boxabl. Editado (cortes, overlays), nada de raw rips. Positivo. Nada de Kanye ni la accion/ticker. 40%+ T1. Min 750 vistas, $2/1K, max $500/clip.",
+    "join_status": "unido 2026-10-13"
+  },
+  {
+    "creator": "Boxabl x Orkun Isitmak",
+    "source": "https://www.youtube.com/watch?v=eS-fnedN2yI",
+    "campaign": "Boxabl x ASG",
+    "campaign_url": "https://contentrewards.com/c/campaigns/c821e1c6-ba7e-4fd1-b5d2-449c2c1e2df6",
+    "cpm": 2.0,
+    "enabled": true,
+    "account": 1,
+    "lang": "English",
+    "hashtags": [
+      "boxabl",
+      "casita",
+      "foldablehome"
+    ],
+    "mention": "@boxabl",
+    "credit": "@boxabl",
+    "requirements": "Solo metraje del doc oficial. Mostrar la casa ENTERA. 'BOXABL' dicho o en pantalla (bien escrito). Caption menciona Boxabl/Casita, tag @boxabl. Editado (cortes, overlays), nada de raw rips. Positivo. Nada de Kanye ni la accion/ticker. 40%+ T1. Min 750 vistas, $2/1K, max $500/clip.",
+    "join_status": "unido 2026-10-13"
+  },
+  {
+    "creator": "Boxabl x FaZe Rug",
+    "source": "https://www.youtube.com/watch?v=uu5aORByttg",
+    "campaign": "Boxabl x ASG",
+    "campaign_url": "https://contentrewards.com/c/campaigns/c821e1c6-ba7e-4fd1-b5d2-449c2c1e2df6",
+    "cpm": 2.0,
+    "enabled": true,
+    "account": 1,
+    "lang": "English",
+    "hashtags": [
+      "boxabl",
+      "casita",
+      "foldablehome"
+    ],
+    "mention": "@boxabl",
+    "credit": "@boxabl",
+    "requirements": "Solo metraje del doc oficial. Mostrar la casa ENTERA. 'BOXABL' dicho o en pantalla (bien escrito). Caption menciona Boxabl/Casita, tag @boxabl. Editado (cortes, overlays), nada de raw rips. Positivo. Nada de Kanye ni la accion/ticker. 40%+ T1. Min 750 vistas, $2/1K, max $500/clip.",
+    "join_status": "unido 2026-10-13"
+  },
+  {
+    "creator": "Boxabl x Graham Stephan",
+    "source": "https://www.youtube.com/watch?v=0Cdqs2Q1Vis",
+    "campaign": "Boxabl x ASG",
+    "campaign_url": "https://contentrewards.com/c/campaigns/c821e1c6-ba7e-4fd1-b5d2-449c2c1e2df6",
+    "cpm": 2.0,
+    "enabled": true,
+    "account": 1,
+    "lang": "English",
+    "hashtags": [
+      "boxabl",
+      "casita",
+      "foldablehome"
+    ],
+    "mention": "@boxabl",
+    "credit": "@boxabl",
+    "requirements": "Solo metraje del doc oficial. Mostrar la casa ENTERA. 'BOXABL' dicho o en pantalla (bien escrito). Caption menciona Boxabl/Casita, tag @boxabl. Editado (cortes, overlays), nada de raw rips. Positivo. Nada de Kanye ni la accion/ticker. 40%+ T1. Min 750 vistas, $2/1K, max $500/clip.",
+    "join_status": "unido 2026-10-13"
+  },
+  {
+    "creator": "Boxabl x Airrack",
+    "source": "https://www.youtube.com/watch?v=7rX5cPQrx_s",
+    "campaign": "Boxabl x ASG",
+    "campaign_url": "https://contentrewards.com/c/campaigns/c821e1c6-ba7e-4fd1-b5d2-449c2c1e2df6",
+    "cpm": 2.0,
+    "enabled": true,
+    "account": 1,
+    "lang": "English",
+    "hashtags": [
+      "boxabl",
+      "casita",
+      "foldablehome"
+    ],
+    "mention": "@boxabl",
+    "credit": "@boxabl",
+    "requirements": "Solo metraje del doc oficial. Mostrar la casa ENTERA. 'BOXABL' dicho o en pantalla (bien escrito). Caption menciona Boxabl/Casita, tag @boxabl. Editado (cortes, overlays), nada de raw rips. Positivo. Nada de Kanye ni la accion/ticker. 40%+ T1. Min 750 vistas, $2/1K, max $500/clip.",
+    "join_status": "unido 2026-10-13"
+  },
+  {
+    "creator": "Antoine Sallis",
+    "source": "",
+    "campaign": "Antoine Sallis Clipping | $2 CPM",
+    "campaign_url": "https://contentrewards.com/c/campaigns/b46e43fd-8879-4ce6-a0fa-167d5f3e830d",
+    "cpm": 2.0,
+    "enabled": false,
+    "why_off": "solo material de su carpeta de Drive; 70% T1; @antoinesallis en caption y bio; pagina con su nombre o de finanzas. Pendiente de bajar el Drive."
+  },
+  {
+    "creator": "Eneba",
+    "source": "",
+    "campaign": "Eneba Campaign",
+    "campaign_url": "https://contentrewards.com/c/campaigns/e4eabfb5-a4c0-41ff-927c-39cb28c00828",
+    "cpm": 1.0,
+    "enabled": false,
+    "why_off": "prohibe clipping automatizado: exige video original grabando la web con el codigo de descuento"
+  },
+  {
+    "creator": "Harrison Webb ($7 vs $115 English Breakfast)",
+    "source": "https://www.youtube.com/watch?v=LPInMdI7A2Q",
+    "campaign": "Harrison Webb $300 per 1M Views",
+    "campaign_url": "https://contentrewards.com/c/campaigns/a2726858-79e3-4d47-a681-f0fbba34d19e",
+    "cpm": 0.5,
+    "enabled": true,
+    "account": 1,
+    "lang": "English",
+    "hashtags": [
+      "harrisonwebb",
+      "food",
+      "foodreview"
+    ],
+    "mention": "@harrisonwebb97 #harrisonwebb",
+    "credit": "@harrisonwebb97",
+    "requirements": "Caption MUST include @harrisonwebb97 and #harrisonwebb. Clear, no ToS violations. Food challenge/price-comparison moments with a strong payoff. Min $1 payout (2,000 views), $0.50/1K.",
+    "join_status": "unido 2026-10-13"
+  },
+  {
+    "creator": "Harrison Webb (London's Most Overrated Food)",
+    "source": "https://www.youtube.com/watch?v=-eA_NYPcltY",
+    "campaign": "Harrison Webb $300 per 1M Views",
+    "campaign_url": "https://contentrewards.com/c/campaigns/a2726858-79e3-4d47-a681-f0fbba34d19e",
+    "cpm": 0.5,
+    "enabled": true,
+    "account": 1,
+    "lang": "English",
+    "hashtags": [
+      "harrisonwebb",
+      "food",
+      "foodreview"
+    ],
+    "mention": "@harrisonwebb97 #harrisonwebb",
+    "credit": "@harrisonwebb97",
+    "requirements": "Caption MUST include @harrisonwebb97 and #harrisonwebb. Clear, no ToS violations. Food challenge/price-comparison moments with a strong payoff. Min $1 payout (2,000 views), $0.50/1K.",
+    "join_status": "unido 2026-10-13"
+  },
+  {
+    "creator": "Harrison Webb (Fake Fast-Food Restaurants)",
+    "source": "https://www.youtube.com/watch?v=vu7n7jTZzZo",
+    "campaign": "Harrison Webb $300 per 1M Views",
+    "campaign_url": "https://contentrewards.com/c/campaigns/a2726858-79e3-4d47-a681-f0fbba34d19e",
+    "cpm": 0.5,
+    "enabled": true,
+    "account": 1,
+    "lang": "English",
+    "hashtags": [
+      "harrisonwebb",
+      "food",
+      "foodreview"
+    ],
+    "mention": "@harrisonwebb97 #harrisonwebb",
+    "credit": "@harrisonwebb97",
+    "requirements": "Caption MUST include @harrisonwebb97 and #harrisonwebb. Clear, no ToS violations. Food challenge/price-comparison moments with a strong payoff. Min $1 payout (2,000 views), $0.50/1K.",
+    "join_status": "unido 2026-10-13"
+  },
+  {
+    "creator": "HardScope Love And Justice Ep 2",
+    "source": "",
+    "campaign": "HardScope Love And Justice Ep 2",
+    "campaign_url": "https://contentrewards.com/c/campaigns/d10f3f96-b533-493e-860f-99a4a05edc90",
+    "cpm": 1.0,
+    "enabled": false,
+    "why_off": "no se pudo unir (sin boton Join: requiere solicitud)",
+    "join_status": "no unido"
+  },
+  {
+    "creator": "The Up Next Fighting",
+    "source": "",
+    "campaign": "The Up Next Fighting",
+    "campaign_url": "https://contentrewards.com/c/campaigns/8cea2f0d-87e7-4ab7-8a47-ee7e84c6706d",
+    "cpm": 1.0,
+    "enabled": false,
+    "why_off": "exige cuenta de MMA o pagina dedicada UNF + musica trending MMA; min 5.000 vistas",
+    "join_status": "unido 2026-10-13"
+  },
+  {
+    "creator": "Michael Sartain",
+    "source": "",
+    "campaign": "Michael Sartain",
+    "campaign_url": "https://contentrewards.com/c/campaigns/86842687-ba2b-4638-a024-995dcf3d25a3",
+    "cpm": 1.0,
+    "enabled": false,
+    "why_off": "pagina dedicada + min 10k vistas en 5 dias + analytics Tier1",
+    "join_status": "unido 2026-10-13"
+  },
+  {
+    "creator": "GabeNoVictim",
+    "source": "",
+    "campaign": "GabeNoVictim",
+    "campaign_url": "https://contentrewards.com/c/campaigns/54be9be9-6564-47c0-880c-40422749d65e",
+    "cpm": 1.5,
+    "enabled": false,
+    "why_off": "solo IG Reels, pagina dedicada, 50% EE.UU.",
+    "join_status": "unido 2026-10-13"
+  },
+  {
+    "creator": "WatchMeWin",
+    "source": "",
+    "campaign": "WatchMeWin",
+    "campaign_url": "https://contentrewards.com/c/campaigns/2eae3b20-87f5-4fa2-9bc3-0c2bb62facc5",
+    "cpm": 0.8,
+    "enabled": false,
+    "why_off": "casino/slots + link y sticker obligatorios",
+    "join_status": "unido 2026-10-13"
+  },
+  {
+    "creator": "Victor Rodriguez (ES)",
+    "source": "",
+    "campaign": "Victor Rodriguez (ES)",
+    "campaign_url": "https://contentrewards.com/c/campaigns/75329576-d9be-4464-9916-d2f844fb7c9f",
+    "cpm": 1.8,
+    "enabled": false,
+    "why_off": "min $10 (5.500 vistas); fuente del podcast sin localizar; solo TT/IG",
+    "join_status": "unido 2026-10-13"
+  },
+  {
+    "creator": "Carlotta Sabina (ES)",
+    "source": "",
+    "campaign": "Carlotta Sabina (ES)",
+    "campaign_url": "https://contentrewards.com/c/campaigns/7610267f-aa08-45b4-9975-6acf0faeca1a",
+    "cpm": 0.3,
+    "enabled": false,
+    "why_off": "nombre de cuenta debe incluir 'carlotta' (pagina dedicada)",
+    "join_status": "unido 2026-10-13"
+  },
+  {
+    "creator": "Mario Vincere (ES)",
+    "source": "",
+    "campaign": "Mario Vincere (ES)",
+    "campaign_url": "https://contentrewards.com/c/campaigns/b9b58693-b70d-419c-b660-e6c38903c8f3",
+    "cpm": 1.0,
+    "enabled": false,
+    "why_off": "min $20 (20k vistas) + WhatsApp obligatorio",
+    "join_status": "unido 2026-10-13"
+  },
+  {
+    "creator": "Brezscales",
+    "source": "",
+    "campaign": "Brezscales",
+    "campaign_url": "https://contentrewards.com/c/campaigns/788ea2fd-1fff-4cad-ba38-28dd1d7700ed",
+    "cpm": 0.75,
+    "enabled": false,
+    "why_off": "cuenta dedicada",
+    "join_status": "unido 2026-10-13"
+  },
+  {
+    "creator": "Jackelyne (Kick)",
+    "source": "",
+    "campaign": "Jackelyne (Kick)",
+    "campaign_url": "https://contentrewards.com/c/campaigns/5991571d-8c83-41e8-941c-34d96476c06b",
+    "cpm": 1.5,
+    "enabled": false,
+    "why_off": "paginas dedicadas + logo unboxd + publicar en todas las plataformas",
+    "join_status": "unido 2026-10-13"
+  },
+  {
+    "creator": "Gym Molly",
+    "source": "",
+    "campaign": "Gym Molly",
+    "campaign_url": "https://contentrewards.com/c/campaigns/fcaf925e-81f1-483f-9a45-9cd040bac625",
+    "cpm": 1.5,
+    "enabled": false,
+    "why_off": "paginas dedicadas + todas las plataformas",
+    "join_status": "unido 2026-10-13"
+  },
+  {
+    "creator": "RobTheBank",
+    "source": "",
+    "campaign": "RobTheBank",
+    "campaign_url": "https://contentrewards.com/c/campaigns/10764ec4-b429-44c4-88db-fc1aef8e24a3",
+    "cpm": 1.0,
+    "enabled": false,
+    "why_off": "solo TikTok, pagina branded RTB, min 10k",
+    "join_status": "unido 2026-10-13"
+  },
+  {
+    "creator": "Topps",
+    "source": "",
+    "campaign": "Topps",
+    "campaign_url": "https://contentrewards.com/c/campaigns/f354afb5-bc73-4090-b723-35f65dbba276",
+    "cpm": 1.0,
+    "enabled": false,
+    "why_off": "solo paginas de trading cards + 40% EE.UU.",
+    "join_status": "unido 2026-10-13"
+  }
 ]
