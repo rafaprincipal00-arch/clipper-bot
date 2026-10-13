@@ -28,11 +28,11 @@ PLAN = ROOT / "data" / "tiktok_plan.json"
 LOG = ROOT / "data" / "tiktok_poster.log"
 WORK = ROOT / "work" / "tiktok"
 # Posting windows (local time): first post ~1 h after the clips exist, the rest spread evenly until
-# LAST_POST, with some jitter. EXPECTED = clips per day (3 per TikTok account).
+# LAST_POST, with some jitter. EXPECTED = clips per day (5 per TikTok account).
 FIRST_DELAY_MIN = (45, 90)
 MIN_SPACING_MIN = 35
 LAST_POST = (23, 40)
-EXPECTED = 9
+EXPECTED = 15
 NO_WINDOW = 0x08000000
 
 

@@ -1,7 +1,7 @@
 """Windows logon trigger (Startup shortcut, runs hidden with pythonw).
 
 First logon of each day (from ARM_FROM on) -> dispatches the GitHub workflow in batch mode:
-9 different clips, accounts in turn (1, 2, 3, 1...), one every 8-9 min. That is the daily limit:
+15 different clips (5 per TikTok account), accounts in turn (1, 2, 3, 1...), one every 8-9 min. That is the daily limit:
 TikTok 3 per account (posted later from the PC) and YouTube 6 (the Google project's API quota, so the
 first 6 clips also go to YouTube Shorts, 2 per channel).
 Processing happens in GitHub Actions. Before dispatching, the PC downloads the YouTube moment windows that
@@ -20,7 +20,7 @@ from pathlib import Path
 
 REPO = "rafaprincipal00-arch/clipper-bot"
 WORKFLOW = "clipper.yml"
-BATCH = "9"
+BATCH = "15"
 ARM_FROM = datetime(2026, 10, 7, 6, 0)  # never before the morning after it was set up
 HERE = Path(__file__).resolve().parent.parent
 STATE = HERE / "data" / "logon_trigger_state.json"
