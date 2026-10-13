@@ -657,5 +657,145 @@
     "enabled": false,
     "why_off": "solo paginas de trading cards + 40% EE.UU.",
     "join_status": "unido 2026-10-13"
+  },
+  {
+    "creator": "Jynxzi (Twitch)",
+    "source": "https://www.twitch.tv/jynxzi",
+    "enabled": true,
+    "hashtags": [
+      "jynxzi",
+      "stream",
+      "clips"
+    ],
+    "credit": "twitch.tv/jynxzi",
+    "why": "famoso sin campaña: crecer la cuenta",
+    "account": 2,
+    "lang": "English"
+  },
+  {
+    "creator": "CaseOh (Twitch)",
+    "source": "https://www.twitch.tv/caseoh_",
+    "enabled": true,
+    "hashtags": [
+      "caseoh",
+      "stream",
+      "clips"
+    ],
+    "credit": "twitch.tv/caseoh_",
+    "why": "famoso sin campaña: crecer la cuenta",
+    "account": 2,
+    "lang": "English"
+  },
+  {
+    "creator": "Stable Ronaldo (Twitch)",
+    "source": "https://www.twitch.tv/stableronaldo",
+    "enabled": true,
+    "hashtags": [
+      "stableronaldo",
+      "stream",
+      "clips"
+    ],
+    "credit": "twitch.tv/stableronaldo",
+    "why": "famoso sin campaña: crecer la cuenta",
+    "account": 2,
+    "lang": "English"
+  },
+  {
+    "creator": "Fanum (Twitch)",
+    "source": "https://www.twitch.tv/fanum",
+    "enabled": true,
+    "hashtags": [
+      "fanum",
+      "stream",
+      "clips"
+    ],
+    "credit": "twitch.tv/fanum",
+    "why": "famoso sin campaña: crecer la cuenta",
+    "account": 2,
+    "lang": "English"
+  },
+  {
+    "creator": "Lacy (Twitch)",
+    "source": "https://www.twitch.tv/lacy",
+    "enabled": true,
+    "hashtags": [
+      "lacy",
+      "stream",
+      "clips"
+    ],
+    "credit": "twitch.tv/lacy",
+    "why": "famoso sin campaña: crecer la cuenta",
+    "account": 2,
+    "lang": "English"
+  },
+  {
+    "creator": "Ice Poseidon (Kick)",
+    "source": "https://kick.com/iceposeidon",
+    "enabled": true,
+    "hashtags": [
+      "iceposeidon",
+      "stream",
+      "clips"
+    ],
+    "credit": "kick.com/iceposeidon",
+    "why": "famoso sin campaña: crecer la cuenta",
+    "account": 2,
+    "lang": "English"
+  },
+  {
+    "creator": "Juansguarnizo (Kick)",
+    "source": "https://kick.com/juansguarnizo",
+    "enabled": true,
+    "hashtags": [
+      "juansguarnizo",
+      "stream",
+      "clipsespañol"
+    ],
+    "credit": "kick.com/juansguarnizo",
+    "why": "famoso sin campaña: crecer la cuenta",
+    "account": 3,
+    "lang": "Spanish"
+  },
+  {
+    "creator": "Auronplay (Twitch)",
+    "source": "https://www.twitch.tv/auronplay",
+    "enabled": true,
+    "hashtags": [
+      "auronplay",
+      "stream",
+      "clipsespañol"
+    ],
+    "credit": "twitch.tv/auronplay",
+    "why": "famoso sin campaña: crecer la cuenta",
+    "account": 3,
+    "lang": "Spanish"
+  },
+  {
+    "creator": "Rivers (Twitch)",
+    "source": "https://www.twitch.tv/rivers_gg",
+    "enabled": true,
+    "hashtags": [
+      "rivers",
+      "stream",
+      "clipsespañol"
+    ],
+    "credit": "twitch.tv/rivers_gg",
+    "why": "famoso sin campaña: crecer la cuenta",
+    "account": 3,
+    "lang": "Spanish"
+  },
+  {
+    "creator": "IlloJuan (Twitch)",
+    "source": "https://www.twitch.tv/illojuan",
+    "enabled": true,
+    "hashtags": [
+      "illojuan",
+      "stream",
+      "clipsespañol"
+    ],
+    "credit": "twitch.tv/illojuan",
+    "why": "famoso sin campaña: crecer la cuenta",
+    "account": 3,
+    "lang": "Spanish"
   }
 ]
