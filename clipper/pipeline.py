@@ -159,7 +159,8 @@ def make_clip(moment: dict, creator: str, campaign: dict | None, do_publish: boo
             print(f"  skip {moment['id']}: no speech")
             return None
         edit = (highlights.pick_edit(words, creator, moment["title"], 0, length,
-                                     lang=(campaign or {}).get("lang", "English"))
+                                     lang=(campaign or {}).get("lang", "English"),
+                                     rules=(campaign or {}).get("requirements", "") if (campaign or {}).get("campaign_url") else "")
                 or highlights.fallback_edit(words, 0, length))
         if not edit.get("fallback") and edit["score"] < min_score:
             print(f"  skip {moment['id']}: score {edit['score']}")
