@@ -37,6 +37,7 @@ List 2-5 emphasis words: words spoken inside the kept segments that carry the jo
 (copy them exactly as they appear in the transcript).
 The last segment must end on the payoff (within ~0.3 s of its last word); no trailing chatter.
 Hook and title must be brand-safe: no slurs or profanity (campaigns auto-reject them).
+Write the hook, the title and the emphasis words in {lang} (the language the clip is spoken in).
 Reply ONLY with JSON: {{"segments": [[start, end], ...], "score": int, "mood": "funny",
 "hook_type": "revelation|contrarian|stakes", "hook": "max 6 words, caps ok",
 "emphasis": ["word", ...], "title": "post caption under 90 chars, no hashtags (emotion + niche + outcome)"}}
@@ -219,11 +220,11 @@ def pad_to_min(segs: list[tuple[float, float]], words: list[dict], lo: float, hi
 
 
 def pick_edit(words: list[dict], creator: str, title: str, lo: float, hi: float,
-              min_len: int = int(MIN_TOTAL), max_len: int = int(MAX_TOTAL)) -> dict | None:
+              min_len: int = int(MIN_TOTAL), max_len: int = int(MAX_TOTAL), lang: str = "English") -> dict | None:
     if not words:
         return None
     res = _gemini_json(EDIT_PROMPT.format(creator=creator, title=title, min_len=min_len, max_len=max_len,
-                                          playbook=PLAYBOOK, perf=performance.notes(creator),
+                                          playbook=PLAYBOOK, perf=performance.notes(creator), lang=lang,
                                           transcript=_transcript_lines(words)))
     if not res:
         return None

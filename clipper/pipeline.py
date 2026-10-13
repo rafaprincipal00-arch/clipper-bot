@@ -158,7 +158,8 @@ def make_clip(moment: dict, creator: str, campaign: dict | None, do_publish: boo
         if not words:
             print(f"  skip {moment['id']}: no speech")
             return None
-        edit = (highlights.pick_edit(words, creator, moment["title"], 0, length)
+        edit = (highlights.pick_edit(words, creator, moment["title"], 0, length,
+                                     lang=(campaign or {}).get("lang", "English"))
                 or highlights.fallback_edit(words, 0, length))
         if not edit.get("fallback") and edit["score"] < min_score:
             print(f"  skip {moment['id']}: score {edit['score']}")
@@ -188,6 +189,8 @@ def make_clip(moment: dict, creator: str, campaign: dict | None, do_publish: boo
     # scratch dir (raw window, wav, captions) is gone here; only the edited clip remains.
     t_render = time.time()
     tags = " ".join(f"#{t.lstrip('#')}" for t in (campaign or {}).get("hashtags", []))
+    mention = (campaign or {}).get("mention", "")  # tag the campaign requires in every caption
+    tags = f"{mention} {tags}".strip()
     caption = f"{edit['title']} {tags}\n{render.MUSIC_CREDIT}".strip()  # CC BY music must be credited
     entry = {"file": final.name, "creator": creator, "source": moment["url"], "start": moment["start"] + segs[0][0],
              "end": moment["start"] + segs[-1][1], "cuts": len(segs), "length": round(sum(e - s for s, e in segs), 1),
@@ -271,6 +274,7 @@ def run_auto(do_publish: bool, min_score: int, per_source: int, total: int = 0, 
             queues[src["creator"]] = []
         print(f"[{src['creator']}] {len(queues[src['creator']])} new moments")
     made = dict.fromkeys(queues, 0)
+    per_acct: dict[int, int] = {}
     done = 0
     last_clip = 0.0
     next_gap = gap_seconds()
@@ -283,6 +287,9 @@ def run_auto(do_publish: bool, min_score: int, per_source: int, total: int = 0, 
                 return
             if not q or made[src["creator"]] >= per_source or time.time() - t0 > budget_s:
                 continue
+            if per_account and total and src.get("account") \
+                    and per_acct.get(src["account"], 0) >= -(-total // ACCOUNTS):
+                continue  # that account already has its share of today's clips
             if do_publish and capped_platforms() >= working_platforms():
                 print("Every working platform hit its daily cap; stopping.")
                 return
@@ -294,9 +301,11 @@ def run_auto(do_publish: bool, min_score: int, per_source: int, total: int = 0, 
             progressed = True
             print(f"[{src['creator']}] {m['signal']} {m['views']} views: {m['title'][:60]}")
             seen.add(m["id"])  # mark even on failure so a broken moment is not retried forever
+            # A source pinned to an account ("account": 1-based) always posts there: one account per niche
+            # and language. Unpinned sources take the accounts in turn.
+            acct = (src["account"] - 1 if src.get("account") else done % ACCOUNTS) if per_account else None
             try:
-                entry = make_clip(m, src["creator"], src, do_publish, min_score,
-                                  account=done % ACCOUNTS if per_account else None)
+                entry = make_clip(m, src["creator"], src, do_publish, min_score, account=acct)
             except subprocess.CalledProcessError as e:
                 print(f"  failed: {(e.stderr or str(e))[-400:]}")
                 entry = None
@@ -304,6 +313,8 @@ def run_auto(do_publish: bool, min_score: int, per_source: int, total: int = 0, 
             if entry:
                 save([entry])
                 made[src["creator"]] += 1
+                if acct is not None:
+                    per_acct[acct + 1] = per_acct.get(acct + 1, 0) + 1
                 done += 1
                 last_clip = time.time()
                 next_gap = gap_seconds()

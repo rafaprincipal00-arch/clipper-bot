@@ -14,7 +14,9 @@
   ],
   "credit": "@tjr",
   "why": "Mayor presupuesto (20k$/semana), stream diario en Kick",
-  "join_status": "unido (Reach)"
+  "join_status": "unido (Reach)",
+  "account": 1,
+  "lang": "English"
  },
  {
   "creator": "Shuffle streamers (Kick)",
@@ -49,7 +51,9 @@
   "credit": "YT: @mpj",
   "why": "Estrella NBA, 5k$ libres, 97 clippers",
   "join_status": "unido 2026-10-09",
-  "requirements": "Min payout 2$ = 2.000 vistas. Referencia: texto 'YT: @mpj' en pantalla."
+  "requirements": "Min payout 2$ = 2.000 vistas. Referencia: texto 'YT: @mpj' en pantalla.",
+  "account": 1,
+  "lang": "English"
  },
  {
   "creator": "Michael Sartain",
@@ -113,7 +117,9 @@
   "credit": "twitch.tv/howieazy",
   "requirements": "Add link in bio https://www.twitch.tv/howieazy",
   "why": "Twitch, 984$ libres, poca competencia",
-  "join_status": "unido (Pervasive)"
+  "join_status": "unido (Pervasive)",
+  "account": 1,
+  "lang": "English"
  },
  {
   "creator": "Lanah Cherry (Twitch)",
@@ -129,7 +135,9 @@
   ],
   "credit": "twitch.tv/lanahcherry",
   "why": "Streamer IRL de Twitch, 908$ libres",
-  "join_status": "unido (Reach)"
+  "join_status": "unido (Reach)",
+  "account": 1,
+  "lang": "English"
  },
  {
   "creator": "Stanley Meng (Streamer University)",
@@ -137,14 +145,15 @@
   "campaign": "$1,000 Stanley Meng Streamer Clipping Campaign",
   "campaign_url": "https://contentrewards.com/discover/8a91bc4a-feb8-455d-87de-95d82f69e5eb",
   "cpm": 1.0,
-  "enabled": true,
+  "enabled": false,
   "hashtags": [
    "streameruniversity",
    "kaicenat"
   ],
   "credit": "",
   "why": "Streamer University (entorno Kai Cenat), solo TikTok, 346$ libres",
-  "join_status": "unido (ClippedIn)"
+  "join_status": "unido (ClippedIn)",
+  "why_off": "0 momentos incluso desde el PC (2026-10-13)"
  },
  {
   "creator": "Ryan Zofay",
@@ -152,7 +161,7 @@
   "campaign": "Ryan Zofay - Clipping Campaign 01",
   "campaign_url": "https://contentrewards.com/discover/926e1b7f-1030-4333-a557-f99d9f891437",
   "cpm": 0.75,
-  "enabled": true,
+  "enabled": false,
   "hashtags": [
    "ryanzofay",
    "motivation",
@@ -160,6 +169,193 @@
   ],
   "credit": "@ryanzofay",
   "why": "Podcast/charlas, 2,5k$ libres, 37 clippers; sustituye a HardScope (cerrada)",
-  "join_status": "unido"
+  "join_status": "unido",
+  "why_off": "0 momentos incluso desde el PC (2026-10-13)"
+ },
+ {
+  "creator": "N3on R3born (HardScope)",
+  "source": "https://www.youtube.com/watch?v=Xyo-mst-qPE",
+  "campaign": "N3on R3born x ClipFarm Ep 1.",
+  "campaign_url": "https://contentrewards.com/discover/219735c8-328b-415b-bee1-20fdd00c2f7f",
+  "cpm": 1.0,
+  "enabled": true,
+  "account": 1,
+  "lang": "English",
+  "hashtags": [
+   "r3born",
+   "n3on"
+  ],
+  "mention": "@hardscope",
+  "credit": "@hardscope",
+  "requirements": "Solo episodio 1. @hardscope (YT @HardScopeTV) + #r3born en cada post. Nunca mencionar FaZe ni politica. Min 7s. 70% del presupuesto en YT Shorts. 40%+ T1.",
+  "join_status": "unido 2026-10-13"
+ },
+ {
+  "creator": "N3on (Kick)",
+  "source": "https://kick.com/n3on",
+  "enabled": true,
+  "account": 2,
+  "lang": "English",
+  "hashtags": [
+   "n3on",
+   "kick",
+   "streamer"
+  ],
+  "credit": "kick.com/n3on",
+  "why": "famoso, sin campaña abierta: crecer cuenta para el programa de N3on"
+ },
+ {
+  "creator": "xQc (Kick)",
+  "source": "https://kick.com/xqc",
+  "enabled": true,
+  "account": 2,
+  "lang": "English",
+  "hashtags": [
+   "xqc",
+   "kick",
+   "streamer"
+  ],
+  "credit": "kick.com/xqc",
+  "why": "famoso, sin campaña abierta"
+ },
+ {
+  "creator": "Kai Cenat (Twitch)",
+  "source": "https://www.twitch.tv/kaicenat",
+  "enabled": true,
+  "account": 2,
+  "lang": "English",
+  "hashtags": [
+   "kaicenat",
+   "twitch",
+   "streamer"
+  ],
+  "credit": "twitch.tv/kaicenat",
+  "why": "famoso, sin campaña abierta"
+ },
+ {
+  "creator": "Adin Ross (Kick)",
+  "source": "https://kick.com/adinross",
+  "enabled": true,
+  "account": 2,
+  "lang": "English",
+  "hashtags": [
+   "adinross",
+   "kick",
+   "streamer"
+  ],
+  "credit": "kick.com/adinross",
+  "why": "famoso, sin campaña abierta"
+ },
+ {
+  "creator": "Westcol (Kick)",
+  "source": "https://kick.com/westcol",
+  "enabled": true,
+  "account": 3,
+  "lang": "Spanish",
+  "hashtags": [
+   "westcol",
+   "kick",
+   "streamer"
+  ],
+  "credit": "kick.com/westcol",
+  "why": "famoso hispano, sin campaña abierta"
+ },
+ {
+  "creator": "Spreen (Kick)",
+  "source": "https://kick.com/spreen",
+  "enabled": true,
+  "account": 3,
+  "lang": "Spanish",
+  "hashtags": [
+   "spreen",
+   "kick",
+   "streamer"
+  ],
+  "credit": "kick.com/spreen",
+  "why": "famoso hispano, sin campaña abierta"
+ },
+ {
+  "creator": "elZeein (Kick)",
+  "source": "https://kick.com/elzeein",
+  "enabled": true,
+  "account": 3,
+  "lang": "Spanish",
+  "hashtags": [
+   "elzeein",
+   "kick",
+   "streamer"
+  ],
+  "credit": "kick.com/elzeein",
+  "why": "famoso hispano, sin campaña abierta"
+ },
+ {
+  "creator": "Ibai (Twitch)",
+  "source": "https://www.twitch.tv/ibai",
+  "enabled": true,
+  "account": 3,
+  "lang": "Spanish",
+  "hashtags": [
+   "ibai",
+   "twitch",
+   "streamer"
+  ],
+  "credit": "twitch.tv/ibai",
+  "why": "famoso hispano, sin campaña abierta"
+ },
+ {
+  "creator": "Daniel Curto",
+  "source": "https://www.youtube.com/@dcmfx/videos",
+  "campaign": "CLIPPING ESPAÑOL - Daniel Curto",
+  "campaign_url": "https://contentrewards.com/discover/ebc7dd27-5d08-4d06-86d5-659706286077",
+  "cpm": 1.0,
+  "enabled": false,
+  "lang": "Spanish",
+  "why_off": "exige pagina dedicada con su nombre y su foto (@danielcurto.clips); solo TikTok/IG; caption fija 'Este es solo un fragmento. Más contenido en @dcm_fx o dcmfx'"
+ },
+ {
+  "creator": "Matías Matti",
+  "source": "https://youtu.be/e7KyTiKb5EY",
+  "campaign": "@matiasmatti campaign #1",
+  "campaign_url": "https://contentrewards.com/discover/8e776e0c-9225-4ec0-8dce-2beba746435b",
+  "cpm": 1.0,
+  "enabled": false,
+  "lang": "Spanish",
+  "why_off": "cada borrador necesita aprobacion manual antes de publicar"
+ },
+ {
+  "creator": "Irubyana (Twitch)",
+  "source": "https://www.twitch.tv/irubyana",
+  "campaign": "Irubyana Twitch Clips",
+  "campaign_url": "https://contentrewards.com/discover/d8f10d9f-5207-4268-8069-b6da45a23b67",
+  "cpm": 1.0,
+  "enabled": false,
+  "why_off": "borradores con aprobacion previa + banner de Twitch"
+ },
+ {
+  "creator": "Clavicular",
+  "source": "https://kick.com/clavicular",
+  "campaign": "Clavicular Dedicated Clipping",
+  "campaign_url": "https://contentrewards.com/discover/9a99d9cc-ae77-443a-8733-1ec8d3c0586c",
+  "cpm": 1.0,
+  "enabled": false,
+  "why_off": "exige pagina nueva dedicada con su nombre y 40%+ EEUU"
+ },
+ {
+  "creator": "Jake Paul",
+  "source": "",
+  "campaign": "Jake Paul Clipping",
+  "campaign_url": "https://contentrewards.com/discover/88c16d1a-c184-489c-a896-b3e947829f38",
+  "cpm": 0.75,
+  "enabled": false,
+  "why_off": "prohibe theme pages/networks"
+ },
+ {
+  "creator": "Jay Guapo (Kick)",
+  "source": "https://kick.com/jayguap00",
+  "campaign": "Jay Guapo X Mypip Streamer Clips",
+  "campaign_url": "https://contentrewards.com/discover/132508cb-f9d7-4077-8344-467d148cf9df",
+  "cpm": 1.5,
+  "enabled": false,
+  "why_off": "0 clips en Kick; solo su VOD de Mypip; reglas en Notion sin leer"
  }
 ]

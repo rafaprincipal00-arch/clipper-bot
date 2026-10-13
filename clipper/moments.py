@@ -137,6 +137,25 @@ def youtube_heat_moments(channel_videos_url: str, count: int = 5, recent: int = 
     return sorted(out, key=lambda m: -m["views"])[:count]
 
 
+def youtube_episode_windows(url: str, span: int = 80) -> list[dict]:
+    """A single campaign episode: its most-replayed peaks, or consecutive windows when YouTube has none yet
+    (the edit step scores each window and skips the weak ones)."""
+    info = json.loads(subprocess.run(["yt-dlp", "--no-warnings", "--skip-download", "-J", url],
+                                     capture_output=True, text=True, check=True).stdout)
+    vid, title, length = info["id"], info.get("title", ""), float(info.get("duration") or 0)
+    heat = sorted(info.get("heatmap") or [], key=lambda h: -h["value"])
+    if heat:
+        picked: list[tuple[float, float]] = []
+        for h in heat:
+            mid = (h["start_time"] + h["end_time"]) / 2
+            if mid >= 30 and all(abs(mid - u) >= 90 for u, _ in picked):
+                picked.append((mid, h["value"]))
+        return [_moment(f"ytep-{vid}-{int(m)}", url, m - 45, m + 35, int((info.get("view_count") or 0) * v),
+                        title, "yt-episode-replayed") for m, v in picked]
+    starts = range(30, max(31, int(length) - span), span)
+    return [_moment(f"ytep-{vid}-{s}", url, s, s + span, 0, title, "yt-episode-window") for s in starts]
+
+
 # ---------------- dispatcher ----------------
 def moments_for(source: str) -> list[dict]:
     """Best-first list of candidate moments for a source URL."""
@@ -149,6 +168,8 @@ def moments_for(source: str) -> list[dict]:
     m = re.match(r"https?://(www\.)?kick\.com/([^/]+)", s)
     if m:
         return kick_clips(m.group(2).lower())
+    if "youtube.com/watch" in source:  # one episode a campaign points at (e.g. R3born Ep 1)
+        return youtube_episode_windows(source)
     if "youtube.com" in s:
         if not s.endswith("/videos"):
             s += "/videos"
