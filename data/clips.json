@@ -1,5 +1,415 @@
 [
  {
+  "file": "rivers-twitch-tw-2899268423-648.mp4",
+  "creator": "Rivers (Twitch)",
+  "source": "https://www.twitch.tv/videos/2899268423",
+  "start": 640.14,
+  "end": 696.62,
+  "cuts": 12,
+  "length": 20.4,
+  "layout": "face",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Todavía estoy safe",
+  "hook_type": "revelation",
+  "emphasis": [
+   "safe",
+   "puta",
+   "chingada",
+   "pendeja"
+  ],
+  "caption": "Rivers explica por qué perdió su vuelo por pendeja #rivers #stream #clipsespañol\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Rivers explica por qué perdió su vuelo por pendeja",
+  "campaign": null,
+  "created": "2026-10-15T10:23:20.613420+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/rivers-twitch-tw-2899268423-648.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/rivers-twitch-tw-2899268423-648.tt.mp4",
+  "tiktok_caption": "Rivers explica por qué perdió su vuelo por pendeja #rivers #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 189,
+   "publish+submit": 4,
+   "total": 197
+  }
+ },
+ {
+  "file": "auronplay-twitch-tw-2898838566-7263.mp4",
+  "creator": "Auronplay (Twitch)",
+  "source": "https://www.twitch.tv/videos/2898838566",
+  "start": 7260.48,
+  "end": 7306.043,
+  "cuts": 14,
+  "length": 22.5,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Auronplay pierde todo en segundos",
+  "hook_type": "revelation",
+  "emphasis": [
+   "perra",
+   "matado",
+   "zombie",
+   "todo",
+   "no"
+  ],
+  "caption": "Auronplay no estaba preparado para esta muerte en directo #auronplay #stream #clipsespañol\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Auronplay no estaba preparado para esta muerte en directo",
+  "campaign": null,
+  "created": "2026-10-15T10:11:56.398322+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2898838566-7263.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2898838566-7263.tt.mp4",
+  "tiktok_caption": "Auronplay no estaba preparado para esta muerte en directo #auronplay #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 156,
+   "publish+submit": 5,
+   "total": 163
+  }
+ },
+ {
+  "file": "juansguarnizo-kick-kc-clip-01m4f1ne1btrkgs789tkjsz42k.mp4",
+  "creator": "Juansguarnizo (Kick)",
+  "source": "https://clips.kick.com/clips/8d/clip_01M4F1NE1BTRKGS789TKJSZ42K/playlist.m3u8",
+  "start": 32.699999999999996,
+  "end": 30.979999999999997,
+  "cuts": 10,
+  "length": 26.4,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "kick-clip",
+  "score": 88,
+  "hook": "No les regalamos una mierda",
+  "hook_type": "revelation",
+  "emphasis": [
+   "mierda",
+   "injusto",
+   "joden",
+   "dinámica"
+  ],
+  "caption": "Juansguarnizo explota contra los fans y amenaza con cancelar todo #juansguarnizo #stream #clipsespañol\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Juansguarnizo explota contra los fans y amenaza con cancelar todo",
+  "campaign": null,
+  "created": "2026-10-15T10:01:07.806842+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/juansguarnizo-kick-kc-clip-01m4f1ne1btrkgs789tkjsz42k.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/juansguarnizo-kick-kc-clip-01m4f1ne1btrkgs789tkjsz42k.tt.mp4",
+  "tiktok_caption": "Juansguarnizo explota contra los fans y amenaza con cancelar todo #juansguarnizo #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 6,
+   "transcribe+edit+render": 231,
+   "publish+submit": 4,
+   "total": 241
+  }
+ },
+ {
+  "file": "ice-poseidon-kick-kc-clip-01m4w11gbdk4hajk2b1j6cqj4m.mp4",
+  "creator": "Ice Poseidon (Kick)",
+  "source": "https://clips.kick.com/clips/17/clip_01M4W11GBDK4HAJK2B1J6CQJ4M/playlist.m3u8",
+  "start": 0.0,
+  "end": 33.519999999999996,
+  "cuts": 7,
+  "length": 22.8,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "kick-clip",
+  "score": 85,
+  "hook": "HE GOT BANNED TODAY",
+  "hook_type": "revelation",
+  "emphasis": [
+   "banned",
+   "today",
+   "seen",
+   "coming",
+   "shit"
+  ],
+  "caption": "Ice Poseidon shocked as wvagabond gets banned live #iceposeidon #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Ice Poseidon shocked as wvagabond gets banned live",
+  "campaign": null,
+  "created": "2026-10-15T09:48:33.242311+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/ice-poseidon-kick-kc-clip-01m4w11gbdk4hajk2b1j6cqj4m.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/ice-poseidon-kick-kc-clip-01m4w11gbdk4hajk2b1j6cqj4m.tt.mp4",
+  "tiktok_caption": "Ice Poseidon shocked as wvagabond gets banned live #iceposeidon #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 6,
+   "transcribe+edit+render": 112,
+   "publish+submit": 4,
+   "total": 121
+  }
+ },
+ {
+  "file": "lacy-twitch-tw-2897328859-6533.mp4",
+  "creator": "Lacy (Twitch)",
+  "source": "https://www.twitch.tv/videos/2897328859",
+  "start": 6498,
+  "end": 6566.0,
+  "cuts": 10,
+  "length": 20.0,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 82,
+  "hook": "He just repeated it",
+  "hook_type": "revelation",
+  "emphasis": [
+   "angry",
+   "repeated"
+  ],
+  "caption": "Lacy caught repeating the funniest thing live #lacy #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Lacy caught repeating the funniest thing live",
+  "campaign": null,
+  "created": "2026-10-15T09:38:08.861202+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/S3rqjhZ8LTI",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lacy-twitch-tw-2897328859-6533.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lacy-twitch-tw-2897328859-6533.tt.mp4",
+  "tiktok_caption": "Lacy caught repeating the funniest thing live #lacy #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 177,
+   "publish+submit": 7,
+   "total": 187
+  }
+ },
+ {
+  "file": "stable-ronaldo-twitch-tw-2899083827-13365.mp4",
+  "creator": "Stable Ronaldo (Twitch)",
+  "source": "https://www.twitch.tv/videos/2899083827",
+  "start": 13378.0,
+  "end": 13397.02,
+  "cuts": 8,
+  "length": 21.4,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "He swore he got touched",
+  "hook_type": "revelation",
+  "emphasis": [
+   "touched",
+   "chin",
+   "fake",
+   "way"
+  ],
+  "caption": "Stable Ronaldo got completely played live #stableronaldo #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Stable Ronaldo got completely played live",
+  "campaign": null,
+  "created": "2026-10-15T09:26:03.601105+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/PECejBjodDw",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/stable-ronaldo-twitch-tw-2899083827-13365.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/stable-ronaldo-twitch-tw-2899083827-13365.tt.mp4",
+  "tiktok_caption": "Stable Ronaldo got completely played live #stableronaldo #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 2,
+   "transcribe+edit+render": 158,
+   "publish+submit": 8,
+   "total": 168
+  }
+ },
+ {
+  "file": "jynxzi-twitch-tw-2898260438-352.mp4",
+  "creator": "Jynxzi (Twitch)",
+  "source": "https://www.twitch.tv/videos/2898260438",
+  "start": 342.15,
+  "end": 379.67,
+  "cuts": 9,
+  "length": 25.9,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "hype",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Ass cheek tattoo guarantee",
+  "hook_type": "stakes",
+  "emphasis": [
+   "tattoo",
+   "ass",
+   "guarantee",
+   "greatest",
+   "steroids"
+  ],
+  "caption": "Jynxzi made a crazy guarantee live #jynxzi #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Jynxzi made a crazy guarantee live",
+  "campaign": null,
+  "created": "2026-10-15T09:14:53.498972+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/4Dg7E1KaPw8",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/jynxzi-twitch-tw-2898260438-352.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/jynxzi-twitch-tw-2898260438-352.tt.mp4",
+  "tiktok_caption": "Jynxzi made a crazy guarantee live #jynxzi #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 6,
+   "transcribe+edit+render": 188,
+   "publish+submit": 5,
+   "total": 200
+  }
+ },
+ {
+  "file": "spreen-kick-kc-clip-01m4m8j5yrjxjw651kygype3k4.mp4",
+  "creator": "Spreen (Kick)",
+  "source": "https://clips.kick.com/clips/0c/clip_01M4M8J5YRJXJW651KYGYPE3K4/playlist.m3u8",
+  "start": 14.84,
+  "end": 72.017,
+  "cuts": 11,
+  "length": 26.5,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "kick-clip",
+  "score": 85,
+  "hook": "Spreen manejando el barco",
+  "hook_type": "revelation",
+  "emphasis": [
+   "cuidado",
+   "dale",
+   "bien"
+  ],
+  "caption": "Spreen no controla nada y termina en total caos #spreen #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Spreen no controla nada y termina en total caos",
+  "campaign": null,
+  "created": "2026-10-15T09:01:15.210702+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/6wpg2jm0HPg",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/spreen-kick-kc-clip-01m4m8j5yrjxjw651kygype3k4.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/spreen-kick-kc-clip-01m4m8j5yrjxjw651kygype3k4.tt.mp4",
+  "tiktok_caption": "Spreen no controla nada y termina en total caos #spreen #kick #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 16,
+   "transcribe+edit+render": 161,
+   "publish+submit": 11,
+   "total": 188
+  }
+ },
+ {
+  "file": "westcol-kick-kc-clip-01m4hqx8raefm6b0x2qft3whyd.mp4",
+  "creator": "Westcol (Kick)",
+  "source": "https://clips.kick.com/clips/1d/clip_01M4HQX8RAEFM6B0X2QFT3WHYD/playlist.m3u8",
+  "start": 2.68,
+  "end": 31.4,
+  "cuts": 10,
+  "length": 21.8,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "kick-clip",
+  "score": 75,
+  "hook": "Se le pegó esa tanga",
+  "hook_type": "revelation",
+  "emphasis": [
+   "Peputa",
+   "rico",
+   "tanga",
+   "pillaron"
+  ],
+  "caption": "Westcol reacciona a algo insólito en vivo y no lo puede creer #westcol #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Westcol reacciona a algo insólito en vivo y no lo puede creer",
+  "campaign": null,
+  "created": "2026-10-15T08:50:07.041570+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/IoF4HeIrPQQ",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/westcol-kick-kc-clip-01m4hqx8raefm6b0x2qft3whyd.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/westcol-kick-kc-clip-01m4hqx8raefm6b0x2qft3whyd.tt.mp4",
+  "tiktok_caption": "Westcol reacciona a algo insólito en vivo y no lo puede creer #westcol #kick #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 2,
+   "transcribe+edit+render": 160,
+   "publish+submit": 7,
+   "total": 169
+  }
+ },
+ {
+  "file": "kai-cenat-twitch-tw-2895594319-1634.mp4",
+  "creator": "Kai Cenat (Twitch)",
+  "source": "https://www.twitch.tv/videos/2895594319",
+  "start": 1599,
+  "end": 1680.86,
+  "cuts": 11,
+  "length": 29.6,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Kai Cenat loses his mind live",
+  "hook_type": "revelation",
+  "emphasis": [
+   "alone",
+   "shut",
+   "stop",
+   "what"
+  ],
+  "caption": "Kai Cenat completely loses his patience live #kaicenat #twitch #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Kai Cenat completely loses his patience live",
+  "campaign": null,
+  "created": "2026-10-15T08:39:14.089415+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/KxaCaIHFhSE",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2895594319-1634.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2895594319-1634.tt.mp4",
+  "tiktok_caption": "Kai Cenat completely loses his patience live #kaicenat #twitch #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 2,
+   "transcribe+edit+render": 253,
+   "publish+submit": 6,
+   "total": 261
+  }
+ },
+ {
   "file": "harrison-webb-london-s-most-overrated-fo-ytep-ea-nypclty-609.mp4",
   "creator": "Harrison Webb (London's Most Overrated Food)",
   "source": "https://www.youtube.com/watch?v=-eA_NYPcltY",
