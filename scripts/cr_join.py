@@ -25,7 +25,12 @@ def main(ids: list[str]) -> None:
             page.wait_for_timeout(7000)
             if "/login" in page.url:
                 raise SystemExit("SESSION EXPIRED")
+            # "Join Campaign" used to be a <button>; it is now rendered as a link/div, so fall back by text.
             join = page.get_by_role("button", name=re.compile(r"^Join Campaign$"))
+            if not join.count():
+                join = page.get_by_role("link", name=re.compile(r"^Join Campaign$"))
+            if not join.count():
+                join = page.get_by_text("Join Campaign", exact=True)
             print(f"===== {cid} join button: {join.count()}")
             if join.count():
                 join.first.evaluate("el => el.click()")
