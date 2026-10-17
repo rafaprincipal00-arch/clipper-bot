@@ -34,6 +34,7 @@ MIN_SPACING_MIN = 35
 LAST_POST = (23, 40)
 EXPECTED = 15
 NO_WINDOW = 0x08000000
+SYSTEM_GIT = r"C:\Program Files\Git\cmd\git.exe"
 
 
 def log(*a: object) -> None:
@@ -46,7 +47,10 @@ def log(*a: object) -> None:
 
 # ---------------- GitHub ----------------
 def github_token() -> str:
-    out = subprocess.run(["git", "credential", "fill"], input="protocol=https\nhost=github.com\n\n",
+    # The system Git (helper "manager") holds the token. Another git first on PATH (Hermes's portable one,
+    # helper "helper-selector") opens a picker window on the user's screen and returns nothing.
+    git = SYSTEM_GIT if Path(SYSTEM_GIT).exists() else "git"
+    out = subprocess.run([git, "credential", "fill"], input="protocol=https\nhost=github.com\n\n",
                          capture_output=True, text=True, creationflags=NO_WINDOW, timeout=60).stdout
     for line in out.splitlines():
         if line.startswith("password="):
