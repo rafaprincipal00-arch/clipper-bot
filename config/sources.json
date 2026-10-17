@@ -797,5 +797,25 @@
     "why": "famoso sin campaña: crecer la cuenta",
     "account": 3,
     "lang": "Spanish"
+  },
+  {
+    "creator": "Clix x Yeat (Twitch)",
+    "source": "https://www.twitch.tv/clix/videos?filter=archives",
+    "only_url": "videos/2902610715",
+    "campaign": "$20,000 Clix's Yeat Stream Clipping Campaign",
+    "campaign_url": "https://contentrewards.com/discover/657e89e0-4a2f-434c-91d2-ca7e140218d1",
+    "cpm": 1.0,
+    "enabled": true,
+    "hashtags": [
+      "fortnite",
+      "yeatxclix",
+      "twizzy"
+    ],
+    "credit": "twitch.tv/clix",
+    "requirements": "Content MUST come from the Clix x Yeat livestream (Oct 16, 2026). Posts MUST include #fortnite #yeatxclix #twizzy. Fortnite/gaming niche.",
+    "why": "Reach, 1 USD/1k (min 10 USD, max 750 USD por clip), 12.8k USD libres; Clix + Yeat = muy viral",
+    "join_status": "unido (Reach) 2026-10-17",
+    "account": 1,
+    "lang": "English"
   }
 ]

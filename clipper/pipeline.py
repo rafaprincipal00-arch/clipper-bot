@@ -269,8 +269,9 @@ def run_auto(do_publish: bool, min_score: int, per_source: int, total: int = 0, 
             print(f"[{src['creator']}] {len(queues[src['creator']])} new moments (downloaded on the PC)")
             continue
         try:
-            queues[src["creator"]] = [m for m in moments.strongest(moments.moments_for(src["source"]))
-                                      if m["id"] not in seen]
+            # only_url: campaigns tied to one stream; filter before ranking so other VODs can't crowd it out.
+            found = [m for m in moments.moments_for(src["source"]) if src.get("only_url", "") in m["url"]]
+            queues[src["creator"]] = [m for m in moments.strongest(found) if m["id"] not in seen]
         except (OSError, ValueError, KeyError, subprocess.CalledProcessError) as e:
             print(f"[{src['creator']}] cannot list moments: {e}")
             queues[src["creator"]] = []
