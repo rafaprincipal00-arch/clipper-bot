@@ -817,5 +817,116 @@
     "join_status": "unido (Reach) 2026-10-17",
     "account": 1,
     "lang": "English"
+  },
+  {
+    "creator": "Clix (Twitch)",
+    "source": "https://www.twitch.tv/clix/videos?filter=archives",
+    "campaign": "$5,000 Clix Pool Campaign [October]",
+    "campaign_url": "https://contentrewards.com/c/campaigns/7a6a234b-1e9e-4da3-a600-54cc3142e710",
+    "enabled": true,
+    "account": 1,
+    "lang": "English",
+    "hashtags": [
+      "Clix",
+      "fortnite",
+      "streamer"
+    ],
+    "credit": "twitch.tv/clix",
+    "requirements": "Clix must be the primary focus. Caption or text overlay must say Clix's name; use #Clix. Only 2026 footage. Never show Clix in a negative light, no logos.",
+    "why": "Reach pool: 500k vistas minimas en total, 17.7M vistas aprobadas",
+    "join_status": "unido 2026-10-17"
+  },
+  {
+    "creator": "Michael Gene (The App Daddy)",
+    "source": "https://www.youtube.com/@Theappdaddy/videos",
+    "campaign": "Michael Gene Clipping [$500 Payout]",
+    "campaign_url": "https://contentrewards.com/c/campaigns/82314cbe-ba22-4a26-b8ac-53362c1f2d39",
+    "cpm": 1.1,
+    "enabled": true,
+    "account": 1,
+    "lang": "English",
+    "hashtags": [
+      "michaelgene",
+      "theappdaddy",
+      "business"
+    ],
+    "credit": "@Theappdaddy",
+    "requirements": "Only Michael Gene (The App Daddy) content; name him in the caption.",
+    "why": "1.10 USD/1k, min 2 USD (~1.8k vistas), max 500 USD por clip; 966 USD libres",
+    "join_status": "unido 2026-10-17"
+  },
+  {
+    "creator": "Demi Lovato (podcast)",
+    "source": "https://www.youtube.com/watch?v=-vw7Cp7qN2c",
+    "campaign": "Demi Lovato Podcast Clipping Campaign",
+    "campaign_url": "https://contentrewards.com/c/campaigns/a917d855-61f3-4c17-a75d-927dca325134",
+    "cpm": 2.5,
+    "enabled": true,
+    "account": 1,
+    "lang": "English",
+    "hashtags": [
+      "demilovato",
+      "podcast"
+    ],
+    "credit": "Full episode on YouTube and all podcast platforms",
+    "requirements": "Take the most viral moments of this episode. The description must say the full episode is available on YouTube and all podcast platforms.",
+    "why": "2.50 USD/1k, min 10 USD (4k vistas), max 450 USD; 3.2k USD libres. Pide 60% T1 y unirse a su Whop para verificar",
+    "join_status": "unido 2026-10-17"
+  },
+  {
+    "creator": "2 Bears 1 Cave Ep. 343",
+    "source": "https://www.youtube.com/watch?v=rdfDWAoMW1M",
+    "campaign": "2 Bears 1 Cave Clipping October",
+    "campaign_url": "https://contentrewards.com/c/campaigns/295e9879-4464-4a31-975d-1c7b3a80d359",
+    "cpm": 1.0,
+    "enabled": false,
+    "account": 1,
+    "lang": "English",
+    "hashtags": [
+      "2BearsWeekly"
+    ],
+    "requirements": "Only Ep. 343 footage. Use #2BearsWeekly.",
+    "join_status": "unido 2026-10-17",
+    "why_off": "exige el link del episodio en la bio de la cuenta (la cambia Rafa)"
+  },
+  {
+    "creator": "FlightReacts x Nick Nayersina",
+    "source": "",
+    "campaign": "FreezerTarps x FlightReacts x Nick Nayersina",
+    "campaign_url": "https://contentrewards.com/c/campaigns/124592be-0430-40e4-a9f3-2bb67eb99ef6",
+    "cpm": 1.5,
+    "enabled": false,
+    "join_status": "unido 2026-10-17",
+    "why_off": "borradores con aprobacion previa + logo obligatorio"
+  },
+  {
+    "creator": "Mr. Pa",
+    "source": "",
+    "campaign": "Mr. Pa Clipping",
+    "campaign_url": "https://contentrewards.com/c/campaigns/5944ed5a-9ee0-47d1-8545-2bbf614ac18b",
+    "cpm": 1.25,
+    "enabled": false,
+    "join_status": "unido 2026-10-17",
+    "why_off": "material solo en carpeta de Drive; 30% T1"
+  },
+  {
+    "creator": "Don Benitez raids",
+    "source": "https://www.youtube.com/@ParasocialwithDonBenitez",
+    "campaign": "Clip Don's Raids",
+    "campaign_url": "https://contentrewards.com/c/campaigns/e7d41210-0f7e-4385-87e7-f708d73f6720",
+    "cpm": 0.5,
+    "enabled": false,
+    "join_status": "unido 2026-10-17",
+    "why_off": "cada clip necesita el @ de YouTube del streamer raideado (lista manual de timestamps)"
+  },
+  {
+    "creator": "800 Club Kam",
+    "source": "",
+    "campaign": "800 Club Kam Content Rewards",
+    "campaign_url": "https://contentrewards.com/c/campaigns/bd0592df-d9d8-4950-bdbc-e469ca42b66b",
+    "cpm": 1.5,
+    "enabled": false,
+    "join_status": "unido 2026-10-17",
+    "why_off": "material en Drive/Instagram; nicho credito/finanzas"
   }
 ]
