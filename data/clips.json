@@ -1,5 +1,455 @@
 [
  {
+  "file": "tjr-kc-clip-01m4s04a1ecqtd4q49trqyfjqq.mp4",
+  "creator": "TJR",
+  "source": "https://clips.kick.com/clips/2b/clip_01M4S04A1ECQTD4Q49TRQYFJQQ/playlist.m3u8",
+  "start": 1.52,
+  "end": 52.5,
+  "cuts": 15,
+  "length": 27.1,
+  "layout": "face",
+  "style": "blur",
+  "mood": "hype",
+  "signal": "kick-clip",
+  "score": 88,
+  "hook": "EXPELLED UNLESS HE WINS THIS TRADE",
+  "hook_type": "stakes",
+  "emphasis": [
+   "kicking",
+   "trading",
+   "loses",
+   "wins",
+   "aura"
+  ],
+  "caption": "Furious teacher tries to expel student until TJR intervenes #tjr #trading #daytrading #kick\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Furious teacher tries to expel student until TJR intervenes",
+  "campaign": "https://contentrewards.com/discover/70baf344-d80f-4ba2-910a-10340f2ea591",
+  "created": "2026-10-17T11:48:38.715272+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/tjr-kc-clip-01m4s04a1ecqtd4q49trqyfjqq.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/tjr-kc-clip-01m4s04a1ecqtd4q49trqyfjqq.tt.mp4",
+  "tiktok_caption": "Furious teacher tries to expel student until TJR intervenes #tjr #trading #daytrading #kick",
+  "account": 1,
+  "timing_s": {
+   "download": 11,
+   "transcribe+edit+render": 161,
+   "publish+submit": 4,
+   "total": 176
+  }
+ },
+ {
+  "file": "ibai-twitch-tw-2901550877-26749.mp4",
+  "creator": "Ibai (Twitch)",
+  "source": "https://www.twitch.tv/videos/2901550877",
+  "start": 26749.1,
+  "end": 26772.78,
+  "cuts": 10,
+  "length": 24.2,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "sus",
+  "signal": "twitch-clip",
+  "score": 87,
+  "hook": "CASI LE CANCELAN EL STREAM",
+  "hook_type": "stakes",
+  "emphasis": [
+   "negro",
+   "Paola",
+   "muñeco"
+  ],
+  "caption": "Ibai NO se esperaba ese comentario en directo #ibai #twitch #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Ibai NO se esperaba ese comentario en directo",
+  "campaign": null,
+  "created": "2026-10-17T11:35:06.321787+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/ibai-twitch-tw-2901550877-26749.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/ibai-twitch-tw-2901550877-26749.tt.mp4",
+  "tiktok_caption": "Ibai NO se esperaba ese comentario en directo #ibai #twitch #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 111,
+   "publish+submit": 5,
+   "total": 121
+  }
+ },
+ {
+  "file": "kai-cenat-twitch-tw-2898319844-7495.mp4",
+  "creator": "Kai Cenat (Twitch)",
+  "source": "https://www.twitch.tv/videos/2898319844",
+  "start": 7461.92,
+  "end": 7529.56,
+  "cuts": 11,
+  "length": 20.0,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "Kai roasts Jason's beard",
+  "hook_type": "revelation",
+  "emphasis": [
+   "Bitch",
+   "shave",
+   "Honestly"
+  ],
+  "caption": "Kai Cenat completely destroys Jason the Ween live #kaicenat #twitch #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Kai Cenat completely destroys Jason the Ween live",
+  "campaign": null,
+  "created": "2026-10-17T11:24:55.389540+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2898319844-7495.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2898319844-7495.tt.mp4",
+  "tiktok_caption": "Kai Cenat completely destroys Jason the Ween live #kaicenat #twitch #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 130,
+   "publish+submit": 4,
+   "total": 139
+  }
+ },
+ {
+  "file": "westcol-kick-kc-clip-01m4hqha3c64pdpffvs5wzmfgj.mp4",
+  "creator": "Westcol (Kick)",
+  "source": "https://clips.kick.com/clips/d2/clip_01M4HQHA3C64PDPFFVS5WZMFGJ/playlist.m3u8",
+  "start": 66.16,
+  "end": 68.22,
+  "cuts": 12,
+  "length": 23.1,
+  "layout": "face",
+  "style": "blur",
+  "mood": "sus",
+  "signal": "kick-clip",
+  "score": 87,
+  "hook": "WESTCOL CASI LO ATRAPAN EN VIVO",
+  "hook_type": "stakes",
+  "emphasis": [
+   "espectadores",
+   "Santo",
+   "Amor"
+  ],
+  "caption": "Westcol entró en pánico cuando casi lo descubren en directo #westcol #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Westcol entró en pánico cuando casi lo descubren en directo",
+  "campaign": null,
+  "created": "2026-10-17T11:14:13.283267+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/westcol-kick-kc-clip-01m4hqha3c64pdpffvs5wzmfgj.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/westcol-kick-kc-clip-01m4hqha3c64pdpffvs5wzmfgj.tt.mp4",
+  "tiktok_caption": "Westcol entró en pánico cuando casi lo descubren en directo #westcol #kick #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 10,
+   "transcribe+edit+render": 161,
+   "publish+submit": 4,
+   "total": 175
+  }
+ },
+ {
+  "file": "adin-ross-kick-kc-clip-01m53xkz7j7vgsntgthp6t7jhm.mp4",
+  "creator": "Adin Ross (Kick)",
+  "source": "https://clips.kick.com/clips/f0/clip_01M53XKZ7J7VGSNTGTHP6T7JHM/playlist.m3u8",
+  "start": 24.14,
+  "end": 62.69,
+  "cuts": 11,
+  "length": 27.0,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "drama",
+  "signal": "kick-clip",
+  "score": 88,
+  "hook": "FIGHTER QUITS ADIN'S BOXING EVENT",
+  "hook_type": "revelation",
+  "emphasis": [
+   "boxing",
+   "quit",
+   "contract",
+   "purse",
+   "TKO"
+  ],
+  "caption": "Adin Ross was furious after fighter quit live #adinross #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Adin Ross was furious after fighter quit live",
+  "campaign": null,
+  "created": "2026-10-17T11:01:49.061729+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/adin-ross-kick-kc-clip-01m53xkz7j7vgsntgthp6t7jhm.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/adin-ross-kick-kc-clip-01m53xkz7j7vgsntgthp6t7jhm.tt.mp4",
+  "tiktok_caption": "Adin Ross was furious after fighter quit live #adinross #kick #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 7,
+   "transcribe+edit+render": 129,
+   "publish+submit": 6,
+   "total": 141
+  }
+ },
+ {
+  "file": "rivers-twitch-tw-2900168095-3637.mp4",
+  "creator": "Rivers (Twitch)",
+  "source": "https://www.twitch.tv/videos/2900168095",
+  "start": 3670.08,
+  "end": 3676.74,
+  "cuts": 11,
+  "length": 27.1,
+  "layout": "face",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 82,
+  "hook": "ARI LE TIENE MIEDO A RIVERS",
+  "hook_type": "stakes",
+  "emphasis": [
+   "makeup",
+   "experta",
+   "delineado",
+   "feo"
+  ],
+  "caption": "Ari entró en pánico con el maquillaje de Rivers #rivers #stream #clipsespañol\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Ari entró en pánico con el maquillaje de Rivers",
+  "campaign": null,
+  "created": "2026-10-17T10:46:17.342573+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/uEStRWLgMms",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/rivers-twitch-tw-2900168095-3637.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/rivers-twitch-tw-2900168095-3637.tt.mp4",
+  "tiktok_caption": "Ari entró en pánico con el maquillaje de Rivers #rivers #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 105,
+   "publish+submit": 6,
+   "total": 115
+  }
+ },
+ {
+  "file": "auronplay-twitch-tw-2898838566-2076.mp4",
+  "creator": "Auronplay (Twitch)",
+  "source": "https://www.twitch.tv/videos/2898838566",
+  "start": 2085.63,
+  "end": 2082.81,
+  "cuts": 10,
+  "length": 26.7,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 83,
+  "hook": "AURON EXPONE EL FRACASO DE PEREIRA",
+  "hook_type": "revelation",
+  "emphasis": [
+   "rural",
+   "Minecraft",
+   "Pereira",
+   "muertazo"
+  ],
+  "caption": "Auronplay no puede creer lo que hizo Pereira con su cita #auronplay #stream #clipsespañol\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Auronplay no puede creer lo que hizo Pereira con su cita",
+  "campaign": null,
+  "created": "2026-10-17T10:35:44.350203+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/ajBV3lthT4U",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2898838566-2076.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2898838566-2076.tt.mp4",
+  "tiktok_caption": "Auronplay no puede creer lo que hizo Pereira con su cita #auronplay #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 130,
+   "publish+submit": 6,
+   "total": 140
+  }
+ },
+ {
+  "file": "ice-poseidon-kick-kc-clip-01m4w0cm21n4wef5bb3cgdq0jh.mp4",
+  "creator": "Ice Poseidon (Kick)",
+  "source": "https://clips.kick.com/clips/dd/clip_01M4W0CM21N4WEF5BB3CGDQ0JH/playlist.m3u8",
+  "start": 0.36,
+  "end": 30.659999999999997,
+  "cuts": 10,
+  "length": 27.2,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "kick-clip",
+  "score": 88,
+  "hook": "HE LEAKED HIS SCREEN MID RANT",
+  "hook_type": "revelation",
+  "emphasis": [
+   "nerve",
+   "permission",
+   "horrendous",
+   "change"
+  ],
+  "caption": "Ice Poseidon accidentally leaked his screen live on stream #iceposeidon #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Ice Poseidon accidentally leaked his screen live on stream",
+  "campaign": null,
+  "created": "2026-10-17T10:24:40.544742+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/UWTL6MwW3Og",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/ice-poseidon-kick-kc-clip-01m4w0cm21n4wef5bb3cgdq0jh.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/ice-poseidon-kick-kc-clip-01m4w0cm21n4wef5bb3cgdq0jh.tt.mp4",
+  "tiktok_caption": "Ice Poseidon accidentally leaked his screen live on stream #iceposeidon #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 99,
+   "publish+submit": 6,
+   "total": 111
+  }
+ },
+ {
+  "file": "fanum-twitch-tw-2900280097-4017.mp4",
+  "creator": "Fanum (Twitch)",
+  "source": "https://www.twitch.tv/videos/2900280097",
+  "start": 4041.4,
+  "end": 4049.22,
+  "cuts": 14,
+  "length": 25.6,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "FANUM WAS NOT READY FOR JAIL",
+  "hook_type": "stakes",
+  "emphasis": [
+   "ridiculous",
+   "jumpsuit",
+   "strip"
+  ],
+  "caption": "Fanum was terrified after learning how jail searches work #fanum #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Fanum was terrified after learning how jail searches work",
+  "campaign": null,
+  "created": "2026-10-17T10:13:56.956547+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/bw23gUj1xEo",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/fanum-twitch-tw-2900280097-4017.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/fanum-twitch-tw-2900280097-4017.tt.mp4",
+  "tiktok_caption": "Fanum was terrified after learning how jail searches work #fanum #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 8,
+   "transcribe+edit+render": 135,
+   "publish+submit": 6,
+   "total": 150
+  }
+ },
+ {
+  "file": "ibai-twitch-tw-2901550877-28832.mp4",
+  "creator": "Ibai (Twitch)",
+  "source": "https://www.twitch.tv/videos/2901550877",
+  "start": 28849.5,
+  "end": 28860.78,
+  "cuts": 11,
+  "length": 22.3,
+  "layout": "face",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 80,
+  "hook": "Ibai descubre el chat brasileño",
+  "hook_type": "revelation",
+  "emphasis": [
+   "chupador",
+   "pirocas",
+   "piroquilla",
+   "gusta",
+   "utilizar"
+  ],
+  "caption": "Ibai reacciona al chat brasileño más troll #ibai #twitch #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Ibai reacciona al chat brasileño más troll",
+  "campaign": null,
+  "created": "2026-10-17T10:01:48.367314+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/zqFUukRXdUw",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/ibai-twitch-tw-2901550877-28832.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/ibai-twitch-tw-2901550877-28832.tt.mp4",
+  "tiktok_caption": "Ibai reacciona al chat brasileño más troll #ibai #twitch #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 6,
+   "transcribe+edit+render": 191,
+   "publish+submit": 5,
+   "total": 203
+  }
+ },
+ {
+  "file": "n3on-kick-kc-clip-01m4jtyjgmywvqs529f83bj8gd.mp4",
+  "creator": "N3on (Kick)",
+  "source": "https://clips.kick.com/clips/a1/clip_01M4JTYJGMYWVQS529F83BJ8GD/playlist.m3u8",
+  "start": 0.69,
+  "end": 69.14999999999999,
+  "cuts": 10,
+  "length": 20.2,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "kick-clip",
+  "score": 82,
+  "hook": "HE SANG FOR N3ON LIVE",
+  "hook_type": "revelation",
+  "emphasis": [
+   "brother",
+   "sunshine",
+   "happy",
+   "love"
+  ],
+  "caption": "N3on was stunned when fan sang him this #n3on #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "N3on was stunned when fan sang him this",
+  "campaign": null,
+  "created": "2026-10-17T09:49:53.921970+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/M6ihA5u1P6M",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/n3on-kick-kc-clip-01m4jtyjgmywvqs529f83bj8gd.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/n3on-kick-kc-clip-01m4jtyjgmywvqs529f83bj8gd.tt.mp4",
+  "tiktok_caption": "N3on was stunned when fan sang him this #n3on #kick #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 10,
+   "transcribe+edit+render": 93,
+   "publish+submit": 7,
+   "total": 109
+  }
+ },
+ {
   "file": "tjr-kc-clip-01m4r7tn468mmhchftkjcnrskf.mp4",
   "creator": "TJR",
   "source": "https://clips.kick.com/clips/20/clip_01M4R7TN468MMHCHFTKJCNRSKF/playlist.m3u8",
