@@ -94,9 +94,12 @@ def main() -> None:
         # Our own submissions with their per-clip state.
         page.goto("https://contentrewards.com/c/discover", wait_until="domcontentloaded")
         page.wait_for_timeout(6000)
-        page.get_by_role("link", name="Submissions", exact=True).first.evaluate("el => el.click()")
-        page.wait_for_timeout(9000)
-        subs = page.inner_text("body").split("Connect Discord", 1)[-1][:8000]
+        try:  # the sidebar link moved once; a missing link must not lose the campaign scan
+            page.get_by_role("link", name="Submissions", exact=True).first.evaluate("el => el.click()", timeout=15_000)
+            page.wait_for_timeout(9000)
+            subs = page.inner_text("body").split("Connect Discord", 1)[-1][:8000]
+        except Exception as e:  # noqa: BLE001
+            subs = f"submissions page not reached: {str(e)[:120]}"
         browser.close()
     OUT.write_text(json.dumps({"campaigns": out, "submissions_page": subs}, indent=1, ensure_ascii=False),
                    encoding="utf-8")
