@@ -797,24 +797,5 @@
     "why": "famoso sin campaña: crecer la cuenta",
     "account": 3,
     "lang": "Spanish"
-  },
-  {
-    "creator": "Jackelyne (Kick)",
-    "source": "",
-    "campaign": "Jackelyne Campaign",
-    "campaign_url": "https://contentrewards.com/discover/5991571d-8c83-41e8-941c-34d96476c06b",
-    "cpm": 1.5,
-    "enabled": false,
-    "hashtags": [
-      "unboxd",
-      "kick",
-      "streamer"
-    ],
-    "mention": "#unboxd",
-    "requirements": "Add the unboxd logo and #unboxd on every video. Post every clip on all required platforms.",
-    "join_status": "unido (Jackelyne Clips) 2026-10-17",
-    "lang": "English",
-    "why": "Streamer de Kick, 1.50 USD/1k, 3910 USD libres",
-    "why_off": "exige pagina dedicada solo de Jackelyne + logo unboxd + 20-30% audiencia Tier 1; falta cuenta TikTok/YT nueva de Rafa"
   }
 ]
