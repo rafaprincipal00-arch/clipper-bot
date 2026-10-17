@@ -64,7 +64,7 @@ Score honestly: 85+ only if it fits a family above AND the payoff is visible/aud
 
 ## 5. When to end
 - End on the payoff: within ~0.3 s of the last word of the punchline, or 1-2 s into the reaction when the
-  reaction IS the payoff. No outro, no fade to black, no "follow for more", no trailing chatter.
+  reaction IS the payoff. No intro or outro flash, no fade to black, no "follow for more", no trailing chatter.
 - 20-40 s. Shorter is better when the moment is simple: a scare can be 15-20 s, a story needs 35-40 s.
   Never pad to reach a length.
 - Loop when possible: end on a line or frame that makes the first second make sense again. Rewatches count
@@ -80,8 +80,10 @@ file gets the clip claimed or muted and Content Rewards rejects it. So:
   bed (Kevin MacLeod, CC BY, credited in the description) ducked under the voice.
 - **Instagram Reels** (when connected): same rule as TikTok, song from the Reels library.
 - Never two songs at once. Voice always wins: in a conversation the song is barely audible.
-- Moods: hype (wins, money, flexing), chaos (fights, crashes, rage), drama (beef, confrontation, sad),
-  sus (caught, suspicious, awkward silence), funny (fails, roasts), awkward (cringe), chill (wholesome, story).
+- Moods (what the viewer feels at the payoff): funny (jokes, roasts, fails), awkward (cringe, rejection),
+  sad (loss, confession, crying), swag (flexing, cold comeback, aura), hype (wins, clutch, crowd), chaos
+  (screaming, rage, everything going wrong), tension (beef, suspicion, creepy or ominous), wholesome
+  (kindness, fan moment, heartfelt). Each mood has 3 songs that rotate, so consecutive clips differ.
 
 ## 7. Sound effects
 Low in the mix: a whoosh on each cut, a pop when the hook text lands, a bass hit on the payoff. They make
