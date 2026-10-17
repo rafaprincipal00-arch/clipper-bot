@@ -31,7 +31,12 @@ context to get the payoff) from many kept segments:
 Score viral potential 0-100 and be harsh. It needs a real payoff: a reaction, a fail, a roast, drama, a
 shocking line, a funny exchange with a punchline. Someone just commenting, reading chat, explaining or
 chatting without a payoff scores under 40 even if it is mildly amusing.
-Pick the music mood of the moment: one of funny, awkward, sus, chaos, drama, hype, chill.
+Pick the music mood from what the viewer FEELS at the payoff (it chooses the song), exactly one of:
+funny (a joke, roast or goofy fail that makes you laugh), awkward (cringe, silence, rejection, second-hand
+embarrassment), sad (a loss, confession, crying, someone hurt: you feel sorry for them), swag (flexing money,
+cars, skill or a cold comeback: aura), hype (a win, a clutch, a crowd going crazy), chaos (screaming, rage,
+everything going wrong at once), tension (beef, suspicion, a creepy or ominous moment before something
+happens), wholesome (kindness, a fan moment, a heartfelt surprise). Do not default to funny: pick the closest.
 Pick the hook type (revelation, contrarian or stakes) and write the hook text in that style.
 List 2-5 emphasis words: words spoken inside the kept segments that carry the joke or the stakes
 (copy them exactly as they appear in the transcript).

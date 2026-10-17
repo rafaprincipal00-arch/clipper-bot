@@ -1,13 +1,123 @@
 {
- "_note": "Songs added from each app's OWN library when posting (licensed there; never embedded in the file). Keyed by the clip's mood, first match wins. Search text = title + artist as shown in TikTok's Sounds panel. Refresh this list from the TikTok Sounds 'For You' tab / Creative Center when trends change.",
+ "_note": "Songs added from TikTok's OWN library when posting (licensed there; never embedded in the file). 3 candidates per mood; the poster rotates them (least used first, data/music_usage.json) so clips don't repeat a song. Search text = title + artist as shown in TikTok's Sounds panel. Refresh with the clip-music-moods skill when trends change.",
  "tiktok_db": "-14",
+ "aliases": {
+  "sus": "tension",
+  "drama": "tension",
+  "chill": "wholesome"
+ },
  "tiktok": {
-  "hype": [["Distractions", "Haiti Babii"], ["HOTEL LOBBY", "Quavo"], ["PASSO BEM SOLTO", "ATLXS"], ["AURA - Super Slowed", "Ogryzek"]],
-  "chaos": [["FUNK ABNORMAL", "DJ V12"], ["BATIDÃO FUNK", "ZXKAI"], ["Sweet Dreams - Slowed + Reverb", "Ravens Rock"]],
-  "drama": [["Raya", "Zericxxn"], ["Can You Feel My Heart", "Bring Me The Horizon"], ["Sweet Dreams - Slowed + Reverb", "Ravens Rock"]],
-  "sus": [["Distractions", "Haiti Babii"], ["Raya", "Zericxxn"], ["AURA - Super Slowed", "Ogryzek"]],
-  "funny": [["Golden Brown", "The Stranglers"], ["FUNK ABNORMAL", "DJ V12"], ["Just The Two Of Us", "Grover Washington"]],
-  "awkward": [["Golden Brown", "The Stranglers"], ["Just The Two Of Us", "Grover Washington"], ["Distractions", "Haiti Babii"]],
-  "chill": [["Just The Two Of Us", "Grover Washington"], ["She Knows", "J. Cole"], ["Golden Brown", "The Stranglers"]]
+  "funny": [
+   [
+    "Funny",
+    "Gold-Tiger"
+   ],
+   [
+    "Zany Emote Fortnite",
+    "CsCrafty"
+   ],
+   [
+    "Golden Brown",
+    "The Stranglers"
+   ]
+  ],
+  "awkward": [
+   [
+    "Saxophones getting louder",
+    "AntonioVivald"
+   ],
+   [
+    "Just The Two Of Us",
+    "Grover Washington"
+   ],
+   [
+    "nothing",
+    "Steve Lacy"
+   ]
+  ],
+  "sad": [
+   [
+    "Runaway",
+    "AURORA"
+   ],
+   [
+    "we fell in love in october",
+    "girl in red"
+   ],
+   [
+    "Can You Feel My Heart",
+    "Bring Me The Horizon"
+   ]
+  ],
+  "swag": [
+   [
+    "Distractions",
+    "Haiti Babii"
+   ],
+   [
+    "HOTEL LOBBY",
+    "Quavo"
+   ],
+   [
+    "Raya",
+    "Zericxxn"
+   ]
+  ],
+  "hype": [
+   [
+    "DIP ON EM",
+    "SouthMemphisHypeman"
+   ],
+   [
+    "Bow Bow Bow",
+    "Zeddy Will"
+   ],
+   [
+    "PASSO BEM SOLTO",
+    "ATLXS"
+   ]
+  ],
+  "chaos": [
+   [
+    "FUNK ABNORMAL",
+    "DJ V12"
+   ],
+   [
+    "BATIDÃO FUNK",
+    "ZXKAI"
+   ],
+   [
+    "Sua Amiga Vou Pegar",
+    "MC Lan"
+   ]
+  ],
+  "tension": [
+   [
+    "Sweet Dreams - Slowed + Reverb",
+    "Ravens Rock"
+   ],
+   [
+    "Ramalama (Bang Bang)",
+    "Róisín Murphy"
+   ],
+   [
+    "AURA - Super Slowed",
+    "Ogryzek"
+   ]
+  ],
+  "wholesome": [
+   [
+    "Coming Up Roses",
+    "Harry Styles"
+   ],
+   [
+    "She Knows",
+    "J. Cole"
+   ],
+   [
+    "Vibin",
+    "Wxoda"
+   ]
+  ]
  }
 }

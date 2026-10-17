@@ -8,6 +8,7 @@ Posting runs headless: no window, no focus change, input goes through the DevToo
     python scripts/tiktok_bg.py check       # which accounts are signed in
 """
 import json
+import random
 import subprocess
 import sys
 import time
@@ -67,12 +68,28 @@ def _latest(page, handle: str) -> str:
     raise RuntimeError("posted, but the video did not show up on the profile yet")
 
 
+USAGE = ROOT / "data" / "music_usage.json"
+
+
+def _usage() -> dict:
+    """How many times each "title - artist" has been added, for rotation."""
+    try:
+        return json.loads(USAGE.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+
+
 def add_song(page, mood: str | None, log=print) -> str | None:
     """Add a trending song from TikTok's own (licensed) library in Studio's editor, quiet under the voice.
     Songs per mood live in config/music.json. Returns "title - artist" or None (posts with the clip's audio)."""
     cfg = json.loads((ROOT / "config" / "music.json").read_text(encoding="utf-8"))
-    songs = cfg["tiktok"].get(mood or "", []) + [s for m in cfg["tiktok"].values() for s in m]
-    songs = list(dict.fromkeys(tuple(s) for s in songs))
+    mood = cfg.get("aliases", {}).get(mood, mood)
+    used = _usage()
+    # This mood's songs first, least used first, so consecutive clips don't share a song; the other moods
+    # are only a fallback when none of these is found in TikTok's library.
+    own = sorted(cfg["tiktok"].get(mood or "", []), key=lambda s: (used.get(f"{s[0]} - {s[1]}", 0), random.random()))
+    rest = sorted((s for m in cfg["tiktok"].values() for s in m), key=lambda s: used.get(f"{s[0]} - {s[1]}", 0))
+    songs = list(dict.fromkeys(tuple(s) for s in own + rest))
     cookies = page.get_by_role("button", name="Decline optional cookies")
     if cookies.count():
         cookies.first.click()
@@ -120,7 +137,9 @@ def add_song(page, mood: str | None, log=print) -> str | None:
             page.screenshot(path=str(ROOT / "data" / "tiktok_song_before_save.png"))
         page.get_by_role("button", name="Save", exact=True).first.click()
         page.wait_for_timeout(6000)
-        log(f"  music: {title} - {artist} (TikTok library) at {cfg.get('tiktok_db', '-14')} dB")
+        log(f"  music: {title} - {artist} (TikTok library, mood {mood}) at {cfg.get('tiktok_db', '-14')} dB")
+        used[f"{title} - {artist}"] = used.get(f"{title} - {artist}", 0) + 1
+        USAGE.write_text(json.dumps(used, ensure_ascii=False, indent=1), encoding="utf-8")
         return f"{title} - {artist}"
     log("  music: none of the songs found; posting with the clip's own audio")
     cancel = page.get_by_role("button", name="Cancel", exact=True)

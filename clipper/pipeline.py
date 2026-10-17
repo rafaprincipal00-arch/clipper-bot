@@ -176,7 +176,8 @@ def make_clip(moment: dict, creator: str, campaign: dict | None, do_publish: boo
         info = layout.analyse(str(raw), min(s for s, _ in segs), max(e for _, e in segs))
         # A/B test: alternate blurred-horizontal and full-vertical framing (stable per clip name).
         style = "blur" if zlib.crc32(name.encode()) % 2 else "vertical"
-        mood = edit.get("mood") if edit.get("mood") in render.MOODS else "funny"
+        mood = render.MOOD_ALIASES.get(edit.get("mood"), edit.get("mood"))
+        mood = mood if mood in render.MOODS else "funny"
         ass = d / "captions.ass"
         render.write_ass(render.remap_words(words, segs), 0, sum(e - s for s, e in segs), edit["hook"], ass,
                          emphasis=edit.get("emphasis") or [])
