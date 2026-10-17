@@ -842,7 +842,7 @@
     "campaign": "Michael Gene Clipping [$500 Payout]",
     "campaign_url": "https://contentrewards.com/c/campaigns/82314cbe-ba22-4a26-b8ac-53362c1f2d39",
     "cpm": 1.1,
-    "enabled": true,
+    "enabled": false,
     "account": 1,
     "lang": "English",
     "hashtags": [
@@ -853,7 +853,8 @@
     "credit": "@Theappdaddy",
     "requirements": "Only Michael Gene (The App Daddy) content; name him in the caption.",
     "why": "1.10 USD/1k, min 2 USD (~1.8k vistas), max 500 USD por clip; 966 USD libres",
-    "join_status": "unido 2026-10-17"
+    "join_status": "unido 2026-10-17",
+    "why_off": "su canal de YT es diminuto (max 662 vistas, sin most-replayed: 0 momentos); el material bueno esta en su carpeta de Drive"
   },
   {
     "creator": "Demi Lovato (podcast)",
