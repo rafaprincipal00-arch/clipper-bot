@@ -27,6 +27,8 @@ def main() -> None:
         page.wait_for_timeout(8000)
         if "/login" in page.url:
             raise SystemExit("SESSION EXPIRED: refresh the CR_STATE secret")
+        print(f"landed on {page.url}")
+        print(page.inner_text("body")[:1500])
         summary = {}
         for name in SECTIONS:
             if not open_section(page, name):
