@@ -29,6 +29,8 @@ def main() -> None:
             raise SystemExit("SESSION EXPIRED: refresh the CR_STATE secret")
         print(f"landed on {page.url}")
         print(page.inner_text("body")[:1500])
+        if "temporarily unavailable" in page.inner_text("body"):
+            raise SystemExit("CONTENT REWARDS DOWN (maintenance page); nothing to read today")
         summary = {}
         for name in SECTIONS:
             if not open_section(page, name):

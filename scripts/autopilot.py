@@ -203,6 +203,9 @@ def cmd_money() -> None:
         return
     text = job_log(run)
     m = re.search(r"CR_SUMMARY (.*)", text)
+    if "CONTENT REWARDS DOWN" in text:
+        log("money: Content Rewards is on its maintenance page; trying again tomorrow")
+        return
     if run["conclusion"] != "success" or not m:
         err = re.search(r"(SESSION EXPIRED[^\n]*|earnings page not read|\w+Error: [^\n]{0,160})", text)
         state.setdefault("alerts", {})
