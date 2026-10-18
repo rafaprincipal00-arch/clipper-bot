@@ -202,7 +202,13 @@
       "streamer"
     ],
     "credit": "kick.com/n3on",
-    "why": "famoso, sin campaña abierta: crecer cuenta para el programa de N3on"
+    "why": "famoso, sin campaña abierta: crecer cuenta para el programa de N3on",
+    "priority": 3,
+    "programs": [
+      "cn-kick-clipping",
+      "n3on-direct"
+    ],
+    "requirements": "No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0. Credit the streamer by name in the caption."
   },
   {
     "creator": "xQc (Kick)",
@@ -216,7 +222,12 @@
       "streamer"
     ],
     "credit": "kick.com/xqc",
-    "why": "famoso, sin campaña abierta"
+    "why": "famoso, sin campaña abierta",
+    "priority": 2,
+    "programs": [
+      "cn-kick-clipping"
+    ],
+    "requirements": "No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0. Credit the streamer by name in the caption."
   },
   {
     "creator": "Kai Cenat (Twitch)",
@@ -244,7 +255,12 @@
       "streamer"
     ],
     "credit": "kick.com/adinross",
-    "why": "famoso, sin campaña abierta"
+    "why": "famoso, sin campaña abierta",
+    "priority": 2,
+    "programs": [
+      "cn-kick-clipping"
+    ],
+    "requirements": "No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0. Credit the streamer by name in the caption."
   },
   {
     "creator": "Westcol (Kick)",
@@ -258,7 +274,12 @@
       "streamer"
     ],
     "credit": "kick.com/westcol",
-    "why": "famoso hispano, sin campaña abierta"
+    "why": "famoso hispano, sin campaña abierta",
+    "priority": 2,
+    "programs": [
+      "cn-kick-hispano"
+    ],
+    "requirements": "No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0. Credit the streamer by name in the caption."
   },
   {
     "creator": "Spreen (Kick)",
@@ -272,7 +293,12 @@
       "streamer"
     ],
     "credit": "kick.com/spreen",
-    "why": "famoso hispano, sin campaña abierta"
+    "why": "famoso hispano, sin campaña abierta",
+    "priority": 2,
+    "programs": [
+      "cn-kick-hispano"
+    ],
+    "requirements": "No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0. Credit the streamer by name in the caption."
   },
   {
     "creator": "elZeein (Kick)",
@@ -286,7 +312,12 @@
       "streamer"
     ],
     "credit": "kick.com/elzeein",
-    "why": "famoso hispano, sin campaña abierta"
+    "why": "famoso hispano, sin campaña abierta",
+    "priority": 2,
+    "programs": [
+      "cn-kick-hispano"
+    ],
+    "requirements": "No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0. Credit the streamer by name in the caption."
   },
   {
     "creator": "Ibai (Twitch)",
@@ -726,7 +757,12 @@
     "credit": "twitch.tv/lacy",
     "why": "famoso sin campaña: crecer la cuenta",
     "account": 2,
-    "lang": "English"
+    "lang": "English",
+    "priority": 2,
+    "programs": [
+      "cn-lacy"
+    ],
+    "requirements": "No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0. Credit the streamer by name in the caption."
   },
   {
     "creator": "Ice Poseidon (Kick)",
@@ -740,7 +776,12 @@
     "credit": "kick.com/iceposeidon",
     "why": "famoso sin campaña: crecer la cuenta",
     "account": 2,
-    "lang": "English"
+    "lang": "English",
+    "priority": 2,
+    "programs": [
+      "cn-kick-clipping"
+    ],
+    "requirements": "No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0. Credit the streamer by name in the caption."
   },
   {
     "creator": "Juansguarnizo (Kick)",
@@ -754,7 +795,12 @@
     "credit": "kick.com/juansguarnizo",
     "why": "famoso sin campaña: crecer la cuenta",
     "account": 3,
-    "lang": "Spanish"
+    "lang": "Spanish",
+    "priority": 2,
+    "programs": [
+      "cn-kick-hispano"
+    ],
+    "requirements": "No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0. Credit the streamer by name in the caption."
   },
   {
     "creator": "Auronplay (Twitch)",

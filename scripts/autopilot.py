@@ -271,12 +271,30 @@ def cmd_digest() -> None:
            "\n\n👀 Vistas reales (top 5 de siempre):\n" + top)
 
 
+def cmd_portfolio() -> None:
+    """Weekly: real views per paid program (scripts/portfolio.py -> data/portfolio.md). Telegram only when a program's
+    view threshold is reached for the first time (then Rafa can apply / start cashing in)."""
+    r = subprocess.run([sys.executable, str(ROOT / "scripts" / "portfolio.py")], cwd=str(ROOT), capture_output=True,
+                       text=True, timeout=1500, creationflags=NO_WINDOW | IDLE)
+    log("portfolio:", (r.stdout or r.stderr).strip().replace(chr(10), " | ")[:600])
+    if r.returncode:
+        raise RuntimeError("portfolio.py failed: " + r.stderr.strip()[-200:])
+    state = load_state()
+    done = state.setdefault("programs_ready", [])
+    for p in json.loads((ROOT / "data" / "portfolio.json").read_text(encoding="utf-8"))["programs"]:
+        if p["min_views"] and p["views"] >= p["min_views"] and p["id"] not in done:
+            done.append(p["id"])
+            notify(f"🎯 Listo para {p['name']}: {p['views']} vistas reales en {p['clips']} clips "
+                   f"(mínimo {p['min_views']}). Kit de solicitud con enlaces: {ROOT / 'data' / 'portfolio.md'}")
+    save_state(state)
+
+
 def main() -> None:
     cmd = sys.argv[1] if len(sys.argv) > 1 else ""
     try:
         if cmd == "notify":
             notify(" ".join(sys.argv[2:]))
-        elif cmd in ("daily", "watch", "money", "digest"):
+        elif cmd in ("daily", "watch", "money", "digest", "portfolio"):
             globals()[f"cmd_{cmd}"]()
         else:
             raise SystemExit(__doc__)

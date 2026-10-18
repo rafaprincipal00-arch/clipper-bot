@@ -127,12 +127,21 @@ def source_order(sources: list[dict]) -> list[dict]:
     d = load() or {}
     avg = {k: v["avg_views"] for k, v in (d.get("by_creator") or {}).items() if v["clips"] >= 2}
     mid = (min(avg.values()) + max(avg.values())) / 2 if avg else 0
-    return sorted(sources, key=lambda s: -avg.get(s["creator"], mid))
+    # "priority" (config/sources.json) = creators whose paid clipping program we are building a portfolio for
+    # (config/clip_programs.json): they get each account's share of the day first.
+    return sorted(sources, key=lambda s: (-s.get("priority", 0), -avg.get(s["creator"], mid)))
 
 
-def quota(creator: str, base: int) -> int:
+def quota(creator: str, base: int, priority: int = 0) -> int:
     """Clips per run for a creator, driven by our own views (double down on what works, Musa's rule):
-    top third of creators x2, bottom third (with 4+ settled clips) 1, the rest and new creators `base`."""
+    top third of creators x2, bottom third (with 4+ settled clips) 1, the rest and new creators `base`.
+    Portfolio targets (priority >= 2) always get at least base x2: the program needs volume of that creator."""
+    if priority >= 2:
+        return max(base * 2, _quota(creator, base))
+    return _quota(creator, base)
+
+
+def _quota(creator: str, base: int) -> int:
     d = load() or {}
     rows = {k: v for k, v in (d.get("by_creator") or {}).items() if v["clips"] >= 2}
     if creator not in rows or len(rows) < 3:

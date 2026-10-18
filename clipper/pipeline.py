@@ -160,7 +160,7 @@ def make_clip(moment: dict, creator: str, campaign: dict | None, do_publish: boo
             return None
         edit = (highlights.pick_edit(words, creator, moment["title"], 0, length,
                                      lang=(campaign or {}).get("lang", "English"),
-                                     rules=(campaign or {}).get("requirements", "") if (campaign or {}).get("campaign_url") else "")
+                                     rules=(campaign or {}).get("requirements", ""))
                 or highlights.fallback_edit(words, 0, length))
         if not edit.get("fallback") and edit["score"] < min_score:
             print(f"  skip {moment['id']}: score {edit['score']}")
@@ -288,7 +288,7 @@ def run_auto(do_publish: bool, min_score: int, per_source: int, total: int = 0, 
             if total and done >= total:
                 print(f"Done: {done} clips.")
                 return
-            if not q or made[src["creator"]] >= performance.quota(src["creator"], per_source) \
+            if not q or made[src["creator"]] >= performance.quota(src["creator"], per_source, src.get("priority", 0)) \
                     or time.time() - t0 > budget_s:
                 continue
             if per_account and total and src.get("account") \
