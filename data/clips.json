@@ -1,5 +1,623 @@
 [
  {
+  "file": "clix-x-yeat-twitch-tw-2902610715-10785.mp4",
+  "creator": "Clix x Yeat (Twitch)",
+  "source": "https://www.twitch.tv/videos/2902610715",
+  "start": 10766.62,
+  "end": 10851.64,
+  "cuts": 9,
+  "length": 21.9,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Seven guys ambushed Clix live",
+  "hook_type": "revelation",
+  "emphasis": [
+   "seven",
+   "giggling",
+   "hackers",
+   "apartment"
+  ],
+  "caption": "Clix was not ready for random fans in his apartment #fortnite #yeatxclix #twizzy\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Clix was not ready for random fans in his apartment",
+  "campaign": "https://contentrewards.com/discover/657e89e0-4a2f-434c-91d2-ca7e140218d1",
+  "created": "2026-10-18T15:16:00.597109+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-x-yeat-twitch-tw-2902610715-10785.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-x-yeat-twitch-tw-2902610715-10785.tt.mp4",
+  "tiktok_caption": "Clix was not ready for random fans in his apartment #fortnite #yeatxclix #twizzy",
+  "account": 1,
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 166,
+   "publish+submit": 5,
+   "total": 175
+  }
+ },
+ {
+  "file": "juansguarnizo-kick-kc-clip-01m4sh0x2r455amxjzdw6hkb32.mp4",
+  "creator": "Juansguarnizo (Kick)",
+  "source": "https://clips.kick.com/clips/41/clip_01M4SH0X2R455AMXJZDW6HKB32/playlist.m3u8",
+  "start": 11.500667,
+  "end": 36.020667,
+  "cuts": 7,
+  "length": 20.0,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "kick-clip",
+  "score": 88,
+  "hook": "Juansguarnizo va a matar al papa",
+  "hook_type": "revelation",
+  "emphasis": [
+   "matar",
+   "papa",
+   "cagó"
+  ],
+  "caption": "Juansguarnizo se volvió completamente loco en directo #juansguarnizo #stream #clipsespañol\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Juansguarnizo se volvió completamente loco en directo",
+  "campaign": null,
+  "created": "2026-10-18T15:04:41.926354+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/juansguarnizo-kick-kc-clip-01m4sh0x2r455amxjzdw6hkb32.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/juansguarnizo-kick-kc-clip-01m4sh0x2r455amxjzdw6hkb32.tt.mp4",
+  "tiktok_caption": "Juansguarnizo se volvió completamente loco en directo #juansguarnizo #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 9,
+   "transcribe+edit+render": 118,
+   "publish+submit": 6,
+   "total": 132
+  }
+ },
+ {
+  "file": "lanah-cherry-twitch-tw-2897485512-2242.mp4",
+  "creator": "Lanah Cherry (Twitch)",
+  "source": "https://www.twitch.tv/videos/2897485512",
+  "start": 2214.96,
+  "end": 2277.23,
+  "cuts": 8,
+  "length": 20.8,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "She would fight the wife",
+  "hook_type": "stakes",
+  "emphasis": [
+   "fight",
+   "wife",
+   "scrapped",
+   "demon",
+   "provoked"
+  ],
+  "caption": "Lanah Cherry was ready to throw hands live #twitch #streamer #irl\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Lanah Cherry was ready to throw hands live",
+  "campaign": "https://contentrewards.com/discover/6e379737-96ef-4980-8565-08df4e6d39d9",
+  "created": "2026-10-18T14:53:44.213013+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lanah-cherry-twitch-tw-2897485512-2242.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lanah-cherry-twitch-tw-2897485512-2242.tt.mp4",
+  "tiktok_caption": "Lanah Cherry was ready to throw hands live #twitch #streamer #irl",
+  "account": 1,
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 130,
+   "publish+submit": 5,
+   "total": 140
+  }
+ },
+ {
+  "file": "ibai-twitch-tw-2902427783-10917.mp4",
+  "creator": "Ibai (Twitch)",
+  "source": "https://www.twitch.tv/videos/2902427783",
+  "start": 10892.66,
+  "end": 10958.16,
+  "cuts": 9,
+  "length": 20.1,
+  "layout": "face",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "Ibai propone regalar Ceuta",
+  "hook_type": "contrarian",
+  "emphasis": [
+   "Marruecos",
+   "Pedro",
+   "Sánchez",
+   "milanesa"
+  ],
+  "caption": "Ibai suelta la locura política del año #ibai #twitch #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Ibai suelta la locura política del año",
+  "campaign": null,
+  "created": "2026-10-18T14:41:44.018043+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/ibai-twitch-tw-2902427783-10917.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/ibai-twitch-tw-2902427783-10917.tt.mp4",
+  "tiktok_caption": "Ibai suelta la locura política del año #ibai #twitch #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 12,
+   "transcribe+edit+render": 141,
+   "publish+submit": 5,
+   "total": 158
+  }
+ },
+ {
+  "file": "clix-twitch-tw-2901694015-14280.mp4",
+  "creator": "Clix (Twitch)",
+  "source": "https://www.twitch.tv/videos/2901694015",
+  "start": 14248.37,
+  "end": 14277.57,
+  "cuts": 8,
+  "length": 22.0,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "hype",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "Clix is giving away 3 PCs",
+  "hook_type": "stakes",
+  "emphasis": [
+   "hundred",
+   "thousand",
+   "PCs",
+   "code"
+  ],
+  "caption": "Clix drops a massive 100K V-Bucks and PC giveaway #Clix #Clix #fortnite #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Clix drops a massive 100K V-Bucks and PC giveaway #Clix",
+  "campaign": "https://contentrewards.com/c/campaigns/7a6a234b-1e9e-4da3-a600-54cc3142e710",
+  "created": "2026-10-18T14:31:03.433819+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2901694015-14280.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2901694015-14280.tt.mp4",
+  "tiktok_caption": "Clix drops a massive 100K V-Bucks and PC giveaway #Clix #Clix #fortnite #streamer",
+  "account": 1,
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 115,
+   "publish+submit": 5,
+   "total": 123
+  }
+ },
+ {
+  "file": "rivers-twitch-tw-2901941486-6460.mp4",
+  "creator": "Rivers (Twitch)",
+  "source": "https://www.twitch.tv/videos/2901941486",
+  "start": 6437.45,
+  "end": 6471.72,
+  "cuts": 12,
+  "length": 25.2,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "Le habló un señor en directo",
+  "hook_type": "revelation",
+  "emphasis": [
+   "señor",
+   "hablando",
+   "juego"
+  ],
+  "caption": "Rivers se sorprende cuando le habla un señor en pleno stream #rivers #stream #clipsespañol\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Rivers se sorprende cuando le habla un señor en pleno stream",
+  "campaign": null,
+  "created": "2026-10-18T14:19:06.989295+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/rivers-twitch-tw-2901941486-6460.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/rivers-twitch-tw-2901941486-6460.tt.mp4",
+  "tiktok_caption": "Rivers se sorprende cuando le habla un señor en pleno stream #rivers #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 87,
+   "publish+submit": 5,
+   "total": 97
+  }
+ },
+ {
+  "file": "ice-poseidon-kick-kc-clip-01m55qcteb4w9dny70edtpsbdb.mp4",
+  "creator": "Ice Poseidon (Kick)",
+  "source": "https://clips.kick.com/clips/bf/clip_01M55QCTEB4W9DNY70EDTPSBDB/playlist.m3u8",
+  "start": 39.01,
+  "end": 53.73,
+  "cuts": 9,
+  "length": 24.5,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "kick-clip",
+  "score": 82,
+  "hook": "HE LOST BEFORE EVEN ARRIVING",
+  "hook_type": "stakes",
+  "emphasis": [
+   "cooked",
+   "bus",
+   "ASAP",
+   "greyhound",
+   "HP"
+  ],
+  "caption": "Ice Poseidon player gets eliminated while still on the bus #iceposeidon #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Ice Poseidon player gets eliminated while still on the bus",
+  "campaign": null,
+  "created": "2026-10-18T14:07:59.429410+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/ice-poseidon-kick-kc-clip-01m55qcteb4w9dny70edtpsbdb.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/ice-poseidon-kick-kc-clip-01m55qcteb4w9dny70edtpsbdb.tt.mp4",
+  "tiktok_caption": "Ice Poseidon player gets eliminated while still on the bus #iceposeidon #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 145,
+   "publish+submit": 5,
+   "total": 156
+  }
+ },
+ {
+  "file": "lacy-twitch-tw-2899157638-15132.mp4",
+  "creator": "Lacy (Twitch)",
+  "source": "https://www.twitch.tv/videos/2899157638",
+  "start": 15125.78,
+  "end": 15204.23,
+  "cuts": 11,
+  "length": 26.7,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Kicked out for knowing his rights",
+  "hook_type": "stakes",
+  "emphasis": [
+   "pushes",
+   "power",
+   "leave",
+   "filming"
+  ],
+  "caption": "Lacy gets kicked out of the stadium and confronts security #lacy #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Lacy gets kicked out of the stadium and confronts security",
+  "campaign": null,
+  "created": "2026-10-18T13:54:25.149667+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lacy-twitch-tw-2899157638-15132.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lacy-twitch-tw-2899157638-15132.tt.mp4",
+  "tiktok_caption": "Lacy gets kicked out of the stadium and confronts security #lacy #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 6,
+   "transcribe+edit+render": 202,
+   "publish+submit": 7,
+   "total": 215
+  }
+ },
+ {
+  "file": "adin-ross-kick-kc-clip-01m4yfr37ns1n34aevjcsgxncr.mp4",
+  "creator": "Adin Ross (Kick)",
+  "source": "https://clips.kick.com/clips/fd/clip_01M4YFR37NS1N34AEVJCSGXNCR/playlist.m3u8",
+  "start": 40.269999999999996,
+  "end": 66.822,
+  "cuts": 13,
+  "length": 23.5,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "tension",
+  "signal": "kick-clip",
+  "score": 86,
+  "hook": "THEY ARE ACTUALLY ABOUT TO FIGHT",
+  "hook_type": "stakes",
+  "emphasis": [
+   "fight",
+   "coldest",
+   "Nothing"
+  ],
+  "caption": "Shocking moment Adin Ross set up Delonte West vs Michael Beasley #adinross #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Shocking moment Adin Ross set up Delonte West vs Michael Beasley",
+  "campaign": null,
+  "created": "2026-10-18T13:41:52.863062+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/adin-ross-kick-kc-clip-01m4yfr37ns1n34aevjcsgxncr.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/adin-ross-kick-kc-clip-01m4yfr37ns1n34aevjcsgxncr.tt.mp4",
+  "tiktok_caption": "Shocking moment Adin Ross set up Delonte West vs Michael Beasley #adinross #kick #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 8,
+   "transcribe+edit+render": 131,
+   "publish+submit": 6,
+   "total": 145
+  }
+ },
+ {
+  "file": "ibai-twitch-tw-2903404377-5191.mp4",
+  "creator": "Ibai (Twitch)",
+  "source": "https://www.twitch.tv/videos/2903404377",
+  "start": 5168.62,
+  "end": 5261.06,
+  "cuts": 9,
+  "length": 21.3,
+  "layout": "face",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Cambiaria mi sangre por ti",
+  "hook_type": "revelation",
+  "emphasis": [
+   "sangre",
+   "compatible",
+   "Olo"
+  ],
+  "caption": "Ibai alucina con la declaración más rara sobre su sangre #ibai #twitch #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Ibai alucina con la declaración más rara sobre su sangre",
+  "campaign": null,
+  "created": "2026-10-18T13:31:10.964305+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/FR4l3KJZ6yw",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/ibai-twitch-tw-2903404377-5191.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/ibai-twitch-tw-2903404377-5191.tt.mp4",
+  "tiktok_caption": "Ibai alucina con la declaración más rara sobre su sangre #ibai #twitch #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 14,
+   "transcribe+edit+render": 221,
+   "publish+submit": 8,
+   "total": 243
+  }
+ },
+ {
+  "file": "stable-ronaldo-twitch-tw-2902870618-3962.mp4",
+  "creator": "Stable Ronaldo (Twitch)",
+  "source": "https://www.twitch.tv/videos/2902870618",
+  "start": 3940.49,
+  "end": 3988.93,
+  "cuts": 12,
+  "length": 26.9,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "She literally bit her mid-fight",
+  "hook_type": "revelation",
+  "emphasis": [
+   "bit",
+   "Mike Tyson",
+   "pussy",
+   "fighting"
+  ],
+  "caption": "Stable Ronaldo reacts to the craziest illegal bite live #stableronaldo #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Stable Ronaldo reacts to the craziest illegal bite live",
+  "campaign": null,
+  "created": "2026-10-18T13:18:16.077268+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/RNVzn8RJ_DU",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/stable-ronaldo-twitch-tw-2902870618-3962.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/stable-ronaldo-twitch-tw-2902870618-3962.tt.mp4",
+  "tiktok_caption": "Stable Ronaldo reacts to the craziest illegal bite live #stableronaldo #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 230,
+   "publish+submit": 10,
+   "total": 244
+  }
+ },
+ {
+  "file": "clix-twitch-tw-2898980714-4141.mp4",
+  "creator": "Clix (Twitch)",
+  "source": "https://www.twitch.tv/videos/2898980714",
+  "start": 4142.27,
+  "end": 4176.73,
+  "cuts": 9,
+  "length": 24.8,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "awkward",
+  "signal": "twitch-clip",
+  "score": 78,
+  "hook": "CLIX HEARS THE WILDEST CONFESSION",
+  "hook_type": "revelation",
+  "emphasis": [
+   "dating",
+   "mess",
+   "weird",
+   "created"
+  ],
+  "caption": "Shocked Clix cannot believe what his viewer admitted #Clix #fortnite #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Shocked Clix cannot believe what his viewer admitted",
+  "campaign": "https://contentrewards.com/c/campaigns/7a6a234b-1e9e-4da3-a600-54cc3142e710",
+  "created": "2026-10-18T13:04:38.321454+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/49m7bG834X0",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2898980714-4141.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2898980714-4141.tt.mp4",
+  "tiktok_caption": "Shocked Clix cannot believe what his viewer admitted #Clix #fortnite #streamer",
+  "account": 1,
+  "submission": {
+   "error": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"button\", name=re.compile(r\"^(Submit clip|Enviar clip)$\")).first\n"
+  },
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 148,
+   "publish+submit": 48,
+   "total": 199
+  }
+ },
+ {
+  "file": "clix-x-yeat-twitch-tw-2902610715-6263.mp4",
+  "creator": "Clix x Yeat (Twitch)",
+  "source": "https://www.twitch.tv/videos/2902610715",
+  "start": 6295.64,
+  "end": 6302.42,
+  "cuts": 10,
+  "length": 28.6,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "YEAT FINALLY SPOKE ON STREAM",
+  "hook_type": "revelation",
+  "emphasis": [
+   "fortnight",
+   "crack",
+   "pants",
+   "bro"
+  ],
+  "caption": "Clix was NOT ready when Yeat spoke on Fortnite #fortnite #yeatxclix #twizzy\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Clix was NOT ready when Yeat spoke on Fortnite",
+  "campaign": "https://contentrewards.com/discover/657e89e0-4a2f-434c-91d2-ca7e140218d1",
+  "created": "2026-10-18T12:52:44.712309+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/OW9Fq6UoOrk",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-x-yeat-twitch-tw-2902610715-6263.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-x-yeat-twitch-tw-2902610715-6263.tt.mp4",
+  "tiktok_caption": "Clix was NOT ready when Yeat spoke on Fortnite #fortnite #yeatxclix #twizzy",
+  "account": 1,
+  "submission": {
+   "error": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"button\", name=re.compile(r\"^(Submit clip|Enviar clip)$\")).first\n"
+  },
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 154,
+   "publish+submit": 47,
+   "total": 204
+  }
+ },
+ {
+  "file": "kai-cenat-twitch-tw-2899188846-18250.mp4",
+  "creator": "Kai Cenat (Twitch)",
+  "source": "https://www.twitch.tv/videos/2899188846",
+  "start": 18223.5,
+  "end": 18295.08,
+  "cuts": 14,
+  "length": 19.6,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Kai Cenat panics live",
+  "hook_type": "revelation",
+  "emphasis": [
+   "Lin",
+   "No"
+  ],
+  "caption": "Kai Cenat absolute chaos when things go wrong #kaicenat #twitch #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Kai Cenat absolute chaos when things go wrong",
+  "campaign": null,
+  "created": "2026-10-18T12:09:39.889536+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/sWfw_QitbAA",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2899188846-18250.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2899188846-18250.tt.mp4",
+  "tiktok_caption": "Kai Cenat absolute chaos when things go wrong #kaicenat #twitch #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 6,
+   "transcribe+edit+render": 175,
+   "publish+submit": 8,
+   "total": 189
+  }
+ },
+ {
+  "file": "auronplay-twitch-tw-2899708479-6501.mp4",
+  "creator": "Auronplay (Twitch)",
+  "source": "https://www.twitch.tv/videos/2899708479",
+  "start": 6489.15,
+  "end": 6535.64,
+  "cuts": 12,
+  "length": 24.2,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "Auronplay no le importa NADA",
+  "hook_type": "revelation",
+  "emphasis": [
+   "Pepe",
+   "muertazo",
+   "GigiNexPpe",
+   "no nos importa",
+   "no pasará"
+  ],
+  "caption": "Auronplay es brutalmente honesto con Pepe #auronplay #stream #clipsespañol\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Auronplay es brutalmente honesto con Pepe",
+  "campaign": null,
+  "created": "2026-10-18T11:57:03.911593+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/MDrXnby-FwA",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2899708479-6501.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2899708479-6501.tt.mp4",
+  "tiktok_caption": "Auronplay es brutalmente honesto con Pepe #auronplay #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 8,
+   "transcribe+edit+render": 271,
+   "publish+submit": 12,
+   "total": 292
+  }
+ },
+ {
   "file": "tjr-kc-clip-01m4s04a1ecqtd4q49trqyfjqq.mp4",
   "creator": "TJR",
   "source": "https://clips.kick.com/clips/2b/clip_01M4S04A1ECQTD4Q49TRQYFJQQ/playlist.m3u8",
