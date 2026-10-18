@@ -122,7 +122,8 @@ def kit(out: dict, programs: list[dict]) -> str:
         links = "\n".join(f"  - {t['views']} vistas - {t['creator']} - {t['url']}" for t in p["top"]) or "  - (aun sin clips)"
         es = m.get("lang") == "es"
         who = m.get("who") or m["creators"].split(" (")[0]
-        stats = (f"{p['clips']} clips de {who}, {p['views']} vistas reales" if p["clips"] else "")
+        stats = (f"{p['clips']} clips de {who}, {p['views']} vistas reales" if es else
+                 f"So far {p['clips']} clips of them, {p['views']} real views") if p["clips"] else ""
         pitch_en = (f"Hi! We run {('@' + list(TT)[a - 1]) if a else 'our'} TikTok + YouTube Shorts pages and clip {who} every day: "
                     f"vertical 1080x1920, hook in the first second, burned-in captions, 20-40 s, no reposts, no bots. "
                     f"{stats + '. ' if stats else ''}Best clips below. We'd love to join the program and follow your rules "
