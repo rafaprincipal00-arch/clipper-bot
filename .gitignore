@@ -13,3 +13,6 @@ data/tiktok_plan.json
 data/tiktok_poster.log
 data/*.png
 data/qr_login.log
+data/autopilot.log
+data/autopilot_state.json
+data/yt_prefetch.log

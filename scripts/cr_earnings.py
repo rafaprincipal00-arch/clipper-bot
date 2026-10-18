@@ -5,6 +5,7 @@ pages only render when reached through the app's own sidebar (a direct load boun
 so the script opens Discover and clicks Earnings / Submissions / Analytics.
 """
 import os
+import re
 import tempfile
 from pathlib import Path
 
@@ -25,17 +26,64 @@ def main() -> None:
         page.goto("https://contentrewards.com/c/discover", wait_until="domcontentloaded")
         page.wait_for_timeout(8000)
         if "/login" in page.url:
-            print("SESSION EXPIRED")
-            return
+            raise SystemExit("SESSION EXPIRED: refresh the CR_STATE secret")
+        summary = {}
         for name in SECTIONS:
-            # An overlay panel covers the sidebar icons: trigger the client-side navigation from the DOM.
-            page.get_by_role("link", name=name, exact=True).first.evaluate("el => el.click()")
-            page.wait_for_timeout(9000)
+            if not open_section(page, name):
+                print(f"===== {name}: sidebar entry not found, skipped")
+                continue
+            body = page.inner_text("body")
             print(f"===== {name} -> {page.url}")
-            print(page.inner_text("body")[:6000])
+            print(body[:6000])
+            summary.update(read_numbers(name, body))
             if name == "Submissions":
-                show_reviewed(page)
+                try:
+                    show_reviewed(page)
+                except Exception as e:  # the detail panels are a bonus; never lose the summary for them
+                    print("show_reviewed failed:", e)
         browser.close()
+    # One machine-readable line for scripts/autopilot.py (the PC side reads it from the run log).
+    print("CR_SUMMARY " + " ".join(f"{k}={v}" for k, v in summary.items()))
+    if "lifetime" not in summary:
+        raise SystemExit("earnings page not read")
+
+
+def open_section(page, name: str) -> bool:
+    """Click a sidebar entry. It has been a link and a plain button over time, and an overlay panel covers
+    the icons, so look it up several ways and trigger the client-side navigation from the DOM."""
+    for loc in (page.get_by_role("link", name=name, exact=True), page.get_by_role("button", name=name, exact=True),
+                page.locator("nav, aside").get_by_text(name, exact=True), page.get_by_text(name, exact=True)):
+        try:
+            if loc.count():
+                loc.first.evaluate("el => (el.closest('a,button') || el).click()", timeout=10000)
+                page.wait_for_timeout(9000)
+                return True
+        except Exception as e:
+            print(f"{name}: {type(e).__name__}")
+    return False
+
+
+def _after(body: str, label: str) -> str | None:
+    lines = [x.strip() for x in body.splitlines() if x.strip()]
+    for i, x in enumerate(lines[:-1]):
+        if x == label:
+            return lines[i + 1].replace(",", "")
+    return None
+
+
+def read_numbers(name: str, body: str) -> dict:
+    out = {}
+    if name == "Earnings":
+        for key, label in (("lifetime", "Lifetime earned"), ("withdraw", "Withdraw"), ("month", "This month")):
+            v = _after(body, label)
+            if v and re.fullmatch(r"\$[\d.]+", v):
+                out[key] = v[1:]
+    elif name == "Submissions":
+        for key in ("Approved", "Pending", "Rejected", "Clips"):
+            v = _after(body, key)
+            if v and v.isdigit():
+                out[key.lower()] = v
+    return out
 
 
 def show_reviewed(page) -> None:

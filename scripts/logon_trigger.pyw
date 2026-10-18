@@ -56,7 +56,7 @@ def dispatch(token: str) -> None:
 def start_tiktok_poster() -> None:
     """Hidden daemon that posts today's clips to TikTok at staggered times (scripts/tiktok_poster.py)."""
     subprocess.Popen([sys.executable, str(HERE / "scripts" / "tiktok_poster.py"), "run"], cwd=str(HERE),
-                     creationflags=NO_WINDOW, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                     creationflags=NO_WINDOW | 0x00000040, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     log("TikTok poster started")
 
 

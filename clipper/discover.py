@@ -6,6 +6,8 @@ server-renders the campaign list as JSON inside the page.
 import json
 import re
 import sys
+import time
+import urllib.error
 import urllib.request
 from html import unescape
 from pathlib import Path
@@ -17,10 +19,28 @@ SKIP_TYPES = re.compile(r"slideshow|UGC|logo|song|music|AI slideshow", re.I)
 NON_ENGLISH = re.compile(r"\[(FRANCE|FR|DEUTSCH|ES|ESP|ARABIC)\]|\(Deutsch\)|habla|clippe|gana dinero|campaña|اصنع", re.I)
 
 
-def fetch_html(url: str = DISCOVER_URL) -> str:
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        return r.read().decode("utf-8", "ignore")
+RETRY_WAITS = (10, 30, 60, 120)  # seconds between tries on transient errors (5xx, 429, timeouts, network)
+
+
+def _transient(e: Exception) -> bool:
+    if isinstance(e, urllib.error.HTTPError):
+        return e.code >= 500 or e.code == 429
+    return isinstance(e, (urllib.error.URLError, TimeoutError, ConnectionError))
+
+
+def fetch_html(url: str = DISCOVER_URL, waits: tuple = RETRY_WAITS) -> str:
+    """GET a page, retrying transient failures with growing waits; raises the last error when they run out."""
+    for attempt in range(len(waits) + 1):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": UA})
+            with urllib.request.urlopen(req, timeout=60) as r:
+                return r.read().decode("utf-8", "ignore")
+        except Exception as e:
+            if not _transient(e) or attempt == len(waits):
+                raise
+            print(f"fetch {url}: {e} - retry {attempt + 1}/{len(waits)} in {waits[attempt]}s", flush=True)
+            time.sleep(waits[attempt])
+    raise AssertionError("unreachable")
 
 
 def parse_campaigns(html: str) -> list[dict]:
@@ -74,7 +94,7 @@ def rank(campaigns: list[dict], top: int = 15, streamers_only: bool = True) -> l
 def enrich(c: dict) -> dict:
     """Campaign page: min/max payout, content rules and reference (source) links."""
     try:
-        html = fetch_html(c["url"])
+        html = fetch_html(c["url"], waits=(5, 20))
     except OSError as e:
         c["detail_error"] = str(e)
         return c
@@ -114,7 +134,16 @@ def build_sources(top: list[dict], path: Path) -> None:
 
 def main() -> None:
     out = Path(sys.argv[1] if len(sys.argv) > 1 else "data/campaigns.json")
-    campaigns = parse_campaigns(fetch_html())
+    try:
+        campaigns = parse_campaigns(fetch_html())
+    except OSError as e:
+        # The marketplace being down must not stop the day's clips: keep the last known campaign list and
+        # sources.json untouched; the pipeline runs on the sources it already has.
+        print(f"WARNING: discover unavailable after retries ({e}); keeping the known campaigns and sources")
+        return
+    if not campaigns:
+        print("WARNING: discover page parsed 0 campaigns (layout change?); keeping the known campaigns and sources")
+        return
     ranked = [enrich(c) for c in rank(campaigns)]
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps({"all": campaigns, "top": ranked}, indent=1, ensure_ascii=False), encoding="utf-8")

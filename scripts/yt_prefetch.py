@@ -30,6 +30,7 @@ REPO = "rafaprincipal00-arch/clipper-bot"
 WORK = ROOT / "work" / "prefetch"
 LOG = ROOT / "data" / "yt_prefetch.log"
 PER_SOURCE = int(os.environ.get("PREFETCH_PER_SOURCE", "2"))
+MIN_FREE_MB = 1200  # 6 GB PC that also renders the YouTube agent's videos
 BUSY_CPU = 70  # % — wait while the user is using the machine hard
 MIN_BATTERY = 30  # % — on battery below this, do nothing
 NO_WINDOW = 0x08000000
@@ -86,9 +87,10 @@ def wait_for_idle(max_wait_s: int = 900) -> None:
     t0 = time.time()
     while time.time() - t0 < max_wait_s:
         load = psutil.cpu_percent(interval=5)
-        if load < BUSY_CPU:
+        free_mb = psutil.virtual_memory().available // 2**20
+        if load < BUSY_CPU and free_mb >= MIN_FREE_MB:
             return
-        log(f"CPU at {load:.0f}% - waiting before the next download")
+        log(f"CPU at {load:.0f}%, {free_mb} MB RAM free - waiting before the next download")
         time.sleep(25)
 
 

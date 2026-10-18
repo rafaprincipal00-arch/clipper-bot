@@ -164,6 +164,15 @@ def do_item(plan: dict, item: dict) -> None:
     save_plan(plan)
 
 
+def low_memory() -> bool:
+    """The headless browser needs ~600 MB; on this 6 GB PC wait while something heavy runs."""
+    try:
+        import psutil
+        return psutil.virtual_memory().available < 900 * 2**20
+    except ImportError:
+        return False
+
+
 def run() -> None:
     """Started at logon. Waits (up to 3 h) for today's clips, plans them, posts each at its time.
     Exits when EXPECTED clips are handled or, if the cloud run made fewer, at the end of the day."""
@@ -189,6 +198,9 @@ def run() -> None:
             log("end of the day; exiting")
             return
         due = [i for i in pending if datetime.fromisoformat(i["at"]) <= datetime.now()]
+        if due and low_memory():
+            log("less than 900 MB RAM free (another job is rendering) - posting later")
+            due = []
         for item in due[:1]:
             do_item(plan, item)
         time.sleep(60)

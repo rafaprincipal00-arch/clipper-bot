@@ -73,6 +73,9 @@ jobs:
           # Arial Black is not on Linux; libass falls back to the closest bold sans.
       - run: pip install -r requirements.txt && python -m playwright install --with-deps chromium-headless-shell > /dev/null
       - name: Discover top campaigns
+        # Retries inside; if the marketplace stays down the run clips the sources it already knows.
+        continue-on-error: true
+        timeout-minutes: 15
         run: python -m clipper.discover data/campaigns.json
       - name: Clip
         run: |
