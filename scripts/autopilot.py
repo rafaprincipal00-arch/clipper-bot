@@ -176,6 +176,14 @@ def cmd_watch() -> None:
                 alert_once(state, f"run-{last['id']}",
                            f"El run de clips falló otra vez en «{step}» y ya van {MAX_RETRIES} reintentos: "
                            f"hoy no habrá más clips. {last['html_url']}")
+    # The poster waits only 3 h for the day's clips (clips.json lands when the whole batch ends), so a late or
+    # relaunched run can outlive it: bring it back while today's TikTok posts are still to be placed.
+    if runs and launched_today() and datetime.now().hour < 23 and not running("tiktok_poster.py"):
+        plan = json.loads(tp.PLAN.read_text(encoding="utf-8")) if tp.PLAN.exists() else {}
+        items = plan.get("items", []) if plan.get("date") == today else []
+        busy = runs[0]["status"] != "completed" or runs[0]["conclusion"] == "success"
+        if busy and (len(items) < tp.EXPECTED or any(i["status"] == "pending" for i in items)):
+            start("tiktok_poster.py", "run")
     # TikTok posts that failed for good today (the poster retries once by itself)
     if POSTER_LOG.exists():
         for line in POSTER_LOG.read_text(encoding="utf-8", errors="ignore").splitlines():
