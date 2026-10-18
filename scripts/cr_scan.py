@@ -6,6 +6,7 @@ budget left, number of clippers, total approved views, top clipper earnings, req
 Run by .github/workflows/cr_scan.yml (the CR_STATE session only exists in GitHub Actions).
 """
 import json
+import sys
 import os
 import re
 import tempfile
@@ -74,6 +75,25 @@ def main() -> None:
             raise SystemExit("SESSION EXPIRED")
         ids = os.environ.get("CR_SCAN_IDS", "").split()
         links: list[str] = [f"https://contentrewards.com/c/campaigns/{i}" for i in ids]
+        # CR_SCAN_PAGES: extra pages (an agency's org/community page) to harvest campaign links from.
+        pages = os.environ.get("CR_SCAN_PAGES", "").split()
+        for src in pages:
+            try:
+                page.goto(src, wait_until="domcontentloaded")
+                page.wait_for_timeout(9000)
+                for _ in range(6):
+                    page.mouse.wheel(0, 6000)
+                    page.wait_for_timeout(1200)
+                found = page.eval_on_selector_all("a[href*='/campaigns/']", "els => els.map(e => e.href.split('?')[0])")
+                ids_found = list(dict.fromkeys(re.findall(r"[0-9a-f]{8}-[0-9a-f-]{27}", " ".join(found))))
+                print(f"PAGE {src} -> {page.url} | {len(ids_found)} campaigns", file=sys.stderr)
+                print(page.inner_text("body")[:1500], file=sys.stderr)
+                links += [f"https://contentrewards.com/c/campaigns/{i}" for i in ids_found
+                          if f"https://contentrewards.com/c/campaigns/{i}" not in links]
+            except Exception as e:  # noqa: BLE001
+                print(f"PAGE {src} failed: {str(e)[:150]}", file=sys.stderr)
+        if pages:
+            ids = ids or ["pages"]
         for _ in range(0 if ids else 40):  # infinite scroll on "All campaigns"
             found = page.eval_on_selector_all("a[href*='/c/campaigns/']", "els => els.map(e => e.href.split('?')[0])")
             new = [u for u in dict.fromkeys(found) if u not in links]

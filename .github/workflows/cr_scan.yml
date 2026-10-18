@@ -7,6 +7,10 @@ on:
         description: "Space-separated campaign ids to scan instead of the whole Discover list"
         required: false
         default: ""
+      pages:
+        description: "Space-separated pages (agency org/community) to harvest campaign links from"
+        required: false
+        default: ""
 
 permissions:
   contents: read
@@ -18,6 +22,7 @@ jobs:
     env:
       CR_STATE: ${{ secrets.CR_STATE }}
       CR_SCAN_IDS: ${{ inputs.ids }}
+      CR_SCAN_PAGES: ${{ inputs.pages }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
