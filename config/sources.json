@@ -1,5 +1,113 @@
 [
   {
+    "creator": "Jenny Hoyos (Human Balloon)",
+    "source": "https://www.youtube.com/watch?v=eYJGt4Eu6dg",
+    "campaign": "I Tried Going Inside of a Balloon",
+    "campaign_url": "https://vyro.com/campaigns/attempting-the-human-balloon-challenge-MYDwIlvt",
+    "cpm": 1.05,
+    "enabled": true,
+    "account": 1,
+    "lang": "English",
+    "platform": "vyro",
+    "hashtags": [
+      "jennyhoyos",
+      "balloon"
+    ],
+    "credit": "Jenny Hoyos",
+    "requirements": "Vyro campaign. Name Jenny Hoyos in the caption. Only use this video. Brand-safe, no cursing.",
+    "join_status": "Vyro: pendiente de Join (sesion de Rafa)"
+  },
+  {
+    "creator": "Kevin Langue (Ghost Hunter)",
+    "source": "https://www.youtube.com/watch?v=YqA2RzR6xmw",
+    "campaign": "4 Imposters vs 1 Real Ghost Hunter",
+    "campaign_url": "https://vyro.com/campaigns/5-guys-face-their-crush-4YWRQEx1",
+    "cpm": 2.0,
+    "enabled": true,
+    "account": 1,
+    "lang": "English",
+    "platform": "vyro",
+    "hashtags": [
+      "kevinlangue",
+      "ghosthunter"
+    ],
+    "credit": "Kevin Langue",
+    "requirements": "Vyro campaign. Name Kevin Langue in the caption. Only use this video. Brand-safe, no cursing.",
+    "join_status": "Vyro: pendiente de Join (sesion de Rafa)"
+  },
+  {
+    "creator": "Total Drama Roblox Tournament",
+    "source": "https://www.youtube.com/watch?v=xb6nbQOcDc0",
+    "campaign": "Total Drama Roblox - Streamer Tournament",
+    "campaign_url": "https://vyro.com/campaigns/total-drama-roblox-tournament-Yg7DZxjc",
+    "cpm": 2.5,
+    "enabled": true,
+    "account": 1,
+    "lang": "English",
+    "platform": "vyro",
+    "hashtags": [
+      "TotalDramaRoblox",
+      "roblox"
+    ],
+    "credit": "Total Drama Roblox",
+    "requirements": "Vyro campaign. Name Total Drama Roblox in the caption. Only use this video. Brand-safe, no cursing.",
+    "join_status": "Vyro: pendiente de Join (sesion de Rafa)"
+  },
+  {
+    "creator": "Don't Lie To Me (podcast)",
+    "source": "https://www.youtube.com/channel/UCD6w7d-a76wogRMUCv-UUuQ/videos",
+    "campaign": "Don't Lie To Me Podcast",
+    "campaign_url": "https://vyro.com/campaigns/dont-lie-to-me-KuaF8hQf",
+    "cpm": 2.0,
+    "enabled": true,
+    "account": 1,
+    "lang": "English",
+    "platform": "vyro",
+    "hashtags": [
+      "dontlietome",
+      "podcast"
+    ],
+    "credit": "Don't Lie To Me (iHeartPodcasts)",
+    "requirements": "Vyro campaign. Name Don't Lie To Me (iHeartPodcasts) in the caption. Only use this video. Brand-safe, no cursing.",
+    "join_status": "Vyro: pendiente de Join (sesion de Rafa)"
+  },
+  {
+    "creator": "Ground Stop Podcast",
+    "source": "https://www.youtube.com/watch?v=QmcWgR_j8ug",
+    "campaign": "Aviation Podcast with 2 pilots",
+    "campaign_url": "https://vyro.com/campaigns/aviation-podcast-S23gf3k6",
+    "cpm": 1.05,
+    "enabled": true,
+    "account": 1,
+    "lang": "English",
+    "platform": "vyro",
+    "hashtags": [
+      "aviation",
+      "pilot"
+    ],
+    "credit": "Ground Stop Podcast",
+    "requirements": "Vyro campaign. Name Ground Stop Podcast in the caption. Only use this video. Brand-safe, no cursing.",
+    "join_status": "Vyro: pendiente de Join (sesion de Rafa)"
+  },
+  {
+    "creator": "Plat Chat VALORANT (Champs Shanghai)",
+    "source": "https://www.youtube.com/watch?v=XTCd_8-8C3o",
+    "campaign": "Valorant Champs Shanghai Podcast",
+    "campaign_url": "https://vyro.com/campaigns/valorant-champs-shanghai-podcast-RwfZmYQt",
+    "cpm": 1.5,
+    "enabled": true,
+    "account": 1,
+    "lang": "English",
+    "platform": "vyro",
+    "hashtags": [
+      "valorant",
+      "VCTChampions"
+    ],
+    "credit": "Plat Chat VALORANT",
+    "requirements": "Vyro campaign. Name Plat Chat VALORANT in the caption. Only use this video. Brand-safe, no cursing.",
+    "join_status": "Vyro: pendiente de Join (sesion de Rafa)"
+  },
+  {
     "creator": "TJR",
     "source": "https://kick.com/tjr",
     "campaign": "TJR $23,100 Weekly Clipping Campaign",
