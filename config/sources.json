@@ -975,5 +975,24 @@
     "enabled": false,
     "join_status": "unido 2026-10-17",
     "why_off": "material en Drive/Instagram; nicho credito/finanzas"
+  },
+  {
+    "creator": "KreekCraft (YouTube)",
+    "source": "https://www.youtube.com/@KreekCraft/videos",
+    "enabled": true,
+    "account": 2,
+    "lang": "English",
+    "hashtags": [
+      "kreekcraft",
+      "roblox",
+      "youtube"
+    ],
+    "credit": "youtube.com/@KreekCraft",
+    "why": "17.3M subs; bote de $5K en clipping.net (cn-kreekcraft)",
+    "priority": 2,
+    "programs": [
+      "cn-kreekcraft"
+    ],
+    "requirements": "No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0. Kid-friendly Roblox moments only, no swearing hooks. Credit KreekCraft by name in the caption."
   }
 ]

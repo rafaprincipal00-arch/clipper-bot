@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-18",
+ "checked": "2026-10-19",
  "note": "Programas de clipping de pago de creadores grandes. Orden: score = CPM base x facilidad (1-5); rank 1 = mejor. 'track' = creadores de config/sources.json cuyas vistas cuentan para el portfolio de ese programa. 'min_views' = umbral publico para empezar a cobrar o para que la solicitud tenga sentido. Datos de paginas publicas; las reglas finas estan dentro de cada Discord/campana y hay que releerlas al entrar.",
  "programs": [
   {
@@ -7,13 +7,13 @@
    "id": "vyro-mrbeast",
    "name": "Vyro (MrBeast / Beast Industries)",
    "lang": "en",
-   "creators": "MrBeast y marcas (MrBeast x Kizik, Total Drama Roblox Streamer Tournament...)",
+   "creators": "MrBeast y marcas (MrBeast x Kizik, MrBeast 'Lose 150 Lbs Together', Total Drama Roblox Streamer Tournament...)",
    "where": {
     "type": "plataforma",
     "url": "https://vyro.com/campaigns",
     "how": "Cuenta en vyro.com (18+); todas las campanas piden solicitud"
    },
-   "pay": "Mediana $1.50/1K (de $1.05 a $2.50); MrBeast x Kizik $2/1K con ~$8.4K y ~2 dias; Total Drama Roblox $2.50/1K",
+   "pay": "Mediana $1.50/1K (de $1.05 a $2.50), $19.5K vivos en 7 campanas (19/10). MrBeast x Kizik $2/1K: quedan $6.1K de $30K, ~1 dia. Nueva MrBeast 'Lose 150 Lbs Together' $1/1K (bloqueada). Total Drama Roblox $2.50/1K ($1.8K de $2K)",
    "cpm": 1.5,
    "cpm_max": 2.5,
    "requirements": "Sin seguidores minimos; solicitud por campana; retiro minimo $10 (Stripe/PayPal)",
@@ -31,6 +31,32 @@
   },
   {
    "rank": 2,
+   "id": "vyro-speed-vegas",
+   "name": "SPEED VEGAS (IShowSpeed en Vyro)",
+   "lang": "en",
+   "creators": "IShowSpeed",
+   "where": {
+    "type": "plataforma",
+    "url": "https://vyro.com/campaigns/speed-vegas-lC81wXFS",
+    "how": "Cuenta en vyro.com (18+); campana 'Locked': hay que solicitarla y ser aprobado"
+   },
+   "pay": "$2.10/1K ('SPEED VEGAS 1', publicada el 15/10); presupuesto no publico",
+   "cpm": 2.1,
+   "cpm_max": 2.1,
+   "requirements": "Solicitud en Vyro; reglas y footage bloqueados hasta ser aceptado. Al entrar, comprobar que no haya segmentos de casino (Vegas): si los hay, solo clipear lo que no sea juego",
+   "rules": "Clip aprobado por Vyro; reglas exactas dentro de la campana",
+   "ease": 2,
+   "account": 1,
+   "min_views": 10000,
+   "track": [],
+   "sources": [
+    "https://vyro.com/campaigns",
+    "https://vyro.com/campaigns/speed-vegas-lC81wXFS"
+   ],
+   "score": 4.2
+  },
+  {
+   "rank": 3,
    "id": "cn-kick-clipping",
    "name": "Kick Clipping (clipping.net)",
    "lang": "en",
@@ -64,7 +90,7 @@
    "who": "top Kick streamers (N3on, xQc, Adin Ross)"
   },
   {
-   "rank": 3,
+   "rank": 4,
    "id": "cn-lacy",
    "name": "Lacy x Clipping (Discord de Lacy = clipping.net)",
    "lang": "en",
@@ -92,7 +118,7 @@
    "score": 2.0
   },
   {
-   "rank": 4,
+   "rank": 5,
    "id": "cr-ishowspeed-expedia",
    "name": "IShowSpeed x Expedia (Reach en Content Rewards)",
    "lang": "en",
@@ -102,7 +128,7 @@
     "url": "https://clippingalpha.com/campaigns/ishowspeed/expedia",
     "how": "Content Rewards (cuenta 1)"
    },
-   "pay": "$1/1K en TikTok, IG y YT (quedaban ~$3.2K-4.7K)",
+   "pay": "$1/1K en TikTok, IG y YT; quedan $2.568 de $8.000 (19/10), se agota hacia el 21-22/10",
    "cpm": 1.0,
    "cpm_max": 1.0,
    "requirements": "Solo el segmento Expedia Unpack del directo del 14/10; cuentas de nicho streamer o viajes",
@@ -117,7 +143,7 @@
    "score": 2.0
   },
   {
-   "rank": 5,
+   "rank": 6,
    "id": "cn-kick-hispano",
    "name": "Kick Hispano (clipping.net)",
    "lang": "es",
@@ -148,7 +174,7 @@
    "who": "los streamers hispanos de Kick (Westcol, Spreen, elZeein, Juansguarnizo)"
   },
   {
-   "rank": 6,
+   "rank": 7,
    "id": "cr-clix-reach",
    "name": "Clix x Reach (Content Rewards)",
    "lang": "en",
@@ -176,7 +202,34 @@
    "score": 1.5
   },
   {
-   "rank": 7,
+   "rank": 8,
+   "id": "cn-kreekcraft",
+   "name": "Kreekcraft x Clipping (clipping.net)",
+   "lang": "en",
+   "creators": "KreekCraft (YouTube, 17.3M subs, Roblox)",
+   "where": {
+    "type": "plataforma",
+    "url": "https://clipping.net/c/kreekcraft-x-clipping",
+    "how": "Unirse desde clipping.net con Discord (sin solicitud)"
+   },
+   "pay": "Bote de $5.000 repartido por cuota de vistas, PayPal",
+   "cpm": 0.4,
+   "cpm_max": 1.0,
+   "requirements": "Sin solicitud. 100.000 vistas minimas (un bounty pide 400.000). TikTok, Shorts e IG",
+   "rules": "Solo views organicas; reglas en el doc de la campana",
+   "ease": 3,
+   "account": 2,
+   "min_views": 100000,
+   "track": [
+    "KreekCraft (YouTube)"
+   ],
+   "sources": [
+    "https://clipping.net/c/kreekcraft-x-clipping"
+   ],
+   "score": 1.2
+  },
+  {
+   "rank": 9,
    "id": "cn-trainwreckstv",
    "name": "Trainwreckstv Clipping (clipping.net)",
    "lang": "en",
@@ -201,7 +254,32 @@
    "score": 1.0
   },
   {
-   "rank": 8,
+   "rank": 10,
+   "id": "cn-clix-lacy-tapcap",
+   "name": "Clix & Lacy - TapCap (clipping.net)",
+   "lang": "en",
+   "creators": "Clix y Lacy (segmentos de la marca TapCap)",
+   "where": {
+    "type": "plataforma",
+    "url": "https://clipping.net/c/clix-lacy-tapcap-x-clipping",
+    "how": "Unirse desde clipping.net con Discord"
+   },
+   "pay": "Bounties tapcap $50/100k ($0.50/1K) activos; gamestop $110/100k con tope alcanzado",
+   "cpm": 0.5,
+   "cpm_max": 1.1,
+   "requirements": "Sin solicitud. 100.000 vistas minimas; solo los segmentos de TapCap",
+   "rules": "Reglas de marca en Google Docs de la campana",
+   "ease": 2,
+   "account": 2,
+   "min_views": 100000,
+   "track": [],
+   "sources": [
+    "https://clipping.net/c/clix-lacy-tapcap-x-clipping"
+   ],
+   "score": 1.0
+  },
+  {
+   "rank": 11,
    "id": "n3on-direct",
    "name": "Programa de clippers de N3on (Discord propio)",
    "lang": "en",
@@ -231,7 +309,58 @@
    "score": 0.9
   },
   {
-   "rank": 9,
+   "rank": 12,
+   "id": "cn-sketch",
+   "name": "Sketch x Clipping (clipping.net)",
+   "lang": "en",
+   "creators": "Sketch (streamer)",
+   "where": {
+    "type": "plataforma",
+    "url": "https://clipping.net/c/sketch-x-clipping",
+    "how": "Unirse desde clipping.net con Discord (sin solicitud)"
+   },
+   "pay": "Bote de $5.000 (otro de $4.500) repartido por vistas, PayPal; cierra el 31/10",
+   "cpm": 0.4,
+   "cpm_max": 1.0,
+   "requirements": "Sin solicitud. 500.000 vistas minimas",
+   "rules": "Nada sobre Indy; solo views organicas",
+   "ease": 2,
+   "account": 2,
+   "min_views": 500000,
+   "track": [],
+   "sources": [
+    "https://clipping.net/c/sketch-x-clipping"
+   ],
+   "note": "Sin fuente en sources.json: no se ha confirmado su canal (twitch.tv/sketch es otro streamer)",
+   "score": 0.8
+  },
+  {
+   "rank": 13,
+   "id": "cn-plaqueboymax",
+   "name": "PlaqueBoyMax x Clipping (clipping.net)",
+   "lang": "en",
+   "creators": "PlaqueBoyMax",
+   "where": {
+    "type": "plataforma",
+    "url": "https://clipping.net/c/plaqueboymax-x-clipping",
+    "how": "Unirse desde clipping.net con Discord (sin solicitud)"
+   },
+   "pay": "Bounty 'lamb' $75/100k ($0.75/1K, 650K vistas min.) y bote 'pbm' de $4.000; PayPal; cierra el 01/11",
+   "cpm": 0.75,
+   "cpm_max": 0.75,
+   "requirements": "Sin solicitud. 500.000 vistas minimas. Marca de agua PBM obligatoria y bien visible (no tenemos el logo)",
+   "rules": "Sin otros logos; marca de agua PBM ni escondida ni diminuta. Streams de musica: riesgo de copyright",
+   "ease": 1,
+   "account": 2,
+   "min_views": 500000,
+   "track": [],
+   "sources": [
+    "https://clipping.net/c/plaqueboymax-x-clipping"
+   ],
+   "score": 0.75
+  },
+  {
+   "rank": 14,
    "id": "clavicular-clipmaxer",
    "name": "Clavicular (Clip Maxer, Discord)",
    "lang": "en",
@@ -244,7 +373,7 @@
    "pay": "$0.325/1K (USDT); bote de $100.000 AGOTADO ($0 a 18/10)",
    "cpm": 0.325,
    "cpm_max": 0.325,
-   "requirements": "500+ seguidores y 500.000 vistas en 30 dias, o una pagina dedicada solo a Clavicular; 1% de engagement; 5K vistas minimas por clip",
+   "requirements": "500+ seguidores y 500.000 vistas en 30 dias, o una pagina dedicada solo a Clavicular; 1% de engagement; 5K vistas minimas por clip; 200K vistas totales para cobrar; clips del college tour en adelante; captions solo en ingles",
    "rules": "'Clavicular' en el texto en pantalla y #clavicular; sin logos ni marcas de agua",
    "ease": 1,
    "account": null,
@@ -264,7 +393,6 @@
    "Stable Ronaldo",
    "Marlon (solo bounties de marca en clipping.net)",
    "JasonTheWeen (solo bounties de marca)",
-   "PlaqueBoyMax",
    "DDG",
    "Zlaner",
    "TheBurntPeanut",
@@ -285,6 +413,10 @@
   {
    "name": "Stake Bounties / Stake Gambling Hispano / Adin Ross x Stake (clipping.net, hasta $3/1K)",
    "why": "contenido de casino: TikTok restringe o banea las cuentas (regla del bot)"
+  },
+  {
+   "name": "Shuffle Streamers / Flip.gg (Content Rewards, $1.50/1K)",
+   "why": "casino y cajas de apuestas"
   }
  ]
 }
