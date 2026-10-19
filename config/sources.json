@@ -994,5 +994,47 @@
       "cn-kreekcraft"
     ],
     "requirements": "No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0. Kid-friendly Roblox moments only, no swearing hooks. Credit KreekCraft by name in the caption."
+  },
+  {
+    "creator": "COD POD Ep 12 (Call of Duty)",
+    "source": "",
+    "campaign": "Call of Duty - COD POD Ep 12 Podcast Clipping",
+    "campaign_url": "https://contentrewards.com/c/campaigns/e724391a-8d63-4caf-b365-590d032afe6e",
+    "cpm": 1.75,
+    "account": 1,
+    "lang": "en",
+    "mention": "@callofduty",
+    "enabled": false,
+    "join_status": "unido 2026-10-19",
+    "why_off": "footage solo del enlace oficial MediaSilo (otra fuente = rechazo); el pipeline no descarga MediaSilo",
+    "requirements": "ONLY USE FOOTAGE FROM THE official MediaSilo link. Caption MUST include: Tag @callofduty + #Ad (own line, first hashtag after caption text; up to 3 more related hashtags). On-screen text MUST name the right actor: Barry Sloane plays Price, Maria Elisa Camargo plays Valeria (e.g. 'Behind the Scenes with Actor of Price in Modern Warfare 4'). Background music NOT ALLOWED, original audio only. No AI voices. At least 10 s. English only. Post live 30 days. Likes visible, min 0.20% engagement. Keep it genuine and true, no made-up facts."
+  },
+  {
+    "creator": "IShowSpeed x Expedia",
+    "source": "",
+    "campaign": "$8,000 IShowSpeed x Expedia Clipping Campaign",
+    "campaign_url": "https://contentrewards.com/c/campaigns/03bda4fd-3474-4b1e-a914-88aaf3ac8372",
+    "cpm": 1.0,
+    "account": 1,
+    "lang": "en",
+    "mention": "#IShowSpeed #Expedia",
+    "enabled": false,
+    "join_status": "unido 2026-10-19",
+    "why_off": "footage en Google Drive/WeTransfer (stream 10.14.26, solo 3:56:30-4:12:22); el pipeline no descarga Drive ni recorta por rango; min 10k vistas",
+    "requirements": "Content must come from IShowSpeed's Unpack Stream 10.14.26 (Expedia segment, timestamps 3:56:30-4:12:22). IShowSpeed must be the primary focus. Keep the yellow suitcase in frame. Caption/text overlay must mention the destination accurately. Captions must use #IShowSpeed #Expedia. No logos other than Expedia. No AI-generated videos. Do not portray IShowSpeed or Expedia negatively, no hate farming. Account must be streamer/travel niche, audience 50%+ native English countries. TikTok, Reels, Shorts only."
+  },
+  {
+    "creator": "Juvon (@dwnengine)",
+    "source": "https://www.youtube.com/@juvonthoughts",
+    "campaign": "Juvon Clips | $3 CPM | Expanding Budget",
+    "campaign_url": "https://contentrewards.com/c/campaigns/2002b997-3c92-46f9-b686-02892c352781",
+    "cpm": 3.0,
+    "account": 1,
+    "lang": "en",
+    "mention": "@dwnengine",
+    "enabled": false,
+    "join_status": "unido 2026-10-19",
+    "why_off": "exige pagina dedicada solo a Juvon (bio 'Fanpage for @dwnengine' + digitalwealthnetwork.org) y estar en whop.com/clingman-clips",
+    "requirements": "Caption must tag @dwnengine (TikTok/IG) / @cantfindjuvon (YT). Bio: 'Fanpage for @dwnengine Learn what he does digitalwealthnetwork.org'. Page dedicated solely to Juvon's content. Juvon must appear in 75% of the video. At least 10 s. Original, high quality. Sources: youtube.com/@CantFindJuvon, @DWNEngine, @juvonthoughts. 50%+ Tier 1 audience."
   }
 ]
