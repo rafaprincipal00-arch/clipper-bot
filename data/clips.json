@@ -1,5 +1,46 @@
 [
  {
+  "file": "juansguarnizo-kick-kc-clip-01m542vm2x9r9dxxa3knh29y8v.mp4",
+  "creator": "Juansguarnizo (Kick)",
+  "source": "https://clips.kick.com/clips/3a/clip_01M542VM2X9R9DXXA3KNH29Y8V/playlist.m3u8",
+  "start": 0.0,
+  "end": 39.809999999999995,
+  "cuts": 11,
+  "length": 22.6,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "kick-clip",
+  "score": 72,
+  "hook": "JUAN VIVE UN EVENTO CANON",
+  "hook_type": "stakes",
+  "emphasis": [
+   "morir",
+   "canon",
+   "cementerio",
+   "prometí"
+  ],
+  "caption": "Triste despedida de Juansguarnizo con Artur en su evento canon #juansguarnizo #stream #clipsespañol\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Triste despedida de Juansguarnizo con Artur en su evento canon",
+  "campaign": null,
+  "created": "2026-10-19T22:47:39.279002+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/juansguarnizo-kick-kc-clip-01m542vm2x9r9dxxa3knh29y8v.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/juansguarnizo-kick-kc-clip-01m542vm2x9r9dxxa3knh29y8v.tt.mp4",
+  "tiktok_caption": "Triste despedida de Juansguarnizo con Artur en su evento canon #juansguarnizo #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 11,
+   "transcribe+edit+render": 139,
+   "publish+submit": 6,
+   "total": 156
+  }
+ },
+ {
   "file": "clix-twitch-tw-2901694015-13828.mp4",
   "creator": "Clix (Twitch)",
   "source": "https://www.twitch.tv/videos/2901694015",

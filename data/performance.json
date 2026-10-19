@@ -1,16 +1,106 @@
 {
- "updated": "2026-10-09T12:38:31+00:00",
- "clips": 17,
+ "updated": "2026-10-19T22:44:30+00:00",
+ "clips": 61,
  "by_creator": {
-  "TJR": {
-   "clips": 11,
-   "views": 1802,
-   "avg_views": 164
+  "Ibai (Twitch)": {
+   "clips": 3,
+   "views": 1989,
+   "avg_views": 663
+  },
+  "Stable Ronaldo (Twitch)": {
+   "clips": 3,
+   "views": 1652,
+   "avg_views": 551
+  },
+  "Clix (Twitch)": {
+   "clips": 1,
+   "views": 2460,
+   "avg_views": 2460
+  },
+  "Clix x Yeat (Twitch)": {
+   "clips": 1,
+   "views": 1764,
+   "avg_views": 1764
+  },
+  "Kai Cenat (Twitch)": {
+   "clips": 4,
+   "views": 3384,
+   "avg_views": 846
+  },
+  "Auronplay (Twitch)": {
+   "clips": 3,
+   "views": 4394,
+   "avg_views": 1465
+  },
+  "Rivers (Twitch)": {
+   "clips": 1,
+   "views": 1132,
+   "avg_views": 1132
+  },
+  "Ice Poseidon (Kick)": {
+   "clips": 1,
+   "views": 22,
+   "avg_views": 22
+  },
+  "Fanum (Twitch)": {
+   "clips": 1,
+   "views": 35,
+   "avg_views": 35
+  },
+  "N3on (Kick)": {
+   "clips": 1,
+   "views": 3,
+   "avg_views": 3
+  },
+  "Lacy (Twitch)": {
+   "clips": 2,
+   "views": 11,
+   "avg_views": 6
+  },
+  "CaseOh (Twitch)": {
+   "clips": 1,
+   "views": 896,
+   "avg_views": 896
+  },
+  "Spreen (Kick)": {
+   "clips": 3,
+   "views": 5442,
+   "avg_views": 1814
+  },
+  "Jynxzi (Twitch)": {
+   "clips": 1,
+   "views": 1083,
+   "avg_views": 1083
+  },
+  "Westcol (Kick)": {
+   "clips": 3,
+   "views": 70,
+   "avg_views": 23
+  },
+  "Harrison Webb ($7 vs $115 English Breakfast)": {
+   "clips": 1,
+   "views": 2431,
+   "avg_views": 2431
+  },
+  "Adin Ross (Kick)": {
+   "clips": 2,
+   "views": 859,
+   "avg_views": 430
   },
   "Lanah Cherry (Twitch)": {
-   "clips": 6,
-   "views": 5224,
-   "avg_views": 871
+   "clips": 11,
+   "views": 15302,
+   "avg_views": 1391
+  },
+  "TJR": {
+   "clips": 17,
+   "views": 3199,
+   "avg_views": 188
+  },
+  "Michael Porter Jr. (Curious Mike)": {
+   "clips": 1,
+   "views": 2584,
+   "avg_views": 2584
   }
  },
  "top": [
@@ -21,111 +111,89 @@
    "mood": "chaos",
    "hook_type": null,
    "score": 75,
-   "views": 2393,
-   "likes": 19,
+   "views": 3437,
+   "likes": 20,
    "id": "Et3rAIR30iQ"
   },
   {
-   "creator": "Lanah Cherry (Twitch)",
-   "hook": "I would love to fight someone!",
-   "title": "Lanah Cherry is ready to step into the NMS boxing ring",
-   "mood": "hype",
-   "hook_type": null,
-   "score": 85,
-   "views": 1265,
-   "likes": 17,
-   "id": "bg5fXjs_MEo"
-  },
-  {
-   "creator": "Lanah Cherry (Twitch)",
-   "hook": "DON'T LET JAMES DRIVE!",
-   "title": null,
-   "mood": null,
-   "hook_type": null,
+   "creator": "Spreen (Kick)",
+   "hook": "No podía creer lo que pasaba",
+   "title": "Spreen reaccionó totalmente descolocado en pleno directo",
+   "mood": "chaos",
+   "hook_type": "revelation",
    "score": 75,
-   "views": 1093,
-   "likes": 7,
-   "id": "grYSsRpVR_w"
-  },
-  {
-   "creator": "TJR",
-   "hook": "SITTING UP $317,000",
-   "title": null,
-   "mood": "hype",
-   "hook_type": null,
-   "score": 85,
-   "views": 594,
-   "likes": 4,
-   "id": "u5o9D0TuUcE"
-  },
-  {
-   "creator": "TJR",
-   "hook": "NOBODY CARES EXCEPT FOR YOU",
-   "title": "I can't believe he lost it over fake channels",
-   "mood": "chaos",
-   "hook_type": "stakes",
-   "score": 85,
-   "views": 534,
-   "likes": 4,
-   "id": "ysbNur90rsA"
+   "views": 2961,
+   "likes": 55,
+   "id": "REDP_AloN5A"
   },
   {
    "creator": "Lanah Cherry (Twitch)",
-   "hook": "All I have is a flashlight!",
-   "title": null,
+   "hook": "Worst dating story ever",
+   "title": "Lanah Cherry was DONE with dating after THIS",
+   "mood": "funny",
+   "hook_type": "revelation",
+   "score": 88,
+   "views": 2633,
+   "likes": 23,
+   "id": "HVX_1C1azwo"
+  },
+  {
+   "creator": "Auronplay (Twitch)",
+   "hook": "La única explicación es que es gay",
+   "title": "Auronplay no entiende qué pasa con Fabiana",
+   "mood": "funny",
+   "hook_type": "revelation",
+   "score": 85,
+   "views": 2624,
+   "likes": 56,
+   "id": "odUXPRp9A9M"
+  },
+  {
+   "creator": "Michael Porter Jr. (Curious Mike)",
+   "hook": "He admitted his true celebrity crush",
+   "title": "Michael Porter Jr revealed his surprising celebrity crush",
+   "mood": "funny",
+   "hook_type": "revelation",
+   "score": 82,
+   "views": 2584,
+   "likes": 19,
+   "id": "fn5qryHKOII"
+  },
+  {
+   "creator": "Clix (Twitch)",
+   "hook": "CLIX HEARS THE WILDEST CONFESSION",
+   "title": "Shocked Clix cannot believe what his viewer admitted",
+   "mood": "awkward",
+   "hook_type": "revelation",
+   "score": 78,
+   "views": 2460,
+   "likes": 24,
+   "id": "49m7bG834X0"
+  },
+  {
+   "creator": "Harrison Webb ($7 vs $115 English Breakfast)",
+   "hook": "$115 breakfast is insane",
+   "title": "Harrison Webb tries a ridiculously expensive breakfast @harrisonwebb97 #harrisonwebb",
+   "mood": "funny",
+   "hook_type": "revelation",
+   "score": 88,
+   "views": 2431,
+   "likes": 34,
+   "id": "j47DAnVhXOo"
+  },
+  {
+   "creator": "Lanah Cherry (Twitch)",
+   "hook": "His car got totaled live",
+   "title": "Lanah Cherry reacts to an absolute disaster live",
    "mood": "chaos",
-   "hook_type": null,
-   "score": 85,
-   "views": 466,
-   "likes": 4,
-   "id": "ScBBwR-PAtw"
-  },
-  {
-   "creator": "TJR",
-   "hook": "Risked 30K to make 12K",
-   "title": "I can't believe he risked thirty grand just for this",
-   "mood": "drama",
    "hook_type": "stakes",
-   "score": 85,
-   "views": 240,
-   "likes": 1,
-   "id": "DTLd99-HgQk"
-  },
-  {
-   "creator": "TJR",
-   "hook": "STOP GIVING ME SUBS",
-   "title": null,
-   "mood": null,
-   "hook_type": null,
-   "score": 85,
-   "views": 219,
-   "likes": 1,
-   "id": "l95Q6jg6zY0"
+   "score": 88,
+   "views": 2029,
+   "likes": 16,
+   "id": "0sGwQBvKmo0"
   }
  ],
  "bottom": [
-  {
-   "creator": "TJR",
-   "hook": "WHAT WAS THAT?!",
-   "title": "Bro got completely blindsided by that soul bomb",
-   "mood": "chaos",
-   "hook_type": null,
-   "score": 85,
-   "views": 9,
-   "likes": 0,
-   "id": "IFNXM1O7WdY"
-  },
-  {
-   "creator": "TJR",
-   "hook": "SHOULD I BUY THIS COIN?",
-   "title": null,
-   "mood": null,
-   "hook_type": null,
-   "score": 80,
-   "views": 7,
-   "likes": 0,
-   "id": "wldllZR8Znc"
-  },
   {
    "creator": "Lanah Cherry (Twitch)",
    "hook": "WHAT IS SPICY SWIPE?",
@@ -138,15 +206,37 @@
    "id": "SHORn6fpgoY"
   },
   {
-   "creator": "TJR",
-   "hook": "MODS BAN THAT GUY",
-   "title": null,
-   "mood": null,
-   "hook_type": null,
-   "score": 85,
+   "creator": "Lacy (Twitch)",
+   "hook": "Blueface owes him a free seafood",
+   "title": "Lacy goes off over a terrible seafood order",
+   "mood": "chaos",
+   "hook_type": "stakes",
+   "score": 75,
    "views": 6,
    "likes": 0,
-   "id": "LMfF-6HKEXQ"
+   "id": "Jh6hh0T0SgQ"
+  },
+  {
+   "creator": "Lacy (Twitch)",
+   "hook": "He just repeated it",
+   "title": "Lacy caught repeating the funniest thing live",
+   "mood": "funny",
+   "hook_type": "revelation",
+   "score": 82,
+   "views": 5,
+   "likes": 0,
+   "id": "S3rqjhZ8LTI"
+  },
+  {
+   "creator": "N3on (Kick)",
+   "hook": "HE SANG FOR N3ON LIVE",
+   "title": "N3on was stunned when fan sang him this",
+   "mood": "funny",
+   "hook_type": "revelation",
+   "score": 82,
+   "views": 3,
+   "likes": 1,
+   "id": "M6ihA5u1P6M"
   },
   {
    "creator": "TJR",
@@ -158,6 +248,28 @@
    "views": 2,
    "likes": 0,
    "id": "aTghBz7sxWE"
+  },
+  {
+   "creator": "Kai Cenat (Twitch)",
+   "hook": "Kai Cenat panics live",
+   "title": "Kai Cenat absolute chaos when things go wrong",
+   "mood": "chaos",
+   "hook_type": "revelation",
+   "score": 88,
+   "views": 0,
+   "likes": 0,
+   "id": "sWfw_QitbAA"
+  },
+  {
+   "creator": "Stable Ronaldo (Twitch)",
+   "hook": "He swore he got touched",
+   "title": "Stable Ronaldo got completely played live",
+   "mood": "funny",
+   "hook_type": "revelation",
+   "score": 88,
+   "views": 0,
+   "likes": 0,
+   "id": "PECejBjodDw"
   },
   {
    "creator": "Lanah Cherry (Twitch)",
