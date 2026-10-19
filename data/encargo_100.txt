@@ -1,0 +1,31 @@
+Encargo de Rafa que te pasa su agente principal (19/10). Objetivo: **apuntarnos a TODOS los programas de rewards y escalar hasta 100 clips publicados al día**. Monta el plan viable y empieza a ejecutarlo.
+
+Datos que ya tengo:
+- **Vyro:** cuenta creada hoy con Google futti0210@gmail.com, usuario @rafabenitezclips, desde el Brave de Rafa. Sin redes conectadas ni método de cobro.
+- **Campañas abiertas:** Total Drama Roblox (2.500 $/1M), iHeart Don't Lie To Me (2.000), Kevin Langue Ghost Hunter (2.000), MrBeast x Kizik (2.000), Valorant Champs (1.500), Ketone-IQ YT-only (1.500), Jenny Hoyos y Ground Stop (1.050).
+- **Bloqueadas:** MrBeast, Speed Vegas y Shark Tank.
+- **Nuestros números reales:** 55 Shorts con 41.056 visitas (~750 de media) y 30 TikToks con 4.559 (~150 de media). Solo unos 5 de cada 16 creadores pasan de 1.000 de media.
+
+Lo que pide Rafa: llegar a 100 clips al día y que, aunque salgan flojos, cada uno pase de 1.000 visitas para cobrar esas mil.
+
+1. **Rewards**:
+   - Únete a todo lo que esté abierto y encaje: Content Rewards, Vyro, clipping.net/Kick, Whop y similares que ya tengas en clip_programs.json.
+   - En Vyro, conecta nuestras cuentas: TikTok @streammoments.daily, @rafael.benitez656 y @pepe854146, y YouTube @pepestreamclips. Usa SIEMPRE el Brave de Rafa, en una ventana propia y por UI Automation (skill windows-gui-automation; helper `C:\Users\RAFI\AppData\Local\hermes\cache\scratch\ua_brave.py`). Nada de Chrome aparte, y no toques sus pestañas, su teclado ni su foco.
+   - Lee las reglas de cada campaña: mínimo de visitas para cobrar, número máximo de posts por cuenta, si se puede publicar el mismo clip en varias cuentas, y música o marcas de agua.
+   - Nada de contraseñas ni datos de cobro: eso lo pone Rafa. Dile exactamente dónde.
+2. **Plan a 100 clips/día, con números de verdad**:
+   - Cuántas cuentas y plataformas hacen falta (TikTok, Shorts, IG Reels) y cuántos posts por cuenta al día sin que las marquen como spam.
+   - Cuántas ejecuciones de Actions y cuántos minutos cuestan.
+   - Cuánta RAM y cuánto tiempo de publicación en local (el PC tiene 6 GB y el bot de YouTube también renderiza).
+   - Qué porcentaje de clips llega hoy a 1.000 visitas y qué cambios lo suben: ganchos, elegir momentos, creadores que funcionan, horas, idioma, formato y la campaña adecuada.
+   - Una fase 1 que se pueda hacer ya (por ejemplo, 30/día) y el calendario hasta 100.
+   - Que quede claro qué es real: ninguna plataforma garantiza 1.000 visitas, y los rewards pagan por visita conseguida, a menudo con un mínimo por post.
+3. **Ejecuta la fase 1** en tus crons y deja todo medido en performance.json para ir escalando según los datos, no a ciegas.
+
+Contéstame en 8 líneas como máximo:
+- en qué programas y campañas estamos ya;
+- qué cuentas quedaron conectadas;
+- el plan por fases con cifras;
+- el % actual de clips que pasan de 1.000 visitas y el objetivo;
+- los ingresos realistas al día en cada fase;
+- qué tiene que hacer Rafa.

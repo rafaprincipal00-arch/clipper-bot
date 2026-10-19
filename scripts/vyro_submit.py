@@ -29,8 +29,13 @@ import tiktok_brave as tb  # noqa: E402
 WIN_FILE = ROOT / "data" / "vyro_window.txt"
 DONE = ROOT / "data" / "vyro_submitted.json"
 HOME = "https://app.vyro.com/"
-# Accounts linked in Vyro, as shown in the "Social account" picker (platform suffix included).
-ACCOUNTS = {"tiktok": "pepe854146 TikTok"}
+# Accounts linked in Vyro, as shown in the "Social account" picker (platform suffix included),
+# keyed by (platform, clip account index). All three TikTok accounts linked 10/19-10/20/26.
+ACCOUNTS = {
+    ("tiktok", 1): "pepe854146 TikTok",
+    ("tiktok", 2): "streammoments.daily TikTok",
+    ("tiktok", 3): "rafael.benitez656 TikTok",
+}
 
 
 def _sources() -> dict:
@@ -134,7 +139,7 @@ def _submit_button(b: tb.Brave, title: str):
     return None
 
 
-def submit(campaign_url: str, post_url: str, platform: str = "tiktok", dry: bool = False) -> str:
+def submit(campaign_url: str, post_url: str, platform: str = "tiktok", dry: bool = False, account: int = 1) -> str:
     title = _sources().get(campaign_url)
     if not title:
         raise RuntimeError(f"unknown Vyro campaign {campaign_url}")
@@ -151,9 +156,10 @@ def submit(campaign_url: str, post_url: str, platform: str = "tiktok", dry: bool
     pick = b.find(lambda c: c.Name == "Select social account" and c.BoundingRectangle.width() > 0, timeout=10)
     b.click(pick)
     time.sleep(2)
-    acct = b.find(lambda c: c.ControlTypeName == "ButtonControl" and c.Name == ACCOUNTS[platform], timeout=8)
+    handle = ACCOUNTS.get((platform, account)) or ACCOUNTS[(platform, 1)]
+    acct = b.find(lambda c: c.ControlTypeName == "ButtonControl" and c.Name == handle, timeout=8)
     if acct is None:
-        raise RuntimeError(f"{ACCOUNTS[platform]} not linked in Vyro")
+        raise RuntimeError(f"{handle} not linked in Vyro")
     _press(b, acct)
     time.sleep(3)
     _press(b, b.find(lambda c: c.ControlTypeName == "ButtonControl" and c.Name == "Use a link instead", timeout=8))
@@ -201,7 +207,7 @@ def pending(log=print) -> None:
     for it in plan.get("items", []):
         if it.get("status") == "posted" and is_vyro(it.get("campaign")) and it.get("url") not in done:
             try:
-                log(f"  Vyro submit {it['url']}: {submit(it['campaign'], it['url'])}")
+                log(f"  Vyro submit {it['url']}: {submit(it['campaign'], it['url'], account=int(it.get('account') or 1))}")
             except Exception as e:  # noqa: BLE001 — retried on the next pass
                 log(f"  Vyro submit FAILED {it['url']}: {e}")
 

@@ -26,6 +26,7 @@ def main() -> None:
     mine_clips = load(DATA / "clips.json", [])
     mine_seen = load(DATA / "seen.json", [])
     mine_campaigns = (DATA / "campaigns.json").read_text(encoding="utf-8") if (DATA / "campaigns.json").exists() else None
+    mine_perf = (DATA / "performance.json").read_text(encoding="utf-8") if (DATA / "performance.json").exists() else None
     git("fetch", "-q", "origin", "main")
     git("reset", "-q", "--hard", "origin/main")
     theirs_clips = load(DATA / "clips.json", [])
@@ -37,6 +38,8 @@ def main() -> None:
     (DATA / "seen.json").write_text(json.dumps(sorted(set(load(DATA / "seen.json", [])) | set(mine_seen))))
     if mine_campaigns is not None:
         (DATA / "campaigns.json").write_text(mine_campaigns, encoding="utf-8")
+    if mine_perf is not None:
+        (DATA / "performance.json").write_text(mine_perf, encoding="utf-8")
     git("add", "data/")
     if subprocess.run(["git", "diff", "--cached", "--quiet"]).returncode:
         git("commit", "-qm", "bot: update clips/campaigns [skip ci]")

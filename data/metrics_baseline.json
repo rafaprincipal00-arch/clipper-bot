@@ -1,0 +1,30 @@
+{
+ "measured": "2026-10-20",
+ "posts": 98,
+ "over_1000": 24,
+ "pct_over_1000": 24,
+ "yt": {
+  "posts": 68,
+  "avg": 761,
+  "over_1k": 24,
+  "pct": 35
+ },
+ "tiktok": {
+  "posts": 30,
+  "avg": 153,
+  "over_1k": 0,
+  "pct": 0
+ },
+ "money": {
+  "cr_lifetime": "0.00",
+  "cr_approved": 3,
+  "cr_pending": 19,
+  "cr_rejected": 14,
+  "vyro_balance": "0.00"
+ },
+ "goal_phase1": {
+  "daily_posts": 21,
+  "pct_over_1000": 35
+ },
+ "note": "baseline del plan 100/dia; ver data/plan_100.md"
+}
