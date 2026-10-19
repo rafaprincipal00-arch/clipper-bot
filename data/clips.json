@@ -1,5 +1,251 @@
 [
  {
+  "file": "clix-twitch-tw-2901694015-13828.mp4",
+  "creator": "Clix (Twitch)",
+  "source": "https://www.twitch.tv/videos/2901694015",
+  "start": 13841.21,
+  "end": 13873.79,
+  "cuts": 10,
+  "length": 20.5,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "Clix panics with zero shields",
+  "hook_type": "stakes",
+  "emphasis": [
+   "chillin",
+   "fucked",
+   "shield",
+   "bananas"
+  ],
+  "caption": "Clix was NOT ready for this chaotic panic moment #Clix #fortnite #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Clix was NOT ready for this chaotic panic moment",
+  "campaign": "https://contentrewards.com/c/campaigns/7a6a234b-1e9e-4da3-a600-54cc3142e710",
+  "created": "2026-10-19T13:11:04.786621+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/zdh-ak5xZdg",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2901694015-13828.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2901694015-13828.tt.mp4",
+  "tiktok_caption": "Clix was NOT ready for this chaotic panic moment #Clix #fortnite #streamer",
+  "account": 1,
+  "submission": {
+   "error": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"button\", name=re.compile(r\"^(Submit clip|Enviar clip)$\")).first\n"
+  },
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 133,
+   "publish+submit": 45,
+   "total": 182
+  }
+ },
+ {
+  "file": "clix-x-yeat-twitch-tw-2902610715-6237.mp4",
+  "creator": "Clix x Yeat (Twitch)",
+  "source": "https://www.twitch.tv/videos/2902610715",
+  "start": 6218.06,
+  "end": 6291.81,
+  "cuts": 10,
+  "length": 22.3,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Yeat's secret instructions revealed",
+  "hook_type": "revelation",
+  "emphasis": [
+   "live",
+   "pull",
+   "lark"
+  ],
+  "caption": "Clix was NOT ready for Yeat's chaotic stream demands #fortnite #yeatxclix #twizzy\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Clix was NOT ready for Yeat's chaotic stream demands",
+  "campaign": "https://contentrewards.com/discover/657e89e0-4a2f-434c-91d2-ca7e140218d1",
+  "created": "2026-10-19T12:59:34.499048+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/qrUYeJzyszM",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-x-yeat-twitch-tw-2902610715-6237.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-x-yeat-twitch-tw-2902610715-6237.tt.mp4",
+  "tiktok_caption": "Clix was NOT ready for Yeat's chaotic stream demands #fortnite #yeatxclix #twizzy",
+  "account": 1,
+  "submission": {
+   "error": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"button\", name=re.compile(r\"^(Submit clip|Enviar clip)$\")).first\n"
+  },
+  "timing_s": {
+   "download": 2,
+   "transcribe+edit+render": 151,
+   "publish+submit": 48,
+   "total": 202
+  }
+ },
+ {
+  "file": "rivers-twitch-tw-2899268423-3372.mp4",
+  "creator": "Rivers (Twitch)",
+  "source": "https://www.twitch.tv/videos/2899268423",
+  "start": 3345.04,
+  "end": 3393.38,
+  "cuts": 11,
+  "length": 20.7,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "Le dice sus verdades en directo",
+  "hook_type": "revelation",
+  "emphasis": [
+   "estúpido",
+   "regalo",
+   "corre"
+  ],
+  "caption": "Rivers reacciona de la forma más graciosa en pleno directo #rivers #stream #clipsespañol\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Rivers reacciona de la forma más graciosa en pleno directo",
+  "campaign": null,
+  "created": "2026-10-19T12:48:12.332737+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/GCg3zWHZLYI",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/rivers-twitch-tw-2899268423-3372.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/rivers-twitch-tw-2899268423-3372.tt.mp4",
+  "tiktok_caption": "Rivers reacciona de la forma más graciosa en pleno directo #rivers #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 2,
+   "transcribe+edit+render": 122,
+   "publish+submit": 7,
+   "total": 132
+  }
+ },
+ {
+  "file": "caseoh-twitch-tw-2899372883-2612.mp4",
+  "creator": "CaseOh (Twitch)",
+  "source": "https://www.twitch.tv/videos/2899372883",
+  "start": 2599.54,
+  "end": 2644.73,
+  "cuts": 7,
+  "length": 20.0,
+  "layout": "none",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "HE FOUND A PHONE NUMBER",
+  "hook_type": "revelation",
+  "emphasis": [
+   "whoa",
+   "number"
+  ],
+  "caption": "CaseOh was NOT ready to see this fan's phone number #caseoh #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "CaseOh was NOT ready to see this fan's phone number",
+  "campaign": null,
+  "created": "2026-10-19T12:37:30.128338+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/ebjtq1sn1QI",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2899372883-2612.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2899372883-2612.tt.mp4",
+  "tiktok_caption": "CaseOh was NOT ready to see this fan's phone number #caseoh #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 2,
+   "transcribe+edit+render": 151,
+   "publish+submit": 6,
+   "total": 160
+  }
+ },
+ {
+  "file": "kai-cenat-twitch-tw-2901714894-10259.mp4",
+  "creator": "Kai Cenat (Twitch)",
+  "source": "https://www.twitch.tv/videos/2901714894",
+  "start": 10230.25,
+  "end": 10254.3,
+  "cuts": 8,
+  "length": 20.0,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "Kai Cenat's instant rage",
+  "hook_type": "stakes",
+  "emphasis": [
+   "stupid",
+   "ass"
+  ],
+  "caption": "Kai Cenat was definitely not ready for this #kaicenat #twitch #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Kai Cenat was definitely not ready for this",
+  "campaign": null,
+  "created": "2026-10-19T12:26:01.330109+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/KOnxDekWlpc",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2901714894-10259.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2901714894-10259.tt.mp4",
+  "tiktok_caption": "Kai Cenat was definitely not ready for this #kaicenat #twitch #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 119,
+   "publish+submit": 7,
+   "total": 128
+  }
+ },
+ {
+  "file": "juansguarnizo-kick-kc-clip-01m540xpgzy5w0aptyezd3pm01.mp4",
+  "creator": "Juansguarnizo (Kick)",
+  "source": "https://clips.kick.com/clips/f1/clip_01M540XPGZY5W0APTYEZD3PM01/playlist.m3u8",
+  "start": 33.839999999999996,
+  "end": 109.94,
+  "cuts": 9,
+  "length": 23.4,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "kick-clip",
+  "score": 90,
+  "hook": "Juan defendiendo a Bere",
+  "hook_type": "stakes",
+  "emphasis": [
+   "hijo de perra",
+   "estúpido",
+   "maduro",
+   "nutrias"
+  ],
+  "caption": "Juansguarnizo explota en plena discusión y se defiende #juansguarnizo #stream #clipsespañol\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Juansguarnizo explota en plena discusión y se defiende",
+  "campaign": null,
+  "created": "2026-10-19T12:12:10.292615+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/Dqb5c8vF-cY",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/juansguarnizo-kick-kc-clip-01m540xpgzy5w0aptyezd3pm01.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/juansguarnizo-kick-kc-clip-01m540xpgzy5w0aptyezd3pm01.tt.mp4",
+  "tiktok_caption": "Juansguarnizo explota en plena discusión y se defiende #juansguarnizo #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 2,
+   "transcribe+edit+render": 172,
+   "publish+submit": 7,
+   "total": 181
+  }
+ },
+ {
   "file": "juansguarnizo-kick-kc-clip-01m4srgzny4je83pgbjk1vt590.mp4",
   "creator": "Juansguarnizo (Kick)",
   "source": "https://clips.kick.com/clips/83/clip_01M4SRGZNY4JE83PGBJK1VT590/playlist.m3u8",
@@ -323,210 +569,6 @@
    "transcribe+edit+render": 212,
    "publish+submit": 6,
    "total": 221
-  }
- },
- {
-  "file": "clix-x-yeat-twitch-tw-2902610715-6237.mp4",
-  "creator": "Clix x Yeat (Twitch)",
-  "source": "https://www.twitch.tv/videos/2902610715",
-  "start": 6259.68,
-  "end": 6284.68,
-  "cuts": 8,
-  "length": 21.6,
-  "layout": "face",
-  "style": "vertical",
-  "mood": "chaos",
-  "signal": "twitch-clip",
-  "score": 85,
-  "hook": "Clix exposed Yeat's crazy instructions",
-  "hook_type": "revelation",
-  "emphasis": [
-   "username",
-   "pull",
-   "up",
-   "lark"
-  ],
-  "caption": "Clix reveals what Yeat actually told him to do #fortnite #yeatxclix #twizzy #fortnite #yeatxclix #twizzy\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
-  "title": "Clix reveals what Yeat actually told him to do #fortnite #yeatxclix #twizzy",
-  "campaign": "https://contentrewards.com/discover/657e89e0-4a2f-434c-91d2-ca7e140218d1",
-  "created": "2026-10-19T10:23:35.330073+00:00",
-  "posts": {
-   "youtube": "https://youtube.com/shorts/5mLCgLZVZN4",
-   "tiktok": "scheduled (PC poster)",
-   "instagram": "skipped (no credentials)"
-  },
-  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-x-yeat-twitch-tw-2902610715-6237.mp4",
-  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-x-yeat-twitch-tw-2902610715-6237.tt.mp4",
-  "tiktok_caption": "Clix reveals what Yeat actually told him to do #fortnite #yeatxclix #twizzy #fortnite #yeatxclix #twizzy",
-  "account": 1,
-  "submission": {
-   "error": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"button\", name=re.compile(r\"^(Submit clip|Enviar clip)$\")).first\n"
-  },
-  "timing_s": {
-   "download": 3,
-   "transcribe+edit+render": 167,
-   "publish+submit": 45,
-   "total": 214
-  }
- },
- {
-  "file": "rivers-twitch-tw-2899268423-3372.mp4",
-  "creator": "Rivers (Twitch)",
-  "source": "https://www.twitch.tv/videos/2899268423",
-  "start": 3345.04,
-  "end": 3390.5,
-  "cuts": 11,
-  "length": 23.1,
-  "layout": "face",
-  "style": "vertical",
-  "mood": "funny",
-  "signal": "twitch-clip",
-  "score": 75,
-  "hook": "Rivers insulta a su peluche",
-  "hook_type": "revelation",
-  "emphasis": [
-   "estúpido",
-   "perro",
-   "regalo",
-   "corre"
-  ],
-  "caption": "Rivers se pasa con este regalo en directo #rivers #stream #clipsespañol\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
-  "title": "Rivers se pasa con este regalo en directo",
-  "campaign": null,
-  "created": "2026-10-19T10:12:34.290058+00:00",
-  "posts": {
-   "youtube": "https://youtube.com/shorts/KjdiABK1HEY",
-   "tiktok": "scheduled (PC poster)",
-   "instagram": "skipped (no credentials)"
-  },
-  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/rivers-twitch-tw-2899268423-3372.mp4",
-  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/rivers-twitch-tw-2899268423-3372.tt.mp4",
-  "tiktok_caption": "Rivers se pasa con este regalo en directo #rivers #stream #clipsespañol",
-  "account": 3,
-  "timing_s": {
-   "download": 4,
-   "transcribe+edit+render": 137,
-   "publish+submit": 7,
-   "total": 147
-  }
- },
- {
-  "file": "caseoh-twitch-tw-2899372883-2612.mp4",
-  "creator": "CaseOh (Twitch)",
-  "source": "https://www.twitch.tv/videos/2899372883",
-  "start": 2611.32,
-  "end": 2644.73,
-  "cuts": 9,
-  "length": 28.0,
-  "layout": "none",
-  "style": "blur",
-  "mood": "chaos",
-  "signal": "twitch-clip",
-  "score": 88,
-  "hook": "He leaked his own number live",
-  "hook_type": "stakes",
-  "emphasis": [
-   "whoa",
-   "number"
-  ],
-  "caption": "CaseOh accidentally leaked his phone number live on stream #caseoh #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
-  "title": "CaseOh accidentally leaked his phone number live on stream",
-  "campaign": null,
-  "created": "2026-10-19T10:00:07.004724+00:00",
-  "posts": {
-   "youtube": "https://youtube.com/shorts/r0bSAFeLCus",
-   "tiktok": "scheduled (PC poster)",
-   "instagram": "skipped (no credentials)"
-  },
-  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2899372883-2612.mp4",
-  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2899372883-2612.tt.mp4",
-  "tiktok_caption": "CaseOh accidentally leaked his phone number live on stream #caseoh #stream #clips",
-  "account": 2,
-  "timing_s": {
-   "download": 3,
-   "transcribe+edit+render": 225,
-   "publish+submit": 6,
-   "total": 234
-  }
- },
- {
-  "file": "kai-cenat-twitch-tw-2901714894-10259.mp4",
-  "creator": "Kai Cenat (Twitch)",
-  "source": "https://www.twitch.tv/videos/2901714894",
-  "start": 10238.18,
-  "end": 10251.54,
-  "cuts": 9,
-  "length": 20.0,
-  "layout": "face",
-  "style": "vertical",
-  "mood": "chaos",
-  "signal": "twitch-clip",
-  "score": 88,
-  "hook": "Kai Cenat's instant regret",
-  "hook_type": "revelation",
-  "emphasis": [
-   "stupid",
-   "ass"
-  ],
-  "caption": "Kai Cenat chaos caught on stream #kaicenat #twitch #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
-  "title": "Kai Cenat chaos caught on stream",
-  "campaign": null,
-  "created": "2026-10-19T09:47:22.948546+00:00",
-  "posts": {
-   "youtube": "https://youtube.com/shorts/Lglsdxp_znM",
-   "tiktok": "scheduled (PC poster)",
-   "instagram": "skipped (no credentials)"
-  },
-  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2901714894-10259.mp4",
-  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2901714894-10259.tt.mp4",
-  "tiktok_caption": "Kai Cenat chaos caught on stream #kaicenat #twitch #streamer",
-  "account": 2,
-  "timing_s": {
-   "download": 5,
-   "transcribe+edit+render": 141,
-   "publish+submit": 6,
-   "total": 152
-  }
- },
- {
-  "file": "juansguarnizo-kick-kc-clip-01m540xpgzy5w0aptyezd3pm01.mp4",
-  "creator": "Juansguarnizo (Kick)",
-  "source": "https://clips.kick.com/clips/f1/clip_01M540XPGZY5W0APTYEZD3PM01/playlist.m3u8",
-  "start": 33.839999999999996,
-  "end": 109.94,
-  "cuts": 8,
-  "length": 20.9,
-  "layout": "inset",
-  "style": "vertical",
-  "mood": "chaos",
-  "signal": "kick-clip",
-  "score": 88,
-  "hook": "Se desató el caos con Juansguarnizo",
-  "hook_type": "revelation",
-  "emphasis": [
-   "hijo",
-   "perra",
-   "maduro",
-   "nutrias"
-  ],
-  "caption": "Juansguarnizo explotó en plena discusión en vivo #juansguarnizo #stream #clipsespañol\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
-  "title": "Juansguarnizo explotó en plena discusión en vivo",
-  "campaign": null,
-  "created": "2026-10-19T09:31:40.992341+00:00",
-  "posts": {
-   "youtube": "https://youtube.com/shorts/sb75DrMgQY0",
-   "tiktok": "scheduled (PC poster)",
-   "instagram": "skipped (no credentials)"
-  },
-  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/juansguarnizo-kick-kc-clip-01m540xpgzy5w0aptyezd3pm01.mp4",
-  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/juansguarnizo-kick-kc-clip-01m540xpgzy5w0aptyezd3pm01.tt.mp4",
-  "tiktok_caption": "Juansguarnizo explotó en plena discusión en vivo #juansguarnizo #stream #clipsespañol",
-  "account": 3,
-  "timing_s": {
-   "download": 31,
-   "transcribe+edit+render": 207,
-   "publish+submit": 6,
-   "total": 244
   }
  },
  {
