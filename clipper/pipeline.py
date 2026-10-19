@@ -213,11 +213,16 @@ def make_clip(moment: dict, creator: str, campaign: dict | None, do_publish: boo
     entry["tiktok_caption"] = f"{edit['title']} {tags}".strip()
     if do_publish:
         entry["posts"] = publish.publish_all(final, edit["title"], caption, public_url, skip=capped_platforms(),
-                                             account=account)
+                                             account=account,
+                                             # Content Rewards needs a live link within 30 min: those go out now.
+                                             schedule_yt=not (entry["campaign"] and "contentrewards" in entry["campaign"]))
         if account is not None:
             entry["account"] = account + 1
         links = [v for v in entry["posts"].values() if isinstance(v, str) and v.startswith("https://")]
-        if links and entry["campaign"]:
+        if links and entry["campaign"] and "vyro.com" in entry["campaign"]:
+            # Vyro has no API: the PC submits from Rafa's Brave (scripts/vyro_submit.py) after posting.
+            entry["submission"] = {"vyro": "pending (PC)"}
+        elif links and entry["campaign"]:
             # Content Rewards only accepts links posted <30 min ago, so submit right away.
             try:
                 entry["submission"] = submit.submit(entry["campaign"], links)

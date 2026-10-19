@@ -10,7 +10,29 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import zlib
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
+
+# Shorts go public at US Eastern peak times (Buffer 2026: Shorts peak 6-9 pm local); YouTube publishes them
+# itself (privacy private + publishAt), so the PC does not need to be on.
+ET = ZoneInfo("America/New_York")
+YT_SLOTS_ET = ["12:00", "15:00", "17:30", "18:30", "19:30", "20:30"]
+_yt_used: list[datetime] = []
+
+
+def next_yt_slot(now: datetime | None = None) -> datetime | None:
+    """Next free ET slot of today (or tomorrow if today's are gone), as UTC. None = publish now."""
+    now = now or datetime.now(timezone.utc)
+    for day in (0, 1):
+        d = (now.astimezone(ET) + timedelta(days=day)).date()
+        for t in YT_SLOTS_ET:
+            h, m = map(int, t.split(":"))
+            at = datetime(d.year, d.month, d.day, h, m, tzinfo=ET).astimezone(timezone.utc)
+            if at > now + timedelta(minutes=20) and at not in _yt_used:
+                _yt_used.append(at)
+                return at
+    return None
 
 
 def _req(url: str, data: bytes | None = None, headers: dict | None = None, method: str | None = None) -> dict:
@@ -34,7 +56,8 @@ def _pick(tokens: list[str], name: str, account: int | None) -> str:
     return tokens[account % len(tokens)] if account is not None else tokens[zlib.crc32(name.encode()) % len(tokens)]
 
 
-def youtube(path: Path, title: str, description: str, account: int | None = None) -> str | None:
+def youtube(path: Path, title: str, description: str, account: int | None = None,
+            schedule: bool = False) -> str | None:
     """Channels (YT_REFRESH_TOKEN, _2, _3...) take turns by clip name, like the TikTok accounts.
     The upload quota belongs to the Google Cloud project, so it is shared by every channel."""
     cid, secret = os.environ.get("YT_CLIENT_ID"), os.environ.get("YT_CLIENT_SECRET")
@@ -49,6 +72,9 @@ def youtube(path: Path, title: str, description: str, account: int | None = None
         "snippet": {"title": title[:95] + " #shorts", "description": description, "categoryId": "20"},
         "status": {"privacyStatus": "public", "selfDeclaredMadeForKids": False},
     }
+    at = next_yt_slot() if schedule else None
+    if at:  # private until publishAt, then YouTube makes it public on its own
+        meta["status"].update(privacyStatus="private", publishAt=at.strftime("%Y-%m-%dT%H:%M:%SZ"))
     size = path.stat().st_size
     req = urllib.request.Request(
         "https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status",
@@ -143,10 +169,10 @@ def instagram(public_url: str | None, caption: str) -> str | None:
 
 
 def publish_all(path: Path, title: str, caption: str, public_url: str | None, skip: set[str] | None = None,
-                account: int | None = None) -> dict:
+                account: int | None = None, schedule_yt: bool = False) -> dict:
     """account: 0-based index of the YouTube channel + TikTok account that get this clip (None = by clip name)."""
     results = {}
-    for name, fn in (("youtube", lambda: youtube(path, title, caption, account)),
+    for name, fn in (("youtube", lambda: youtube(path, title, caption, account, schedule_yt)),
                      ("tiktok", lambda: tiktok_draft(path, account) if os.environ.get("TIKTOK_MODE", "draft") == "draft"
                       else tiktok(path, caption, account)),
                      ("instagram", lambda: instagram(public_url, caption))):

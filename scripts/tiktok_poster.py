@@ -19,6 +19,7 @@ import traceback
 import urllib.error
 import urllib.request
 from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -27,11 +28,14 @@ REPO = "rafaprincipal00-arch/clipper-bot"
 PLAN = ROOT / "data" / "tiktok_plan.json"
 LOG = ROOT / "data" / "tiktok_poster.log"
 WORK = ROOT / "work" / "tiktok"
-# Posting windows (local time): first post ~1 h after the clips exist, the rest spread evenly until
-# LAST_POST, with some jitter. EXPECTED = clips per day (5 per TikTok account).
-FIRST_DELAY_MIN = (45, 90)
-MIN_SPACING_MIN = 35
-LAST_POST = (23, 40)
+# The audience we want is the US: posts go out at US Eastern times (the day is the ET day), packed into
+# the lunch (12-14 h ET) and evening (18-22 h ET) peaks. EXPECTED = 15 = 5 per TikTok account, the top of
+# the 3-5/day range that does not get flagged as spam; accounts alternate, so each one posts every ~2-3 h.
+ET = ZoneInfo("America/New_York")
+SLOTS_ET = ["08:30", "10:00", "11:30", "12:15", "13:00", "14:00", "15:30", "17:00",
+            "18:00", "18:45", "19:30", "20:15", "21:00", "21:45", "22:30"]
+JITTER_MIN = 6
+MIN_SPACING_MIN = 30
 EXPECTED = 15
 NO_WINDOW = 0x08000000
 SYSTEM_GIT = r"C:\Program Files\Git\cmd\git.exe"
@@ -85,9 +89,25 @@ def submit_to_cr(campaign: str, link: str) -> None:
 def load_plan() -> dict:
     if PLAN.exists():
         plan = json.loads(PLAN.read_text(encoding="utf-8"))
-        if plan.get("date") == datetime.now().date().isoformat():
+        if plan.get("date") == et_today().isoformat():
             return plan
-    return {"date": datetime.now().date().isoformat(), "items": []}
+    return {"date": et_today().isoformat(), "items": []}
+
+
+def et_today():
+    return datetime.now(ET).date()
+
+
+def slot_local(hhmm: str) -> datetime:
+    """Today's (ET day) slot as a naive local datetime, like the rest of the plan."""
+    h, m = map(int, hhmm.split(":"))
+    return datetime.combine(et_today(), datetime.min.time()).replace(hour=h, minute=m, tzinfo=ET)         .astimezone().replace(tzinfo=None)
+
+
+def keep_awake(on: bool) -> None:
+    """While posts are pending (some are at night in Spain) keep Windows from sleeping; the screen may sleep."""
+    import ctypes
+    ctypes.windll.kernel32.SetThreadExecutionState(0x80000001 if on else 0x80000000)
 
 
 def save_plan(plan: dict) -> None:
@@ -95,10 +115,10 @@ def save_plan(plan: dict) -> None:
 
 
 def todays_clips() -> list[dict]:
-    today = datetime.now().astimezone().date()
+    today = et_today()
     out = []
     for e in remote_clips():
-        created = datetime.fromisoformat(e["created"]).astimezone()
+        created = datetime.fromisoformat(e["created"]).astimezone(ET)
         if created.date() == today and e.get("account") and e.get("video_url") \
                 and (e.get("posts") or {}).get("tiktok", "").startswith("scheduled"):
             out.append(e)
@@ -108,23 +128,19 @@ def todays_clips() -> list[dict]:
 def schedule(plan: dict, clips: list[dict]) -> None:
     known = {i["file"] for i in plan["items"]}
     last = max((datetime.fromisoformat(i["at"]) for i in plan["items"]), default=None)
-    end = datetime.now().replace(hour=LAST_POST[0], minute=LAST_POST[1], second=0)
     for e in clips:
         if e["file"] in known:
             continue
-        if last is None:
-            at = datetime.now() + timedelta(minutes=random.randint(*FIRST_DELAY_MIN))
-        else:
-            left = max(1, EXPECTED - len(plan["items"]))  # posts still to place, this one included
-            even = (end - last).total_seconds() / 60 / left
-            at = last + timedelta(minutes=max(MIN_SPACING_MIN, even * random.uniform(0.85, 1.15)))
-        at = max(datetime.now() + timedelta(minutes=2), min(at, end))
+        floor = max(datetime.now() + timedelta(minutes=2), (last or datetime.min) + timedelta(minutes=MIN_SPACING_MIN))
+        slots = [slot_local(t) + timedelta(minutes=random.randint(-JITTER_MIN, JITTER_MIN)) for t in SLOTS_ET]
+        at = next((t for t in slots[len(plan["items"]):] if t >= floor), None)             or next((t for t in slots if t >= floor), None) or floor  # late clips still go out
         last = at
         plan["items"].append({"file": e["file"], "account": e["account"], "video_url": e.get("tiktok_url") or e["video_url"],
                               "caption": e.get("tiktok_caption") or e["caption"], "campaign": e.get("campaign"),
                               "mood": e.get("mood"), "song": bool(e.get("tiktok_url")),
                               "at": at.isoformat(timespec="seconds"), "status": "pending"})
-        log(f"planned {e['file']} -> TikTok account {e['account']} at {at:%H:%M}")
+        log(f"planned {e['file']} -> TikTok account {e['account']} at {at:%H:%M} "
+            f"({at.astimezone(ET):%H:%M} ET)")
     save_plan(plan)
 
 
@@ -148,7 +164,15 @@ def do_item(plan: dict, item: dict) -> None:
         url = res["url"]
         item.update(status="posted", url=url, music=res["music"], posted_at=datetime.now().isoformat(timespec="seconds"))
         log(f"posted {item['file']} -> {url}")
-        if item.get("campaign"):
+        if item.get("campaign") and "vyro.com" in item["campaign"]:
+            import vyro_submit  # Rafa's Brave, own invisible window; views before submission don't count
+            try:
+                res_v = vyro_submit.submit(item["campaign"], url)
+                item["submitted"] = res_v == "submitted"
+                log(f"Vyro submit for {url}: {res_v}")
+            except Exception as e:  # noqa: BLE001 — retried by vyro_submit.pending() in the loop
+                log(f"Vyro submit FAILED for {url}: {e}")
+        elif item.get("campaign"):
             submit_to_cr(item["campaign"], url)
             item["submitted"] = True
             log(f"Content Rewards submit dispatched for {url}")
@@ -193,7 +217,8 @@ def run() -> None:
         if not plan["items"] and datetime.now() > deadline:
             log("no clips for today after 3 h; exiting")
             return
-        last_call = datetime.now().replace(hour=LAST_POST[0], minute=LAST_POST[1]) + timedelta(minutes=15)
+        keep_awake(bool(pending))
+        last_call = slot_local(SLOTS_ET[-1]) + timedelta(minutes=JITTER_MIN + 15)
         if plan["items"] and not pending and datetime.now() > last_call:
             log("end of the day; exiting")
             return
@@ -203,6 +228,12 @@ def run() -> None:
             due = []
         for item in due[:1]:
             do_item(plan, item)
+        if datetime.now().minute < 1:  # hourly retry of Vyro submissions that failed
+            try:
+                import vyro_submit
+                vyro_submit.pending(log)
+            except Exception as e:  # noqa: BLE001
+                log(f"Vyro retry pass failed: {e}")
         time.sleep(60)
 
 
