@@ -158,7 +158,12 @@ def make_clip(moment: dict, creator: str, campaign: dict | None, do_publish: boo
         if not words:
             print(f"  skip {moment['id']}: no speech")
             return None
-        edit = (highlights.pick_edit(words, creator, moment["title"], 0, length,
+        camp = campaign or {}
+        # Campaign minimum length (Vyro briefs: 15-30 s) overrides the default floor.
+        min_total = max(highlights.MIN_TOTAL, float(camp.get("min_len", 0)))
+        # Brand briefs (Vyro) forbid any text/audio not tied to the campaign: no burned credit, no CC music bed.
+        clean = bool(camp.get("no_credit"))
+        edit = (highlights.pick_edit(words, creator, moment["title"], 0, length, min_len=int(min_total),
                                      lang=(campaign or {}).get("lang", "English"),
                                      rules=(campaign or {}).get("requirements", ""))
                 or highlights.fallback_edit(words, 0, length))
@@ -166,12 +171,12 @@ def make_clip(moment: dict, creator: str, campaign: dict | None, do_publish: boo
             print(f"  skip {moment['id']}: score {edit['score']}")
             return None
         segs = highlights.micro_cut(edit["segments"], words)
-        if highlights.total(segs) < highlights.MIN_TOTAL:
+        if highlights.total(segs) < min_total:
             # micro-cuts removed pauses: top up with more surrounding context, then cut that too.
             # Added phrases are already pause-free; words=[] keeps silent run-ons and only splits into ~3 s beats.
-            segs = highlights.micro_cut(highlights.pad_to_min(segs, words, 0, length), [])
-        if highlights.total(segs) < highlights.MIN_TOTAL - 0.5:
-            print(f"  skip {moment['id']}: only {highlights.total(segs):.1f}s of material (min {highlights.MIN_TOTAL:.0f}s)")
+            segs = highlights.micro_cut(highlights.pad_to_min(segs, words, 0, length, min_total=min_total), [])
+        if highlights.total(segs) < min_total - 0.5:
+            print(f"  skip {moment['id']}: only {highlights.total(segs):.1f}s of material (min {min_total:.0f}s)")
             return None
         info = layout.analyse(str(raw), min(s for s, _ in segs), max(e for _, e in segs))
         # A/B test: alternate blurred-horizontal and full-vertical framing (stable per clip name).
@@ -182,18 +187,20 @@ def make_clip(moment: dict, creator: str, campaign: dict | None, do_publish: boo
         render.write_ass(render.remap_words(words, segs), 0, sum(e - s for s, e in segs), edit["hook"], ass,
                          emphasis=edit.get("emphasis") or [])
         final = OUT / f"{name}.mp4"
-        render.render_edit(str(raw), segs, info, ass, final, credit=(campaign or {}).get("credit", ""),
-                           mood=mood, style=style)
+        render.render_edit(str(raw), segs, info, ass, final, credit="" if clean else camp.get("credit", ""),
+                           mood=mood, style=style, with_music=not clean)
         # Same edit without the music bed for TikTok, where the poster adds a song from TikTok's library.
         tt_final = OUT / f"{name}.tt.mp4"
-        render.render_edit(str(raw), segs, info, ass, tt_final, credit=(campaign or {}).get("credit", ""),
+        render.render_edit(str(raw), segs, info, ass, tt_final, credit="" if clean else camp.get("credit", ""),
                            mood=mood, style=style, with_music=False)
     # scratch dir (raw window, wav, captions) is gone here; only the edited clip remains.
     t_render = time.time()
     tags = " ".join(f"#{t.lstrip('#')}" for t in (campaign or {}).get("hashtags", []))
     mention = (campaign or {}).get("mention", "")  # tag the campaign requires in every caption
     tags = f"{mention} {tags}".strip()
-    caption = f"{edit['title']} {tags}\n{render.MUSIC_CREDIT}".strip()  # CC BY music must be credited
+    # CC BY music must be credited; brand briefs (no_credit) render without the bed, so no credit line.
+    credit_line = "" if (campaign or {}).get("no_credit") else render.MUSIC_CREDIT
+    caption = f"{edit['title']} {tags}\n{credit_line}".strip()
     entry = {"file": final.name, "creator": creator, "source": moment["url"], "start": moment["start"] + segs[0][0],
              "end": moment["start"] + segs[-1][1], "cuts": len(segs), "length": round(sum(e - s for s, e in segs), 1),
              "layout": info["kind"], "style": style, "mood": mood, "signal": moment["signal"], "score": edit["score"], "hook": edit["hook"],
