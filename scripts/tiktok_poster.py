@@ -10,6 +10,18 @@ TikTok as "scheduled (PC poster)".
 
 Log: data/tiktok_poster.log. Plan/state: data/tiktok_plan.json (both local only).
 """
+import os as _os
+import subprocess as _sp
+import sys as _sys
+# Hermes processes export PYTHONPATH to their own Python 3.14 venv. Inherited by this Python 3.12 daemon it
+# loads cp314 builds of greenlet/pywin32 ("No module named greenlet._greenlet", "DLL load failed while
+# importing win32gui") and every post fails. Site start-up has already run, so restart once with a clean env.
+if _os.environ.get("PYTHONPATH") or _os.environ.get("PYTHONHOME"):
+    _env = {k: v for k, v in _os.environ.items() if k not in ("PYTHONPATH", "PYTHONHOME")}
+    _sp.Popen([_sys.executable, *_sys.argv], env=_env, cwd=_os.getcwd(),
+              creationflags=0x08000000 | 0x00000040 | 0x00000008)  # no window, idle priority, detached
+    _sys.exit(0)
+
 import json
 import random
 import subprocess
@@ -201,6 +213,13 @@ def run() -> None:
     """Started at logon. Waits (up to 3 h) for today's clips, plans them, posts each at its time.
     Exits when EXPECTED clips are handled or, if the cloud run made fewer, at the end of the day."""
     log("poster started")
+    try:  # fail loudly at start, not at the first post of the night
+        import importlib
+        for _m in ("greenlet._greenlet", "win32gui"):
+            importlib.import_module(_m)
+        log("  imports ok (playwright/greenlet, pywin32)")
+    except Exception as e:  # noqa: BLE001
+        log(f"  IMPORT PROBLEM: {e!r}; sys.path={_sys.path[:6]}")
     deadline = datetime.now() + timedelta(hours=3)
     plan = load_plan()
     while True:

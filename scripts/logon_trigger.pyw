@@ -10,6 +10,7 @@ low battery, at most PREFETCH_MAX_MIN minutes so the daily run is never held bac
 Log: data/logon_trigger.log (local only, gitignored).
 """
 import json
+import os
 import subprocess
 import sys
 import time
@@ -55,7 +56,8 @@ def dispatch(token: str) -> None:
 
 def start_tiktok_poster() -> None:
     """Hidden daemon that posts today's clips to TikTok at staggered times (scripts/tiktok_poster.py)."""
-    subprocess.Popen([sys.executable, str(HERE / "scripts" / "tiktok_poster.py"), "run"], cwd=str(HERE),
+    env = {k: v for k, v in os.environ.items() if k not in ("PYTHONPATH", "PYTHONHOME")}  # see tiktok_poster
+    subprocess.Popen([sys.executable, str(HERE / "scripts" / "tiktok_poster.py"), "run"], cwd=str(HERE), env=env,
                      creationflags=NO_WINDOW | 0x00000040, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     log("TikTok poster started")
 
