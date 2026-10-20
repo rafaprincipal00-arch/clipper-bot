@@ -1,5 +1,457 @@
 [
  {
+  "file": "caseoh-twitch-tw-2901948017-4768.mp4",
+  "creator": "CaseOh (Twitch)",
+  "source": "https://www.twitch.tv/videos/2901948017",
+  "start": 4759.36,
+  "end": 4842.9,
+  "cuts": 9,
+  "length": 21.9,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "CaseOh faces a massive giant",
+  "hook_type": "stakes",
+  "emphasis": [
+   "eat",
+   "biggest",
+   "shock",
+   "blasting",
+   "quarantine"
+  ],
+  "caption": "CaseOh was NOT ready for this absolute giant #caseoh #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "CaseOh was NOT ready for this absolute giant",
+  "campaign": null,
+  "created": "2026-10-20T11:21:25.284292+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2901948017-4768.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2901948017-4768.tt.mp4",
+  "tiktok_caption": "CaseOh was NOT ready for this absolute giant #caseoh #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 150,
+   "publish+submit": 5,
+   "total": 160
+  }
+ },
+ {
+  "file": "westcol-kick-kc-clip-01m4z3r7d94nemjz3arrg71ghq.mp4",
+  "creator": "Westcol (Kick)",
+  "source": "https://clips.kick.com/clips/28/clip_01M4Z3R7D94NEMJZ3ARRG71GHQ/playlist.m3u8",
+  "start": 9.16099999999998,
+  "end": 32.001,
+  "cuts": 14,
+  "length": 20.0,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "kick-clip",
+  "score": 75,
+  "hook": "Blessd se asusta con el robot",
+  "hook_type": "stakes",
+  "emphasis": [
+   "¡Ay!",
+   "¡Pare!",
+   "levantar"
+  ],
+  "caption": "Westcol y Blessd sufren el ataque del robot en directo #westcol #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Westcol y Blessd sufren el ataque del robot en directo",
+  "campaign": null,
+  "created": "2026-10-20T11:09:17.980921+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/westcol-kick-kc-clip-01m4z3r7d94nemjz3arrg71ghq.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/westcol-kick-kc-clip-01m4z3r7d94nemjz3arrg71ghq.tt.mp4",
+  "tiktok_caption": "Westcol y Blessd sufren el ataque del robot en directo #westcol #kick #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 11,
+   "transcribe+edit+render": 113,
+   "publish+submit": 10,
+   "total": 134
+  }
+ },
+ {
+  "file": "caseoh-twitch-tw-2900227157-6100.mp4",
+  "creator": "CaseOh (Twitch)",
+  "source": "https://www.twitch.tv/videos/2900227157",
+  "start": 6136.55,
+  "end": 6148.54,
+  "cuts": 10,
+  "length": 21.4,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "CaseOh is terrified of this arcade",
+  "hook_type": "stakes",
+  "emphasis": [
+   "scared",
+   "ominous",
+   "arcade"
+  ],
+  "caption": "CaseOh was NOT ready for this arcade trip #caseoh #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "CaseOh was NOT ready for this arcade trip",
+  "campaign": null,
+  "created": "2026-10-20T10:58:24.997239+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2900227157-6100.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2900227157-6100.tt.mp4",
+  "tiktok_caption": "CaseOh was NOT ready for this arcade trip #caseoh #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 153,
+   "publish+submit": 5,
+   "total": 162
+  }
+ },
+ {
+  "file": "auronplay-twitch-tw-2900590088-3459.mp4",
+  "creator": "Auronplay (Twitch)",
+  "source": "https://www.twitch.tv/videos/2900590088",
+  "start": 3469.42,
+  "end": 3462.52,
+  "cuts": 11,
+  "length": 23.3,
+  "layout": "face",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "AURON EXPONE EL ERROR DE PEREIRA",
+  "hook_type": "revelation",
+  "emphasis": [
+   "oportunidad",
+   "escapar",
+   "enleído",
+   "celoso"
+  ],
+  "caption": "Auronplay destruye sin piedad a Pereira por perder su oportunidad #auronplay #stream #clipsespañol\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Auronplay destruye sin piedad a Pereira por perder su oportunidad",
+  "campaign": null,
+  "created": "2026-10-20T10:45:55.390764+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2900590088-3459.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2900590088-3459.tt.mp4",
+  "tiktok_caption": "Auronplay destruye sin piedad a Pereira por perder su oportunidad #auronplay #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 6,
+   "transcribe+edit+render": 125,
+   "publish+submit": 5,
+   "total": 136
+  }
+ },
+ {
+  "file": "stable-ronaldo-twitch-tw-2904593598-11156.mp4",
+  "creator": "Stable Ronaldo (Twitch)",
+  "source": "https://www.twitch.tv/videos/2904593598",
+  "start": 11140.35,
+  "end": 11188.06,
+  "cuts": 10,
+  "length": 21.3,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "Stable Ronaldo catches insane screams",
+  "hook_type": "revelation",
+  "emphasis": [
+   "screaming",
+   "annoying",
+   "room",
+   "What"
+  ],
+  "caption": "Stable Ronaldo was NOT ready for this room noise #stableronaldo #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Stable Ronaldo was NOT ready for this room noise",
+  "campaign": null,
+  "created": "2026-10-20T10:34:42.681020+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/stable-ronaldo-twitch-tw-2904593598-11156.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/stable-ronaldo-twitch-tw-2904593598-11156.tt.mp4",
+  "tiktok_caption": "Stable Ronaldo was NOT ready for this room noise #stableronaldo #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 124,
+   "publish+submit": 5,
+   "total": 133
+  }
+ },
+ {
+  "file": "clix-twitch-tw-2904594902-3940.mp4",
+  "creator": "Clix (Twitch)",
+  "source": "https://www.twitch.tv/videos/2904594902",
+  "start": 3973.44,
+  "end": 3993.86,
+  "cuts": 18,
+  "length": 21.2,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "hype",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Clix hits the craziest prefire",
+  "hook_type": "revelation",
+  "emphasis": [
+   "god",
+   "juice",
+   "ulti"
+  ],
+  "caption": "Clix was not ready for this insane play #Clix #fortnite #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Clix was not ready for this insane play",
+  "campaign": "https://contentrewards.com/c/campaigns/7a6a234b-1e9e-4da3-a600-54cc3142e710",
+  "created": "2026-10-20T10:22:51.540703+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/zygy8N_x2Sk",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2904594902-3940.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2904594902-3940.tt.mp4",
+  "tiktok_caption": "Clix was not ready for this insane play #Clix #fortnite #streamer",
+  "account": 1,
+  "submission": {
+   "error": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"button\", name=re.compile(r\"^(Submit clip|Enviar clip)$\")).first\n"
+  },
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 98,
+   "publish+submit": 46,
+   "total": 149
+  }
+ },
+ {
+  "file": "rivers-twitch-tw-2900168095-7679.mp4",
+  "creator": "Rivers (Twitch)",
+  "source": "https://www.twitch.tv/videos/2900168095",
+  "start": 7662.4,
+  "end": 7728.22,
+  "cuts": 9,
+  "length": 21.2,
+  "layout": "face",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Le dejó la nariz roja",
+  "hook_type": "revelation",
+  "emphasis": [
+   "talco",
+   "ojo",
+   "nariz",
+   "sticker"
+  ],
+  "caption": "Rivers arruinó todo el maquillaje en vivo #rivers #stream #clipsespañol\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Rivers arruinó todo el maquillaje en vivo",
+  "campaign": null,
+  "created": "2026-10-20T10:12:54.425785+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/ToIalSn-tV0",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/rivers-twitch-tw-2900168095-7679.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/rivers-twitch-tw-2900168095-7679.tt.mp4",
+  "tiktok_caption": "Rivers arruinó todo el maquillaje en vivo #rivers #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 123,
+   "publish+submit": 8,
+   "total": 136
+  }
+ },
+ {
+  "file": "jynxzi-twitch-tw-2899844366-3810.mp4",
+  "creator": "Jynxzi (Twitch)",
+  "source": "https://www.twitch.tv/videos/2899844366",
+  "start": 3775.82,
+  "end": 3823.96,
+  "cuts": 10,
+  "length": 27.2,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "Your smile ruins my day",
+  "hook_type": "revelation",
+  "emphasis": [
+   "smile",
+   "ruins",
+   "day",
+   "chat",
+   "god"
+  ],
+  "caption": "Jynxzi was NOT ready for chat to roast him #jynxzi #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Jynxzi was NOT ready for chat to roast him",
+  "campaign": null,
+  "created": "2026-10-20T10:02:24.924470+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/vivsU2N5zN4",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/jynxzi-twitch-tw-2899844366-3810.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/jynxzi-twitch-tw-2899844366-3810.tt.mp4",
+  "tiktok_caption": "Jynxzi was NOT ready for chat to roast him #jynxzi #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 121,
+   "publish+submit": 8,
+   "total": 134
+  }
+ },
+ {
+  "file": "auronplay-twitch-tw-2901489194-5131.mp4",
+  "creator": "Auronplay (Twitch)",
+  "source": "https://www.twitch.tv/videos/2901489194",
+  "start": 5106.98,
+  "end": 5130.08,
+  "cuts": 8,
+  "length": 21.5,
+  "layout": "face",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 82,
+  "hook": "Auronplay le pide ropa a Ibai",
+  "hook_type": "revelation",
+  "emphasis": [
+   "Koi",
+   "Ibai",
+   "ropa"
+  ],
+  "caption": "Auronplay expone la verdad sobre la ropa de Ibai #auronplay #stream #clipsespañol\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Auronplay expone la verdad sobre la ropa de Ibai",
+  "campaign": null,
+  "created": "2026-10-20T09:51:58.877367+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/RZoz5MILM7A",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2901489194-5131.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2901489194-5131.tt.mp4",
+  "tiktok_caption": "Auronplay expone la verdad sobre la ropa de Ibai #auronplay #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 6,
+   "transcribe+edit+render": 114,
+   "publish+submit": 8,
+   "total": 128
+  }
+ },
+ {
+  "file": "westcol-kick-kc-clip-01m56hcr20cc8mts76v41vg1d5.mp4",
+  "creator": "Westcol (Kick)",
+  "source": "https://clips.kick.com/clips/6d/clip_01M56HCR20CC8MTS76V41VG1D5/playlist.m3u8",
+  "start": 0.0,
+  "end": 48.69,
+  "cuts": 16,
+  "length": 20.6,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "kick-clip",
+  "score": 78,
+  "hook": "¡Hizo exactamente lo que no debía!",
+  "hook_type": "revelation",
+  "emphasis": [
+   "tramposos",
+   "salvarla",
+   "hizo",
+   "siga"
+  ],
+  "caption": "Westcol se vuelve loco en pleno directo #westcol #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Westcol se vuelve loco en pleno directo",
+  "campaign": null,
+  "created": "2026-10-20T09:41:48.388177+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/HEUH-eZ3sZE",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/westcol-kick-kc-clip-01m56hcr20cc8mts76v41vg1d5.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/westcol-kick-kc-clip-01m56hcr20cc8mts76v41vg1d5.tt.mp4",
+  "tiktok_caption": "Westcol se vuelve loco en pleno directo #westcol #kick #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 9,
+   "transcribe+edit+render": 155,
+   "publish+submit": 8,
+   "total": 171
+  }
+ },
+ {
+  "file": "xqc-kick-kc-clip-01m5b84dtx873t6pppfjgk6f7a.mp4",
+  "creator": "xQc (Kick)",
+  "source": "https://clips.kick.com/clips/6d/clip_01M5B84DTX873T6PPPFJGK6F7A/playlist.m3u8",
+  "start": 29.12,
+  "end": 80.82,
+  "cuts": 12,
+  "length": 29.8,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "kick-clip",
+  "score": 85,
+  "hook": "HE JUST SNAPPED LIVE",
+  "hook_type": "revelation",
+  "emphasis": [
+   "bitch",
+   "Fuck",
+   "famous",
+   "speed"
+  ],
+  "caption": "xQc completely loses it on stream #xqc #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "xQc completely loses it on stream",
+  "campaign": null,
+  "created": "2026-10-20T09:28:59.503791+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/49Syz1P2798",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/xqc-kick-kc-clip-01m5b84dtx873t6pppfjgk6f7a.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/xqc-kick-kc-clip-01m5b84dtx873t6pppfjgk6f7a.tt.mp4",
+  "tiktok_caption": "xQc completely loses it on stream #xqc #kick #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 2,
+   "transcribe+edit+render": 150,
+   "publish+submit": 8,
+   "total": 161
+  }
+ },
+ {
   "file": "juansguarnizo-kick-kc-clip-01m542vm2x9r9dxxa3knh29y8v.mp4",
   "creator": "Juansguarnizo (Kick)",
   "source": "https://clips.kick.com/clips/3a/clip_01M542VM2X9R9DXXA3KNH29Y8V/playlist.m3u8",

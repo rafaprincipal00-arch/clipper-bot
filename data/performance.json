@@ -1,26 +1,26 @@
 {
- "updated": "2026-10-19T22:44:30+00:00",
+ "updated": "2026-10-20T09:25:53+00:00",
  "clips": 61,
  "by_creator": {
   "Ibai (Twitch)": {
    "clips": 3,
-   "views": 1989,
-   "avg_views": 663
+   "views": 1994,
+   "avg_views": 665
   },
   "Stable Ronaldo (Twitch)": {
    "clips": 3,
-   "views": 1652,
-   "avg_views": 551
+   "views": 1738,
+   "avg_views": 579
   },
   "Clix (Twitch)": {
    "clips": 1,
-   "views": 2460,
-   "avg_views": 2460
+   "views": 3320,
+   "avg_views": 3320
   },
   "Clix x Yeat (Twitch)": {
    "clips": 1,
-   "views": 1764,
-   "avg_views": 1764
+   "views": 2369,
+   "avg_views": 2369
   },
   "Kai Cenat (Twitch)": {
    "clips": 4,
@@ -29,13 +29,13 @@
   },
   "Auronplay (Twitch)": {
    "clips": 3,
-   "views": 4394,
-   "avg_views": 1465
+   "views": 4573,
+   "avg_views": 1524
   },
   "Rivers (Twitch)": {
    "clips": 1,
-   "views": 1132,
-   "avg_views": 1132
+   "views": 1140,
+   "avg_views": 1140
   },
   "Ice Poseidon (Kick)": {
    "clips": 1,
@@ -44,8 +44,8 @@
   },
   "Fanum (Twitch)": {
    "clips": 1,
-   "views": 35,
-   "avg_views": 35
+   "views": 36,
+   "avg_views": 36
   },
   "N3on (Kick)": {
    "clips": 1,
@@ -64,8 +64,8 @@
   },
   "Spreen (Kick)": {
    "clips": 3,
-   "views": 5442,
-   "avg_views": 1814
+   "views": 5484,
+   "avg_views": 1828
   },
   "Jynxzi (Twitch)": {
    "clips": 1,
@@ -89,8 +89,8 @@
   },
   "Lanah Cherry (Twitch)": {
    "clips": 11,
-   "views": 15302,
-   "avg_views": 1391
+   "views": 15310,
+   "avg_views": 1392
   },
   "TJR": {
    "clips": 17,
@@ -99,8 +99,8 @@
   },
   "Michael Porter Jr. (Curious Mike)": {
    "clips": 1,
-   "views": 2584,
-   "avg_views": 2584
+   "views": 2585,
+   "avg_views": 2585
   }
  },
  "top": [
@@ -116,26 +116,26 @@
    "id": "Et3rAIR30iQ"
   },
   {
+   "creator": "Clix (Twitch)",
+   "hook": "CLIX HEARS THE WILDEST CONFESSION",
+   "title": "Shocked Clix cannot believe what his viewer admitted",
+   "mood": "awkward",
+   "hook_type": "revelation",
+   "score": 78,
+   "views": 3320,
+   "likes": 31,
+   "id": "49m7bG834X0"
+  },
+  {
    "creator": "Spreen (Kick)",
    "hook": "No podía creer lo que pasaba",
    "title": "Spreen reaccionó totalmente descolocado en pleno directo",
    "mood": "chaos",
    "hook_type": "revelation",
    "score": 75,
-   "views": 2961,
+   "views": 3003,
    "likes": 55,
    "id": "REDP_AloN5A"
-  },
-  {
-   "creator": "Lanah Cherry (Twitch)",
-   "hook": "Worst dating story ever",
-   "title": "Lanah Cherry was DONE with dating after THIS",
-   "mood": "funny",
-   "hook_type": "revelation",
-   "score": 88,
-   "views": 2633,
-   "likes": 23,
-   "id": "HVX_1C1azwo"
   },
   {
    "creator": "Auronplay (Twitch)",
@@ -144,9 +144,20 @@
    "mood": "funny",
    "hook_type": "revelation",
    "score": 85,
-   "views": 2624,
+   "views": 2686,
    "likes": 56,
    "id": "odUXPRp9A9M"
+  },
+  {
+   "creator": "Lanah Cherry (Twitch)",
+   "hook": "Worst dating story ever",
+   "title": "Lanah Cherry was DONE with dating after THIS",
+   "mood": "funny",
+   "hook_type": "revelation",
+   "score": 88,
+   "views": 2640,
+   "likes": 23,
+   "id": "HVX_1C1azwo"
   },
   {
    "creator": "Michael Porter Jr. (Curious Mike)",
@@ -155,20 +166,9 @@
    "mood": "funny",
    "hook_type": "revelation",
    "score": 82,
-   "views": 2584,
+   "views": 2585,
    "likes": 19,
    "id": "fn5qryHKOII"
-  },
-  {
-   "creator": "Clix (Twitch)",
-   "hook": "CLIX HEARS THE WILDEST CONFESSION",
-   "title": "Shocked Clix cannot believe what his viewer admitted",
-   "mood": "awkward",
-   "hook_type": "revelation",
-   "score": 78,
-   "views": 2460,
-   "likes": 24,
-   "id": "49m7bG834X0"
   },
   {
    "creator": "Harrison Webb ($7 vs $115 English Breakfast)",
@@ -182,15 +182,15 @@
    "id": "j47DAnVhXOo"
   },
   {
-   "creator": "Lanah Cherry (Twitch)",
-   "hook": "His car got totaled live",
-   "title": "Lanah Cherry reacts to an absolute disaster live",
-   "mood": "chaos",
-   "hook_type": "stakes",
+   "creator": "Clix x Yeat (Twitch)",
+   "hook": "YEAT FINALLY SPOKE ON STREAM",
+   "title": "Clix was NOT ready when Yeat spoke on Fortnite",
+   "mood": "funny",
+   "hook_type": "revelation",
    "score": 88,
-   "views": 2029,
-   "likes": 16,
-   "id": "0sGwQBvKmo0"
+   "views": 2369,
+   "likes": 34,
+   "id": "OW9Fq6UoOrk"
   }
  ],
  "bottom": [
