@@ -47,7 +47,8 @@ def log(*a: object) -> None:
 
 
 def github_token() -> str:
-    out = subprocess.run(["git", "credential", "fill"], input="protocol=https\nhost=github.com\n\n",
+    # PATH git (Hermes portable) pops a credential picker and hangs: use the system git.
+    out = subprocess.run([r"C:\Program Files\Git\cmd\git.exe", "credential", "fill"], input="protocol=https\nhost=github.com\n\n",
                          capture_output=True, text=True, creationflags=NO_WINDOW, timeout=60).stdout
     return next(x.split("=", 1)[1] for x in out.splitlines() if x.startswith("password="))
 
