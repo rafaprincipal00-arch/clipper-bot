@@ -147,6 +147,10 @@ def main() -> None:
         return
     sources = [s for s in remote_json("config/sources.json", [])
                if s.get("enabled") and "youtube.com" in (s.get("source") or "")]
+    # Paid sources first (Vyro / campaigns), so a time-boxed run spends its minutes where the money is.
+    sources.sort(key=lambda s: (s.get("platform") != "vyro", not s.get("campaign_url")))
+    if os.environ.get("PREFETCH_ONLY"):
+        sources = [s for s in sources if s.get("platform") == os.environ["PREFETCH_ONLY"]]
     seen = set(remote_json("data/seen.json", []))
     rel = draft_release()
     manifest = []
@@ -178,8 +182,13 @@ def main() -> None:
             dest.unlink(missing_ok=True)
             manifest.append({"creator": src["creator"], "asset": name, "moment": m})
             log(f"  uploaded {name} ({m['title'][:50]})")
+            save_manifest(manifest)  # after every window: a run stopped by the logon time-box keeps its work
     for full in cache.values():  # whole episodes never stay on disk
         full.unlink(missing_ok=True)
+    save_manifest(manifest)
+
+
+def save_manifest(manifest: list) -> None:
     mf = WORK / "prefetch.json"
     mf.write_text(json.dumps(manifest, ensure_ascii=False), encoding="utf-8")
     upload(draft_release(), mf, "application/json")
