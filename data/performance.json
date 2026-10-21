@@ -1,41 +1,66 @@
 {
- "updated": "2026-10-20T09:25:53+00:00",
- "clips": 61,
+ "updated": "2026-10-21T10:21:22+00:00",
+ "clips": 73,
  "by_creator": {
-  "Ibai (Twitch)": {
+  "Rivers (Twitch)": {
    "clips": 3,
-   "views": 1994,
-   "avg_views": 665
+   "views": 1721,
+   "avg_views": 574
   },
-  "Stable Ronaldo (Twitch)": {
-   "clips": 3,
-   "views": 1738,
-   "avg_views": 579
-  },
-  "Clix (Twitch)": {
-   "clips": 1,
-   "views": 3320,
-   "avg_views": 3320
-  },
-  "Clix x Yeat (Twitch)": {
-   "clips": 1,
-   "views": 2369,
-   "avg_views": 2369
-  },
-  "Kai Cenat (Twitch)": {
-   "clips": 4,
-   "views": 3384,
-   "avg_views": 846
+  "Jynxzi (Twitch)": {
+   "clips": 2,
+   "views": 2178,
+   "avg_views": 1089
   },
   "Auronplay (Twitch)": {
-   "clips": 3,
-   "views": 4573,
-   "avg_views": 1524
+   "clips": 4,
+   "views": 5650,
+   "avg_views": 1412
   },
-  "Rivers (Twitch)": {
+  "Westcol (Kick)": {
+   "clips": 4,
+   "views": 957,
+   "avg_views": 239
+  },
+  "xQc (Kick)": {
    "clips": 1,
-   "views": 1140,
-   "avg_views": 1140
+   "views": 0,
+   "avg_views": 0
+  },
+  "Clix (Twitch)": {
+   "clips": 2,
+   "views": 5711,
+   "avg_views": 2856
+  },
+  "Clix x Yeat (Twitch)": {
+   "clips": 2,
+   "views": 4471,
+   "avg_views": 2236
+  },
+  "CaseOh (Twitch)": {
+   "clips": 2,
+   "views": 922,
+   "avg_views": 461
+  },
+  "Kai Cenat (Twitch)": {
+   "clips": 5,
+   "views": 3384,
+   "avg_views": 677
+  },
+  "Juansguarnizo (Kick)": {
+   "clips": 1,
+   "views": 1019,
+   "avg_views": 1019
+  },
+  "Stable Ronaldo (Twitch)": {
+   "clips": 4,
+   "views": 3043,
+   "avg_views": 761
+  },
+  "Ibai (Twitch)": {
+   "clips": 3,
+   "views": 2105,
+   "avg_views": 702
   },
   "Ice Poseidon (Kick)": {
    "clips": 1,
@@ -57,25 +82,10 @@
    "views": 11,
    "avg_views": 6
   },
-  "CaseOh (Twitch)": {
-   "clips": 1,
-   "views": 896,
-   "avg_views": 896
-  },
   "Spreen (Kick)": {
    "clips": 3,
-   "views": 5484,
-   "avg_views": 1828
-  },
-  "Jynxzi (Twitch)": {
-   "clips": 1,
-   "views": 1083,
-   "avg_views": 1083
-  },
-  "Westcol (Kick)": {
-   "clips": 3,
-   "views": 70,
-   "avg_views": 23
+   "views": 5487,
+   "avg_views": 1829
   },
   "Harrison Webb ($7 vs $115 English Breakfast)": {
    "clips": 1,
@@ -89,7 +99,7 @@
   },
   "Lanah Cherry (Twitch)": {
    "clips": 11,
-   "views": 15310,
+   "views": 15316,
    "avg_views": 1392
   },
   "TJR": {
@@ -99,11 +109,22 @@
   },
   "Michael Porter Jr. (Curious Mike)": {
    "clips": 1,
-   "views": 2585,
-   "avg_views": 2585
+   "views": 2586,
+   "avg_views": 2586
   }
  },
  "top": [
+  {
+   "creator": "Clix (Twitch)",
+   "hook": "CLIX HEARS THE WILDEST CONFESSION",
+   "title": "Shocked Clix cannot believe what his viewer admitted",
+   "mood": "awkward",
+   "hook_type": "revelation",
+   "score": 78,
+   "views": 4517,
+   "likes": 40,
+   "id": "49m7bG834X0"
+  },
   {
    "creator": "Lanah Cherry (Twitch)",
    "hook": "I gotta scam old people",
@@ -116,24 +137,13 @@
    "id": "Et3rAIR30iQ"
   },
   {
-   "creator": "Clix (Twitch)",
-   "hook": "CLIX HEARS THE WILDEST CONFESSION",
-   "title": "Shocked Clix cannot believe what his viewer admitted",
-   "mood": "awkward",
-   "hook_type": "revelation",
-   "score": 78,
-   "views": 3320,
-   "likes": 31,
-   "id": "49m7bG834X0"
-  },
-  {
    "creator": "Spreen (Kick)",
    "hook": "No podía creer lo que pasaba",
    "title": "Spreen reaccionó totalmente descolocado en pleno directo",
    "mood": "chaos",
    "hook_type": "revelation",
    "score": 75,
-   "views": 3003,
+   "views": 3005,
    "likes": 55,
    "id": "REDP_AloN5A"
   },
@@ -144,9 +154,20 @@
    "mood": "funny",
    "hook_type": "revelation",
    "score": 85,
-   "views": 2686,
+   "views": 2695,
    "likes": 56,
    "id": "odUXPRp9A9M"
+  },
+  {
+   "creator": "Clix x Yeat (Twitch)",
+   "hook": "YEAT FINALLY SPOKE ON STREAM",
+   "title": "Clix was NOT ready when Yeat spoke on Fortnite",
+   "mood": "funny",
+   "hook_type": "revelation",
+   "score": 88,
+   "views": 2677,
+   "likes": 37,
+   "id": "OW9Fq6UoOrk"
   },
   {
    "creator": "Lanah Cherry (Twitch)",
@@ -155,7 +176,7 @@
    "mood": "funny",
    "hook_type": "revelation",
    "score": 88,
-   "views": 2640,
+   "views": 2643,
    "likes": 23,
    "id": "HVX_1C1azwo"
   },
@@ -166,7 +187,7 @@
    "mood": "funny",
    "hook_type": "revelation",
    "score": 82,
-   "views": 2585,
+   "views": 2586,
    "likes": 19,
    "id": "fn5qryHKOII"
   },
@@ -180,42 +201,9 @@
    "views": 2431,
    "likes": 34,
    "id": "j47DAnVhXOo"
-  },
-  {
-   "creator": "Clix x Yeat (Twitch)",
-   "hook": "YEAT FINALLY SPOKE ON STREAM",
-   "title": "Clix was NOT ready when Yeat spoke on Fortnite",
-   "mood": "funny",
-   "hook_type": "revelation",
-   "score": 88,
-   "views": 2369,
-   "likes": 34,
-   "id": "OW9Fq6UoOrk"
   }
  ],
  "bottom": [
-  {
-   "creator": "Lanah Cherry (Twitch)",
-   "hook": "WHAT IS SPICY SWIPE?",
-   "title": null,
-   "mood": null,
-   "hook_type": null,
-   "score": 65,
-   "views": 7,
-   "likes": 0,
-   "id": "SHORn6fpgoY"
-  },
-  {
-   "creator": "Lacy (Twitch)",
-   "hook": "Blueface owes him a free seafood",
-   "title": "Lacy goes off over a terrible seafood order",
-   "mood": "chaos",
-   "hook_type": "stakes",
-   "score": 75,
-   "views": 6,
-   "likes": 0,
-   "id": "Jh6hh0T0SgQ"
-  },
   {
    "creator": "Lacy (Twitch)",
    "hook": "He just repeated it",
@@ -248,6 +236,28 @@
    "views": 2,
    "likes": 0,
    "id": "aTghBz7sxWE"
+  },
+  {
+   "creator": "xQc (Kick)",
+   "hook": "HE JUST SNAPPED LIVE",
+   "title": "xQc completely loses it on stream",
+   "mood": "chaos",
+   "hook_type": "revelation",
+   "score": 85,
+   "views": 0,
+   "likes": 0,
+   "id": "49Syz1P2798"
+  },
+  {
+   "creator": "Kai Cenat (Twitch)",
+   "hook": "Kai Cenat's instant rage",
+   "title": "Kai Cenat was definitely not ready for this",
+   "mood": "chaos",
+   "hook_type": "stakes",
+   "score": 85,
+   "views": 0,
+   "likes": 0,
+   "id": "KOnxDekWlpc"
   },
   {
    "creator": "Kai Cenat (Twitch)",

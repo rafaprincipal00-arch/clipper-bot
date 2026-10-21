@@ -1,5 +1,248 @@
 [
  {
+  "file": "rivers-twitch-tw-2902849655-904.mp4",
+  "creator": "Rivers (Twitch)",
+  "source": "https://www.twitch.tv/videos/2902849655",
+  "start": 911.96,
+  "end": 944.1,
+  "cuts": 10,
+  "length": 27.4,
+  "layout": "face",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 73,
+  "hook": "LA DEJARON FUERA DEL DISFRAZ",
+  "hook_type": "contrarian",
+  "emphasis": [
+   "Spider -Man",
+   "Iron",
+   "Venom"
+  ],
+  "caption": "Rivers indignada porque la traicionaron con su disfraz #rivers #stream #clipsespañol\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Rivers indignada porque la traicionaron con su disfraz",
+  "campaign": null,
+  "created": "2026-10-21T11:27:29.201475+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/ZWTfYOQ65Q0",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/rivers-twitch-tw-2902849655-904.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/rivers-twitch-tw-2902849655-904.tt.mp4",
+  "tiktok_caption": "Rivers indignada porque la traicionaron con su disfraz #rivers #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 198,
+   "publish+submit": 7,
+   "total": 207
+  }
+ },
+ {
+  "file": "auronplay-twitch-tw-2900590088-7234.mp4",
+  "creator": "Auronplay (Twitch)",
+  "source": "https://www.twitch.tv/videos/2900590088",
+  "start": 7209.06,
+  "end": 7236.84,
+  "cuts": 14,
+  "length": 23.1,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "CHÚPATE ESA PEREIRA",
+  "hook_type": "revelation",
+  "emphasis": [
+   "Chúpate",
+   "Pereira",
+   "conmigo"
+  ],
+  "caption": "Auronplay destruye a Pereira en directo #auronplay #stream #clipsespañol\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Auronplay destruye a Pereira en directo",
+  "campaign": null,
+  "created": "2026-10-21T11:15:08.771648+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/_R5WcoixNaw",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2900590088-7234.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2900590088-7234.tt.mp4",
+  "tiktok_caption": "Auronplay destruye a Pereira en directo #auronplay #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 171,
+   "publish+submit": 7,
+   "total": 181
+  }
+ },
+ {
+  "file": "rivers-twitch-tw-2900985058-3442.mp4",
+  "creator": "Rivers (Twitch)",
+  "source": "https://www.twitch.tv/videos/2900985058",
+  "start": 3480.86,
+  "end": 3524.14,
+  "cuts": 16,
+  "length": 20.7,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "Ojalá agarre todo fuego",
+  "hook_type": "revelation",
+  "emphasis": [
+   "fuego",
+   "bonitos",
+   "cabalaza"
+  ],
+  "caption": "Rivers destruye todo en Minecraft #rivers #stream #clipsespañol\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Rivers destruye todo en Minecraft",
+  "campaign": null,
+  "created": "2026-10-21T11:02:26.760172+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/ITST6cX_hH4",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/rivers-twitch-tw-2900985058-3442.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/rivers-twitch-tw-2900985058-3442.tt.mp4",
+  "tiktok_caption": "Rivers destruye todo en Minecraft #rivers #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 7,
+   "transcribe+edit+render": 135,
+   "publish+submit": 7,
+   "total": 149
+  }
+ },
+ {
+  "file": "auronplay-twitch-tw-2900590088-7215.mp4",
+  "creator": "Auronplay (Twitch)",
+  "source": "https://www.twitch.tv/videos/2900590088",
+  "start": 7189.35,
+  "end": 7220.15,
+  "cuts": 9,
+  "length": 25.9,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 81,
+  "hook": "AURONPLAY O PEREIRA: ¿A QUIÉN ELIGE?",
+  "hook_type": "stakes",
+  "emphasis": [
+   "honestamente",
+   "Pereira",
+   "cenar",
+   "conmigo"
+  ],
+  "caption": "Auronplay humilla a Pereira de la forma más inesperada #auronplay #stream #clipsespañol\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Auronplay humilla a Pereira de la forma más inesperada",
+  "campaign": null,
+  "created": "2026-10-21T10:51:14.576963+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/sILQkpPqciE",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2900590088-7215.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2900590088-7215.tt.mp4",
+  "tiktok_caption": "Auronplay humilla a Pereira de la forma más inesperada #auronplay #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 6,
+   "transcribe+edit+render": 191,
+   "publish+submit": 6,
+   "total": 204
+  }
+ },
+ {
+  "file": "caseoh-twitch-tw-2905597998-5097.mp4",
+  "creator": "CaseOh (Twitch)",
+  "source": "https://www.twitch.tv/videos/2905597998",
+  "start": 5119.11,
+  "end": 5156.08,
+  "cuts": 11,
+  "length": 20.1,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "awkward",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Meeting her dad was a disaster",
+  "hook_type": "revelation",
+  "emphasis": [
+   "drunk",
+   "interesting",
+   "racist",
+   "weird"
+  ],
+  "caption": "CaseOh reacts to the most awkward dad meeting ever #caseoh #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "CaseOh reacts to the most awkward dad meeting ever",
+  "campaign": null,
+  "created": "2026-10-21T10:39:03.890002+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/xZR1eHMllHs",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2905597998-5097.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2905597998-5097.tt.mp4",
+  "tiktok_caption": "CaseOh reacts to the most awkward dad meeting ever #caseoh #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 2,
+   "transcribe+edit+render": 158,
+   "publish+submit": 6,
+   "total": 167
+  }
+ },
+ {
+  "file": "auronplay-twitch-tw-2905136561-1377.mp4",
+  "creator": "Auronplay (Twitch)",
+  "source": "https://www.twitch.tv/videos/2905136561",
+  "start": 1369.62,
+  "end": 1403.94,
+  "cuts": 10,
+  "length": 27.2,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Se va a vengar de sus fans",
+  "hook_type": "revelation",
+  "emphasis": [
+   "vengar",
+   "divorciado",
+   "hijos",
+   "papis"
+  ],
+  "caption": "Auronplay se va a vengar de todos sus seguidores #auronplay #stream #clipsespañol\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Auronplay se va a vengar de todos sus seguidores",
+  "campaign": null,
+  "created": "2026-10-21T10:26:25.606055+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/x_D5WTw0azk",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2905136561-1377.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2905136561-1377.tt.mp4",
+  "tiktok_caption": "Auronplay se va a vengar de todos sus seguidores #auronplay #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 127,
+   "publish+submit": 7,
+   "total": 137
+  }
+ },
+ {
   "file": "caseoh-twitch-tw-2901948017-4768.mp4",
   "creator": "CaseOh (Twitch)",
   "source": "https://www.twitch.tv/videos/2901948017",
