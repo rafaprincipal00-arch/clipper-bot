@@ -41,6 +41,9 @@ Pick the hook type (revelation, contrarian or stakes) and write the hook text in
 List 2-5 emphasis words: words spoken inside the kept segments that carry the joke or the stakes
 (copy them exactly as they appear in the transcript).
 The last segment must end on the payoff (within ~0.3 s of its last word); no trailing chatter.
+The title must make people COMMENT: take a bold, one-sided stance viewers will want to argue with
+("He was 100% wrong here", "Worst decision of his career?") or end on a pick-a-side question. Exaggerate the
+emotion, never the facts: no invented numbers, prices or events (campaigns check facts and reject the clip).
 Hook and title must be brand-safe: no slurs or profanity (campaigns auto-reject them).
 Write the hook, the title and the emphasis words in {lang} (the language the clip is spoken in).
 {rules}
