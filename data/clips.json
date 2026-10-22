@@ -1,5 +1,416 @@
 [
  {
+  "file": "westcol-kick-kc-clip-01m5cq3wv9y0esqx0101chy2c8.mp4",
+  "creator": "Westcol (Kick)",
+  "source": "https://clips.kick.com/clips/6c/clip_01M5CQ3WV9Y0ESQX0101CHY2C8/playlist.m3u8",
+  "start": 28.6,
+  "end": 39.239999999999995,
+  "cuts": 8,
+  "length": 21.1,
+  "layout": "face",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "kick-clip",
+  "score": 88,
+  "hook": "¡Westcol: Puro Street Fighter!",
+  "hook_type": "revelation",
+  "emphasis": [
+   "Street Fighter",
+   "mierda",
+   "molido",
+   "rey"
+  ],
+  "caption": "¿Es este el peor Street Fighter que has visto? #westcol #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "¿Es este el peor Street Fighter que has visto?",
+  "campaign": null,
+  "created": "2026-10-22T13:42:16.547601+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/westcol-kick-kc-clip-01m5cq3wv9y0esqx0101chy2c8.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/westcol-kick-kc-clip-01m5cq3wv9y0esqx0101chy2c8.tt.mp4",
+  "tiktok_caption": "¿Es este el peor Street Fighter que has visto? #westcol #kick #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 8,
+   "transcribe+edit+render": 268,
+   "publish+submit": 5,
+   "total": 282
+  }
+ },
+ {
+  "file": "jynxzi-twitch-tw-2905263958-911.mp4",
+  "creator": "Jynxzi (Twitch)",
+  "source": "https://www.twitch.tv/videos/2905263958",
+  "start": 887.52,
+  "end": 961.96,
+  "cuts": 9,
+  "length": 21.6,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "Chiefs offense is completely absurd",
+  "hook_type": "revelation",
+  "emphasis": [
+   "shoved",
+   "ass",
+   "boring",
+   "ring"
+  ],
+  "caption": "Jynxzi exposes the weird truth about the Chiefs offense #jynxzi #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Jynxzi exposes the weird truth about the Chiefs offense",
+  "campaign": null,
+  "created": "2026-10-22T13:04:43.213088+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/jynxzi-twitch-tw-2905263958-911.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/jynxzi-twitch-tw-2905263958-911.tt.mp4",
+  "tiktok_caption": "Jynxzi exposes the weird truth about the Chiefs offense #jynxzi #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 162,
+   "publish+submit": 4,
+   "total": 169
+  }
+ },
+ {
+  "file": "westcol-kick-kc-clip-01m554v00kjvykfe3tv4hdxcj9.mp4",
+  "creator": "Westcol (Kick)",
+  "source": "https://clips.kick.com/clips/6f/clip_01M554V00KJVYKFE3TV4HDXCJ9/playlist.m3u8",
+  "start": 2.38,
+  "end": 47.54,
+  "cuts": 11,
+  "length": 27.3,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "hype",
+  "signal": "kick-clip",
+  "score": 75,
+  "hook": "Construirá una pista de carritos gigante",
+  "hook_type": "revelation",
+  "emphasis": [
+   "rodeada",
+   "nueve",
+   "chimba",
+   "hijos"
+  ],
+  "caption": "Westcol sorprende a todos con los lujos de su nueva casa #westcol #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Westcol sorprende a todos con los lujos de su nueva casa",
+  "campaign": null,
+  "created": "2026-10-22T12:52:54.310187+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/westcol-kick-kc-clip-01m554v00kjvykfe3tv4hdxcj9.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/westcol-kick-kc-clip-01m554v00kjvykfe3tv4hdxcj9.tt.mp4",
+  "tiktok_caption": "Westcol sorprende a todos con los lujos de su nueva casa #westcol #kick #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 11,
+   "transcribe+edit+render": 194,
+   "publish+submit": 4,
+   "total": 209
+  }
+ },
+ {
+  "file": "caseoh-twitch-tw-2904758941-11384.mp4",
+  "creator": "CaseOh (Twitch)",
+  "source": "https://www.twitch.tv/videos/2904758941",
+  "start": 11395.63,
+  "end": 11469.049,
+  "cuts": 11,
+  "length": 21.4,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "HE FOUND SOMETHING IN THE CAVE",
+  "hook_type": "revelation",
+  "emphasis": [
+   "scared",
+   "deep",
+   "floating",
+   "eyes"
+  ],
+  "caption": "CaseOh instantly regretted exploring this dark cave #caseoh #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "CaseOh instantly regretted exploring this dark cave",
+  "campaign": null,
+  "created": "2026-10-22T12:40:47.110770+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2904758941-11384.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2904758941-11384.tt.mp4",
+  "tiktok_caption": "CaseOh instantly regretted exploring this dark cave #caseoh #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 235,
+   "publish+submit": 5,
+   "total": 243
+  }
+ },
+ {
+  "file": "kai-cenat-twitch-tw-2901714894-5430.mp4",
+  "creator": "Kai Cenat (Twitch)",
+  "source": "https://www.twitch.tv/videos/2901714894",
+  "start": 5427.58,
+  "end": 5468.02,
+  "cuts": 14,
+  "length": 20.3,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "He just destroyed a bike",
+  "hook_type": "stakes",
+  "emphasis": [
+   "broke",
+   "bike",
+   "insane",
+   "new"
+  ],
+  "caption": "Kai Cenat was NOT ready for this bike accident #kaicenat #twitch #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Kai Cenat was NOT ready for this bike accident",
+  "campaign": null,
+  "created": "2026-10-22T12:27:52.815367+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/J1P_cwbirK0",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2901714894-5430.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2901714894-5430.tt.mp4",
+  "tiktok_caption": "Kai Cenat was NOT ready for this bike accident #kaicenat #twitch #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 142,
+   "publish+submit": 7,
+   "total": 153
+  }
+ },
+ {
+  "file": "auronplay-twitch-tw-2906819179-2250.mp4",
+  "creator": "Auronplay (Twitch)",
+  "source": "https://www.twitch.tv/videos/2906819179",
+  "start": 2222.41,
+  "end": 2280.97,
+  "cuts": 10,
+  "length": 23.4,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "Exhibiendo su foto secreta en directo",
+  "hook_type": "revelation",
+  "emphasis": [
+   "traicionas",
+   "foto",
+   "bonito",
+   "guapo"
+  ],
+  "caption": "Auronplay expone la foto prohibida en directo y sin previo aviso #auronplay #stream #clipsespañol\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Auronplay expone la foto prohibida en directo y sin previo aviso",
+  "campaign": null,
+  "created": "2026-10-22T12:17:07.815379+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/ldq9y-lYfEo",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2906819179-2250.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2906819179-2250.tt.mp4",
+  "tiktok_caption": "Auronplay expone la foto prohibida en directo y sin previo aviso #auronplay #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 183,
+   "publish+submit": 6,
+   "total": 191
+  }
+ },
+ {
+  "file": "caseoh-twitch-tw-2906456464-4812.mp4",
+  "creator": "CaseOh (Twitch)",
+  "source": "https://www.twitch.tv/videos/2906456464",
+  "start": 4844.01,
+  "end": 4872.73,
+  "cuts": 10,
+  "length": 21.4,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Destined to be named Egbert",
+  "hook_type": "revelation",
+  "emphasis": [
+   "Egbert",
+   "destined",
+   "conception",
+   "goodness"
+  ],
+  "caption": "CaseOh found the most perfectly named guy ever #caseoh #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "CaseOh found the most perfectly named guy ever",
+  "campaign": null,
+  "created": "2026-10-22T11:57:06.549263+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/eseihm-nVbE",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2906456464-4812.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2906456464-4812.tt.mp4",
+  "tiktok_caption": "CaseOh found the most perfectly named guy ever #caseoh #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 2,
+   "transcribe+edit+render": 130,
+   "publish+submit": 7,
+   "total": 140
+  }
+ },
+ {
+  "file": "ibai-twitch-tw-2903404377-5114.mp4",
+  "creator": "Ibai (Twitch)",
+  "source": "https://www.twitch.tv/videos/2903404377",
+  "start": 5168.64,
+  "end": 5167.32,
+  "cuts": 12,
+  "length": 24.9,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "awkward",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "Le soltó la locura más grande",
+  "hook_type": "revelation",
+  "emphasis": [
+   "cambiaría",
+   "sangre",
+   "compatible",
+   "collar"
+  ],
+  "caption": "Ibai no daba crédito con esta locura romántica #ibai #twitch #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Ibai no daba crédito con esta locura romántica",
+  "campaign": null,
+  "created": "2026-10-22T11:44:47.978382+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/UnPUXl-pfoI",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/ibai-twitch-tw-2903404377-5114.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/ibai-twitch-tw-2903404377-5114.tt.mp4",
+  "tiktok_caption": "Ibai no daba crédito con esta locura romántica #ibai #twitch #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 2,
+   "transcribe+edit+render": 178,
+   "publish+submit": 6,
+   "total": 186
+  }
+ },
+ {
+  "file": "jynxzi-twitch-tw-2906121675-19196.mp4",
+  "creator": "Jynxzi (Twitch)",
+  "source": "https://www.twitch.tv/videos/2906121675",
+  "start": 19231.16,
+  "end": 19240.38,
+  "cuts": 10,
+  "length": 20.0,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "hype",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "They said he'd lose",
+  "hook_type": "stakes",
+  "emphasis": [
+   "bitch ass",
+   "here a while",
+   "Motivated",
+   "Let's go",
+   "Let's go man"
+  ],
+  "caption": "Jynxzi silences the doubters with this clutch win #jynxzi #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Jynxzi silences the doubters with this clutch win",
+  "campaign": null,
+  "created": "2026-10-22T11:33:35.695214+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/MA6uJHG1-OE",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/jynxzi-twitch-tw-2906121675-19196.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/jynxzi-twitch-tw-2906121675-19196.tt.mp4",
+  "tiktok_caption": "Jynxzi silences the doubters with this clutch win #jynxzi #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 6,
+   "transcribe+edit+render": 212,
+   "publish+submit": 7,
+   "total": 225
+  }
+ },
+ {
+  "file": "auronplay-twitch-tw-2905941597-2634.mp4",
+  "creator": "Auronplay (Twitch)",
+  "source": "https://www.twitch.tv/videos/2905941597",
+  "start": 2649.01,
+  "end": 2673.63,
+  "cuts": 8,
+  "length": 21.5,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 82,
+  "hook": "Auronplay admite la verdad",
+  "hook_type": "revelation",
+  "emphasis": [
+   "homosexual",
+   "escroto",
+   "hombre",
+   "gay"
+  ],
+  "caption": "Auronplay no se esperaba esta pregunta en directo #auronplay #stream #clipsespañol\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Auronplay no se esperaba esta pregunta en directo",
+  "campaign": null,
+  "created": "2026-10-22T11:20:58.537588+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/3SssCrnpijY",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2905941597-2634.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2905941597-2634.tt.mp4",
+  "tiktok_caption": "Auronplay no se esperaba esta pregunta en directo #auronplay #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 160,
+   "publish+submit": 8,
+   "total": 170
+  }
+ },
+ {
   "file": "rivers-twitch-tw-2902849655-904.mp4",
   "creator": "Rivers (Twitch)",
   "source": "https://www.twitch.tv/videos/2902849655",

@@ -1,25 +1,35 @@
 {
- "updated": "2026-10-21T10:21:22+00:00",
- "clips": 73,
+ "updated": "2026-10-22T11:06:07+00:00",
+ "clips": 78,
  "by_creator": {
   "Rivers (Twitch)": {
+   "clips": 4,
+   "views": 3260,
+   "avg_views": 815
+  },
+  "Auronplay (Twitch)": {
+   "clips": 6,
+   "views": 6940,
+   "avg_views": 1157
+  },
+  "CaseOh (Twitch)": {
    "clips": 3,
-   "views": 1721,
-   "avg_views": 574
+   "views": 1087,
+   "avg_views": 362
+  },
+  "Clix (Twitch)": {
+   "clips": 3,
+   "views": 7721,
+   "avg_views": 2574
   },
   "Jynxzi (Twitch)": {
    "clips": 2,
-   "views": 2178,
-   "avg_views": 1089
-  },
-  "Auronplay (Twitch)": {
-   "clips": 4,
-   "views": 5650,
-   "avg_views": 1412
+   "views": 2261,
+   "avg_views": 1130
   },
   "Westcol (Kick)": {
    "clips": 4,
-   "views": 957,
+   "views": 955,
    "avg_views": 239
   },
   "xQc (Kick)": {
@@ -27,20 +37,10 @@
    "views": 0,
    "avg_views": 0
   },
-  "Clix (Twitch)": {
-   "clips": 2,
-   "views": 5711,
-   "avg_views": 2856
-  },
   "Clix x Yeat (Twitch)": {
    "clips": 2,
-   "views": 4471,
-   "avg_views": 2236
-  },
-  "CaseOh (Twitch)": {
-   "clips": 2,
-   "views": 922,
-   "avg_views": 461
+   "views": 5326,
+   "avg_views": 2663
   },
   "Kai Cenat (Twitch)": {
    "clips": 5,
@@ -49,13 +49,13 @@
   },
   "Juansguarnizo (Kick)": {
    "clips": 1,
-   "views": 1019,
-   "avg_views": 1019
+   "views": 1110,
+   "avg_views": 1110
   },
   "Stable Ronaldo (Twitch)": {
    "clips": 4,
-   "views": 3043,
-   "avg_views": 761
+   "views": 3813,
+   "avg_views": 953
   },
   "Ibai (Twitch)": {
    "clips": 3,
@@ -99,8 +99,8 @@
   },
   "Lanah Cherry (Twitch)": {
    "clips": 11,
-   "views": 15316,
-   "avg_views": 1392
+   "views": 15325,
+   "avg_views": 1393
   },
   "TJR": {
    "clips": 17,
@@ -121,8 +121,8 @@
    "mood": "awkward",
    "hook_type": "revelation",
    "score": 78,
-   "views": 4517,
-   "likes": 40,
+   "views": 5048,
+   "likes": 42,
    "id": "49m7bG834X0"
   },
   {
@@ -148,26 +148,26 @@
    "id": "REDP_AloN5A"
   },
   {
-   "creator": "Auronplay (Twitch)",
-   "hook": "La única explicación es que es gay",
-   "title": "Auronplay no entiende qué pasa con Fabiana",
-   "mood": "funny",
-   "hook_type": "revelation",
-   "score": 85,
-   "views": 2695,
-   "likes": 56,
-   "id": "odUXPRp9A9M"
-  },
-  {
    "creator": "Clix x Yeat (Twitch)",
    "hook": "YEAT FINALLY SPOKE ON STREAM",
    "title": "Clix was NOT ready when Yeat spoke on Fortnite",
    "mood": "funny",
    "hook_type": "revelation",
    "score": 88,
-   "views": 2677,
-   "likes": 37,
+   "views": 2996,
+   "likes": 40,
    "id": "OW9Fq6UoOrk"
+  },
+  {
+   "creator": "Auronplay (Twitch)",
+   "hook": "La única explicación es que es gay",
+   "title": "Auronplay no entiende qué pasa con Fabiana",
+   "mood": "funny",
+   "hook_type": "revelation",
+   "score": 85,
+   "views": 2701,
+   "likes": 56,
+   "id": "odUXPRp9A9M"
   },
   {
    "creator": "Lanah Cherry (Twitch)",
@@ -176,7 +176,7 @@
    "mood": "funny",
    "hook_type": "revelation",
    "score": 88,
-   "views": 2643,
+   "views": 2650,
    "likes": 23,
    "id": "HVX_1C1azwo"
   },
