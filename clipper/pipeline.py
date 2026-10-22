@@ -187,8 +187,17 @@ def make_clip(moment: dict, creator: str, campaign: dict | None, do_publish: boo
         render.write_ass(render.remap_words(words, segs), 0, sum(e - s for s, e in segs), edit["hook"], ass,
                          emphasis=edit.get("emphasis") or [])
         final = OUT / f"{name}.mp4"
+        if not render.RECENT_BEDS:  # seed the bed rotation with the latest clips' beds
+            try:
+                hist = json.loads((ROOT / "data" / "clips.json").read_text(encoding="utf-8"))
+                hist = hist if isinstance(hist, list) else list(hist.values())
+                render.RECENT_BEDS.extend(e["bed"] for e in hist[-6:] if e.get("bed"))
+            except (OSError, ValueError):
+                pass
+        n_beds = len(render.RECENT_BEDS)
         render.render_edit(str(raw), segs, info, ass, final, credit="" if clean else camp.get("credit", ""),
                            mood=mood, style=style, with_music=not clean)
+        bed = render.RECENT_BEDS[-1] if len(render.RECENT_BEDS) > n_beds else None
         # Same edit without the music bed for TikTok, where the poster adds a song from TikTok's library.
         tt_final = OUT / f"{name}.tt.mp4"
         render.render_edit(str(raw), segs, info, ass, tt_final, credit="" if clean else camp.get("credit", ""),
@@ -205,7 +214,7 @@ def make_clip(moment: dict, creator: str, campaign: dict | None, do_publish: boo
              "end": moment["start"] + segs[-1][1], "cuts": len(segs), "length": round(sum(e - s for s, e in segs), 1),
              "layout": info["kind"], "style": style, "mood": mood, "signal": moment["signal"], "score": edit["score"], "hook": edit["hook"],
              "hook_type": edit.get("hook_type"), "emphasis": edit.get("emphasis"),
-             "caption": caption, "title": edit["title"], "campaign": (campaign or {}).get("campaign_url"),
+             "caption": caption, "title": edit["title"], "bed": bed, "campaign": (campaign or {}).get("campaign_url"),
              "created": datetime.now(timezone.utc).isoformat(), "posts": {}}
     public_url = public_url_for(final)  # also feeds the panel's mp4 links
     entry["video_url"] = public_url  # the PC TikTok poster downloads the clip from here

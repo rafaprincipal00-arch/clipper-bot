@@ -80,19 +80,43 @@ def _rel(p: Path) -> str:
         return p.as_posix().replace(":", "\\:")
 
 
-# Only beds the user confirmed he hears in Reels/TikToks; the rest were dropped as "never goes viral".
-APPROVED = ["Run_Amok"]
+# Kevin MacLeod CC BY meme beds (the ones viewers know from clips). Rafa: never the same song on every clip,
+# so each mood has several and pick_music() rotates them avoiding the beds of the latest clips.
+_ALL = ["Run_Amok", "Sneaky_Snitch", "Monkeys_Spinning_Monkeys", "Fluffing_a_Duck", "Investigations",
+        "Scheming_Weasel_faster", "Hitman", "Local_Forecast_Elevator"]
 # Context moods the LLM picks (highlights.EDIT_PROMPT); TikTok songs per mood live in config/music.json.
-MOODS = dict.fromkeys(("funny", "awkward", "sad", "swag", "hype", "chaos", "tension", "wholesome"), APPROVED)
+MOODS = {
+    "funny": ["Monkeys_Spinning_Monkeys", "Fluffing_a_Duck", "Run_Amok", "Sneaky_Snitch"],
+    "awkward": ["Local_Forecast_Elevator", "Sneaky_Snitch", "Fluffing_a_Duck"],
+    "sad": ["Local_Forecast_Elevator", "Investigations"],
+    "swag": ["Hitman", "Run_Amok", "Scheming_Weasel_faster"],
+    "hype": ["Run_Amok", "Hitman", "Scheming_Weasel_faster"],
+    "chaos": ["Scheming_Weasel_faster", "Run_Amok", "Monkeys_Spinning_Monkeys"],
+    "tension": ["Investigations", "Sneaky_Snitch", "Hitman"],
+    "wholesome": ["Fluffing_a_Duck", "Monkeys_Spinning_Monkeys", "Local_Forecast_Elevator"],
+}
+RECENT_BEDS: list[str] = []  # beds of the latest clips (seeded by pipeline from data/clips.json)
 # Old mood names (clips rendered before the 8-mood set) -> current ones.
 MOOD_ALIASES = {"sus": "tension", "drama": "tension", "chill": "wholesome"}
 
 
 def pick_music(seed: str, mood: str = "funny") -> Path | None:
     """A recognisable meme bed matching the clip's mood (picked by the LLM), falling back to any track."""
-    names = MOODS.get(mood) or MOODS["funny"]
-    tracks = [MUSIC / f"{n}.m4a" for n in names if (MUSIC / f"{n}.m4a").exists()] or sorted(MUSIC.glob("*.m4a"))
-    return random.Random(seed).choice(tracks) if tracks else None
+    rng = random.Random(seed)
+    names = [n for n in (MOODS.get(mood) or MOODS["funny"]) if (MUSIC / f"{n}.m4a").exists()]
+    others = [n for n in _ALL if n not in names and (MUSIC / f"{n}.m4a").exists()]
+    rng.shuffle(names)
+    rng.shuffle(others)
+    recent = RECENT_BEDS[-6:]
+    # Mood beds not used in the last 6 clips, then any bed not used lately, then the least recently used.
+    fresh = [n for n in names if n not in recent] or [n for n in others if n not in recent]
+    if not fresh:
+        pool = names + others
+        fresh = sorted(pool, key=lambda n: max((i for i, b in enumerate(RECENT_BEDS) if b == n), default=-1))[:1]
+    if not fresh:
+        return None
+    RECENT_BEDS.append(fresh[0])
+    return MUSIC / f"{fresh[0]}.m4a"
 
 
 def remap_words(words: list[dict], segments: list[tuple[float, float]]) -> list[dict]:

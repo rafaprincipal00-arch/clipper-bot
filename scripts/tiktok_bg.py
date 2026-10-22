@@ -69,6 +69,7 @@ def _latest(page, handle: str) -> str:
 
 
 USAGE = ROOT / "data" / "music_usage.json"
+RECENT = 10  # a song can't come back until 10 other posts used something else
 
 
 def _usage() -> dict:
@@ -87,9 +88,16 @@ def add_song(page, mood: str | None, log=print) -> str | None:
     used = _usage()
     # This mood's songs first, least used first, so consecutive clips don't share a song; the other moods
     # are only a fallback when none of these is found in TikTok's library.
-    own = sorted(cfg["tiktok"].get(mood or "", []), key=lambda s: (used.get(f"{s[0]} - {s[1]}", 0), random.random()))
-    rest = sorted((s for m in cfg["tiktok"].values() for s in m), key=lambda s: used.get(f"{s[0]} - {s[1]}", 0))
-    songs = list(dict.fromkeys(tuple(s) for s in own + rest))
+    # Rafa: never the same song over and over. Songs used in the last RECENT posts go to the very end, even
+    # if that means borrowing a song from another mood.
+    recent = used.get("_recent", [])[-RECENT:]
+    key = lambda s: (f"{s[0]} - {s[1]}" in recent, used.get(f"{s[0]} - {s[1]}", 0), random.random())  # noqa: E731
+    own = sorted(cfg["tiktok"].get(mood or "", []), key=key)
+    rest = sorted((s for m in cfg["tiktok"].values() for s in m), key=key)
+    fresh_own = [s for s in own if f"{s[0]} - {s[1]}" not in recent]
+    fresh_rest = [s for s in rest if f"{s[0]} - {s[1]}" not in recent]
+    stale = sorted(own + rest, key=lambda s: recent.index(f"{s[0]} - {s[1]}") if f"{s[0]} - {s[1]}" in recent else -1)
+    songs = list(dict.fromkeys(tuple(s) for s in fresh_own + fresh_rest + stale))
     cookies = page.get_by_role("button", name="Decline optional cookies")
     if cookies.count():
         cookies.first.click()
@@ -139,6 +147,7 @@ def add_song(page, mood: str | None, log=print) -> str | None:
         page.wait_for_timeout(6000)
         log(f"  music: {title} - {artist} (TikTok library, mood {mood}) at {cfg.get('tiktok_db', '-14')} dB")
         used[f"{title} - {artist}"] = used.get(f"{title} - {artist}", 0) + 1
+        used["_recent"] = (used.get("_recent", []) + [f"{title} - {artist}"])[-30:]
         USAGE.write_text(json.dumps(used, ensure_ascii=False, indent=1), encoding="utf-8")
         return f"{title} - {artist}"
     log("  music: none of the songs found; posting with the clip's own audio")
