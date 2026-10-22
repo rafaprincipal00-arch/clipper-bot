@@ -191,13 +191,13 @@ def make_clip(moment: dict, creator: str, campaign: dict | None, do_publish: boo
             try:
                 hist = json.loads((ROOT / "data" / "clips.json").read_text(encoding="utf-8"))
                 hist = hist if isinstance(hist, list) else list(hist.values())
-                render.RECENT_BEDS.extend(e["bed"] for e in hist[-6:] if e.get("bed"))
+                render.RECENT_BEDS.extend(e.get("bed") or "" for e in hist[-6:])
             except (OSError, ValueError):
                 pass
         n_beds = len(render.RECENT_BEDS)
         render.render_edit(str(raw), segs, info, ass, final, credit="" if clean else camp.get("credit", ""),
                            mood=mood, style=style, with_music=not clean)
-        bed = render.RECENT_BEDS[-1] if len(render.RECENT_BEDS) > n_beds else None
+        bed = (render.RECENT_BEDS[-1] or None) if len(render.RECENT_BEDS) > n_beds else None
         # Same edit without the music bed for TikTok, where the poster adds a song from TikTok's library.
         tt_final = OUT / f"{name}.tt.mp4"
         render.render_edit(str(raw), segs, info, ass, tt_final, credit="" if clean else camp.get("credit", ""),
@@ -208,7 +208,7 @@ def make_clip(moment: dict, creator: str, campaign: dict | None, do_publish: boo
     mention = (campaign or {}).get("mention", "")  # tag the campaign requires in every caption
     tags = f"{mention} {tags}".strip()
     # CC BY music must be credited; brand briefs (no_credit) render without the bed, so no credit line.
-    credit_line = "" if (campaign or {}).get("no_credit") else render.MUSIC_CREDIT
+    credit_line = "" if (campaign or {}).get("no_credit") or not bed else render.MUSIC_CREDIT
     caption = f"{edit['title']} {tags}\n{credit_line}".strip()
     entry = {"file": final.name, "creator": creator, "source": moment["url"], "start": moment["start"] + segs[0][0],
              "end": moment["start"] + segs[-1][1], "cuts": len(segs), "length": round(sum(e - s for s, e in segs), 1),

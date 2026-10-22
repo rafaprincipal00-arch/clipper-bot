@@ -4,5 +4,5 @@ These are the most-reused meme/clip beds on YouTube and TikTok (the "funny momen
 sounds viewers recognise), and the license allows commercial use with credit. Copyrighted chart songs would
 get Content ID claims and void campaign payouts.
 
-Tracks in use: Run Amok, Sneaky Snitch, Monkeys Spinning Monkeys, Fluffing a Duck, Investigations, Scheming Weasel (faster), Hitman, Local Forecast - Elevator. Rotated per mood, never the same bed on consecutive clips.
+Track in use: Local Forecast - Elevator (the only one Rafa still finds trendy), on every other YouTube Short; the rest keep the stream audio.
 Font: Montserrat Black (SIL Open Font License), github.com/JulietaUla/Montserrat
