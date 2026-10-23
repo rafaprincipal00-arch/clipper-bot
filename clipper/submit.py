@@ -24,20 +24,43 @@ def submit(campaign_url: str, links: list[str]) -> dict:
             browser = p.chromium.launch(headless=True)
             ctx = browser.new_context(storage_state=str(state_file), viewport={"width": 1280, "height": 900}, locale="en-US")
             page = ctx.new_page()
+            # /discover/<id> is the public card; the submit button lives on /c/campaigns/<id>.
+            m = re.search(r"([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})", campaign_url)
+            if m:
+                campaign_url = f"https://contentrewards.com/c/campaigns/{m.group(1)}"
             page.goto(campaign_url, wait_until="domcontentloaded")
             page.wait_for_timeout(7000)
             if "/login" in page.url:
                 browser.close()
                 return {"error": "Content Rewards session expired: refresh the CR_STATE secret"}
-            open_btn = page.get_by_role("button", name=re.compile(r"^(Submit clip|Enviar clip)$")).first
+            pat = re.compile(r"(submit|enviar)", re.I)
+            open_btn = None
+            for _ in range(3):
+                for role in ("button", "link"):
+                    c = page.get_by_role(role, name=pat)
+                    for i in range(c.count()):
+                        if c.nth(i).is_visible():
+                            open_btn = c.nth(i)
+                            break
+                    if open_btn:
+                        break
+                if open_btn:
+                    break
+                page.mouse.wheel(0, 900)
+                page.wait_for_timeout(1500)
+            if open_btn is None:
+                names = [x.inner_text()[:40] for x in page.get_by_role("button").all() if x.is_visible()][:40]
+                url = page.url
+                browser.close()
+                return {"error": f"no submit button on {url}; buttons: {names}"}
             open_btn.click()
             page.wait_for_timeout(2500)
-            dialog = page.get_by_role("dialog", name=re.compile(r"^(Submit clip|Enviar clip)$"))
+            dialog = page.get_by_role("dialog").last
             box = dialog.locator("textarea, input[type=url], input[type=text]").first
             box.fill("\n".join(links))
             # The real checkbox is visually hidden behind a styled span: click its label instead.
             dialog.get_by_text(re.compile(r"(I've read the requirements|He leído los requisitos)")).first.click()
-            submit_btn = dialog.get_by_role("button", name=re.compile(r"^(Submit clip|Enviar clip)$")).last
+            submit_btn = dialog.get_by_role("button", name=pat).last
             submit_btn.click()
             page.wait_for_timeout(4000)
             # Wait out the "Submitting…" state before judging the result.
