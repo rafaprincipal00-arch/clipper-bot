@@ -35,20 +35,35 @@ DAILY_CAP = {"youtube": int(os.environ.get("YT_DAILY_MAX", "6")),
              "instagram": int(os.environ.get("IG_DAILY_MAX", "25"))}
 
 
-def capped_platforms() -> set[str]:
+def _yt_projects() -> int:
+    """How many Google Cloud projects upload to YouTube. Channels with their own project (YT_APP_<n>) have
+    their own 6/day; the channels left on the shared YT_CLIENT_ID project split one 6/day."""
+    return len(publish.yt_channels_with_own_project()) + (1 if publish.yt_shared_channels() else 0)
+
+
+def capped_platforms(account: int | None = None) -> set[str]:
     """Platforms that already got their daily maximum of successful posts today. "Today" is the YouTube
-    quota day, which resets at midnight Pacific time (09:00 in Spain)."""
+    quota day, which resets at midnight Pacific time (09:00 in Spain).
+    YouTube quota is per Google Cloud project: with `account` (0-based) only that channel's project counts."""
     if not MANIFEST.exists():
         return set()
     since = datetime.now(ZoneInfo("America/Los_Angeles")).replace(hour=0, minute=0, second=0).timestamp()
     counts = dict.fromkeys(DAILY_CAP, 0)
+    own = publish.yt_channels_with_own_project()
+    group = ({account + 1} if account is not None and account + 1 in own
+             else set(publish.yt_shared_channels()) if account is not None else None)
     for e in json.loads(MANIFEST.read_text(encoding="utf-8")):
         if datetime.fromisoformat(e["created"]).timestamp() < since:
             continue
         for k, v in (e.get("posts") or {}).items():
+            if k == "youtube" and group is not None and e.get("account") not in group:
+                continue
             if k in counts and isinstance(v, str) and not v.startswith(("error", "skipped")):
                 counts[k] += 1
-    return {k for k, n in counts.items() if n >= DAILY_CAP[k]}
+    caps = dict(DAILY_CAP)
+    if account is None:  # whole-run check: every project full
+        caps["youtube"] = DAILY_CAP["youtube"] * max(1, _yt_projects())
+    return {k for k, n in counts.items() if n >= caps[k]}
 
 
 def working_platforms() -> set[str]:
@@ -221,7 +236,7 @@ def make_clip(moment: dict, creator: str, campaign: dict | None, do_publish: boo
     entry["tiktok_url"] = public_url_for(tt_final)  # no music bed: TikTok adds its own licensed song
     entry["tiktok_caption"] = f"{edit['title']} {tags}".strip()
     if do_publish:
-        entry["posts"] = publish.publish_all(final, edit["title"], caption, public_url, skip=capped_platforms(),
+        entry["posts"] = publish.publish_all(final, edit["title"], caption, public_url, skip=capped_platforms(account),
                                              account=account,
                                              # Content Rewards needs a live link within 30 min: those go out now.
                                              schedule_yt=not (entry["campaign"] and "contentrewards" in entry["campaign"]))

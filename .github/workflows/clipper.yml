@@ -48,6 +48,9 @@ jobs:
       YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
       YT_REFRESH_TOKEN_2: ${{ secrets.YT_REFRESH_TOKEN_2 }}
       YT_REFRESH_TOKEN_3: ${{ secrets.YT_REFRESH_TOKEN_3 }}
+      YT_APP_1: ${{ secrets.YT_APP_1 }}
+      YT_APP_2: ${{ secrets.YT_APP_2 }}
+      YT_APP_3: ${{ secrets.YT_APP_3 }}
       TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
       TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
       TIKTOK_REFRESH_TOKEN: ${{ secrets.TIKTOK_REFRESH_TOKEN }}

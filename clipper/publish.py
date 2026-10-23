@@ -18,21 +18,39 @@ from zoneinfo import ZoneInfo
 # itself (privacy private + publishAt), so the PC does not need to be on.
 ET = ZoneInfo("America/New_York")
 YT_SLOTS_ET = ["12:00", "15:00", "17:30", "18:30", "19:30", "20:30"]
-_yt_used: list[datetime] = []
+_yt_used: dict[int | None, list[datetime]] = {}
 
 
-def next_yt_slot(now: datetime | None = None) -> datetime | None:
-    """Next free ET slot of today (or tomorrow if today's are gone), as UTC. None = publish now."""
+def next_yt_slot(now: datetime | None = None, channel: int | None = None) -> datetime | None:
+    """Next free ET slot of today (or tomorrow if today's are gone) for this channel, as UTC.
+    Each channel has its own 6 slots (its own quota project), so channels can share the same times."""
     now = now or datetime.now(timezone.utc)
+    used = _yt_used.setdefault(channel, [])
     for day in (0, 1):
         d = (now.astimezone(ET) + timedelta(days=day)).date()
         for t in YT_SLOTS_ET:
             h, m = map(int, t.split(":"))
             at = datetime(d.year, d.month, d.day, h, m, tzinfo=ET).astimezone(timezone.utc)
-            if at > now + timedelta(minutes=20) and at not in _yt_used:
-                _yt_used.append(at)
+            if at > now + timedelta(minutes=20) and at not in used:
+                used.append(at)
                 return at
     return None
+
+
+def _yt_tokens() -> list[str]:
+    keys = ["YT_REFRESH_TOKEN"] + [f"YT_REFRESH_TOKEN_{i}" for i in range(2, 6)]
+    return [os.environ[k] for k in keys if os.environ.get(k)]
+
+
+def yt_channels_with_own_project() -> list[int]:
+    """1-based channels that upload through their own Google Cloud project (secret YT_APP_<n> =
+    {"client_id", "client_secret", "refresh_token"}): each project has its own 10,000 units/day."""
+    return [n for n in range(1, 6) if os.environ.get(f"YT_APP_{n}")]
+
+
+def yt_shared_channels() -> list[int]:
+    own = set(yt_channels_with_own_project())
+    return [n for n in range(1, len(_yt_tokens()) + 1) if n not in own]
 
 
 def _req(url: str, data: bytes | None = None, headers: dict | None = None, method: str | None = None) -> dict:
@@ -61,18 +79,22 @@ def youtube(path: Path, title: str, description: str, account: int | None = None
     """Channels (YT_REFRESH_TOKEN, _2, _3...) take turns by clip name, like the TikTok accounts.
     The upload quota belongs to the Google Cloud project, so it is shared by every channel."""
     cid, secret = os.environ.get("YT_CLIENT_ID"), os.environ.get("YT_CLIENT_SECRET")
-    keys = ["YT_REFRESH_TOKEN"] + [f"YT_REFRESH_TOKEN_{i}" for i in range(2, 6)]
-    tokens = [os.environ[k] for k in keys if os.environ.get(k)]
+    tokens = _yt_tokens()
     if not (cid and secret and tokens):
         return None
     refresh = _pick(tokens, path.stem, account)
+    channel = tokens.index(refresh) + 1
+    app = os.environ.get(f"YT_APP_{channel}")
+    if app:  # this channel has its own project (own quota)
+        a = json.loads(app)
+        cid, secret, refresh = a["client_id"], a["client_secret"], a["refresh_token"]
     tok = _req("https://oauth2.googleapis.com/token", _form({
         "client_id": cid, "client_secret": secret, "refresh_token": refresh, "grant_type": "refresh_token"}))["access_token"]
     meta = {
         "snippet": {"title": title[:95] + " #shorts", "description": description, "categoryId": "20"},
         "status": {"privacyStatus": "public", "selfDeclaredMadeForKids": False},
     }
-    at = next_yt_slot() if schedule else None
+    at = next_yt_slot(channel=channel) if schedule else None
     if at:  # private until publishAt, then YouTube makes it public on its own
         meta["status"].update(privacyStatus="private", publishAt=at.strftime("%Y-%m-%dT%H:%M:%SZ"))
     size = path.stat().st_size
