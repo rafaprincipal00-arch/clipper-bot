@@ -1281,5 +1281,83 @@
     "join_status": "unido (TestMu AI) 2026-10-23",
     "account": 1,
     "lang": "English"
+  },
+  {
+    "creator": "Backyard Breaks (Whatnot)",
+    "source": "",
+    "campaign": "Backyard Breaks (Whatnot)",
+    "campaign_url": "https://contentrewards.com/c/campaigns/e509f6d0-13bf-42bc-8450-09e12c216c33",
+    "cpm": 2.0,
+    "enabled": false,
+    "account": 1,
+    "lang": "English",
+    "join_status": "unido en Content Rewards 2026-10-23",
+    "why": "2 USD/1k desde 1.000 vistas, max 250 USD, 5.9k USD libres",
+    "why_off": "pagina dedicada (@...byb/backyardbreaks), bio con whatnot.com/invite/backyardbuzz, tag @backyardbreaks, #BackyardBreaks, 50% US"
+  },
+  {
+    "creator": "Jacob Nach (fitness)",
+    "source": "",
+    "campaign": "Jacob Nach (fitness)",
+    "campaign_url": "https://contentrewards.com/c/campaigns/5e4fe241-c51e-488c-8ba7-3575be36bbfe",
+    "cpm": 1.0,
+    "enabled": false,
+    "account": 1,
+    "lang": "English",
+    "join_status": "unido en Content Rewards 2026-10-23",
+    "why": "1 USD/1k desde 1.000 vistas (TT), footage dado, 2.6k USD libres",
+    "why_off": "cuenta dedicada + link de su YouTube en bio, tag @jacobnach, solo clips educativos"
+  },
+  {
+    "creator": "ForgeGUI (Roblox)",
+    "source": "",
+    "campaign": "ForgeGUI (Roblox)",
+    "campaign_url": "https://contentrewards.com/c/campaigns/1db63081-715e-4e04-9b11-fbc1d4e8e700",
+    "cpm": 1.0,
+    "enabled": false,
+    "account": 1,
+    "lang": "English",
+    "join_status": "unido en Content Rewards 2026-10-23",
+    "why": "1 USD/1k desde 1.000 vistas (TT), 30.7k USD libres, footage dado",
+    "why_off": "cuenta dedicada de Roblox con bio forgegui.com"
+  },
+  {
+    "creator": "BILF Podcast",
+    "source": "",
+    "campaign": "BILF Podcast",
+    "campaign_url": "https://contentrewards.com/c/campaigns/088c2279-ab1d-4434-9ba0-6637ab9311fa",
+    "cpm": 2.0,
+    "enabled": false,
+    "account": 1,
+    "lang": "English",
+    "join_status": "unido en Content Rewards 2026-10-23",
+    "why": "2 USD/1k desde 2.000 vistas, max 200 USD, 3.1k USD libres",
+    "why_off": "envio por el Discord de Runback (Rafa tiene que unirse), cuenta 30+ dias, 1% engagement"
+  },
+  {
+    "creator": "Flip.gg",
+    "source": "",
+    "campaign": "Flip.gg",
+    "campaign_url": "https://contentrewards.com/c/campaigns/6f0d4fb3-4ed1-42be-8644-e2e569681a42",
+    "cpm": 1.5,
+    "enabled": false,
+    "account": 1,
+    "lang": "English",
+    "join_status": "unido en Content Rewards 2026-10-23",
+    "why": "1.5 USD/1k desde 1.000 vistas",
+    "why_off": "promo de apuestas CS2/cripto: TikTok lo prohibe, riesgo de ban"
+  },
+  {
+    "creator": "Open Road (slideshows)",
+    "source": "",
+    "campaign": "Open Road (slideshows)",
+    "campaign_url": "https://contentrewards.com/c/campaigns/23022f84-5715-4ba5-a647-abc4baf4f0f8",
+    "cpm": 1.25,
+    "enabled": false,
+    "account": 1,
+    "lang": "English",
+    "join_status": "unido en Content Rewards 2026-10-23",
+    "why": "1.25 USD/1k desde 1.000 vistas, solo TikTok",
+    "why_off": "pide cuentas nuevas con identidad falsa de 'aficionado' y slideshows: no"
   }
 ]
