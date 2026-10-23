@@ -1,36 +1,36 @@
 {
- "updated": "2026-10-22T11:06:07+00:00",
- "clips": 78,
+ "updated": "2026-10-23T09:14:05+00:00",
+ "clips": 80,
  "by_creator": {
   "Rivers (Twitch)": {
-   "clips": 4,
-   "views": 3260,
-   "avg_views": 815
+   "clips": 5,
+   "views": 4537,
+   "avg_views": 907
   },
   "Auronplay (Twitch)": {
-   "clips": 6,
-   "views": 6940,
-   "avg_views": 1157
+   "clips": 7,
+   "views": 7676,
+   "avg_views": 1097
   },
   "CaseOh (Twitch)": {
    "clips": 3,
-   "views": 1087,
-   "avg_views": 362
+   "views": 1116,
+   "avg_views": 372
   },
   "Clix (Twitch)": {
    "clips": 3,
-   "views": 7721,
-   "avg_views": 2574
+   "views": 7912,
+   "avg_views": 2637
   },
   "Jynxzi (Twitch)": {
    "clips": 2,
-   "views": 2261,
-   "avg_views": 1130
+   "views": 2297,
+   "avg_views": 1148
   },
   "Westcol (Kick)": {
    "clips": 4,
-   "views": 955,
-   "avg_views": 239
+   "views": 1064,
+   "avg_views": 266
   },
   "xQc (Kick)": {
    "clips": 1,
@@ -39,8 +39,8 @@
   },
   "Clix x Yeat (Twitch)": {
    "clips": 2,
-   "views": 5326,
-   "avg_views": 2663
+   "views": 5755,
+   "avg_views": 2878
   },
   "Kai Cenat (Twitch)": {
    "clips": 5,
@@ -49,13 +49,13 @@
   },
   "Juansguarnizo (Kick)": {
    "clips": 1,
-   "views": 1110,
-   "avg_views": 1110
+   "views": 1115,
+   "avg_views": 1115
   },
   "Stable Ronaldo (Twitch)": {
    "clips": 4,
-   "views": 3813,
-   "avg_views": 953
+   "views": 3959,
+   "avg_views": 990
   },
   "Ibai (Twitch)": {
    "clips": 3,
@@ -64,8 +64,8 @@
   },
   "Ice Poseidon (Kick)": {
    "clips": 1,
-   "views": 22,
-   "avg_views": 22
+   "views": 23,
+   "avg_views": 23
   },
   "Fanum (Twitch)": {
    "clips": 1,
@@ -99,7 +99,7 @@
   },
   "Lanah Cherry (Twitch)": {
    "clips": 11,
-   "views": 15325,
+   "views": 15327,
    "avg_views": 1393
   },
   "TJR": {
@@ -121,8 +121,8 @@
    "mood": "awkward",
    "hook_type": "revelation",
    "score": 78,
-   "views": 5048,
-   "likes": 42,
+   "views": 5087,
+   "likes": 43,
    "id": "49m7bG834X0"
   },
   {
@@ -137,6 +137,17 @@
    "id": "Et3rAIR30iQ"
   },
   {
+   "creator": "Clix x Yeat (Twitch)",
+   "hook": "YEAT FINALLY SPOKE ON STREAM",
+   "title": "Clix was NOT ready when Yeat spoke on Fortnite",
+   "mood": "funny",
+   "hook_type": "revelation",
+   "score": 88,
+   "views": 3011,
+   "likes": 40,
+   "id": "OW9Fq6UoOrk"
+  },
+  {
    "creator": "Spreen (Kick)",
    "hook": "No podía creer lo que pasaba",
    "title": "Spreen reaccionó totalmente descolocado en pleno directo",
@@ -149,14 +160,14 @@
   },
   {
    "creator": "Clix x Yeat (Twitch)",
-   "hook": "YEAT FINALLY SPOKE ON STREAM",
-   "title": "Clix was NOT ready when Yeat spoke on Fortnite",
-   "mood": "funny",
+   "hook": "Yeat's secret instructions revealed",
+   "title": "Clix was NOT ready for Yeat's chaotic stream demands",
+   "mood": "chaos",
    "hook_type": "revelation",
    "score": 88,
-   "views": 2996,
-   "likes": 40,
-   "id": "OW9Fq6UoOrk"
+   "views": 2744,
+   "likes": 52,
+   "id": "qrUYeJzyszM"
   },
   {
    "creator": "Auronplay (Twitch)",
@@ -165,7 +176,7 @@
    "mood": "funny",
    "hook_type": "revelation",
    "score": 85,
-   "views": 2701,
+   "views": 2700,
    "likes": 56,
    "id": "odUXPRp9A9M"
   },
@@ -176,7 +187,7 @@
    "mood": "funny",
    "hook_type": "revelation",
    "score": 88,
-   "views": 2650,
+   "views": 2651,
    "likes": 23,
    "id": "HVX_1C1azwo"
   },
@@ -190,17 +201,6 @@
    "views": 2586,
    "likes": 19,
    "id": "fn5qryHKOII"
-  },
-  {
-   "creator": "Harrison Webb ($7 vs $115 English Breakfast)",
-   "hook": "$115 breakfast is insane",
-   "title": "Harrison Webb tries a ridiculously expensive breakfast @harrisonwebb97 #harrisonwebb",
-   "mood": "funny",
-   "hook_type": "revelation",
-   "score": 88,
-   "views": 2431,
-   "likes": 34,
-   "id": "j47DAnVhXOo"
   }
  ],
  "bottom": [

@@ -1,5 +1,343 @@
 [
  {
+  "file": "caseoh-twitch-tw-2905597998-10017.mp4",
+  "creator": "CaseOh (Twitch)",
+  "source": "https://www.twitch.tv/videos/2905597998",
+  "start": 10046.62,
+  "end": 10094.17,
+  "cuts": 9,
+  "length": 21.9,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "He refused to kill his roommate",
+  "hook_type": "stakes",
+  "emphasis": [
+   "somebody",
+   "kill",
+   "can't",
+   "roommate"
+  ],
+  "caption": "CaseOh refuses to do the unthinkable and spare his roommate #caseoh #stream #clips",
+  "title": "CaseOh refuses to do the unthinkable and spare his roommate",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-10-23T11:27:12.137661+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2905597998-10017.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2905597998-10017.tt.mp4",
+  "tiktok_caption": "CaseOh refuses to do the unthinkable and spare his roommate #caseoh #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 142,
+   "publish+submit": 6,
+   "total": 153
+  }
+ },
+ {
+  "file": "caseoh-twitch-tw-2907317252-5202.mp4",
+  "creator": "CaseOh (Twitch)",
+  "source": "https://www.twitch.tv/videos/2907317252",
+  "start": 5239.06,
+  "end": 5281.45,
+  "cuts": 10,
+  "length": 20.4,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 82,
+  "hook": "CaseOh loses his mind over Halloween",
+  "hook_type": "stakes",
+  "emphasis": [
+   "Halloween",
+   "lock",
+   "sold",
+   "magician"
+  ],
+  "caption": "CaseOh was not ready for this Halloween nightmare #caseoh #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "CaseOh was not ready for this Halloween nightmare",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-10-23T11:15:03.421396+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2907317252-5202.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2907317252-5202.tt.mp4",
+  "tiktok_caption": "CaseOh was not ready for this Halloween nightmare #caseoh #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 108,
+   "publish+submit": 6,
+   "total": 118
+  }
+ },
+ {
+  "file": "jynxzi-twitch-tw-2906121675-12471.mp4",
+  "creator": "Jynxzi (Twitch)",
+  "source": "https://www.twitch.tv/videos/2906121675",
+  "start": 12436,
+  "end": 12497.22,
+  "cuts": 15,
+  "length": 38.8,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 78,
+  "hook": "He threatened to end the stream",
+  "hook_type": "stakes",
+  "emphasis": [
+   "respect",
+   "complain",
+   "crybaby",
+   "DLC"
+  ],
+  "caption": "Jynxzi lost his mind at chat over this weapon #jynxzi #stream #clips",
+  "title": "Jynxzi lost his mind at chat over this weapon",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-10-23T11:04:05.030615+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/ANhn8N6_xas",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/jynxzi-twitch-tw-2906121675-12471.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/jynxzi-twitch-tw-2906121675-12471.tt.mp4",
+  "tiktok_caption": "Jynxzi lost his mind at chat over this weapon #jynxzi #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 195,
+   "publish+submit": 9,
+   "total": 208
+  }
+ },
+ {
+  "file": "westcol-kick-kc-clip-01m5gr96hs8jcnm4atm0x24x27.mp4",
+  "creator": "Westcol (Kick)",
+  "source": "https://clips.kick.com/clips/be/clip_01M5GR96HS8JCNM4ATM0X24X27/playlist.m3u8",
+  "start": 23.25,
+  "end": 57.739999999999995,
+  "cuts": 10,
+  "length": 20.3,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "kick-clip",
+  "score": 85,
+  "hook": "¡Se lanzó a la piscina!",
+  "hook_type": "revelation",
+  "emphasis": [
+   "Leandro",
+   "tiro",
+   "quinto",
+   "Papi"
+  ],
+  "caption": "Westcol pierde totalmente el control en directo #westcol #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Westcol pierde totalmente el control en directo",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-10-23T10:52:21.623612+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/j4QPT9hPIcc",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/westcol-kick-kc-clip-01m5gr96hs8jcnm4atm0x24x27.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/westcol-kick-kc-clip-01m5gr96hs8jcnm4atm0x24x27.tt.mp4",
+  "tiktok_caption": "Westcol pierde totalmente el control en directo #westcol #kick #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 9,
+   "transcribe+edit+render": 248,
+   "publish+submit": 10,
+   "total": 267
+  }
+ },
+ {
+  "file": "jynxzi-twitch-tw-2901673486-90017.mp4",
+  "creator": "Jynxzi (Twitch)",
+  "source": "https://www.twitch.tv/videos/2901673486",
+  "start": 90009.9,
+  "end": 90022.8,
+  "cuts": 11,
+  "length": 20.7,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Jynxzi completely loses control live",
+  "hook_type": "revelation",
+  "emphasis": [
+   "Ow",
+   "Valid",
+   "Trick shot"
+  ],
+  "caption": "Jynxzi was not ready for this physical pain #jynxzi #stream #clips",
+  "title": "Jynxzi was not ready for this physical pain",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-10-23T10:38:58.909127+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/v7SJS4aHZP4",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/jynxzi-twitch-tw-2901673486-90017.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/jynxzi-twitch-tw-2901673486-90017.tt.mp4",
+  "tiktok_caption": "Jynxzi was not ready for this physical pain #jynxzi #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 125,
+   "publish+submit": 10,
+   "total": 140
+  }
+ },
+ {
+  "file": "caseoh-twitch-tw-2907317252-5695.mp4",
+  "creator": "CaseOh (Twitch)",
+  "source": "https://www.twitch.tv/videos/2907317252",
+  "start": 5665.64,
+  "end": 5768.4,
+  "cuts": 9,
+  "length": 22.0,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "hype",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "Vampi in the club",
+  "hook_type": "revelation",
+  "emphasis": [
+   "Vampi",
+   "club",
+   "diamond",
+   "smoke",
+   "money"
+  ],
+  "caption": "CaseOh goes unhinged with the bars #caseoh #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "CaseOh goes unhinged with the bars",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-10-23T10:05:41.414234+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/cgE_5aFfNnU",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2907317252-5695.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2907317252-5695.tt.mp4",
+  "tiktok_caption": "CaseOh goes unhinged with the bars #caseoh #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 167,
+   "publish+submit": 10,
+   "total": 182
+  }
+ },
+ {
+  "file": "auronplay-twitch-tw-2907669423-2568.mp4",
+  "creator": "Auronplay (Twitch)",
+  "source": "https://www.twitch.tv/videos/2907669423",
+  "start": 2546.41,
+  "end": 2587.54,
+  "cuts": 14,
+  "length": 38.6,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "Auron destruye a Pereira en directo",
+  "hook_type": "stakes",
+  "emphasis": [
+   "contestras",
+   "muertazo",
+   "subidito"
+  ],
+  "caption": "Auronplay explota contra Pereira en pleno directo #auronplay #stream #clipsespañol",
+  "title": "Auronplay explota contra Pereira en pleno directo",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-10-23T09:52:24.978475+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/zDZ9zSmvchQ",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2907669423-2568.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2907669423-2568.tt.mp4",
+  "tiktok_caption": "Auronplay explota contra Pereira en pleno directo #auronplay #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 246,
+   "publish+submit": 10,
+   "total": 260
+  }
+ },
+ {
+  "file": "clix-twitch-tw-2905353771-13084.mp4",
+  "creator": "Clix (Twitch)",
+  "source": "https://www.twitch.tv/videos/2905353771",
+  "start": 13100.55,
+  "end": 13072.48,
+  "cuts": 8,
+  "length": 22.5,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 82,
+  "hook": "Clix claims he's a D3 player",
+  "hook_type": "revelation",
+  "emphasis": [
+   "NBA",
+   "D3",
+   "easy",
+   "tweaking"
+  ],
+  "caption": "Clix seriously thought he was making it to D3 #Clix #Clix #fortnite #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Clix seriously thought he was making it to D3 #Clix",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": "https://contentrewards.com/c/campaigns/7a6a234b-1e9e-4da3-a600-54cc3142e710",
+  "created": "2026-10-23T09:18:35.506344+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/_38unNfpJG0",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2905353771-13084.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2905353771-13084.tt.mp4",
+  "tiktok_caption": "Clix seriously thought he was making it to D3 #Clix #Clix #fortnite #streamer",
+  "account": 1,
+  "submission": {
+   "error": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"button\", name=re.compile(r\"^(Submit clip|Enviar clip)$\")).first\n    - locator resolved to <button type=\"button\" class=\"inline-flex cursor-pointer items-center justify-center gap-2 rounded-full font-medium tracking-displa"
+  },
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 142,
+   "publish+submit": 47,
+   "total": 195
+  }
+ },
+ {
   "file": "westcol-kick-kc-clip-01m5cq3wv9y0esqx0101chy2c8.mp4",
   "creator": "Westcol (Kick)",
   "source": "https://clips.kick.com/clips/6c/clip_01M5CQ3WV9Y0ESQX0101CHY2C8/playlist.m3u8",
