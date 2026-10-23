@@ -33,6 +33,9 @@ def submit(campaign_url: str, links: list[str]) -> dict:
             if "/login" in page.url:
                 browser.close()
                 return {"error": "Content Rewards session expired: refresh the CR_STATE secret"}
+            # A floating chat dock (div.chat-dock) covers the button and swallows the click: remove it.
+            hide = "document.querySelectorAll('.chat-dock,[data-dock-slot]').forEach(e => e.remove())"
+            page.evaluate(hide)
             pat = re.compile(r"(submit|enviar)", re.I)
             open_btn = None
             for _ in range(3):
@@ -53,15 +56,17 @@ def submit(campaign_url: str, links: list[str]) -> dict:
                 url = page.url
                 browser.close()
                 return {"error": f"no submit button on {url}; buttons: {names}"}
-            open_btn.click()
+            page.evaluate(hide)
+            open_btn.click(timeout=10000, force=True)
             page.wait_for_timeout(2500)
             dialog = page.get_by_role("dialog").last
             box = dialog.locator("textarea, input[type=url], input[type=text]").first
             box.fill("\n".join(links))
             # The real checkbox is visually hidden behind a styled span: click its label instead.
-            dialog.get_by_text(re.compile(r"(I've read the requirements|He leído los requisitos)")).first.click()
+            dialog.get_by_text(re.compile(r"(I've read the requirements|He leído los requisitos)")).first.click(force=True)
             submit_btn = dialog.get_by_role("button", name=pat).last
-            submit_btn.click()
+            page.evaluate(hide)
+            submit_btn.click(timeout=10000, force=True)
             page.wait_for_timeout(4000)
             # Wait out the "Submitting…" state before judging the result.
             for _ in range(30):
