@@ -1,0 +1,30 @@
+name: yt_whoami
+# Prints which YouTube channel each stored refresh token belongs to (no secrets printed).
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  whoami:
+    runs-on: ubuntu-latest
+    steps:
+      - name: channels
+        env:
+          CID: ${{ secrets.YT_CLIENT_ID }}
+          CSEC: ${{ secrets.YT_CLIENT_SECRET }}
+          T1: ${{ secrets.YT_REFRESH_TOKEN }}
+          T2: ${{ secrets.YT_REFRESH_TOKEN_2 }}
+          T3: ${{ secrets.YT_REFRESH_TOKEN_3 }}
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.parse, urllib.request
+          for k in ("T1", "T2", "T3"):
+              try:
+                  t = json.load(urllib.request.urlopen("https://oauth2.googleapis.com/token", urllib.parse.urlencode({
+                      "client_id": os.environ["CID"], "client_secret": os.environ["CSEC"],
+                      "refresh_token": os.environ[k], "grant_type": "refresh_token"}).encode()))["access_token"]
+                  r = urllib.request.Request("https://www.googleapis.com/youtube/v3/channels?part=snippet&mine=true",
+                                             headers={"Authorization": "Bearer " + t})
+                  print(k, [(i["snippet"]["title"], i["snippet"].get("customUrl")) for i in json.load(urllib.request.urlopen(r))["items"]])
+              except Exception as e:
+                  print(k, "ERROR", e)
+          PY
