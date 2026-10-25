@@ -1,5 +1,619 @@
 [
  {
+  "file": "lanah-cherry-twitch-tw-2908012294-3363.mp4",
+  "creator": "Lanah Cherry (Twitch)",
+  "source": "https://www.twitch.tv/videos/2908012294",
+  "start": 3356.74,
+  "end": 3390.56,
+  "cuts": 15,
+  "length": 20.1,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 78,
+  "hook": "Lanah went full beast mode",
+  "hook_type": "revelation",
+  "emphasis": [
+   "beast",
+   "mode",
+   "flip",
+   "good"
+  ],
+  "caption": "Lanah Cherry turns on beast mode and actually pulls it off #twitch #streamer #irl",
+  "title": "Lanah Cherry turns on beast mode and actually pulls it off",
+  "bed": null,
+  "campaign": "https://contentrewards.com/discover/6e379737-96ef-4980-8565-08df4e6d39d9",
+  "created": "2026-10-25T00:06:03.538818+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/hS6XkrB1xeI",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lanah-cherry-twitch-tw-2908012294-3363.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lanah-cherry-twitch-tw-2908012294-3363.tt.mp4",
+  "tiktok_caption": "Lanah Cherry turns on beast mode and actually pulls it off #twitch #streamer #irl",
+  "account": 1,
+  "submission": {
+   "error": "no submit button on https://contentrewards.com/c/campaigns/6e379737-96ef-4980-8565-08df4e6d39d9; buttons: ['Decline', 'Accept', 'Solutions', 'Resources', 'Back', 'Join Campaign', '', 'Join Campaign', 'Join Campaign']"
+  },
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 136,
+   "publish+submit": 72,
+   "total": 212
+  }
+ },
+ {
+  "file": "kai-cenat-twitch-tw-2908142170-1616.mp4",
+  "creator": "Kai Cenat (Twitch)",
+  "source": "https://www.twitch.tv/videos/2908142170",
+  "start": 1640.71,
+  "end": 1693.91,
+  "cuts": 13,
+  "length": 20.8,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "awkward",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "Worst FaceTime call ever",
+  "hook_type": "revelation",
+  "emphasis": [
+   "iPhone",
+   "filter",
+   "dead",
+   "Kyoto"
+  ],
+  "caption": "Kai Cenat's most awkward FaceTime call ever #kaicenat #twitch #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Kai Cenat's most awkward FaceTime call ever",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-10-24T23:19:32.327088+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/iL1k8GbuMd8",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2908142170-1616.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2908142170-1616.tt.mp4",
+  "tiktok_caption": "Kai Cenat's most awkward FaceTime call ever #kaicenat #twitch #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 2,
+   "transcribe+edit+render": 153,
+   "publish+submit": 8,
+   "total": 162
+  }
+ },
+ {
+  "file": "lanah-cherry-twitch-tw-2908012294-2266.mp4",
+  "creator": "Lanah Cherry (Twitch)",
+  "source": "https://www.twitch.tv/videos/2908012294",
+  "start": 2247.18,
+  "end": 2311.3,
+  "cuts": 9,
+  "length": 20.8,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "She really thought she could fly",
+  "hook_type": "revelation",
+  "emphasis": [
+   "fly",
+   "heck",
+   "hate"
+  ],
+  "caption": "Lanah Cherry attempts the worst stunt live #twitch #streamer #irl",
+  "title": "Lanah Cherry attempts the worst stunt live",
+  "bed": null,
+  "campaign": "https://contentrewards.com/discover/6e379737-96ef-4980-8565-08df4e6d39d9",
+  "created": "2026-10-24T23:07:50.956142+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/_R4qEG0EFmU",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lanah-cherry-twitch-tw-2908012294-2266.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lanah-cherry-twitch-tw-2908012294-2266.tt.mp4",
+  "tiktok_caption": "Lanah Cherry attempts the worst stunt live #twitch #streamer #irl",
+  "account": 1,
+  "submission": {
+   "submitted": [
+    "https://youtube.com/shorts/_R4qEG0EFmU"
+   ],
+   "rejected": {}
+  },
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 193,
+   "publish+submit": 37,
+   "total": 235
+  }
+ },
+ {
+  "file": "caseoh-twitch-tw-2908180885-6099.mp4",
+  "creator": "CaseOh (Twitch)",
+  "source": "https://www.twitch.tv/videos/2908180885",
+  "start": 6084.75,
+  "end": 6180.59,
+  "cuts": 12,
+  "length": 27.1,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 86,
+  "hook": "CaseOh spotted a secret name tag",
+  "hook_type": "revelation",
+  "emphasis": [
+   "name",
+   "tag",
+   "tweaking",
+   "dead",
+   "serious"
+  ],
+  "caption": "CaseOh was actually not tweaking about this #caseoh #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "CaseOh was actually not tweaking about this",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-10-24T22:55:58.934299+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/CfN8u_yRpus",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2908180885-6099.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2908180885-6099.tt.mp4",
+  "tiktok_caption": "CaseOh was actually not tweaking about this #caseoh #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 2,
+   "transcribe+edit+render": 210,
+   "publish+submit": 8,
+   "total": 220
+  }
+ },
+ {
+  "file": "kai-cenat-twitch-tw-2907224886-476.mp4",
+  "creator": "Kai Cenat (Twitch)",
+  "source": "https://www.twitch.tv/videos/2907224886",
+  "start": 441,
+  "end": 469.56,
+  "cuts": 10,
+  "length": 21.9,
+  "layout": "face",
+  "style": "blur",
+  "mood": "hype",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "He actually did that live",
+  "hook_type": "revelation",
+  "emphasis": [
+   "Psych",
+   "King",
+   "Oh",
+   "God"
+  ],
+  "caption": "Kai Cenat pulled off the craziest move live #kaicenat #twitch #streamer",
+  "title": "Kai Cenat pulled off the craziest move live",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-10-24T22:42:46.128934+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/nC1QkUqYWXw",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2907224886-476.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2907224886-476.tt.mp4",
+  "tiktok_caption": "Kai Cenat pulled off the craziest move live #kaicenat #twitch #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 205,
+   "publish+submit": 10,
+   "total": 218
+  }
+ },
+ {
+  "file": "clix-twitch-tw-2906007051-314.mp4",
+  "creator": "Clix (Twitch)",
+  "source": "https://www.twitch.tv/videos/2906007051",
+  "start": 306.5,
+  "end": 362.83,
+  "cuts": 11,
+  "length": 31.1,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "Clix loses it at his chat",
+  "hook_type": "stakes",
+  "emphasis": [
+   "asshole",
+   "McDonald's",
+   "computer"
+  ],
+  "caption": "Clix completely lost his mind over his code #Clix #Clix #fortnite #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Clix completely lost his mind over his code #Clix",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": "https://contentrewards.com/c/campaigns/7a6a234b-1e9e-4da3-a600-54cc3142e710",
+  "created": "2026-10-24T22:29:13.175152+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/3OeJXi_DNRU",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2906007051-314.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2906007051-314.tt.mp4",
+  "tiktok_caption": "Clix completely lost his mind over his code #Clix #Clix #fortnite #streamer",
+  "account": 1,
+  "submission": {
+   "submitted": [
+    "https://youtube.com/shorts/3OeJXi_DNRU"
+   ],
+   "rejected": {}
+  },
+  "timing_s": {
+   "download": 6,
+   "transcribe+edit+render": 186,
+   "publish+submit": 22,
+   "total": 214
+  }
+ },
+ {
+  "file": "ibai-twitch-tw-2908607306-20341.mp4",
+  "creator": "Ibai (Twitch)",
+  "source": "https://www.twitch.tv/videos/2908607306",
+  "start": 20338.34,
+  "end": 20379.24,
+  "cuts": 9,
+  "length": 20.1,
+  "layout": "face",
+  "style": "blur",
+  "mood": "hype",
+  "signal": "twitch-clip",
+  "score": 86,
+  "hook": "¡Menuda locura acaba de hacer!",
+  "hook_type": "revelation",
+  "emphasis": [
+   "tontos",
+   "barbaridad",
+   "Showmaker",
+   "reventa",
+   "partida"
+  ],
+  "caption": "Ibai flipa en directo con la jugada más loca del año #ibai #twitch #streamer",
+  "title": "Ibai flipa en directo con la jugada más loca del año",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-10-24T22:16:37.856221+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/hWFCFGzXsyE",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/ibai-twitch-tw-2908607306-20341.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/ibai-twitch-tw-2908607306-20341.tt.mp4",
+  "tiktok_caption": "Ibai flipa en directo con la jugada más loca del año #ibai #twitch #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 176,
+   "publish+submit": 8,
+   "total": 190
+  }
+ },
+ {
+  "file": "jynxzi-twitch-tw-2907583164-10577.mp4",
+  "creator": "Jynxzi (Twitch)",
+  "source": "https://www.twitch.tv/videos/2907583164",
+  "start": 10614.14,
+  "end": 10658.35,
+  "cuts": 9,
+  "length": 25.6,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "hype",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "He just got 410,000 runes!",
+  "hook_type": "revelation",
+  "emphasis": [
+   "four",
+   "hundred",
+   "ten",
+   "thousand",
+   "runes"
+  ],
+  "caption": "Jynxzi completely loses his mind over this drop #jynxzi #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Jynxzi completely loses his mind over this drop",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-10-24T22:04:54.358638+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/-iUav8C6bkA",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/jynxzi-twitch-tw-2907583164-10577.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/jynxzi-twitch-tw-2907583164-10577.tt.mp4",
+  "tiktok_caption": "Jynxzi completely loses his mind over this drop #jynxzi #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 189,
+   "publish+submit": 9,
+   "total": 201
+  }
+ },
+ {
+  "file": "auronplay-twitch-tw-2908553327-1390.mp4",
+  "creator": "Auronplay (Twitch)",
+  "source": "https://www.twitch.tv/videos/2908553327",
+  "start": 1369.02,
+  "end": 1395.46,
+  "cuts": 10,
+  "length": 22.9,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "wholesome",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "Auronplay saluda a su fan en directo",
+  "hook_type": "revelation",
+  "emphasis": [
+   "cumple",
+   "Dylan",
+   "Feliz"
+  ],
+  "caption": "Auronplay cumple el sueño de este seguidor #auronplay #stream #clipsespañol",
+  "title": "Auronplay cumple el sueño de este seguidor",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-10-24T21:49:41.413666+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/pujg1MYTD2s",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2908553327-1390.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2908553327-1390.tt.mp4",
+  "tiktok_caption": "Auronplay cumple el sueño de este seguidor #auronplay #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 170,
+   "publish+submit": 9,
+   "total": 181
+  }
+ },
+ {
+  "file": "lanah-cherry-twitch-tw-2908012294-1776.mp4",
+  "creator": "Lanah Cherry (Twitch)",
+  "source": "https://www.twitch.tv/videos/2908012294",
+  "start": 1773.44,
+  "end": 1850.89,
+  "cuts": 8,
+  "length": 21.7,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "She tied her hands as a kid",
+  "hook_type": "revelation",
+  "emphasis": [
+   "aerial",
+   "hands",
+   "minecraft",
+   "guys"
+  ],
+  "caption": "Lanah Cherry shows off the worst gymnastics skills ever #twitch #streamer #irl\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Lanah Cherry shows off the worst gymnastics skills ever",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": "https://contentrewards.com/discover/6e379737-96ef-4980-8565-08df4e6d39d9",
+  "created": "2026-10-24T21:38:01.968732+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/7OxSKxfesgg",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lanah-cherry-twitch-tw-2908012294-1776.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lanah-cherry-twitch-tw-2908012294-1776.tt.mp4",
+  "tiktok_caption": "Lanah Cherry shows off the worst gymnastics skills ever #twitch #streamer #irl",
+  "account": 1,
+  "submission": {
+   "submitted": [
+    "https://youtube.com/shorts/7OxSKxfesgg"
+   ],
+   "rejected": {}
+  },
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 201,
+   "publish+submit": 37,
+   "total": 242
+  }
+ },
+ {
+  "file": "clix-twitch-tw-2904594902-2751.mp4",
+  "creator": "Clix (Twitch)",
+  "source": "https://www.twitch.tv/videos/2904594902",
+  "start": 2795.28,
+  "end": 2796.72,
+  "cuts": 11,
+  "length": 22.1,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 78,
+  "hook": "Clix got outplayed LIVE",
+  "hook_type": "revelation",
+  "emphasis": [
+   "keen facts",
+   "80 HP",
+   "Disgusting shot",
+   "doubled me",
+   "didn't even see them"
+  ],
+  "caption": "Clix gets COMPLETELY outplayed, was it fair? #Clix #fortnite #streamer",
+  "title": "Clix gets COMPLETELY outplayed, was it fair?",
+  "bed": null,
+  "campaign": "https://contentrewards.com/c/campaigns/7a6a234b-1e9e-4da3-a600-54cc3142e710",
+  "created": "2026-10-24T21:18:30.723735+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/j_1QxdhrzLk",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2904594902-2751.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2904594902-2751.tt.mp4",
+  "tiktok_caption": "Clix gets COMPLETELY outplayed, was it fair? #Clix #fortnite #streamer",
+  "account": 1,
+  "submission": {
+   "submitted": [],
+   "rejected": {
+    "https://youtube.com/shorts/j_1QxdhrzLk": "\nPosted from one of your linked accounts\nNot already submitted to any campaign\nPosted within the last 30 minutes\nI've read the requirements and accept that non-compliant clips may be auto-rejected.\n\nWe couldn't confirm exactly when this post went live. Try again in a few minutes.\n\nCancel\nSubmit clip"
+   }
+  },
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 161,
+   "publish+submit": 25,
+   "total": 190
+  }
+ },
+ {
+  "file": "westcol-kick-kc-clip-01m5naffkmzas9f11x8c0dxe99.mp4",
+  "creator": "Westcol (Kick)",
+  "source": "https://clips.kick.com/clips/35/clip_01M5NAFFKMZAS9F11X8C0DXE99/playlist.m3u8",
+  "start": 3.7399999999999998,
+  "end": 36.86,
+  "cuts": 10,
+  "length": 26.9,
+  "layout": "face",
+  "style": "blur",
+  "mood": "swag",
+  "signal": "kick-clip",
+  "score": 78,
+  "hook": "LA CANCIÓN FAVORITA DE ANTHONY GORDON",
+  "hook_type": "revelation",
+  "emphasis": [
+   "Gordon",
+   "canción",
+   "plena",
+   "Explícita"
+  ],
+  "caption": "Westcol no esperaba este tema de Anthony Gordon, ¿es la mejor canción? #westcol #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Westcol no esperaba este tema de Anthony Gordon, ¿es la mejor canción?",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-10-24T21:07:08.686649+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/-W6erh9j-GY",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/westcol-kick-kc-clip-01m5naffkmzas9f11x8c0dxe99.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/westcol-kick-kc-clip-01m5naffkmzas9f11x8c0dxe99.tt.mp4",
+  "tiktok_caption": "Westcol no esperaba este tema de Anthony Gordon, ¿es la mejor canción? #westcol #kick #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 14,
+   "transcribe+edit+render": 218,
+   "publish+submit": 9,
+   "total": 242
+  }
+ },
+ {
+  "file": "elzeein-kick-kc-clip-01m5nz6865y567yy7qe28jd8gn.mp4",
+  "creator": "elZeein (Kick)",
+  "source": "https://clips.kick.com/clips/02/clip_01M5NZ6865Y567YY7QE28JD8GN/playlist.m3u8",
+  "start": 2.02,
+  "end": 44.66,
+  "cuts": 12,
+  "length": 22.7,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "kick-clip",
+  "score": 82,
+  "hook": "Le soltó la pregunta prohibida",
+  "hook_type": "stakes",
+  "emphasis": [
+   "cachados",
+   "mentiroso",
+   "diferente"
+  ],
+  "caption": "elZeein no esperaba esa pregunta en directo #elzeein #kick #streamer",
+  "title": "elZeein no esperaba esa pregunta en directo",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-10-24T20:54:57.240745+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/EMzMKDD4laE",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/elzeein-kick-kc-clip-01m5nz6865y567yy7qe28jd8gn.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/elzeein-kick-kc-clip-01m5nz6865y567yy7qe28jd8gn.tt.mp4",
+  "tiktok_caption": "elZeein no esperaba esa pregunta en directo #elzeein #kick #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 6,
+   "transcribe+edit+render": 133,
+   "publish+submit": 10,
+   "total": 148
+  }
+ },
+ {
+  "file": "spreen-kick-kc-clip-01m54c1vqx718cekmz36p9x0hc.mp4",
+  "creator": "Spreen (Kick)",
+  "source": "https://clips.kick.com/clips/b9/clip_01M54C1VQX718CEKMZ36P9X0HC/playlist.m3u8",
+  "start": 46.64,
+  "end": 70.013667,
+  "cuts": 9,
+  "length": 21.6,
+  "layout": "face",
+  "style": "blur",
+  "mood": "tension",
+  "signal": "kick-clip",
+  "score": 88,
+  "hook": "Spreen expone el acoso en streams",
+  "hook_type": "revelation",
+  "emphasis": [
+   "acoso",
+   "llorón",
+   "doxiarlos"
+  ],
+  "caption": "Spreen se planta contra el hate y los límites cruzados #spreen #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Spreen se planta contra el hate y los límites cruzados",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-10-24T20:44:15.605002+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/vM4ah4kgbbQ",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/spreen-kick-kc-clip-01m54c1vqx718cekmz36p9x0hc.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/spreen-kick-kc-clip-01m54c1vqx718cekmz36p9x0hc.tt.mp4",
+  "tiktok_caption": "Spreen se planta contra el hate y los límites cruzados #spreen #kick #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 17,
+   "transcribe+edit+render": 204,
+   "publish+submit": 7,
+   "total": 229
+  }
+ },
+ {
   "file": "caseoh-twitch-tw-2905597998-10017.mp4",
   "creator": "CaseOh (Twitch)",
   "source": "https://www.twitch.tv/videos/2905597998",

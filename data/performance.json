@@ -1,36 +1,46 @@
 {
- "updated": "2026-10-23T09:14:05+00:00",
- "clips": 80,
+ "updated": "2026-10-24T20:39:56+00:00",
+ "clips": 92,
  "by_creator": {
-  "Rivers (Twitch)": {
-   "clips": 5,
-   "views": 4537,
-   "avg_views": 907
-  },
-  "Auronplay (Twitch)": {
-   "clips": 7,
-   "views": 7676,
-   "avg_views": 1097
-  },
-  "CaseOh (Twitch)": {
-   "clips": 3,
-   "views": 1116,
-   "avg_views": 372
-  },
-  "Clix (Twitch)": {
-   "clips": 3,
-   "views": 7912,
-   "avg_views": 2637
-  },
   "Jynxzi (Twitch)": {
-   "clips": 2,
-   "views": 2297,
-   "avg_views": 1148
+   "clips": 5,
+   "views": 4170,
+   "avg_views": 834
   },
   "Westcol (Kick)": {
+   "clips": 5,
+   "views": 2157,
+   "avg_views": 431
+  },
+  "CaseOh (Twitch)": {
+   "clips": 5,
+   "views": 2297,
+   "avg_views": 459
+  },
+  "Auronplay (Twitch)": {
+   "clips": 10,
+   "views": 12679,
+   "avg_views": 1268
+  },
+  "Clix (Twitch)": {
    "clips": 4,
-   "views": 1064,
-   "avg_views": 266
+   "views": 9121,
+   "avg_views": 2280
+  },
+  "Kai Cenat (Twitch)": {
+   "clips": 6,
+   "views": 7297,
+   "avg_views": 1216
+  },
+  "Ibai (Twitch)": {
+   "clips": 4,
+   "views": 2502,
+   "avg_views": 626
+  },
+  "Rivers (Twitch)": {
+   "clips": 5,
+   "views": 5049,
+   "avg_views": 1010
   },
   "xQc (Kick)": {
    "clips": 1,
@@ -39,13 +49,8 @@
   },
   "Clix x Yeat (Twitch)": {
    "clips": 2,
-   "views": 5755,
-   "avg_views": 2878
-  },
-  "Kai Cenat (Twitch)": {
-   "clips": 5,
-   "views": 3384,
-   "avg_views": 677
+   "views": 5766,
+   "avg_views": 2883
   },
   "Juansguarnizo (Kick)": {
    "clips": 1,
@@ -54,13 +59,8 @@
   },
   "Stable Ronaldo (Twitch)": {
    "clips": 4,
-   "views": 3959,
-   "avg_views": 990
-  },
-  "Ibai (Twitch)": {
-   "clips": 3,
-   "views": 2105,
-   "avg_views": 702
+   "views": 3964,
+   "avg_views": 991
   },
   "Ice Poseidon (Kick)": {
    "clips": 1,
@@ -84,7 +84,7 @@
   },
   "Spreen (Kick)": {
    "clips": 3,
-   "views": 5487,
+   "views": 5488,
    "avg_views": 1829
   },
   "Harrison Webb ($7 vs $115 English Breakfast)": {
@@ -99,8 +99,8 @@
   },
   "Lanah Cherry (Twitch)": {
    "clips": 11,
-   "views": 15327,
-   "avg_views": 1393
+   "views": 15332,
+   "avg_views": 1394
   },
   "TJR": {
    "clips": 17,
@@ -109,8 +109,8 @@
   },
   "Michael Porter Jr. (Curious Mike)": {
    "clips": 1,
-   "views": 2586,
-   "avg_views": 2586
+   "views": 2587,
+   "avg_views": 2587
   }
  },
  "top": [
@@ -121,9 +121,20 @@
    "mood": "awkward",
    "hook_type": "revelation",
    "score": 78,
-   "views": 5087,
+   "views": 5095,
    "likes": 43,
    "id": "49m7bG834X0"
+  },
+  {
+   "creator": "Kai Cenat (Twitch)",
+   "hook": "He just destroyed a bike",
+   "title": "Kai Cenat was NOT ready for this bike accident",
+   "mood": "chaos",
+   "hook_type": "stakes",
+   "score": 88,
+   "views": 3912,
+   "likes": 39,
+   "id": "J1P_cwbirK0"
   },
   {
    "creator": "Lanah Cherry (Twitch)",
@@ -159,13 +170,24 @@
    "id": "REDP_AloN5A"
   },
   {
+   "creator": "Auronplay (Twitch)",
+   "hook": "Auronplay admite la verdad",
+   "title": "Auronplay no se esperaba esta pregunta en directo",
+   "mood": "funny",
+   "hook_type": "revelation",
+   "score": 82,
+   "views": 2854,
+   "likes": 139,
+   "id": "3SssCrnpijY"
+  },
+  {
    "creator": "Clix x Yeat (Twitch)",
    "hook": "Yeat's secret instructions revealed",
    "title": "Clix was NOT ready for Yeat's chaotic stream demands",
    "mood": "chaos",
    "hook_type": "revelation",
    "score": 88,
-   "views": 2744,
+   "views": 2755,
    "likes": 52,
    "id": "qrUYeJzyszM"
   },
@@ -179,42 +201,9 @@
    "views": 2700,
    "likes": 56,
    "id": "odUXPRp9A9M"
-  },
-  {
-   "creator": "Lanah Cherry (Twitch)",
-   "hook": "Worst dating story ever",
-   "title": "Lanah Cherry was DONE with dating after THIS",
-   "mood": "funny",
-   "hook_type": "revelation",
-   "score": 88,
-   "views": 2651,
-   "likes": 23,
-   "id": "HVX_1C1azwo"
-  },
-  {
-   "creator": "Michael Porter Jr. (Curious Mike)",
-   "hook": "He admitted his true celebrity crush",
-   "title": "Michael Porter Jr revealed his surprising celebrity crush",
-   "mood": "funny",
-   "hook_type": "revelation",
-   "score": 82,
-   "views": 2586,
-   "likes": 19,
-   "id": "fn5qryHKOII"
   }
  ],
  "bottom": [
-  {
-   "creator": "Lacy (Twitch)",
-   "hook": "He just repeated it",
-   "title": "Lacy caught repeating the funniest thing live",
-   "mood": "funny",
-   "hook_type": "revelation",
-   "score": 82,
-   "views": 5,
-   "likes": 0,
-   "id": "S3rqjhZ8LTI"
-  },
   {
    "creator": "N3on (Kick)",
    "hook": "HE SANG FOR N3ON LIVE",
@@ -236,6 +225,17 @@
    "views": 2,
    "likes": 0,
    "id": "aTghBz7sxWE"
+  },
+  {
+   "creator": "Jynxzi (Twitch)",
+   "hook": "He threatened to end the stream",
+   "title": "Jynxzi lost his mind at chat over this weapon",
+   "mood": "chaos",
+   "hook_type": "stakes",
+   "score": 78,
+   "views": 1,
+   "likes": 0,
+   "id": "ANhn8N6_xas"
   },
   {
    "creator": "xQc (Kick)",
