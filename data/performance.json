@@ -1,46 +1,46 @@
 {
- "updated": "2026-10-24T20:39:56+00:00",
+ "updated": "2026-10-25T11:25:37+00:00",
  "clips": 92,
  "by_creator": {
   "Jynxzi (Twitch)": {
    "clips": 5,
-   "views": 4170,
-   "avg_views": 834
+   "views": 4222,
+   "avg_views": 844
   },
   "Westcol (Kick)": {
    "clips": 5,
-   "views": 2157,
-   "avg_views": 431
+   "views": 2458,
+   "avg_views": 492
   },
   "CaseOh (Twitch)": {
    "clips": 5,
-   "views": 2297,
-   "avg_views": 459
+   "views": 2319,
+   "avg_views": 464
   },
   "Auronplay (Twitch)": {
    "clips": 10,
-   "views": 12679,
-   "avg_views": 1268
+   "views": 13771,
+   "avg_views": 1377
   },
   "Clix (Twitch)": {
    "clips": 4,
-   "views": 9121,
-   "avg_views": 2280
+   "views": 9190,
+   "avg_views": 2298
   },
   "Kai Cenat (Twitch)": {
    "clips": 6,
-   "views": 7297,
-   "avg_views": 1216
+   "views": 8338,
+   "avg_views": 1390
   },
   "Ibai (Twitch)": {
    "clips": 4,
-   "views": 2502,
-   "avg_views": 626
+   "views": 2509,
+   "avg_views": 627
   },
   "Rivers (Twitch)": {
    "clips": 5,
-   "views": 5049,
-   "avg_views": 1010
+   "views": 5268,
+   "avg_views": 1054
   },
   "xQc (Kick)": {
    "clips": 1,
@@ -49,8 +49,8 @@
   },
   "Clix x Yeat (Twitch)": {
    "clips": 2,
-   "views": 5766,
-   "avg_views": 2883
+   "views": 5767,
+   "avg_views": 2884
   },
   "Juansguarnizo (Kick)": {
    "clips": 1,
@@ -59,8 +59,8 @@
   },
   "Stable Ronaldo (Twitch)": {
    "clips": 4,
-   "views": 3964,
-   "avg_views": 991
+   "views": 3967,
+   "avg_views": 992
   },
   "Ice Poseidon (Kick)": {
    "clips": 1,
@@ -89,8 +89,8 @@
   },
   "Harrison Webb ($7 vs $115 English Breakfast)": {
    "clips": 1,
-   "views": 2431,
-   "avg_views": 2431
+   "views": 2432,
+   "avg_views": 2432
   },
   "Adin Ross (Kick)": {
    "clips": 2,
@@ -99,7 +99,7 @@
   },
   "Lanah Cherry (Twitch)": {
    "clips": 11,
-   "views": 15332,
+   "views": 15333,
    "avg_views": 1394
   },
   "TJR": {
@@ -121,7 +121,7 @@
    "mood": "awkward",
    "hook_type": "revelation",
    "score": 78,
-   "views": 5095,
+   "views": 5099,
    "likes": 43,
    "id": "49m7bG834X0"
   },
@@ -132,9 +132,20 @@
    "mood": "chaos",
    "hook_type": "stakes",
    "score": 88,
-   "views": 3912,
-   "likes": 39,
+   "views": 4953,
+   "likes": 44,
    "id": "J1P_cwbirK0"
+  },
+  {
+   "creator": "Auronplay (Twitch)",
+   "hook": "Auronplay admite la verdad",
+   "title": "Auronplay no se esperaba esta pregunta en directo",
+   "mood": "funny",
+   "hook_type": "revelation",
+   "score": 82,
+   "views": 3475,
+   "likes": 155,
+   "id": "3SssCrnpijY"
   },
   {
    "creator": "Lanah Cherry (Twitch)",
@@ -154,7 +165,7 @@
    "mood": "funny",
    "hook_type": "revelation",
    "score": 88,
-   "views": 3011,
+   "views": 3012,
    "likes": 40,
    "id": "OW9Fq6UoOrk"
   },
@@ -168,17 +179,6 @@
    "views": 3005,
    "likes": 55,
    "id": "REDP_AloN5A"
-  },
-  {
-   "creator": "Auronplay (Twitch)",
-   "hook": "Auronplay admite la verdad",
-   "title": "Auronplay no se esperaba esta pregunta en directo",
-   "mood": "funny",
-   "hook_type": "revelation",
-   "score": 82,
-   "views": 2854,
-   "likes": 139,
-   "id": "3SssCrnpijY"
   },
   {
    "creator": "Clix x Yeat (Twitch)",
