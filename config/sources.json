@@ -1359,5 +1359,35 @@
     "join_status": "unido en Content Rewards 2026-10-23",
     "why": "1.25 USD/1k desde 1.000 vistas, solo TikTok",
     "why_off": "pide cuentas nuevas con identidad falsa de 'aficionado' y slideshows: no"
+  },
+  {
+    "creator": "Cuffem (Kick)",
+    "source": "https://kick.com/cuffem",
+    "enabled": true,
+    "account": 2,
+    "lang": "English",
+    "hashtags": [
+      "cuffem",
+      "kick",
+      "streamer"
+    ],
+    "credit": "kick.com/cuffem",
+    "why": "Programa Kick Clipping (clipping.net): 0.30-0.40 USD/1k sin minimo por clip; crear portfolio antes de aplicar",
+    "priority": 3
+  },
+  {
+    "creator": "LosPollosTV (Kick)",
+    "source": "https://kick.com/lospollostv",
+    "enabled": true,
+    "account": 2,
+    "lang": "English",
+    "hashtags": [
+      "lospollostv",
+      "kick",
+      "streamer"
+    ],
+    "credit": "kick.com/lospollostv",
+    "why": "Programa Kick Clipping (clipping.net): 0.30-0.40 USD/1k sin minimo por clip; crear portfolio antes de aplicar",
+    "priority": 3
   }
 ]
