@@ -1,46 +1,61 @@
 {
- "updated": "2026-10-25T11:25:37+00:00",
- "clips": 92,
+ "updated": "2026-10-26T07:43:00+00:00",
+ "clips": 106,
  "by_creator": {
-  "Jynxzi (Twitch)": {
-   "clips": 5,
-   "views": 4222,
-   "avg_views": 844
-  },
-  "Westcol (Kick)": {
-   "clips": 5,
-   "views": 2458,
-   "avg_views": 492
-  },
-  "CaseOh (Twitch)": {
-   "clips": 5,
-   "views": 2319,
-   "avg_views": 464
-  },
-  "Auronplay (Twitch)": {
-   "clips": 10,
-   "views": 13771,
-   "avg_views": 1377
-  },
-  "Clix (Twitch)": {
-   "clips": 4,
-   "views": 9190,
-   "avg_views": 2298
+  "Lanah Cherry (Twitch)": {
+   "clips": 14,
+   "views": 18317,
+   "avg_views": 1308
   },
   "Kai Cenat (Twitch)": {
+   "clips": 8,
+   "views": 9721,
+   "avg_views": 1215
+  },
+  "CaseOh (Twitch)": {
    "clips": 6,
-   "views": 8338,
-   "avg_views": 1390
+   "views": 3594,
+   "avg_views": 599
+  },
+  "Clix (Twitch)": {
+   "clips": 6,
+   "views": 10663,
+   "avg_views": 1777
   },
   "Ibai (Twitch)": {
+   "clips": 5,
+   "views": 2617,
+   "avg_views": 523
+  },
+  "Jynxzi (Twitch)": {
+   "clips": 6,
+   "views": 5597,
+   "avg_views": 933
+  },
+  "Auronplay (Twitch)": {
+   "clips": 11,
+   "views": 15743,
+   "avg_views": 1431
+  },
+  "Westcol (Kick)": {
+   "clips": 6,
+   "views": 3659,
+   "avg_views": 610
+  },
+  "elZeein (Kick)": {
+   "clips": 1,
+   "views": 72,
+   "avg_views": 72
+  },
+  "Spreen (Kick)": {
    "clips": 4,
-   "views": 2509,
-   "avg_views": 627
+   "views": 5544,
+   "avg_views": 1386
   },
   "Rivers (Twitch)": {
    "clips": 5,
-   "views": 5268,
-   "avg_views": 1054
+   "views": 5473,
+   "avg_views": 1095
   },
   "xQc (Kick)": {
    "clips": 1,
@@ -59,8 +74,8 @@
   },
   "Stable Ronaldo (Twitch)": {
    "clips": 4,
-   "views": 3967,
-   "avg_views": 992
+   "views": 3972,
+   "avg_views": 993
   },
   "Ice Poseidon (Kick)": {
    "clips": 1,
@@ -82,11 +97,6 @@
    "views": 11,
    "avg_views": 6
   },
-  "Spreen (Kick)": {
-   "clips": 3,
-   "views": 5488,
-   "avg_views": 1829
-  },
   "Harrison Webb ($7 vs $115 English Breakfast)": {
    "clips": 1,
    "views": 2432,
@@ -96,11 +106,6 @@
    "clips": 2,
    "views": 859,
    "avg_views": 430
-  },
-  "Lanah Cherry (Twitch)": {
-   "clips": 11,
-   "views": 15333,
-   "avg_views": 1394
   },
   "TJR": {
    "clips": 17,
@@ -115,26 +120,26 @@
  },
  "top": [
   {
-   "creator": "Clix (Twitch)",
-   "hook": "CLIX HEARS THE WILDEST CONFESSION",
-   "title": "Shocked Clix cannot believe what his viewer admitted",
-   "mood": "awkward",
-   "hook_type": "revelation",
-   "score": 78,
-   "views": 5099,
-   "likes": 43,
-   "id": "49m7bG834X0"
-  },
-  {
    "creator": "Kai Cenat (Twitch)",
    "hook": "He just destroyed a bike",
    "title": "Kai Cenat was NOT ready for this bike accident",
    "mood": "chaos",
    "hook_type": "stakes",
    "score": 88,
-   "views": 4953,
-   "likes": 44,
+   "views": 5314,
+   "likes": 45,
    "id": "J1P_cwbirK0"
+  },
+  {
+   "creator": "Clix (Twitch)",
+   "hook": "CLIX HEARS THE WILDEST CONFESSION",
+   "title": "Shocked Clix cannot believe what his viewer admitted",
+   "mood": "awkward",
+   "hook_type": "revelation",
+   "score": 78,
+   "views": 5100,
+   "likes": 43,
+   "id": "49m7bG834X0"
   },
   {
    "creator": "Auronplay (Twitch)",
@@ -143,8 +148,8 @@
    "mood": "funny",
    "hook_type": "revelation",
    "score": 82,
-   "views": 3475,
-   "likes": 155,
+   "views": 3729,
+   "likes": 157,
    "id": "3SssCrnpijY"
   },
   {
@@ -205,17 +210,6 @@
  ],
  "bottom": [
   {
-   "creator": "N3on (Kick)",
-   "hook": "HE SANG FOR N3ON LIVE",
-   "title": "N3on was stunned when fan sang him this",
-   "mood": "funny",
-   "hook_type": "revelation",
-   "score": 82,
-   "views": 3,
-   "likes": 1,
-   "id": "M6ihA5u1P6M"
-  },
-  {
    "creator": "TJR",
    "hook": "Why is he sneak-dissing his boy?",
    "title": null,
@@ -236,6 +230,17 @@
    "views": 1,
    "likes": 0,
    "id": "ANhn8N6_xas"
+  },
+  {
+   "creator": "Kai Cenat (Twitch)",
+   "hook": "He actually did that live",
+   "title": "Kai Cenat pulled off the craziest move live",
+   "mood": "hype",
+   "hook_type": "revelation",
+   "score": 88,
+   "views": 0,
+   "likes": 0,
+   "id": "nC1QkUqYWXw"
   },
   {
    "creator": "xQc (Kick)",
