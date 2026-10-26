@@ -30,7 +30,9 @@ def submit(campaign_url: str, links: list[str]) -> dict:
                 campaign_url = f"https://contentrewards.com/c/campaigns/{m.group(1)}"
             page.goto(campaign_url, wait_until="domcontentloaded")
             page.wait_for_timeout(7000)
-            if "/login" in page.url:
+            # An expired session does not always redirect: the page shows the public nav (Sign in / Solutions).
+            logged_out = page.get_by_role("link", name="Sign in").count() + page.get_by_role("button", name="Sign in").count()
+            if "/login" in page.url or logged_out:
                 browser.close()
                 return {"error": "Content Rewards session expired: refresh the CR_STATE secret"}
             # A floating chat dock (div.chat-dock) covers the button and swallows the click: remove it.
