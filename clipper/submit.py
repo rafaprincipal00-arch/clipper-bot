@@ -54,7 +54,13 @@ def submit(campaign_url: str, links: list[str]) -> dict:
             if open_btn is None:
                 names = [x.inner_text()[:40] for x in page.get_by_role("button").all() if x.is_visible()][:40]
                 url = page.url
+                body = page.inner_text("body")[:4000]
                 browser.close()
+                # Logged-out page: public card with 'Join Campaign' / 'Sign in' instead of our joined view.
+                if "Sign in" in names or "6 digit code" in body:
+                    return {"error": "Content Rewards session expired: refresh the CR_STATE secret"}
+                if "Join Campaign" in names:
+                    return {"error": "not joined (or CR_STATE expired): 'Join Campaign' shown instead of Submit"}
                 return {"error": f"no submit button on {url}; buttons: {names}"}
             page.evaluate(hide)
             open_btn.click(timeout=10000, force=True)

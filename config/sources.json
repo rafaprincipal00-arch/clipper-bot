@@ -404,15 +404,25 @@
     "creator": "Kai Cenat (Twitch)",
     "source": "https://www.twitch.tv/kaicenat",
     "enabled": true,
-    "account": 2,
+    "account": 1,
     "lang": "English",
     "hashtags": [
-      "kaicenat",
+      "KaiCenat",
       "twitch",
       "streamer"
     ],
     "credit": "twitch.tv/kaicenat",
-    "why": "famoso, sin campaña abierta"
+    "why": "Reach pool $10K (hasta 31/10) + Streamer U",
+    "campaign": "$10,000 Kai Cenat Campaign",
+    "campaign_url": "https://contentrewards.com/c/campaigns/44a3ffcb-d4a1-492b-94a4-704919950246",
+    "mention": "#KaiCenat",
+    "priority": 2,
+    "programs": [
+      "cr-kai-cenat-reach",
+      "cn-streamer-u"
+    ],
+    "requirements": "Kai Cenat must be the main focus. Only footage streamed 21-31 Oct 2026. English captions and on-screen text, use #KaiCenat. No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0.",
+    "join_status": "pendiente: cr_join 26/10 sin sesion (CR_STATE caducado)"
   },
   {
     "creator": "Adin Ross (Kick)",

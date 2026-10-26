@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-19",
+ "checked": "2026-10-26",
  "note": "Programas de clipping de pago de creadores grandes. Orden: score = CPM base x facilidad (1-5); rank 1 = mejor. 'track' = creadores de config/sources.json cuyas vistas cuentan para el portfolio de ese programa. 'min_views' = umbral publico para empezar a cobrar o para que la solicitud tenga sentido. Datos de paginas publicas; las reglas finas estan dentro de cada Discord/campana y hay que releerlas al entrar.",
  "programs": [
   {
@@ -13,47 +13,49 @@
     "url": "https://vyro.com/campaigns",
     "how": "Cuenta en vyro.com (18+); todas las campanas piden solicitud"
    },
-   "pay": "Mediana $1.50/1K (de $1.05 a $2.50), $19.5K vivos en 7 campanas (19/10). MrBeast x Kizik $2/1K: quedan $6.1K de $30K, ~1 dia. Nueva MrBeast 'Lose 150 Lbs Together' $1/1K (bloqueada). Total Drama Roblox $2.50/1K ($1.8K de $2K)",
-   "cpm": 1.5,
+   "pay": "Mediana $2.00/1K (de $1.50 a $2.50), $57.2K vivos en 12 campanas (26/10). Nueva MrBeast Gaming \"Escape Call of Duty DMZ, Win $1,000,000\" $1.50/1K (marca CoD MW4, $29.2K libres). MrBeast x Kizik ya no aparece (agotada). \"Lose 150 Lbs Together\" $1/1K bloqueada. Total Drama Roblox: 5 campanas a $2.50/1K ($7K)",
+   "cpm": 2.0,
    "cpm_max": 2.5,
-   "requirements": "Sin seguidores minimos; solicitud por campana; retiro minimo $10 (Stripe/PayPal)",
+   "requirements": "Sin seguidores minimos; solicitud por campana; 5.000 vistas minimas por post (mediana de las 12); retiro minimo $10 (Stripe/PayPal)",
    "rules": "Clip aprobado y por encima del minimo de la campana",
    "ease": 3,
    "account": 1,
-   "min_views": 10000,
+   "min_views": 5000,
    "track": [],
    "sources": [
     "https://vyro.com/about",
     "https://clippingalpha.com/boards/vyro"
    ],
-   "score": 4.5,
-   "who": "MrBeast-related campaigns"
+   "score": 6.0,
+   "who": "MrBeast-related campaigns",
+   "status": "activo"
   },
   {
    "rank": 2,
-   "id": "vyro-speed-vegas",
-   "name": "SPEED VEGAS (IShowSpeed en Vyro)",
+   "id": "cn-full-squad-gaming",
+   "name": "Full Squad Gaming x Clipping (clipping.net)",
    "lang": "en",
-   "creators": "IShowSpeed",
+   "creators": "Full Squad Gaming (LazarBeam, Muselk, Loserfruit, Crayator; YouTube)",
    "where": {
     "type": "plataforma",
-    "url": "https://vyro.com/campaigns/speed-vegas-lC81wXFS",
-    "how": "Cuenta en vyro.com (18+); campana 'Locked': hay que solicitarla y ser aprobado"
+    "url": "https://clipping.net/c/full-squad-gaming-x-clipping",
+    "how": "Unirse desde clipping.net con Discord (sin solicitud)"
    },
-   "pay": "$2.10/1K ('SPEED VEGAS 1', publicada el 15/10); presupuesto no publico",
-   "cpm": 2.1,
-   "cpm_max": 2.1,
-   "requirements": "Solicitud en Vyro; reglas y footage bloqueados hasta ser aceptado. Al entrar, comprobar que no haya segmentos de casino (Vegas): si los hay, solo clipear lo que no sea juego",
-   "rules": "Clip aprobado por Vyro; reglas exactas dentro de la campana",
-   "ease": 2,
-   "account": 1,
-   "min_views": 10000,
+   "pay": "$75 por 100k vistas ($0.75/1K), PayPal",
+   "cpm": 0.75,
+   "cpm_max": 0.75,
+   "requirements": "Sin solicitud. 50.000 vistas minimas por bounty",
+   "rules": "Solo views organicas; reglas dentro de la campana",
+   "ease": 3,
+   "account": 2,
+   "min_views": 50000,
    "track": [],
    "sources": [
-    "https://vyro.com/campaigns",
-    "https://vyro.com/campaigns/speed-vegas-lC81wXFS"
+    "https://clipping.net/c/full-squad-gaming-x-clipping"
    ],
-   "score": 4.2
+   "status": "activo segun la ficha (lastmod del sitemap 14/11/2025: confirmar al entrar)",
+   "note": "Sin fuente en sources.json: es YouTube (solo via prefetch del PC) y no se sabe que canal/video cubre el bounty",
+   "score": 2.25
   },
   {
    "rank": 3,
@@ -66,7 +68,7 @@
     "url": "https://clipping.net/c/kick-clipping",
     "how": "Entrar en clipping.net con Discord, conectar las cuentas de TikTok/Shorts y unirse (sin solicitud)"
    },
-   "pay": "$40 por 100k vistas base ($0.40/1K); bounties de hasta $300/100k ($3/1K). Pago en USDT al cerrar el ciclo",
+   "pay": "$40 por 100k vistas base ($0.40/1K); bounties de hasta $300/100k ($3/1K), +140 bounties (26/10). Pago en USDT al cerrar el ciclo",
    "cpm": 0.4,
    "cpm_max": 3.0,
    "requirements": "Sin seguidores minimos ni solicitud. 100.000 vistas combinadas en la campana antes de cobrar; cada clip >= 1.000 vistas. Max. 2 cuentas por plataforma y 1 cuenta de clipper por usuario de Discord",
@@ -87,7 +89,8 @@
     "https://clipping.net/policies/clipper-terms-and-conditions"
    ],
    "score": 2.0,
-   "who": "top Kick streamers (N3on, xQc, Adin Ross)"
+   "who": "top Kick streamers (N3on, xQc, Adin Ross)",
+   "status": "activo"
   },
   {
    "rank": 4,
@@ -100,7 +103,7 @@
     "url": "https://clipping.net/c/lacy-x-clipping",
     "how": "Comando !clipping en el chat de su Twitch -> Discord 'Lacy x Clipping'; la campana corre en clipping.net"
    },
-   "pay": "Bote de $50.000 (lacy-pot $20K, gaming-marathon $10K, twitter $5K...) repartido por vistas, pago en USDC",
+   "pay": "Bote de $40.000 (lacy-pot $20K, Sidemen Outside $10K, twitter $5K, +1) repartido por vistas, pago en USDC (26/10)",
    "cpm": 0.5,
    "cpm_max": 1.0,
    "requirements": "Sin solicitud. 1.000.000 de vistas por bounty",
@@ -115,35 +118,11 @@
     "https://clipping.net/c/lacy-x-clipping",
     "https://reelshift.app/streamers/lacy"
    ],
-   "score": 2.0
+   "score": 2.0,
+   "status": "activo"
   },
   {
    "rank": 5,
-   "id": "cr-ishowspeed-expedia",
-   "name": "IShowSpeed x Expedia (Reach en Content Rewards)",
-   "lang": "en",
-   "creators": "IShowSpeed",
-   "where": {
-    "type": "plataforma",
-    "url": "https://clippingalpha.com/campaigns/ishowspeed/expedia",
-    "how": "Content Rewards (cuenta 1)"
-   },
-   "pay": "$1/1K en TikTok, IG y YT; quedan $2.568 de $8.000 (19/10), se agota hacia el 21-22/10",
-   "cpm": 1.0,
-   "cpm_max": 1.0,
-   "requirements": "Solo el segmento Expedia Unpack del directo del 14/10; cuentas de nicho streamer o viajes",
-   "rules": "La maleta amarilla visible y el destino bien escrito; sin bots ni IA (un strike = fuera de Reach)",
-   "ease": 2,
-   "account": 1,
-   "min_views": 1000,
-   "track": [],
-   "sources": [
-    "https://reelshift.app/streamers/ishowspeed"
-   ],
-   "score": 2.0
-  },
-  {
-   "rank": 6,
    "id": "cn-kick-hispano",
    "name": "Kick Hispano (clipping.net)",
    "lang": "es",
@@ -171,10 +150,11 @@
     "https://clipping.net/c/kick-hispano"
    ],
    "score": 1.6,
-   "who": "los streamers hispanos de Kick (Westcol, Spreen, elZeein, Juansguarnizo)"
+   "who": "los streamers hispanos de Kick (Westcol, Spreen, elZeein, Juansguarnizo)",
+   "status": "activo"
   },
   {
-   "rank": 7,
+   "rank": 6,
    "id": "cr-clix-reach",
    "name": "Clix x Reach (Content Rewards)",
    "lang": "en",
@@ -187,7 +167,7 @@
    "pay": "Bote de $5.000 en octubre repartido por vistas",
    "cpm": 0.3,
    "cpm_max": 1.0,
-   "requirements": "500.000 vistas minimas",
+   "requirements": "500.000 vistas minimas en total; solo footage de 2026; nombre de Clix en caption o texto y #Clix; audiencia >=50% EN nativa",
    "rules": "Nada negativo sobre el, nada generado por IA, sin logos, sin reposts ni collabs. Un strike te saca de todas las campanas de Reach",
    "ease": 5,
    "account": 1,
@@ -199,10 +179,11 @@
    "sources": [
     "https://reelshift.app/streamers/clix"
    ],
-   "score": 1.5
+   "score": 1.5,
+   "status": "activo hasta fin de octubre"
   },
   {
-   "rank": 8,
+   "rank": 7,
    "id": "cn-kreekcraft",
    "name": "Kreekcraft x Clipping (clipping.net)",
    "lang": "en",
@@ -226,6 +207,36 @@
    "sources": [
     "https://clipping.net/c/kreekcraft-x-clipping"
    ],
+   "score": 1.2,
+   "status": "activo"
+  },
+  {
+   "rank": 8,
+   "id": "cr-kai-cenat-reach",
+   "name": "$10,000 Kai Cenat Campaign (Reach en Content Rewards)",
+   "lang": "en",
+   "creators": "Kai Cenat",
+   "where": {
+    "type": "plataforma",
+    "url": "https://contentrewards.com/discover/44a3ffcb-d4a1-492b-94a4-704919950246",
+    "how": "Content Rewards con la cuenta 1 (cr_join). Reglas en reachclipping.com/KaiCenat"
+   },
+   "pay": "Bote de $10.000 repartido por cuota de vistas aprobadas, pagado al cerrar el bote; 769 clippers (26/10)",
+   "cpm": 0.3,
+   "cpm_max": 1.0,
+   "requirements": "Solo footage de su Twitch/YouTube del 21/10 al 31/10; Kai como foco principal; TikTok, Reels y Shorts; #KaiCenat; audiencia >=50% US/CA/UK/AU/NZ; recomiendan pagina dedicada si la cuenta no es de nicho streamer con 100+ seguidores. 1 requisito mas oculto hasta unirse",
+   "rules": "Enviar en <30 min; sin bots ni IA (un strike = fuera de todas las campanas de Reach)",
+   "ease": 4,
+   "account": 1,
+   "min_views": null,
+   "track": [
+    "Kai Cenat (Twitch)"
+   ],
+   "sources": [
+    "https://contentrewards.com/discover/44a3ffcb-d4a1-492b-94a4-704919950246",
+    "https://reachclipping.com/KaiCenat"
+   ],
+   "status": "activo hasta 31/10; sin unir (CR_STATE caducado el 25/10)",
    "score": 1.2
   },
   {
@@ -251,7 +262,8 @@
    "sources": [
     "https://clipping.net/c/trainwreckstv-clipping"
    ],
-   "score": 1.0
+   "score": 1.0,
+   "status": "activo"
   },
   {
    "rank": 10,
@@ -276,10 +288,66 @@
    "sources": [
     "https://clipping.net/c/clix-lacy-tapcap-x-clipping"
    ],
-   "score": 1.0
+   "score": 1.0,
+   "status": "activo"
   },
   {
    "rank": 11,
+   "id": "cn-logan-paul-impaulsive",
+   "name": "Logan Paul / Impaulsive x Clipping (clipping.net)",
+   "lang": "en",
+   "creators": "Logan Paul e Impaulsive (bounties rip-it y clav)",
+   "where": {
+    "type": "plataforma",
+    "url": "https://clipping.net/c/impaulsive-x-clipping",
+    "how": "Unirse desde clipping.net con Discord (sin solicitud)"
+   },
+   "pay": "Bounties de $50 por 100k vistas ($0.50/1K), PayPal",
+   "cpm": 0.5,
+   "cpm_max": 0.5,
+   "requirements": "Sin solicitud. 100.000 vistas minimas por bounty; solo los segmentos del bounty",
+   "rules": "Reglas del bounty dentro de la campana",
+   "ease": 2,
+   "account": 2,
+   "min_views": 100000,
+   "track": [],
+   "sources": [
+    "https://clipping.net/c/logan-paul-x-clipping",
+    "https://clipping.net/c/impaulsive-x-clipping"
+   ],
+   "status": "activo",
+   "score": 1.0
+  },
+  {
+   "rank": 12,
+   "id": "cn-streamer-u",
+   "name": "Streamer U x Clipping (clipping.net)",
+   "lang": "en",
+   "creators": "Streamer University (evento de Kai Cenat)",
+   "where": {
+    "type": "plataforma",
+    "url": "https://clipping.net/c/streamer-u-x-clipping",
+    "how": "Unirse desde clipping.net con Discord (sin solicitud)"
+   },
+   "pay": "$50 por 100k vistas ($0.50/1K), PayPal",
+   "cpm": 0.5,
+   "cpm_max": 0.5,
+   "requirements": "Sin solicitud. 100.000 vistas minimas por bounty; footage de Streamer University",
+   "rules": "Solo views organicas",
+   "ease": 2,
+   "account": 2,
+   "min_views": 100000,
+   "track": [
+    "Kai Cenat (Twitch)"
+   ],
+   "sources": [
+    "https://clipping.net/c/streamer-u-x-clipping"
+   ],
+   "status": "activo",
+   "score": 1.0
+  },
+  {
+   "rank": 13,
    "id": "n3on-direct",
    "name": "Programa de clippers de N3on (Discord propio)",
    "lang": "en",
@@ -306,10 +374,40 @@
     "https://www.tubefilter.com/2026/04/29/n3on-spending-millions-stream-clippers-tiktok-kick/",
     "https://www.businessinsider.com/kick-streamer-spent-over-a-million-dollars-on-clippers-2026-4"
    ],
+   "score": 0.9,
+   "status": "activo"
+  },
+  {
+   "rank": 14,
+   "id": "cr-lacy-reach",
+   "name": "$30,000 Lacy 30 Day Campaign (Reach en Content Rewards)",
+   "lang": "en",
+   "creators": "Lacy",
+   "where": {
+    "type": "plataforma",
+    "url": "https://reachclipping.com/Lacy",
+    "how": "Content Rewards con la cuenta 1"
+   },
+   "pay": "Bote de $30.000 en 30 dias repartido por vistas; 1.524 clippers (26/10)",
+   "cpm": 0.3,
+   "cpm_max": 1.0,
+   "requirements": "Cualquier video/stream con Lacy como foco; TikTok, Reels, Shorts y X; audiencia >=50% EN nativa; cuenta del mismo nicho",
+   "rules": "Enviar en <30 min; sin bots ni IA",
+   "ease": 3,
+   "account": 1,
+   "min_views": null,
+   "track": [
+    "Lacy (Twitch)"
+   ],
+   "sources": [
+    "https://reachclipping.com/Lacy",
+    "https://contentrewards.com/discover"
+   ],
+   "status": "dudoso: sale en /discover pero su ficha da 404 (26/10)",
    "score": 0.9
   },
   {
-   "rank": 12,
+   "rank": 15,
    "id": "cn-sketch",
    "name": "Sketch x Clipping (clipping.net)",
    "lang": "en",
@@ -332,10 +430,11 @@
     "https://clipping.net/c/sketch-x-clipping"
    ],
    "note": "Sin fuente en sources.json: no se ha confirmado su canal (twitch.tv/sketch es otro streamer)",
-   "score": 0.8
+   "score": 0.8,
+   "status": "activo, cierra el 31/10"
   },
   {
-   "rank": 13,
+   "rank": 16,
    "id": "cn-plaqueboymax",
    "name": "PlaqueBoyMax x Clipping (clipping.net)",
    "lang": "en",
@@ -357,10 +456,64 @@
    "sources": [
     "https://clipping.net/c/plaqueboymax-x-clipping"
    ],
-   "score": 0.75
+   "score": 0.75,
+   "status": "activo, cierra el 01/11"
   },
   {
-   "rank": 14,
+   "rank": 17,
+   "id": "vyro-speed-vegas",
+   "name": "SPEED VEGAS (IShowSpeed en Vyro)",
+   "lang": "en",
+   "creators": "IShowSpeed",
+   "where": {
+    "type": "plataforma",
+    "url": "https://vyro.com/campaigns/speed-vegas-lC81wXFS",
+    "how": "Cuenta en vyro.com (18+); campana 'Locked': hay que solicitarla y ser aprobado"
+   },
+   "pay": "$2.10/1K (SPEED VEGAS 1); el 26/10 ya no aparece en la lista publica de Vyro (cerrada o agotada)",
+   "cpm": 2.1,
+   "cpm_max": 2.1,
+   "requirements": "Solicitud en Vyro; reglas y footage bloqueados hasta ser aceptado. Al entrar, comprobar que no haya segmentos de casino (Vegas): si los hay, solo clipear lo que no sea juego",
+   "rules": "Clip aprobado por Vyro; reglas exactas dentro de la campana",
+   "ease": 2,
+   "account": 1,
+   "min_views": 10000,
+   "track": [],
+   "sources": [
+    "https://vyro.com/campaigns",
+    "https://vyro.com/campaigns/speed-vegas-lC81wXFS"
+   ],
+   "score": 0.0,
+   "status": "cerrado: ya no sale en vyro.com/campaigns (26/10)"
+  },
+  {
+   "rank": 18,
+   "id": "cr-ishowspeed-expedia",
+   "name": "IShowSpeed x Expedia (Reach en Content Rewards)",
+   "lang": "en",
+   "creators": "IShowSpeed",
+   "where": {
+    "type": "plataforma",
+    "url": "https://clippingalpha.com/campaigns/ishowspeed/expedia",
+    "how": "Content Rewards (cuenta 1)"
+   },
+   "pay": "$1/1K en TikTok, IG y YT; quedan $121 de $8.000 (26/10): agotado",
+   "cpm": 1.0,
+   "cpm_max": 1.0,
+   "requirements": "Solo el segmento Expedia Unpack del directo del 14/10; cuentas de nicho streamer o viajes",
+   "rules": "La maleta amarilla visible y el destino bien escrito; sin bots ni IA (un strike = fuera de Reach)",
+   "ease": 2,
+   "account": 1,
+   "min_views": 1000,
+   "track": [],
+   "sources": [
+    "https://reelshift.app/streamers/ishowspeed"
+   ],
+   "score": 0.0,
+   "status": "agotado: $121 de $8.000 el 26/10"
+  },
+  {
+   "rank": 19,
    "id": "clavicular-clipmaxer",
    "name": "Clavicular (Clip Maxer, Discord)",
    "lang": "en",
@@ -382,13 +535,13 @@
    "sources": [
     "https://www.clipmaxer.com/"
    ],
-   "score": 0.33
+   "score": 0.0,
+   "status": "agotado: bote de $100.000 con $0 (26/10)"
   }
  ],
  "no_program_verified": {
-  "note": "Sin programa propio verificable el 17-18/10/2026: sus clips solo hacen crecer las cuentas (0 $). Los Discord que usan su nombre para clipping son de terceros.",
+  "note": "Sin programa propio verificable el 17-18/10/2026 (revisado 26/10: Kai Cenat ya tiene campana de Reach): sus clips solo hacen crecer las cuentas (0 $). Los Discord que usan su nombre para clipping son de terceros.",
   "creators": [
-   "Kai Cenat",
    "IShowSpeed (solo campanas de marca)",
    "Stable Ronaldo",
    "Marlon (solo bounties de marca en clipping.net)",
@@ -417,6 +570,10 @@
   {
    "name": "Shuffle Streamers / Flip.gg (Content Rewards, $1.50/1K)",
    "why": "casino y cajas de apuestas"
+  },
+  {
+   "name": "Stevewilldoit Clipping (clipping.net, $0.30/1K en ETH)",
+   "why": "contenido de apuestas habitual y pago bajo"
   }
  ]
 }
