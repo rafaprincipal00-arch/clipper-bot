@@ -35,10 +35,15 @@ def _after(text: str, label: str, n: int = 1) -> str:
     return ""
 
 
-def parse(url: str, text: str) -> dict:
+def parse(url: str, text: str, doc_title: str = "") -> dict:
     body = text.split("Connect Discord", 1)[-1]
-    lines = [x.strip() for x in body.splitlines() if x.strip()]
+    # a cookie banner (Accept / Decline) started landing in the body in Oct 2026 and shifted every line
+    lines = [x.strip() for x in body.splitlines() if x.strip() and x.strip() not in ("Accept", "Decline")]
     title = lines[3] if len(lines) > 3 else ""
+    brand = lines[2] if len(lines) > 2 else ""
+    m = re.match(r"(.+) by (.+?) \| Content Rewards", doc_title or "")
+    if m:  # the <title> is "<campaign> by <brand> | Content Rewards": more stable than the body layout
+        title, brand = m.group(1).strip(), m.group(2).strip()
     platforms = {}
     for p in ("TikTok", "Instagram", "YouTube", "X", "Facebook"):
         m = re.search(rf"\n{p}\n+Per 1K views\n+\$([\d.]+)\n+Min payout\n+\$([\d.,]+)\n+Max payout\n+\$([\d.,]+)", body)
@@ -52,7 +57,7 @@ def parse(url: str, text: str) -> dict:
     top = re.findall(r"Rank\n+1 / (\d+)\n+(.+)\n+(\$[\d.,]+k?)", body)
     views = re.search(r"\n([\d.]+[KMB]?)\nviews\n+Views across every approved clip", body)
     rem = re.search(r"\$[\d,.]+[kK]?\S* remaining", body)
-    return {"url": url, "title": title, "brand": lines[2] if len(lines) > 2 else "", "status": status,
+    return {"url": url, "title": title, "brand": brand, "status": status,
             "platforms": platforms, "budget": _money(_after(body, "Budget")),
             "remaining": _money(rem.group(0)) if rem else None,
             "clippers": int(top[0][0]) if top else None, "top_clipper": top[0][2] if top else None,
@@ -73,6 +78,10 @@ def main() -> None:
         page.wait_for_timeout(8000)
         if "/login" in page.url:
             raise SystemExit("SESSION EXPIRED")
+        try:  # cookie banner: dismiss it so it does not cover links or pollute the page text
+            page.get_by_role("button", name="Accept", exact=True).first.click(timeout=5000)
+        except Exception:  # noqa: BLE001
+            pass
         ids = os.environ.get("CR_SCAN_IDS", "").split()
         links: list[str] = [f"https://contentrewards.com/c/campaigns/{i}" for i in ids]
         # CR_SCAN_PAGES: extra pages (an agency's org/community page) to harvest campaign links from.
@@ -108,7 +117,7 @@ def main() -> None:
             try:
                 page.goto(url, wait_until="domcontentloaded")
                 page.wait_for_timeout(5000)
-                out.append(parse(url, page.inner_text("body")))
+                out.append(parse(url, page.inner_text("body"), page.title()))
             except Exception as e:  # noqa: BLE001 — one bad page must not stop the scan
                 out.append({"url": url, "error": str(e)[:200]})
         # Our own submissions with their per-clip state.

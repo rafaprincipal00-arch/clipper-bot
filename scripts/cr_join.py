@@ -35,6 +35,10 @@ def main(ids: list[str]) -> None:
             if join.count():
                 join.first.evaluate("el => el.click()")
                 page.wait_for_timeout(4000)
+                # Campaign pages are public now, so an expired session no longer redirects to /login on load:
+                # it only shows up as the sign-in form after clicking Join.
+                if "send you a 6 digit code" in page.inner_text("body"):
+                    raise SystemExit("SESSION EXPIRED: Join opened the Content Rewards sign-in form; refresh CR_STATE")
                 dialog = page.get_by_role("dialog")
                 if dialog.count():
                     print("DIALOG:", dialog.first.inner_text()[:1500])
