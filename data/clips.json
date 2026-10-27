@@ -1,5 +1,643 @@
 [
  {
+  "file": "clix-twitch-tw-2908833493-13084.mp4",
+  "creator": "Clix (Twitch)",
+  "source": "https://www.twitch.tv/videos/2908833493",
+  "start": 13054.06,
+  "end": 13121.07,
+  "cuts": 13,
+  "length": 24.0,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "hype",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Clix just hit level five",
+  "hook_type": "revelation",
+  "emphasis": [
+   "gifted",
+   "fucking",
+   "OG",
+   "level"
+  ],
+  "caption": "Clix was not expecting this massive chat drop! #Clix #fortnite #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Clix was not expecting this massive chat drop!",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": "https://contentrewards.com/c/campaigns/7a6a234b-1e9e-4da3-a600-54cc3142e710",
+  "created": "2026-10-27T13:50:28.175428+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/4wnwK_3ni40",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2908833493-13084.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2908833493-13084.tt.mp4",
+  "tiktok_caption": "Clix was not expecting this massive chat drop! #Clix #fortnite #streamer",
+  "account": 1,
+  "submission": {
+   "error": "Content Rewards session expired: refresh the CR_STATE secret"
+  },
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 159,
+   "publish+submit": 18,
+   "total": 180
+  }
+ },
+ {
+  "file": "clix-twitch-tw-2906007051-1644.mp4",
+  "creator": "Clix (Twitch)",
+  "source": "https://www.twitch.tv/videos/2906007051",
+  "start": 1648.34,
+  "end": 1698.98,
+  "cuts": 8,
+  "length": 21.7,
+  "layout": "face",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 82,
+  "hook": "Clix lost his mind live",
+  "hook_type": "revelation",
+  "emphasis": [
+   "grip",
+   "Christmas",
+   "bookmark",
+   "bring"
+  ],
+  "caption": "Clix was not ready for this throwback #Clix #fortnite #streamer",
+  "title": "Clix was not ready for this throwback",
+  "bed": null,
+  "campaign": "https://contentrewards.com/c/campaigns/7a6a234b-1e9e-4da3-a600-54cc3142e710",
+  "created": "2026-10-27T13:38:44.368686+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/U_e_vYQVAzA",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2906007051-1644.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2906007051-1644.tt.mp4",
+  "tiktok_caption": "Clix was not ready for this throwback #Clix #fortnite #streamer",
+  "account": 1,
+  "submission": {
+   "error": "Content Rewards session expired: refresh the CR_STATE secret"
+  },
+  "timing_s": {
+   "download": 7,
+   "transcribe+edit+render": 140,
+   "publish+submit": 15,
+   "total": 162
+  }
+ },
+ {
+  "file": "lospollostv-kick-kc-clip-01m5br33y9hmxgzgr26f96zdzx.mp4",
+  "creator": "LosPollosTV (Kick)",
+  "source": "https://clips.kick.com/clips/f2/clip_01M5BR33Y9HMXGZGR26F96ZDZX/playlist.m3u8",
+  "start": 19.060000000000002,
+  "end": 45.846333,
+  "cuts": 8,
+  "length": 23.6,
+  "layout": "face",
+  "style": "blur",
+  "mood": "awkward",
+  "signal": "kick-clip",
+  "score": 85,
+  "hook": "He called out his chat live",
+  "hook_type": "revelation",
+  "emphasis": [
+   "attractive",
+   "gay",
+   "discussion"
+  ],
+  "caption": "LosPollosTV caught off guard by chat #lospollostv #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "LosPollosTV caught off guard by chat",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-10-27T13:27:54.321334+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/mZpv6ylV5s0",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lospollostv-kick-kc-clip-01m5br33y9hmxgzgr26f96zdzx.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lospollostv-kick-kc-clip-01m5br33y9hmxgzgr26f96zdzx.tt.mp4",
+  "tiktok_caption": "LosPollosTV caught off guard by chat #lospollostv #kick #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 178,
+   "publish+submit": 8,
+   "total": 190
+  }
+ },
+ {
+  "file": "clix-twitch-tw-2909834416-7450.mp4",
+  "creator": "Clix (Twitch)",
+  "source": "https://www.twitch.tv/videos/2909834416",
+  "start": 7466.28,
+  "end": 7529.27,
+  "cuts": 10,
+  "length": 23.9,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "hype",
+  "signal": "twitch-clip",
+  "score": 82,
+  "hook": "Clix clutch or throw?",
+  "hook_type": "stakes",
+  "emphasis": [
+   "die",
+   "box",
+   "serious"
+  ],
+  "caption": "Clix was not ready for this fight #Clix #fortnite #streamer",
+  "title": "Clix was not ready for this fight",
+  "bed": null,
+  "campaign": "https://contentrewards.com/c/campaigns/7a6a234b-1e9e-4da3-a600-54cc3142e710",
+  "created": "2026-10-27T13:15:18.153481+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/freQAgxLntE",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2909834416-7450.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2909834416-7450.tt.mp4",
+  "tiktok_caption": "Clix was not ready for this fight #Clix #fortnite #streamer",
+  "account": 1,
+  "submission": {
+   "error": "Content Rewards session expired: refresh the CR_STATE secret"
+  },
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 135,
+   "publish+submit": 19,
+   "total": 159
+  }
+ },
+ {
+  "file": "stable-ronaldo-twitch-tw-2909784679-9288.mp4",
+  "creator": "Stable Ronaldo (Twitch)",
+  "source": "https://www.twitch.tv/videos/2909784679",
+  "start": 9253,
+  "end": 9317.24,
+  "cuts": 12,
+  "length": 24.0,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "He just lost his burger live",
+  "hook_type": "revelation",
+  "emphasis": [
+   "shit",
+   "burger",
+   "drove"
+  ],
+  "caption": "Stable Ronaldo got completely played by his burger #stableronaldo #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Stable Ronaldo got completely played by his burger",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-10-27T13:02:55.422280+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/gnvMGU2BSL0",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/stable-ronaldo-twitch-tw-2909784679-9288.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/stable-ronaldo-twitch-tw-2909784679-9288.tt.mp4",
+  "tiktok_caption": "Stable Ronaldo got completely played by his burger #stableronaldo #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 127,
+   "publish+submit": 11,
+   "total": 141
+  }
+ },
+ {
+  "file": "caseoh-twitch-tw-2907317252-4306.mp4",
+  "creator": "CaseOh (Twitch)",
+  "source": "https://www.twitch.tv/videos/2907317252",
+  "start": 4333.07,
+  "end": 4340.87,
+  "cuts": 12,
+  "length": 20.0,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "CaseOh's WILD candy",
+  "hook_type": "revelation",
+  "emphasis": [
+   "ROB",
+   "CANDY",
+   "JOKE",
+   "PEANUTS",
+   "PEPPER SPRAY"
+  ],
+  "caption": "CaseOh's Halloween joke went too far? #caseoh #stream #clips",
+  "title": "CaseOh's Halloween joke went too far?",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-10-27T12:52:07.317981+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/vhPIAY6Khvc",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2907317252-4306.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2907317252-4306.tt.mp4",
+  "tiktok_caption": "CaseOh's Halloween joke went too far? #caseoh #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 144,
+   "publish+submit": 8,
+   "total": 157
+  }
+ },
+ {
+  "file": "auronplay-twitch-tw-2907669423-6715.mp4",
+  "creator": "Auronplay (Twitch)",
+  "source": "https://www.twitch.tv/videos/2907669423",
+  "start": 6736.02,
+  "end": 6713.42,
+  "cuts": 11,
+  "length": 21.9,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "Auronplay admite la verdad",
+  "hook_type": "revelation",
+  "emphasis": [
+   "escandaloso",
+   "cojones",
+   "nadie"
+  ],
+  "caption": "Auronplay no quería que nadie supiera esto #auronplay #stream #clipsespañol\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Auronplay no quería que nadie supiera esto",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-10-27T12:41:14.191311+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/0pjJzkz1iy0",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2907669423-6715.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2907669423-6715.tt.mp4",
+  "tiktok_caption": "Auronplay no quería que nadie supiera esto #auronplay #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 137,
+   "publish+submit": 8,
+   "total": 150
+  }
+ },
+ {
+  "file": "clix-twitch-tw-2910577944-1528.mp4",
+  "creator": "Clix (Twitch)",
+  "source": "https://www.twitch.tv/videos/2910577944",
+  "start": 1510.24,
+  "end": 1535.88,
+  "cuts": 11,
+  "length": 20.2,
+  "layout": "face",
+  "style": "blur",
+  "mood": "awkward",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Clix drops wild personal confession",
+  "hook_type": "revelation",
+  "emphasis": [
+   "like boys",
+   "fucking girls",
+   "truth"
+  ],
+  "caption": "Clix was NOT ready to admit this live #Clix #fortnite #streamer",
+  "title": "Clix was NOT ready to admit this live",
+  "bed": null,
+  "campaign": "https://contentrewards.com/c/campaigns/7a6a234b-1e9e-4da3-a600-54cc3142e710",
+  "created": "2026-10-27T12:29:09.332090+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/w8AtyxYpK1A",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2910577944-1528.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2910577944-1528.tt.mp4",
+  "tiktok_caption": "Clix was NOT ready to admit this live #Clix #fortnite #streamer",
+  "account": 1,
+  "submission": {
+   "error": "Content Rewards session expired: refresh the CR_STATE secret"
+  },
+  "timing_s": {
+   "download": 6,
+   "transcribe+edit+render": 195,
+   "publish+submit": 17,
+   "total": 218
+  }
+ },
+ {
+  "file": "westcol-kick-kc-clip-01m5trmh5z2n6wsx44hrfqjexx.mp4",
+  "creator": "Westcol (Kick)",
+  "source": "https://clips.kick.com/clips/5d/clip_01M5TRMH5Z2N6WSX44HRFQJEXX/playlist.m3u8",
+  "start": 16.770000000000003,
+  "end": 53.73,
+  "cuts": 11,
+  "length": 22.5,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "kick-clip",
+  "score": 85,
+  "hook": "Se reencontraron otra vez",
+  "hook_type": "revelation",
+  "emphasis": [
+   "flaquísimo",
+   "guayos",
+   "impresionante"
+  ],
+  "caption": "Westcol se vuelve loco al reencontrarse con Alana #westcol #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Westcol se vuelve loco al reencontrarse con Alana",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-10-27T12:16:37.065876+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/2I9DboL9Fio",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/westcol-kick-kc-clip-01m5trmh5z2n6wsx44hrfqjexx.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/westcol-kick-kc-clip-01m5trmh5z2n6wsx44hrfqjexx.tt.mp4",
+  "tiktok_caption": "Westcol se vuelve loco al reencontrarse con Alana #westcol #kick #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 170,
+   "publish+submit": 10,
+   "total": 184
+  }
+ },
+ {
+  "file": "spreen-kick-kc-clip-01m5tah5e7drctsnef2prbsm8w.mp4",
+  "creator": "Spreen (Kick)",
+  "source": "https://clips.kick.com/clips/3a/clip_01M5TAH5E7DRCTSNEF2PRBSM8W/playlist.m3u8",
+  "start": 0.24,
+  "end": 32.008,
+  "cuts": 9,
+  "length": 21.7,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "tension",
+  "signal": "kick-clip",
+  "score": 85,
+  "hook": "No me lo quiero cruzar nunca más",
+  "hook_type": "stakes",
+  "emphasis": [
+   "nunca",
+   "decisión",
+   "morir"
+  ],
+  "caption": "Spreen explota y revela por qué no vuelve a jugar con ellos #spreen #kick #streamer",
+  "title": "Spreen explota y revela por qué no vuelve a jugar con ellos",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-10-27T12:04:51.051746+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/iFv6MbZTVr8",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/spreen-kick-kc-clip-01m5tah5e7drctsnef2prbsm8w.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/spreen-kick-kc-clip-01m5tah5e7drctsnef2prbsm8w.tt.mp4",
+  "tiktok_caption": "Spreen explota y revela por qué no vuelve a jugar con ellos #spreen #kick #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 136,
+   "publish+submit": 9,
+   "total": 150
+  }
+ },
+ {
+  "file": "ibai-twitch-tw-2911397487-12421.mp4",
+  "creator": "Ibai (Twitch)",
+  "source": "https://www.twitch.tv/videos/2911397487",
+  "start": 12390.56,
+  "end": 12500.08,
+  "cuts": 13,
+  "length": 22.3,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 82,
+  "hook": "Ibai pierde totalmente el control",
+  "hook_type": "revelation",
+  "emphasis": [
+   "histórico",
+   "culis",
+   "cantado",
+   "nivel"
+  ],
+  "caption": "Ibai no podía creer lo que pasó en directo #ibai #twitch #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Ibai no podía creer lo que pasó en directo",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-10-27T11:51:44.396726+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/7LdT4aezW3Y",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/ibai-twitch-tw-2911397487-12421.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/ibai-twitch-tw-2911397487-12421.tt.mp4",
+  "tiktok_caption": "Ibai no podía creer lo que pasó en directo #ibai #twitch #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 8,
+   "transcribe+edit+render": 250,
+   "publish+submit": 8,
+   "total": 266
+  }
+ },
+ {
+  "file": "caseoh-twitch-tw-2911013863-2884.mp4",
+  "creator": "CaseOh (Twitch)",
+  "source": "https://www.twitch.tv/videos/2911013863",
+  "start": 2863.78,
+  "end": 2891.81,
+  "cuts": 10,
+  "length": 23.0,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Worst jump scare in stream history",
+  "hook_type": "revelation",
+  "emphasis": [
+   "worst",
+   "jump scare",
+   "knocked",
+   "headphones"
+  ],
+  "caption": "CaseOh was NOT ready for this horrifying jump scare #caseoh #stream #clips",
+  "title": "CaseOh was NOT ready for this horrifying jump scare",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-10-27T11:37:36.053120+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/qZTWugGpbnI",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2911013863-2884.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2911013863-2884.tt.mp4",
+  "tiktok_caption": "CaseOh was NOT ready for this horrifying jump scare #caseoh #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 2,
+   "transcribe+edit+render": 125,
+   "publish+submit": 8,
+   "total": 135
+  }
+ },
+ {
+  "file": "auronplay-twitch-tw-2906819179-4119.mp4",
+  "creator": "Auronplay (Twitch)",
+  "source": "https://www.twitch.tv/videos/2906819179",
+  "start": 4105.14,
+  "end": 4151.06,
+  "cuts": 10,
+  "length": 23.3,
+  "layout": "face",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 86,
+  "hook": "Invita a Pache a las carreras",
+  "hook_type": "stakes",
+  "emphasis": [
+   "Pache",
+   "invitado",
+   "Paren"
+  ],
+  "caption": "Auronplay invita a Pache en directo y pasa esto #auronplay #stream #clipsespañol\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Auronplay invita a Pache en directo y pasa esto",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-10-27T11:26:54.151960+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/8y1eSY_JvGU",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2906819179-4119.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2906819179-4119.tt.mp4",
+  "tiktok_caption": "Auronplay invita a Pache en directo y pasa esto #auronplay #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 6,
+   "transcribe+edit+render": 158,
+   "publish+submit": 9,
+   "total": 173
+  }
+ },
+ {
+  "file": "clix-twitch-tw-2910577944-11051.mp4",
+  "creator": "Clix (Twitch)",
+  "source": "https://www.twitch.tv/videos/2910577944",
+  "start": 11123.42,
+  "end": 11112.94,
+  "cuts": 8,
+  "length": 21.1,
+  "layout": "face",
+  "style": "blur",
+  "mood": "hype",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Clix winner reveals his secret",
+  "hook_type": "revelation",
+  "emphasis": [
+   "winning",
+   "unprecedented",
+   "coach",
+   "trophy"
+  ],
+  "caption": "Clix couldn't believe this actually happened live #Clix #Clix #fortnite #streamer",
+  "title": "Clix couldn't believe this actually happened live #Clix",
+  "bed": null,
+  "campaign": "https://contentrewards.com/c/campaigns/7a6a234b-1e9e-4da3-a600-54cc3142e710",
+  "created": "2026-10-27T10:57:21.574673+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/q3hNTKDe6Ts",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2910577944-11051.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2910577944-11051.tt.mp4",
+  "tiktok_caption": "Clix couldn't believe this actually happened live #Clix #Clix #fortnite #streamer",
+  "account": 1,
+  "submission": {
+   "error": "Content Rewards session expired: refresh the CR_STATE secret"
+  },
+  "timing_s": {
+   "download": 6,
+   "transcribe+edit+render": 188,
+   "publish+submit": 16,
+   "total": 209
+  }
+ },
+ {
+  "file": "lospollostv-kick-kc-clip-01m5kcesz4fa90ccq87xgdw7f1.mp4",
+  "creator": "LosPollosTV (Kick)",
+  "source": "https://clips.kick.com/clips/ce/clip_01M5KCESZ4FA90CCQ87XGDW7F1/playlist.m3u8",
+  "start": 38.98,
+  "end": 154.52,
+  "cuts": 14,
+  "length": 20.6,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "kick-clip",
+  "score": 85,
+  "hook": "Worst chat comments ever",
+  "hook_type": "revelation",
+  "emphasis": [
+   "jiggle",
+   "ball",
+   "creature",
+   "air"
+  ],
+  "caption": "LosPollosTV was NOT ready for these chat comments #lospollostv #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "LosPollosTV was NOT ready for these chat comments",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-10-27T10:42:07.708179+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/9p7WphZkzLY",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lospollostv-kick-kc-clip-01m5kcesz4fa90ccq87xgdw7f1.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lospollostv-kick-kc-clip-01m5kcesz4fa90ccq87xgdw7f1.tt.mp4",
+  "tiktok_caption": "LosPollosTV was NOT ready for these chat comments #lospollostv #kick #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 233,
+   "publish+submit": 9,
+   "total": 246
+  }
+ },
+ {
   "file": "adin-ross-kick-kc-clip-01m59r9y58pe226gv421n2wpp6.mp4",
   "creator": "Adin Ross (Kick)",
   "source": "https://clips.kick.com/clips/0a/clip_01M59R9Y58PE226GV421N2WPP6/playlist.m3u8",

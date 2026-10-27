@@ -1,61 +1,71 @@
 {
- "updated": "2026-10-26T07:43:00+00:00",
- "clips": 106,
+ "updated": "2026-10-27T10:37:09+00:00",
+ "clips": 127,
  "by_creator": {
-  "Lanah Cherry (Twitch)": {
-   "clips": 14,
-   "views": 18317,
-   "avg_views": 1308
+  "Adin Ross (Kick)": {
+   "clips": 7,
+   "views": 908,
+   "avg_views": 130
   },
-  "Kai Cenat (Twitch)": {
+  "Spreen (Kick)": {
    "clips": 8,
-   "views": 9721,
-   "avg_views": 1215
+   "views": 6167,
+   "avg_views": 771
   },
-  "CaseOh (Twitch)": {
-   "clips": 6,
-   "views": 3594,
-   "avg_views": 599
+  "Stable Ronaldo (Twitch)": {
+   "clips": 7,
+   "views": 4160,
+   "avg_views": 594
   },
   "Clix (Twitch)": {
-   "clips": 6,
-   "views": 10663,
-   "avg_views": 1777
+   "clips": 8,
+   "views": 13040,
+   "avg_views": 1630
   },
   "Ibai (Twitch)": {
-   "clips": 5,
-   "views": 2617,
-   "avg_views": 523
+   "clips": 8,
+   "views": 2776,
+   "avg_views": 347
+  },
+  "Kai Cenat (Twitch)": {
+   "clips": 9,
+   "views": 9988,
+   "avg_views": 1110
+  },
+  "CaseOh (Twitch)": {
+   "clips": 7,
+   "views": 4310,
+   "avg_views": 616
+  },
+  "Rivers (Twitch)": {
+   "clips": 6,
+   "views": 5496,
+   "avg_views": 916
+  },
+  "Auronplay (Twitch)": {
+   "clips": 12,
+   "views": 16362,
+   "avg_views": 1364
+  },
+  "Lanah Cherry (Twitch)": {
+   "clips": 14,
+   "views": 18398,
+   "avg_views": 1314
   },
   "Jynxzi (Twitch)": {
    "clips": 6,
-   "views": 5597,
-   "avg_views": 933
-  },
-  "Auronplay (Twitch)": {
-   "clips": 11,
-   "views": 15743,
-   "avg_views": 1431
+   "views": 5619,
+   "avg_views": 936
   },
   "Westcol (Kick)": {
    "clips": 6,
-   "views": 3659,
-   "avg_views": 610
+   "views": 4113,
+   "avg_views": 686
   },
   "elZeein (Kick)": {
    "clips": 1,
-   "views": 72,
-   "avg_views": 72
-  },
-  "Spreen (Kick)": {
-   "clips": 4,
-   "views": 5544,
-   "avg_views": 1386
-  },
-  "Rivers (Twitch)": {
-   "clips": 5,
-   "views": 5473,
-   "avg_views": 1095
+   "views": 76,
+   "avg_views": 76
   },
   "xQc (Kick)": {
    "clips": 1,
@@ -71,11 +81,6 @@
    "clips": 1,
    "views": 1115,
    "avg_views": 1115
-  },
-  "Stable Ronaldo (Twitch)": {
-   "clips": 4,
-   "views": 3972,
-   "avg_views": 993
   },
   "Ice Poseidon (Kick)": {
    "clips": 1,
@@ -102,11 +107,6 @@
    "views": 2432,
    "avg_views": 2432
   },
-  "Adin Ross (Kick)": {
-   "clips": 2,
-   "views": 859,
-   "avg_views": 430
-  },
   "TJR": {
    "clips": 17,
    "views": 3199,
@@ -126,7 +126,7 @@
    "mood": "chaos",
    "hook_type": "stakes",
    "score": 88,
-   "views": 5314,
+   "views": 5333,
    "likes": 45,
    "id": "J1P_cwbirK0"
   },
@@ -148,8 +148,8 @@
    "mood": "funny",
    "hook_type": "revelation",
    "score": 82,
-   "views": 3729,
-   "likes": 157,
+   "views": 3774,
+   "likes": 158,
    "id": "3SssCrnpijY"
   },
   {
@@ -210,26 +210,26 @@
  ],
  "bottom": [
   {
-   "creator": "TJR",
-   "hook": "Why is he sneak-dissing his boy?",
-   "title": null,
-   "mood": null,
-   "hook_type": null,
-   "score": 85,
-   "views": 2,
+   "creator": "Adin Ross (Kick)",
+   "hook": "She used a baby as a shield",
+   "title": "Adin Ross was completely shocked by this insane story",
+   "mood": "chaos",
+   "hook_type": "revelation",
+   "score": 78,
+   "views": 0,
    "likes": 0,
-   "id": "aTghBz7sxWE"
+   "id": "lnv-P2sxUUI"
   },
   {
-   "creator": "Jynxzi (Twitch)",
-   "hook": "He threatened to end the stream",
-   "title": "Jynxzi lost his mind at chat over this weapon",
+   "creator": "Adin Ross (Kick)",
+   "hook": "He wants to fine her thousands",
+   "title": "Adin Ross was 100% right to fine her here?",
    "mood": "chaos",
    "hook_type": "stakes",
-   "score": 78,
-   "views": 1,
+   "score": 75,
+   "views": 0,
    "likes": 0,
-   "id": "ANhn8N6_xas"
+   "id": "rzRRvMvMUZQ"
   },
   {
    "creator": "Kai Cenat (Twitch)",
