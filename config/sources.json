@@ -1399,5 +1399,70 @@
     "credit": "kick.com/lospollostv",
     "why": "Programa Kick Clipping (clipping.net): 0.30-0.40 USD/1k sin minimo por clip; crear portfolio antes de aplicar",
     "priority": 3
+  },
+  {
+    "creator": "Freezer Tarps (YouTube streams)",
+    "source": "https://www.youtube.com/@FreezerTarps/streams",
+    "enabled": false,
+    "account": 1,
+    "lang": "English",
+    "hashtags": [
+      "freezertarps",
+      "stream",
+      "clips"
+    ],
+    "credit": "youtube.com/@FreezerTarps",
+    "why": "CR Freezer Tarps Stream Clipping (VitaClips): TikTok 1.25$/1k, min 3.75$ (3k vistas), max 200$, quedan ~4494$",
+    "campaign": "Freezer Tarps Stream Clipping",
+    "campaign_url": "https://contentrewards.com/discover/c46a63c9-a1ab-40e2-a489-540cf5bafaa9",
+    "cpm": 1.25,
+    "mention": "#FreezerTarps",
+    "priority": 2,
+    "requirements": "Freezer Tarps stream footage. 1 creator requirement locked until join.",
+    "join_status": "pendiente: cr_join 27/10 fallo SESSION EXPIRED (CR_STATE caducado); rules sin desbloquear",
+    "why_off": "No unido: sesion Content Rewards caducada (CR_STATE). Activar tras cr_join con JOINED: True y leer las reglas desbloqueadas."
+  },
+  {
+    "creator": "DiegoLoveless (Twitch)",
+    "source": "https://www.twitch.tv/diegoloveless/videos?filter=archives&sort=time",
+    "enabled": false,
+    "account": 1,
+    "lang": "English",
+    "hashtags": [
+      "diegoloveless",
+      "marvelrivals",
+      "twitch"
+    ],
+    "credit": "twitch.tv/diegoloveless",
+    "why": "CR DiegoLoveless Marvel Rivals Clipping (ClipLaunch): 1.5$/1k TT/IG/YT, min 1.5$ (1k vistas), max 500$, quedan ~1400$",
+    "campaign": "DiegoLoveless Marvel Rivals Clipping",
+    "campaign_url": "https://contentrewards.com/discover/5d37d3dd-adf3-401f-9c62-24bb54d5087a",
+    "cpm": 1.5,
+    "mention": "#DiegoLoveless",
+    "priority": 2,
+    "requirements": "DiegoLoveless Marvel Rivals stream moments. Rules locked until join (2 files).",
+    "join_status": "pendiente: cr_join 27/10 fallo SESSION EXPIRED (CR_STATE caducado); rules sin desbloquear",
+    "why_off": "No unido: sesion Content Rewards caducada (CR_STATE). Activar tras cr_join con JOINED: True y leer las reglas desbloqueadas."
+  },
+  {
+    "creator": "It's Personal Podcast (fuente sin confirmar)",
+    "source": "https://www.youtube.com/channel/UC4ZJj0bwdBRwS4AClZf1wqA/videos",
+    "enabled": false,
+    "account": 1,
+    "lang": "English",
+    "hashtags": [
+      "itspersonal",
+      "podcast"
+    ],
+    "credit": "It's Personal Podcast",
+    "why": "CR It's Personal Podcast Clipping Campaign (Tykoonclips): 2$/1k TT/IG/YT, min 1.5$ (750 vistas), max 100$, quedan ~2006$",
+    "campaign": "It's Personal Podcast Clipping Campaign",
+    "campaign_url": "https://contentrewards.com/discover/6fe4c1aa-c8ca-4836-836b-01ab2540b337",
+    "cpm": 2.0,
+    "mention": "#ItsPersonalPodcast",
+    "priority": 2,
+    "requirements": "Podcast clips. Source channel guessed by search (Adamson Ahdoot 'It's Personal'); confirm with the campaign file after join.",
+    "join_status": "pendiente: cr_join 27/10 fallo SESSION EXPIRED (CR_STATE caducado); rules sin desbloquear",
+    "why_off": "No unido: sesion Content Rewards caducada (CR_STATE). Activar tras cr_join con JOINED: True y leer las reglas desbloqueadas. Fuente adivinada."
   }
 ]
