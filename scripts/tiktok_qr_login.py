@@ -56,14 +56,18 @@ class H(BaseHTTPRequestHandler):
         self.wfile.write(body)
 
 
-def qr_shot(page) -> bytes:
-    for sel in ("canvas", "img[src^='data:image']", "div[class*='qrcode'] img", "div[class*='QRcode'] img"):
-        loc = page.locator(sel).first
-        if loc.count() and loc.is_visible():
-            box = loc.bounding_box()
-            if box and box["width"] > 100:
-                return loc.screenshot()
-    return page.screenshot()
+def qr_shot(page, last: bytes = b"") -> bytes:
+    """PNG of the QR; on a re-render/navigation race (element detached) keep the previous image."""
+    try:
+        for sel in ("canvas", "img[src^='data:image']", "div[class*='qrcode'] img", "div[class*='QRcode'] img"):
+            loc = page.locator(sel).first
+            if loc.count() and loc.is_visible():
+                box = loc.bounding_box()
+                if box and box["width"] > 100:
+                    return loc.screenshot(timeout=10_000)
+        return page.screenshot(timeout=10_000)
+    except Exception:  # noqa: BLE001 — QR re-rendered or page navigating after the scan
+        return last
 
 
 QR_STATUS = {
@@ -113,7 +117,7 @@ def login_one(p, account: int, timeout_s: int = 600) -> bool:
                 page.wait_for_timeout(4000)
                 last_reload = time.time()
                 qr["status"] = None
-            STATE["png"] = qr_shot(page)
+            STATE["png"] = qr_shot(page, STATE["png"])
             if qr["status"] is None:
                 STATE["status"] = QR_STATUS["new"]
             page.wait_for_timeout(2000)
