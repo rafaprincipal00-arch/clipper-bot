@@ -1,6 +1,7 @@
-"""Windows logon trigger (Startup shortcut, runs hidden with pythonw).
+"""Daily trigger, started by the Hermes cron job clipper-daily-batch (autopilot.py daily) on the Linux server.
+(Name kept from the old Windows logon shortcut.)
 
-First logon of each day (from ARM_FROM on) -> dispatches the GitHub workflow in batch mode:
+First call of each day (from ARM_FROM on) -> dispatches the GitHub workflow in batch mode:
 15 different clips (5 per TikTok account), accounts in turn (1, 2, 3, 1...), one every 8-9 min. That is the daily limit:
 TikTok 3 per account (posted later from the PC) and YouTube 6 (the Google project's API quota, so the
 first 6 clips also go to YouTube Shorts, 2 per channel).
@@ -26,7 +27,6 @@ ARM_FROM = datetime(2026, 10, 7, 6, 0)  # never before the morning after it was 
 HERE = Path(__file__).resolve().parent.parent
 STATE = HERE / "data" / "logon_trigger_state.json"
 LOG = HERE / "data" / "logon_trigger.log"
-NO_WINDOW = 0x08000000
 PREFETCH_MAX_MIN = 25
 
 
@@ -36,9 +36,8 @@ def log(*a: object) -> None:
 
 
 def github_token() -> str:
-    # PATH git (Hermes portable) pops a credential picker and hangs: use the system git.
-    out = subprocess.run([r"C:\Program Files\Git\cmd\git.exe", "credential", "fill"], input="protocol=https\nhost=github.com\n\n",
-                         capture_output=True, text=True, creationflags=NO_WINDOW, timeout=60).stdout
+    out = subprocess.run(["git", "credential", "fill"], input="protocol=https\nhost=github.com\n\n",
+                         capture_output=True, text=True, timeout=60).stdout
     for line in out.splitlines():
         if line.startswith("password="):
             return line.split("=", 1)[1]
@@ -59,7 +58,7 @@ def start_tiktok_poster() -> None:
     """Hidden daemon that posts today's clips to TikTok at staggered times (scripts/tiktok_poster.py)."""
     env = {k: v for k, v in os.environ.items() if k not in ("PYTHONPATH", "PYTHONHOME")}  # see tiktok_poster
     subprocess.Popen([sys.executable, str(HERE / "scripts" / "tiktok_poster.py"), "run"], cwd=str(HERE), env=env,
-                     creationflags=NO_WINDOW | 0x00000040, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                     start_new_session=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     log("TikTok poster started")
 
 
@@ -67,7 +66,7 @@ def prefetch_youtube() -> None:
     """Download YouTube moment windows on the PC for the cloud run; never blocks the day's run for long."""
     try:
         r = subprocess.run([sys.executable, str(HERE / "scripts" / "yt_prefetch.py")], cwd=str(HERE),
-                           creationflags=NO_WINDOW | 0x00000040, stdout=subprocess.DEVNULL,
+                           stdout=subprocess.DEVNULL,
                            stderr=subprocess.DEVNULL, timeout=PREFETCH_MAX_MIN * 60)
         log(f"YouTube prefetch finished (exit {r.returncode}, details in data/yt_prefetch.log)")
     except subprocess.TimeoutExpired:
@@ -84,7 +83,6 @@ def main() -> None:
     if state.get("last_run") == today and "--force" not in sys.argv:
         log("already launched today")
         return
-    time.sleep(120)  # let the user's own startup apps load first
     prefetch_youtube()
     for attempt in range(20):  # network may not be up right after logon
         try:

@@ -1,7 +1,7 @@
 """PC side of YouTube sources: download only the moment windows, gently, and hand them to the cloud run.
 
 GitHub's runners get blocked by YouTube's bot check, so the daily run finds no moments for YouTube
-sources (MPJ, Ryan Zofay, Stanley Meng). This script runs on the PC at logon, BEFORE the workflow is
+sources (MPJ, Ryan Zofay, Stanley Meng). This script runs on the server (daily trigger), BEFORE the workflow is
 dispatched: it lists each enabled YouTube source's most-replayed moments, downloads just those ~80 s
 windows and uploads them to a DRAFT release named "prefetch" (drafts are invisible to the public; the
 workflow reads them with its token, uses them and deletes them).
@@ -33,9 +33,6 @@ PER_SOURCE = int(os.environ.get("PREFETCH_PER_SOURCE", "2"))
 MIN_FREE_MB = 1200  # 6 GB PC that also renders the YouTube agent's videos
 BUSY_CPU = 70  # % — wait while the user is using the machine hard
 MIN_BATTERY = 30  # % — on battery below this, do nothing
-NO_WINDOW = 0x08000000
-IDLE = 0x00000040  # IDLE_PRIORITY_CLASS
-FFMPEG = Path(sys.executable).parent / "ffmpeg.exe"
 
 
 def log(*a: object) -> None:
@@ -47,9 +44,8 @@ def log(*a: object) -> None:
 
 
 def github_token() -> str:
-    # PATH git (Hermes portable) pops a credential picker and hangs: use the system git.
-    out = subprocess.run([r"C:\Program Files\Git\cmd\git.exe", "credential", "fill"], input="protocol=https\nhost=github.com\n\n",
-                         capture_output=True, text=True, creationflags=NO_WINDOW, timeout=60).stdout
+    out = subprocess.run(["git", "credential", "fill"], input="protocol=https\nhost=github.com\n\n",
+                         capture_output=True, text=True, timeout=60).stdout
     return next(x.split("=", 1)[1] for x in out.splitlines() if x.startswith("password="))
 
 
@@ -75,8 +71,7 @@ def remote_json(path: str, default):
 
 def be_gentle() -> bool:
     """Idle priority for us and every child; False when we should not run at all."""
-    me = psutil.Process()
-    me.nice(psutil.IDLE_PRIORITY_CLASS)
+    os.nice(19)  # children inherit it
     bat = psutil.sensors_battery()
     if bat and not bat.power_plugged and bat.percent < MIN_BATTERY:
         log(f"on battery at {bat.percent}% - skipping prefetch")
@@ -97,14 +92,14 @@ def wait_for_idle(max_wait_s: int = 900) -> None:
 
 def _run(cmd: list[str], timeout: int) -> subprocess.CompletedProcess:
     return subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace",
-                          creationflags=NO_WINDOW | IDLE, timeout=timeout)
+                          timeout=timeout)
 
 
 def download(m: dict, dest: Path, cache: dict[str, Path]) -> bool:
     """Whole episode once (yt-dlp's chunked downloader is ~50x faster than ffmpeg seeking a YouTube
     stream, which stalls), then a stream-copy cut of the window: no re-encode, almost no CPU."""
     wait_for_idle()
-    ff = str(FFMPEG) if FFMPEG.exists() else "ffmpeg"
+    ff = "ffmpeg"
     full = cache.get(m["url"])
     if not full:
         full = WORK / f"full-{m['id'].split('-')[1]}.mp4"
@@ -113,6 +108,9 @@ def download(m: dict, dest: Path, cache: dict[str, Path]) -> bool:
                   "--merge-output-format", "mp4", "--postprocessor-args", "ffmpeg:-threads 2",
                   "-o", str(full), m["url"]], 1500)
         if r.returncode != 0 or not full.exists():
+            if "confirm you" in (r.stderr or "") and "bot" in (r.stderr or ""):
+                log("  YOUTUBE BLOCKED: this server's datacenter IP gets the 'Sign in to confirm you're not a bot' "
+                    "check; YouTube windows need a cookies file (not set up) -> skipped")
             log(f"  download failed {m['id']}: {(r.stderr or '')[-300:]}")
             return False
         cache[m["url"]] = full
@@ -166,12 +164,18 @@ def main() -> None:
     have = {e["moment"]["id"] for e in manifest}
     WORK.mkdir(parents=True, exist_ok=True)
     cache: dict[str, Path] = {}
+    blocked = 0
     for src in sources:
         try:
             found = [m for m in moments.strongest(moments.moments_for(src["source"]))
                      if m["id"] not in seen and m["id"] not in have]
         except (OSError, ValueError, subprocess.CalledProcessError) as e:
-            log(f"[{src['creator']}] cannot list moments: {e}")
+            err = getattr(e, "stderr", "") or ""
+            if "confirm you" in err and "bot" in err:
+                blocked += 1
+                log(f"[{src['creator']}] YOUTUBE BLOCKED: 'Sign in to confirm you're not a bot' from this server's IP")
+            else:
+                log(f"[{src['creator']}] cannot list moments: {e}")
             continue
         log(f"[{src['creator']}] {len(found)} new moments")
         for m in found[:PER_SOURCE]:
@@ -187,6 +191,10 @@ def main() -> None:
     for full in cache.values():  # whole episodes never stay on disk
         full.unlink(missing_ok=True)
     save_manifest(manifest)
+    if blocked:
+        log(f"YOUTUBE BLOCKED for {blocked}/{len(sources)} sources: the datacenter IP needs a YouTube cookies file; "
+            "those sources get no clips today")
+        sys.exit(3)
 
 
 def save_manifest(manifest: list) -> None:

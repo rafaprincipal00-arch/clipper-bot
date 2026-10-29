@@ -18,8 +18,7 @@ import sys as _sys
 # importing win32gui") and every post fails. Site start-up has already run, so restart once with a clean env.
 if _os.environ.get("PYTHONPATH") or _os.environ.get("PYTHONHOME"):
     _env = {k: v for k, v in _os.environ.items() if k not in ("PYTHONPATH", "PYTHONHOME")}
-    _sp.Popen([_sys.executable, *_sys.argv], env=_env, cwd=_os.getcwd(),
-              creationflags=0x08000000 | 0x00000040 | 0x00000008)  # no window, idle priority, detached
+    _sp.Popen([_sys.executable, *_sys.argv], env=_env, cwd=_os.getcwd(), start_new_session=True)  # detached
     _sys.exit(0)
 
 import json
@@ -49,8 +48,6 @@ SLOTS_ET = ["08:30", "10:00", "11:30", "12:15", "13:00", "14:00", "15:30", "17:0
 JITTER_MIN = 6
 MIN_SPACING_MIN = 30
 EXPECTED = 15
-NO_WINDOW = 0x08000000
-SYSTEM_GIT = r"C:\Program Files\Git\cmd\git.exe"
 
 
 def log(*a: object) -> None:
@@ -63,11 +60,9 @@ def log(*a: object) -> None:
 
 # ---------------- GitHub ----------------
 def github_token() -> str:
-    # The system Git (helper "manager") holds the token. Another git first on PATH (Hermes's portable one,
-    # helper "helper-selector") opens a picker window on the user's screen and returns nothing.
-    git = SYSTEM_GIT if Path(SYSTEM_GIT).exists() else "git"
-    out = subprocess.run([git, "credential", "fill"], input="protocol=https\nhost=github.com\n\n",
-                         capture_output=True, text=True, creationflags=NO_WINDOW, timeout=60).stdout
+    # Token from git's credential store (~/.git-credentials on the server).
+    out = subprocess.run(["git", "credential", "fill"], input="protocol=https\nhost=github.com\n\n",
+                         capture_output=True, text=True, timeout=60).stdout
     for line in out.splitlines():
         if line.startswith("password="):
             return line.split("=", 1)[1]
@@ -117,7 +112,9 @@ def slot_local(hhmm: str) -> datetime:
 
 
 def keep_awake(on: bool) -> None:
-    """While posts are pending (some are at night in Spain) keep Windows from sleeping; the screen may sleep."""
+    """Windows only (the server never sleeps): keep the PC awake while posts are pending."""
+    if _os.name != "nt":
+        return
     import ctypes
     ctypes.windll.kernel32.SetThreadExecutionState(0x80000001 if on else 0x80000000)
 
@@ -177,8 +174,10 @@ def do_item(plan: dict, item: dict) -> None:
         item.update(status="posted", url=url, music=res["music"], posted_at=datetime.now().isoformat(timespec="seconds"))
         log(f"posted {item['file']} -> {url}")
         if item.get("campaign") and "vyro.com" in item["campaign"]:
-            import vyro_submit  # Rafa's Brave, own invisible window; views before submission don't count
             try:
+                if _os.name != "nt":
+                    raise RuntimeError("Vyro submit needs Rafa's Brave on Windows; submit this link by hand")
+                import vyro_submit  # Rafa's Brave, own invisible window; views before submission don't count
                 res_v = vyro_submit.submit(item["campaign"], url)
                 item["submitted"] = res_v == "submitted"
                 log(f"Vyro submit for {url}: {res_v}")
@@ -215,9 +214,9 @@ def run() -> None:
     log("poster started")
     try:  # fail loudly at start, not at the first post of the night
         import importlib
-        for _m in ("greenlet._greenlet", "win32gui"):
+        for _m in ("greenlet._greenlet", "playwright.sync_api") + (("win32gui",) if _os.name == "nt" else ()):
             importlib.import_module(_m)
-        log("  imports ok (playwright/greenlet, pywin32)")
+        log("  imports ok (playwright/greenlet)")
     except Exception as e:  # noqa: BLE001
         log(f"  IMPORT PROBLEM: {e!r}; sys.path={_sys.path[:6]}")
     deadline = datetime.now() + timedelta(hours=3)
@@ -247,7 +246,7 @@ def run() -> None:
             due = []
         for item in due[:1]:
             do_item(plan, item)
-        if datetime.now().minute < 1:  # hourly retry of Vyro submissions that failed
+        if _os.name == "nt" and datetime.now().minute < 1:  # hourly retry of Vyro submissions (Brave, Windows)
             try:
                 import vyro_submit
                 vyro_submit.pending(log)

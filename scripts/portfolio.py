@@ -76,7 +76,13 @@ def followers() -> dict:
 def main() -> None:
     items = posts()
     with cf.ThreadPoolExecutor(6) as ex:
-        items = [p for p in ex.map(views, items) if p["views"] is not None]
+        read = list(ex.map(views, items))
+    items = [p for p in read if p["views"] is not None]
+    for plat in ("youtube", "tiktok"):
+        lost = sum(1 for p in read if p["platform"] == plat and p["views"] is None)
+        if lost:  # e.g. YouTube's bot check on the server's datacenter IP: numbers below are incomplete
+            print(f"WARNING: {lost}/{sum(1 for p in read if p['platform'] == plat)} {plat} links unreadable "
+                  f"(views missing from the totals)")
     programs = json.loads((ROOT / "config" / "clip_programs.json").read_text(encoding="utf-8"))["programs"]
     week_ago = (datetime.now(timezone.utc) - timedelta(days=7)).date().isoformat()
     accounts = {}

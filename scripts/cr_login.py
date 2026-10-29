@@ -15,7 +15,7 @@ import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-GIT = r"C:\Program Files\Git\cmd\git.exe"  # PATH git pops a hidden credential picker
+GIT = r"C:\Program Files\Git\cmd\git.exe" if os.name == "nt" else "git"  # Windows: PATH git pops a picker
 
 
 def logged_in(page) -> bool:

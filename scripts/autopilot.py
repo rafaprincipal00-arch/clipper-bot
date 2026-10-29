@@ -7,7 +7,7 @@
     python scripts/autopilot.py notify "text"
 
 Telegram is the only output channel, and only for: something published, errors, money. Everything heavy runs in
-GitHub Actions; on the PC this only starts the existing idle-priority helpers (logon trigger, TikTok poster).
+GitHub Actions; on the Linux server this only starts the niced helpers (daily trigger, TikTok poster).
 State: data/autopilot_state.json, log: data/autopilot.log (both local only).
 """
 import json
@@ -30,11 +30,9 @@ STATE = ROOT / "data" / "autopilot_state.json"
 LOG = ROOT / "data" / "autopilot.log"
 TRIGGER_STATE = ROOT / "data" / "logon_trigger_state.json"
 POSTER_LOG = ROOT / "data" / "tiktok_poster.log"
-HERMES_ENV = Path.home() / "AppData" / "Local" / "hermes" / ".env"  # Telegram bot of the main Hermes profile
-TOP_CLIPS = (Path.home() / "AppData/Local/hermes/profiles/clipper/skills/clipper/clipper-ops/scripts/top_clips.py")
-NO_WINDOW, IDLE = 0x08000000, 0x00000040
+HERMES_ENV = Path.home() / ".hermes" / ".env"  # Telegram bot of the main Hermes profile
+TOP_CLIPS = Path.home() / ".hermes/profiles/clipper/skills/clipper/clipper-ops/scripts/top_clips.py"
 MAX_RETRIES = 2
-PYW = Path(sys.executable).with_name("pythonw.exe")
 
 
 def log(*a: object) -> None:
@@ -117,7 +115,7 @@ def job_log(run: dict) -> str:
         return urllib.request.urlopen(e.headers["Location"], timeout=60).read().decode("utf-8", "ignore")
 
 
-# ---------------- PC helpers ----------------
+# ---------------- server helpers ----------------
 def running(script: str) -> bool:
     import psutil
     for p in psutil.process_iter(["cmdline"]):
@@ -130,9 +128,11 @@ def running(script: str) -> bool:
 
 
 def start(script: str, *args: str) -> None:
-    exe = PYW if PYW.exists() else Path(sys.executable)
-    subprocess.Popen([str(exe), str(ROOT / "scripts" / script), *args], cwd=str(ROOT),
-                     creationflags=NO_WINDOW | IDLE, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    """Detached child (outlives the cron run), niced, without Hermes's PYTHONPATH."""
+    env = {k: v for k, v in os.environ.items() if k not in ("PYTHONPATH", "PYTHONHOME")}
+    subprocess.Popen([sys.executable, str(ROOT / "scripts" / script), *args], cwd=str(ROOT), env=env,
+                     start_new_session=True, preexec_fn=lambda: os.nice(19),
+                     stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     log("started", script, *args)
 
 
@@ -143,7 +143,7 @@ def launched_today() -> bool:
 
 # ---------------- commands ----------------
 def cmd_daily() -> None:
-    """Safety net for days without a fresh Windows logon: same idempotent path as the Startup shortcut."""
+    """Launch today's batch once (idempotent): prefetch -> dispatch clipper.yml -> TikTok poster."""
     if launched_today() or running("logon_trigger.pyw"):
         log("daily: batch already launched today")
         return
@@ -190,6 +190,14 @@ def cmd_watch() -> None:
             m = re.match(rf"{today} [\d:]+ FAILED (\S+) \(try 2\): (.*)", line)
             if m:
                 alert_once(state, f"tt-{m.group(1)}", f"TikTok no pudo publicar {m.group(1)}: {m.group(2)[:200]}")
+            m = re.match(rf"{today} [\d:]+ Vyro submit FAILED for (\S+): (.*)", line)
+            if m:  # Vyro needs Rafa's Brave (Windows): a missed submit is lost money
+                alert_once(state, f"vyro-{m.group(1)}", f"Vyro: envía a mano {m.group(1)} ({m.group(2)[:150]})")
+    ytlog = ROOT / "data" / "yt_prefetch.log"
+    if ytlog.exists() and any(l.startswith(today) and "YOUTUBE BLOCKED for" in l
+                              for l in ytlog.read_text(encoding="utf-8", errors="ignore").splitlines()):
+        alert_once(state, "yt-blocked", "YouTube bloquea la IP del servidor (prefetch): las fuentes de YouTube no "
+                   "tendrán clips hoy. Hace falta un cookies.txt de una cuenta desechable (ver data/yt_prefetch.log).")
     save_state(state)
 
 
@@ -262,10 +270,10 @@ def cmd_digest() -> None:
     if not lines:
         log("digest: nothing published today")
         return
-    subprocess.run([r"C:\Program Files\Git\cmd\git.exe", "-C", str(ROOT), "pull", "-q", "--autostash"],
-                   creationflags=NO_WINDOW, timeout=120, capture_output=True)
+    subprocess.run(["git", "-C", str(ROOT), "pull", "-q", "--autostash"],
+                   timeout=120, capture_output=True)
     top = subprocess.run([sys.executable, str(TOP_CLIPS), "5"], capture_output=True, text=True,
-                         timeout=900, creationflags=NO_WINDOW | IDLE).stdout.strip()
+                         timeout=900).stdout.strip()
     notify(f"📤 Publicado hoy ({len(lines)}):\n" + "\n".join(lines[:20]) +
            (f"\n…y {len(lines) - 20} más" if len(lines) > 20 else "") +
            "\n\n👀 Vistas reales (top 5 de siempre):\n" + top)
@@ -275,7 +283,7 @@ def cmd_portfolio() -> None:
     """Weekly: real views per paid program (scripts/portfolio.py -> data/portfolio.md). Telegram only when a program's
     view threshold is reached for the first time (then Rafa can apply / start cashing in)."""
     r = subprocess.run([sys.executable, str(ROOT / "scripts" / "portfolio.py")], cwd=str(ROOT), capture_output=True,
-                       text=True, timeout=1500, creationflags=NO_WINDOW | IDLE)
+                       text=True, timeout=1500)
     log("portfolio:", (r.stdout or r.stderr).strip().replace(chr(10), " | ")[:600])
     if r.returncode:
         raise RuntimeError("portfolio.py failed: " + r.stderr.strip()[-200:])
