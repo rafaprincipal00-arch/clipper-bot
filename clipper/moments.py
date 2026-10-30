@@ -109,13 +109,13 @@ def kick_clips(channel: str, limit: int = 20) -> list[dict]:
 def youtube_heat_moments(channel_videos_url: str, count: int = 5, recent: int = 4) -> list[dict]:
     """Top 'most replayed' peaks of the channel's recent uploads (metadata only, no download)."""
     listing = json.loads(subprocess.run(
-        ["yt-dlp", "--no-warnings", "--flat-playlist", "--playlist-items", f"1-{recent}", "-J", channel_videos_url],
+        [sys.executable, "-m", "yt_dlp", "--no-warnings", "--flat-playlist", "--playlist-items", f"1-{recent}", "-J", channel_videos_url],
         capture_output=True, text=True, check=True).stdout)
     out = []
     for e in listing.get("entries") or []:
         url = f"https://www.youtube.com/watch?v={e['id']}"
         try:
-            info = json.loads(subprocess.run(["yt-dlp", "--no-warnings", "--skip-download", "-J", url],
+            info = json.loads(subprocess.run([sys.executable, "-m", "yt_dlp", "--no-warnings", "--skip-download", "-J", url],
                                              capture_output=True, text=True, check=True).stdout)
         except subprocess.CalledProcessError as err:  # e.g. YouTube's bot check on datacenter IPs
             print(f"  yt-dlp failed on {url}: {(err.stderr or '').strip()[-200:]}")
@@ -140,7 +140,7 @@ def youtube_heat_moments(channel_videos_url: str, count: int = 5, recent: int = 
 def youtube_episode_windows(url: str, span: int = 80) -> list[dict]:
     """A single campaign episode: its most-replayed peaks, or consecutive windows when YouTube has none yet
     (the edit step scores each window and skips the weak ones)."""
-    info = json.loads(subprocess.run(["yt-dlp", "--no-warnings", "--skip-download", "-J", url],
+    info = json.loads(subprocess.run([sys.executable, "-m", "yt_dlp", "--no-warnings", "--skip-download", "-J", url],
                                      capture_output=True, text=True, check=True).stdout)
     vid, title, length = info["id"], info.get("title", ""), float(info.get("duration") or 0)
     heat = sorted(info.get("heatmap") or [], key=lambda h: -h["value"])
