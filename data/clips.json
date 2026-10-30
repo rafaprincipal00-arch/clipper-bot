@@ -1,5 +1,643 @@
 [
  {
+  "file": "westcol-kick-kc-clip-01m61fc8a1nt8zx1pjzyhv0ybj.mp4",
+  "creator": "Westcol (Kick)",
+  "source": "https://clips.kick.com/clips/05/clip_01M61FC8A1NT8ZX1PJZYHV0YBJ/playlist.m3u8",
+  "start": 20.94,
+  "end": 40.70000000000001,
+  "cuts": 12,
+  "length": 20.0,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "kick-clip",
+  "score": 75,
+  "hook": "Westcol suelta un facto épico",
+  "hook_type": "revelation",
+  "emphasis": [
+   "hombres",
+   "facto",
+   "escupiendo"
+  ],
+  "caption": "Westcol no se guarda nada en pleno directo #westcol #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Westcol no se guarda nada en pleno directo",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-10-30T11:18:44.115915+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/-PjbecQE73M",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/westcol-kick-kc-clip-01m61fc8a1nt8zx1pjzyhv0ybj.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/westcol-kick-kc-clip-01m61fc8a1nt8zx1pjzyhv0ybj.tt.mp4",
+  "tiktok_caption": "Westcol no se guarda nada en pleno directo #westcol #kick #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 11,
+   "transcribe+edit+render": 96,
+   "publish+submit": 11,
+   "total": 118
+  }
+ },
+ {
+  "file": "westcol-kick-kc-clip-01m5na10h85dms1z7hy5qbpn1e.mp4",
+  "creator": "Westcol (Kick)",
+  "source": "https://clips.kick.com/clips/69/clip_01M5NA10H85DMS1Z7HY5QBPN1E/playlist.m3u8",
+  "start": 15.559999999999999,
+  "end": 60.199999999999996,
+  "cuts": 10,
+  "length": 21.9,
+  "layout": "face",
+  "style": "blur",
+  "mood": "swag",
+  "signal": "kick-clip",
+  "score": 82,
+  "hook": "Westcol le cantó las verdades a Piqué",
+  "hook_type": "revelation",
+  "emphasis": [
+   "pagaron",
+   "perdiendo",
+   "negocio",
+   "valorar"
+  ],
+  "caption": "Westcol explica por qué no vuelve con Piqué y la gente se divide #westcol #kick #streamer",
+  "title": "Westcol explica por qué no vuelve con Piqué y la gente se divide",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-10-30T11:06:48.951904+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/qzGEl5EHQoQ",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/westcol-kick-kc-clip-01m5na10h85dms1z7hy5qbpn1e.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/westcol-kick-kc-clip-01m5na10h85dms1z7hy5qbpn1e.tt.mp4",
+  "tiktok_caption": "Westcol explica por qué no vuelve con Piqué y la gente se divide #westcol #kick #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 10,
+   "transcribe+edit+render": 188,
+   "publish+submit": 11,
+   "total": 208
+  }
+ },
+ {
+  "file": "lanah-cherry-twitch-tw-2911820528-1191.mp4",
+  "creator": "Lanah Cherry (Twitch)",
+  "source": "https://www.twitch.tv/videos/2911820528",
+  "start": 1173.24,
+  "end": 1233.82,
+  "cuts": 14,
+  "length": 39.7,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 78,
+  "hook": "She wants another new G-Wagon",
+  "hook_type": "stakes",
+  "emphasis": [
+   "thousand",
+   "quitting",
+   "G-wagon",
+   "down"
+  ],
+  "caption": "Lanah Cherry threatens to quit over subs #twitch #streamer #irl\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Lanah Cherry threatens to quit over subs",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": "https://contentrewards.com/discover/6e379737-96ef-4980-8565-08df4e6d39d9",
+  "created": "2026-10-30T10:52:59.493759+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/bnivpXw-qs0",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lanah-cherry-twitch-tw-2911820528-1191.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lanah-cherry-twitch-tw-2911820528-1191.tt.mp4",
+  "tiktok_caption": "Lanah Cherry threatens to quit over subs #twitch #streamer #irl",
+  "account": 1,
+  "submission": {
+   "error": "Content Rewards session expired: refresh the CR_STATE secret"
+  },
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 203,
+   "publish+submit": 28,
+   "total": 234
+  }
+ },
+ {
+  "file": "westcol-kick-kc-clip-01m5tqkwya9bt8r3jdvq7kqy6z.mp4",
+  "creator": "Westcol (Kick)",
+  "source": "https://clips.kick.com/clips/d5/clip_01M5TQKWYA9BT8R3JDVQ7KQY6Z/playlist.m3u8",
+  "start": 0.95,
+  "end": 37.239999999999995,
+  "cuts": 14,
+  "length": 20.1,
+  "layout": "face",
+  "style": "blur",
+  "mood": "hype",
+  "signal": "kick-clip",
+  "score": 75,
+  "hook": "Westcol en el campo",
+  "hook_type": "revelation",
+  "emphasis": [
+   "chévalo",
+   "foto",
+   "sencillo"
+  ],
+  "caption": "Westcol sorprendió a todos en el campo con este encuentro #westcol #kick #streamer",
+  "title": "Westcol sorprendió a todos en el campo con este encuentro",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-10-30T10:41:00.963161+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/FtPPIdUmfSc",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/westcol-kick-kc-clip-01m5tqkwya9bt8r3jdvq7kqy6z.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/westcol-kick-kc-clip-01m5tqkwya9bt8r3jdvq7kqy6z.tt.mp4",
+  "tiktok_caption": "Westcol sorprendió a todos en el campo con este encuentro #westcol #kick #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 11,
+   "transcribe+edit+render": 164,
+   "publish+submit": 11,
+   "total": 186
+  }
+ },
+ {
+  "file": "lanah-cherry-twitch-tw-2911820528-1596.mp4",
+  "creator": "Lanah Cherry (Twitch)",
+  "source": "https://www.twitch.tv/videos/2911820528",
+  "start": 1592.66,
+  "end": 1630.8,
+  "cuts": 10,
+  "length": 21.4,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "Lanah denies being a violent drunk",
+  "hook_type": "revelation",
+  "emphasis": [
+   "drunk",
+   "violent",
+   "scares"
+  ],
+  "caption": "Lanah Cherry addresses the drunk allegations #twitch #streamer #irl\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Lanah Cherry addresses the drunk allegations",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": "https://contentrewards.com/discover/6e379737-96ef-4980-8565-08df4e6d39d9",
+  "created": "2026-10-30T10:29:11.336716+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/vIGJttah7Gs",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lanah-cherry-twitch-tw-2911820528-1596.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lanah-cherry-twitch-tw-2911820528-1596.tt.mp4",
+  "tiktok_caption": "Lanah Cherry addresses the drunk allegations #twitch #streamer #irl",
+  "account": 1,
+  "submission": {
+   "error": "Content Rewards session expired: refresh the CR_STATE secret"
+  },
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 173,
+   "publish+submit": 28,
+   "total": 203
+  }
+ },
+ {
+  "file": "stable-ronaldo-twitch-tw-2908823319-11993.mp4",
+  "creator": "Stable Ronaldo (Twitch)",
+  "source": "https://www.twitch.tv/videos/2908823319",
+  "start": 11997.54,
+  "end": 12046.65,
+  "cuts": 10,
+  "length": 21.0,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "HE DESTROYED HIS OWN SCREEN",
+  "hook_type": "revelation",
+  "emphasis": [
+   "Throw",
+   "microwave",
+   "falls",
+   "dead"
+  ],
+  "caption": "Stable Ronaldo completely destroys his setup live #stableronaldo #stream #clips",
+  "title": "Stable Ronaldo completely destroys his setup live",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-10-30T10:15:54.851456+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/44H9pDA0rZU",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/stable-ronaldo-twitch-tw-2908823319-11993.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/stable-ronaldo-twitch-tw-2908823319-11993.tt.mp4",
+  "tiktok_caption": "Stable Ronaldo completely destroys his setup live #stableronaldo #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 183,
+   "publish+submit": 11,
+   "total": 199
+  }
+ },
+ {
+  "file": "caseoh-twitch-tw-2911864491-7711.mp4",
+  "creator": "CaseOh (Twitch)",
+  "source": "https://www.twitch.tv/videos/2911864491",
+  "start": 7733.22,
+  "end": 7758.6,
+  "cuts": 8,
+  "length": 21.5,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Ghost encounter goes completely wrong",
+  "hook_type": "stakes",
+  "emphasis": [
+   "possessed",
+   "danger",
+   "stronger"
+  ],
+  "caption": "CaseOh was not ready for this scary encounter #caseoh #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "CaseOh was not ready for this scary encounter",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-10-30T10:03:59.594691+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/Whcj_APRhVk",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2911864491-7711.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2911864491-7711.tt.mp4",
+  "tiktok_caption": "CaseOh was not ready for this scary encounter #caseoh #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 184,
+   "publish+submit": 10,
+   "total": 198
+  }
+ },
+ {
+  "file": "lanah-cherry-twitch-tw-2912802019-2526.mp4",
+  "creator": "Lanah Cherry (Twitch)",
+  "source": "https://www.twitch.tv/videos/2912802019",
+  "start": 2491.28,
+  "end": 2572.91,
+  "cuts": 9,
+  "length": 20.0,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "Lanah is too scared to bite",
+  "hook_type": "stakes",
+  "emphasis": [
+   "bite",
+   "scared",
+   "hard"
+  ],
+  "caption": "Lanah Cherry was way too terrified for this #twitch #streamer #irl",
+  "title": "Lanah Cherry was way too terrified for this",
+  "bed": null,
+  "campaign": "https://contentrewards.com/discover/6e379737-96ef-4980-8565-08df4e6d39d9",
+  "created": "2026-10-30T09:07:35.419196+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/-zjOvj3VuQs",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lanah-cherry-twitch-tw-2912802019-2526.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lanah-cherry-twitch-tw-2912802019-2526.tt.mp4",
+  "tiktok_caption": "Lanah Cherry was way too terrified for this #twitch #streamer #irl",
+  "account": 1,
+  "submission": {
+   "error": "Content Rewards session expired: refresh the CR_STATE secret"
+  },
+  "timing_s": {
+   "download": 6,
+   "transcribe+edit+render": 180,
+   "publish+submit": 25,
+   "total": 212
+  }
+ },
+ {
+  "file": "westcol-kick-kc-clip-01m5p3fkwanzgp3v1fq410k431.mp4",
+  "creator": "Westcol (Kick)",
+  "source": "https://clips.kick.com/clips/af/clip_01M5P3FKWANZGP3V1FQ410K431/playlist.m3u8",
+  "start": 10.16,
+  "end": 35.36,
+  "cuts": 10,
+  "length": 20.9,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "kick-clip",
+  "score": 82,
+  "hook": "Le sacaron esta muela gigante",
+  "hook_type": "revelation",
+  "emphasis": [
+   "muela",
+   "Gigante",
+   "relajo"
+  ],
+  "caption": "Westcol cuenta cómo le sacaron esta muela gigante a las 3 AM #westcol #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Westcol cuenta cómo le sacaron esta muela gigante a las 3 AM",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-10-30T08:51:07.113851+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/q9i4dsJtRZ8",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/westcol-kick-kc-clip-01m5p3fkwanzgp3v1fq410k431.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/westcol-kick-kc-clip-01m5p3fkwanzgp3v1fq410k431.tt.mp4",
+  "tiktok_caption": "Westcol cuenta cómo le sacaron esta muela gigante a las 3 AM #westcol #kick #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 12,
+   "transcribe+edit+render": 133,
+   "publish+submit": 10,
+   "total": 155
+  }
+ },
+ {
+  "file": "xqc-kick-kc-clip-01m5zz2zhnkppxg9gbrwrk58se.mp4",
+  "creator": "xQc (Kick)",
+  "source": "https://clips.kick.com/clips/57/clip_01M5ZZ2ZHNKPPXG9GBRWRK58SE/playlist.m3u8",
+  "start": 8.74,
+  "end": 85.34,
+  "cuts": 12,
+  "length": 32.6,
+  "layout": "face",
+  "style": "blur",
+  "mood": "tension",
+  "signal": "kick-clip",
+  "score": 75,
+  "hook": "She plays dirty on stream",
+  "hook_type": "revelation",
+  "emphasis": [
+   "PVP",
+   "worse",
+   "flagged",
+   "attention"
+  ],
+  "caption": "xQc calls out streamer drama games #xqc #kick #streamer",
+  "title": "xQc calls out streamer drama games",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-10-30T08:40:03.684597+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/j5pfL41Toew",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/xqc-kick-kc-clip-01m5zz2zhnkppxg9gbrwrk58se.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/xqc-kick-kc-clip-01m5zz2zhnkppxg9gbrwrk58se.tt.mp4",
+  "tiktok_caption": "xQc calls out streamer drama games #xqc #kick #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 1,
+   "transcribe+edit+render": 203,
+   "publish+submit": 9,
+   "total": 214
+  }
+ },
+ {
+  "file": "lospollostv-kick-kc-clip-01m65e8g5a0n46sbyv4gby9bc1.mp4",
+  "creator": "LosPollosTV (Kick)",
+  "source": "https://clips.kick.com/clips/4b/clip_01M65E8G5A0N46SBYV4GBY9BC1/playlist.m3u8",
+  "start": 55.62,
+  "end": 84.53999999999999,
+  "cuts": 7,
+  "length": 21.2,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "kick-clip",
+  "score": 85,
+  "hook": "He actually yelled bums at them",
+  "hook_type": "stakes",
+  "emphasis": [
+   "bum",
+   "return",
+   "fucked",
+   "banned"
+  ],
+  "caption": "LosPollosTV completely losing his mind on stream #lospollostv #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "LosPollosTV completely losing his mind on stream",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-10-30T08:27:34.809707+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/ndRJKRBoCdE",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lospollostv-kick-kc-clip-01m65e8g5a0n46sbyv4gby9bc1.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lospollostv-kick-kc-clip-01m65e8g5a0n46sbyv4gby9bc1.tt.mp4",
+  "tiktok_caption": "LosPollosTV completely losing his mind on stream #lospollostv #kick #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 158,
+   "publish+submit": 9,
+   "total": 170
+  }
+ },
+ {
+  "file": "ibai-twitch-tw-2910547461-18247.mp4",
+  "creator": "Ibai (Twitch)",
+  "source": "https://www.twitch.tv/videos/2910547461",
+  "start": 18227.2,
+  "end": 18265.52,
+  "cuts": 9,
+  "length": 23.5,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "El sultán del sexo apareció",
+  "hook_type": "revelation",
+  "emphasis": [
+   "sultán",
+   "sexo",
+   "aprovechó"
+  ],
+  "caption": "Nadie esperaba escuchar esto en plena partida de Ibai #ibai #twitch #streamer",
+  "title": "Nadie esperaba escuchar esto en plena partida de Ibai",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-10-30T08:16:08.405051+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/g5iGqX831c8",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/ibai-twitch-tw-2910547461-18247.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/ibai-twitch-tw-2910547461-18247.tt.mp4",
+  "tiktok_caption": "Nadie esperaba escuchar esto en plena partida de Ibai #ibai #twitch #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 10,
+   "transcribe+edit+render": 157,
+   "publish+submit": 9,
+   "total": 176
+  }
+ },
+ {
+  "file": "jynxzi-twitch-tw-2910768161-11682.mp4",
+  "creator": "Jynxzi (Twitch)",
+  "source": "https://www.twitch.tv/videos/2910768161",
+  "start": 11709.82,
+  "end": 11707.56,
+  "cuts": 10,
+  "length": 24.4,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "Worst play ever witnessed live",
+  "hook_type": "revelation",
+  "emphasis": [
+   "worst",
+   "cell",
+   "fire",
+   "weakness"
+  ],
+  "caption": "Jynxzi completely loses his mind at this awful 3v1 throw #jynxzi #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Jynxzi completely loses his mind at this awful 3v1 throw",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-10-30T08:03:32.202748+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/It1y4QuyQjk",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/jynxzi-twitch-tw-2910768161-11682.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/jynxzi-twitch-tw-2910768161-11682.tt.mp4",
+  "tiktok_caption": "Jynxzi completely loses his mind at this awful 3v1 throw #jynxzi #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 183,
+   "publish+submit": 9,
+   "total": 197
+  }
+ },
+ {
+  "file": "lanah-cherry-twitch-tw-2911820528-793.mp4",
+  "creator": "Lanah Cherry (Twitch)",
+  "source": "https://www.twitch.tv/videos/2911820528",
+  "start": 800.47,
+  "end": 827.41,
+  "cuts": 8,
+  "length": 22.9,
+  "layout": "face",
+  "style": "blur",
+  "mood": "tension",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "That is actually kind of creepy",
+  "hook_type": "revelation",
+  "emphasis": [
+   "creepy",
+   "notebook",
+   "braiden",
+   "white girl"
+  ],
+  "caption": "Lanah Cherry was not ready for this stalker reveal #twitch #streamer #irl",
+  "title": "Lanah Cherry was not ready for this stalker reveal",
+  "bed": null,
+  "campaign": "https://contentrewards.com/discover/6e379737-96ef-4980-8565-08df4e6d39d9",
+  "created": "2026-10-30T07:50:57.624188+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/YL8SkuuGRFE",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lanah-cherry-twitch-tw-2911820528-793.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lanah-cherry-twitch-tw-2911820528-793.tt.mp4",
+  "tiktok_caption": "Lanah Cherry was not ready for this stalker reveal #twitch #streamer #irl",
+  "account": 1,
+  "submission": {
+   "error": "Content Rewards session expired: refresh the CR_STATE secret"
+  },
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 125,
+   "publish+submit": 27,
+   "total": 155
+  }
+ },
+ {
+  "file": "kai-cenat-twitch-tw-2910392998-2046.mp4",
+  "creator": "Kai Cenat (Twitch)",
+  "source": "https://www.twitch.tv/videos/2910392998",
+  "start": 2054.84,
+  "end": 2102.16,
+  "cuts": 10,
+  "length": 21.4,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 90,
+  "hook": "KAI GOT SMACKED LIVE",
+  "hook_type": "revelation",
+  "emphasis": [
+   "god",
+   "bro",
+   "fucking",
+   "kiss"
+  ],
+  "caption": "Kai Cenat was NOT ready for this wild interaction #KaiCenat #KaiCenat #twitch #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Kai Cenat was NOT ready for this wild interaction",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": "https://contentrewards.com/c/campaigns/44a3ffcb-d4a1-492b-94a4-704919950246",
+  "created": "2026-10-30T07:36:37.936349+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/8S4VxA_7dDQ",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2910392998-2046.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2910392998-2046.tt.mp4",
+  "tiktok_caption": "Kai Cenat was NOT ready for this wild interaction #KaiCenat #KaiCenat #twitch #streamer",
+  "account": 1,
+  "submission": {
+   "error": "Content Rewards session expired: refresh the CR_STATE secret"
+  },
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 152,
+   "publish+submit": 19,
+   "total": 175
+  }
+ },
+ {
   "file": "kai-cenat-twitch-twchat-2910392998-4740.mp4",
   "creator": "Kai Cenat (Twitch)",
   "source": "https://www.twitch.tv/videos/2910392998",

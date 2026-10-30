@@ -1,31 +1,31 @@
 {
- "updated": "2026-10-29T22:37:02+00:00",
+ "updated": "2026-10-30T07:31:29+00:00",
  "clips": 142,
  "by_creator": {
   "Clix (Twitch)": {
    "clips": 13,
-   "views": 17279,
-   "avg_views": 1329
+   "views": 17371,
+   "avg_views": 1336
   },
   "LosPollosTV (Kick)": {
    "clips": 2,
-   "views": 1096,
+   "views": 1097,
    "avg_views": 548
   },
   "Stable Ronaldo (Twitch)": {
    "clips": 8,
-   "views": 4986,
-   "avg_views": 623
+   "views": 4990,
+   "avg_views": 624
   },
   "CaseOh (Twitch)": {
    "clips": 9,
-   "views": 5690,
-   "avg_views": 632
+   "views": 5697,
+   "avg_views": 633
   },
   "Auronplay (Twitch)": {
    "clips": 14,
-   "views": 18240,
-   "avg_views": 1303
+   "views": 18384,
+   "avg_views": 1313
   },
   "Westcol (Kick)": {
    "clips": 7,
@@ -34,33 +34,33 @@
   },
   "Spreen (Kick)": {
    "clips": 9,
-   "views": 9056,
-   "avg_views": 1006
+   "views": 9395,
+   "avg_views": 1044
   },
   "Ibai (Twitch)": {
    "clips": 9,
-   "views": 3794,
+   "views": 3799,
    "avg_views": 422
   },
   "Adin Ross (Kick)": {
    "clips": 7,
-   "views": 917,
+   "views": 920,
    "avg_views": 131
   },
   "Kai Cenat (Twitch)": {
    "clips": 9,
-   "views": 10765,
-   "avg_views": 1196
+   "views": 10772,
+   "avg_views": 1197
   },
   "Rivers (Twitch)": {
    "clips": 6,
-   "views": 5502,
+   "views": 5503,
    "avg_views": 917
   },
   "Lanah Cherry (Twitch)": {
    "clips": 14,
-   "views": 18428,
-   "avg_views": 1316
+   "views": 18436,
+   "avg_views": 1317
   },
   "Jynxzi (Twitch)": {
    "clips": 6,
@@ -169,6 +169,17 @@
    "id": "Et3rAIR30iQ"
   },
   {
+   "creator": "Spreen (Kick)",
+   "hook": "No me lo quiero cruzar nunca más",
+   "title": "Spreen explota y revela por qué no vuelve a jugar con ellos",
+   "mood": "tension",
+   "hook_type": "stakes",
+   "score": 85,
+   "views": 3133,
+   "likes": 23,
+   "id": "iFv6MbZTVr8"
+  },
+  {
    "creator": "Clix x Yeat (Twitch)",
    "hook": "YEAT FINALLY SPOKE ON STREAM",
    "title": "Clix was NOT ready when Yeat spoke on Fortnite",
@@ -189,17 +200,6 @@
    "views": 3005,
    "likes": 55,
    "id": "REDP_AloN5A"
-  },
-  {
-   "creator": "Spreen (Kick)",
-   "hook": "No me lo quiero cruzar nunca más",
-   "title": "Spreen explota y revela por qué no vuelve a jugar con ellos",
-   "mood": "tension",
-   "hook_type": "stakes",
-   "score": 85,
-   "views": 2798,
-   "likes": 19,
-   "id": "iFv6MbZTVr8"
   },
   {
    "creator": "Clix x Yeat (Twitch)",
