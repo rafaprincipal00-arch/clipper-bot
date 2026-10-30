@@ -1,71 +1,76 @@
 {
- "updated": "2026-10-27T10:37:09+00:00",
- "clips": 127,
+ "updated": "2026-10-29T22:37:02+00:00",
+ "clips": 142,
  "by_creator": {
-  "Adin Ross (Kick)": {
-   "clips": 7,
-   "views": 908,
-   "avg_views": 130
+  "Clix (Twitch)": {
+   "clips": 13,
+   "views": 17279,
+   "avg_views": 1329
   },
-  "Spreen (Kick)": {
-   "clips": 8,
-   "views": 6167,
-   "avg_views": 771
+  "LosPollosTV (Kick)": {
+   "clips": 2,
+   "views": 1096,
+   "avg_views": 548
   },
   "Stable Ronaldo (Twitch)": {
-   "clips": 7,
-   "views": 4160,
-   "avg_views": 594
-  },
-  "Clix (Twitch)": {
    "clips": 8,
-   "views": 13040,
-   "avg_views": 1630
+   "views": 4986,
+   "avg_views": 623
+  },
+  "CaseOh (Twitch)": {
+   "clips": 9,
+   "views": 5690,
+   "avg_views": 632
+  },
+  "Auronplay (Twitch)": {
+   "clips": 14,
+   "views": 18240,
+   "avg_views": 1303
+  },
+  "Westcol (Kick)": {
+   "clips": 7,
+   "views": 4180,
+   "avg_views": 597
+  },
+  "Spreen (Kick)": {
+   "clips": 9,
+   "views": 9056,
+   "avg_views": 1006
   },
   "Ibai (Twitch)": {
-   "clips": 8,
-   "views": 2776,
-   "avg_views": 347
+   "clips": 9,
+   "views": 3794,
+   "avg_views": 422
+  },
+  "Adin Ross (Kick)": {
+   "clips": 7,
+   "views": 917,
+   "avg_views": 131
   },
   "Kai Cenat (Twitch)": {
    "clips": 9,
-   "views": 9988,
-   "avg_views": 1110
-  },
-  "CaseOh (Twitch)": {
-   "clips": 7,
-   "views": 4310,
-   "avg_views": 616
+   "views": 10765,
+   "avg_views": 1196
   },
   "Rivers (Twitch)": {
    "clips": 6,
-   "views": 5496,
-   "avg_views": 916
-  },
-  "Auronplay (Twitch)": {
-   "clips": 12,
-   "views": 16362,
-   "avg_views": 1364
+   "views": 5502,
+   "avg_views": 917
   },
   "Lanah Cherry (Twitch)": {
    "clips": 14,
-   "views": 18398,
-   "avg_views": 1314
+   "views": 18428,
+   "avg_views": 1316
   },
   "Jynxzi (Twitch)": {
    "clips": 6,
-   "views": 5619,
-   "avg_views": 936
-  },
-  "Westcol (Kick)": {
-   "clips": 6,
-   "views": 4113,
-   "avg_views": 686
+   "views": 5661,
+   "avg_views": 944
   },
   "elZeein (Kick)": {
    "clips": 1,
-   "views": 76,
-   "avg_views": 76
+   "views": 77,
+   "avg_views": 77
   },
   "xQc (Kick)": {
    "clips": 1,
@@ -74,7 +79,7 @@
   },
   "Clix x Yeat (Twitch)": {
    "clips": 2,
-   "views": 5767,
+   "views": 5769,
    "avg_views": 2884
   },
   "Juansguarnizo (Kick)": {
@@ -109,13 +114,13 @@
   },
   "TJR": {
    "clips": 17,
-   "views": 3199,
+   "views": 3201,
    "avg_views": 188
   },
   "Michael Porter Jr. (Curious Mike)": {
    "clips": 1,
-   "views": 2587,
-   "avg_views": 2587
+   "views": 2588,
+   "avg_views": 2588
   }
  },
  "top": [
@@ -126,7 +131,7 @@
    "mood": "chaos",
    "hook_type": "stakes",
    "score": 88,
-   "views": 5333,
+   "views": 5338,
    "likes": 45,
    "id": "J1P_cwbirK0"
   },
@@ -137,7 +142,7 @@
    "mood": "awkward",
    "hook_type": "revelation",
    "score": 78,
-   "views": 5100,
+   "views": 5101,
    "likes": 43,
    "id": "49m7bG834X0"
   },
@@ -148,7 +153,7 @@
    "mood": "funny",
    "hook_type": "revelation",
    "score": 82,
-   "views": 3774,
+   "views": 3776,
    "likes": 158,
    "id": "3SssCrnpijY"
   },
@@ -186,26 +191,26 @@
    "id": "REDP_AloN5A"
   },
   {
+   "creator": "Spreen (Kick)",
+   "hook": "No me lo quiero cruzar nunca más",
+   "title": "Spreen explota y revela por qué no vuelve a jugar con ellos",
+   "mood": "tension",
+   "hook_type": "stakes",
+   "score": 85,
+   "views": 2798,
+   "likes": 19,
+   "id": "iFv6MbZTVr8"
+  },
+  {
    "creator": "Clix x Yeat (Twitch)",
    "hook": "Yeat's secret instructions revealed",
    "title": "Clix was NOT ready for Yeat's chaotic stream demands",
    "mood": "chaos",
    "hook_type": "revelation",
    "score": 88,
-   "views": 2755,
+   "views": 2757,
    "likes": 52,
    "id": "qrUYeJzyszM"
-  },
-  {
-   "creator": "Auronplay (Twitch)",
-   "hook": "La única explicación es que es gay",
-   "title": "Auronplay no entiende qué pasa con Fabiana",
-   "mood": "funny",
-   "hook_type": "revelation",
-   "score": 85,
-   "views": 2700,
-   "likes": 56,
-   "id": "odUXPRp9A9M"
   }
  ],
  "bottom": [

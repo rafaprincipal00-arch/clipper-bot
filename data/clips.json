@@ -1,5 +1,436 @@
 [
  {
+  "file": "kai-cenat-twitch-twchat-2910392998-4740.mp4",
+  "creator": "Kai Cenat (Twitch)",
+  "source": "https://www.twitch.tv/videos/2910392998",
+  "start": 4714.83,
+  "end": 4794.73,
+  "cuts": 16,
+  "length": 20.4,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-chat(54 msgs)",
+  "score": 85,
+  "hook": "Kai Cenat's wild Japan encounter",
+  "hook_type": "revelation",
+  "emphasis": [
+   "What",
+   "Oh",
+   "Adagio",
+   "Yes"
+  ],
+  "caption": "Kai Cenat was completely unprepared for this in Japan #KaiCenat #KaiCenat #twitch #streamer",
+  "title": "Kai Cenat was completely unprepared for this in Japan",
+  "bed": null,
+  "campaign": "https://contentrewards.com/c/campaigns/44a3ffcb-d4a1-492b-94a4-704919950246",
+  "created": "2026-10-30T01:08:11.225329+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/6glfEdC097E",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-twchat-2910392998-4740.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-twchat-2910392998-4740.tt.mp4",
+  "tiktok_caption": "Kai Cenat was completely unprepared for this in Japan #KaiCenat #KaiCenat #twitch #streamer",
+  "account": 1,
+  "submission": {
+   "error": "Content Rewards session expired: refresh the CR_STATE secret"
+  },
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 144,
+   "publish+submit": 18,
+   "total": 166
+  }
+ },
+ {
+  "file": "kai-cenat-twitch-twchat-2910392998-2130.mp4",
+  "creator": "Kai Cenat (Twitch)",
+  "source": "https://www.twitch.tv/videos/2910392998",
+  "start": 2103.84,
+  "end": 2159.61,
+  "cuts": 11,
+  "length": 20.3,
+  "layout": "face",
+  "style": "blur",
+  "mood": "awkward",
+  "signal": "twitch-chat(59 msgs)",
+  "score": 85,
+  "hook": "Kai Cenat gets completely rejected live",
+  "hook_type": "revelation",
+  "emphasis": [
+   "No!",
+   "gay",
+   "What?",
+   "No."
+  ],
+  "caption": "Kai Cenat was NOT expecting that response #KaiCenat #KaiCenat #twitch #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Kai Cenat was NOT expecting that response",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": "https://contentrewards.com/c/campaigns/44a3ffcb-d4a1-492b-94a4-704919950246",
+  "created": "2026-10-30T00:42:52.555811+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/9wF9QD7xpBI",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-twchat-2910392998-2130.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-twchat-2910392998-2130.tt.mp4",
+  "tiktok_caption": "Kai Cenat was NOT expecting that response #KaiCenat #KaiCenat #twitch #streamer",
+  "account": 1,
+  "submission": {
+   "error": "Content Rewards session expired: refresh the CR_STATE secret"
+  },
+  "timing_s": {
+   "download": 2,
+   "transcribe+edit+render": 158,
+   "publish+submit": 17,
+   "total": 177
+  }
+ },
+ {
+  "file": "lospollostv-kick-kc-clip-01m5nbh2y1r18tygcd9dq7v031.mp4",
+  "creator": "LosPollosTV (Kick)",
+  "source": "https://clips.kick.com/clips/8e/clip_01M5NBH2Y1R18TYGCD9DQ7V031/playlist.m3u8",
+  "start": 36.39,
+  "end": 29.4,
+  "cuts": 9,
+  "length": 26.1,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "kick-clip",
+  "score": 85,
+  "hook": "He got framed by fake AI",
+  "hook_type": "revelation",
+  "emphasis": [
+   "AI",
+   "video",
+   "never",
+   "said"
+  ],
+  "caption": "LosPollosTV caught in an unbelievable AI fake drama #lospollostv #kick #streamer",
+  "title": "LosPollosTV caught in an unbelievable AI fake drama",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-10-30T00:31:53.129889+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/OtnjGu6RezE",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lospollostv-kick-kc-clip-01m5nbh2y1r18tygcd9dq7v031.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lospollostv-kick-kc-clip-01m5nbh2y1r18tygcd9dq7v031.tt.mp4",
+  "tiktok_caption": "LosPollosTV caught in an unbelievable AI fake drama #lospollostv #kick #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 124,
+   "publish+submit": 9,
+   "total": 136
+  }
+ },
+ {
+  "file": "ibai-twitch-tw-2913266144-6731.mp4",
+  "creator": "Ibai (Twitch)",
+  "source": "https://www.twitch.tv/videos/2913266144",
+  "start": 6750.18,
+  "end": 6743.26,
+  "cuts": 10,
+  "length": 20.7,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "La peor jugada de la partida",
+  "hook_type": "stakes",
+  "emphasis": [
+   "errores",
+   "muerto",
+   "culpa",
+   "oportunidad"
+  ],
+  "caption": "Ibai no pudo creer este error imperdonable en plena pelea #ibai #twitch #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Ibai no pudo creer este error imperdonable en plena pelea",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-10-30T00:20:54.661153+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/5GnPhQvmz60",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/ibai-twitch-tw-2913266144-6731.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/ibai-twitch-tw-2913266144-6731.tt.mp4",
+  "tiktok_caption": "Ibai no pudo creer este error imperdonable en plena pelea #ibai #twitch #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 10,
+   "transcribe+edit+render": 81,
+   "publish+submit": 8,
+   "total": 100
+  }
+ },
+ {
+  "file": "stable-ronaldo-twitch-tw-2910908943-5344.mp4",
+  "creator": "Stable Ronaldo (Twitch)",
+  "source": "https://www.twitch.tv/videos/2910908943",
+  "start": 5310.2,
+  "end": 5375.48,
+  "cuts": 13,
+  "length": 21.2,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 82,
+  "hook": "Ew what is that",
+  "hook_type": "revelation",
+  "emphasis": [
+   "Ew",
+   "humiliation",
+   "blood"
+  ],
+  "caption": "Stable Ronaldo was not ready for this disgusting sight #stableronaldo #stream #clips",
+  "title": "Stable Ronaldo was not ready for this disgusting sight",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-10-30T00:11:09.018326+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/qASbm1_aDQ0",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/stable-ronaldo-twitch-tw-2910908943-5344.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/stable-ronaldo-twitch-tw-2910908943-5344.tt.mp4",
+  "tiktok_caption": "Stable Ronaldo was not ready for this disgusting sight #stableronaldo #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 150,
+   "publish+submit": 9,
+   "total": 163
+  }
+ },
+ {
+  "file": "caseoh-twitch-tw-2913618550-6158.mp4",
+  "creator": "CaseOh (Twitch)",
+  "source": "https://www.twitch.tv/videos/2913618550",
+  "start": 6227.94,
+  "end": 6235.62,
+  "cuts": 9,
+  "length": 23.5,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 90,
+  "hook": "CaseOh faces a giant tree monster",
+  "hook_type": "stakes",
+  "emphasis": [
+   "creature",
+   "tree",
+   "dead",
+   "wingspan"
+  ],
+  "caption": "CaseOh was NOT ready for this giant creature #caseoh #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "CaseOh was NOT ready for this giant creature",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-10-30T00:00:10.397150+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/JF3C50lZQLE",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2913618550-6158.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2913618550-6158.tt.mp4",
+  "tiktok_caption": "CaseOh was NOT ready for this giant creature #caseoh #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 2,
+   "transcribe+edit+render": 162,
+   "publish+submit": 9,
+   "total": 173
+  }
+ },
+ {
+  "file": "jynxzi-twitch-tw-2910768161-296.mp4",
+  "creator": "Jynxzi (Twitch)",
+  "source": "https://www.twitch.tv/videos/2910768161",
+  "start": 302.9,
+  "end": 345.01,
+  "cuts": 8,
+  "length": 20.0,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "Bucky Irving is the best",
+  "hook_type": "contrarian",
+  "emphasis": [
+   "best",
+   "NFL",
+   "Sanders",
+   "best"
+  ],
+  "caption": "Jynxzi completely loses his mind over Bucky Irving #jynxzi #stream #clips",
+  "title": "Jynxzi completely loses his mind over Bucky Irving",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-10-29T23:48:40.434185+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/SGme6VG7l7o",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/jynxzi-twitch-tw-2910768161-296.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/jynxzi-twitch-tw-2910768161-296.tt.mp4",
+  "tiktok_caption": "Jynxzi completely loses his mind over Bucky Irving #jynxzi #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 145,
+   "publish+submit": 8,
+   "total": 159
+  }
+ },
+ {
+  "file": "clix-twitch-tw-2911688210-7346.mp4",
+  "creator": "Clix (Twitch)",
+  "source": "https://www.twitch.tv/videos/2911688210",
+  "start": 7342.62,
+  "end": 7371.52,
+  "cuts": 9,
+  "length": 22.1,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Clix catches a cheater live",
+  "hook_type": "revelation",
+  "emphasis": [
+   "threw",
+   "medkit",
+   "tweaking"
+  ],
+  "caption": "Clix was not ready for what he just saw #Clix #fortnite #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Clix was not ready for what he just saw",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": "https://contentrewards.com/c/campaigns/7a6a234b-1e9e-4da3-a600-54cc3142e710",
+  "created": "2026-10-29T23:37:27.673816+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/k0YLQY4tA00",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2911688210-7346.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2911688210-7346.tt.mp4",
+  "tiktok_caption": "Clix was not ready for what he just saw #Clix #fortnite #streamer",
+  "account": 1,
+  "submission": {
+   "error": "Content Rewards session expired: refresh the CR_STATE secret"
+  },
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 145,
+   "publish+submit": 17,
+   "total": 167
+  }
+ },
+ {
+  "file": "kai-cenat-twitch-twchat-2910392998-5550.mp4",
+  "creator": "Kai Cenat (Twitch)",
+  "source": "https://www.twitch.tv/videos/2910392998",
+  "start": 5555.3,
+  "end": 5605.0,
+  "cuts": 12,
+  "length": 35.1,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-chat(61 msgs)",
+  "score": 82,
+  "hook": "Kai's impossible magic trick",
+  "hook_type": "revelation",
+  "emphasis": [
+   "hardest",
+   "trick",
+   "calculator",
+   "96",
+   "multiply"
+  ],
+  "caption": "Kai Cenat tried the craziest math trick live #KaiCenat #KaiCenat #twitch #streamer",
+  "title": "Kai Cenat tried the craziest math trick live",
+  "bed": null,
+  "campaign": "https://contentrewards.com/c/campaigns/44a3ffcb-d4a1-492b-94a4-704919950246",
+  "created": "2026-10-29T22:52:45.803281+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/M9XJO54isgs",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-twchat-2910392998-5550.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-twchat-2910392998-5550.tt.mp4",
+  "tiktok_caption": "Kai Cenat tried the craziest math trick live #KaiCenat #KaiCenat #twitch #streamer",
+  "account": 1,
+  "submission": {
+   "error": "Content Rewards session expired: refresh the CR_STATE secret"
+  },
+  "timing_s": {
+   "download": 2,
+   "transcribe+edit+render": 163,
+   "publish+submit": 18,
+   "total": 183
+  }
+ },
+ {
+  "file": "lospollostv-kick-kc-clip-01m5q8gnnzc2dcrzqxk86x1jjn.mp4",
+  "creator": "LosPollosTV (Kick)",
+  "source": "https://clips.kick.com/clips/b1/clip_01M5Q8GNNZC2DCRZQXK86X1JJN/playlist.m3u8",
+  "start": 1.3559999999999923,
+  "end": 33.346,
+  "cuts": 8,
+  "length": 20.0,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "awkward",
+  "signal": "kick-clip",
+  "score": 75,
+  "hook": "He lost his virginity to stream",
+  "hook_type": "revelation",
+  "emphasis": [
+   "virginity",
+   "assist",
+   "Congratulations",
+   "cried"
+  ],
+  "caption": "LosPollosTV reacts to the wildest viewer confession ever #lospollostv #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "LosPollosTV reacts to the wildest viewer confession ever",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-10-29T22:40:03.525337+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/OWvgEb2q2qo",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lospollostv-kick-kc-clip-01m5q8gnnzc2dcrzqxk86x1jjn.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lospollostv-kick-kc-clip-01m5q8gnnzc2dcrzqxk86x1jjn.tt.mp4",
+  "tiktok_caption": "LosPollosTV reacts to the wildest viewer confession ever #lospollostv #kick #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 126,
+   "publish+submit": 9,
+   "total": 139
+  }
+ },
+ {
   "file": "clix-twitch-tw-2908833493-13084.mp4",
   "creator": "Clix (Twitch)",
   "source": "https://www.twitch.tv/videos/2908833493",
