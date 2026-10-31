@@ -1464,5 +1464,71 @@
     "requirements": "Podcast clips. Source channel guessed by search (Adamson Ahdoot 'It's Personal'); confirm with the campaign file after join.",
     "join_status": "pendiente: cr_join 27/10 fallo SESSION EXPIRED (CR_STATE caducado); rules sin desbloquear",
     "why_off": "No unido: sesion Content Rewards caducada (CR_STATE). Activar tras cr_join con JOINED: True y leer las reglas desbloqueadas. Fuente adivinada."
+  },
+  {
+    "creator": "Rolling Stone & Malcolm Todd interviews",
+    "source": "https://www.youtube.com/watch?v=Up93f0DIVw8",
+    "enabled": false,
+    "account": 1,
+    "lang": "English",
+    "hashtags": [
+      "malcolmtodd",
+      "rollingstone",
+      "interview"
+    ],
+    "credit": "youtube.com/@RollingStone",
+    "why": "CR Rolling Stone & Malcolm Todd Interviews Clipping (creatorXchange): TikTok/IG 2$/1k, min 2$ (1k vistas), max 200$, quedan ~2300$ de 3000$",
+    "campaign": "Rolling Stone & Malcolm Todd Interviews Clipping",
+    "campaign_url": "https://contentrewards.com/discover/a016fbcc-f357-441d-b2d1-919bba8777fa",
+    "cpm": 2.0,
+    "mention": "#MalcolmTodd",
+    "priority": 2,
+    "requirements": "Circulate clips creating hype around Malcolm Todd's personality and his interviews. Pull key moments from his interview to create viral clips across TikTok & Instagram Reels. 1 creator requirement + 4 files locked until join.",
+    "join_status": "pendiente: cr_join 31/10 fallo SESSION EXPIRED (CR_STATE caducado); rules sin desbloquear",
+    "why_off": "No unido: sesion Content Rewards caducada (CR_STATE). Activar tras cr_join con JOINED: True y leer las reglas desbloqueadas."
+  },
+  {
+    "creator": "James O'Keefe (O'Keefe Media Group)",
+    "source": "https://www.youtube.com/channel/UCjl4caubo8dWBlNTaMcrVQg/videos",
+    "enabled": false,
+    "account": 1,
+    "lang": "English",
+    "hashtags": [
+      "jamesokeefe",
+      "omg",
+      "journalism"
+    ],
+    "credit": "youtube.com/@OKeefeMediaGroup",
+    "why": "CR James O'Keefe Clipping (Clipbait): TikTok/YT 1.5$/1k, min 1.5$ (1k vistas), max 500$, quedan ~1638$ de 7081$",
+    "campaign": "James O'Keefe Clipping",
+    "campaign_url": "https://contentrewards.com/discover/88890135-26f1-4c5e-8d7c-29b85340380c",
+    "cpm": 1.5,
+    "mention": "#JamesOKeefe",
+    "priority": 2,
+    "requirements": "Clip James O'Keefe's content into clean, well-edited short videos that grow his reach, drive engagement, and push viewers toward subscribing and making donations to support OMG's journalism. 1 file locked until join.",
+    "join_status": "pendiente: cr_join 31/10 fallo SESSION EXPIRED (CR_STATE caducado); rules sin desbloquear",
+    "why_off": "No unido: sesion Content Rewards caducada (CR_STATE). Activar tras cr_join con JOINED: True y leer las reglas desbloqueadas."
+  },
+  {
+    "creator": "Todd V (Todd V Dating)",
+    "source": "https://www.youtube.com/channel/UCo9XJennsRNhyPbXCq6e8aw/videos",
+    "enabled": false,
+    "account": 1,
+    "lang": "English",
+    "hashtags": [
+      "toddv",
+      "dating",
+      "podcast"
+    ],
+    "credit": "youtube.com/@ToddVDating",
+    "why": "CR Todd V Clipping Campaign (Clipperazzi): TikTok 1.5$/1k, min 3$ (2k vistas), max 200$, quedan ~799$ de 1700$; entrenamiento para retainer privado",
+    "campaign": "Todd V | Clipping Campaign",
+    "campaign_url": "https://contentrewards.com/discover/ec401017-8429-4b41-ab66-2f74be401c16",
+    "cpm": 1.5,
+    "mention": "#ToddV",
+    "priority": 2,
+    "requirements": "Todd V clips. Training program for a private retainer campaign for Todd launched right after this; perform at your best to be selected. 1 rule + 1 file locked until join.",
+    "join_status": "pendiente: cr_join 31/10 fallo SESSION EXPIRED (CR_STATE caducado); rules sin desbloquear",
+    "why_off": "No unido: sesion Content Rewards caducada (CR_STATE). Activar tras cr_join con JOINED: True y leer las reglas desbloqueadas."
   }
 ]
