@@ -1,56 +1,61 @@
 {
- "updated": "2026-10-30T07:31:29+00:00",
- "clips": 142,
+ "updated": "2026-10-31T07:31:15+00:00",
+ "clips": 152,
  "by_creator": {
-  "Clix (Twitch)": {
-   "clips": 13,
-   "views": 17371,
-   "avg_views": 1336
+  "Kai Cenat (Twitch)": {
+   "clips": 12,
+   "views": 13168,
+   "avg_views": 1097
   },
   "LosPollosTV (Kick)": {
-   "clips": 2,
-   "views": 1097,
-   "avg_views": 548
+   "clips": 4,
+   "views": 1157,
+   "avg_views": 289
+  },
+  "Ibai (Twitch)": {
+   "clips": 10,
+   "views": 4252,
+   "avg_views": 425
   },
   "Stable Ronaldo (Twitch)": {
-   "clips": 8,
-   "views": 4990,
-   "avg_views": 624
+   "clips": 9,
+   "views": 4992,
+   "avg_views": 555
   },
   "CaseOh (Twitch)": {
-   "clips": 9,
-   "views": 5697,
-   "avg_views": 633
+   "clips": 10,
+   "views": 5836,
+   "avg_views": 584
+  },
+  "Jynxzi (Twitch)": {
+   "clips": 7,
+   "views": 7026,
+   "avg_views": 1004
+  },
+  "Clix (Twitch)": {
+   "clips": 14,
+   "views": 18529,
+   "avg_views": 1324
   },
   "Auronplay (Twitch)": {
    "clips": 14,
-   "views": 18384,
-   "avg_views": 1313
+   "views": 18444,
+   "avg_views": 1317
   },
   "Westcol (Kick)": {
    "clips": 7,
-   "views": 4180,
+   "views": 4182,
    "avg_views": 597
   },
   "Spreen (Kick)": {
    "clips": 9,
-   "views": 9395,
-   "avg_views": 1044
-  },
-  "Ibai (Twitch)": {
-   "clips": 9,
-   "views": 3799,
-   "avg_views": 422
+   "views": 10136,
+   "avg_views": 1126
   },
   "Adin Ross (Kick)": {
    "clips": 7,
    "views": 920,
    "avg_views": 131
-  },
-  "Kai Cenat (Twitch)": {
-   "clips": 9,
-   "views": 10772,
-   "avg_views": 1197
   },
   "Rivers (Twitch)": {
    "clips": 6,
@@ -59,13 +64,8 @@
   },
   "Lanah Cherry (Twitch)": {
    "clips": 14,
-   "views": 18436,
+   "views": 18441,
    "avg_views": 1317
-  },
-  "Jynxzi (Twitch)": {
-   "clips": 6,
-   "views": 5661,
-   "avg_views": 944
   },
   "elZeein (Kick)": {
    "clips": 1,
@@ -109,8 +109,8 @@
   },
   "Harrison Webb ($7 vs $115 English Breakfast)": {
    "clips": 1,
-   "views": 2432,
-   "avg_views": 2432
+   "views": 2434,
+   "avg_views": 2434
   },
   "TJR": {
    "clips": 17,
@@ -147,6 +147,17 @@
    "id": "49m7bG834X0"
   },
   {
+   "creator": "Spreen (Kick)",
+   "hook": "No me lo quiero cruzar nunca más",
+   "title": "Spreen explota y revela por qué no vuelve a jugar con ellos",
+   "mood": "tension",
+   "hook_type": "stakes",
+   "score": 85,
+   "views": 3874,
+   "likes": 28,
+   "id": "iFv6MbZTVr8"
+  },
+  {
    "creator": "Auronplay (Twitch)",
    "hook": "Auronplay admite la verdad",
    "title": "Auronplay no se esperaba esta pregunta en directo",
@@ -167,17 +178,6 @@
    "views": 3437,
    "likes": 20,
    "id": "Et3rAIR30iQ"
-  },
-  {
-   "creator": "Spreen (Kick)",
-   "hook": "No me lo quiero cruzar nunca más",
-   "title": "Spreen explota y revela por qué no vuelve a jugar con ellos",
-   "mood": "tension",
-   "hook_type": "stakes",
-   "score": 85,
-   "views": 3133,
-   "likes": 23,
-   "id": "iFv6MbZTVr8"
   },
   {
    "creator": "Clix x Yeat (Twitch)",
