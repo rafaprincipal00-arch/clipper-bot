@@ -1,26 +1,31 @@
 {
- "updated": "2026-10-31T08:01:40+00:00",
- "clips": 154,
+ "updated": "2026-10-31T08:31:43+00:00",
+ "clips": 157,
  "by_creator": {
+  "LosPollosTV (Kick)": {
+   "clips": 5,
+   "views": 1167,
+   "avg_views": 233
+  },
+  "Ibai (Twitch)": {
+   "clips": 11,
+   "views": 4308,
+   "avg_views": 392
+  },
+  "Jynxzi (Twitch)": {
+   "clips": 8,
+   "views": 7570,
+   "avg_views": 946
+  },
   "Lanah Cherry (Twitch)": {
    "clips": 15,
-   "views": 18448,
+   "views": 18447,
    "avg_views": 1230
   },
   "Kai Cenat (Twitch)": {
    "clips": 13,
    "views": 14164,
    "avg_views": 1090
-  },
-  "LosPollosTV (Kick)": {
-   "clips": 4,
-   "views": 1157,
-   "avg_views": 289
-  },
-  "Ibai (Twitch)": {
-   "clips": 10,
-   "views": 4267,
-   "avg_views": 427
   },
   "Stable Ronaldo (Twitch)": {
    "clips": 9,
@@ -29,22 +34,17 @@
   },
   "CaseOh (Twitch)": {
    "clips": 10,
-   "views": 5861,
-   "avg_views": 586
-  },
-  "Jynxzi (Twitch)": {
-   "clips": 7,
-   "views": 7026,
-   "avg_views": 1004
+   "views": 5840,
+   "avg_views": 584
   },
   "Clix (Twitch)": {
    "clips": 14,
-   "views": 18529,
-   "avg_views": 1324
+   "views": 18527,
+   "avg_views": 1323
   },
   "Auronplay (Twitch)": {
    "clips": 14,
-   "views": 18444,
+   "views": 18442,
    "avg_views": 1317
   },
   "Westcol (Kick)": {
@@ -54,8 +54,8 @@
   },
   "Spreen (Kick)": {
    "clips": 9,
-   "views": 10136,
-   "avg_views": 1126
+   "views": 10124,
+   "avg_views": 1125
   },
   "Adin Ross (Kick)": {
    "clips": 7,
@@ -153,7 +153,7 @@
    "mood": "tension",
    "hook_type": "stakes",
    "score": 85,
-   "views": 3874,
+   "views": 3862,
    "likes": 28,
    "id": "iFv6MbZTVr8"
   },
