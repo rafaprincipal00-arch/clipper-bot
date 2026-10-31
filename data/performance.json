@@ -1,11 +1,16 @@
 {
- "updated": "2026-10-31T07:31:15+00:00",
- "clips": 152,
+ "updated": "2026-10-31T08:01:40+00:00",
+ "clips": 154,
  "by_creator": {
+  "Lanah Cherry (Twitch)": {
+   "clips": 15,
+   "views": 18448,
+   "avg_views": 1230
+  },
   "Kai Cenat (Twitch)": {
-   "clips": 12,
-   "views": 13168,
-   "avg_views": 1097
+   "clips": 13,
+   "views": 14164,
+   "avg_views": 1090
   },
   "LosPollosTV (Kick)": {
    "clips": 4,
@@ -14,8 +19,8 @@
   },
   "Ibai (Twitch)": {
    "clips": 10,
-   "views": 4252,
-   "avg_views": 425
+   "views": 4267,
+   "avg_views": 427
   },
   "Stable Ronaldo (Twitch)": {
    "clips": 9,
@@ -24,8 +29,8 @@
   },
   "CaseOh (Twitch)": {
    "clips": 10,
-   "views": 5836,
-   "avg_views": 584
+   "views": 5861,
+   "avg_views": 586
   },
   "Jynxzi (Twitch)": {
    "clips": 7,
@@ -61,11 +66,6 @@
    "clips": 6,
    "views": 5503,
    "avg_views": 917
-  },
-  "Lanah Cherry (Twitch)": {
-   "clips": 14,
-   "views": 18441,
-   "avg_views": 1317
   },
   "elZeein (Kick)": {
    "clips": 1,
