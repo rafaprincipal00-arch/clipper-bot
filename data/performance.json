@@ -1,61 +1,66 @@
 {
- "updated": "2026-10-31T08:31:43+00:00",
- "clips": 157,
+ "updated": "2026-11-01T07:31:07+00:00",
+ "clips": 167,
  "by_creator": {
+  "Westcol (Kick)": {
+   "clips": 11,
+   "views": 5519,
+   "avg_views": 502
+  },
+  "Lanah Cherry (Twitch)": {
+   "clips": 18,
+   "views": 18471,
+   "avg_views": 1026
+  },
+  "Stable Ronaldo (Twitch)": {
+   "clips": 10,
+   "views": 5006,
+   "avg_views": 501
+  },
+  "CaseOh (Twitch)": {
+   "clips": 11,
+   "views": 5883,
+   "avg_views": 535
+  },
+  "xQc (Kick)": {
+   "clips": 2,
+   "views": 3,
+   "avg_views": 2
+  },
   "LosPollosTV (Kick)": {
    "clips": 5,
-   "views": 1167,
-   "avg_views": 233
+   "views": 1204,
+   "avg_views": 241
   },
   "Ibai (Twitch)": {
    "clips": 11,
-   "views": 4308,
-   "avg_views": 392
+   "views": 4821,
+   "avg_views": 438
   },
   "Jynxzi (Twitch)": {
    "clips": 8,
-   "views": 7570,
-   "avg_views": 946
-  },
-  "Lanah Cherry (Twitch)": {
-   "clips": 15,
-   "views": 18447,
-   "avg_views": 1230
+   "views": 7997,
+   "avg_views": 1000
   },
   "Kai Cenat (Twitch)": {
    "clips": 13,
-   "views": 14164,
-   "avg_views": 1090
-  },
-  "Stable Ronaldo (Twitch)": {
-   "clips": 9,
-   "views": 4992,
-   "avg_views": 555
-  },
-  "CaseOh (Twitch)": {
-   "clips": 10,
-   "views": 5840,
-   "avg_views": 584
+   "views": 14365,
+   "avg_views": 1105
   },
   "Clix (Twitch)": {
    "clips": 14,
-   "views": 18527,
-   "avg_views": 1323
+   "views": 18681,
+   "avg_views": 1334
   },
   "Auronplay (Twitch)": {
    "clips": 14,
-   "views": 18442,
-   "avg_views": 1317
-  },
-  "Westcol (Kick)": {
-   "clips": 7,
-   "views": 4182,
-   "avg_views": 597
+   "views": 18474,
+   "avg_views": 1320
   },
   "Spreen (Kick)": {
    "clips": 9,
-   "views": 10124,
-   "avg_views": 1125
+   "views": 10435,
+   "avg_views": 1159
   },
   "Adin Ross (Kick)": {
    "clips": 7,
@@ -64,18 +69,13 @@
   },
   "Rivers (Twitch)": {
    "clips": 6,
-   "views": 5503,
+   "views": 5504,
    "avg_views": 917
   },
   "elZeein (Kick)": {
    "clips": 1,
-   "views": 77,
-   "avg_views": 77
-  },
-  "xQc (Kick)": {
-   "clips": 1,
-   "views": 0,
-   "avg_views": 0
+   "views": 79,
+   "avg_views": 79
   },
   "Clix x Yeat (Twitch)": {
    "clips": 2,
@@ -131,7 +131,7 @@
    "mood": "chaos",
    "hook_type": "stakes",
    "score": 88,
-   "views": 5338,
+   "views": 5339,
    "likes": 45,
    "id": "J1P_cwbirK0"
   },
@@ -153,8 +153,8 @@
    "mood": "tension",
    "hook_type": "stakes",
    "score": 85,
-   "views": 3862,
-   "likes": 28,
+   "views": 4172,
+   "likes": 30,
    "id": "iFv6MbZTVr8"
   },
   {
@@ -175,7 +175,7 @@
    "mood": "chaos",
    "hook_type": null,
    "score": 75,
-   "views": 3437,
+   "views": 3438,
    "likes": 20,
    "id": "Et3rAIR30iQ"
   },
