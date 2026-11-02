@@ -363,7 +363,7 @@
   {
     "creator": "N3on (Kick)",
     "source": "https://kick.com/n3on",
-    "enabled": false,
+    "enabled": true,
     "account": 2,
     "lang": "English",
     "hashtags": [
@@ -373,13 +373,14 @@
     ],
     "credit": "kick.com/n3on",
     "why": "famoso, sin campaña abierta: crecer cuenta para el programa de N3on",
-    "priority": 3,
+    "priority": 2,
     "programs": [
+      "cn-n3on",
       "cn-kick-clipping",
       "n3on-direct"
     ],
     "requirements": "No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0. Credit the streamer by name in the caption.",
-    "why_off": "media 1 vista en 2 clips (medido 20/10/2026)"
+    "why_on": "reactivado 02/11/2026: nuevo N3on x Clipping (clipping.net) a $1.50/1K desde 50k vistas (antes: media 1 vista en 2 clips)"
   },
   {
     "creator": "xQc (Kick)",
@@ -413,15 +414,14 @@
     ],
     "credit": "twitch.tv/kaicenat",
     "why": "Reach pool $10K (hasta 31/10) + Streamer U",
-    "campaign": "$10,000 Kai Cenat Campaign",
+    "campaign": null,
     "campaign_url": "https://contentrewards.com/c/campaigns/44a3ffcb-d4a1-492b-94a4-704919950246",
     "mention": "#KaiCenat",
     "priority": 2,
     "programs": [
-      "cr-kai-cenat-reach",
       "cn-streamer-u"
     ],
-    "requirements": "Kai Cenat must be the main focus. Only footage streamed 21-31 Oct 2026. English captions and on-screen text, use #KaiCenat. No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0.",
+    "requirements": "Kai Cenat must be the main focus. English captions and on-screen text, use #KaiCenat. No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0.",
     "join_status": "pendiente: cr_join 26/10 sin sesion (CR_STATE caducado)"
   },
   {
@@ -942,6 +942,7 @@
     "lang": "English",
     "priority": 2,
     "programs": [
+      "cr-lacy-reach",
       "cn-lacy"
     ],
     "requirements": "No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0. Credit the streamer by name in the caption.",
@@ -1053,7 +1054,7 @@
     "source": "https://www.twitch.tv/clix/videos?filter=archives",
     "campaign": "$5,000 Clix Pool Campaign [October]",
     "campaign_url": "https://contentrewards.com/c/campaigns/7a6a234b-1e9e-4da3-a600-54cc3142e710",
-    "enabled": true,
+    "enabled": false,
     "account": 1,
     "lang": "English",
     "hashtags": [
@@ -1064,7 +1065,8 @@
     "credit": "twitch.tv/clix",
     "requirements": "Clix must be the primary focus. Caption or text overlay must say Clix's name; use #Clix. Only 2026 footage. Never show Clix in a negative light, no logos.",
     "why": "Reach pool: 500k vistas minimas en total, 17.7M vistas aprobadas",
-    "join_status": "unido 2026-10-17"
+    "join_status": "unido 2026-10-17",
+    "why_off": "campana $5,000 Clix Pool [October] terminada (reachclipping.com/Clix, 02/11/2026)"
   },
   {
     "creator": "Michael Gene (The App Daddy)",
@@ -1530,5 +1532,33 @@
     "requirements": "Todd V clips. Training program for a private retainer campaign for Todd launched right after this; perform at your best to be selected. 1 rule + 1 file locked until join.",
     "join_status": "pendiente: cr_join 31/10 fallo SESSION EXPIRED (CR_STATE caducado); rules sin desbloquear",
     "why_off": "No unido: sesion Content Rewards caducada (CR_STATE). Activar tras cr_join con JOINED: True y leer las reglas desbloqueadas."
+  },
+  {
+    "creator": "Marlon (Twitch)",
+    "source": "https://www.twitch.tv/marlon/videos?filter=archives&sort=time",
+    "account": 2,
+    "lang": "English",
+    "enabled": true,
+    "priority": 2,
+    "programs": [
+      "cn-marlon",
+      "cr-marlon-reach"
+    ],
+    "requirements": "Marlon must be the main focus. Credit Marlon by name in the caption. English captions only. No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0.",
+    "why": "Marlon x Clipping (clipping.net, $1/1K bounty) y $5,000 Marlon Clipping Campaign de Reach en Content Rewards ($3/1K, TikTok/IG, cuenta 1 cuando CR_STATE vuelva)"
+  },
+  {
+    "creator": "JasonTheWeen (Twitch)",
+    "source": "https://www.twitch.tv/jasontheween/videos?filter=archives&sort=time",
+    "account": 2,
+    "lang": "English",
+    "enabled": true,
+    "priority": 2,
+    "programs": [
+      "cn-jasontheween",
+      "cr-jason-reach"
+    ],
+    "requirements": "JasonTheWeen must be the main focus; mention JasonTheWeen in the caption or on-screen text and use #JasonTheWeen. Never show him in a negative light, no logos. No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0.",
+    "why": "JasonTheWeen x Clipping (clipping.net, bote $15K, 700k vistas) y $9,000 Jason Pool de Reach (700k vistas)"
   }
 ]
