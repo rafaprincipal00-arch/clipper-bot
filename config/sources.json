@@ -1560,5 +1560,63 @@
     ],
     "requirements": "JasonTheWeen must be the main focus; mention JasonTheWeen in the caption or on-screen text and use #JasonTheWeen. Never show him in a negative light, no logos. No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0.",
     "why": "JasonTheWeen x Clipping (clipping.net, bote $15K, 700k vistas) y $9,000 Jason Pool de Reach (700k vistas)"
+  },
+  {
+    "creator": "Alliance Podcast/News (Bounty)",
+    "source": "",
+    "enabled": false,
+    "account": 1,
+    "lang": "English",
+    "why": "CR Alliance Podcast/News Clipping [VIRAL] (Bounty): TikTok/IG 1.5$/1k, min 1.5$ (1k vistas), max 300$, presupuesto ~3666$",
+    "campaign": "Alliance Podcast/News Clipping [VIRAL]",
+    "campaign_url": "https://contentrewards.com/discover/50786486-a49d-4a17-b81b-0c416cb635da",
+    "cpm": 1.5,
+    "mention": "",
+    "priority": 2,
+    "requirements": "1 requirement + 1 file locked until join.",
+    "join_status": "pendiente: cr_join 08/11 fallo SESSION EXPIRED (CR_STATE caducado); rules sin desbloquear",
+    "why_off": "No unido: sesion Content Rewards caducada (CR_STATE). Activar tras cr_join con JOINED: True y leer las reglas desbloqueadas. Fuente de video desconocida (el archivo de la campana se ve solo al unirse)."
+  },
+  {
+    "creator": "The World's First Podcast (Erin & Sara Foster)",
+    "source": "https://www.youtube.com/channel/UCAcveEhoHybUO_kG5jhXvbQ/videos",
+    "enabled": false,
+    "account": 1,
+    "lang": "English",
+    "hashtags": [
+      "worldsfirstpodcast",
+      "podcast"
+    ],
+    "credit": "youtube.com/channel/UCAcveEhoHybUO_kG5jhXvbQ",
+    "why": "CR WorldsFirstPodcast Clipping (Clip Farm): TikTok/IG/YT 1.5$/1k, min 3$ (2k vistas), max 250$, presupuesto ~1744$",
+    "campaign": "WorldsFirstPodcast Clipping",
+    "campaign_url": "https://contentrewards.com/discover/fba5eb2b-624a-41d6-a6c7-4519e2877e2c",
+    "cpm": 1.5,
+    "mention": "#WorldsFirstPodcast",
+    "priority": 2,
+    "requirements": "3 content rules + 1 file locked until join.",
+    "join_status": "pendiente: cr_join 08/11 fallo SESSION EXPIRED (CR_STATE caducado); rules sin desbloquear",
+    "why_off": "No unido: sesion Content Rewards caducada (CR_STATE). Activar tras cr_join con JOINED: True y leer las reglas desbloqueadas. Fuente = canal YouTube por busqueda (sin confirmar)."
+  },
+  {
+    "creator": "Duke Dennis x Danesh Diamonds (ft. Kai Cenat)",
+    "source": "",
+    "enabled": false,
+    "account": 1,
+    "lang": "English",
+    "hashtags": [
+      "dukedennis",
+      "kaicenat",
+      "daneshdiamonds"
+    ],
+    "why": "CR Duke Dennis Spends 100k on Grillz (ft. Kai Cenat) (Danesh Diamonds): TikTok/IG/YT 1.5$/1k, min 3$ (2k vistas), max 200$, presupuesto ~749$",
+    "campaign": "Duke Dennis Spends 100k on Grillz (ft. Kai Cenat)",
+    "campaign_url": "https://contentrewards.com/discover/b8042190-fb65-4e84-be25-d2a65478a35f",
+    "cpm": 1.5,
+    "mention": "#DaneshDiamonds",
+    "priority": 2,
+    "requirements": "1 requirement + 3 files locked until join.",
+    "join_status": "pendiente: cr_join 08/11 fallo SESSION EXPIRED (CR_STATE caducado); rules sin desbloquear",
+    "why_off": "No unido: sesion Content Rewards caducada (CR_STATE). Activar tras cr_join con JOINED: True y leer las reglas desbloqueadas. Fuente = los 3 archivos de la campana (no visibles sin unirse); candidato sin confirmar youtube.com/watch?v=y-Z0z79Dox4 (Danesh Diamonds)."
   }
 ]
