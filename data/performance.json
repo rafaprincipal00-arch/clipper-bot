@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T08:31:41+00:00",
+ "updated": "2026-11-09T07:31:17+00:00",
  "clips": 167,
  "by_creator": {
   "Westcol (Kick)": {
@@ -9,12 +9,12 @@
   },
   "Lanah Cherry (Twitch)": {
    "clips": 18,
-   "views": 18533,
+   "views": 18543,
    "avg_views": 1030
   },
   "Stable Ronaldo (Twitch)": {
    "clips": 10,
-   "views": 5021,
+   "views": 5025,
    "avg_views": 502
   },
   "CaseOh (Twitch)": {
@@ -39,12 +39,12 @@
   },
   "Jynxzi (Twitch)": {
    "clips": 8,
-   "views": 8131,
-   "avg_views": 1016
+   "views": 8134,
+   "avg_views": 1017
   },
   "Kai Cenat (Twitch)": {
    "clips": 13,
-   "views": 14400,
+   "views": 14401,
    "avg_views": 1108
   },
   "Clix (Twitch)": {
@@ -54,13 +54,13 @@
   },
   "Auronplay (Twitch)": {
    "clips": 14,
-   "views": 18487,
-   "avg_views": 1320
+   "views": 18492,
+   "avg_views": 1321
   },
   "Spreen (Kick)": {
    "clips": 9,
-   "views": 10443,
-   "avg_views": 1160
+   "views": 10449,
+   "avg_views": 1161
   },
   "Adin Ross (Kick)": {
    "clips": 7,
@@ -69,7 +69,7 @@
   },
   "Rivers (Twitch)": {
    "clips": 6,
-   "views": 5507,
+   "views": 5509,
    "avg_views": 918
   },
   "elZeein (Kick)": {
@@ -79,8 +79,8 @@
   },
   "Clix x Yeat (Twitch)": {
    "clips": 2,
-   "views": 5769,
-   "avg_views": 2884
+   "views": 5770,
+   "avg_views": 2885
   },
   "Juansguarnizo (Kick)": {
    "clips": 1,
@@ -131,7 +131,7 @@
    "mood": "chaos",
    "hook_type": "stakes",
    "score": 88,
-   "views": 5340,
+   "views": 5341,
    "likes": 45,
    "id": "J1P_cwbirK0"
   },
@@ -153,7 +153,7 @@
    "mood": "tension",
    "hook_type": "stakes",
    "score": 85,
-   "views": 4180,
+   "views": 4186,
    "likes": 30,
    "id": "iFv6MbZTVr8"
   },
@@ -165,7 +165,7 @@
    "hook_type": "revelation",
    "score": 82,
    "views": 3776,
-   "likes": 158,
+   "likes": 157,
    "id": "3SssCrnpijY"
   },
   {
@@ -208,7 +208,7 @@
    "mood": "chaos",
    "hook_type": "revelation",
    "score": 88,
-   "views": 2757,
+   "views": 2758,
    "likes": 52,
    "id": "qrUYeJzyszM"
   }
