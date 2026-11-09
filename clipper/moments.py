@@ -179,7 +179,6 @@ def moments_for(source: str) -> list[dict]:
 
 
 if __name__ == "__main__":
-    import sys
     for mo in moments_for(sys.argv[1])[:8]:
         print(f"{mo['views']:>7}  {mo['start']:>8.0f}-{mo['end']:<8.0f} {mo['signal']:<26} {mo['title'][:50]}  {mo['url']}")
 

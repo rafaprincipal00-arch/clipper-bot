@@ -31,8 +31,8 @@ def main() -> None:
         ctx = browser.new_context(viewport={"width": 1100, "height": 850}, locale="en-US")
         page = ctx.new_page()
         page.goto("https://contentrewards.com/c/discover", wait_until="domcontentloaded")
-        print("Waiting for the login (10 min max)...", flush=True)
-        for _ in range(120):
+        print("Waiting for the login (60 min max)...", flush=True)
+        for _ in range(720):  # 60 min: Rafa may be away when the code arrives
             page.wait_for_timeout(5000)
             try:
                 if logged_in(page):
