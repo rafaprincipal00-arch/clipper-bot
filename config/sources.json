@@ -1618,5 +1618,65 @@
     "requirements": "1 requirement + 3 files locked until join.",
     "join_status": "pendiente: cr_join 08/11 fallo SESSION EXPIRED (CR_STATE caducado); rules sin desbloquear",
     "why_off": "No unido: sesion Content Rewards caducada (CR_STATE). Activar tras cr_join con JOINED: True y leer las reglas desbloqueadas. Fuente = los 3 archivos de la campana (no visibles sin unirse); candidato sin confirmar youtube.com/watch?v=y-Z0z79Dox4 (Danesh Diamonds)."
+  },
+  {
+    "creator": "Duke Dennis x Danesh Diamonds ($100k Grillz)",
+    "source": "",
+    "enabled": false,
+    "account": 1,
+    "lang": "English",
+    "hashtags": [
+      "dukedennis",
+      "daneshdiamonds"
+    ],
+    "why": "CR Duke Dennis Spends $100k On Danesh Diamond Grillz (Danesh Diamonds): TikTok/IG/YT 1.5$/1k, min 3$ (2k vistas), max 200$, presupuesto ~1606$",
+    "campaign": "Duke Dennis Spends $100k On Danesh Diamond Grillz",
+    "campaign_url": "https://contentrewards.com/discover/4d8d10e9-5c4d-40f4-81b2-10acda995cb7",
+    "cpm": 1.5,
+    "mention": "#DaneshDiamonds",
+    "priority": 2,
+    "requirements": "1 requirement + 3 files locked until join.",
+    "join_status": "pendiente: cr_join 09/11 fallo SESSION EXPIRED (CR_STATE caducado); rules sin desbloquear",
+    "why_off": "No unido: cr_join 09/11 fallo SESSION EXPIRED (CR_STATE caducado). Activar tras cr_join con JOINED: True y leer las reglas desbloqueadas. Fuente = los 3 archivos de la campana; candidato sin confirmar youtube.com/watch?v=y-Z0z79Dox4 (Danesh Diamonds)."
+  },
+  {
+    "creator": "Let Him Mansplain Podcast",
+    "source": "",
+    "enabled": false,
+    "account": 1,
+    "lang": "English",
+    "hashtags": [
+      "letHimMansplain",
+      "podcast"
+    ],
+    "why": "CR Let Him Mansplain Podcast Clipping (ClipLaunch): TikTok/IG 1.25$/1k min 2.5$ (2k vistas), YT 0.5$/1k min 3$, max 300$, presupuesto ~621$",
+    "campaign": "Let Him Mansplain Podcast Clipping",
+    "campaign_url": "https://contentrewards.com/discover/705f6e21-38af-408c-9e55-c77e4611bf09",
+    "cpm": 1.25,
+    "mention": "#LetHimMansplain",
+    "priority": 2,
+    "requirements": "11 requirements + 3 files locked until join.",
+    "join_status": "pendiente: cr_join 09/11 fallo SESSION EXPIRED (CR_STATE caducado); rules sin desbloquear",
+    "why_off": "No unido: cr_join 09/11 fallo SESSION EXPIRED (CR_STATE caducado). Activar tras cr_join con JOINED: True y leer las reglas desbloqueadas. Fuente = archivos de la campana (no visibles sin unirse); canal YouTube del podcast sin confirmar (YouTube bloqueado desde el servidor)."
+  },
+  {
+    "creator": "Preme (Area 29 club livestream)",
+    "source": "",
+    "enabled": false,
+    "account": 1,
+    "lang": "English",
+    "hashtags": [
+      "preme",
+      "livestream"
+    ],
+    "why": "CR PREME TAKES OVER AREA 29 | CLUB LIVESTREAM (Preme Clipping Campaign): TikTok/IG/YT/X 1$/1k, min 0.5$ (500 vistas), max 500$, presupuesto ~1477$",
+    "campaign": "PREME TAKES OVER AREA 29 | CLUB LIVESTREAM",
+    "campaign_url": "https://contentrewards.com/discover/737afda7-f1b5-4986-932a-fb681a603cea",
+    "cpm": 1.0,
+    "mention": "@preme",
+    "priority": 2,
+    "requirements": "2 files locked until join.",
+    "join_status": "pendiente: cr_join 09/11 fallo SESSION EXPIRED (CR_STATE caducado); rules sin desbloquear",
+    "why_off": "No unido: cr_join 09/11 fallo SESSION EXPIRED (CR_STATE caducado). Activar tras cr_join con JOINED: True y leer las reglas desbloqueadas. Fuente = los 2 archivos de la campana (VOD del directo, no visibles sin unirse)."
   }
 ]
