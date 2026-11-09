@@ -9,6 +9,7 @@ Each moment points at a short window of the source; only that window is download
 import json
 import re
 import subprocess
+import sys
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 
