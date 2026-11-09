@@ -1,38 +1,9 @@
 {
- "checked": "2026-11-02",
+ "checked": "2026-11-09",
  "note": "Programas de clipping de pago de creadores grandes. Orden: score = CPM base x facilidad (1-5); rank 1 = mejor. 'track' = creadores de config/sources.json cuyas vistas cuentan para el portfolio de ese programa. 'min_views' = umbral publico para empezar a cobrar o para que la solicitud tenga sentido. Datos de paginas publicas; las reglas finas estan dentro de cada Discord/campana y hay que releerlas al entrar.",
  "programs": [
   {
-   "id": "cr-marlon-reach",
-   "name": "$5,000 Marlon Clipping Campaign (Reach en Content Rewards)",
-   "lang": "en",
-   "creators": "Marlon (CORE; Twitch)",
-   "where": {
-    "type": "plataforma",
-    "url": "https://contentrewards.com/discover/6a478a78-d3fe-4e07-80fc-4bde2fd215aa",
-    "how": "Content Rewards con la cuenta 1 (cr_join; requiere CR_STATE valido). Reglas en reachclipping.com/Marlon (codigo en la ficha)"
-   },
-   "pay": "$3/1K en TikTok e IG (no YouTube), min $30 y max $300 por clip; $3.545 de $5.000 libres, 12 clippers (02/11)",
-   "cpm": 3.0,
-   "cpm_max": 3.0,
-   "requirements": "10.000 vistas minimas por clip (min $30 a $3/1K); solo TikTok e Instagram; 1 requisito y 4 archivos ocultos hasta unirse",
-   "rules": "Reglas de Reach: enviar en <30 min, sin bots ni IA (un strike = fuera de todas las campanas de Reach)",
-   "ease": 3,
-   "account": 1,
-   "min_views": 10000,
-   "track": [
-    "Marlon (Twitch)"
-   ],
-   "sources": [
-    "https://contentrewards.com/discover/6a478a78-d3fe-4e07-80fc-4bde2fd215aa",
-    "https://reachclipping.com/Marlon"
-   ],
-   "status": "activo, lanzada el 30/10",
-   "score": 9.0,
-   "rank": 1
-  },
-  {
-   "rank": 2,
+   "rank": 1,
    "id": "vyro-mrbeast",
    "name": "Vyro (MrBeast / Beast Industries)",
    "lang": "en",
@@ -42,10 +13,10 @@
     "url": "https://vyro.com/campaigns",
     "how": "Cuenta en vyro.com (18+); todas las campanas piden solicitud"
    },
-   "pay": "Vyro: 10 campanas vivas, mediana $2.05/1K ($1.50-2.50), $29.5K libres (clippingalpha 02/11). De MrBeast solo quedan 'Beat LeBron, Win $100,000' ($1/1K) y 'MrBeast Gaming: Escape CoD DMZ' ($1.50/1K), las dos 'Locked for new posts'. Abiertas: marcas (Hulu The Mob $2, Chipotle $2, iHeart Joy 101 $2, Total Drama Roblox x4 $2.50, Ketone-IQ $1.50)",
+   "pay": "Vyro: 8 campanas vivas, mediana $2.00/1K ($1.00-2.50), $33K libres (clippingalpha 09/11). De MrBeast solo queda 'Beat LeBron, Win $100,000' ($1/1K), 'Locked for new posts'. Abiertas: The Lowdown TikTok Edits $2, Behemoth! Movie Phase 1 $2, Outdoor Adventure Shorts $2.10, Make UGC for Vyro $2.50 (UGC), Meet Vyro $1",
    "cpm": 2.0,
    "cpm_max": 2.5,
-   "requirements": "Sin seguidores minimos; solicitud por campana; 5.000 vistas minimas por post (mediana de las 10); retiro minimo $10 (Stripe/PayPal)",
+   "requirements": "Sin seguidores minimos; solicitud por campana; las 8 vivas piden minimo de vistas por post (mediana 5.000); retiro minimo $10 (Stripe/PayPal)",
    "rules": "Clip aprobado y por encima del minimo de la campana",
    "ease": 3,
    "account": 1,
@@ -57,7 +28,7 @@
    ],
    "score": 6.0,
    "who": "MrBeast-related campaigns",
-   "status": "activo (plataforma); las 2 campanas de MrBeast bloqueadas a 02/11"
+   "status": "activo (plataforma); la unica campana de MrBeast bloqueada a 09/11"
   },
   {
    "id": "cn-n3on",
@@ -84,39 +55,12 @@
     "https://clipping.net/c/n3on-x-clipping",
     "https://clipping.net/sitemap.xml"
    ],
-   "status": "activo (02/11)",
+   "status": "activo (09/11)",
    "score": 4.5,
-   "rank": 3
+   "rank": 2
   },
   {
-   "id": "cr-core-shibuya",
-   "name": "$20,000 CORE Boys At Shibuya Crossing (Reach en Content Rewards)",
-   "lang": "en",
-   "creators": "CORE (Marlon, Kai Cenat y compania)",
-   "where": {
-    "type": "plataforma",
-    "url": "https://contentrewards.com/discover/432f45b8-ed16-4cc6-95d7-1655e6c7806a",
-    "how": "Content Rewards con la cuenta 1 (cr_join; requiere CR_STATE valido)"
-   },
-   "pay": "$1/1K en TikTok, IG, YouTube y X, min $10 y max $750 por clip; $18.864 de $20.000 libres (02/11)",
-   "cpm": 1.0,
-   "cpm_max": 1.0,
-   "requirements": "10.000 vistas minimas por clip; solo el momento de los CORE Boys en Shibuya reaccionando al anuncio de Fortnite (fuente youtube.com/watch?v=5NOV_1xGxPg); 1 requisito oculto hasta unirse",
-   "rules": "Reglas de Reach",
-   "ease": 3,
-   "account": 1,
-   "min_views": 10000,
-   "track": [],
-   "sources": [
-    "https://contentrewards.com/discover/432f45b8-ed16-4cc6-95d7-1655e6c7806a"
-   ],
-   "status": "activo, lanzada el 02/11",
-   "note": "Fuente de YouTube: bloqueada en el servidor y en Actions, solo via prefetch",
-   "score": 3.0,
-   "rank": 4
-  },
-  {
-   "rank": 5,
+   "rank": 3,
    "id": "cn-full-squad-gaming",
    "name": "Full Squad Gaming x Clipping (clipping.net)",
    "lang": "en",
@@ -138,12 +82,12 @@
    "sources": [
     "https://clipping.net/c/full-squad-gaming-x-clipping"
    ],
-   "status": "activo (ficha 02/11)",
+   "status": "activo (09/11)",
    "note": "Sin fuente en sources.json: es YouTube (solo via prefetch del PC) y no se sabe que canal/video cubre el bounty",
    "score": 2.25
   },
   {
-   "rank": 6,
+   "rank": 4,
    "id": "cn-kick-clipping",
    "name": "Kick Clipping (clipping.net)",
    "lang": "en",
@@ -153,7 +97,7 @@
     "url": "https://clipping.net/c/kick-clipping",
     "how": "Entrar en clipping.net con Discord, conectar las cuentas de TikTok/Shorts y unirse (sin solicitud)"
    },
-   "pay": "$40 por 100k vistas base ($0.40/1K); bounties de hasta $300/100k ($3/1K), +145 bounties (02/11). Pago en USDT",
+   "pay": "$40 por 100k vistas base ($0.40/1K); bounties de hasta $300/100k ($3/1K), +146 bounties (09/11). Pago en USDT",
    "cpm": 0.4,
    "cpm_max": 3.0,
    "requirements": "Sin seguidores minimos ni solicitud. 100.000 vistas combinadas en la campana antes de cobrar; cada clip >= 1.000 vistas. Max. 2 cuentas por plataforma y 1 cuenta de clipper por usuario de Discord",
@@ -175,7 +119,7 @@
    ],
    "score": 2.0,
    "who": "top Kick streamers (N3on, xQc, Adin Ross)",
-   "status": "activo (02/11)"
+   "status": "activo (09/11)"
   },
   {
    "id": "cn-marlon",
@@ -201,12 +145,39 @@
    "sources": [
     "https://clipping.net/c/marlon-x-clipping"
    ],
-   "status": "activo (02/11)",
+   "status": "activo (09/11)",
    "score": 2.0,
-   "rank": 7
+   "rank": 5
   },
   {
-   "rank": 8,
+   "id": "cr-ishowspeed-expedia-nov",
+   "name": "$8,000 Expedia x IShowSpeed Campaign, stream 06/11 (Reach en Content Rewards)",
+   "lang": "en",
+   "creators": "IShowSpeed (YouTube)",
+   "where": {
+    "type": "plataforma",
+    "url": "https://contentrewards.com/discover/afeca1a0-f44c-46ad-8194-09d62b56589e",
+    "how": "Content Rewards con la cuenta 1 (cr_join; requiere CR_STATE valido). Footage en los 3 archivos de la campana (visibles al unirse)"
+   },
+   "pay": "$1/1K en TikTok, IG y YouTube, min $10 y max $500 por clip; $7.975 de $8.000 libres, 1 clipper (09/11, lanzada el 07/11)",
+   "cpm": 1.0,
+   "cpm_max": 1.0,
+   "requirements": "10.000 vistas minimas por clip (min $10). Solo el stream de IShowSpeed del 06/11/2026, desde 2:56:29 hasta el final; otro footage = rechazo. Reglas de la anterior: Speed como foco, #IShowSpeed #Expedia, sin otros logos, cuentas de nicho streamer/viajes",
+   "rules": "Reglas de Reach: enviar en <30 min, sin bots ni IA (un strike = fuera de Reach)",
+   "ease": 2,
+   "account": 1,
+   "min_views": 10000,
+   "track": [],
+   "sources": [
+    "https://contentrewards.com/discover/afeca1a0-f44c-46ad-8194-09d62b56589e"
+   ],
+   "status": "activo, lanzada el 07/11 (09/11)",
+   "note": "Fuente en YouTube (bloqueado en servidor y Actions). VOD candidato sin confirmar: youtube.com/watch?v=Kyv61l2vF6M (3:04:11, el mas reciente de /streams)",
+   "score": 2.0,
+   "rank": 6
+  },
+  {
+   "rank": 7,
    "id": "cn-kick-hispano",
    "name": "Kick Hispano (clipping.net)",
    "lang": "es",
@@ -235,35 +206,7 @@
    ],
    "score": 1.6,
    "who": "los streamers hispanos de Kick (Westcol, Spreen, elZeein, Juansguarnizo)",
-   "status": "activo (02/11)"
-  },
-  {
-   "rank": 9,
-   "id": "cn-kreekcraft",
-   "name": "Kreekcraft x Clipping (clipping.net)",
-   "lang": "en",
-   "creators": "KreekCraft (YouTube, 17.3M subs, Roblox)",
-   "where": {
-    "type": "plataforma",
-    "url": "https://clipping.net/c/kreekcraft-x-clipping",
-    "how": "Unirse desde clipping.net con Discord (sin solicitud)"
-   },
-   "pay": "Bote de $5.000 repartido por cuota de vistas, PayPal",
-   "cpm": 0.4,
-   "cpm_max": 1.0,
-   "requirements": "Sin solicitud. 400.000 vistas minimas (bote de $5K). TikTok, Shorts e IG",
-   "rules": "Solo views organicas; reglas en el doc de la campana",
-   "ease": 3,
-   "account": 2,
-   "min_views": 400000,
-   "track": [
-    "KreekCraft (YouTube)"
-   ],
-   "sources": [
-    "https://clipping.net/c/kreekcraft-x-clipping"
-   ],
-   "score": 1.2,
-   "status": "activo (02/11)"
+   "status": "activo (09/11)"
   },
   {
    "id": "cn-jasontheween",
@@ -275,8 +218,8 @@
     "url": "https://clipping.net/c/jasontheween-x-clipping",
     "how": "Unirse desde clipping.net con Discord (sin solicitud)"
    },
-   "pay": "Bote de $15.000 (july $7.5K + jason $7.5K) repartido por vistas, PayPal",
-   "cpm": 0.4,
+   "pay": "Bounty 'camping' $50 por 100k vistas ($0.50/1K) + botes july $7.5K y jason $7.5K repartidos por vistas, PayPal (09/11)",
+   "cpm": 0.5,
    "cpm_max": 1.0,
    "requirements": "Sin solicitud. 700.000 vistas combinadas",
    "rules": "Solo views organicas",
@@ -289,12 +232,98 @@
    "sources": [
     "https://clipping.net/c/jasontheween-x-clipping"
    ],
-   "status": "activo (02/11)",
-   "score": 1.2,
-   "rank": 10
+   "status": "activo (09/11): nuevo bounty camping",
+   "score": 1.5,
+   "rank": 8
   },
   {
-   "rank": 11,
+   "rank": 9,
+   "id": "cr-clix-reach",
+   "name": "$5,000 Clix Pool Campaign [November] (Reach en Content Rewards)",
+   "lang": "en",
+   "creators": "Clix",
+   "where": {
+    "type": "plataforma",
+    "url": "https://reachclipping.com/Clix",
+    "how": "Content Rewards con la cuenta 1 (cr_join; requiere CR_STATE valido). El id de la campana de noviembre no sale en la lista publica: sacarlo del cr_scan logueado"
+   },
+   "pay": "Bote de $5.000 de noviembre repartido por vistas aprobadas (el de octubre termino)",
+   "cpm": 0.3,
+   "cpm_max": 1.0,
+   "requirements": "500.000 vistas minimas en total; solo footage de 2026; nombre de Clix en caption o texto y #Clix; audiencia >=50% EN nativa",
+   "rules": "Nada negativo sobre el, nada generado por IA, sin logos, sin reposts ni collabs. Un strike te saca de todas las campanas de Reach",
+   "ease": 5,
+   "account": 1,
+   "min_views": 500000,
+   "track": [
+    "Clix (Twitch)",
+    "Clix x Yeat (Twitch)"
+   ],
+   "sources": [
+    "https://reachclipping.com/Clix",
+    "https://contentrewards.com/discover/20141a1a-3147-40a6-87b7-c30525962093",
+    "https://contentrewards.com/discover/04640c98-4701-48cd-9770-b48a0c490d06"
+   ],
+   "score": 1.5,
+   "status": "activo: bote de noviembre 'Live' en reachclipping.com/Clix (09/11)"
+  },
+  {
+   "rank": 10,
+   "id": "cn-kreekcraft",
+   "name": "Kreekcraft x Clipping (clipping.net)",
+   "lang": "en",
+   "creators": "KreekCraft (YouTube, 17.3M subs, Roblox)",
+   "where": {
+    "type": "plataforma",
+    "url": "https://clipping.net/c/kreekcraft-x-clipping",
+    "how": "Unirse desde clipping.net con Discord (sin solicitud)"
+   },
+   "pay": "Bote de $5.000 repartido por cuota de vistas, PayPal",
+   "cpm": 0.4,
+   "cpm_max": 1.0,
+   "requirements": "Sin solicitud. 100.000 vistas minimas por bounty (bajo de 400.000 el 09/11); bote 'kreekcraft' de $5K. TikTok, Shorts e IG",
+   "rules": "Solo views organicas; reglas en el doc de la campana",
+   "ease": 3,
+   "account": 2,
+   "min_views": 100000,
+   "track": [
+    "KreekCraft (YouTube)"
+   ],
+   "sources": [
+    "https://clipping.net/c/kreekcraft-x-clipping"
+   ],
+   "score": 1.2,
+   "status": "activo (09/11)"
+  },
+  {
+   "id": "cr-core-shibuya",
+   "name": "$20,000 CORE Boys At Shibuya Crossing (Reach en Content Rewards)",
+   "lang": "en",
+   "creators": "CORE (Marlon, Kai Cenat y compania)",
+   "where": {
+    "type": "plataforma",
+    "url": "https://contentrewards.com/discover/432f45b8-ed16-4cc6-95d7-1655e6c7806a",
+    "how": "Content Rewards con la cuenta 1 (cr_join; requiere CR_STATE valido)"
+   },
+   "pay": "$1/1K en TikTok, IG, YouTube y X, min $10 y max $750 por clip; solo $295 de $20.000 libres, 326 clippers (09/11)",
+   "cpm": 1.0,
+   "cpm_max": 1.0,
+   "requirements": "10.000 vistas minimas por clip; solo el momento de los CORE Boys en Shibuya reaccionando al anuncio de Fortnite (fuente youtube.com/watch?v=5NOV_1xGxPg); 1 requisito oculto hasta unirse",
+   "rules": "Reglas de Reach",
+   "ease": 1,
+   "account": 1,
+   "min_views": 10000,
+   "track": [],
+   "sources": [
+    "https://contentrewards.com/discover/432f45b8-ed16-4cc6-95d7-1655e6c7806a"
+   ],
+   "status": "casi agotado: $295 libres (09/11)",
+   "note": "Fuente de YouTube: bloqueada en el servidor y en Actions, solo via prefetch",
+   "score": 1.0,
+   "rank": 11
+  },
+  {
+   "rank": 12,
    "id": "cn-trainwreckstv",
    "name": "Trainwreckstv Clipping (clipping.net)",
    "lang": "en",
@@ -317,10 +346,10 @@
     "https://clipping.net/c/trainwreckstv-clipping"
    ],
    "score": 1.0,
-   "status": "activo (02/11)"
+   "status": "activo (09/11)"
   },
   {
-   "rank": 12,
+   "rank": 13,
    "id": "cn-clix-lacy-tapcap",
    "name": "Clix & Lacy - TapCap (clipping.net)",
    "lang": "en",
@@ -343,10 +372,10 @@
     "https://clipping.net/c/clix-lacy-tapcap-x-clipping"
    ],
    "score": 1.0,
-   "status": "activo (02/11)"
+   "status": "activo (09/11)"
   },
   {
-   "rank": 13,
+   "rank": 14,
    "id": "cn-logan-paul-impaulsive",
    "name": "Logan Paul / Impaulsive x Clipping (clipping.net)",
    "lang": "en",
@@ -369,11 +398,11 @@
     "https://clipping.net/c/logan-paul-x-clipping",
     "https://clipping.net/c/impaulsive-x-clipping"
    ],
-   "status": "activo (02/11): Logan Paul bounty rip-it, Impaulsive bounty clav, ambos $50/100k",
+   "status": "activo (09/11): Logan Paul bounty rip-it, Impaulsive bounty clav, ambos $50/100k",
    "score": 1.0
   },
   {
-   "rank": 14,
+   "rank": 15,
    "id": "cn-streamer-u",
    "name": "Streamer U x Clipping (clipping.net)",
    "lang": "en",
@@ -397,7 +426,7 @@
    "sources": [
     "https://clipping.net/c/streamer-u-x-clipping"
    ],
-   "status": "activo (02/11)",
+   "status": "activo (09/11)",
    "score": 1.0
   },
   {
@@ -422,13 +451,13 @@
    "sources": [
     "https://clipping.net/c/preme-x-clipping"
    ],
-   "status": "activo (02/11)",
+   "status": "activo (09/11)",
    "note": "Sin fuente en sources.json: streams de club/fiesta, poco encaje y pago bajo",
    "score": 1.0,
-   "rank": 15
+   "rank": 16
   },
   {
-   "rank": 16,
+   "rank": 17,
    "id": "n3on-direct",
    "name": "Programa de clippers de N3on (Discord propio)",
    "lang": "en",
@@ -459,7 +488,7 @@
    "status": "activo"
   },
   {
-   "rank": 17,
+   "rank": 18,
    "id": "cr-lacy-reach",
    "name": "$30,000 Lacy 30 Day Campaign (Reach en Content Rewards)",
    "lang": "en",
@@ -469,7 +498,7 @@
     "url": "https://contentrewards.com/discover/6d9223d5-e666-41b4-b6ba-1366a88bfdc2",
     "how": "Content Rewards con la cuenta 1 (cr_join; requiere CR_STATE valido). Reglas en reachclipping.com/Lacy"
    },
-   "pay": "Bote de $30.000 repartido por vistas aprobadas; 2.671 clippers (02/11)",
+   "pay": "Bote de $30.000 repartido por vistas aprobadas; 3.889 clippers (09/11)",
    "cpm": 0.3,
    "cpm_max": 1.0,
    "requirements": "1.000.000 de vistas aprobadas (MVR) para entrar en el reparto. Cualquier video/stream con Lacy como foco; TikTok, Reels, Shorts y X; audiencia >=50% EN nativa; nombre de Lacy en caption/texto y #Lacy; sin logos",
@@ -484,7 +513,7 @@
     "https://reachclipping.com/Lacy",
     "https://contentrewards.com/discover/6d9223d5-e666-41b4-b6ba-1366a88bfdc2"
    ],
-   "status": "activo (reachclipping.com/Lacy 'Live', 02/11)",
+   "status": "activo (reachclipping.com/Lacy 'Live', 09/11)",
    "score": 0.9
   },
   {
@@ -497,7 +526,7 @@
     "url": "https://contentrewards.com/discover/0b178e3c-fbd3-4294-8ded-394e3da9c62f",
     "how": "Content Rewards con la cuenta 1 (cr_join). Reglas en reachclipping.com/JasonTheWeen"
    },
-   "pay": "Bote de $9.000 repartido por vistas aprobadas, pagado al cerrar (lanzada 01/11)",
+   "pay": "Bote de $9.000 repartido por vistas aprobadas, pagado al cerrar; 1.225 clippers (09/11)",
    "cpm": 0.3,
    "cpm_max": 1.0,
    "requirements": "700.000 vistas aprobadas (MVR); Jason como foco; nombre en caption/texto y #JasonTheWeen; audiencia >=50% EN nativa; sin logos",
@@ -512,12 +541,12 @@
     "https://reachclipping.com/JasonTheWeen",
     "https://contentrewards.com/discover/0b178e3c-fbd3-4294-8ded-394e3da9c62f"
    ],
-   "status": "activo (02/11)",
+   "status": "activo, 'Accepting clips' (09/11)",
    "score": 0.9,
-   "rank": 18
+   "rank": 19
   },
   {
-   "rank": 19,
+   "rank": 20,
    "id": "cn-sketch",
    "name": "Sketch x Clipping (clipping.net)",
    "lang": "en",
@@ -530,21 +559,21 @@
    "pay": "Bote de $5.000 repartido por vistas, PayPal",
    "cpm": 0.4,
    "cpm_max": 1.0,
-   "requirements": "Sin solicitud. 500.000 vistas minimas",
+   "requirements": "Sin solicitud. 300.000 vistas minimas (bajo de 500.000 el 09/11)",
    "rules": "Nada sobre Indy; solo views organicas",
    "ease": 2,
    "account": 2,
-   "min_views": 500000,
+   "min_views": 300000,
    "track": [],
    "sources": [
     "https://clipping.net/c/sketch-x-clipping"
    ],
    "note": "Sin fuente en sources.json: no se ha confirmado su canal (twitch.tv/sketch es otro streamer)",
    "score": 0.8,
-   "status": "activo segun la ficha (02/11)"
+   "status": "activo segun la ficha (09/11)"
   },
   {
-   "rank": 20,
+   "rank": 21,
    "id": "cn-plaqueboymax",
    "name": "PlaqueBoyMax x Clipping (clipping.net)",
    "lang": "en",
@@ -554,23 +583,83 @@
     "url": "https://clipping.net/c/plaqueboymax-x-clipping",
     "how": "Unirse desde clipping.net con Discord (sin solicitud)"
    },
-   "pay": "Bote de $8.000 (july $4K + pbm $4K) repartido por vistas; PayPal",
+   "pay": "Bounties lamb $75/100k, Rising Star Tryouts y Rising Star Nov 6 $50/100k, +3 bounties mas; PayPal (09/11). Antes bote de $8.000",
    "cpm": 0.75,
    "cpm_max": 0.75,
-   "requirements": "Sin solicitud. 500.000 vistas minimas. Marca de agua PBM obligatoria y bien visible (no tenemos el logo)",
+   "requirements": "Sin solicitud. Desde 50.000 vistas por bounty (antes 500.000). La ficha anterior exigia marca de agua PBM bien visible (no tenemos el logo): revisar al entrar",
    "rules": "Sin otros logos; marca de agua PBM ni escondida ni diminuta. Streams de musica: riesgo de copyright",
    "ease": 1,
    "account": 2,
-   "min_views": 500000,
+   "min_views": 50000,
    "track": [],
    "sources": [
     "https://clipping.net/c/plaqueboymax-x-clipping"
    ],
    "score": 0.75,
-   "status": "activo segun la ficha (02/11)"
+   "status": "activo (09/11)"
   },
   {
-   "rank": 21,
+   "id": "cr-jshock-reach",
+   "name": "$3,000 JShock Pool Campaign (Reach en Content Rewards)",
+   "lang": "en",
+   "creators": "JShock (Twitch jshock9nine, YouTube @Jshock9nine)",
+   "where": {
+    "type": "plataforma",
+    "url": "https://contentrewards.com/discover/fb463a98-3b5b-476d-a789-529b4a7120bd",
+    "how": "Content Rewards con la cuenta 1 (cr_join; requiere CR_STATE valido). Reglas en reachclipping.com/JShock"
+   },
+   "pay": "Bote de $3.000 repartido por vistas aprobadas, pagado al cerrar (27/11); 192 clippers (09/11)",
+   "cpm": 0.3,
+   "cpm_max": 1.0,
+   "requirements": "100.000 vistas aprobadas en total (MVR). Solo streams de Twitch o videos de YouTube recientes; marca de agua 'JShock' de Twitch obligatoria (PNG en Drive); #JShock; TikTok, Reels y Shorts; audiencia >=50% EN nativa y de nicho parecido; sin logos ni IA",
+   "rules": "Reglas de Reach: sin bots ni IA; nada negativo sobre el",
+   "ease": 2,
+   "account": 1,
+   "min_views": 100000,
+   "track": [
+    "JShock (Twitch)"
+   ],
+   "sources": [
+    "https://reachclipping.com/JShock",
+    "https://contentrewards.com/discover/fb463a98-3b5b-476d-a789-529b4a7120bd",
+    "https://www.clyper.io/clipping-programs/jshock"
+   ],
+   "status": "activo hasta el 27/11 (09/11)",
+   "note": "Fuente en sources.json apagada: el pipeline no superpone marcas de agua (PNG: drive.google.com/file/d/1CKPGXWpXBiG3a2s_d5ZF6wzWU2l-P-h6)",
+   "score": 0.6,
+   "rank": 22
+  },
+  {
+   "id": "cr-marlon-reach",
+   "name": "$5,000 Marlon Clipping Campaign (Reach en Content Rewards)",
+   "lang": "en",
+   "creators": "Marlon (CORE; Twitch)",
+   "where": {
+    "type": "plataforma",
+    "url": "https://contentrewards.com/discover/6a478a78-d3fe-4e07-80fc-4bde2fd215aa",
+    "how": "Content Rewards con la cuenta 1 (cr_join; requiere CR_STATE valido). Reglas en reachclipping.com/Marlon (codigo en la ficha)"
+   },
+   "pay": "$3/1K en TikTok e IG, min $30 y max $300 por clip; pausada con $0 de $5.000 libres, 19 clippers, 1,7M vistas aprobadas (09/11)",
+   "cpm": 3.0,
+   "cpm_max": 3.0,
+   "requirements": "10.000 vistas minimas por clip (min $30 a $3/1K); solo TikTok e Instagram; 1 requisito y 4 archivos ocultos hasta unirse",
+   "rules": "Reglas de Reach: enviar en <30 min, sin bots ni IA (un strike = fuera de todas las campanas de Reach)",
+   "ease": 0,
+   "account": 1,
+   "min_views": 10000,
+   "track": [
+    "Marlon (Twitch)"
+   ],
+   "sources": [
+    "https://contentrewards.com/discover/6a478a78-d3fe-4e07-80fc-4bde2fd215aa",
+    "https://reachclipping.com/Marlon"
+   ],
+   "status": "agotado: Content Rewards la marca Paused con $0 libres (09/11)",
+   "score": 0.0,
+   "rank": 23
+  },
+  {
+   "rank": 24,
    "id": "cn-lacy",
    "name": "Lacy x Clipping (Discord de Lacy = clipping.net)",
    "lang": "en",
@@ -596,42 +685,11 @@
     "https://reelshift.app/streamers/lacy"
    ],
    "score": 0.0,
-   "status": "inactivo: clipping.net la marca Inactive (02/11)",
+   "status": "inactivo: clipping.net la marca Inactive (09/11)",
    "note": "Para Lacy queda el bote de Reach (cr-lacy-reach)"
   },
   {
-   "rank": 22,
-   "id": "cr-clix-reach",
-   "name": "Clix x Reach (Content Rewards)",
-   "lang": "en",
-   "creators": "Clix",
-   "where": {
-    "type": "plataforma",
-    "url": "https://contentrewards.com/discover",
-    "how": "Ya unidos con la cuenta 1"
-   },
-   "pay": "Bote de $5.000 de octubre: terminado",
-   "cpm": 0.3,
-   "cpm_max": 1.0,
-   "requirements": "500.000 vistas minimas en total; solo footage de 2026; nombre de Clix en caption o texto y #Clix; audiencia >=50% EN nativa",
-   "rules": "Nada negativo sobre el, nada generado por IA, sin logos, sin reposts ni collabs. Un strike te saca de todas las campanas de Reach",
-   "ease": 5,
-   "account": 1,
-   "min_views": 500000,
-   "track": [
-    "Clix (Twitch)",
-    "Clix x Yeat (Twitch)"
-   ],
-   "sources": [
-    "https://reachclipping.com/Clix",
-    "https://contentrewards.com/discover/20141a1a-3147-40a6-87b7-c30525962093",
-    "https://contentrewards.com/discover/04640c98-4701-48cd-9770-b48a0c490d06"
-   ],
-   "score": 0.0,
-   "status": "terminado: reachclipping.com/Clix 'Campaign Ended' (02/11). Las otras de Reach con Clix (Pro League Endgame, Double Coverage x Clix) estan pausadas y sin presupuesto"
-  },
-  {
-   "rank": 23,
+   "rank": 25,
    "id": "cr-kai-cenat-reach",
    "name": "$10,000 Kai Cenat Campaign (Reach en Content Rewards)",
    "lang": "en",
@@ -656,11 +714,11 @@
     "https://contentrewards.com/discover/44a3ffcb-d4a1-492b-94a4-704919950246",
     "https://reachclipping.com/KaiCenat"
    ],
-   "status": "terminado: reachclipping.com/KaiCenat 'Campaign Ended' (02/11)",
+   "status": "terminado: reachclipping.com/KaiCenat 'Campaign Ended' (09/11)",
    "score": 0.0
   },
   {
-   "rank": 24,
+   "rank": 26,
    "id": "vyro-speed-vegas",
    "name": "SPEED VEGAS (IShowSpeed en Vyro)",
    "lang": "en",
@@ -684,12 +742,12 @@
     "https://vyro.com/campaigns/speed-vegas-lC81wXFS"
    ],
    "score": 0.0,
-   "status": "cerrado: no sale en vyro.com/campaigns (02/11)"
+   "status": "cerrado: no sale en vyro.com/campaigns (09/11)"
   },
   {
-   "rank": 25,
+   "rank": 27,
    "id": "cr-ishowspeed-expedia",
-   "name": "IShowSpeed x Expedia (Reach en Content Rewards)",
+   "name": "IShowSpeed x Expedia, stream 14/10 (Reach en Content Rewards)",
    "lang": "en",
    "creators": "IShowSpeed",
    "where": {
@@ -711,10 +769,10 @@
     "https://clippingalpha.com/campaigns/ishowspeed/expedia"
    ],
    "score": 0.0,
-   "status": "terminado: 'ended 26 Oct, budget used' (clippingalpha 02/11)"
+   "status": "terminado: 'ended 26 Oct, budget used'. Hay una campana nueva de Expedia (cr-ishowspeed-expedia-nov)"
   },
   {
-   "rank": 26,
+   "rank": 28,
    "id": "clavicular-clipmaxer",
    "name": "Clavicular (Clip Maxer, Discord)",
    "lang": "en",
@@ -737,12 +795,12 @@
     "https://www.clipmaxer.com/"
    ],
    "score": 0.0,
-   "status": "agotado: bote de $100.000 con $0 (02/11)",
+   "status": "agotado: bote de $100.000 con $0 (clipmaxer.com 09/11)",
    "note": "Alternativa: 'Clavicular Dedicated Clipping' en Content Rewards, $1/1K, $9K de $17.5K libres (02/11), solo TikTok/IG, >=40% audiencia US y pagina dedicada"
   }
  ],
  "no_program_verified": {
-  "note": "Sin programa propio verificable el 17-18/10/2026 (revisado 26/10: Kai Cenat ya tiene campana de Reach): sus clips solo hacen crecer las cuentas (0 $). Los Discord que usan su nombre para clipping son de terceros. Revisado 02/11: Marlon y JasonTheWeen ya tienen campanas (Reach y clipping.net).",
+  "note": "Sin programa propio verificable el 17-18/10/2026 (revisado 26/10: Kai Cenat ya tiene campana de Reach): sus clips solo hacen crecer las cuentas (0 $). Los Discord que usan su nombre para clipping son de terceros. Revisado 02/11: Marlon y JasonTheWeen ya tienen campanas (Reach y clipping.net). Revisado 09/11: reelshift.app sin cambios desde 17-19/10; clyper.io lista campanas de Reach para JShock (anadida) y Braeden (bote de $2K, cerrado el 05/11) y una de Clip Farm para Jake Paul ($0.75/1K, un solo video de YouTube).",
   "creators": [
    "IShowSpeed (solo campanas de marca)",
    "Stable Ronaldo",

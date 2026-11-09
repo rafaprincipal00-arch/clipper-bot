@@ -1052,10 +1052,9 @@
   {
     "creator": "Clix (Twitch)",
     "source": "https://www.twitch.tv/clix/videos?filter=archives",
-    "campaign": "$5,000 Clix Pool Campaign [October]",
-    "campaign_url": "https://contentrewards.com/c/campaigns/7a6a234b-1e9e-4da3-a600-54cc3142e710",
-    "enabled": false,
-    "account": 1,
+    "campaign": "$5,000 Clix Pool Campaign [November]",
+    "enabled": true,
+    "account": 2,
     "lang": "English",
     "hashtags": [
       "Clix",
@@ -1063,10 +1062,13 @@
       "streamer"
     ],
     "credit": "twitch.tv/clix",
-    "requirements": "Clix must be the primary focus. Caption or text overlay must say Clix's name; use #Clix. Only 2026 footage. Never show Clix in a negative light, no logos.",
-    "why": "Reach pool: 500k vistas minimas en total, 17.7M vistas aprobadas",
-    "join_status": "unido 2026-10-17",
-    "why_off": "campana $5,000 Clix Pool [October] terminada (reachclipping.com/Clix, 02/11/2026)"
+    "requirements": "Clix must be the primary focus. Caption or text overlay must say Clix's name; use #Clix. Only 2026 footage. Never show Clix in a negative light, no logos. No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0.",
+    "why": "Reach pool de noviembre ($5,000, 500k vistas minimas en total); Clix = streamer EN famoso (cuenta 2)",
+    "join_status": "unido a la de octubre 2026-10-17; la de noviembre pendiente de cr_join (CR_STATE caducado)",
+    "priority": 2,
+    "programs": [
+      "cr-clix-reach"
+    ]
   },
   {
     "creator": "Michael Gene (The App Daddy)",
@@ -1678,5 +1680,41 @@
     "requirements": "2 files locked until join.",
     "join_status": "pendiente: cr_join 09/11 fallo SESSION EXPIRED (CR_STATE caducado); rules sin desbloquear",
     "why_off": "No unido: cr_join 09/11 fallo SESSION EXPIRED (CR_STATE caducado). Activar tras cr_join con JOINED: True y leer las reglas desbloqueadas. Fuente = los 2 archivos de la campana (VOD del directo, no visibles sin unirse)."
+  },
+  {
+    "creator": "JShock (Twitch)",
+    "source": "https://www.twitch.tv/jshock9nine/videos?filter=archives&sort=time",
+    "account": 2,
+    "lang": "English",
+    "enabled": false,
+    "priority": 2,
+    "programs": [
+      "cr-jshock-reach"
+    ],
+    "hashtags": [
+      "JShock"
+    ],
+    "requirements": "JShock must be the main focus; recent streams only; use #JShock. The 'JShock' Twitch watermark must be on the video. Never show him in a negative light, no other logos, no AI. No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0.",
+    "why": "$3,000 JShock Pool de Reach (100k vistas, hasta 27/11)",
+    "why_off": "la campana exige la marca de agua JShock (PNG en drive.google.com/file/d/1CKPGXWpXBiG3a2s_d5ZF6wzWU2l-P-h6) y el pipeline no superpone logos; ademas falta cr_join (CR_STATE caducado)"
+  },
+  {
+    "creator": "IShowSpeed x Expedia (stream 11.6.26)",
+    "source": "",
+    "campaign": "$8,000 Expedia x IShowSpeed Campaign",
+    "campaign_url": "https://contentrewards.com/discover/afeca1a0-f44c-46ad-8194-09d62b56589e",
+    "cpm": 1.0,
+    "account": 1,
+    "lang": "English",
+    "enabled": false,
+    "priority": 2,
+    "programs": [
+      "cr-ishowspeed-expedia-nov"
+    ],
+    "mention": "#IShowSpeed #Expedia",
+    "requirements": "Content must be from IShowSpeed's stream of 11.6.26, from 2:56:29 until the end of the stream; other streams/videos are rejected. IShowSpeed is the main focus; #IShowSpeed #Expedia; no logos except Expedia; no AI. No casino, slots, betting or gambling footage.",
+    "why": "Reach, $1/1K TT/IG/YT, min $10 (10k vistas), max $500; $7,975 libres de $8,000, 1 clipper (09/11)",
+    "join_status": "pendiente: CR_STATE caducado",
+    "why_off": "no unido (CR_STATE caducado) y la fuente es YouTube (bloqueado en servidor/Actions); VOD candidato sin confirmar youtube.com/watch?v=Kyv61l2vF6M, footage oficial en los archivos de la campana"
   }
 ]
