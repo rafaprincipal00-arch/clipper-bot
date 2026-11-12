@@ -1,60 +1,80 @@
 {
- "updated": "2026-11-11T07:32:08+00:00",
- "clips": 181,
+ "updated": "2026-11-12T07:32:10+00:00",
+ "clips": 190,
  "by_creator": {
+  "Westcol (Kick)": {
+   "clips": 13,
+   "views": 9655,
+   "avg_views": 743
+  },
+  "Spreen (Kick)": {
+   "clips": 12,
+   "views": 12032,
+   "avg_views": 1003
+  },
+  "JasonTheWeen (Twitch)": {
+   "clips": 1,
+   "views": 12,
+   "avg_views": 12
+  },
+  "N3on (Kick)": {
+   "clips": 2,
+   "views": 3,
+   "avg_views": 2
+  },
+  "LosPollosTV (Kick)": {
+   "clips": 8,
+   "views": 1210,
+   "avg_views": 151
+  },
+  "Ibai (Twitch)": {
+   "clips": 12,
+   "views": 4949,
+   "avg_views": 412
+  },
+  "Auronplay (Twitch)": {
+   "clips": 15,
+   "views": 18499,
+   "avg_views": 1233
+  },
   "Kai Cenat (Twitch)": {
    "clips": 17,
-   "views": 16764,
-   "avg_views": 986
+   "views": 16907,
+   "avg_views": 995
   },
   "Rivers (Twitch)": {
    "clips": 8,
-   "views": 7213,
-   "avg_views": 902
-  },
-  "Westcol (Kick)": {
-   "clips": 12,
-   "views": 7665,
-   "avg_views": 639
-  },
-  "Spreen (Kick)": {
-   "clips": 10,
-   "views": 11789,
-   "avg_views": 1179
+   "views": 7802,
+   "avg_views": 975
   },
   "Marlon (Twitch)": {
    "clips": 2,
-   "views": 1383,
-   "avg_views": 692
-  },
-  "LosPollosTV (Kick)": {
-   "clips": 6,
-   "views": 1209,
-   "avg_views": 202
+   "views": 1504,
+   "avg_views": 752
   },
   "CaseOh (Twitch)": {
    "clips": 12,
-   "views": 6969,
-   "avg_views": 581
+   "views": 7085,
+   "avg_views": 590
   },
   "Jynxzi (Twitch)": {
    "clips": 9,
-   "views": 8692,
-   "avg_views": 966
+   "views": 8706,
+   "avg_views": 967
   },
   "elZeein (Kick)": {
    "clips": 2,
-   "views": 359,
-   "avg_views": 180
+   "views": 482,
+   "avg_views": 241
   },
   "Lanah Cherry (Twitch)": {
    "clips": 18,
-   "views": 18560,
+   "views": 18565,
    "avg_views": 1031
   },
   "Stable Ronaldo (Twitch)": {
    "clips": 10,
-   "views": 5026,
+   "views": 5027,
    "avg_views": 503
   },
   "xQc (Kick)": {
@@ -62,20 +82,10 @@
    "views": 3,
    "avg_views": 2
   },
-  "Ibai (Twitch)": {
-   "clips": 11,
-   "views": 4937,
-   "avg_views": 449
-  },
   "Clix (Twitch)": {
    "clips": 14,
    "views": 18764,
    "avg_views": 1340
-  },
-  "Auronplay (Twitch)": {
-   "clips": 14,
-   "views": 18497,
-   "avg_views": 1321
   },
   "Adin Ross (Kick)": {
    "clips": 7,
@@ -102,11 +112,6 @@
    "views": 36,
    "avg_views": 36
   },
-  "N3on (Kick)": {
-   "clips": 1,
-   "views": 3,
-   "avg_views": 3
-  },
   "Lacy (Twitch)": {
    "clips": 2,
    "views": 11,
@@ -119,7 +124,7 @@
   },
   "TJR": {
    "clips": 17,
-   "views": 3201,
+   "views": 3202,
    "avg_views": 188
   },
   "Michael Porter Jr. (Curious Mike)": {
@@ -136,7 +141,7 @@
    "mood": "chaos",
    "hook_type": "stakes",
    "score": 88,
-   "views": 5341,
+   "views": 5343,
    "likes": 45,
    "id": "J1P_cwbirK0"
   },
