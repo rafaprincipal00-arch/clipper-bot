@@ -1,21 +1,51 @@
 {
- "updated": "2026-11-12T07:32:10+00:00",
- "clips": 190,
+ "updated": "2026-11-13T07:31:59+00:00",
+ "clips": 199,
  "by_creator": {
-  "Westcol (Kick)": {
-   "clips": 13,
-   "views": 9655,
-   "avg_views": 743
+  "xQc (Kick)": {
+   "clips": 4,
+   "views": 26,
+   "avg_views": 6
+  },
+  "Cuffem (Kick)": {
+   "clips": 1,
+   "views": 7,
+   "avg_views": 7
+  },
+  "Jynxzi (Twitch)": {
+   "clips": 10,
+   "views": 10514,
+   "avg_views": 1051
   },
   "Spreen (Kick)": {
-   "clips": 12,
-   "views": 12032,
-   "avg_views": 1003
+   "clips": 13,
+   "views": 12165,
+   "avg_views": 936
   },
   "JasonTheWeen (Twitch)": {
-   "clips": 1,
-   "views": 12,
-   "avg_views": 12
+   "clips": 2,
+   "views": 746,
+   "avg_views": 373
+  },
+  "Ibai (Twitch)": {
+   "clips": 13,
+   "views": 4956,
+   "avg_views": 381
+  },
+  "Auronplay (Twitch)": {
+   "clips": 16,
+   "views": 18499,
+   "avg_views": 1156
+  },
+  "Juansguarnizo (Kick)": {
+   "clips": 2,
+   "views": 2278,
+   "avg_views": 1139
+  },
+  "Westcol (Kick)": {
+   "clips": 13,
+   "views": 9916,
+   "avg_views": 763
   },
   "N3on (Kick)": {
    "clips": 2,
@@ -24,63 +54,43 @@
   },
   "LosPollosTV (Kick)": {
    "clips": 8,
-   "views": 1210,
+   "views": 1211,
    "avg_views": 151
-  },
-  "Ibai (Twitch)": {
-   "clips": 12,
-   "views": 4949,
-   "avg_views": 412
-  },
-  "Auronplay (Twitch)": {
-   "clips": 15,
-   "views": 18499,
-   "avg_views": 1233
   },
   "Kai Cenat (Twitch)": {
    "clips": 17,
-   "views": 16907,
-   "avg_views": 995
+   "views": 17048,
+   "avg_views": 1003
   },
   "Rivers (Twitch)": {
    "clips": 8,
-   "views": 7802,
-   "avg_views": 975
+   "views": 8038,
+   "avg_views": 1005
   },
   "Marlon (Twitch)": {
    "clips": 2,
-   "views": 1504,
-   "avg_views": 752
+   "views": 1542,
+   "avg_views": 771
   },
   "CaseOh (Twitch)": {
    "clips": 12,
-   "views": 7085,
-   "avg_views": 590
-  },
-  "Jynxzi (Twitch)": {
-   "clips": 9,
-   "views": 8706,
-   "avg_views": 967
+   "views": 7091,
+   "avg_views": 591
   },
   "elZeein (Kick)": {
    "clips": 2,
-   "views": 482,
-   "avg_views": 241
+   "views": 483,
+   "avg_views": 242
   },
   "Lanah Cherry (Twitch)": {
    "clips": 18,
-   "views": 18565,
-   "avg_views": 1031
+   "views": 18570,
+   "avg_views": 1032
   },
   "Stable Ronaldo (Twitch)": {
    "clips": 10,
    "views": 5027,
    "avg_views": 503
-  },
-  "xQc (Kick)": {
-   "clips": 2,
-   "views": 3,
-   "avg_views": 2
   },
   "Clix (Twitch)": {
    "clips": 14,
@@ -96,11 +106,6 @@
    "clips": 2,
    "views": 5770,
    "avg_views": 2885
-  },
-  "Juansguarnizo (Kick)": {
-   "clips": 1,
-   "views": 1115,
-   "avg_views": 1115
   },
   "Ice Poseidon (Kick)": {
    "clips": 1,

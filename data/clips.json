@@ -1,5 +1,416 @@
 [
  {
+  "file": "westcol-kick-kc-clip-01m6scmpckebpe12mp3w05n8qh.mp4",
+  "creator": "Westcol (Kick)",
+  "source": "https://clips.kick.com/clips/c8/clip_01M6SCMPCKEBPE12MP3W05N8QH/playlist.m3u8",
+  "start": 31.42,
+  "end": 67.92,
+  "cuts": 10,
+  "length": 19.8,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "hype",
+  "signal": "kick-clip",
+  "score": 85,
+  "hook": "Westcol pierde millones en directo",
+  "hook_type": "stakes",
+  "emphasis": [
+   "millones",
+   "ganamos",
+   "difundan"
+  ],
+  "caption": "Westcol no lo puede creer en plena transmisión #westcol #kick #streamer",
+  "title": "Westcol no lo puede creer en plena transmisión",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-11-13T09:17:21.942627+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/Xw3tsn6dG5I",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/westcol-kick-kc-clip-01m6scmpckebpe12mp3w05n8qh.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/westcol-kick-kc-clip-01m6scmpckebpe12mp3w05n8qh.tt.mp4",
+  "tiktok_caption": "Westcol no lo puede creer en plena transmisión #westcol #kick #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 16,
+   "transcribe+edit+render": 113,
+   "publish+submit": 10,
+   "total": 138
+  }
+ },
+ {
+  "file": "ibai-twitch-tw-2921487211-4160.mp4",
+  "creator": "Ibai (Twitch)",
+  "source": "https://www.twitch.tv/videos/2921487211",
+  "start": 4155.02,
+  "end": 4188.36,
+  "cuts": 12,
+  "length": 20.5,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "La peor definitiva de la historia",
+  "hook_type": "revelation",
+  "emphasis": [
+   "Doran",
+   "fuera",
+   "peor",
+   "muerto"
+  ],
+  "caption": "Ibai no puede creer esta jugada desastrosa en el Mundial #ibai #twitch #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Ibai no puede creer esta jugada desastrosa en el Mundial",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-11-13T09:06:32.518211+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/ukYn7QkVv14",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/ibai-twitch-tw-2921487211-4160.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/ibai-twitch-tw-2921487211-4160.tt.mp4",
+  "tiktok_caption": "Ibai no puede creer esta jugada desastrosa en el Mundial #ibai #twitch #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 6,
+   "transcribe+edit+render": 120,
+   "publish+submit": 7,
+   "total": 133
+  }
+ },
+ {
+  "file": "auronplay-twitch-tw-2926786075-2542.mp4",
+  "creator": "Auronplay (Twitch)",
+  "source": "https://www.twitch.tv/videos/2926786075",
+  "start": 2565.96,
+  "end": 2596.82,
+  "cuts": 8,
+  "length": 20.6,
+  "layout": "face",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Lo llamó en directo",
+  "hook_type": "revelation",
+  "emphasis": [
+   "maricón",
+   "rapero",
+   "barras"
+  ],
+  "caption": "AuronPlay recibe la llamada más incómoda en directo #auronplay #stream #clipsespañol",
+  "title": "AuronPlay recibe la llamada más incómoda en directo",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-11-13T08:56:08.566248+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/q8qUXqu0MNc",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2926786075-2542.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2926786075-2542.tt.mp4",
+  "tiktok_caption": "AuronPlay recibe la llamada más incómoda en directo #auronplay #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 115,
+   "publish+submit": 9,
+   "total": 126
+  }
+ },
+ {
+  "file": "lospollostv-kick-kc-clip-01m74c2rt8y8qdnahvvvjb6g59.mp4",
+  "creator": "LosPollosTV (Kick)",
+  "source": "https://clips.kick.com/clips/97/clip_01M74C2RT8Y8QDNAHVVVJB6G59/playlist.m3u8",
+  "start": 14.04,
+  "end": 55.199999999999996,
+  "cuts": 8,
+  "length": 21.6,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "kick-clip",
+  "score": 78,
+  "hook": "He wakes up at 4 AM to troll",
+  "hook_type": "revelation",
+  "emphasis": [
+   "breath",
+   "rage",
+   "Australia",
+   "terrorizing"
+  ],
+  "caption": "A dedicated troll wakes up at 4 AM just to ruin his chat #lospollostv #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "A dedicated troll wakes up at 4 AM just to ruin his chat",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-11-13T08:45:12.394958+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/txlju9j2ZQI",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lospollostv-kick-kc-clip-01m74c2rt8y8qdnahvvvjb6g59.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lospollostv-kick-kc-clip-01m74c2rt8y8qdnahvvvjb6g59.tt.mp4",
+  "tiktok_caption": "A dedicated troll wakes up at 4 AM just to ruin his chat #lospollostv #kick #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 9,
+   "transcribe+edit+render": 159,
+   "publish+submit": 9,
+   "total": 178
+  }
+ },
+ {
+  "file": "caseoh-twitch-tw-2921768812-5877.mp4",
+  "creator": "CaseOh (Twitch)",
+  "source": "https://www.twitch.tv/videos/2921768812",
+  "start": 5896.9,
+  "end": 5902.3,
+  "cuts": 14,
+  "length": 20.6,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 78,
+  "hook": "Bro found the weirdest people",
+  "hook_type": "revelation",
+  "emphasis": [
+   "cactus",
+   "normal"
+  ],
+  "caption": "CaseOh was not ready for what these people were holding #caseoh #stream #clips",
+  "title": "CaseOh was not ready for what these people were holding",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-11-13T08:31:52.106568+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/ZoYU7oQUHtw",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2921768812-5877.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2921768812-5877.tt.mp4",
+  "tiktok_caption": "CaseOh was not ready for what these people were holding #caseoh #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 108,
+   "publish+submit": 8,
+   "total": 120
+  }
+ },
+ {
+  "file": "auronplay-twitch-tw-2925898790-6388.mp4",
+  "creator": "Auronplay (Twitch)",
+  "source": "https://www.twitch.tv/videos/2925898790",
+  "start": 6353.05,
+  "end": 6403.26,
+  "cuts": 13,
+  "length": 20.4,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "Auron confundió una serie",
+  "hook_type": "revelation",
+  "emphasis": [
+   "Carrie",
+   "Noelia",
+   "Coger",
+   "Stephen King"
+  ],
+  "caption": "Auronplay no sabía qué era Carrie y la lio en directo #auronplay #stream #clipsespañol\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Auronplay no sabía qué era Carrie y la lio en directo",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-11-13T08:20:59.187228+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/M7Momj3k4K0",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2925898790-6388.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2925898790-6388.tt.mp4",
+  "tiktok_caption": "Auronplay no sabía qué era Carrie y la lio en directo #auronplay #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 108,
+   "publish+submit": 8,
+   "total": 120
+  }
+ },
+ {
+  "file": "marlon-twitch-tw-2920836194-2636.mp4",
+  "creator": "Marlon (Twitch)",
+  "source": "https://www.twitch.tv/videos/2920836194",
+  "start": 2609.35,
+  "end": 2681.29,
+  "cuts": 14,
+  "length": 21.6,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "Marlon completely loses it live",
+  "hook_type": "revelation",
+  "emphasis": [
+   "toddler",
+   "farming",
+   "choking"
+  ],
+  "caption": "Marlon completely loses his mind on stream",
+  "title": "Marlon completely loses his mind on stream",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-11-13T08:09:07.399160+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/NnpWrO2nzI8",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/marlon-twitch-tw-2920836194-2636.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/marlon-twitch-tw-2920836194-2636.tt.mp4",
+  "tiktok_caption": "Marlon completely loses his mind on stream",
+  "account": 2,
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 133,
+   "publish+submit": 9,
+   "total": 148
+  }
+ },
+ {
+  "file": "spreen-kick-kc-clip-01m720jdq3khd3rke01nrker93.mp4",
+  "creator": "Spreen (Kick)",
+  "source": "https://clips.kick.com/clips/e0/clip_01M720JDQ3KHD3RKE01NRKER93/playlist.m3u8",
+  "start": 11.1,
+  "end": 78.06,
+  "cuts": 13,
+  "length": 22.4,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "kick-clip",
+  "score": 88,
+  "hook": "Spreen se arma de valor",
+  "hook_type": "revelation",
+  "emphasis": [
+   "equipo",
+   "cojones",
+   "mátalo"
+  ],
+  "caption": "Spreen reacciona de la peor manera en pleno directo #spreen #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Spreen reacciona de la peor manera en pleno directo",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-11-13T07:57:54.791349+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/pn8HI4sMSdE",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/spreen-kick-kc-clip-01m720jdq3khd3rke01nrker93.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/spreen-kick-kc-clip-01m720jdq3khd3rke01nrker93.tt.mp4",
+  "tiktok_caption": "Spreen reacciona de la peor manera en pleno directo #spreen #kick #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 18,
+   "transcribe+edit+render": 140,
+   "publish+submit": 10,
+   "total": 168
+  }
+ },
+ {
+  "file": "clix-twitch-tw-2921547244-7434.mp4",
+  "creator": "Clix (Twitch)",
+  "source": "https://www.twitch.tv/videos/2921547244",
+  "start": 7455.17,
+  "end": 7486.07,
+  "cuts": 8,
+  "length": 20.3,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Clix gets exposed live",
+  "hook_type": "revelation",
+  "emphasis": [
+   "epic",
+   "bad",
+   "clicks"
+  ],
+  "caption": "Clix was NOT ready for this accusation #Clix #fortnite #streamer",
+  "title": "Clix was NOT ready for this accusation",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-11-13T07:46:12.969305+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/VinDhLe9NCc",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2921547244-7434.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2921547244-7434.tt.mp4",
+  "tiktok_caption": "Clix was NOT ready for this accusation #Clix #fortnite #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 6,
+   "transcribe+edit+render": 94,
+   "publish+submit": 9,
+   "total": 110
+  }
+ },
+ {
+  "file": "cuffem-kick-kc-clip-01m6wtecbt4bkn2g32ynmcggst.mp4",
+  "creator": "Cuffem (Kick)",
+  "source": "https://clips.kick.com/clips/67/clip_01M6WTECBT4BKN2G32YNMCGGST/playlist.m3u8",
+  "start": 33.83,
+  "end": 97.0,
+  "cuts": 12,
+  "length": 20.8,
+  "layout": "face",
+  "style": "blur",
+  "mood": "awkward",
+  "signal": "kick-clip",
+  "score": 90,
+  "hook": "He did NOT expect that answer",
+  "hook_type": "revelation",
+  "emphasis": [
+   "mentally",
+   "syndrome"
+  ],
+  "caption": "Cuffem was completely speechless after this response #cuffem #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Cuffem was completely speechless after this response",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-11-13T07:35:11.817220+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/Ia_rE7Wispo",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/cuffem-kick-kc-clip-01m6wtecbt4bkn2g32ynmcggst.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/cuffem-kick-kc-clip-01m6wtecbt4bkn2g32ynmcggst.tt.mp4",
+  "tiktok_caption": "Cuffem was completely speechless after this response #cuffem #kick #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 10,
+   "transcribe+edit+render": 120,
+   "publish+submit": 10,
+   "total": 140
+  }
+ },
+ {
   "file": "illojuan-twitch-tw-2923285147-12325.mp4",
   "creator": "IlloJuan (Twitch)",
   "source": "https://www.twitch.tv/videos/2923285147",
