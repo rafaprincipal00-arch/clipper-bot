@@ -1,5 +1,341 @@
 [
  {
+  "file": "kai-cenat-twitch-tw-2924282282-76584.mp4",
+  "creator": "Kai Cenat (Twitch)",
+  "source": "https://www.twitch.tv/videos/2924282282",
+  "start": 76578.28,
+  "end": 76618.06,
+  "cuts": 8,
+  "length": 20.0,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "Kai calls out absolute disrespect",
+  "hook_type": "revelation",
+  "emphasis": [
+   "disrespectful",
+   "valuable"
+  ],
+  "caption": "Kai Cenat cannot believe what just happened #KaiCenat #KaiCenat #twitch #streamer",
+  "title": "Kai Cenat cannot believe what just happened",
+  "bed": null,
+  "campaign": "https://contentrewards.com/c/campaigns/44a3ffcb-d4a1-492b-94a4-704919950246",
+  "created": "2026-11-16T09:03:31.097420+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/T_LMR-zwDI0",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2924282282-76584.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2924282282-76584.tt.mp4",
+  "tiktok_caption": "Kai Cenat cannot believe what just happened #KaiCenat #KaiCenat #twitch #streamer",
+  "account": 1,
+  "submission": {
+   "error": "no submit button on https://contentrewards.com/c/campaigns/44a3ffcb-d4a1-492b-94a4-704919950246; buttons: ['Decline', 'Accept']"
+  },
+  "timing_s": {
+   "download": 2,
+   "transcribe+edit+render": 144,
+   "publish+submit": 19,
+   "total": 165
+  }
+ },
+ {
+  "file": "ibai-twitch-tw-2928776581-5999.mp4",
+  "creator": "Ibai (Twitch)",
+  "source": "https://www.twitch.tv/videos/2928776581",
+  "start": 5986.72,
+  "end": 6026.86,
+  "cuts": 13,
+  "length": 28.0,
+  "layout": "face",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "La única que se salva de verdad",
+  "hook_type": "contrarian",
+  "emphasis": [
+   "Akali",
+   "bien",
+   "salva"
+  ],
+  "caption": "Ibai destruye la ceremonia pero rescata a la mejor #ibai #twitch #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Ibai destruye la ceremonia pero rescata a la mejor",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-11-16T08:52:34.274299+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/9llZvgkpC10",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/ibai-twitch-tw-2928776581-5999.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/ibai-twitch-tw-2928776581-5999.tt.mp4",
+  "tiktok_caption": "Ibai destruye la ceremonia pero rescata a la mejor #ibai #twitch #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 179,
+   "publish+submit": 8,
+   "total": 191
+  }
+ },
+ {
+  "file": "jynxzi-twitch-tw-2926972985-33285.mp4",
+  "creator": "Jynxzi (Twitch)",
+  "source": "https://www.twitch.tv/videos/2926972985",
+  "start": 33254.63,
+  "end": 33340.46,
+  "cuts": 9,
+  "length": 20.7,
+  "layout": "face",
+  "style": "blur",
+  "mood": "hype",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "Jynxzi wins Gamer of the Year",
+  "hook_type": "revelation",
+  "emphasis": [
+   "gamer",
+   "year",
+   "dragging",
+   "hotter",
+   "shot"
+  ],
+  "caption": "Jynxzi was NOT expecting to win Gamer of the Year #jynxzi #stream #clips",
+  "title": "Jynxzi was NOT expecting to win Gamer of the Year",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-11-16T08:41:05.077618+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/9sNWNs6zB90",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/jynxzi-twitch-tw-2926972985-33285.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/jynxzi-twitch-tw-2926972985-33285.tt.mp4",
+  "tiktok_caption": "Jynxzi was NOT expecting to win Gamer of the Year #jynxzi #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 2,
+   "transcribe+edit+render": 150,
+   "publish+submit": 7,
+   "total": 159
+  }
+ },
+ {
+  "file": "adin-ross-kick-kc-clip-01m746t8dhv6zrca7ys7rxxpw2.mp4",
+  "creator": "Adin Ross (Kick)",
+  "source": "https://clips.kick.com/clips/f9/clip_01M746T8DHV6ZRCA7YS7RXXPW2/playlist.m3u8",
+  "start": 40.718,
+  "end": 62.918,
+  "cuts": 7,
+  "length": 20.0,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "kick-clip",
+  "score": 75,
+  "hook": "Cuffem completely breaks his chair",
+  "hook_type": "revelation",
+  "emphasis": [
+   "dumbass",
+   "chair",
+   "move"
+  ],
+  "caption": "Adin Ross reacts to the worst chair fail ever #adinross #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Adin Ross reacts to the worst chair fail ever",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-11-16T08:27:55.598584+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/sOWEYiW5XLM",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/adin-ross-kick-kc-clip-01m746t8dhv6zrca7ys7rxxpw2.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/adin-ross-kick-kc-clip-01m746t8dhv6zrca7ys7rxxpw2.tt.mp4",
+  "tiktok_caption": "Adin Ross reacts to the worst chair fail ever #adinross #kick #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 141,
+   "publish+submit": 8,
+   "total": 154
+  }
+ },
+ {
+  "file": "jasontheween-twitch-tw-2927412068-1604.mp4",
+  "creator": "JasonTheWeen (Twitch)",
+  "source": "https://www.twitch.tv/videos/2927412068",
+  "start": 1569,
+  "end": 1658.96,
+  "cuts": 12,
+  "length": 21.1,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "sad",
+  "signal": "twitch-clip",
+  "score": 78,
+  "hook": "JasonTheWeen almost cried live",
+  "hook_type": "revelation",
+  "emphasis": [
+   "cry",
+   "today",
+   "flow"
+  ],
+  "caption": "JasonTheWeen almost broke down on stream #JasonTheWeen",
+  "title": "JasonTheWeen almost broke down on stream #JasonTheWeen",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-11-16T08:16:50.312386+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/evO6Xpect00",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/jasontheween-twitch-tw-2927412068-1604.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/jasontheween-twitch-tw-2927412068-1604.tt.mp4",
+  "tiktok_caption": "JasonTheWeen almost broke down on stream #JasonTheWeen",
+  "account": 2,
+  "timing_s": {
+   "download": 2,
+   "transcribe+edit+render": 137,
+   "publish+submit": 7,
+   "total": 147
+  }
+ },
+ {
+  "file": "kai-cenat-twitch-tw-2924282282-24127.mp4",
+  "creator": "Kai Cenat (Twitch)",
+  "source": "https://www.twitch.tv/videos/2924282282",
+  "start": 24100.46,
+  "end": 24161.44,
+  "cuts": 8,
+  "length": 21.5,
+  "layout": "none",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "He ordered the impossible delivery",
+  "hook_type": "revelation",
+  "emphasis": [
+   "cookin bell",
+   "delivery",
+   "toilet"
+  ],
+  "caption": "Kai Cenat was NOT ready for this delivery #KaiCenat #KaiCenat #twitch #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Kai Cenat was NOT ready for this delivery",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": "https://contentrewards.com/c/campaigns/44a3ffcb-d4a1-492b-94a4-704919950246",
+  "created": "2026-11-16T08:05:15.278139+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/hP4y9EVBBUc",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2924282282-24127.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2924282282-24127.tt.mp4",
+  "tiktok_caption": "Kai Cenat was NOT ready for this delivery #KaiCenat #KaiCenat #twitch #streamer",
+  "account": 1,
+  "submission": {
+   "error": "no submit button on https://contentrewards.com/c/campaigns/44a3ffcb-d4a1-492b-94a4-704919950246; buttons: ['Decline', 'Accept']"
+  },
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 134,
+   "publish+submit": 21,
+   "total": 158
+  }
+ },
+ {
+  "file": "clix-twitch-tw-2928837106-810.mp4",
+  "creator": "Clix (Twitch)",
+  "source": "https://www.twitch.tv/videos/2928837106",
+  "start": 847.66,
+  "end": 883.14,
+  "cuts": 9,
+  "length": 21.4,
+  "layout": "face",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "Clix exposes his real height",
+  "hook_type": "revelation",
+  "emphasis": [
+   "six foot",
+   "mug",
+   "five nine"
+  ],
+  "caption": "Clix was lying about his height the whole time #Clix #fortnite #streamer",
+  "title": "Clix was lying about his height the whole time",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-11-16T07:54:33.475802+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/IOrGyi4Kxg0",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2928837106-810.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2928837106-810.tt.mp4",
+  "tiktok_caption": "Clix was lying about his height the whole time #Clix #fortnite #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 2,
+   "transcribe+edit+render": 156,
+   "publish+submit": 7,
+   "total": 164
+  }
+ },
+ {
+  "file": "cuffem-kick-kc-clip-01m71yn3ey2xt6jxgn45ecdygq.mp4",
+  "creator": "Cuffem (Kick)",
+  "source": "https://clips.kick.com/clips/c2/clip_01M71YN3EY2XT6JXGN45ECDYGQ/playlist.m3u8",
+  "start": 51.72,
+  "end": 101.38,
+  "cuts": 11,
+  "length": 24.3,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "kick-clip",
+  "score": 88,
+  "hook": "Tasha is on absolute timing",
+  "hook_type": "revelation",
+  "emphasis": [
+   "hair",
+   "timing",
+   "Chanel",
+   "fight"
+  ],
+  "caption": "Cuffem was not ready for Tasha's wrath #cuffem #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Cuffem was not ready for Tasha's wrath",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-11-16T07:42:27.931751+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/NHq5t3pmQ-M",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/cuffem-kick-kc-clip-01m71yn3ey2xt6jxgn45ecdygq.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/cuffem-kick-kc-clip-01m71yn3ey2xt6jxgn45ecdygq.tt.mp4",
+  "tiktok_caption": "Cuffem was not ready for Tasha's wrath #cuffem #kick #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 16,
+   "transcribe+edit+render": 180,
+   "publish+submit": 10,
+   "total": 206
+  }
+ },
+ {
   "file": "westcol-kick-kc-clip-01m7bm3mz8c16pcjs2nczfvmpq.mp4",
   "creator": "Westcol (Kick)",
   "source": "https://clips.kick.com/clips/ef/clip_01M7BM3MZ8C16PCJS2NCZFVMPQ/playlist.m3u8",

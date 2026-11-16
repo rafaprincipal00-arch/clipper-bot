@@ -1,66 +1,71 @@
 {
- "updated": "2026-11-15T07:32:02+00:00",
- "clips": 219,
+ "updated": "2026-11-16T07:32:13+00:00",
+ "clips": 229,
  "by_creator": {
-  "Westcol (Kick)": {
+  "Rivers (Twitch)": {
+   "clips": 9,
+   "views": 9318,
+   "avg_views": 1035
+  },
+  "Auronplay (Twitch)": {
+   "clips": 21,
+   "views": 22787,
+   "avg_views": 1085
+  },
+  "Clix (Twitch)": {
+   "clips": 16,
+   "views": 22375,
+   "avg_views": 1398
+  },
+  "IlloJuan (Twitch)": {
+   "clips": 3,
+   "views": 1236,
+   "avg_views": 412
+  },
+  "CaseOh (Twitch)": {
    "clips": 14,
-   "views": 10152,
-   "avg_views": 725
+   "views": 7099,
+   "avg_views": 507
+  },
+  "Jynxzi (Twitch)": {
+   "clips": 12,
+   "views": 11375,
+   "avg_views": 948
+  },
+  "Marlon (Twitch)": {
+   "clips": 4,
+   "views": 2196,
+   "avg_views": 549
+  },
+  "Westcol (Kick)": {
+   "clips": 15,
+   "views": 11555,
+   "avg_views": 770
+  },
+  "LosPollosTV (Kick)": {
+   "clips": 11,
+   "views": 5565,
+   "avg_views": 506
   },
   "Ibai (Twitch)": {
    "clips": 15,
-   "views": 4975,
+   "views": 4976,
    "avg_views": 332
-  },
-  "Auronplay (Twitch)": {
-   "clips": 19,
-   "views": 21031,
-   "avg_views": 1107
-  },
-  "LosPollosTV (Kick)": {
-   "clips": 10,
-   "views": 4204,
-   "avg_views": 420
-  },
-  "CaseOh (Twitch)": {
-   "clips": 13,
-   "views": 7095,
-   "avg_views": 546
-  },
-  "Marlon (Twitch)": {
-   "clips": 3,
-   "views": 1544,
-   "avg_views": 515
   },
   "Spreen (Kick)": {
    "clips": 15,
-   "views": 14655,
-   "avg_views": 977
-  },
-  "Clix (Twitch)": {
-   "clips": 15,
-   "views": 21121,
-   "avg_views": 1408
+   "views": 14705,
+   "avg_views": 980
   },
   "Cuffem (Kick)": {
    "clips": 3,
-   "views": 1668,
-   "avg_views": 556
-  },
-  "IlloJuan (Twitch)": {
-   "clips": 2,
-   "views": 1236,
-   "avg_views": 618
-  },
-  "Jynxzi (Twitch)": {
-   "clips": 11,
-   "views": 11214,
-   "avg_views": 1019
+   "views": 1732,
+   "avg_views": 577
   },
   "Lanah Cherry (Twitch)": {
    "clips": 19,
-   "views": 20152,
-   "avg_views": 1061
+   "views": 20295,
+   "avg_views": 1068
   },
   "xQc (Kick)": {
    "clips": 5,
@@ -69,13 +74,13 @@
   },
   "JasonTheWeen (Twitch)": {
    "clips": 2,
-   "views": 808,
+   "views": 807,
    "avg_views": 404
   },
   "Juansguarnizo (Kick)": {
    "clips": 2,
-   "views": 2337,
-   "avg_views": 1168
+   "views": 2339,
+   "avg_views": 1170
   },
   "N3on (Kick)": {
    "clips": 2,
@@ -84,22 +89,17 @@
   },
   "Kai Cenat (Twitch)": {
    "clips": 17,
-   "views": 17069,
+   "views": 17070,
    "avg_views": 1004
-  },
-  "Rivers (Twitch)": {
-   "clips": 8,
-   "views": 8113,
-   "avg_views": 1014
   },
   "elZeein (Kick)": {
    "clips": 2,
-   "views": 487,
+   "views": 489,
    "avg_views": 244
   },
   "Stable Ronaldo (Twitch)": {
    "clips": 10,
-   "views": 5032,
+   "views": 5033,
    "avg_views": 503
   },
   "Adin Ross (Kick)": {
@@ -129,8 +129,8 @@
   },
   "Harrison Webb ($7 vs $115 English Breakfast)": {
    "clips": 1,
-   "views": 2438,
-   "avg_views": 2438
+   "views": 2442,
+   "avg_views": 2442
   },
   "TJR": {
    "clips": 17,
@@ -222,15 +222,15 @@
    "id": "REDP_AloN5A"
   },
   {
-   "creator": "Clix x Yeat (Twitch)",
-   "hook": "Yeat's secret instructions revealed",
-   "title": "Clix was NOT ready for Yeat's chaotic stream demands",
-   "mood": "chaos",
+   "creator": "Lanah Cherry (Twitch)",
+   "hook": "Worst dating story ever",
+   "title": "Lanah Cherry was DONE with dating after THIS",
+   "mood": "funny",
    "hook_type": "revelation",
    "score": 88,
-   "views": 2758,
-   "likes": 52,
-   "id": "qrUYeJzyszM"
+   "views": 2768,
+   "likes": 24,
+   "id": "HVX_1C1azwo"
   }
  ],
  "bottom": [
