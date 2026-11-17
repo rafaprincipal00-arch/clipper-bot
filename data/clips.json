@@ -1,5 +1,303 @@
 [
  {
+  "file": "lanah-cherry-twitch-twchat-2929116734-1770.mp4",
+  "creator": "Lanah Cherry (Twitch)",
+  "source": "https://www.twitch.tv/videos/2929116734",
+  "start": 1759.08,
+  "end": 1823.88,
+  "cuts": 13,
+  "length": 38.1,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-chat(16 msgs)",
+  "score": 88,
+  "hook": "Lanah Cherry unexpected confidence tip",
+  "hook_type": "stakes",
+  "emphasis": [
+   "pretty",
+   "confident",
+   "tits",
+   "out"
+  ],
+  "caption": "Lanah Cherry was not holding back with this answer #twitch #streamer #irl\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Lanah Cherry was not holding back with this answer",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": "https://contentrewards.com/discover/6e379737-96ef-4980-8565-08df4e6d39d9",
+  "created": "2026-11-17T08:59:22.311156+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/1g4SfVqQCv4",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lanah-cherry-twitch-twchat-2929116734-1770.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lanah-cherry-twitch-twchat-2929116734-1770.tt.mp4",
+  "tiktok_caption": "Lanah Cherry was not holding back with this answer #twitch #streamer #irl",
+  "account": 1,
+  "submission": {
+   "error": "Content Rewards session expired: refresh the CR_STATE secret"
+  },
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 194,
+   "publish+submit": 26,
+   "total": 225
+  }
+ },
+ {
+  "file": "auronplay-twitch-tw-2924980214-2766.mp4",
+  "creator": "Auronplay (Twitch)",
+  "source": "https://www.twitch.tv/videos/2924980214",
+  "start": 2749.43,
+  "end": 2803.73,
+  "cuts": 12,
+  "length": 30.2,
+  "layout": "face",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "AURONPLAY NO PERDONA A NADIE",
+  "hook_type": "contrarian",
+  "emphasis": [
+   "político",
+   "sensible",
+   "presidente",
+   "importa"
+  ],
+  "caption": "Auronplay no respeta a nadie, ¿fue demasiado lejos? #auronplay #stream #clipsespañol",
+  "title": "Auronplay no respeta a nadie, ¿fue demasiado lejos?",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-11-17T08:40:50.194802+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/PsE8zaINQHM",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2924980214-2766.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2924980214-2766.tt.mp4",
+  "tiktok_caption": "Auronplay no respeta a nadie, ¿fue demasiado lejos? #auronplay #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 224,
+   "publish+submit": 8,
+   "total": 235
+  }
+ },
+ {
+  "file": "xqc-kick-kc-clip-01m7kecpew9p1y63phkn8kz0w8.mp4",
+  "creator": "xQc (Kick)",
+  "source": "https://clips.kick.com/clips/70/clip_01M7KECPEW9P1Y63PHKN8KZ0W8/playlist.m3u8",
+  "start": 48.48,
+  "end": 67.56,
+  "cuts": 11,
+  "length": 28.1,
+  "layout": "face",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "kick-clip",
+  "score": 72,
+  "hook": "XQC WANTS TO BAN TIME ZONES",
+  "hook_type": "contrarian",
+  "emphasis": [
+   "abolish",
+   "broke",
+   "market",
+   "eastern"
+  ],
+  "caption": "xQc sparks massive debate with unhinged time zone take #xqc #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "xQc sparks massive debate with unhinged time zone take",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-11-17T08:28:23.524739+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/MpNOPSeNHSk",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/xqc-kick-kc-clip-01m7kecpew9p1y63phkn8kz0w8.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/xqc-kick-kc-clip-01m7kecpew9p1y63phkn8kz0w8.tt.mp4",
+  "tiktok_caption": "xQc sparks massive debate with unhinged time zone take #xqc #kick #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 187,
+   "publish+submit": 8,
+   "total": 198
+  }
+ },
+ {
+  "file": "adin-ross-kick-kc-clip-01m72av54av6a0agrxnsdk8517.mp4",
+  "creator": "Adin Ross (Kick)",
+  "source": "https://clips.kick.com/clips/da/clip_01M72AV54AV6A0AGRXNSDK8517/playlist.m3u8",
+  "start": 0.0,
+  "end": 28.759999999999998,
+  "cuts": 10,
+  "length": 19.8,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "kick-clip",
+  "score": 90,
+  "hook": "ADIN ROSS LOSES IT",
+  "hook_type": "revelation",
+  "emphasis": [
+   "DON'T TALK",
+   "BREAK IT UP",
+   "LET HIM GO",
+   "SON OF A B**H",
+   "WHAT THE F**K"
+  ],
+  "caption": "Adin Ross loses his cool live, was he justified? #adinross #kick #streamer",
+  "title": "Adin Ross loses his cool live, was he justified?",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-11-17T08:16:37.463986+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/LqqC9zxfaVk",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/adin-ross-kick-kc-clip-01m72av54av6a0agrxnsdk8517.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/adin-ross-kick-kc-clip-01m72av54av6a0agrxnsdk8517.tt.mp4",
+  "tiktok_caption": "Adin Ross loses his cool live, was he justified? #adinross #kick #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 11,
+   "transcribe+edit+render": 171,
+   "publish+submit": 8,
+   "total": 189
+  }
+ },
+ {
+  "file": "marlon-twitch-tw-2929984277-7513.mp4",
+  "creator": "Marlon (Twitch)",
+  "source": "https://www.twitch.tv/videos/2929984277",
+  "start": 7503.53,
+  "end": 7539.14,
+  "cuts": 13,
+  "length": 26.6,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 86,
+  "hook": "MARLON THOUGHT DRIVING WAS EASY",
+  "hook_type": "contrarian",
+  "emphasis": [
+   "master",
+   "easy",
+   "doing",
+   "lucky"
+  ],
+  "caption": "Furious Marlon almost crashes live after saying driving is too easy \nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Furious Marlon almost crashes live after saying driving is too easy",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-11-17T08:04:29.994296+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/JXdTfpVV5B0",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/marlon-twitch-tw-2929984277-7513.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/marlon-twitch-tw-2929984277-7513.tt.mp4",
+  "tiktok_caption": "Furious Marlon almost crashes live after saying driving is too easy",
+  "account": 2,
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 258,
+   "publish+submit": 9,
+   "total": 271
+  }
+ },
+ {
+  "file": "clix-twitch-tw-2929881837-1157.mp4",
+  "creator": "Clix (Twitch)",
+  "source": "https://www.twitch.tv/videos/2929881837",
+  "start": 1139.8,
+  "end": 1206.03,
+  "cuts": 11,
+  "length": 30.2,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "hype",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Clix just gave away a PC!",
+  "hook_type": "revelation",
+  "emphasis": [
+   "PC",
+   "insane",
+   "handsome",
+   "sculpted"
+  ],
+  "caption": "Clix surprised a fan with a crazy $2000 PC #Clix #fortnite #streamer",
+  "title": "Clix surprised a fan with a crazy $2000 PC",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-11-17T07:47:40.536986+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/s6vlK_PT6j8",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2929881837-1157.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2929881837-1157.tt.mp4",
+  "tiktok_caption": "Clix surprised a fan with a crazy $2000 PC #Clix #fortnite #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 127,
+   "publish+submit": 7,
+   "total": 138
+  }
+ },
+ {
+  "file": "lospollostv-kick-kc-clip-01m79q16nyt6v6bcs6m5z33jmc.mp4",
+  "creator": "LosPollosTV (Kick)",
+  "source": "https://clips.kick.com/clips/78/clip_01M79Q16NYT6V6BCS6M5Z33JMC/playlist.m3u8",
+  "start": 14.9,
+  "end": 49.699999999999996,
+  "cuts": 9,
+  "length": 21.2,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "kick-clip",
+  "score": 82,
+  "hook": "He calls himself the most humble",
+  "hook_type": "contrarian",
+  "emphasis": [
+   "humble",
+   "radar",
+   "silence",
+   "embarrassed"
+  ],
+  "caption": "Bro actually thinks he is the most humble guy on the internet #lospollostv #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Bro actually thinks he is the most humble guy on the internet",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-11-17T07:35:53.505753+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/yiJrEokFd9M",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lospollostv-kick-kc-clip-01m79q16nyt6v6bcs6m5z33jmc.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lospollostv-kick-kc-clip-01m79q16nyt6v6bcs6m5z33jmc.tt.mp4",
+  "tiktok_caption": "Bro actually thinks he is the most humble guy on the internet #lospollostv #kick #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 12,
+   "transcribe+edit+render": 144,
+   "publish+submit": 8,
+   "total": 164
+  }
+ },
+ {
   "file": "kai-cenat-twitch-tw-2924282282-76584.mp4",
   "creator": "Kai Cenat (Twitch)",
   "source": "https://www.twitch.tv/videos/2924282282",

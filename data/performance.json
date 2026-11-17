@@ -1,111 +1,111 @@
 {
- "updated": "2026-11-16T07:32:13+00:00",
- "clips": 229,
+ "updated": "2026-11-17T07:31:46+00:00",
+ "clips": 238,
  "by_creator": {
+  "Westcol (Kick)": {
+   "clips": 18,
+   "views": 12050,
+   "avg_views": 669
+  },
+  "Ibai (Twitch)": {
+   "clips": 16,
+   "views": 6344,
+   "avg_views": 396
+  },
+  "Stable Ronaldo (Twitch)": {
+   "clips": 11,
+   "views": 5290,
+   "avg_views": 481
+  },
+  "CaseOh (Twitch)": {
+   "clips": 15,
+   "views": 7124,
+   "avg_views": 475
+  },
+  "N3on (Kick)": {
+   "clips": 3,
+   "views": 9,
+   "avg_views": 3
+  },
+  "Adin Ross (Kick)": {
+   "clips": 8,
+   "views": 937,
+   "avg_views": 117
+  },
+  "Marlon (Twitch)": {
+   "clips": 5,
+   "views": 2286,
+   "avg_views": 457
+  },
   "Rivers (Twitch)": {
    "clips": 9,
-   "views": 9318,
-   "avg_views": 1035
+   "views": 9565,
+   "avg_views": 1063
   },
   "Auronplay (Twitch)": {
    "clips": 21,
-   "views": 22787,
-   "avg_views": 1085
+   "views": 23105,
+   "avg_views": 1100
   },
   "Clix (Twitch)": {
    "clips": 16,
-   "views": 22375,
-   "avg_views": 1398
+   "views": 22661,
+   "avg_views": 1416
   },
   "IlloJuan (Twitch)": {
    "clips": 3,
-   "views": 1236,
-   "avg_views": 412
-  },
-  "CaseOh (Twitch)": {
-   "clips": 14,
-   "views": 7099,
-   "avg_views": 507
+   "views": 1239,
+   "avg_views": 413
   },
   "Jynxzi (Twitch)": {
    "clips": 12,
-   "views": 11375,
-   "avg_views": 948
-  },
-  "Marlon (Twitch)": {
-   "clips": 4,
-   "views": 2196,
-   "avg_views": 549
-  },
-  "Westcol (Kick)": {
-   "clips": 15,
-   "views": 11555,
-   "avg_views": 770
+   "views": 11393,
+   "avg_views": 949
   },
   "LosPollosTV (Kick)": {
    "clips": 11,
-   "views": 5565,
-   "avg_views": 506
-  },
-  "Ibai (Twitch)": {
-   "clips": 15,
-   "views": 4976,
-   "avg_views": 332
+   "views": 5662,
+   "avg_views": 515
   },
   "Spreen (Kick)": {
    "clips": 15,
-   "views": 14705,
-   "avg_views": 980
+   "views": 14743,
+   "avg_views": 983
   },
   "Cuffem (Kick)": {
    "clips": 3,
-   "views": 1732,
-   "avg_views": 577
+   "views": 1764,
+   "avg_views": 588
   },
   "Lanah Cherry (Twitch)": {
    "clips": 19,
-   "views": 20295,
-   "avg_views": 1068
+   "views": 20342,
+   "avg_views": 1071
   },
   "xQc (Kick)": {
    "clips": 5,
-   "views": 32,
-   "avg_views": 6
+   "views": 35,
+   "avg_views": 7
   },
   "JasonTheWeen (Twitch)": {
    "clips": 2,
-   "views": 807,
+   "views": 809,
    "avg_views": 404
   },
   "Juansguarnizo (Kick)": {
    "clips": 2,
-   "views": 2339,
-   "avg_views": 1170
-  },
-  "N3on (Kick)": {
-   "clips": 2,
-   "views": 4,
-   "avg_views": 2
+   "views": 2342,
+   "avg_views": 1171
   },
   "Kai Cenat (Twitch)": {
    "clips": 17,
-   "views": 17070,
-   "avg_views": 1004
+   "views": 17084,
+   "avg_views": 1005
   },
   "elZeein (Kick)": {
    "clips": 2,
-   "views": 489,
-   "avg_views": 244
-  },
-  "Stable Ronaldo (Twitch)": {
-   "clips": 10,
-   "views": 5033,
-   "avg_views": 503
-  },
-  "Adin Ross (Kick)": {
-   "clips": 7,
-   "views": 920,
-   "avg_views": 131
+   "views": 495,
+   "avg_views": 248
   },
   "Clix x Yeat (Twitch)": {
    "clips": 2,
@@ -114,17 +114,17 @@
   },
   "Ice Poseidon (Kick)": {
    "clips": 1,
-   "views": 23,
-   "avg_views": 23
+   "views": 24,
+   "avg_views": 24
   },
   "Fanum (Twitch)": {
    "clips": 1,
-   "views": 36,
-   "avg_views": 36
+   "views": 37,
+   "avg_views": 37
   },
   "Lacy (Twitch)": {
    "clips": 2,
-   "views": 11,
+   "views": 13,
    "avg_views": 6
   },
   "Harrison Webb ($7 vs $115 English Breakfast)": {
@@ -134,7 +134,7 @@
   },
   "TJR": {
    "clips": 17,
-   "views": 3202,
+   "views": 3204,
    "avg_views": 188
   },
   "Michael Porter Jr. (Curious Mike)": {
@@ -151,7 +151,7 @@
    "mood": "chaos",
    "hook_type": "stakes",
    "score": 88,
-   "views": 5343,
+   "views": 5344,
    "likes": 45,
    "id": "J1P_cwbirK0"
   },
@@ -195,7 +195,7 @@
    "mood": "chaos",
    "hook_type": null,
    "score": 75,
-   "views": 3438,
+   "views": 3442,
    "likes": 20,
    "id": "Et3rAIR30iQ"
   },
@@ -228,88 +228,88 @@
    "mood": "funny",
    "hook_type": "revelation",
    "score": 88,
-   "views": 2768,
+   "views": 2779,
    "likes": 24,
    "id": "HVX_1C1azwo"
   }
  ],
  "bottom": [
   {
-   "creator": "Adin Ross (Kick)",
-   "hook": "She used a baby as a shield",
-   "title": "Adin Ross was completely shocked by this insane story",
-   "mood": "chaos",
+   "creator": "Westcol (Kick)",
+   "hook": "El peso exacto de Carola",
+   "title": "Westcol alucina con el gran cambio físico de Carola",
+   "mood": "hype",
    "hook_type": "revelation",
-   "score": 78,
-   "views": 0,
-   "likes": 0,
-   "id": "lnv-P2sxUUI"
-  },
-  {
-   "creator": "Adin Ross (Kick)",
-   "hook": "He wants to fine her thousands",
-   "title": "Adin Ross was 100% right to fine her here?",
-   "mood": "chaos",
-   "hook_type": "stakes",
    "score": 75,
    "views": 0,
    "likes": 0,
-   "id": "rzRRvMvMUZQ"
+   "id": "6t23y7bWlWw"
   },
   {
-   "creator": "Kai Cenat (Twitch)",
-   "hook": "He actually did that live",
-   "title": "Kai Cenat pulled off the craziest move live",
+   "creator": "Westcol (Kick)",
+   "hook": "Westcol pierde millones en directo",
+   "title": "Westcol no lo puede creer en plena transmisión",
    "mood": "hype",
-   "hook_type": "revelation",
-   "score": 88,
-   "views": 0,
-   "likes": 0,
-   "id": "nC1QkUqYWXw"
-  },
-  {
-   "creator": "xQc (Kick)",
-   "hook": "HE JUST SNAPPED LIVE",
-   "title": "xQc completely loses it on stream",
-   "mood": "chaos",
-   "hook_type": "revelation",
-   "score": 85,
-   "views": 0,
-   "likes": 0,
-   "id": "49Syz1P2798"
-  },
-  {
-   "creator": "Kai Cenat (Twitch)",
-   "hook": "Kai Cenat's instant rage",
-   "title": "Kai Cenat was definitely not ready for this",
-   "mood": "chaos",
    "hook_type": "stakes",
    "score": 85,
    "views": 0,
    "likes": 0,
-   "id": "KOnxDekWlpc"
+   "id": "Xw3tsn6dG5I"
   },
   {
-   "creator": "Kai Cenat (Twitch)",
-   "hook": "Kai Cenat panics live",
-   "title": "Kai Cenat absolute chaos when things go wrong",
-   "mood": "chaos",
-   "hook_type": "revelation",
-   "score": 88,
-   "views": 0,
-   "likes": 0,
-   "id": "sWfw_QitbAA"
-  },
-  {
-   "creator": "Stable Ronaldo (Twitch)",
-   "hook": "He swore he got touched",
-   "title": "Stable Ronaldo got completely played live",
+   "creator": "Auronplay (Twitch)",
+   "hook": "Lo llamó en directo",
+   "title": "AuronPlay recibe la llamada más incómoda en directo",
    "mood": "funny",
    "hook_type": "revelation",
    "score": 88,
    "views": 0,
    "likes": 0,
-   "id": "PECejBjodDw"
+   "id": "q8qUXqu0MNc"
+  },
+  {
+   "creator": "Marlon (Twitch)",
+   "hook": "Marlon completely loses it live",
+   "title": "Marlon completely loses his mind on stream",
+   "mood": "chaos",
+   "hook_type": "revelation",
+   "score": 75,
+   "views": 0,
+   "likes": 0,
+   "id": "NnpWrO2nzI8"
+  },
+  {
+   "creator": "IlloJuan (Twitch)",
+   "hook": "No estaba preparado para esto",
+   "title": "IlloJuan leyó los anuncios más desquiciados de la historia",
+   "mood": "chaos",
+   "hook_type": "revelation",
+   "score": 90,
+   "views": 0,
+   "likes": 0,
+   "id": "_gO19YtPVrg"
+  },
+  {
+   "creator": "Auronplay (Twitch)",
+   "hook": "Los de noviembre somos los mejores",
+   "title": "Auronplay explica por qué los de noviembre son superiores",
+   "mood": "funny",
+   "hook_type": "contrarian",
+   "score": 88,
+   "views": 0,
+   "likes": 0,
+   "id": "Rg5JOuDmn5E"
+  },
+  {
+   "creator": "LosPollosTV (Kick)",
+   "hook": "He actually yelled bums at them",
+   "title": "LosPollosTV completely losing his mind on stream",
+   "mood": "chaos",
+   "hook_type": "stakes",
+   "score": 85,
+   "views": 0,
+   "likes": 0,
+   "id": "ndRJKRBoCdE"
   },
   {
    "creator": "Lanah Cherry (Twitch)",
