@@ -1,5 +1,561 @@
 [
  {
+  "file": "kai-cenat-twitch-tw-2922436506-95419.mp4",
+  "creator": "Kai Cenat (Twitch)",
+  "source": "https://www.twitch.tv/videos/2922436506",
+  "start": 95418.23,
+  "end": 95468.36,
+  "cuts": 10,
+  "length": 25.1,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 90,
+  "hook": "Big Smoke order in real life",
+  "hook_type": "revelation",
+  "emphasis": [
+   "number",
+   "nine",
+   "large",
+   "coke"
+  ],
+  "caption": "Kai Cenat recreates the most iconic order ever #KaiCenat #KaiCenat #twitch #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Kai Cenat recreates the most iconic order ever",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": "https://contentrewards.com/c/campaigns/44a3ffcb-d4a1-492b-94a4-704919950246",
+  "created": "2026-11-18T10:45:53.762974+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/PVudm-WhDO8",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2922436506-95419.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2922436506-95419.tt.mp4",
+  "tiktok_caption": "Kai Cenat recreates the most iconic order ever #KaiCenat #KaiCenat #twitch #streamer",
+  "account": 1,
+  "submission": {
+   "error": "no submit button on https://contentrewards.com/c/campaigns/44a3ffcb-d4a1-492b-94a4-704919950246; buttons: ['Decline', 'Accept']"
+  },
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 154,
+   "publish+submit": 21,
+   "total": 178
+  }
+ },
+ {
+  "file": "kai-cenat-twitch-tw-2858049515-1580.mp4",
+  "creator": "Kai Cenat (Twitch)",
+  "source": "https://www.twitch.tv/videos/2858049515",
+  "start": 1578.93,
+  "end": 1624.96,
+  "cuts": 13,
+  "length": 20.0,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "Kai realized he was way too late",
+  "hook_type": "revelation",
+  "emphasis": [
+   "GOD",
+   "NOOOOO",
+   "late"
+  ],
+  "caption": "Kai Cenat completely lost his mind over this #KaiCenat #KaiCenat #twitch #streamer",
+  "title": "Kai Cenat completely lost his mind over this",
+  "bed": null,
+  "campaign": "https://contentrewards.com/c/campaigns/44a3ffcb-d4a1-492b-94a4-704919950246",
+  "created": "2026-11-18T10:34:17.955947+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/VR-ynEiZmDc",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2858049515-1580.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2858049515-1580.tt.mp4",
+  "tiktok_caption": "Kai Cenat completely lost his mind over this #KaiCenat #KaiCenat #twitch #streamer",
+  "account": 1,
+  "submission": {
+   "error": "no submit button on https://contentrewards.com/c/campaigns/44a3ffcb-d4a1-492b-94a4-704919950246; buttons: ['Decline', 'Accept']"
+  },
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 175,
+   "publish+submit": 21,
+   "total": 200
+  }
+ },
+ {
+  "file": "kai-cenat-twitch-tw-2858049515-643.mp4",
+  "creator": "Kai Cenat (Twitch)",
+  "source": "https://www.twitch.tv/videos/2858049515",
+  "start": 619.08,
+  "end": 680.14,
+  "cuts": 12,
+  "length": 28.1,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "hype",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "GTA 6 category is finally here",
+  "hook_type": "revelation",
+  "emphasis": [
+   "first",
+   "time",
+   "crazy",
+   "chat"
+  ],
+  "caption": "Kai Cenat loses his mind over the new GTA 6 category #KaiCenat #KaiCenat #twitch #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Kai Cenat loses his mind over the new GTA 6 category",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": "https://contentrewards.com/c/campaigns/44a3ffcb-d4a1-492b-94a4-704919950246",
+  "created": "2026-11-18T10:22:46.541913+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/phHTRMKs2iI",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2858049515-643.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2858049515-643.tt.mp4",
+  "tiktok_caption": "Kai Cenat loses his mind over the new GTA 6 category #KaiCenat #KaiCenat #twitch #streamer",
+  "account": 1,
+  "submission": {
+   "error": "no submit button on https://contentrewards.com/c/campaigns/44a3ffcb-d4a1-492b-94a4-704919950246; buttons: ['Decline', 'Accept']"
+  },
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 162,
+   "publish+submit": 21,
+   "total": 186
+  }
+ },
+ {
+  "file": "kai-cenat-twitch-tw-2858049515-2640.mp4",
+  "creator": "Kai Cenat (Twitch)",
+  "source": "https://www.twitch.tv/videos/2858049515",
+  "start": 2608.16,
+  "end": 2693.9,
+  "cuts": 15,
+  "length": 20.3,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "Kai got six stars instantly",
+  "hook_type": "revelation",
+  "emphasis": [
+   "six stars",
+   "bankrupt",
+   "test"
+  ],
+  "caption": "Kai Cenat completely loses his mind over six stars #KaiCenat #KaiCenat #twitch #streamer",
+  "title": "Kai Cenat completely loses his mind over six stars",
+  "bed": null,
+  "campaign": "https://contentrewards.com/c/campaigns/44a3ffcb-d4a1-492b-94a4-704919950246",
+  "created": "2026-11-18T09:27:18.825567+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/xDnvvUFpUuk",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2858049515-2640.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2858049515-2640.tt.mp4",
+  "tiktok_caption": "Kai Cenat completely loses his mind over six stars #KaiCenat #KaiCenat #twitch #streamer",
+  "account": 1,
+  "submission": {
+   "error": "no submit button on https://contentrewards.com/c/campaigns/44a3ffcb-d4a1-492b-94a4-704919950246; buttons: ['Decline', 'Accept']"
+  },
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 150,
+   "publish+submit": 21,
+   "total": 174
+  }
+ },
+ {
+  "file": "spreen-kick-kc-clip-01m7bp246fp6ewy4btw7cyvcmx.mp4",
+  "creator": "Spreen (Kick)",
+  "source": "https://clips.kick.com/clips/33/clip_01M7BP246FP6EWY4BTW7CYVCMX/playlist.m3u8",
+  "start": 125.72,
+  "end": 148.63000000000002,
+  "cuts": 13,
+  "length": 25.8,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "kick-clip",
+  "score": 88,
+  "hook": "Spreen descubre 100K seguidores fantasma",
+  "hook_type": "revelation",
+  "emphasis": [
+   "2 millones",
+   "¿Serán bots?",
+   "Habla",
+   "hijo de puta",
+   "no habla nadie"
+  ],
+  "caption": "Spreen descubrió seguidores fantasmas y se volvió loco en directo #spreen #kick #streamer\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Spreen descubrió seguidores fantasmas y se volvió loco en directo",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-11-18T09:14:51.086396+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/-Ue1zokwIGo",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/spreen-kick-kc-clip-01m7bp246fp6ewy4btw7cyvcmx.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/spreen-kick-kc-clip-01m7bp246fp6ewy4btw7cyvcmx.tt.mp4",
+  "tiktok_caption": "Spreen descubrió seguidores fantasmas y se volvió loco en directo #spreen #kick #streamer",
+  "account": 3,
+  "timing_s": {
+   "download": 20,
+   "transcribe+edit+render": 154,
+   "publish+submit": 8,
+   "total": 183
+  }
+ },
+ {
+  "file": "clix-twitch-tw-2930951294-5888.mp4",
+  "creator": "Clix (Twitch)",
+  "source": "https://www.twitch.tv/videos/2930951294",
+  "start": 5862.8,
+  "end": 5946.5,
+  "cuts": 9,
+  "length": 26.9,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "hype",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Clix just won first game",
+  "hook_type": "revelation",
+  "emphasis": [
+   "win",
+   "crazy",
+   "drip",
+   "chat"
+  ],
+  "caption": "Clix was not expecting this crazy win #Clix #fortnite #streamer",
+  "title": "Clix was not expecting this crazy win",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-11-18T09:03:07.522155+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/Q9vMCOhc_sM",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2930951294-5888.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/clix-twitch-tw-2930951294-5888.tt.mp4",
+  "tiktok_caption": "Clix was not expecting this crazy win #Clix #fortnite #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 125,
+   "publish+submit": 9,
+   "total": 139
+  }
+ },
+ {
+  "file": "silky-twitch-tw-2927971577-18693.mp4",
+  "creator": "Silky (Twitch)",
+  "source": "https://www.twitch.tv/videos/2927971577",
+  "start": 18690.18,
+  "end": 18742.24,
+  "cuts": 14,
+  "length": 23.4,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Silky completely loses control live",
+  "hook_type": "stakes",
+  "emphasis": [
+   "Stop",
+   "crazy",
+   "pussy"
+  ],
+  "caption": "Silky was not ready for this chaos Silky #silky #CORE #stream\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Silky was not ready for this chaos",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-11-18T08:51:51.725191+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/0VucoDddNYg",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/silky-twitch-tw-2927971577-18693.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/silky-twitch-tw-2927971577-18693.tt.mp4",
+  "tiktok_caption": "Silky was not ready for this chaos Silky #silky #CORE #stream",
+  "account": 2,
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 124,
+   "publish+submit": 10,
+   "total": 138
+  }
+ },
+ {
+  "file": "lospollostv-kick-kc-clip-01m7j8jc0h2mvk7h6q0c2p5ezf.mp4",
+  "creator": "LosPollosTV (Kick)",
+  "source": "https://clips.kick.com/clips/1e/clip_01M7J8JC0H2MVK7H6Q0C2P5EZF/playlist.m3u8",
+  "start": 79.24,
+  "end": 168.12,
+  "cuts": 12,
+  "length": 19.9,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "kick-clip",
+  "score": 88,
+  "hook": "Caught eating munchkins on stream",
+  "hook_type": "revelation",
+  "emphasis": [
+   "munchkins",
+   "ice spice",
+   "fit"
+  ],
+  "caption": "LosPollosTV was caught eating munchkins dressed like this #lospollostv #kick #streamer",
+  "title": "LosPollosTV was caught eating munchkins dressed like this",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-11-18T08:40:58.259710+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/Dj81fV0vs2k",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lospollostv-kick-kc-clip-01m7j8jc0h2mvk7h6q0c2p5ezf.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lospollostv-kick-kc-clip-01m7j8jc0h2mvk7h6q0c2p5ezf.tt.mp4",
+  "tiktok_caption": "LosPollosTV was caught eating munchkins dressed like this #lospollostv #kick #streamer",
+  "account": 2,
+  "timing_s": {
+   "download": 11,
+   "transcribe+edit+render": 184,
+   "publish+submit": 8,
+   "total": 203
+  }
+ },
+ {
+  "file": "caseoh-twitch-tw-2928244097-7872.mp4",
+  "creator": "CaseOh (Twitch)",
+  "source": "https://www.twitch.tv/videos/2928244097",
+  "start": 7940.95,
+  "end": 7946.53,
+  "cuts": 13,
+  "length": 20.9,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "CaseOh broke his neck playing",
+  "hook_type": "revelation",
+  "emphasis": [
+   "hurt",
+   "neck",
+   "bed"
+  ],
+  "caption": "CaseOh was NOT prepared for this game #caseoh #stream #clips\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "CaseOh was NOT prepared for this game",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-11-18T08:28:04.916525+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/pITDbVJCM6I",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2928244097-7872.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/caseoh-twitch-tw-2928244097-7872.tt.mp4",
+  "tiktok_caption": "CaseOh was NOT prepared for this game #caseoh #stream #clips",
+  "account": 2,
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 184,
+   "publish+submit": 8,
+   "total": 196
+  }
+ },
+ {
+  "file": "lanah-cherry-twitch-tw-2928209519-8796.mp4",
+  "creator": "Lanah Cherry (Twitch)",
+  "source": "https://www.twitch.tv/videos/2928209519",
+  "start": 8828.79,
+  "end": 8823.19,
+  "cuts": 9,
+  "length": 22.2,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Arrest me daddy",
+  "hook_type": "revelation",
+  "emphasis": [
+   "arrest",
+   "spent",
+   "$400"
+  ],
+  "caption": "Lanah Cherry wild stream moment caught on camera #twitch #streamer #irl",
+  "title": "Lanah Cherry wild stream moment caught on camera",
+  "bed": null,
+  "campaign": "https://contentrewards.com/discover/6e379737-96ef-4980-8565-08df4e6d39d9",
+  "created": "2026-11-18T08:14:41.509897+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/RaIvRaqF8uM",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lanah-cherry-twitch-tw-2928209519-8796.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lanah-cherry-twitch-tw-2928209519-8796.tt.mp4",
+  "tiktok_caption": "Lanah Cherry wild stream moment caught on camera #twitch #streamer #irl",
+  "account": 1,
+  "submission": {
+   "error": "Content Rewards session expired: refresh the CR_STATE secret"
+  },
+  "timing_s": {
+   "download": 8,
+   "transcribe+edit+render": 143,
+   "publish+submit": 26,
+   "total": 177
+  }
+ },
+ {
+  "file": "rivers-twitch-tw-2931903608-4741.mp4",
+  "creator": "Rivers (Twitch)",
+  "source": "https://www.twitch.tv/videos/2931903608",
+  "start": 4733.08,
+  "end": 4770.86,
+  "cuts": 11,
+  "length": 30.7,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 74,
+  "hook": "ASÍ SERÁ RIVERS EN 10 AÑOS",
+  "hook_type": "revelation",
+  "emphasis": [
+   "lujoso",
+   "amargada",
+   "tele",
+   "oro"
+  ],
+  "caption": "La destruyeron imaginando a Rivers en 10 años, ¿tienen razón? #rivers #stream #clipsespañol\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "La destruyeron imaginando a Rivers en 10 años, ¿tienen razón?",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-11-18T08:03:36.186354+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/SgwRjKqD2MY",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/rivers-twitch-tw-2931903608-4741.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/rivers-twitch-tw-2931903608-4741.tt.mp4",
+  "tiktok_caption": "La destruyeron imaginando a Rivers en 10 años, ¿tienen razón? #rivers #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 130,
+   "publish+submit": 8,
+   "total": 141
+  }
+ },
+ {
+  "file": "auronplay-twitch-tw-2927869790-733.mp4",
+  "creator": "Auronplay (Twitch)",
+  "source": "https://www.twitch.tv/videos/2927869790",
+  "start": 711.72,
+  "end": 754.14,
+  "cuts": 9,
+  "length": 20.9,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 82,
+  "hook": "Le robó el jugador en la cara",
+  "hook_type": "revelation",
+  "emphasis": [
+   "entretener",
+   "negociar",
+   "jugador",
+   "pago"
+  ],
+  "caption": "Auronplay no esperaba semejante traición en directo #auronplay #stream #clipsespañol",
+  "title": "Auronplay no esperaba semejante traición en directo",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-11-18T07:52:15.256484+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/PqZpAMFpv3w",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2927869790-733.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/auronplay-twitch-tw-2927869790-733.tt.mp4",
+  "tiktok_caption": "Auronplay no esperaba semejante traición en directo #auronplay #stream #clipsespañol",
+  "account": 3,
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 150,
+   "publish+submit": 9,
+   "total": 164
+  }
+ },
+ {
+  "file": "silky-twitch-tw-2926481749-11063.mp4",
+  "creator": "Silky (Twitch)",
+  "source": "https://www.twitch.tv/videos/2926481749",
+  "start": 11088.15,
+  "end": 11126.74,
+  "cuts": 8,
+  "length": 23.1,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "tension",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Silky exposed by messy gossip pages",
+  "hook_type": "revelation",
+  "emphasis": [
+   "crazy",
+   "cheated",
+   "narrative",
+   "hurt"
+  ],
+  "caption": "Silky is so tired of these fake internet rumors Silky #silky #CORE #stream\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Silky is so tired of these fake internet rumors",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-11-18T07:35:51.711820+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/GgEMkAFtNkw",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/silky-twitch-tw-2926481749-11063.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/silky-twitch-tw-2926481749-11063.tt.mp4",
+  "tiktok_caption": "Silky is so tired of these fake internet rumors Silky #silky #CORE #stream",
+  "account": 2,
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 107,
+   "publish+submit": 9,
+   "total": 121
+  }
+ },
+ {
   "file": "lanah-cherry-twitch-twchat-2929116734-1770.mp4",
   "creator": "Lanah Cherry (Twitch)",
   "source": "https://www.twitch.tv/videos/2929116734",
