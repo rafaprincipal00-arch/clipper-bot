@@ -276,12 +276,27 @@ def gap_seconds() -> float:
     return random.uniform(lo, max(lo, hi)) * 60
 
 
+def load_focus() -> dict | None:
+    """config/focus.json {"label", "game": regex, "sources": [creator, ...]}; delete the file to go back
+    to every enabled source."""
+    f = ROOT / "config" / "focus.json"
+    if not f.exists():
+        return None
+    focus = json.loads(f.read_text(encoding="utf-8"))
+    return focus if focus.get("game") and focus.get("sources") else None
+
+
 def run_auto(do_publish: bool, min_score: int, per_source: int, total: int = 0, per_account: bool = False) -> None:
     """Round-robin over sources, best unseen moment each, paced to one clip every CLIP_GAP_MIN minutes
     until the run budget ends (the next scheduled run carries on).
     total > 0 stops after that many clips; per_account sends the clips to the accounts in turn
     (1, 2, 3, 1, 2, 3...). A platform at its daily cap is skipped, the others keep getting clips."""
     sources = [s for s in json.loads((ROOT / "config" / "sources.json").read_text(encoding="utf-8")) if s.get("enabled")]
+    focus = load_focus()
+    if focus:
+        # Focus mode (e.g. "only GTA 6"): just the listed sources, and only moments of that game.
+        sources = [s for s in sources if s["creator"] in focus["sources"]]
+        print(f"  focus '{focus.get('label', focus['game'])}': {[s['creator'] for s in sources]}")
     try:  # learn from our own views: best creators get their clips made first
         perf = performance.refresh()
         if perf:
@@ -301,12 +316,15 @@ def run_auto(do_publish: bool, min_score: int, per_source: int, total: int = 0, 
         from_pc = {}
     for src in sources:
         if from_pc.get(src["creator"]):
-            queues[src["creator"]] = [m for m in from_pc[src["creator"]] if m["id"] not in seen]
+            queues[src["creator"]] = [m for m in from_pc[src["creator"]] if m["id"] not in seen
+                                      and (not focus or moments.matches_game(m, focus["game"]))]
             print(f"[{src['creator']}] {len(queues[src['creator']])} new moments (downloaded on the PC)")
             continue
         try:
             # only_url: campaigns tied to one stream; filter before ranking so other VODs can't crowd it out.
             found = [m for m in moments.moments_for(src["source"]) if src.get("only_url", "") in m["url"]]
+            if focus:
+                found = [m for m in found if moments.matches_game(m, focus["game"])]
             queues[src["creator"]] = [m for m in moments.strongest(found) if m["id"] not in seen]
         except (OSError, ValueError, KeyError, subprocess.CalledProcessError) as e:
             print(f"[{src['creator']}] cannot list moments: {e}")

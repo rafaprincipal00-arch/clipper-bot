@@ -32,15 +32,26 @@ def _gql(query: str) -> dict:
                      {"Client-Id": TWITCH_WEB_CLIENT, "Content-Type": "application/json"})["data"]
 
 
-def _moment(mid: str, url: str, start: float, end: float, views: int, title: str, signal: str) -> dict:
+def _moment(mid: str, url: str, start: float, end: float, views: int, title: str, signal: str,
+            game: str = "") -> dict:
     return {"id": mid, "url": url, "start": max(0.0, start), "end": end, "views": views,
-            "title": title, "signal": signal}
+            "title": title, "signal": signal, "game": game or ""}
+
+
+def _game(node: dict) -> str:
+    return ((node or {}).get("game") or (node or {}).get("category") or {}).get("name") or ""
+
+
+def matches_game(m: dict, pattern: str) -> bool:
+    """Focus filter (config/focus.json): the moment's stream category, or its title when the
+    platform has no category (YouTube), must match the regex."""
+    return bool(re.search(pattern, f"{m.get('game', '')} {m.get('title', '')}", re.I))
 
 
 # ---------------- Twitch ----------------
 def twitch_clips(login: str, limit: int = 20) -> list[dict]:
     q = ('query{user(login:"%s"){clips(first:%d,criteria:{period:LAST_WEEK,sort:VIEWS_DESC}){edges{node{'
-         'slug title viewCount durationSeconds videoOffsetSeconds video{id lengthSeconds}}}}}}' % (login, limit))
+         'slug title viewCount durationSeconds videoOffsetSeconds game{name} video{id lengthSeconds}}}}}}' % (login, limit))
     user = _gql(q).get("user") or {}
     out = []
     for e in (user.get("clips") or {}).get("edges", []):
@@ -50,16 +61,16 @@ def twitch_clips(login: str, limit: int = 20) -> list[dict]:
             off = n["videoOffsetSeconds"]
             out.append(_moment(f"tw-{n['video']['id']}-{off}", f"https://www.twitch.tv/videos/{n['video']['id']}",
                                off - CONTEXT_BEFORE, off + n["durationSeconds"] + CONTEXT_AFTER,
-                               n["viewCount"], n["title"], "twitch-clip"))
+                               n["viewCount"], n["title"], "twitch-clip", _game(n)))
         else:
             # VOD expired: the clip itself (<=60 s) is all that is left.
             out.append(_moment(f"twc-{n['slug']}", f"https://clips.twitch.tv/{n['slug']}", 0, n["durationSeconds"],
-                               n["viewCount"], n["title"], "twitch-clip-only"))
+                               n["viewCount"], n["title"], "twitch-clip-only", _game(n)))
     return out
 
 
 def twitch_vods(login: str, limit: int = 3) -> list[dict]:
-    q = 'query{user(login:"%s"){videos(first:%d,type:ARCHIVE,sort:TIME){edges{node{id title lengthSeconds viewCount}}}}}' % (login, limit)
+    q = 'query{user(login:"%s"){videos(first:%d,type:ARCHIVE,sort:TIME){edges{node{id title lengthSeconds viewCount game{name}}}}}}' % (login, limit)
     user = _gql(q).get("user") or {}
     return [e["node"] for e in (user.get("videos") or {}).get("edges", [])]
 
@@ -91,7 +102,8 @@ def twitch_chat_peaks(login: str, count: int = 5, span: int = 30) -> list[dict]:
             continue
         used.append(o)
         out.append(_moment(f"twchat-{v['id']}-{o}", f"https://www.twitch.tv/videos/{v['id']}",
-                           o - CONTEXT_BEFORE, o + span + CONTEXT_AFTER, c, v["title"], f"twitch-chat({c} msgs)"))
+                           o - CONTEXT_BEFORE, o + span + CONTEXT_AFTER, c, v["title"], f"twitch-chat({c} msgs)",
+                           _game(v)))
     return out
 
 
@@ -102,7 +114,7 @@ def kick_clips(channel: str, limit: int = 20) -> list[dict]:
     for c in (data.get("clips") or [])[:limit]:
         # Kick clips carry no VOD offset, so the clip (up to 60 s) is the window.
         out.append(_moment(f"kc-{c['id']}", c["video_url"], 0, c.get("duration") or 60,
-                           c.get("views") or c.get("view_count") or 0, c.get("title", ""), "kick-clip"))
+                           c.get("views") or c.get("view_count") or 0, c.get("title", ""), "kick-clip", _game(c)))
     return out
 
 

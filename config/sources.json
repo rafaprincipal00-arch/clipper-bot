@@ -408,21 +408,23 @@
     "account": 1,
     "lang": "English",
     "hashtags": [
+      "GTA6",
+      "GTAVI",
       "KaiCenat",
-      "twitch",
-      "streamer"
+      "twitch"
     ],
     "credit": "twitch.tv/kaicenat",
-    "why": "Reach pool $10K (hasta 31/10) + Streamer U",
+    "why": "Kai Cenat - $10,000 GTA 6 Pool Campaign (Clipped & Shipped, CR): bote por vistas, TT/YT/IG/X (19/11)",
     "campaign": null,
-    "campaign_url": "https://contentrewards.com/c/campaigns/44a3ffcb-d4a1-492b-94a4-704919950246",
+    "campaign_url": "https://contentrewards.com/c/campaigns/1d2bcb00-c904-415f-aa82-f95b96baad86",
     "mention": "#KaiCenat",
     "priority": 2,
     "programs": [
       "cn-streamer-u"
     ],
-    "requirements": "Kai Cenat must be the main focus. English captions and on-screen text, use #KaiCenat. No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0.",
-    "join_status": "pendiente: cr_join 26/10 sin sesion (CR_STATE caducado)"
+    "requirements": "GTA 6 (Grand Theft Auto VI) gameplay or the streamer reacting to it must be on screen. No casino, slots, betting or gambling sponsor footage on screen or in audio. Kai Cenat must be the main focus. English captions and on-screen text, use #KaiCenat. No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0.",
+    "join_status": "pendiente: cr_join 26/10 sin sesion (CR_STATE caducado)",
+    "cpm": null
   },
   {
     "creator": "Adin Ross (Kick)",
@@ -903,9 +905,10 @@
     "source": "https://www.twitch.tv/stableronaldo",
     "enabled": true,
     "hashtags": [
+      "GTA6",
+      "GTAVI",
       "stableronaldo",
-      "stream",
-      "clips"
+      "stream"
     ],
     "credit": "twitch.tv/stableronaldo",
     "why": "CORE pool $20K de Reach (2+ miembros de CORE, hasta 30/11): crecer la cuenta 2",
@@ -915,7 +918,7 @@
       "cr-core-pool"
     ],
     "priority": 2,
-    "requirements": "Stable Ronaldo must be the main focus; credit him by name in the caption. English captions only. Clips with 2+ CORE members (Marlon, Lacy, JasonTheWeen, Silky, Adapt) also count for the CORE pool: then mention CORE and use #CORE. Never show CORE in a negative light, no logos. No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0."
+    "requirements": "GTA 6 (Grand Theft Auto VI) gameplay or the streamer reacting to it must be on screen. No casino, slots, betting or gambling sponsor footage on screen or in audio. Stable Ronaldo must be the main focus; credit him by name in the caption. English captions only. Clips with 2+ CORE members (Marlon, Lacy, JasonTheWeen, Silky, Adapt) also count for the CORE pool: then mention CORE and use #CORE. Never show CORE in a negative light, no logos. No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0."
   },
   {
     "creator": "Fanum (Twitch)",
@@ -935,11 +938,12 @@
   {
     "creator": "Lacy (Twitch)",
     "source": "https://www.twitch.tv/lacy",
-    "enabled": false,
+    "enabled": true,
     "hashtags": [
+      "GTA6",
+      "GTAVI",
       "lacy",
-      "stream",
-      "clips"
+      "stream"
     ],
     "credit": "twitch.tv/lacy",
     "why": "famoso sin campaña: crecer la cuenta",
@@ -951,8 +955,7 @@
       "cn-lacy",
       "cr-core-pool"
     ],
-    "requirements": "No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0. Credit the streamer by name in the caption.",
-    "why_off": "media 3 vistas en 3 clips (medido 20/10/2026)"
+    "requirements": "GTA 6 (Grand Theft Auto VI) gameplay or the streamer reacting to it must be on screen. No casino, slots, betting or gambling sponsor footage on screen or in audio. No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0. Credit the streamer by name in the caption."
   },
   {
     "creator": "Ice Poseidon (Kick)",
@@ -1063,12 +1066,13 @@
     "account": 2,
     "lang": "English",
     "hashtags": [
+      "GTA6",
+      "GTAVI",
       "Clix",
-      "fortnite",
-      "streamer"
+      "fortnite"
     ],
     "credit": "twitch.tv/clix",
-    "requirements": "Clix must be the primary focus. Caption or text overlay must say Clix's name; use #Clix. Only 2026 footage. Never show Clix in a negative light, no logos. No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0.",
+    "requirements": "GTA 6 (Grand Theft Auto VI) gameplay or the streamer reacting to it must be on screen. No casino, slots, betting or gambling sponsor footage on screen or in audio. Clix must be the primary focus. Caption or text overlay must say Clix's name; use #Clix. Only 2026 footage. Never show Clix in a negative light, no logos. No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0.",
     "why": "Reach pool de noviembre ($5,000, 500k vistas minimas en total); Clix = streamer EN famoso (cuenta 2)",
     "join_status": "unido a la de octubre 2026-10-17; la de noviembre pendiente de cr_join (CR_STATE caducado)",
     "priority": 2,
@@ -1553,12 +1557,16 @@
       "cr-marlon-reach",
       "cr-core-pool"
     ],
-    "requirements": "Marlon must be the main focus. Credit Marlon by name in the caption. English captions only. No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0.",
-    "why": "Marlon x Clipping (clipping.net, $1/1K bounty) y $5,000 Marlon Clipping Campaign de Reach en Content Rewards ($3/1K, TikTok/IG, cuenta 1 cuando CR_STATE vuelva)"
+    "requirements": "GTA 6 (Grand Theft Auto VI) gameplay or the streamer reacting to it must be on screen. No casino, slots, betting or gambling sponsor footage on screen or in audio. Marlon must be the main focus. Credit Marlon by name in the caption. English captions only. No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0.",
+    "why": "Marlon x Clipping (clipping.net, $1/1K bounty) y $5,000 Marlon Clipping Campaign de Reach en Content Rewards ($3/1K, TikTok/IG, cuenta 1 cuando CR_STATE vuelva)",
+    "hashtags": [
+      "GTA6",
+      "GTAVI"
+    ]
   },
   {
     "creator": "JasonTheWeen (Twitch)",
-    "source": "https://www.twitch.tv/jasontheween/videos?filter=archives&sort=time",
+    "source": "https://www.twitch.tv/jasontheween",
     "account": 2,
     "lang": "English",
     "enabled": true,
@@ -1568,8 +1576,12 @@
       "cr-jason-reach",
       "cr-core-pool"
     ],
-    "requirements": "JasonTheWeen must be the main focus; mention JasonTheWeen in the caption or on-screen text and use #JasonTheWeen. Never show him in a negative light, no logos. No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0.",
-    "why": "JasonTheWeen x Clipping (clipping.net, bote $15K, 700k vistas) y $9,000 Jason Pool de Reach (700k vistas)"
+    "requirements": "GTA 6 (Grand Theft Auto VI) gameplay or the streamer reacting to it must be on screen. No casino, slots, betting or gambling sponsor footage on screen or in audio. JasonTheWeen must be the main focus; mention JasonTheWeen in the caption or on-screen text and use #JasonTheWeen. Never show him in a negative light, no logos. No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0.",
+    "why": "JasonTheWeen x Clipping (clipping.net, bote $15K, 700k vistas) y $9,000 Jason Pool de Reach (700k vistas)",
+    "hashtags": [
+      "GTA6",
+      "GTAVI"
+    ]
   },
   {
     "creator": "Alliance Podcast/News (Bounty)",
@@ -1799,5 +1811,59 @@
     ],
     "requirements": "Silky must be the main focus; credit Silky by name in the caption. Prefer moments with a second CORE member (Marlon, Lacy, JasonTheWeen, Stable Ronaldo, Adapt): then mention CORE and use #CORE. English captions only. Never show CORE in a negative light, no logos. No casino, slots, betting or gambling sponsor footage on screen or in the caption: if the moment is about gambling, score it 0.",
     "why": "CORE pool $20K de Reach en Content Rewards (clips con 2+ miembros de CORE, MVR 2M, hasta 30/11/2026); Silky 1,45M seguidores en Twitch"
+  },
+  {
+    "creator": "KreekCraft (Twitch)",
+    "source": "https://www.twitch.tv/kreekcraft",
+    "account": 1,
+    "credit": "twitch.tv/kreekcraft",
+    "hashtags": [
+      "GTA6",
+      "GTAVI",
+      "KreekCraft"
+    ],
+    "mention": "#KreekCraft",
+    "cpm": 1.0,
+    "campaign_url": "https://contentrewards.com/c/campaigns/2eaa14fb-6927-4136-897e-b096e0d907d6",
+    "why": "KreekCraft GTA 6 Clipping (ClipLaunch, CR): $1/1k TT/IG/YT, min $3, max $300, $6.8k (19/11)",
+    "requirements": "GTA 6 (Grand Theft Auto VI) gameplay or the streamer reacting to it must be on screen. No casino, slots, betting or gambling sponsor footage on screen or in audio. Every clip must include KreekCraft's overlay and drive viewers back to his livestream (say 'live on twitch.tv/kreekcraft').",
+    "enabled": true,
+    "lang": "English"
+  },
+  {
+    "creator": "Dasgasd3m (Kick)",
+    "source": "https://kick.com/dasgasd3m",
+    "account": 1,
+    "credit": "kick.com/dasgasd3m",
+    "hashtags": [
+      "GTA6",
+      "GTAVI",
+      "Dasgasd3m"
+    ],
+    "mention": "#Dasgasd3m",
+    "cpm": 2.0,
+    "campaign_url": "https://contentrewards.com/c/campaigns/051002dd-5c46-43d0-a446-43f2957ba3a9",
+    "why": "Dasgasd3m x RUCKUS | GTA 6 (CR): $2/1k TT+YT, min $10 (5k vistas), max $150, $1k; pide cuenta de GTA 6 (19/11)",
+    "requirements": "GTA 6 (Grand Theft Auto VI) gameplay or the streamer reacting to it must be on screen. No casino, slots, betting or gambling sponsor footage on screen or in audio. Funny and entertaining GTA 6 moments of Dom (Dasgasd3m).",
+    "enabled": true,
+    "lang": "English"
+  },
+  {
+    "creator": "SypherPK (Twitch)",
+    "source": "https://www.twitch.tv/sypherpk",
+    "account": 1,
+    "credit": "twitch.tv/sypherpk",
+    "hashtags": [
+      "GTA6",
+      "GTAVI",
+      "SypherPK"
+    ],
+    "mention": "#SypherPK",
+    "cpm": 2.0,
+    "campaign_url": "https://contentrewards.com/c/campaigns/f2c529a0-6777-4e8a-b50b-4c8bd4e4d90f",
+    "why": "SypherPK $7,500 Clipping Campaign (CR): $2/1k, $7.4k libres (19/11)",
+    "requirements": "GTA 6 (Grand Theft Auto VI) gameplay or the streamer reacting to it must be on screen. No casino, slots, betting or gambling sponsor footage on screen or in audio. ",
+    "enabled": true,
+    "lang": "English"
   }
 ]
