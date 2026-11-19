@@ -4,5 +4,11 @@
   "link": "https://example.com/selftest",
   "posted": "2026-11-19T21:12:52+00:00",
   "reason": "selftest"
+ },
+ {
+  "campaign": "https://contentrewards.com/c/campaigns/1d2bcb00-c904-415f-aa82-f95b96baad86",
+  "link": "https://youtube.com/shorts/QW5iWD3KTVU",
+  "posted": "2026-11-19T21:17:51+00:00",
+  "reason": "Content Rewards session expired: refresh the CR_STATE secret"
  }
 ]
