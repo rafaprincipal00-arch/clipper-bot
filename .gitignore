@@ -18,3 +18,5 @@ data/autopilot_state.json
 data/yt_prefetch.log
 data/portfolio.json
 data/portfolio.md
+data/cr_watch_done.json
+data/cr_watch.log

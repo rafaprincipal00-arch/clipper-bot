@@ -3,15 +3,68 @@
 Content Rewards has no public API: the submit dialog is a Next.js server action, so we drive the real
 page headlessly with a saved session (Playwright storage state in env CR_STATE).
 """
+import base64
 import json
 import os
 import re
 import tempfile
+import urllib.error
+import urllib.request
+from datetime import datetime, timezone
 from pathlib import Path
+
+PENDING_PATH = "data/cr_pending.json"
+
+
+def queue_for_pc(campaign_url: str, links: list[str], reason: str) -> str:
+    """CR_STATE expired (or the page changed): push the links to data/cr_pending.json through the GitHub API
+    right now, so scripts/cr_submit_watch.py on the PC submits them from Rafa's Brave inside the 30-min
+    window. Uses the contents API, so the run's working tree is untouched."""
+    repo, tok = os.environ.get("GITHUB_REPOSITORY"), os.environ.get("GH_TOKEN")
+    if not (repo and tok):
+        return "not queued (no GitHub token)"
+    api = f"https://api.github.com/repos/{repo}/contents/{PENDING_PATH}"
+    hdr = {"Authorization": f"Bearer {tok}", "Accept": "application/vnd.github+json"}
+    for _ in range(3):  # another run may write the file at the same time (409/422 -> retry)
+        sha, items = None, []
+        try:
+            with urllib.request.urlopen(urllib.request.Request(api + "?ref=main", headers=hdr), timeout=30) as r:
+                cur = json.loads(r.read())
+            sha, items = cur["sha"], json.loads(base64.b64decode(cur["content"]) or b"[]")
+        except urllib.error.HTTPError as e:
+            if e.code != 404:
+                raise
+        now = datetime.now(timezone.utc)
+        items = [i for i in items if (now - datetime.fromisoformat(i["posted"])).total_seconds() < 6 * 3600]
+        items += [{"campaign": campaign_url, "link": lk, "posted": now.isoformat(timespec="seconds"),
+                   "reason": reason[:120]} for lk in links]
+        body = {"message": "cr_pending: queue for the PC [skip ci]", "branch": "main",
+                "content": base64.b64encode(json.dumps(items, indent=1).encode()).decode()}
+        if sha:
+            body["sha"] = sha
+        try:
+            req = urllib.request.Request(api, data=json.dumps(body).encode(), headers=hdr, method="PUT")
+            urllib.request.urlopen(req, timeout=30).close()
+            return "queued for the PC (Brave)"
+        except urllib.error.HTTPError as e:
+            if e.code not in (409, 422):
+                raise
+    return "not queued (write conflicts)"
 
 
 def submit(campaign_url: str, links: list[str]) -> dict:
-    """Returns {"submitted": [...], "rejected": {link: reason}} or {"error": ...}."""
+    """Returns {"submitted": [...], "rejected": {link: reason}} or {"error": ...}. An error in GitHub
+    Actions queues the links for the PC (Rafa's Brave session) instead of losing them."""
+    res = _submit(campaign_url, links)
+    if res.get("error") and campaign_url and links and os.environ.get("GITHUB_ACTIONS"):
+        try:
+            res["fallback"] = queue_for_pc(campaign_url, links, res["error"])
+        except Exception as e:  # noqa: BLE001
+            res["fallback"] = f"queue failed: {e}"[:200]
+    return res
+
+
+def _submit(campaign_url: str, links: list[str]) -> dict:
     state = os.environ.get("CR_STATE")
     if not (state and campaign_url and links):
         return {"error": "skipped (no CR_STATE / campaign / links)"}
@@ -93,4 +146,5 @@ def submit(campaign_url: str, links: list[str]) -> dict:
 
 if __name__ == "__main__":
     import sys
-    print(json.dumps(submit(sys.argv[1], sys.argv[2:]), indent=1))
+    res = submit(sys.argv[1], sys.argv[2:])
+    print(json.dumps(res, indent=1))

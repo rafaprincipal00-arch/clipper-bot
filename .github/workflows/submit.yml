@@ -11,7 +11,7 @@ on:
         required: true
 
 permissions:
-  contents: read
+  contents: write  # data/cr_pending.json when CR_STATE has expired
 
 jobs:
   submit:
@@ -19,6 +19,7 @@ jobs:
     timeout-minutes: 15
     env:
       CR_STATE: ${{ secrets.CR_STATE }}
+      GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

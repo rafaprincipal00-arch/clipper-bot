@@ -211,12 +211,12 @@ def make_clip(moment: dict, creator: str, campaign: dict | None, do_publish: boo
                 pass
         n_beds = len(render.RECENT_BEDS)
         render.render_edit(str(raw), segs, info, ass, final, credit="" if clean else camp.get("credit", ""),
-                           mood=mood, style=style, with_music=not clean)
+                           mood=mood, style=style, with_music=not clean, logo=camp.get("logo", ""))
         bed = (render.RECENT_BEDS[-1] or None) if len(render.RECENT_BEDS) > n_beds else None
         # Same edit without the music bed for TikTok, where the poster adds a song from TikTok's library.
         tt_final = OUT / f"{name}.tt.mp4"
         render.render_edit(str(raw), segs, info, ass, tt_final, credit="" if clean else camp.get("credit", ""),
-                           mood=mood, style=style, with_music=False)
+                           mood=mood, style=style, with_music=False, logo=camp.get("logo", ""))
     # scratch dir (raw window, wav, captions) is gone here; only the edited clip remains.
     t_render = time.time()
     tags = " ".join(f"#{t.lstrip('#')}" for t in (campaign or {}).get("hashtags", []))

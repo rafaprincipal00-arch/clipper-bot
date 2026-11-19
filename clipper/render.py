@@ -136,7 +136,8 @@ def sfx_plan(segments: list[tuple[float, float]]) -> list[tuple[str, float]]:
 
 
 def render_edit(src: str, segments: list[tuple[float, float]], info: dict, ass: Path, out: Path,
-                credit: str = "", mood: str = "funny", style: str = "vertical", with_music: bool = True) -> None:
+                credit: str = "", mood: str = "funny", style: str = "vertical", with_music: bool = True,
+                logo: str = "") -> None:
     """Cut `segments` out of `src`, frame each for 9:16 (layout `info`), alternate punch-in zoom on the
     cuts, then burn captions and add the ducked music bed (no fade/flash at either end). One ffmpeg pass."""
     from . import layout
@@ -164,7 +165,8 @@ def render_edit(src: str, segments: list[tuple[float, float]], info: dict, ass: 
         safe = credit.replace(":", "\\:").replace("'", "")
         credit_f = (f",drawtext=fontfile='{_rel(FONT_FILE)}':text='{safe}':fontcolor=white@0.9:fontsize=38"
                     ":x=(w-tw)/2:y=h-190:box=1:boxcolor=black@0.4:boxborderw=14")
-    g.append(f"[vc]subtitles='{_rel(ass)}':fontsdir='{_rel(FONTS)}'{credit_f}[v]")  # no white flash: viral clips open on a clean frame
+    vout = "[vsub]" if logo else "[v]"
+    g.append(f"[vc]subtitles='{_rel(ass)}':fontsdir='{_rel(FONTS)}'{credit_f}{vout}")  # no white flash: viral clips open on a clean frame
     # TikTok copy is rendered without a bed: the poster adds a trending song from TikTok's licensed library.
     music = pick_music(out.stem, mood) if with_music else None
     cmd = ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", src]
@@ -194,6 +196,12 @@ def render_edit(src: str, segments: list[tuple[float, float]], info: dict, ass: 
         g.append("[voice][duck]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11[aout]")
     else:
         g.append(f"{voice}loudnorm=I=-14:TP=-1.5:LRA=11[aout]")
+    if logo:
+        # Campaign logo that must stay visible the whole clip (e.g. KreekCraft): top centre, above the hook.
+        idx = cmd.count("-i")
+        cmd += ["-loop", "1", "-i", _rel(ROOT / logo)]
+        g.append(f"[{idx}:v]scale=540:-1,format=rgba[lg]")
+        g.append("[vsub][lg]overlay=(W-w)/2:40:shortest=1[v]")
     cmd += ["-filter_complex", ";".join(g), "-map", "[v]", "-map", "[aout]", "-shortest",
             "-c:v", "libx264", "-preset", "veryfast", "-crf", "19", "-pix_fmt", "yuv420p", "-r", "30",
             "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", str(out.resolve())]
