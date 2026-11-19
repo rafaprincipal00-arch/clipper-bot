@@ -1,50 +1,75 @@
 {
- "updated": "2026-11-18T07:31:48+00:00",
- "clips": 246,
+ "updated": "2026-11-19T07:32:09+00:00",
+ "clips": 253,
  "by_creator": {
+  "Lanah Cherry (Twitch)": {
+   "clips": 20,
+   "views": 21547,
+   "avg_views": 1077
+  },
+  "Auronplay (Twitch)": {
+   "clips": 22,
+   "views": 23558,
+   "avg_views": 1071
+  },
+  "xQc (Kick)": {
+   "clips": 6,
+   "views": 205,
+   "avg_views": 34
+  },
+  "Adin Ross (Kick)": {
+   "clips": 10,
+   "views": 944,
+   "avg_views": 94
+  },
+  "Marlon (Twitch)": {
+   "clips": 6,
+   "views": 2311,
+   "avg_views": 385
+  },
+  "Clix (Twitch)": {
+   "clips": 18,
+   "views": 23508,
+   "avg_views": 1306
+  },
+  "LosPollosTV (Kick)": {
+   "clips": 12,
+   "views": 5876,
+   "avg_views": 490
+  },
   "Kai Cenat (Twitch)": {
    "clips": 19,
-   "views": 20030,
-   "avg_views": 1054
+   "views": 20158,
+   "avg_views": 1061
   },
   "Ibai (Twitch)": {
    "clips": 17,
-   "views": 7066,
-   "avg_views": 416
+   "views": 7207,
+   "avg_views": 424
   },
   "Jynxzi (Twitch)": {
    "clips": 13,
-   "views": 13114,
-   "avg_views": 1009
-  },
-  "Adin Ross (Kick)": {
-   "clips": 9,
-   "views": 943,
-   "avg_views": 105
+   "views": 13162,
+   "avg_views": 1012
   },
   "JasonTheWeen (Twitch)": {
    "clips": 3,
-   "views": 813,
+   "views": 814,
    "avg_views": 271
-  },
-  "Clix (Twitch)": {
-   "clips": 17,
-   "views": 22869,
-   "avg_views": 1345
   },
   "Cuffem (Kick)": {
    "clips": 4,
-   "views": 3440,
-   "avg_views": 860
+   "views": 3459,
+   "avg_views": 865
   },
   "Westcol (Kick)": {
    "clips": 18,
-   "views": 12121,
-   "avg_views": 673
+   "views": 12143,
+   "avg_views": 675
   },
   "Stable Ronaldo (Twitch)": {
    "clips": 11,
-   "views": 5475,
+   "views": 5478,
    "avg_views": 498
   },
   "CaseOh (Twitch)": {
@@ -57,45 +82,20 @@
    "views": 9,
    "avg_views": 3
   },
-  "Marlon (Twitch)": {
-   "clips": 5,
-   "views": 2309,
-   "avg_views": 462
-  },
   "Rivers (Twitch)": {
    "clips": 9,
-   "views": 9777,
-   "avg_views": 1086
-  },
-  "Auronplay (Twitch)": {
-   "clips": 21,
-   "views": 23406,
-   "avg_views": 1115
+   "views": 9890,
+   "avg_views": 1099
   },
   "IlloJuan (Twitch)": {
    "clips": 3,
-   "views": 1243,
-   "avg_views": 414
-  },
-  "LosPollosTV (Kick)": {
-   "clips": 11,
-   "views": 5704,
-   "avg_views": 519
+   "views": 1244,
+   "avg_views": 415
   },
   "Spreen (Kick)": {
    "clips": 15,
-   "views": 14736,
+   "views": 14735,
    "avg_views": 982
-  },
-  "Lanah Cherry (Twitch)": {
-   "clips": 19,
-   "views": 20370,
-   "avg_views": 1072
-  },
-  "xQc (Kick)": {
-   "clips": 5,
-   "views": 35,
-   "avg_views": 7
   },
   "Juansguarnizo (Kick)": {
    "clips": 2,
@@ -104,7 +104,7 @@
   },
   "elZeein (Kick)": {
    "clips": 2,
-   "views": 495,
+   "views": 497,
    "avg_views": 248
   },
   "Clix x Yeat (Twitch)": {
@@ -228,7 +228,7 @@
    "mood": "funny",
    "hook_type": "revelation",
    "score": 88,
-   "views": 2784,
+   "views": 2789,
    "likes": 24,
    "id": "HVX_1C1azwo"
   }
@@ -246,15 +246,15 @@
    "id": "PECejBjodDw"
   },
   {
-   "creator": "Westcol (Kick)",
-   "hook": "El peso exacto de Carola",
-   "title": "Westcol alucina con el gran cambio físico de Carola",
-   "mood": "hype",
-   "hook_type": "revelation",
-   "score": 75,
+   "creator": "Marlon (Twitch)",
+   "hook": "MARLON THOUGHT DRIVING WAS EASY",
+   "title": "Furious Marlon almost crashes live after saying driving is too easy",
+   "mood": "chaos",
+   "hook_type": "contrarian",
+   "score": 86,
    "views": 0,
    "likes": 0,
-   "id": "6t23y7bWlWw"
+   "id": "JXdTfpVV5B0"
   },
   {
    "creator": "Westcol (Kick)",
