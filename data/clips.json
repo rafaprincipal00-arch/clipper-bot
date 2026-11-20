@@ -1,5 +1,434 @@
 [
  {
+  "file": "lacy-twitch-tw-2932194507-2916.mp4",
+  "creator": "Lacy (Twitch)",
+  "source": "https://www.twitch.tv/videos/2932194507",
+  "start": 2881,
+  "end": 2937.78,
+  "cuts": 19,
+  "length": 24.3,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "hype",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "GTA 6 is finally here",
+  "hook_type": "revelation",
+  "emphasis": [
+   "officially",
+   "comes",
+   "out",
+   "waiting"
+  ],
+  "caption": "Lacy reacts to the release of GTA 6 after 13 years #GTA6 #GTAVI #lacy #stream",
+  "title": "Lacy reacts to the release of GTA 6 after 13 years",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-11-20T09:24:51.418577+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/upmXqz4l_DA",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lacy-twitch-tw-2932194507-2916.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lacy-twitch-tw-2932194507-2916.tt.mp4",
+  "tiktok_caption": "Lacy reacts to the release of GTA 6 after 13 years #GTA6 #GTAVI #lacy #stream",
+  "account": 2,
+  "timing_s": {
+   "download": 2,
+   "transcribe+edit+render": 122,
+   "publish+submit": 9,
+   "total": 132
+  }
+ },
+ {
+  "file": "kreekcraft-twitch-tw-2932147800-48069.mp4",
+  "creator": "KreekCraft (Twitch)",
+  "source": "https://www.twitch.tv/videos/2932147800",
+  "start": 48089.18,
+  "end": 48121.97,
+  "cuts": 13,
+  "length": 20.0,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "KreekCraft got ambushed by an alligator",
+  "hook_type": "revelation",
+  "emphasis": [
+   "Oh shoot",
+   "nowhere",
+   "sick",
+   "What the hell"
+  ],
+  "caption": "KreekCraft was NOT ready for this alligator attack Watch KreekCraft on YouTube and Twitch #GTA6 #KreekCraft #GrandTheftAutoVI\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "KreekCraft was NOT ready for this alligator attack",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": "https://contentrewards.com/c/campaigns/2eaa14fb-6927-4136-897e-b096e0d907d6",
+  "created": "2026-11-20T09:13:22.487327+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/zEFRbPaFwlc",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kreekcraft-twitch-tw-2932147800-48069.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kreekcraft-twitch-tw-2932147800-48069.tt.mp4",
+  "tiktok_caption": "KreekCraft was NOT ready for this alligator attack Watch KreekCraft on YouTube and Twitch #GTA6 #KreekCraft #GrandTheftAutoVI",
+  "account": 1,
+  "submission": {
+   "error": "Content Rewards session expired: refresh the CR_STATE secret",
+   "fallback": "queued for the PC (Brave)"
+  },
+  "timing_s": {
+   "download": 2,
+   "transcribe+edit+render": 205,
+   "publish+submit": 18,
+   "total": 225
+  }
+ },
+ {
+  "file": "stable-ronaldo-twitch-tw-2932442046-16391.mp4",
+  "creator": "Stable Ronaldo (Twitch)",
+  "source": "https://www.twitch.tv/videos/2932442046",
+  "start": 16386.66,
+  "end": 16433.32,
+  "cuts": 11,
+  "length": 20.6,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "Stable Ronaldo nearly gets banned live",
+  "hook_type": "revelation",
+  "emphasis": [
+   "banned",
+   "YouTube"
+  ],
+  "caption": "Stable Ronaldo panicked when he realized he might get banned #GTA6 #GTAVI #stableronaldo #stream",
+  "title": "Stable Ronaldo panicked when he realized he might get banned",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-11-20T09:00:20.513415+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/Nj8cG8NWR8Q",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/stable-ronaldo-twitch-tw-2932442046-16391.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/stable-ronaldo-twitch-tw-2932442046-16391.tt.mp4",
+  "tiktok_caption": "Stable Ronaldo panicked when he realized he might get banned #GTA6 #GTAVI #stableronaldo #stream",
+  "account": 2,
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 184,
+   "publish+submit": 9,
+   "total": 196
+  }
+ },
+ {
+  "file": "kreekcraft-twitch-tw-2932147800-33294.mp4",
+  "creator": "KreekCraft (Twitch)",
+  "source": "https://www.twitch.tv/videos/2932147800",
+  "start": 33270.17,
+  "end": 33313.18,
+  "cuts": 14,
+  "length": 26.5,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 92,
+  "hook": "He just ended his career live",
+  "hook_type": "revelation",
+  "emphasis": [
+   "canceled",
+   "banned",
+   "boobies"
+  ],
+  "caption": "KreekCraft instantly regretted saying this on stream Watch KreekCraft on YouTube and Twitch #GTA6 #KreekCraft #GrandTheftAutoVI\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "KreekCraft instantly regretted saying this on stream",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": "https://contentrewards.com/c/campaigns/2eaa14fb-6927-4136-897e-b096e0d907d6",
+  "created": "2026-11-20T08:48:27.045184+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/Y_FMivCCbgg",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kreekcraft-twitch-tw-2932147800-33294.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kreekcraft-twitch-tw-2932147800-33294.tt.mp4",
+  "tiktok_caption": "KreekCraft instantly regretted saying this on stream Watch KreekCraft on YouTube and Twitch #GTA6 #KreekCraft #GrandTheftAutoVI",
+  "account": 1,
+  "submission": {
+   "error": "Content Rewards session expired: refresh the CR_STATE secret",
+   "fallback": "queued for the PC (Brave)"
+  },
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 173,
+   "publish+submit": 22,
+   "total": 199
+  }
+ },
+ {
+  "file": "lacy-twitch-tw-2932194507-6849.mp4",
+  "creator": "Lacy (Twitch)",
+  "source": "https://www.twitch.tv/videos/2932194507",
+  "start": 6835.65,
+  "end": 6901.24,
+  "cuts": 10,
+  "length": 20.8,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "Lacy wants GTA 6 realistic",
+  "hook_type": "revelation",
+  "emphasis": [
+   "realistic",
+   "cock",
+   "Lucia"
+  ],
+  "caption": "Lacy was not ready for GTA 6 graphics #GTA6 #GTAVI #lacy #stream",
+  "title": "Lacy was not ready for GTA 6 graphics",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-11-20T08:36:30.183453+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/1ucckJ6DDqY",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lacy-twitch-tw-2932194507-6849.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lacy-twitch-tw-2932194507-6849.tt.mp4",
+  "tiktok_caption": "Lacy was not ready for GTA 6 graphics #GTA6 #GTAVI #lacy #stream",
+  "account": 2,
+  "timing_s": {
+   "download": 2,
+   "transcribe+edit+render": 142,
+   "publish+submit": 10,
+   "total": 155
+  }
+ },
+ {
+  "file": "stable-ronaldo-twitch-tw-2932442046-16699.mp4",
+  "creator": "Stable Ronaldo (Twitch)",
+  "source": "https://www.twitch.tv/videos/2932442046",
+  "start": 16679.98,
+  "end": 16711.4,
+  "cuts": 7,
+  "length": 21.6,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Stable Ronaldo lost everything instantly",
+  "hook_type": "revelation",
+  "emphasis": [
+   "evaporated",
+   "money",
+   "idiots"
+  ],
+  "caption": "Stable Ronaldo completely ruined his stream in one click #GTA6 #GTAVI #stableronaldo #stream\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Stable Ronaldo completely ruined his stream in one click",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-11-20T08:25:42.349659+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/k44L6yts5Wc",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/stable-ronaldo-twitch-tw-2932442046-16699.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/stable-ronaldo-twitch-tw-2932442046-16699.tt.mp4",
+  "tiktok_caption": "Stable Ronaldo completely ruined his stream in one click #GTA6 #GTAVI #stableronaldo #stream",
+  "account": 2,
+  "timing_s": {
+   "download": 2,
+   "transcribe+edit+render": 123,
+   "publish+submit": 10,
+   "total": 135
+  }
+ },
+ {
+  "file": "dasgasd3m-kick-kc-clip-01m7t8nw38sm5knmgzvsg8zkje.mp4",
+  "creator": "Dasgasd3m (Kick)",
+  "source": "https://clips.kick.com/clips/9c/clip_01M7T8NW38SM5KNMGZVSG8ZKJE/playlist.m3u8",
+  "start": 38.129999999999995,
+  "end": 51.629999999999995,
+  "cuts": 11,
+  "length": 21.9,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "kick-clip",
+  "score": 85,
+  "hook": "Grandma got away from Dom",
+  "hook_type": "revelation",
+  "emphasis": [
+   "catch",
+   "shit",
+   "grandma"
+  ],
+  "caption": "Dom was NOT ready for grandma to do that #dasgasdom3 kick.com/dasgasd3m #GTA6 #GTAVI",
+  "title": "Dom was NOT ready for grandma to do that",
+  "bed": null,
+  "campaign": "https://contentrewards.com/c/campaigns/051002dd-5c46-43d0-a446-43f2957ba3a9",
+  "created": "2026-11-20T08:14:47.439987+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/ga4wd1gBNKQ",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/dasgasd3m-kick-kc-clip-01m7t8nw38sm5knmgzvsg8zkje.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/dasgasd3m-kick-kc-clip-01m7t8nw38sm5knmgzvsg8zkje.tt.mp4",
+  "tiktok_caption": "Dom was NOT ready for grandma to do that #dasgasdom3 kick.com/dasgasd3m #GTA6 #GTAVI",
+  "account": 1,
+  "submission": {
+   "error": "Content Rewards session expired: refresh the CR_STATE secret",
+   "fallback": "queued for the PC (Brave)"
+  },
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 145,
+   "publish+submit": 19,
+   "total": 168
+  }
+ },
+ {
+  "file": "kreekcraft-twitch-tw-2932147800-41330.mp4",
+  "creator": "KreekCraft (Twitch)",
+  "source": "https://www.twitch.tv/videos/2932147800",
+  "start": 41379.31,
+  "end": 41333.62,
+  "cuts": 11,
+  "length": 27.0,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 92,
+  "hook": "Crocodile attacks live on GTA 6",
+  "hook_type": "stakes",
+  "emphasis": [
+   "crocodile",
+   "kidding",
+   "eaten",
+   "bites"
+  ],
+  "caption": "KreekCraft was NOT ready for this crocodile attack Watch KreekCraft on YouTube and Twitch #GTA6 #KreekCraft #GrandTheftAutoVI\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "KreekCraft was NOT ready for this crocodile attack",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": "https://contentrewards.com/c/campaigns/2eaa14fb-6927-4136-897e-b096e0d907d6",
+  "created": "2026-11-20T08:03:28.461327+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/KPlrMUKfX1E",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kreekcraft-twitch-tw-2932147800-41330.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kreekcraft-twitch-tw-2932147800-41330.tt.mp4",
+  "tiktok_caption": "KreekCraft was NOT ready for this crocodile attack Watch KreekCraft on YouTube and Twitch #GTA6 #KreekCraft #GrandTheftAutoVI",
+  "account": 1,
+  "submission": {
+   "error": "Content Rewards session expired: refresh the CR_STATE secret",
+   "fallback": "queued for the PC (Brave)"
+  },
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 263,
+   "publish+submit": 20,
+   "total": 286
+  }
+ },
+ {
+  "file": "lacy-twitch-tw-2932194507-3032.mp4",
+  "creator": "Lacy (Twitch)",
+  "source": "https://www.twitch.tv/videos/2932194507",
+  "start": 3007.29,
+  "end": 3068.83,
+  "cuts": 10,
+  "length": 22.5,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "Lacy met his dream girl",
+  "hook_type": "revelation",
+  "emphasis": [
+   "fine",
+   "position",
+   "guy"
+  ],
+  "caption": "Lacy was not ready for this NPC interaction #GTA6 #GTAVI #lacy #stream",
+  "title": "Lacy was not ready for this NPC interaction",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-11-20T07:49:57.185537+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/9TXmTEEhRiU",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lacy-twitch-tw-2932194507-3032.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lacy-twitch-tw-2932194507-3032.tt.mp4",
+  "tiktok_caption": "Lacy was not ready for this NPC interaction #GTA6 #GTAVI #lacy #stream",
+  "account": 2,
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 199,
+   "publish+submit": 9,
+   "total": 213
+  }
+ },
+ {
+  "file": "kai-cenat-twitch-tw-2932305259-10334.mp4",
+  "creator": "Kai Cenat (Twitch)",
+  "source": "https://www.twitch.tv/videos/2932305259",
+  "start": 10345.87,
+  "end": 10388.91,
+  "cuts": 12,
+  "length": 36.3,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Kai gets caught in 4K",
+  "hook_type": "revelation",
+  "emphasis": [
+   "god",
+   "jail",
+   "lying",
+   "bartender"
+  ],
+  "caption": "Kai Cenat got caught instantly by the bartender #KaiCenat #GTA6 #GTAVI #KaiCenat #twitch\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Kai Cenat got caught instantly by the bartender",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": "https://contentrewards.com/c/campaigns/1d2bcb00-c904-415f-aa82-f95b96baad86",
+  "created": "2026-11-20T07:36:42.462144+00:00",
+  "posts": {
+   "youtube": "skipped (daily cap)",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2932305259-10334.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2932305259-10334.tt.mp4",
+  "tiktok_caption": "Kai Cenat got caught instantly by the bartender #KaiCenat #GTA6 #GTAVI #KaiCenat #twitch",
+  "account": 1,
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 280,
+   "publish+submit": 8,
+   "total": 293
+  }
+ },
+ {
   "file": "kreekcraft-twitch-tw-2932147800-20910.mp4",
   "creator": "KreekCraft (Twitch)",
   "source": "https://www.twitch.tv/videos/2932147800",
