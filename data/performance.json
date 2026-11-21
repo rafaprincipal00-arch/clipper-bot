@@ -1,116 +1,126 @@
 {
- "updated": "2026-11-20T07:31:53+00:00",
- "clips": 266,
+ "updated": "2026-11-21T07:32:00+00:00",
+ "clips": 282,
  "by_creator": {
+  "KreekCraft (Twitch)": {
+   "clips": 3,
+   "views": 7,
+   "avg_views": 2
+  },
+  "Dasgasd3m (Kick)": {
+   "clips": 1,
+   "views": 2,
+   "avg_views": 2
+  },
   "Kai Cenat (Twitch)": {
-   "clips": 23,
-   "views": 23052,
-   "avg_views": 1002
+   "clips": 25,
+   "views": 23541,
+   "avg_views": 942
+  },
+  "elZeein (Kick)": {
+   "clips": 4,
+   "views": 937,
+   "avg_views": 234
+  },
+  "IlloJuan (Twitch)": {
+   "clips": 6,
+   "views": 1966,
+   "avg_views": 328
+  },
+  "JasonTheWeen (Twitch)": {
+   "clips": 4,
+   "views": 1753,
+   "avg_views": 438
+  },
+  "Marlon (Twitch)": {
+   "clips": 7,
+   "views": 2313,
+   "avg_views": 330
+  },
+  "Stable Ronaldo (Twitch)": {
+   "clips": 12,
+   "views": 5513,
+   "avg_views": 459
+  },
+  "Clix (Twitch)": {
+   "clips": 20,
+   "views": 24627,
+   "avg_views": 1231
+  },
+  "Cuffem (Kick)": {
+   "clips": 5,
+   "views": 3522,
+   "avg_views": 704
   },
   "Spreen (Kick)": {
    "clips": 16,
-   "views": 15285,
-   "avg_views": 955
-  },
-  "Clix (Twitch)": {
-   "clips": 19,
-   "views": 24380,
-   "avg_views": 1283
+   "views": 15509,
+   "avg_views": 969
   },
   "Silky (Twitch)": {
    "clips": 2,
-   "views": 19,
-   "avg_views": 10
+   "views": 29,
+   "avg_views": 14
   },
   "LosPollosTV (Kick)": {
    "clips": 13,
-   "views": 5895,
-   "avg_views": 453
+   "views": 5896,
+   "avg_views": 454
   },
   "CaseOh (Twitch)": {
    "clips": 16,
-   "views": 7261,
-   "avg_views": 454
+   "views": 7304,
+   "avg_views": 456
   },
   "Lanah Cherry (Twitch)": {
    "clips": 21,
-   "views": 23119,
-   "avg_views": 1101
+   "views": 23198,
+   "avg_views": 1105
   },
   "Rivers (Twitch)": {
    "clips": 10,
-   "views": 10830,
-   "avg_views": 1083
+   "views": 10912,
+   "avg_views": 1091
   },
   "Auronplay (Twitch)": {
    "clips": 23,
-   "views": 25045,
-   "avg_views": 1089
+   "views": 25259,
+   "avg_views": 1098
   },
   "xQc (Kick)": {
    "clips": 6,
-   "views": 207,
-   "avg_views": 34
+   "views": 208,
+   "avg_views": 35
   },
   "Adin Ross (Kick)": {
    "clips": 10,
    "views": 944,
    "avg_views": 94
   },
-  "Marlon (Twitch)": {
-   "clips": 6,
-   "views": 2312,
-   "avg_views": 385
-  },
   "Ibai (Twitch)": {
    "clips": 17,
-   "views": 7260,
+   "views": 7262,
    "avg_views": 427
   },
   "Jynxzi (Twitch)": {
    "clips": 13,
-   "views": 13162,
-   "avg_views": 1012
-  },
-  "JasonTheWeen (Twitch)": {
-   "clips": 3,
-   "views": 814,
-   "avg_views": 271
-  },
-  "Cuffem (Kick)": {
-   "clips": 4,
-   "views": 3499,
-   "avg_views": 875
+   "views": 13164,
+   "avg_views": 1013
   },
   "Westcol (Kick)": {
    "clips": 18,
-   "views": 12139,
+   "views": 12140,
    "avg_views": 674
-  },
-  "Stable Ronaldo (Twitch)": {
-   "clips": 11,
-   "views": 5507,
-   "avg_views": 501
   },
   "N3on (Kick)": {
    "clips": 3,
    "views": 9,
    "avg_views": 3
   },
-  "IlloJuan (Twitch)": {
-   "clips": 3,
-   "views": 1245,
-   "avg_views": 415
-  },
   "Juansguarnizo (Kick)": {
    "clips": 2,
    "views": 2342,
    "avg_views": 1171
-  },
-  "elZeein (Kick)": {
-   "clips": 2,
-   "views": 498,
-   "avg_views": 249
   },
   "Clix x Yeat (Twitch)": {
    "clips": 2,
@@ -233,22 +243,22 @@
    "mood": "funny",
    "hook_type": "revelation",
    "score": 88,
-   "views": 2792,
+   "views": 2799,
    "likes": 24,
    "id": "HVX_1C1azwo"
   }
  ],
  "bottom": [
   {
-   "creator": "Silky (Twitch)",
-   "hook": "Silky completely loses control live",
-   "title": "Silky was not ready for this chaos",
+   "creator": "IlloJuan (Twitch)",
+   "hook": "Borró el juego por memoria muscular",
+   "title": "IlloJuan borró el juego entero en directo por error",
    "mood": "chaos",
-   "hook_type": "stakes",
-   "score": 88,
+   "hook_type": "revelation",
+   "score": 85,
    "views": 0,
    "likes": 0,
-   "id": "0VucoDddNYg"
+   "id": "qeygn41P3cM"
   },
   {
    "creator": "Marlon (Twitch)",

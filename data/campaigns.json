@@ -1,14 +1,14 @@
 {
  "all": [
   {
-   "id": "2f4e4a26-0643-449f-80da-db22d0755d21",
-   "title": "Kitsch x Nic Vans",
-   "brand": "Clip Farm",
-   "category": "Entertainment",
-   "description": "Kitsch makes hair care and hair gifts. Nic from Love Island USA dresses as Santa. He gives Kitsch gifts to his mom and sister.",
-   "cpm": 1.5,
-   "budget_left": 39997.52,
-   "budget_total": 40000.0,
+   "id": "802cf95a-ea84-4070-9a96-8a917831cb16",
+   "title": "GTA VI Clipup Logo Campaign",
+   "brand": "ClipUp Official",
+   "category": "GTA",
+   "description": "Clip any streamer posting for GTA VI and add our logo on it! Thats it! Really!",
+   "cpm": 0.3,
+   "budget_left": 15000.0,
+   "budget_total": 15000.0,
    "platforms": [
     "instagram",
     "tiktok",
@@ -16,6 +16,24 @@
    ],
    "requires_application": false,
    "clippers": 1,
+   "url": "https://contentrewards.com/discover/802cf95a-ea84-4070-9a96-8a917831cb16"
+  },
+  {
+   "id": "2f4e4a26-0643-449f-80da-db22d0755d21",
+   "title": "Kitsch x Nic Vans",
+   "brand": "Clip Farm",
+   "category": "Entertainment",
+   "description": "Kitsch makes hair care and hair gifts. Nic from Love Island USA dresses as Santa. He gives Kitsch gifts to his mom and sister.",
+   "cpm": 1.5,
+   "budget_left": 39948.82,
+   "budget_total": 40000.0,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": false,
+   "clippers": 5,
    "url": "https://contentrewards.com/discover/2f4e4a26-0643-449f-80da-db22d0755d21"
   },
   {
@@ -25,7 +43,7 @@
    "category": "Streamer",
    "description": "Clip content from Lacy's GTA 6 marathon!  READ THE RULES AND REQUIREMENTS HERE:  https://reachclipping.com/LACYGTA  Campaign ending when the marathon ends.",
    "cpm": 0.0,
-   "budget_left": 14293.14,
+   "budget_left": 12327.41,
    "budget_total": 15000.0,
    "platforms": [
     "instagram",
@@ -34,7 +52,7 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 782,
+   "clippers": 1559,
    "url": "https://contentrewards.com/discover/5aa9471b-1dc9-4a2a-891b-889c8b985426"
   },
   {
@@ -44,7 +62,7 @@
    "category": "Technology",
    "description": "Arcade is an AI video platform that helps marketers, founders, and businesses create polished marketing videos from a prompt, website URL, screen recording, or screenshots.  The campaign introduces Arcade to people who have a real product, service, or business to market.",
    "cpm": 1.0,
-   "budget_left": 9995.3,
+   "budget_left": 9972.49,
    "budget_total": 10000.0,
    "platforms": [
     "instagram",
@@ -53,26 +71,8 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 1,
+   "clippers": 4,
    "url": "https://contentrewards.com/discover/bcd2f999-814a-4056-ae7e-c7c8012fab0b"
-  },
-  {
-   "id": "c7a8e7c2-6989-4361-914f-f9571578a9b9",
-   "title": "F1 ASTON MARTIN x COINBASE ",
-   "brand": "ClipHaus",
-   "category": "Sports",
-   "description": "Clip the funniest reactions, fan challenges, and behind-the-scenes moments from an F1 superfan's COTA adventure with Dale Brisby. Make entertaining, fast-paced edits that feel like F1 fan content, not ads.",
-   "cpm": 1.5,
-   "budget_left": 3854.7700000000004,
-   "budget_total": 15000.0,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "youtube"
-   ],
-   "requires_application": false,
-   "clippers": 250,
-   "url": "https://contentrewards.com/discover/c7a8e7c2-6989-4361-914f-f9571578a9b9"
   },
   {
    "id": "1d2bcb00-c904-415f-aa82-f95b96baad86",
@@ -90,27 +90,8 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 92,
+   "clippers": 581,
    "url": "https://contentrewards.com/discover/1d2bcb00-c904-415f-aa82-f95b96baad86"
-  },
-  {
-   "id": "2eaa14fb-6927-4136-897e-b096e0d907d6",
-   "title": "KreekCraft GTA 6 Clipping",
-   "brand": "ClipLaunch",
-   "category": "Twitch",
-   "description": "Get paid to clip KreekCraft's funniest, craziest, and most viral GTA 6 livestream moments! Turn hilarious reactions, insane gameplay, and unexpected moments into short-form clips. Every clip must include KreekCraft's overlay and drive viewers back to his livestream!",
-   "cpm": 1.0,
-   "budget_left": 5979.67,
-   "budget_total": 6824.6,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "youtube"
-   ],
-   "requires_application": false,
-   "clippers": 32,
-   "url": "https://contentrewards.com/discover/2eaa14fb-6927-4136-897e-b096e0d907d6",
-   "score": 0.771
   },
   {
    "id": "5aa9471b-1dc9-4a2a-891b-889c8b985426",
@@ -119,7 +100,7 @@
    "category": "Streamer",
    "description": "Clip content from Clix's GTA 6 marathon!  READ THE RULES AND REQUIREMENTS HERE:  https://reachclipping.com/ClixGTA  Campaign ending when the marathon ends.",
    "cpm": 0.0,
-   "budget_left": 14293.14,
+   "budget_left": 12327.41,
    "budget_total": 15000.0,
    "platforms": [
     "instagram",
@@ -128,7 +109,7 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 782,
+   "clippers": 1559,
    "url": "https://contentrewards.com/discover/5aa9471b-1dc9-4a2a-891b-889c8b985426"
   },
   {
@@ -138,7 +119,7 @@
    "category": "Sports Highlights",
    "description": "Clip official CNPL match footage into 8-60s vertical shorts. Best rallies, dinks, ernes, crowd pops. Paid per 1K views on TikTok, Reels and Shorts. Official match footage, logos and a hook list in the asset pack. First pickleball campaign on Content Rewards.",
    "cpm": 1.5,
-   "budget_left": 2413.74,
+   "budget_left": 2410.0,
    "budget_total": 2500.0,
    "platforms": [
     "instagram",
@@ -150,13 +131,32 @@
    "url": "https://contentrewards.com/discover/3d9ef19f-1256-47ca-b630-e33e2c923969"
   },
   {
+   "id": "f0b0fbac-c754-45e5-96f6-aef8796dac91",
+   "title": "FR $4,000 BICHOU MIAMI GTA 6",
+   "brand": "Risor Clipping",
+   "category": "Kick",
+   "description": "Clippe le contenu des streams de Bichou et gagne 1$ pour chaque 1000 vues.",
+   "cpm": 1.0,
+   "budget_left": 1120.37,
+   "budget_total": 2000.0,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "x",
+    "youtube"
+   ],
+   "requires_application": false,
+   "clippers": 91,
+   "url": "https://contentrewards.com/discover/f0b0fbac-c754-45e5-96f6-aef8796dac91"
+  },
+  {
    "id": "14f743b2-c5ca-4f3e-8c0d-3010c485005d",
    "title": "FR Yomi Denzel Campagne Principale",
    "brand": "Yomi Denzel Clipping",
    "category": "Personal Brand",
    "description": "Clippe le contenu de Yomi Denzel et gagne 0,7$ pour chaque 1000 vues.",
    "cpm": 0.7,
-   "budget_left": 9397.619999999995,
+   "budget_left": 8839.380000000005,
    "budget_total": 352973.85,
    "platforms": [
     "facebook",
@@ -165,44 +165,62 @@
     "youtube"
    ],
    "requires_application": true,
-   "clippers": 356,
+   "clippers": 357,
    "url": "https://contentrewards.com/discover/14f743b2-c5ca-4f3e-8c0d-3010c485005d"
   },
   {
-   "id": "8be02baf-03f5-4063-a406-ca18ea3da2db",
-   "title": "DeathByRomy - Body Horror",
-   "brand": "Verge Records",
-   "category": "Sound Campaign",
-   "description": "Pair the song \\'Body Horror\\' with a jarring, shocking, or supernatural scene from a popular TV show or movie . Viewers should feel that they can't possibly look away, and wonder what the soundtrack was. A comment from OP below the video tells them the song name",
+   "id": "628310d1-3a5f-4fe2-b096-4e7eee7af03e",
+   "title": "Customuse",
+   "brand": "Customuse Creators",
+   "category": "",
+   "description": "We provide ALL assets needed. Clip and earn $1.00 for every 1000 views. MUST Read the full Instructions before posting to get your videos approved.",
    "cpm": 1.0,
-   "budget_left": 1828.75,
-   "budget_total": 2500.0,
+   "budget_left": 1047.1799999999998,
+   "budget_total": 4125.0,
    "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": false,
+   "clippers": 223,
+   "url": "https://contentrewards.com/discover/628310d1-3a5f-4fe2-b096-4e7eee7af03e"
+  },
+  {
+   "id": "23022f84-5715-4ba5-a647-abc4baf4f0f8",
+   "title": "Open Road Clipping | $5.25K Budget | $1.25 CPM",
+   "brand": "Clipix",
+   "category": "Apps",
+   "description": "Open Road (@openroadapp) is a drive tracker for iOS and Android, like Strava for your car. Flood TikTok and Instagram with slideshows and clips made in the provided builder. Every post should push viewers to download Open Road, and all content should feel native to the platform, not an ad.",
+   "cpm": 1.25,
+   "budget_left": 3469.21,
+   "budget_total": 5250.0,
+   "platforms": [
+    "instagram",
     "tiktok"
    ],
    "requires_application": false,
-   "clippers": 37,
-   "url": "https://contentrewards.com/discover/8be02baf-03f5-4063-a406-ca18ea3da2db"
+   "clippers": 44,
+   "url": "https://contentrewards.com/discover/23022f84-5715-4ba5-a647-abc4baf4f0f8"
   },
   {
-   "id": "488d8a64-6c64-446d-8038-b74001934705",
-   "title": "Mad Honey Hunters of the Himalayas – Clips",
-   "brand": "NM Trade Company BV",
-   "category": "Documentary",
-   "description": "Post our clips of Nepal's honey hunters: men on rope ladders 200m up a cliff, harvesting wild mad honey. Best fit: documentary, rare food, expedition and travel pages.   Also post our talking head clips  and only Clip in English will be accepted",
-   "cpm": 1.0,
-   "budget_left": 1452.0600000000004,
-   "budget_total": 9000.0,
+   "id": "8394d4b8-3c0d-4362-bfec-39ac48da131a",
+   "title": "Content Rewards UGC [Non-English]",
+   "brand": "Content Rewards UGC [International]",
+   "category": "Personal Brand",
+   "description": "Create content that attracts UGC creators to Content Rewards and earn earn $2 per 1 views.",
+   "cpm": 0.75,
+   "budget_left": 6038.010000000002,
+   "budget_total": 48750.0,
    "platforms": [
-    "facebook",
     "instagram",
     "tiktok",
     "x",
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 81,
-   "url": "https://contentrewards.com/discover/488d8a64-6c64-446d-8038-b74001934705"
+   "clippers": 143,
+   "url": "https://contentrewards.com/discover/8394d4b8-3c0d-4362-bfec-39ac48da131a"
   },
   {
    "id": "e4a9465f-d415-4e30-bf53-e46014958bc6",
@@ -211,7 +229,7 @@
    "category": "Product",
    "description": "Create short-form videos for the energy drinks, featuring its 170mg fast-acting 750mL elixir. Use approved flavors and provided footage. Keep content funny, creative and engaging. Creators must be 21+ and US-based, with at least 50% US views per clip.",
    "cpm": 1.0,
-   "budget_left": 9833.48,
+   "budget_left": 9883.23,
    "budget_total": 10000.0,
    "platforms": [
     "instagram",
@@ -225,26 +243,21 @@
   },
   {
    "id": "802cf95a-ea84-4070-9a96-8a917831cb16",
-   "title": "Jersey Fusion Clipping [Infinte Budget]",
+   "title": "GTA VI Clipup Logo Campaign",
    "brand": "ClipUp Official",
-   "category": "Consumer Brand",
-   "description": "Jersey Fusion is an online store for cheap football jerseys. We have a proven video template that already works. Your job is to recreate it. Full instructions and examples in the Notion link",
-   "cpm": 2.5,
-   "budget_left": 14000.0,
-   "budget_total": 14000.0,
+   "category": "GTA",
+   "description": "Clip any streamer posting for GTA VI and add our logo on it! Thats it! Really!",
+   "cpm": 0.3,
+   "budget_left": 15000.0,
+   "budget_total": 15000.0,
    "platforms": [
     "instagram",
-    "tiktok"
+    "tiktok",
+    "youtube"
    ],
    "requires_application": false,
    "clippers": 1,
-   "url": "https://contentrewards.com/discover/802cf95a-ea84-4070-9a96-8a917831cb16",
-   "score": 3.555,
-   "min_payout": 3.0,
-   "max_payout": 500.0,
-   "requirements": "",
-   "reference_links": [],
-   "sources": []
+   "url": "https://contentrewards.com/discover/802cf95a-ea84-4070-9a96-8a917831cb16"
   },
   {
    "id": "ab601e43-9404-4375-8e1e-2b49db1aef26",
@@ -253,7 +266,7 @@
    "category": "Music",
    "description": "Clip the live performance of Mumford \\u0026 Sons and Chris Stapleton from the approved folder. Every clip should show that this crossover sounds even better live.",
    "cpm": 2.0,
-   "budget_left": 12431.0,
+   "budget_left": 12160.86,
    "budget_total": 12431.0,
    "platforms": [
     "instagram",
@@ -261,7 +274,7 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 0,
+   "clippers": 6,
    "url": "https://contentrewards.com/discover/ab601e43-9404-4375-8e1e-2b49db1aef26"
   },
   {
@@ -271,7 +284,7 @@
    "category": "Gaming",
    "description": "FaZe Flank Invitational (Call of Duty), live on Twitch Nov 10 to 12. Clip the draft, clutch plays and reactions from the official broadcast only. FaZe Flank logo on every clip, required caption tags, 60%+ US audience. $2 CPM, up to $350 per clip.  Top clippers get invited to our private team.",
    "cpm": 2.0,
-   "budget_left": 8113.36,
+   "budget_left": 7780.38,
    "budget_total": 8500.0,
    "platforms": [
     "instagram",
@@ -280,7 +293,7 @@
     "youtube"
    ],
    "requires_application": true,
-   "clippers": 18,
+   "clippers": 20,
    "url": "https://contentrewards.com/discover/200ea21b-be80-4db8-b552-8e32b148604e"
   },
   {
@@ -299,7 +312,7 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 1535,
+   "clippers": 1579,
    "url": "https://contentrewards.com/discover/da3d9c5c-5267-4d41-b244-e898ab54520d"
   },
   {
@@ -309,7 +322,7 @@
    "category": "Music",
    "description": "Get paid per view to make EDC Las Vegas 2027 “Dusk Till Dawn” content on TikTok + IG. Earn $1 per 1K views. For the first time ever, EDC is a 12-day Las Vegas experience. The start of EDC's next chapter. Dusk May 14–16. Dawn May 21–23. Multiple Posts Allowed. Max Payout $200+",
    "cpm": 1.0,
-   "budget_left": 1458.9099999999999,
+   "budget_left": 1425.29,
    "budget_total": 2000.0,
    "platforms": [
     "instagram",
@@ -320,31 +333,13 @@
    "url": "https://contentrewards.com/discover/816157c7-7b7f-4970-9f5c-ef83e469189c"
   },
   {
-   "id": "f354afb5-bc73-4090-b723-35f65dbba276",
-   "title": "Topps x Clipfarm",
-   "brand": "Clip Farm",
-   "category": "Entertainment",
-   "description": "Clip for Topps, the biggest name in trading cards. Cut clips from the official content bank: celebrities ripping packs (Tiffany Stratton, Rhea Ripley, Steve Aoki, Ken Griffey Jr), massive 1/1 pulls, and Fanatics Fest moments. Make card collecting unavoidable.",
-   "cpm": 1.0,
-   "budget_left": 9965.809999999998,
-   "budget_total": 66000.0,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "youtube"
-   ],
-   "requires_application": false,
-   "clippers": 678,
-   "url": "https://contentrewards.com/discover/f354afb5-bc73-4090-b723-35f65dbba276"
-  },
-  {
    "id": "c2e7d8ec-2121-41dc-9c0a-f7d7da5fd6c4",
    "title": "Chris Van Vliet Podcast Clipping",
    "brand": "Clip Summit",
    "category": "Sports",
    "description": "Clip the best moments from Chris Van Vliet's interviews and get paid per view. Wrestlers breaking down, powerful life stories, and mindset-shifting conversations.",
    "cpm": 1.0,
-   "budget_left": 1309.6100000000001,
+   "budget_left": 1170.6,
    "budget_total": 3400.0,
    "platforms": [
     "instagram",
@@ -353,27 +348,41 @@
    "requires_application": false,
    "clippers": 10,
    "url": "https://contentrewards.com/discover/c2e7d8ec-2121-41dc-9c0a-f7d7da5fd6c4",
-   "score": 0.463
+   "score": 0.453
   },
   {
-   "id": "93b81d7f-211f-4961-95c7-93b2b78f087d",
-   "title": "Predator Clipping",
-   "brand": "Predator",
-   "category": "Apps",
-   "description": "Predator (@predator.app) is an app that helps people keep track of sex offenders in their area. Get paid to post viral predator-catching clips on TikTok, Instagram, Facebook, YouTube, and X.",
+   "id": "8be02baf-03f5-4063-a406-ca18ea3da2db",
+   "title": "DeathByRomy - Body Horror",
+   "brand": "Verge Records",
+   "category": "Sound Campaign",
+   "description": "Pair the song \\'Body Horror\\' with a jarring, shocking, or supernatural scene from a popular TV show or movie . Viewers should feel that they can't possibly look away, and wonder what the soundtrack was. A comment from OP below the video tells them the song name",
    "cpm": 1.0,
-   "budget_left": 3718.01,
-   "budget_total": 5000.0,
+   "budget_left": 1822.35,
+   "budget_total": 2500.0,
+   "platforms": [
+    "tiktok"
+   ],
+   "requires_application": false,
+   "clippers": 36,
+   "url": "https://contentrewards.com/discover/8be02baf-03f5-4063-a406-ca18ea3da2db"
+  },
+  {
+   "id": "f354afb5-bc73-4090-b723-35f65dbba276",
+   "title": "Topps x Clipfarm",
+   "brand": "Clip Farm",
+   "category": "Entertainment",
+   "description": "Clip for Topps, the biggest name in trading cards. Cut clips from the official content bank: celebrities ripping packs (Tiffany Stratton, Rhea Ripley, Steve Aoki, Ken Griffey Jr), massive 1/1 pulls, and Fanatics Fest moments. Make card collecting unavoidable.",
+   "cpm": 1.0,
+   "budget_left": 9457.989999999998,
+   "budget_total": 66000.0,
    "platforms": [
     "instagram",
     "tiktok",
-    "x",
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 5,
-   "url": "https://contentrewards.com/discover/93b81d7f-211f-4961-95c7-93b2b78f087d",
-   "score": 0.647
+   "clippers": 680,
+   "url": "https://contentrewards.com/discover/f354afb5-bc73-4090-b723-35f65dbba276"
   },
   {
    "id": "bb66f9eb-b90e-4dd0-8cee-9f3cd566c9a0",
@@ -382,7 +391,7 @@
    "category": "Entertainment",
    "description": "Clip BenDaDonnn using PuffCo products while playing GTA 6!",
    "cpm": 1.0,
-   "budget_left": 10000.0,
+   "budget_left": 9849.37,
    "budget_total": 10000.0,
    "platforms": [
     "facebook",
@@ -392,7 +401,7 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 0,
+   "clippers": 4,
    "url": "https://contentrewards.com/discover/bb66f9eb-b90e-4dd0-8cee-9f3cd566c9a0"
   },
   {
@@ -402,7 +411,7 @@
    "category": "Gaming",
    "description": "Gattouz is going live from Vice City. Your job? Catch the moment everyone’s going to replay.  We’re following Gattouz’s first GTA VI playthrough live on Kick. From the first police chase to the moment he tries to get Lucia to agree to a collab, the best clips are going to come from the stuff nobody",
    "cpm": 0.35,
-   "budget_left": 10000.0,
+   "budget_left": 9768.94,
    "budget_total": 10000.0,
    "platforms": [
     "instagram",
@@ -410,28 +419,9 @@
     "x"
    ],
    "requires_application": false,
-   "clippers": 0,
+   "clippers": 4,
    "url": "https://contentrewards.com/discover/0123c725-0bb8-49fc-b60a-5affd894b66d",
-   "score": 0.394
-  },
-  {
-   "id": "5aa9471b-1dc9-4a2a-891b-889c8b985426",
-   "title": "GTA 6",
-   "brand": "Reach",
-   "category": "Gaming",
-   "description": "Get paid to clip GTA 6 gameplay/content/stream.  LuxDrop Watermark/Logo:",
-   "cpm": 1.5,
-   "budget_left": 14293.14,
-   "budget_total": 15000.0,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "x",
-    "youtube"
-   ],
-   "requires_application": false,
-   "clippers": 782,
-   "url": "https://contentrewards.com/discover/5aa9471b-1dc9-4a2a-891b-889c8b985426"
+   "score": 0.384
   },
   {
    "id": "f2c529a0-6777-4e8a-b50b-4c8bd4e4d90f",
@@ -440,7 +430,7 @@
    "category": "Streamer",
    "description": "Get paid to clip content from Sypher, Replays, or Maddynf's VOD’s from their stream on November 15.",
    "cpm": 2.0,
-   "budget_left": 7425.63,
+   "budget_left": 6980.68,
    "budget_total": 7500.0,
    "platforms": [
     "instagram",
@@ -449,14 +439,51 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 2,
+   "clippers": 10,
    "url": "https://contentrewards.com/discover/f2c529a0-6777-4e8a-b50b-4c8bd4e4d90f",
-   "score": 1.856,
+   "score": 1.758,
    "min_payout": 20.0,
    "max_payout": 500.0,
    "requirements": "",
    "reference_links": [],
    "sources": []
+  },
+  {
+   "id": "5aa9471b-1dc9-4a2a-891b-889c8b985426",
+   "title": "GTA 6",
+   "brand": "Reach",
+   "category": "Gaming",
+   "description": "Get paid to clip GTA 6 gameplay/content/stream.  LuxDrop Watermark/Logo:",
+   "cpm": 1.5,
+   "budget_left": 12327.41,
+   "budget_total": 15000.0,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "x",
+    "youtube"
+   ],
+   "requires_application": false,
+   "clippers": 1559,
+   "url": "https://contentrewards.com/discover/5aa9471b-1dc9-4a2a-891b-889c8b985426"
+  },
+  {
+   "id": "2badbd14-942f-4098-b310-a76fa99813d6",
+   "title": "Zach Top at the 60th CMA Awards Performance",
+   "brand": "The Clip Ship",
+   "category": "Music",
+   "description": "Clip Zach Top’s live debut of his brand-new song “Moonshine” and a joint performance of “Swingin’” performed with Dierks Bentley from the CMA Awards. Every clip should make viewers want to hear the song again and go stream it.",
+   "cpm": 2.0,
+   "budget_left": 1903.31,
+   "budget_total": 2925.0,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": false,
+   "clippers": 6,
+   "url": "https://contentrewards.com/discover/2badbd14-942f-4098-b310-a76fa99813d6"
   },
   {
    "id": "83578191-cd8a-49cd-a86d-40732b7747cc",
@@ -475,38 +502,22 @@
    "url": "https://contentrewards.com/discover/83578191-cd8a-49cd-a86d-40732b7747cc"
   },
   {
-   "id": "49df7c08-0134-41b0-9441-bdd38c75894e",
-   "title": "Moose Toys - MrBeast Lab B [8532]",
-   "brand": "TikCut",
-   "category": "Entertainment",
-   "description": "Post MrBeast and Moose Toys clips from the Content Folder provided to TikTok.",
-   "cpm": 1.0,
-   "budget_left": 1600.0,
-   "budget_total": 1600.0,
-   "platforms": [
-    "tiktok"
-   ],
-   "requires_application": false,
-   "clippers": 0,
-   "url": "https://contentrewards.com/discover/49df7c08-0134-41b0-9441-bdd38c75894e"
-  },
-  {
    "id": "a1cefc3b-4533-438f-8e70-a7299550f1cf",
    "title": "Call of Duty - MW4 DMZ Intel Briefing Clipping",
    "brand": "Clipping Culture",
    "category": "Entertainment",
    "description": "Clip the DMZ Intel Briefing video from the official content folder. Show the new DMZ content in Modern Warfare 4 Season 1. Post to TikTok and Instagram Reels.",
    "cpm": 2.0,
-   "budget_left": 17233.23,
+   "budget_left": 13646.35,
    "budget_total": 30000.0,
    "platforms": [
     "instagram",
     "tiktok"
    ],
    "requires_application": false,
-   "clippers": 160,
+   "clippers": 163,
    "url": "https://contentrewards.com/discover/a1cefc3b-4533-438f-8e70-a7299550f1cf",
-   "score": 2.562,
+   "score": 2.141,
    "min_payout": 6.0,
    "max_payout": 1200.0,
    "requirements": "",
@@ -514,13 +525,31 @@
    "sources": []
   },
   {
+   "id": "40046522-56d9-45ad-9198-faea8eca90c6",
+   "title": "GTA 6 Clipping Campaign - Tokyo Girl",
+   "brand": "Placements",
+   "category": "Music",
+   "description": "Create GTA 6 themed content using Tokyo Girl by Passive.",
+   "cpm": 0.7,
+   "budget_left": 1795.69,
+   "budget_total": 2000.0,
+   "platforms": [
+    "instagram",
+    "tiktok"
+   ],
+   "requires_application": false,
+   "clippers": 3,
+   "url": "https://contentrewards.com/discover/40046522-56d9-45ad-9198-faea8eca90c6",
+   "score": 0.354
+  },
+  {
    "id": "afeca1a0-f44c-46ad-8194-09d62b56589e",
    "title": "$$8,000 Expedia x IShowSpeed Campaign",
    "brand": "Reach",
    "category": "Streamer",
-   "description": "Content must be from IShowSpeed's Stream 11.6.26. Content sourced from other Streams, Videos, and posts WILL BE REJECTED.  FOOTAGE is listed below, under \\'Reference Materials.\\' Any footage from 2:56:29 until the end of stream is acceptable.  https://www.youtube.com/@IShowSpeed",
+   "description": "Content must be from IShowSpeed's Stream 11.6.26. Content sourced from other Streams, Videos, and posts WILL BE REJECTED.  FOOTAGE is listed below, under \\'Reference Materials.\\' Any footage from 2:46:29 until the end of stream is acceptable.  https://www.youtube.com/@IShowSpeed",
    "cpm": 1.0,
-   "budget_left": 7358.0,
+   "budget_left": 7300.6900000000005,
    "budget_total": 8000.0,
    "platforms": [
     "instagram",
@@ -528,12 +557,36 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 23,
+   "clippers": 25,
    "url": "https://contentrewards.com/discover/afeca1a0-f44c-46ad-8194-09d62b56589e",
-   "score": 0.883,
+   "score": 0.875,
    "min_payout": 10.0,
    "max_payout": 500.0,
    "requirements": "",
+   "reference_links": [],
+   "sources": []
+  },
+  {
+   "id": "65724060-69de-4dc7-a523-4843b7358871",
+   "title": "SEGA - STRANGER THAN HEAVEN Act 2 Trailer Clipping",
+   "brand": "Clipping Culture",
+   "category": "Entertainment",
+   "description": "Post clips of the STRANGER THAN HEAVEN Act 2 Story Trailer. Post on TikTok, Instagram, or YouTube Shorts.",
+   "cpm": 2.0,
+   "budget_left": 13802.89,
+   "budget_total": 24000.0,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": false,
+   "clippers": 219,
+   "url": "https://contentrewards.com/discover/65724060-69de-4dc7-a523-4843b7358871",
+   "score": 2.027,
+   "min_payout": 2.0,
+   "max_payout": 800.0,
+   "requirements": "1 rule Visible once you join Join to unlock 1 rule and 2 files Join Campaign",
    "reference_links": [],
    "sources": []
   },
@@ -544,7 +597,7 @@
    "category": "Gaming",
    "description": "Clip highlight moments from the official Metaphor: ReFantazio trailers. Use the Heismay Character Trailer and the Launch Trailer. Post to TikTok, Instagram Reels, or YouTube Shorts.",
    "cpm": 2.0,
-   "budget_left": 10765.3,
+   "budget_left": 10653.54,
    "budget_total": 12000.0,
    "platforms": [
     "instagram",
@@ -552,9 +605,9 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 101,
+   "clippers": 114,
    "url": "https://contentrewards.com/discover/b5ff48d7-ec63-443a-b767-3a430a6f71f4",
-   "score": 1.968,
+   "score": 1.917,
    "min_payout": 2.0,
    "max_payout": 800.0,
    "requirements": "",
@@ -568,7 +621,7 @@
    "category": "Music",
    "description": "Get paid per view to clip The Weeknd's Hong Kong performance on TikTok + IG. Cut the best moments from the official performance video, hook in 2s. Must add the official sound (muted) + #TheWeeknd #fayewong. Multiple posts allowed. Read brief below. Max Pay $200+",
    "cpm": 1.5,
-   "budget_left": 1253.23,
+   "budget_left": 1247.01,
    "budget_total": 1500.0,
    "platforms": [
     "instagram",
@@ -577,7 +630,7 @@
    "requires_application": false,
    "clippers": 18,
    "url": "https://contentrewards.com/discover/4c7d1ede-2fca-406a-971d-f651880168aa",
-   "score": 0.677
+   "score": 0.676
   },
   {
    "id": "82e8acef-29d8-40a5-a0d2-4e40a9fbfd82",
@@ -586,7 +639,7 @@
    "category": "Technology",
    "description": "ForgeGUI is an AI-powered Roblox development tool that lets you build games, scripts, and systems using simple prompts. Create engaging Roblox short-form content showcasing what’s possible with ForgeGUI!",
    "cpm": 1.5,
-   "budget_left": 17118.359999999986,
+   "budget_left": 16399.080000000016,
    "budget_total": 421587.0,
    "platforms": [
     "instagram",
@@ -594,7 +647,7 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 4324,
+   "clippers": 4333,
    "url": "https://contentrewards.com/discover/82e8acef-29d8-40a5-a0d2-4e40a9fbfd82"
   },
   {
@@ -604,7 +657,7 @@
    "category": "Streamer",
    "description": "Get paid to clip content from Sypher, Replays, or Maddynf's VOD’s from their stream on November 15.",
    "cpm": 2.0,
-   "budget_left": 7425.63,
+   "budget_left": 6980.68,
    "budget_total": 7500.0,
    "platforms": [
     "instagram",
@@ -613,9 +666,9 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 2,
+   "clippers": 10,
    "url": "https://contentrewards.com/discover/f2c529a0-6777-4e8a-b50b-4c8bd4e4d90f",
-   "score": 1.856,
+   "score": 1.758,
    "min_payout": 20.0,
    "max_payout": 500.0,
    "requirements": "",
@@ -623,28 +676,23 @@
    "sources": []
   },
   {
-   "id": "65724060-69de-4dc7-a523-4843b7358871",
-   "title": "SEGA - STRANGER THAN HEAVEN Act 2 Trailer Clipping",
-   "brand": "Clipping Culture",
-   "category": "Entertainment",
-   "description": "Post clips of the STRANGER THAN HEAVEN Act 2 Story Trailer. Post on TikTok, Instagram, or YouTube Shorts.",
-   "cpm": 2.0,
-   "budget_left": 15956.16,
-   "budget_total": 24000.0,
+   "id": "0123c725-0bb8-49fc-b60a-5affd894b66d",
+   "title": "GATTOUZ × GTA VI × 1WIN",
+   "brand": "Gattouz0 - Clipping",
+   "category": "Gaming",
+   "description": "Gattouz is going live from Vice City. Your job? Catch the moment everyone’s going to replay.  We’re following Gattouz’s first GTA VI playthrough live on Kick. From the first police chase to the moment he tries to get Lucia to agree to a collab, the best clips are going to come from the stuff nobody",
+   "cpm": 0.35,
+   "budget_left": 9768.94,
+   "budget_total": 10000.0,
    "platforms": [
     "instagram",
     "tiktok",
-    "youtube"
+    "x"
    ],
    "requires_application": false,
-   "clippers": 194,
-   "url": "https://contentrewards.com/discover/65724060-69de-4dc7-a523-4843b7358871",
-   "score": 2.32,
-   "min_payout": 2.0,
-   "max_payout": 800.0,
-   "requirements": "1 rule Visible once you join Join to unlock 1 rule and 2 files Join Campaign",
-   "reference_links": [],
-   "sources": []
+   "clippers": 4,
+   "url": "https://contentrewards.com/discover/0123c725-0bb8-49fc-b60a-5affd894b66d",
+   "score": 0.384
   },
   {
    "id": "da3d9c5c-5267-4d41-b244-e898ab54520d",
@@ -662,27 +710,8 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 1535,
+   "clippers": 1579,
    "url": "https://contentrewards.com/discover/da3d9c5c-5267-4d41-b244-e898ab54520d"
-  },
-  {
-   "id": "0123c725-0bb8-49fc-b60a-5affd894b66d",
-   "title": "GATTOUZ × GTA VI × 1WIN",
-   "brand": "Gattouz0 - Clipping",
-   "category": "Gaming",
-   "description": "Gattouz is going live from Vice City. Your job? Catch the moment everyone’s going to replay.  We’re following Gattouz’s first GTA VI playthrough live on Kick. From the first police chase to the moment he tries to get Lucia to agree to a collab, the best clips are going to come from the stuff nobody",
-   "cpm": 0.35,
-   "budget_left": 10000.0,
-   "budget_total": 10000.0,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "x"
-   ],
-   "requires_application": false,
-   "clippers": 0,
-   "url": "https://contentrewards.com/discover/0123c725-0bb8-49fc-b60a-5affd894b66d",
-   "score": 0.394
   },
   {
    "id": "eb28f557-df7b-4245-8603-01380c4d84cc",
@@ -691,7 +720,7 @@
    "category": "Entertainment",
    "description": "Download videos from the official Wa-Chaa content folder. Clip the best moments and post them to your page. Post on TikTok, Instagram Reels, or YouTube Shorts. There is no set format. Use your own style and angle. Use only footage from the official content folder.",
    "cpm": 2.0,
-   "budget_left": 7896.52,
+   "budget_left": 6861.24,
    "budget_total": 10500.0,
    "platforms": [
     "instagram",
@@ -699,14 +728,34 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 209,
+   "clippers": 220,
    "url": "https://contentrewards.com/discover/eb28f557-df7b-4245-8603-01380c4d84cc",
-   "score": 1.405,
+   "score": 1.277,
    "min_payout": 2.0,
    "max_payout": 600.0,
    "requirements": "",
    "reference_links": [],
    "sources": []
+  },
+  {
+   "id": "f7ac5280-4d8b-4f96-9c49-351a0c1f6477",
+   "title": "Jake Paul MVP x PFL Interview",
+   "brand": "Clipflow",
+   "category": "Entertainment",
+   "description": "Jake Paul MVP x PFL Interview Clipping   - Clip Jake Paul from the content folder talking about the PFL and MVP merger. - Keep Jake front and center and make the PFL x MVP merger the story of every post. - Clip moments where Jak",
+   "cpm": 0.5,
+   "budget_left": 1470.2,
+   "budget_total": 2000.0,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "x",
+    "youtube"
+   ],
+   "requires_application": false,
+   "clippers": 639,
+   "url": "https://contentrewards.com/discover/f7ac5280-4d8b-4f96-9c49-351a0c1f6477",
+   "score": 0.133
   },
   {
    "id": "ca9e8eca-1d96-4dfa-a252-f4b12f21f394",
@@ -715,7 +764,7 @@
    "category": "Entertainment",
    "description": "Post and create clips from Jake Paul's latest business video, \\'How to Make Money With AI\\'. Clips should be informational and highlight any insights that Jake gives throughout the video.",
    "cpm": 0.75,
-   "budget_left": 1049.98,
+   "budget_left": 1031.54,
    "budget_total": 1200.0,
    "platforms": [
     "instagram",
@@ -723,7 +772,7 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 31,
+   "clippers": 35,
    "url": "https://contentrewards.com/discover/ca9e8eca-1d96-4dfa-a252-f4b12f21f394"
   },
   {
@@ -733,7 +782,7 @@
    "category": "Roblox",
    "description": "Create engaging Roblox short-form videos showcasing Pet Simulator 99’s gameplay, rare pets, exciting moments, and unique features to encourage viewers to play the game.",
    "cpm": 1.0,
-   "budget_left": 6602.009999999998,
+   "budget_left": 6369.060000000001,
    "budget_total": 32000.0,
    "platforms": [
     "instagram",
@@ -741,18 +790,18 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 1392,
+   "clippers": 1390,
    "url": "https://contentrewards.com/discover/462914d0-9969-4797-82e9-3addb138db6e"
   },
   {
-   "id": "f7ac5280-4d8b-4f96-9c49-351a0c1f6477",
-   "title": "Jake Paul MVP x PFL Interview",
-   "brand": "Clipflow",
-   "category": "Entertainment",
-   "description": "Jake Paul MVP x PFL Interview Clipping   - Clip Jake Paul from the content folder talking about the PFL and MVP merger. - Keep Jake front and center and make the PFL x MVP merger the story of every post. - Clip moments where Jak",
-   "cpm": 0.5,
-   "budget_left": 1527.95,
-   "budget_total": 2000.0,
+   "id": "39753a1a-f1f3-491b-a8f6-0cfee0af0c97",
+   "title": "$$5,000 Dylan Page GTA VI Marathon Campaign",
+   "brand": "NewsDaddy",
+   "category": "GTA",
+   "description": "Clip Dylan Page's 120-hour GTA 6 marathon, live on YouTube! Post the best moments on TikTok, Instagram, Twitter (X) and YouTube Shorts. Clips must show Dylan and include #DylanPage in the caption. $5,000 budget, campaign ends when the marathon ends.",
+   "cpm": 1.0,
+   "budget_left": 4924.98,
+   "budget_total": 5000.0,
    "platforms": [
     "instagram",
     "tiktok",
@@ -760,50 +809,9 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 585,
-   "url": "https://contentrewards.com/discover/f7ac5280-4d8b-4f96-9c49-351a0c1f6477",
-   "score": 0.137
-  },
-  {
-   "id": "71e3d612-5b75-4b30-941b-afb7e0cac36d",
-   "title": "First Press Podcast",
-   "brand": "Clip Farm",
-   "category": "Entertainment",
-   "description": "First Press is a business podcast by Press On Ventures. It shows how brands get built. Clip the provided episodes and make people want to watch the full episodes. You earn money for every view.",
-   "cpm": 1.5,
-   "budget_left": 11727.48,
-   "budget_total": 12000.0,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "youtube"
-   ],
-   "requires_application": false,
-   "clippers": 29,
-   "url": "https://contentrewards.com/discover/71e3d612-5b75-4b30-941b-afb7e0cac36d",
-   "score": 1.771,
-   "min_payout": 1.5,
-   "max_payout": 350.0,
-   "requirements": "1 rule Visible once you join Join to unlock 1 rule and 1 file Join Campaign",
-   "reference_links": [],
-   "sources": []
-  },
-  {
-   "id": "b25afad5-4bb6-4f26-a54b-af7e7c753782",
-   "title": "BIIANCO - softcore_hardstyle | DropBox + Reposts",
-   "brand": "Artist Influence",
-   "category": "Music",
-   "description": "Get paid per view to clip BIIANCO's \\'softcore_hardstyle\\' on TikTok + IG. Fast-paced edits \\u0026 lyric edits using the official vertical clip, or repost edits from the repo. Soft setup, hard cut on the drop. Tag @itsbiianco. Multiple posts allowed. Read brief below. Max Payout $200+ | Pt. 1/3",
-   "cpm": 1.0,
-   "budget_left": 1000.0,
-   "budget_total": 1000.0,
-   "platforms": [
-    "instagram",
-    "tiktok"
-   ],
-   "requires_application": false,
-   "clippers": 0,
-   "url": "https://contentrewards.com/discover/b25afad5-4bb6-4f26-a54b-af7e7c753782"
+   "clippers": 7,
+   "url": "https://contentrewards.com/discover/39753a1a-f1f3-491b-a8f6-0cfee0af0c97",
+   "score": 0.733
   },
   {
    "id": "ea074c0b-cd24-4860-ba33-0df5c99a8f10",
@@ -829,7 +837,7 @@
    "category": "Gaming",
    "description": "FaZe Flank Invitational (Call of Duty), live on Twitch Nov 10 to 12. Clip the draft, clutch plays and reactions from the official broadcast only. FaZe Flank logo on every clip, required caption tags, 60%+ US audience. $2 CPM, up to $350 per clip.  Top clippers get invited to our private team.",
    "cpm": 2.0,
-   "budget_left": 8113.36,
+   "budget_left": 7780.38,
    "budget_total": 8500.0,
    "platforms": [
     "instagram",
@@ -838,7 +846,7 @@
     "youtube"
    ],
    "requires_application": true,
-   "clippers": 18,
+   "clippers": 20,
    "url": "https://contentrewards.com/discover/200ea21b-be80-4db8-b552-8e32b148604e"
   },
   {
@@ -873,50 +881,27 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 92,
+   "clippers": 581,
    "url": "https://contentrewards.com/discover/1d2bcb00-c904-415f-aa82-f95b96baad86"
   },
   {
-   "id": "5aa9471b-1dc9-4a2a-891b-889c8b985426",
-   "title": "GTA 6",
-   "brand": "Reach",
-   "category": "Streamer",
-   "description": "Clip content from Lacy's GTA 6 marathon!  READ THE RULES AND REQUIREMENTS HERE:  https://reachclipping.com/LACYGTA  Campaign ending when the marathon ends.",
-   "cpm": 0.0,
-   "budget_left": 14293.14,
-   "budget_total": 15000.0,
+   "id": "2eaa14fb-6927-4136-897e-b096e0d907d6",
+   "title": "KreekCraft GTA 6 Clipping",
+   "brand": "ClipLaunch",
+   "category": "Twitch",
+   "description": "Get paid to clip KreekCraft's funniest, craziest, and most viral GTA 6 livestream moments! Turn hilarious reactions, insane gameplay, and unexpected moments into short-form clips. Every clip must include KreekCraft's overlay and drive viewers back to his livestream!",
+   "cpm": 0.5,
+   "budget_left": 3754.5800000000004,
+   "budget_total": 6824.6,
    "platforms": [
     "instagram",
     "tiktok",
-    "x",
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 782,
-   "url": "https://contentrewards.com/discover/5aa9471b-1dc9-4a2a-891b-889c8b985426"
-  },
-  {
-   "id": "051002dd-5c46-43d0-a446-43f2957ba3a9",
-   "title": "Dasgasd3m x RUCKUS | GTA 6",
-   "brand": "Ruckus",
-   "category": "Gaming",
-   "description": "Clip Dom's funny and entertaining GTA 6 moments for TikTok and YouTube Shorts. GTA 6-specific accounts required; streamer-clips accounts recommended. Scheduled for Nov 18, 2026. Read the full brief before posting; submissions begin only when the campaign opens.",
-   "cpm": 2.0,
-   "budget_left": 807.05,
-   "budget_total": 1000.0,
-   "platforms": [
-    "tiktok",
-    "youtube"
-   ],
-   "requires_application": false,
-   "clippers": 46,
-   "url": "https://contentrewards.com/discover/051002dd-5c46-43d0-a446-43f2957ba3a9",
-   "score": 0.794,
-   "min_payout": 20.0,
-   "max_payout": 150.0,
-   "requirements": "",
-   "reference_links": [],
-   "sources": []
+   "clippers": 110,
+   "url": "https://contentrewards.com/discover/2eaa14fb-6927-4136-897e-b096e0d907d6",
+   "score": 0.27
   },
   {
    "id": "c2e7d8ec-2121-41dc-9c0a-f7d7da5fd6c4",
@@ -925,7 +910,7 @@
    "category": "Sports",
    "description": "Clip the best moments from Chris Van Vliet's interviews and get paid per view. Wrestlers breaking down, powerful life stories, and mindset-shifting conversations.",
    "cpm": 1.0,
-   "budget_left": 1309.6100000000001,
+   "budget_left": 1170.6,
    "budget_total": 3400.0,
    "platforms": [
     "instagram",
@@ -934,26 +919,30 @@
    "requires_application": false,
    "clippers": 10,
    "url": "https://contentrewards.com/discover/c2e7d8ec-2121-41dc-9c0a-f7d7da5fd6c4",
-   "score": 0.463
+   "score": 0.453
   },
   {
-   "id": "2eaa14fb-6927-4136-897e-b096e0d907d6",
-   "title": "KreekCraft GTA 6 Clipping",
-   "brand": "ClipLaunch",
-   "category": "Twitch",
-   "description": "Get paid to clip KreekCraft's funniest, craziest, and most viral GTA 6 livestream moments! Turn hilarious reactions, insane gameplay, and unexpected moments into short-form clips. Every clip must include KreekCraft's overlay and drive viewers back to his livestream!",
-   "cpm": 1.0,
-   "budget_left": 5979.67,
-   "budget_total": 6824.6,
+   "id": "051002dd-5c46-43d0-a446-43f2957ba3a9",
+   "title": "Dasgasd3m x RUCKUS | GTA 6",
+   "brand": "Ruckus",
+   "category": "Gaming",
+   "description": "Clip Dom's funny and entertaining GTA 6 moments for TikTok and YouTube Shorts. GTA 6-specific accounts required; streamer-clips accounts recommended. Scheduled for Nov 18, 2026. Read the full brief before posting; submissions begin only when the campaign opens.",
+   "cpm": 2.0,
+   "budget_left": 934.64,
+   "budget_total": 1000.0,
    "platforms": [
-    "instagram",
     "tiktok",
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 32,
-   "url": "https://contentrewards.com/discover/2eaa14fb-6927-4136-897e-b096e0d907d6",
-   "score": 0.771
+   "clippers": 41,
+   "url": "https://contentrewards.com/discover/051002dd-5c46-43d0-a446-43f2957ba3a9",
+   "score": 0.819,
+   "min_payout": 20.0,
+   "max_payout": 150.0,
+   "requirements": "",
+   "reference_links": [],
+   "sources": []
   },
   {
    "id": "0b178e3c-fbd3-4294-8ded-394e3da9c62f",
@@ -971,8 +960,27 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 3064,
+   "clippers": 3065,
    "url": "https://contentrewards.com/discover/0b178e3c-fbd3-4294-8ded-394e3da9c62f"
+  },
+  {
+   "id": "5aa9471b-1dc9-4a2a-891b-889c8b985426",
+   "title": "GTA 6",
+   "brand": "Reach",
+   "category": "Streamer",
+   "description": "Clip content from Clix's GTA 6 marathon!  READ THE RULES AND REQUIREMENTS HERE:  https://reachclipping.com/ClixGTA  Campaign ending when the marathon ends.",
+   "cpm": 0.0,
+   "budget_left": 12327.41,
+   "budget_total": 15000.0,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "x",
+    "youtube"
+   ],
+   "requires_application": false,
+   "clippers": 1559,
+   "url": "https://contentrewards.com/discover/5aa9471b-1dc9-4a2a-891b-889c8b985426"
   },
   {
    "id": "40046522-56d9-45ad-9198-faea8eca90c6",
@@ -981,16 +989,16 @@
    "category": "Music",
    "description": "Create GTA 6 themed content using Tokyo Girl by Passive.",
    "cpm": 0.7,
-   "budget_left": 1911.19,
+   "budget_left": 1795.69,
    "budget_total": 2000.0,
    "platforms": [
     "instagram",
     "tiktok"
    ],
    "requires_application": false,
-   "clippers": 1,
+   "clippers": 3,
    "url": "https://contentrewards.com/discover/40046522-56d9-45ad-9198-faea8eca90c6",
-   "score": 0.362
+   "score": 0.354
   },
   {
    "id": "3d9ef19f-1256-47ca-b630-e33e2c923969",
@@ -999,7 +1007,7 @@
    "category": "Sports Highlights",
    "description": "Clip official CNPL match footage into 8-60s vertical shorts. Best rallies, dinks, ernes, crowd pops. Paid per 1K views on TikTok, Reels and Shorts. Official match footage, logos and a hook list in the asset pack. First pickleball campaign on Content Rewards.",
    "cpm": 1.5,
-   "budget_left": 2413.74,
+   "budget_left": 2410.0,
    "budget_total": 2500.0,
    "platforms": [
     "instagram",
@@ -1011,13 +1019,31 @@
    "url": "https://contentrewards.com/discover/3d9ef19f-1256-47ca-b630-e33e2c923969"
   },
   {
+   "id": "2badbd14-942f-4098-b310-a76fa99813d6",
+   "title": "Zach Top at the 60th CMA Awards Performance",
+   "brand": "The Clip Ship",
+   "category": "Music",
+   "description": "Clip Zach Top’s live debut of his brand-new song “Moonshine” and a joint performance of “Swingin’” performed with Dierks Bentley from the CMA Awards. Every clip should make viewers want to hear the song again and go stream it.",
+   "cpm": 2.0,
+   "budget_left": 1903.31,
+   "budget_total": 2925.0,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": false,
+   "clippers": 6,
+   "url": "https://contentrewards.com/discover/2badbd14-942f-4098-b310-a76fa99813d6"
+  },
+  {
    "id": "ab601e43-9404-4375-8e1e-2b49db1aef26",
    "title": "Mumford \\u0026 Sons / Chris Stapleton Live Performance",
    "brand": "The Clip Ship",
    "category": "Music",
    "description": "Clip the live performance of Mumford \\u0026 Sons and Chris Stapleton from the approved folder. Every clip should show that this crossover sounds even better live.",
    "cpm": 2.0,
-   "budget_left": 12431.0,
+   "budget_left": 12160.86,
    "budget_total": 12431.0,
    "platforms": [
     "instagram",
@@ -1025,8 +1051,26 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 0,
+   "clippers": 6,
    "url": "https://contentrewards.com/discover/ab601e43-9404-4375-8e1e-2b49db1aef26"
+  },
+  {
+   "id": "d7412b44-05fb-45b7-8ff3-aafc599d31bf",
+   "title": "Eneba Clipping and UGC",
+   "brand": "Eneba",
+   "category": "Gaming",
+   "description": "Edit short-form videos from our supplied pack-openin footage and send viewers to ene.ba/bro to discover roPacks on Eneba. See every item and the odds upfron. 18+. Post on TikTok, Reels or Shorts with #Ad. Rea the full brief and rules before posting.",
+   "cpm": 3.0,
+   "budget_left": 10548.13,
+   "budget_total": 11947.07,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": false,
+   "clippers": 41,
+   "url": "https://contentrewards.com/discover/d7412b44-05fb-45b7-8ff3-aafc599d31bf"
   },
   {
    "id": "e4a9465f-d415-4e30-bf53-e46014958bc6",
@@ -1035,7 +1079,7 @@
    "category": "Product",
    "description": "Create short-form videos for the energy drinks, featuring its 170mg fast-acting 750mL elixir. Use approved flavors and provided footage. Keep content funny, creative and engaging. Creators must be 21+ and US-based, with at least 50% US views per clip.",
    "cpm": 1.0,
-   "budget_left": 9833.48,
+   "budget_left": 9883.23,
    "budget_total": 10000.0,
    "platforms": [
     "instagram",
@@ -1048,31 +1092,13 @@
    "url": "https://contentrewards.com/discover/e4a9465f-d415-4e30-bf53-e46014958bc6"
   },
   {
-   "id": "d7412b44-05fb-45b7-8ff3-aafc599d31bf",
-   "title": "Eneba Clipping and UGC",
-   "brand": "Eneba",
-   "category": "Gaming",
-   "description": "Edit short-form videos from our supplied pack-openin footage and send viewers to ene.ba/bro to discover roPacks on Eneba. See every item and the odds upfron. 18+. Post on TikTok, Reels or Shorts with #Ad. Rea the full brief and rules before posting.",
-   "cpm": 3.0,
-   "budget_left": 10648.09,
-   "budget_total": 11947.07,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "youtube"
-   ],
-   "requires_application": false,
-   "clippers": 41,
-   "url": "https://contentrewards.com/discover/d7412b44-05fb-45b7-8ff3-aafc599d31bf"
-  },
-  {
    "id": "ac91f9d8-146d-4450-a78c-2c275eedd8f9",
    "title": "Rivet Live",
    "brand": "Rivet",
    "category": "Relationships \\u0026 Dating",
    "description": "Cut Rivet Live recordings into 15-60s vertical clips. Every clip drives app downloads, with the install link pinned in the comments. Hook in 1-2s, subtitles always, TikTok-native. No match guarantees, no NSFW, no competitor digs.",
    "cpm": 3.0,
-   "budget_left": 939.27,
+   "budget_left": 939.26,
    "budget_total": 1000.0,
    "platforms": [
     "instagram",
@@ -1089,7 +1115,7 @@
    "category": "Music",
    "description": "Get paid per view to clip The Weeknd's Hong Kong performance on TikTok + IG. Cut the best moments from the official performance video, hook in 2s. Must add the official sound (muted) + #TheWeeknd #fayewong. Multiple posts allowed. Read brief below. Max Pay $200+",
    "cpm": 1.5,
-   "budget_left": 1253.23,
+   "budget_left": 1247.01,
    "budget_total": 1500.0,
    "platforms": [
     "instagram",
@@ -1098,7 +1124,7 @@
    "requires_application": false,
    "clippers": 18,
    "url": "https://contentrewards.com/discover/4c7d1ede-2fca-406a-971d-f651880168aa",
-   "score": 0.677
+   "score": 0.676
   },
   {
    "id": "b25afad5-4bb6-4f26-a54b-af7e7c753782",
@@ -1124,7 +1150,7 @@
    "category": "Music",
    "description": "Get paid per view to clip Ordley's \\'Everything I Don't Know\\' on TikTok + IG. Hopecore edits (kindness, reunions, uplifting film scenes) or deadpan meme-text posts about house music. Exactly 15s, biggest moment on the drop at 0:07.8. Multiple posts allowed. Read brief below. Max Payout $200+",
    "cpm": 1.0,
-   "budget_left": 1472.92,
+   "budget_left": 1472.88,
    "budget_total": 1500.0,
    "platforms": [
     "instagram",
@@ -1141,14 +1167,14 @@
    "category": "Music",
    "description": "Get paid per view to post reaction videos to The Weeknd's Hong Kong performance on TikTok + IG.  MV Edit. Must add the official sound (muted) + #TheWeeknd #fayewong. Multiple posts allowed. Read brief below. Max Pay $200+",
    "cpm": 1.5,
-   "budget_left": 1472.78,
+   "budget_left": 1363.17,
    "budget_total": 1500.0,
    "platforms": [
     "instagram",
     "tiktok"
    ],
    "requires_application": false,
-   "clippers": 3,
+   "clippers": 5,
    "url": "https://contentrewards.com/discover/9f03e708-da0c-4ef6-992f-0c05cb56111f"
   },
   {
@@ -1158,7 +1184,7 @@
    "category": "Personal Brand",
    "description": "Clippe le contenu de Yomi Denzel et gagne 0,7$ pour chaque 1000 vues.",
    "cpm": 0.7,
-   "budget_left": 9397.619999999995,
+   "budget_left": 8839.380000000005,
    "budget_total": 352973.85,
    "platforms": [
     "facebook",
@@ -1167,7 +1193,7 @@
     "youtube"
    ],
    "requires_application": true,
-   "clippers": 356,
+   "clippers": 357,
    "url": "https://contentrewards.com/discover/14f743b2-c5ca-4f3e-8c0d-3010c485005d"
   },
   {
@@ -1177,7 +1203,7 @@
    "category": "Movies \\u0026 TV",
    "description": "Clip the ViQueens movie trailer, focusing on scenes featuring Erling Haaland, Rita Ora, the animation, and the official soundtrack. Create short, engaging clips with catchy text-on-screen hooks highlighting the celebrity appearances and interesting moments from the trailer.",
    "cpm": 0.75,
-   "budget_left": 373.48,
+   "budget_left": 124.45000000000005,
    "budget_total": 1000.0,
    "platforms": [
     "instagram",
@@ -1185,9 +1211,27 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 116,
-   "url": "https://contentrewards.com/discover/ea4c2a69-00a6-4c13-bd88-2ba83dbabedc",
-   "score": 0.246
+   "clippers": 150,
+   "url": "https://contentrewards.com/discover/ea4c2a69-00a6-4c13-bd88-2ba83dbabedc"
+  },
+  {
+   "id": "f0b0fbac-c754-45e5-96f6-aef8796dac91",
+   "title": "FR $4,000 BICHOU MIAMI GTA 6",
+   "brand": "Risor Clipping",
+   "category": "Kick",
+   "description": "Clippe le contenu des streams de Bichou et gagne 1$ pour chaque 1000 vues.",
+   "cpm": 1.0,
+   "budget_left": 1120.37,
+   "budget_total": 2000.0,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "x",
+    "youtube"
+   ],
+   "requires_application": false,
+   "clippers": 91,
+   "url": "https://contentrewards.com/discover/f0b0fbac-c754-45e5-96f6-aef8796dac91"
   },
   {
    "id": "82e8acef-29d8-40a5-a0d2-4e40a9fbfd82",
@@ -1196,7 +1240,7 @@
    "category": "Technology",
    "description": "ForgeGUI is an AI-powered Roblox development tool that lets you build games, scripts, and systems using simple prompts. Create engaging Roblox short-form content showcasing what’s possible with ForgeGUI!",
    "cpm": 1.5,
-   "budget_left": 17118.280000000028,
+   "budget_left": 16399.080000000016,
    "budget_total": 421587.0,
    "platforms": [
     "instagram",
@@ -1204,26 +1248,8 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 4324,
+   "clippers": 4333,
    "url": "https://contentrewards.com/discover/82e8acef-29d8-40a5-a0d2-4e40a9fbfd82"
-  },
-  {
-   "id": "791ad52c-a938-48b3-8f7e-f43ca10b110c",
-   "title": "ChainsFR: Como Se Dice Clipping",
-   "brand": "ClipLaunch",
-   "category": "YouTuber",
-   "description": "Clip ChainsFR's new song \\'Como Se Dice\\' into funny, entertaining short-form videos that highlight how catchy and genuinely fire the track is. Use viral moments, creative edits, and humor to get people talking, sharing, and realizing this song is actually a banger. Let's make it blow up!",
-   "cpm": 0.5,
-   "budget_left": 645.6499999999996,
-   "budget_total": 11250.0,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "youtube"
-   ],
-   "requires_application": false,
-   "clippers": 118,
-   "url": "https://contentrewards.com/discover/791ad52c-a938-48b3-8f7e-f43ca10b110c"
   },
   {
    "id": "2b51363d-04ce-4600-8c4f-d48ac58650f9",
@@ -1232,7 +1258,7 @@
    "category": "TV Series",
    "description": "Clip vertTV's new series He Stole My House, starring Michael Paré: Ayla inherits her parents' house and finds a squatter, Dante, living in it, so she calls in the Squatter Hunter. Goal: get viewers to download the vertTV app and watch. Now streaming. Paid per 1K views.",
    "cpm": 1.25,
-   "budget_left": 464.98,
+   "budget_left": 458.09000000000003,
    "budget_total": 1000.0,
    "platforms": [
     "facebook",
@@ -1243,30 +1269,7 @@
    "requires_application": false,
    "clippers": 44,
    "url": "https://contentrewards.com/discover/2b51363d-04ce-4600-8c4f-d48ac58650f9",
-   "score": 0.469
-  },
-  {
-   "id": "a1cefc3b-4533-438f-8e70-a7299550f1cf",
-   "title": "Call of Duty - MW4 DMZ Intel Briefing Clipping",
-   "brand": "Clipping Culture",
-   "category": "Entertainment",
-   "description": "Clip the DMZ Intel Briefing video from the official content folder. Show the new DMZ content in Modern Warfare 4 Season 1. Post to TikTok and Instagram Reels.",
-   "cpm": 2.0,
-   "budget_left": 17233.23,
-   "budget_total": 30000.0,
-   "platforms": [
-    "instagram",
-    "tiktok"
-   ],
-   "requires_application": false,
-   "clippers": 160,
-   "url": "https://contentrewards.com/discover/a1cefc3b-4533-438f-8e70-a7299550f1cf",
-   "score": 2.562,
-   "min_payout": 6.0,
-   "max_payout": 1200.0,
-   "requirements": "",
-   "reference_links": [],
-   "sources": []
+   "score": 0.468
   },
   {
    "id": "e509f6d0-13bf-42bc-8450-09e12c216c33",
@@ -1275,8 +1278,8 @@
    "category": "Sports",
    "description": "Download Clips from the official Clip Context Tracker sheet and post them across dedicated Backyard Breaks pages on TikTok, Instagram Reels, and/or Youtube Shorts. Focus on posting their most viral moments — big pulls, insane reactions, and the kind of hits that stop people mid-scroll. Post must be exciting, engaging, and upbeat.",
    "cpm": 2.0,
-   "budget_left": 1267.7799999999988,
-   "budget_total": 90104.87,
+   "budget_left": 11127.26999999999,
+   "budget_total": 100104.87,
    "platforms": [
     "instagram",
     "tiktok",
@@ -1285,27 +1288,35 @@
    "requires_application": false,
    "clippers": 403,
    "url": "https://contentrewards.com/discover/e509f6d0-13bf-42bc-8450-09e12c216c33",
-   "score": 0.581
+   "score": 1.495,
+   "min_payout": 3.0,
+   "max_payout": 250.0,
+   "requirements": "2 rules Visible once you join Join to unlock 2 rules and 4 files Join Campaign",
+   "reference_links": [],
+   "sources": []
   },
   {
-   "id": "f7ac5280-4d8b-4f96-9c49-351a0c1f6477",
-   "title": "Jake Paul MVP x PFL Interview",
-   "brand": "Clipflow",
+   "id": "a1cefc3b-4533-438f-8e70-a7299550f1cf",
+   "title": "Call of Duty - MW4 DMZ Intel Briefing Clipping",
+   "brand": "Clipping Culture",
    "category": "Entertainment",
-   "description": "Jake Paul MVP x PFL Interview Clipping   - Clip Jake Paul from the content folder talking about the PFL and MVP merger. - Keep Jake front and center and make the PFL x MVP merger the story of every post. - Clip moments where Jak",
-   "cpm": 0.5,
-   "budget_left": 1527.95,
-   "budget_total": 2000.0,
+   "description": "Clip the DMZ Intel Briefing video from the official content folder. Show the new DMZ content in Modern Warfare 4 Season 1. Post to TikTok and Instagram Reels.",
+   "cpm": 2.0,
+   "budget_left": 13646.35,
+   "budget_total": 30000.0,
    "platforms": [
     "instagram",
-    "tiktok",
-    "x",
-    "youtube"
+    "tiktok"
    ],
    "requires_application": false,
-   "clippers": 585,
-   "url": "https://contentrewards.com/discover/f7ac5280-4d8b-4f96-9c49-351a0c1f6477",
-   "score": 0.137
+   "clippers": 163,
+   "url": "https://contentrewards.com/discover/a1cefc3b-4533-438f-8e70-a7299550f1cf",
+   "score": 2.141,
+   "min_payout": 6.0,
+   "max_payout": 1200.0,
+   "requirements": "",
+   "reference_links": [],
+   "sources": []
   },
   {
    "id": "3654c413-6a54-4f20-88c5-7b958e6dbf2f",
@@ -1314,7 +1325,7 @@
    "category": "Business",
    "description": "Boxabl makes foldable homes. They have a 20x20 foot home called the Casita that ships flat and unfolds on-site. Cool product, cool factory, cool transformation. You're clipping from a list of pre-approved YouTube videos. The footage includes Boxabl factory tours, walkthroughs from major creators like Enes Yilmazer (15M views) and Orkun Isitmak (16.3M views), Elon Musk, Airrack, Faze Rug, and content featuring big-name talent who've worked with Boxabl. Your job is to clip the best moments and post to short-form (TikTok, Instagram Reels, YouTube Shorts, and X) to drive views and brand awareness. UGC IS ALLOWED",
    "cpm": 1.0,
-   "budget_left": 146565.8,
+   "budget_left": 146475.1,
    "budget_total": 173000.0,
    "platforms": [
     "facebook",
@@ -1324,18 +1335,18 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 960,
+   "clippers": 962,
    "url": "https://contentrewards.com/discover/3654c413-6a54-4f20-88c5-7b958e6dbf2f"
   },
   {
-   "id": "0c6959a1-99a5-4ee3-bd6d-1fba2ca92616",
-   "title": "Split-Screen UGC [Non-English]",
-   "brand": "Content Rewards UGC [International]",
-   "category": "",
-   "description": "Post UGC for Content Rewards, and get paid $1 per 1k views. This is for non-english content, or english content that targets tier 2/3 audiences.",
-   "cpm": 1.0,
-   "budget_left": 848.6399999999994,
-   "budget_total": 77375.0,
+   "id": "f7ac5280-4d8b-4f96-9c49-351a0c1f6477",
+   "title": "Jake Paul MVP x PFL Interview",
+   "brand": "Clipflow",
+   "category": "Entertainment",
+   "description": "Jake Paul MVP x PFL Interview Clipping   - Clip Jake Paul from the content folder talking about the PFL and MVP merger. - Keep Jake front and center and make the PFL x MVP merger the story of every post. - Clip moments where Jak",
+   "cpm": 0.5,
+   "budget_left": 1470.2,
+   "budget_total": 2000.0,
    "platforms": [
     "instagram",
     "tiktok",
@@ -1343,8 +1354,9 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 433,
-   "url": "https://contentrewards.com/discover/0c6959a1-99a5-4ee3-bd6d-1fba2ca92616"
+   "clippers": 639,
+   "url": "https://contentrewards.com/discover/f7ac5280-4d8b-4f96-9c49-351a0c1f6477",
+   "score": 0.133
   },
   {
    "id": "ad07a002-630b-41ca-9999-85799541d6f6",
@@ -1353,7 +1365,7 @@
    "category": "Music",
    "description": "Get paid to post the “acting nonchalant while my airpods are blasting this” meme to AK AUSSERKONTROLLE – “Lieber Gott” 🎧 No face needed: post the meme photo (provided) with the official sound. Keep the song audible, use your own caption. No reposts of others or fake views 💸",
    "cpm": 1.25,
-   "budget_left": 328.49,
+   "budget_left": 260.88,
    "budget_total": 1000.0,
    "platforms": [
     "tiktok"
@@ -1363,32 +1375,14 @@
    "url": "https://contentrewards.com/discover/ad07a002-630b-41ca-9999-85799541d6f6"
   },
   {
-   "id": "0afd04db-e183-4411-9957-0b890ef272b5",
-   "title": "Call of Duty MW4 عربي V2",
-   "brand": "Arabic Clipping",
-   "category": "Entertainment",
-   "description": "🔥 Call of Duty MW4 انضم إلى حملة كليبينغ    انشر مقاطع قصيرة عن اللعبة على حساباتك، واحصل على أرباح حسب عدد المشاهدات  المحتوى  جاهز عليك ان تقص و تنزل فقط",
-   "cpm": 3.0,
-   "budget_left": 13358.59,
-   "budget_total": 26300.0,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "x"
-   ],
-   "requires_application": false,
-   "clippers": 84,
-   "url": "https://contentrewards.com/discover/0afd04db-e183-4411-9957-0b890ef272b5"
-  },
-  {
-   "id": "6d9223d5-e666-41b4-b6ba-1366a88bfdc2",
-   "title": "$$40,000+ LACY CLIPPING CAMPAIGN",
-   "brand": "Reach",
-   "category": "Streamer",
-   "description": "Lacy Clippers",
-   "cpm": 0.0,
-   "budget_left": 30000.0,
-   "budget_total": 30000.0,
+   "id": "8394d4b8-3c0d-4362-bfec-39ac48da131a",
+   "title": "Content Rewards UGC [Non-English]",
+   "brand": "Content Rewards UGC [International]",
+   "category": "Personal Brand",
+   "description": "Create content that attracts UGC creators to Content Rewards and earn earn $2 per 1 views.",
+   "cpm": 0.75,
+   "budget_left": 6038.010000000002,
+   "budget_total": 48750.0,
    "platforms": [
     "instagram",
     "tiktok",
@@ -1396,8 +1390,63 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 6215,
-   "url": "https://contentrewards.com/discover/6d9223d5-e666-41b4-b6ba-1366a88bfdc2"
+   "clippers": 143,
+   "url": "https://contentrewards.com/discover/8394d4b8-3c0d-4362-bfec-39ac48da131a"
+  },
+  {
+   "id": "2eae3b20-87f5-4fa2-9bc3-0c2bb62facc5",
+   "title": "WatchMeWin Clipping",
+   "brand": "WMW CLIPPING",
+   "category": "Entertainment",
+   "description": "Clippo un nopelni 🎬💸",
+   "cpm": 0.8,
+   "budget_left": 523.1699999999983,
+   "budget_total": 36196.0,
+   "platforms": [
+    "instagram",
+    "tiktok"
+   ],
+   "requires_application": false,
+   "clippers": 167,
+   "url": "https://contentrewards.com/discover/2eae3b20-87f5-4fa2-9bc3-0c2bb62facc5",
+   "score": 0.252
+  },
+  {
+   "id": "0afd04db-e183-4411-9957-0b890ef272b5",
+   "title": "Call of Duty MW4 عربي V2",
+   "brand": "Arabic Clipping",
+   "category": "Entertainment",
+   "description": "🔥 Call of Duty MW4 انضم إلى حملة كليبينغ    انشر مقاطع قصيرة عن اللعبة على حساباتك، واحصل على أرباح حسب عدد المشاهدات  المحتوى  جاهز عليك ان تقص و تنزل فقط",
+   "cpm": 3.0,
+   "budget_left": 13024.03,
+   "budget_total": 26300.0,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "x"
+   ],
+   "requires_application": false,
+   "clippers": 89,
+   "url": "https://contentrewards.com/discover/0afd04db-e183-4411-9957-0b890ef272b5"
+  },
+  {
+   "id": "da3d9c5c-5267-4d41-b244-e898ab54520d",
+   "title": "$$25,000 CORE Pool Campaign",
+   "brand": "Reach",
+   "category": "Streamer",
+   "description": "Get paid to clip the best/funniest moments from CORE content! ⬇️  https://x.com/thecoreboys https://www.instagram.com/createownruneverything https://www.tiktok.com/@core https://www.youtube.com/@createownruneverything",
+   "cpm": 0.0,
+   "budget_left": 25000.0,
+   "budget_total": 25000.0,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "x",
+    "youtube"
+   ],
+   "requires_application": false,
+   "clippers": 1579,
+   "url": "https://contentrewards.com/discover/da3d9c5c-5267-4d41-b244-e898ab54520d"
   },
   {
    "id": "18496202-6029-4a29-a44c-9fc33678fcb9",
@@ -1406,7 +1455,7 @@
    "category": "Entertainment",
    "description": "Rejoins la campagne de clipping française officielle de Call of Duty MW4🔥 Poste des clips sur MW4, et gagne de l'argent 💸",
    "cpm": 3.0,
-   "budget_left": 7474.51,
+   "budget_left": 7297.389999999999,
    "budget_total": 23000.0,
    "platforms": [
     "instagram",
@@ -1416,31 +1465,12 @@
    "requires_application": false,
    "clippers": 76,
    "url": "https://contentrewards.com/discover/18496202-6029-4a29-a44c-9fc33678fcb9",
-   "score": 2.429,
+   "score": 2.394,
    "min_payout": 2.0,
    "max_payout": 350.0,
    "requirements": "",
    "reference_links": [],
    "sources": []
-  },
-  {
-   "id": "f0b0fbac-c754-45e5-96f6-aef8796dac91",
-   "title": "FR $4,000 BICHOU MIAMI",
-   "brand": "Risor Clipping",
-   "category": "Kick",
-   "description": "Clippe le contenu des streams de Bichou et gagne 1$ pour chaque 1000 vues.",
-   "cpm": 1.0,
-   "budget_left": 1481.73,
-   "budget_total": 2000.0,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "x",
-    "youtube"
-   ],
-   "requires_application": false,
-   "clippers": 58,
-   "url": "https://contentrewards.com/discover/f0b0fbac-c754-45e5-96f6-aef8796dac91"
   },
   {
    "id": "86842687-ba2b-4638-a024-995dcf3d25a3",
@@ -1449,7 +1479,7 @@
    "category": "Personal Brand",
    "description": "Please check the link for GUIDELINES to submit, all of the details are included there, including a link to our clipping chat.",
    "cpm": 2.0,
-   "budget_left": 4804.26,
+   "budget_left": 4489.110000000001,
    "budget_total": 20000.0,
    "platforms": [
     "facebook",
@@ -1461,12 +1491,32 @@
    "requires_application": false,
    "clippers": 34,
    "url": "https://contentrewards.com/discover/86842687-ba2b-4638-a024-995dcf3d25a3",
-   "score": 1.371,
+   "score": 1.327,
    "min_payout": 10.0,
    "max_payout": 100.0,
    "requirements": "1 rule Visible once you join Join to unlock 1 rule, 3 requirements, and 2 files Join Campaign",
    "reference_links": [],
    "sources": []
+  },
+  {
+   "id": "e9a910b6-2d87-41af-9438-6b568f3436c3",
+   "title": "Brenduh Kick Stream Clipping ",
+   "brand": "Clipping Nest",
+   "category": "Entertainment",
+   "description": "Clip viral stream moments for Вrenduh and Get paid.",
+   "cpm": 0.5,
+   "budget_left": 1112.07,
+   "budget_total": 1500.0,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "x",
+    "youtube"
+   ],
+   "requires_application": false,
+   "clippers": 27,
+   "url": "https://contentrewards.com/discover/e9a910b6-2d87-41af-9438-6b568f3436c3",
+   "score": 0.217
   },
   {
    "id": "6e8cb2c6-7724-44a4-83da-66697acb20af",
@@ -1475,7 +1525,7 @@
    "category": "",
    "description": "Post UGC for Content Rewards, and get paid $3 per 1k views. This is for English content that targets tier 1 audience.",
    "cpm": 3.0,
-   "budget_left": 3843.09,
+   "budget_left": 3842.8199999999997,
    "budget_total": 18000.0,
    "platforms": [
     "instagram",
@@ -1488,22 +1538,22 @@
    "url": "https://contentrewards.com/discover/6e8cb2c6-7724-44a4-83da-66697acb20af"
   },
   {
-   "id": "51fa8c57-fb2f-44e0-b3a8-158f96cbf018",
-   "title": "November 2B1C Clipping",
-   "brand": "YMH Studios",
-   "category": "Comedy Podcast",
-   "description": "We have a brand new episode of 2 Bears 1 Cave. Clip the best moments from the youtube episode and make an original edit. For this campaign we'll be accepting Instagram, Youtube and TikTok clips.",
-   "cpm": 1.0,
-   "budget_left": 269.52999999999975,
-   "budget_total": 5000.0,
+   "id": "c7a8e7c2-6989-4361-914f-f9571578a9b9",
+   "title": "F1 ASTON MARTIN x COINBASE ",
+   "brand": "ClipHaus",
+   "category": "Sports",
+   "description": "Clip the funniest reactions, fan challenges, and behind-the-scenes moments from an F1 superfan's COTA adventure with Dale Brisby. Make entertaining, fast-paced edits that feel like F1 fan content, not ads.",
+   "cpm": 1.5,
+   "budget_left": 3827.0200000000004,
+   "budget_total": 15000.0,
    "platforms": [
     "instagram",
     "tiktok",
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 205,
-   "url": "https://contentrewards.com/discover/51fa8c57-fb2f-44e0-b3a8-158f96cbf018"
+   "clippers": 249,
+   "url": "https://contentrewards.com/discover/c7a8e7c2-6989-4361-914f-f9571578a9b9"
   },
   {
    "id": "c49840ae-ca22-4745-8a42-b675847e0355",
@@ -1512,7 +1562,7 @@
    "category": "Health \\u0026 Wellness",
    "description": "Create \\u0026 Post Viral Moments from Santa Cruz Medicinals New YT Content!",
    "cpm": 1.0,
-   "budget_left": 5323.249999999999,
+   "budget_left": 4224.089999999999,
    "budget_total": 11864.63,
    "platforms": [
     "instagram",
@@ -1520,47 +1570,27 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 27,
+   "clippers": 28,
    "url": "https://contentrewards.com/discover/c49840ae-ca22-4745-8a42-b675847e0355",
-   "score": 0.732
+   "score": 0.652
   },
   {
-   "id": "c7a8e7c2-6989-4361-914f-f9571578a9b9",
-   "title": "F1 ASTON MARTIN x COINBASE ",
-   "brand": "ClipHaus",
-   "category": "Sports",
-   "description": "Clip the funniest reactions, fan challenges, and behind-the-scenes moments from an F1 superfan's COTA adventure with Dale Brisby. Make entertaining, fast-paced edits that feel like F1 fan content, not ads.",
-   "cpm": 1.5,
-   "budget_left": 3854.7700000000004,
-   "budget_total": 15000.0,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "youtube"
-   ],
-   "requires_application": false,
-   "clippers": 250,
-   "url": "https://contentrewards.com/discover/c7a8e7c2-6989-4361-914f-f9571578a9b9"
-  },
-  {
-   "id": "14d3e6c7-be7a-4650-b9fd-e35cb38a0ed2",
-   "title": "$$5,000 Vookum Clipping Campaign",
-   "brand": "Vookum Clippers",
-   "category": "Business",
-   "description": "Clip Vookum, the Diamond District's most-watched luxury watch dealer: negotiations, eBay Live auctions, deadpan one-liners. $1.50 per 1K approved views, $400 max per clip, 24-hour approvals. TikTok, Reels and Shorts. Rules: vookums-clippers.whop.site. Top clippers move up to the $2,500 Dedicated Pages Pool.",
+   "id": "51fa8c57-fb2f-44e0-b3a8-158f96cbf018",
+   "title": "November 2B1C Clipping",
+   "brand": "YMH Studios",
+   "category": "Comedy Podcast",
+   "description": "We have a brand new episode of 2 Bears 1 Cave. Clip the best moments from the youtube episode and make an original edit. For this campaign we'll be accepting Instagram, Youtube and TikTok clips.",
    "cpm": 1.0,
-   "budget_left": 1789.0300000000002,
+   "budget_left": 141.26000000000022,
    "budget_total": 5000.0,
    "platforms": [
-    "facebook",
     "instagram",
     "tiktok",
-    "x",
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 26,
-   "url": "https://contentrewards.com/discover/14d3e6c7-be7a-4650-b9fd-e35cb38a0ed2"
+   "clippers": 206,
+   "url": "https://contentrewards.com/discover/51fa8c57-fb2f-44e0-b3a8-158f96cbf018"
   },
   {
    "id": "7e5c4c7a-1d93-49bb-8214-ca3a4ba60c62",
@@ -1569,7 +1599,7 @@
    "category": "Lifestyle",
    "description": "Gana dinero haciendo clips de Sabri Malle",
    "cpm": 1.0,
-   "budget_left": 8635.39,
+   "budget_left": 8612.89,
    "budget_total": 12000.0,
    "platforms": [
     "instagram",
@@ -1581,13 +1611,76 @@
    "url": "https://contentrewards.com/discover/7e5c4c7a-1d93-49bb-8214-ca3a4ba60c62"
   },
   {
+   "id": "14d3e6c7-be7a-4650-b9fd-e35cb38a0ed2",
+   "title": "$$5,000 Vookum Clipping Campaign",
+   "brand": "Vookum Clippers",
+   "category": "Business",
+   "description": "Clip Vookum, the Diamond District's most-watched luxury watch dealer: negotiations, eBay Live auctions, deadpan one-liners. $1.50 per 1K approved views, $400 max per clip, 24-hour approvals. TikTok, Reels and Shorts. Rules: vookums-clippers.whop.site. Top clippers move up to the $2,500 Dedicated Pages Pool.",
+   "cpm": 1.0,
+   "budget_left": 903.6300000000001,
+   "budget_total": 5000.0,
+   "platforms": [
+    "facebook",
+    "instagram",
+    "tiktok",
+    "x",
+    "youtube"
+   ],
+   "requires_application": false,
+   "clippers": 30,
+   "url": "https://contentrewards.com/discover/14d3e6c7-be7a-4650-b9fd-e35cb38a0ed2"
+  },
+  {
+   "id": "783abdca-1e2f-489e-a8b4-1c802a571872",
+   "title": "Genius Bimbos Podcast Clipping Campaign",
+   "brand": "Evangelist",
+   "category": "Entertainment",
+   "description": "Earn 1.75$ for every 1000 views you bring to Genius Bimbos podcast!  To verify your clips you will need to join our Whop community!",
+   "cpm": 1.75,
+   "budget_left": 1548.66,
+   "budget_total": 3000.0,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": false,
+   "clippers": 29,
+   "url": "https://contentrewards.com/discover/783abdca-1e2f-489e-a8b4-1c802a571872",
+   "score": 0.809,
+   "min_payout": 3.5,
+   "max_payout": 350.0,
+   "requirements": "",
+   "reference_links": [],
+   "sources": []
+  },
+  {
+   "id": "705f6e21-38af-408c-9e55-c77e4611bf09",
+   "title": "Let Him Mansplain Podcast Clipping",
+   "brand": "ClipLaunch",
+   "category": "Podcasts",
+   "description": "Clip for Let Him Mansplain, the weekly podcast asking where all the good men went! Host Lily Kate gets men to open up about dating and marriage from a Christian point of view. The goal is to help women find good men! Clip content that grows awareness and turns viewers into long-term fans!",
+   "cpm": 1.0,
+   "budget_left": 6685.67,
+   "budget_total": 10500.0,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": false,
+   "clippers": 74,
+   "url": "https://contentrewards.com/discover/705f6e21-38af-408c-9e55-c77e4611bf09",
+   "score": 0.761
+  },
+  {
    "id": "2e7ca35e-4cff-4755-bae8-8f9f5d727c0b",
    "title": "Daise — Dollfaces + Charm Bracelets Clipping",
    "brand": "Clip Influence",
    "category": "Entertainment",
    "description": "Get Paid $2/thousand views to clip for Daise — Dollfaces + Charm Bracelets!  Create viral clips showcasing the Dollfaces + Charm Bracelets and get paid. (THEME PAGES).",
    "cpm": 2.0,
-   "budget_left": 7788.9400000000005,
+   "budget_left": 7749.24,
    "budget_total": 10000.0,
    "platforms": [
     "instagram",
@@ -1596,7 +1689,7 @@
    "requires_application": false,
    "clippers": 31,
    "url": "https://contentrewards.com/discover/2e7ca35e-4cff-4755-bae8-8f9f5d727c0b",
-   "score": 1.799,
+   "score": 1.793,
    "min_payout": 2.0,
    "max_payout": 300.0,
    "requirements": "",
@@ -1610,15 +1703,15 @@
    "category": "Technology",
    "description": "The 3rd-i safety app is a real-time personal and workplace safety application designed to stream live video, audio, and GPS location data to trusted contacts (\\'squads\\') or trained safety agents",
    "cpm": 1.0,
-   "budget_left": 8365.72,
+   "budget_left": 7903.48,
    "budget_total": 10000.0,
    "platforms": [
     "tiktok"
    ],
    "requires_application": false,
-   "clippers": 25,
+   "clippers": 31,
    "url": "https://contentrewards.com/discover/8700b527-9026-4364-a857-7ee8944843a2",
-   "score": 0.951,
+   "score": 0.907,
    "min_payout": 1.0,
    "max_payout": 350.0,
    "requirements": "1 rule Visible once you join Join to unlock 1 rule, 9 requirements, and 2 files Join Campaign",
@@ -1632,7 +1725,7 @@
    "category": "Personal Brand",
    "description": "Gana dinero clipeando a Carlos Esparraga.",
    "cpm": 1.0,
-   "budget_left": 3016.6499999999996,
+   "budget_left": 2939.24,
    "budget_total": 10000.0,
    "platforms": [
     "instagram",
@@ -1650,7 +1743,7 @@
    "category": "Documentary",
    "description": "Post our clips of Nepal's honey hunters: men on rope ladders 200m up a cliff, harvesting wild mad honey. Best fit: documentary, rare food, expedition and travel pages.   Also post our talking head clips  and only Clip in English will be accepted",
    "cpm": 1.0,
-   "budget_left": 1452.0600000000004,
+   "budget_left": 1473.67,
    "budget_total": 9000.0,
    "platforms": [
     "facebook",
@@ -1660,46 +1753,8 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 81,
+   "clippers": 82,
    "url": "https://contentrewards.com/discover/488d8a64-6c64-446d-8038-b74001934705"
-  },
-  {
-   "id": "2e3d49d5-1b66-45f7-86a0-f82cdeffc158",
-   "title": "Shark Tank Egypt X E-stebdal || Arabic Campaign",
-   "brand": "Arab Clip House",
-   "category": "Business",
-   "description": "Clip the best moments from estebdal's Shark Tank Egypt episode and stream. Post on TikTok with burned-in Arabic subtitles, tag @estebdal, and keep e-stebdal.com in your bio. Min 20s, vertical 9:16, 60%+ Egypt audience. $0.50 per 1K views, counted from 2K views.",
-   "cpm": 0.5,
-   "budget_left": 472.41999999999996,
-   "budget_total": 1000.0,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "youtube"
-   ],
-   "requires_application": false,
-   "clippers": 46,
-   "url": "https://contentrewards.com/discover/2e3d49d5-1b66-45f7-86a0-f82cdeffc158",
-   "score": 0.187
-  },
-  {
-   "id": "6590957d-cd29-4135-8483-0cda5f6ed6a8",
-   "title": "Once Upon a Time in Texas ",
-   "brand": "Clouted",
-   "category": "Movies \\u0026 TV",
-   "description": "Clipping Movie Campaign",
-   "cpm": 0.5,
-   "budget_left": 866.26,
-   "budget_total": 2000.0,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "youtube"
-   ],
-   "requires_application": false,
-   "clippers": 311,
-   "url": "https://contentrewards.com/discover/6590957d-cd29-4135-8483-0cda5f6ed6a8",
-   "score": 0.145
   },
   {
    "id": "c18192ea-dbc2-4ba0-8138-cd3667ea18d5",
@@ -1708,7 +1763,7 @@
    "category": "Apps",
    "description": "Post AI slideshows for Daimon using testing formats we give you. $2 CPM + Success Guide \\u0026 1-on-1 coaching.",
    "cpm": 2.0,
-   "budget_left": 1510.12,
+   "budget_left": 1504.6499999999996,
    "budget_total": 6433.0,
    "platforms": [
     "tiktok"
@@ -1724,7 +1779,7 @@
    "category": "Entertainment",
    "description": "Elevate Harrison Webb's brand with engaging, short-form content featuring him.",
    "cpm": 0.5,
-   "budget_left": 306.96000000000004,
+   "budget_left": 272.8299999999999,
    "budget_total": 6500.0,
    "platforms": [
     "instagram",
@@ -1736,13 +1791,32 @@
    "url": "https://contentrewards.com/discover/a2726858-79e3-4d47-a681-f0fbba34d19e"
   },
   {
+   "id": "6590957d-cd29-4135-8483-0cda5f6ed6a8",
+   "title": "Once Upon a Time in Texas ",
+   "brand": "Clouted",
+   "category": "Movies \\u0026 TV",
+   "description": "Clipping Movie Campaign",
+   "cpm": 0.5,
+   "budget_left": 870.9300000000001,
+   "budget_total": 2000.0,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": false,
+   "clippers": 316,
+   "url": "https://contentrewards.com/discover/6590957d-cd29-4135-8483-0cda5f6ed6a8",
+   "score": 0.145
+  },
+  {
    "id": "c9617009-53cb-4885-8ffc-b655f7c128b3",
    "title": "TradeLens [SLIDESHOWS]",
    "brand": "Reachify",
    "category": "Trading",
    "description": "Create tiktok slideshows about the tradelens app following the guidelines",
    "cpm": 1.25,
-   "budget_left": 3102.48,
+   "budget_left": 3093.1,
    "budget_total": 6000.0,
    "platforms": [
     "tiktok"
@@ -1750,132 +1824,9 @@
    "requires_application": false,
    "clippers": 32,
    "url": "https://contentrewards.com/discover/c9617009-53cb-4885-8ffc-b655f7c128b3"
-  },
-  {
-   "id": "796d5d55-c4ae-4172-9670-4afd85668a4d",
-   "title": "CLIP ANY LYRICAL LEMONADE TV EPISODE",
-   "brand": "deFaria Clipping Rewards",
-   "category": "Hip-Hop \\u0026 Rap",
-   "description": "Every Lyrical Lemonade TV show counts, new or old episodes: New York Nights, No Comfort, No Comfort Detours, Call It A Day, Lunch Break Freestyle, Chloe Explains and more. Clip it, meme it or make it emotional. Post on TikTok, Reels and Shorts. $0.60 per 1K views.",
-   "cpm": 0.6,
-   "budget_left": 907.96,
-   "budget_total": 6000.0,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "x",
-    "youtube"
-   ],
-   "requires_application": false,
-   "clippers": 109,
-   "url": "https://contentrewards.com/discover/796d5d55-c4ae-4172-9670-4afd85668a4d"
-  },
-  {
-   "id": "23022f84-5715-4ba5-a647-abc4baf4f0f8",
-   "title": "Open Road Clipping | $5.25K Budget | $1.25 CPM",
-   "brand": "Clipix",
-   "category": "Apps",
-   "description": "Open Road (@openroadapp) is a drive tracker for iOS and Android, like Strava for your car. Flood TikTok and Instagram with slideshows and clips made in the provided builder. Every post should push viewers to download Open Road, and all content should feel native to the platform, not an ad.",
-   "cpm": 1.25,
-   "budget_left": 3471.2,
-   "budget_total": 5250.0,
-   "platforms": [
-    "instagram",
-    "tiktok"
-   ],
-   "requires_application": false,
-   "clippers": 44,
-   "url": "https://contentrewards.com/discover/23022f84-5715-4ba5-a647-abc4baf4f0f8"
-  },
-  {
-   "id": "7b094e71-4021-4c56-95ad-e1c0c3cd7f1a",
-   "title": "META-KLAGE | $5,000 Budget | $2 CPM",
-   "brand": "Clipping Outlaws",
-   "category": "Politics",
-   "description": "Facebook and Instagram tracked users across Germany for years, and German courts have started ruling in their favor. Meta-Klage checks for free if you’re owed compensation.",
-   "cpm": 2.0,
-   "budget_left": 3621.6099999999997,
-   "budget_total": 5000.0,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "youtube"
-   ],
-   "requires_application": false,
-   "clippers": 48,
-   "url": "https://contentrewards.com/discover/7b094e71-4021-4c56-95ad-e1c0c3cd7f1a"
   }
  ],
  "top": [
-  {
-   "id": "802cf95a-ea84-4070-9a96-8a917831cb16",
-   "title": "Jersey Fusion Clipping [Infinte Budget]",
-   "brand": "ClipUp Official",
-   "category": "Consumer Brand",
-   "description": "Jersey Fusion is an online store for cheap football jerseys. We have a proven video template that already works. Your job is to recreate it. Full instructions and examples in the Notion link",
-   "cpm": 2.5,
-   "budget_left": 14000.0,
-   "budget_total": 14000.0,
-   "platforms": [
-    "instagram",
-    "tiktok"
-   ],
-   "requires_application": false,
-   "clippers": 1,
-   "url": "https://contentrewards.com/discover/802cf95a-ea84-4070-9a96-8a917831cb16",
-   "score": 3.555,
-   "min_payout": 3.0,
-   "max_payout": 500.0,
-   "requirements": "",
-   "reference_links": [],
-   "sources": []
-  },
-  {
-   "id": "a1cefc3b-4533-438f-8e70-a7299550f1cf",
-   "title": "Call of Duty - MW4 DMZ Intel Briefing Clipping",
-   "brand": "Clipping Culture",
-   "category": "Entertainment",
-   "description": "Clip the DMZ Intel Briefing video from the official content folder. Show the new DMZ content in Modern Warfare 4 Season 1. Post to TikTok and Instagram Reels.",
-   "cpm": 2.0,
-   "budget_left": 17233.23,
-   "budget_total": 30000.0,
-   "platforms": [
-    "instagram",
-    "tiktok"
-   ],
-   "requires_application": false,
-   "clippers": 160,
-   "url": "https://contentrewards.com/discover/a1cefc3b-4533-438f-8e70-a7299550f1cf",
-   "score": 2.562,
-   "min_payout": 6.0,
-   "max_payout": 1200.0,
-   "requirements": "",
-   "reference_links": [],
-   "sources": []
-  },
-  {
-   "id": "a1cefc3b-4533-438f-8e70-a7299550f1cf",
-   "title": "Call of Duty - MW4 DMZ Intel Briefing Clipping",
-   "brand": "Clipping Culture",
-   "category": "Entertainment",
-   "description": "Clip the DMZ Intel Briefing video from the official content folder. Show the new DMZ content in Modern Warfare 4 Season 1. Post to TikTok and Instagram Reels.",
-   "cpm": 2.0,
-   "budget_left": 17233.23,
-   "budget_total": 30000.0,
-   "platforms": [
-    "instagram",
-    "tiktok"
-   ],
-   "requires_application": false,
-   "clippers": 160,
-   "url": "https://contentrewards.com/discover/a1cefc3b-4533-438f-8e70-a7299550f1cf",
-   "score": 2.562,
-   "min_payout": 6.0,
-   "max_payout": 1200.0,
-   "requirements": "",
-   "reference_links": [],
-   "sources": []
-  },
   {
    "id": "18496202-6029-4a29-a44c-9fc33678fcb9",
    "title": "Call of Duty MW4 (en Français)",
@@ -1883,7 +1834,7 @@
    "category": "Entertainment",
    "description": "Rejoins la campagne de clipping française officielle de Call of Duty MW4🔥 Poste des clips sur MW4, et gagne de l'argent 💸",
    "cpm": 3.0,
-   "budget_left": 7474.51,
+   "budget_left": 7297.389999999999,
    "budget_total": 23000.0,
    "platforms": [
     "instagram",
@@ -1893,9 +1844,55 @@
    "requires_application": false,
    "clippers": 76,
    "url": "https://contentrewards.com/discover/18496202-6029-4a29-a44c-9fc33678fcb9",
-   "score": 2.429,
+   "score": 2.394,
    "min_payout": 2.0,
    "max_payout": 350.0,
+   "requirements": "",
+   "reference_links": [],
+   "sources": []
+  },
+  {
+   "id": "a1cefc3b-4533-438f-8e70-a7299550f1cf",
+   "title": "Call of Duty - MW4 DMZ Intel Briefing Clipping",
+   "brand": "Clipping Culture",
+   "category": "Entertainment",
+   "description": "Clip the DMZ Intel Briefing video from the official content folder. Show the new DMZ content in Modern Warfare 4 Season 1. Post to TikTok and Instagram Reels.",
+   "cpm": 2.0,
+   "budget_left": 13646.35,
+   "budget_total": 30000.0,
+   "platforms": [
+    "instagram",
+    "tiktok"
+   ],
+   "requires_application": false,
+   "clippers": 163,
+   "url": "https://contentrewards.com/discover/a1cefc3b-4533-438f-8e70-a7299550f1cf",
+   "score": 2.141,
+   "min_payout": 6.0,
+   "max_payout": 1200.0,
+   "requirements": "",
+   "reference_links": [],
+   "sources": []
+  },
+  {
+   "id": "a1cefc3b-4533-438f-8e70-a7299550f1cf",
+   "title": "Call of Duty - MW4 DMZ Intel Briefing Clipping",
+   "brand": "Clipping Culture",
+   "category": "Entertainment",
+   "description": "Clip the DMZ Intel Briefing video from the official content folder. Show the new DMZ content in Modern Warfare 4 Season 1. Post to TikTok and Instagram Reels.",
+   "cpm": 2.0,
+   "budget_left": 13646.35,
+   "budget_total": 30000.0,
+   "platforms": [
+    "instagram",
+    "tiktok"
+   ],
+   "requires_application": false,
+   "clippers": 163,
+   "url": "https://contentrewards.com/discover/a1cefc3b-4533-438f-8e70-a7299550f1cf",
+   "score": 2.141,
+   "min_payout": 6.0,
+   "max_payout": 1200.0,
    "requirements": "",
    "reference_links": [],
    "sources": []
@@ -1907,7 +1904,7 @@
    "category": "Entertainment",
    "description": "Post clips of the STRANGER THAN HEAVEN Act 2 Story Trailer. Post on TikTok, Instagram, or YouTube Shorts.",
    "cpm": 2.0,
-   "budget_left": 15956.16,
+   "budget_left": 13802.89,
    "budget_total": 24000.0,
    "platforms": [
     "instagram",
@@ -1915,9 +1912,9 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 194,
+   "clippers": 219,
    "url": "https://contentrewards.com/discover/65724060-69de-4dc7-a523-4843b7358871",
-   "score": 2.32,
+   "score": 2.027,
    "min_payout": 2.0,
    "max_payout": 800.0,
    "requirements": "1 rule Visible once you join Join to unlock 1 rule and 2 files Join Campaign",
@@ -1931,7 +1928,7 @@
    "category": "Gaming",
    "description": "Clip highlight moments from the official Metaphor: ReFantazio trailers. Use the Heismay Character Trailer and the Launch Trailer. Post to TikTok, Instagram Reels, or YouTube Shorts.",
    "cpm": 2.0,
-   "budget_left": 10765.3,
+   "budget_left": 10653.54,
    "budget_total": 12000.0,
    "platforms": [
     "instagram",
@@ -1939,61 +1936,11 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 101,
+   "clippers": 114,
    "url": "https://contentrewards.com/discover/b5ff48d7-ec63-443a-b767-3a430a6f71f4",
-   "score": 1.968,
+   "score": 1.917,
    "min_payout": 2.0,
    "max_payout": 800.0,
-   "requirements": "",
-   "reference_links": [],
-   "sources": []
-  },
-  {
-   "id": "f2c529a0-6777-4e8a-b50b-4c8bd4e4d90f",
-   "title": "SypherPK $7,500 Clipping Campaign",
-   "brand": "Reach",
-   "category": "Streamer",
-   "description": "Get paid to clip content from Sypher, Replays, or Maddynf's VOD’s from their stream on November 15.",
-   "cpm": 2.0,
-   "budget_left": 7425.63,
-   "budget_total": 7500.0,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "x",
-    "youtube"
-   ],
-   "requires_application": false,
-   "clippers": 2,
-   "url": "https://contentrewards.com/discover/f2c529a0-6777-4e8a-b50b-4c8bd4e4d90f",
-   "score": 1.856,
-   "min_payout": 20.0,
-   "max_payout": 500.0,
-   "requirements": "",
-   "reference_links": [],
-   "sources": []
-  },
-  {
-   "id": "f2c529a0-6777-4e8a-b50b-4c8bd4e4d90f",
-   "title": "SypherPK $7,500 Clipping Campaign",
-   "brand": "Reach",
-   "category": "Streamer",
-   "description": "Get paid to clip content from Sypher, Replays, or Maddynf's VOD’s from their stream on November 15.",
-   "cpm": 2.0,
-   "budget_left": 7425.63,
-   "budget_total": 7500.0,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "x",
-    "youtube"
-   ],
-   "requires_application": false,
-   "clippers": 2,
-   "url": "https://contentrewards.com/discover/f2c529a0-6777-4e8a-b50b-4c8bd4e4d90f",
-   "score": 1.856,
-   "min_payout": 20.0,
-   "max_payout": 500.0,
    "requirements": "",
    "reference_links": [],
    "sources": []
@@ -2005,7 +1952,7 @@
    "category": "Entertainment",
    "description": "Get Paid $2/thousand views to clip for Daise — Dollfaces + Charm Bracelets!  Create viral clips showcasing the Dollfaces + Charm Bracelets and get paid. (THEME PAGES).",
    "cpm": 2.0,
-   "budget_left": 7788.9400000000005,
+   "budget_left": 7749.24,
    "budget_total": 10000.0,
    "platforms": [
     "instagram",
@@ -2014,7 +1961,7 @@
    "requires_application": false,
    "clippers": 31,
    "url": "https://contentrewards.com/discover/2e7ca35e-4cff-4755-bae8-8f9f5d727c0b",
-   "score": 1.799,
+   "score": 1.793,
    "min_payout": 2.0,
    "max_payout": 300.0,
    "requirements": "",
@@ -2022,50 +1969,76 @@
    "sources": []
   },
   {
-   "id": "71e3d612-5b75-4b30-941b-afb7e0cac36d",
-   "title": "First Press Podcast",
-   "brand": "Clip Farm",
-   "category": "Entertainment",
-   "description": "First Press is a business podcast by Press On Ventures. It shows how brands get built. Clip the provided episodes and make people want to watch the full episodes. You earn money for every view.",
-   "cpm": 1.5,
-   "budget_left": 11727.48,
-   "budget_total": 12000.0,
+   "id": "f2c529a0-6777-4e8a-b50b-4c8bd4e4d90f",
+   "title": "SypherPK $7,500 Clipping Campaign",
+   "brand": "Reach",
+   "category": "Streamer",
+   "description": "Get paid to clip content from Sypher, Replays, or Maddynf's VOD’s from their stream on November 15.",
+   "cpm": 2.0,
+   "budget_left": 6980.68,
+   "budget_total": 7500.0,
    "platforms": [
     "instagram",
     "tiktok",
+    "x",
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 29,
-   "url": "https://contentrewards.com/discover/71e3d612-5b75-4b30-941b-afb7e0cac36d",
-   "score": 1.771,
-   "min_payout": 1.5,
-   "max_payout": 350.0,
-   "requirements": "1 rule Visible once you join Join to unlock 1 rule and 1 file Join Campaign",
+   "clippers": 10,
+   "url": "https://contentrewards.com/discover/f2c529a0-6777-4e8a-b50b-4c8bd4e4d90f",
+   "score": 1.758,
+   "min_payout": 20.0,
+   "max_payout": 500.0,
+   "requirements": "",
    "reference_links": [],
    "sources": []
   },
   {
-   "id": "eb28f557-df7b-4245-8603-01380c4d84cc",
-   "title": "Wa-Chaa x The RZA - Grandmaster Collection Clip",
-   "brand": "Clipping Culture",
-   "category": "Entertainment",
-   "description": "Download videos from the official Wa-Chaa content folder. Clip the best moments and post them to your page. Post on TikTok, Instagram Reels, or YouTube Shorts. There is no set format. Use your own style and angle. Use only footage from the official content folder.",
+   "id": "f2c529a0-6777-4e8a-b50b-4c8bd4e4d90f",
+   "title": "SypherPK $7,500 Clipping Campaign",
+   "brand": "Reach",
+   "category": "Streamer",
+   "description": "Get paid to clip content from Sypher, Replays, or Maddynf's VOD’s from their stream on November 15.",
    "cpm": 2.0,
-   "budget_left": 7896.52,
-   "budget_total": 10500.0,
+   "budget_left": 6980.68,
+   "budget_total": 7500.0,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "x",
+    "youtube"
+   ],
+   "requires_application": false,
+   "clippers": 10,
+   "url": "https://contentrewards.com/discover/f2c529a0-6777-4e8a-b50b-4c8bd4e4d90f",
+   "score": 1.758,
+   "min_payout": 20.0,
+   "max_payout": 500.0,
+   "requirements": "",
+   "reference_links": [],
+   "sources": []
+  },
+  {
+   "id": "e509f6d0-13bf-42bc-8450-09e12c216c33",
+   "title": "Backyard Breaks [Clipping Campaign]",
+   "brand": "ClipHouse",
+   "category": "Sports",
+   "description": "Download Clips from the official Clip Context Tracker sheet and post them across dedicated Backyard Breaks pages on TikTok, Instagram Reels, and/or Youtube Shorts. Focus on posting their most viral moments — big pulls, insane reactions, and the kind of hits that stop people mid-scroll. Post must be exciting, engaging, and upbeat.",
+   "cpm": 2.0,
+   "budget_left": 11127.26999999999,
+   "budget_total": 100104.87,
    "platforms": [
     "instagram",
     "tiktok",
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 209,
-   "url": "https://contentrewards.com/discover/eb28f557-df7b-4245-8603-01380c4d84cc",
-   "score": 1.405,
-   "min_payout": 2.0,
-   "max_payout": 600.0,
-   "requirements": "",
+   "clippers": 403,
+   "url": "https://contentrewards.com/discover/e509f6d0-13bf-42bc-8450-09e12c216c33",
+   "score": 1.495,
+   "min_payout": 3.0,
+   "max_payout": 250.0,
+   "requirements": "2 rules Visible once you join Join to unlock 2 rules and 4 files Join Campaign",
    "reference_links": [],
    "sources": []
   },
@@ -2076,7 +2049,7 @@
    "category": "Personal Brand",
    "description": "Please check the link for GUIDELINES to submit, all of the details are included there, including a link to our clipping chat.",
    "cpm": 2.0,
-   "budget_left": 4804.26,
+   "budget_left": 4489.110000000001,
    "budget_total": 20000.0,
    "platforms": [
     "facebook",
@@ -2088,10 +2061,34 @@
    "requires_application": false,
    "clippers": 34,
    "url": "https://contentrewards.com/discover/86842687-ba2b-4638-a024-995dcf3d25a3",
-   "score": 1.371,
+   "score": 1.327,
    "min_payout": 10.0,
    "max_payout": 100.0,
    "requirements": "1 rule Visible once you join Join to unlock 1 rule, 3 requirements, and 2 files Join Campaign",
+   "reference_links": [],
+   "sources": []
+  },
+  {
+   "id": "eb28f557-df7b-4245-8603-01380c4d84cc",
+   "title": "Wa-Chaa x The RZA - Grandmaster Collection Clip",
+   "brand": "Clipping Culture",
+   "category": "Entertainment",
+   "description": "Download videos from the official Wa-Chaa content folder. Clip the best moments and post them to your page. Post on TikTok, Instagram Reels, or YouTube Shorts. There is no set format. Use your own style and angle. Use only footage from the official content folder.",
+   "cpm": 2.0,
+   "budget_left": 6861.24,
+   "budget_total": 10500.0,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": false,
+   "clippers": 220,
+   "url": "https://contentrewards.com/discover/eb28f557-df7b-4245-8603-01380c4d84cc",
+   "score": 1.277,
+   "min_payout": 2.0,
+   "max_payout": 600.0,
+   "requirements": "",
    "reference_links": [],
    "sources": []
   },
@@ -2102,15 +2099,15 @@
    "category": "Technology",
    "description": "The 3rd-i safety app is a real-time personal and workplace safety application designed to stream live video, audio, and GPS location data to trusted contacts (\\'squads\\') or trained safety agents",
    "cpm": 1.0,
-   "budget_left": 8365.72,
+   "budget_left": 7903.48,
    "budget_total": 10000.0,
    "platforms": [
     "tiktok"
    ],
    "requires_application": false,
-   "clippers": 25,
+   "clippers": 31,
    "url": "https://contentrewards.com/discover/8700b527-9026-4364-a857-7ee8944843a2",
-   "score": 0.951,
+   "score": 0.907,
    "min_payout": 1.0,
    "max_payout": 350.0,
    "requirements": "1 rule Visible once you join Join to unlock 1 rule, 9 requirements, and 2 files Join Campaign",
@@ -2122,9 +2119,9 @@
    "title": "$$8,000 Expedia x IShowSpeed Campaign",
    "brand": "Reach",
    "category": "Streamer",
-   "description": "Content must be from IShowSpeed's Stream 11.6.26. Content sourced from other Streams, Videos, and posts WILL BE REJECTED.  FOOTAGE is listed below, under \\'Reference Materials.\\' Any footage from 2:56:29 until the end of stream is acceptable.  https://www.youtube.com/@IShowSpeed",
+   "description": "Content must be from IShowSpeed's Stream 11.6.26. Content sourced from other Streams, Videos, and posts WILL BE REJECTED.  FOOTAGE is listed below, under \\'Reference Materials.\\' Any footage from 2:46:29 until the end of stream is acceptable.  https://www.youtube.com/@IShowSpeed",
    "cpm": 1.0,
-   "budget_left": 7358.0,
+   "budget_left": 7300.6900000000005,
    "budget_total": 8000.0,
    "platforms": [
     "instagram",
@@ -2132,9 +2129,9 @@
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 23,
+   "clippers": 25,
    "url": "https://contentrewards.com/discover/afeca1a0-f44c-46ad-8194-09d62b56589e",
-   "score": 0.883,
+   "score": 0.875,
    "min_payout": 10.0,
    "max_payout": 500.0,
    "requirements": "",
@@ -2148,18 +2145,42 @@
    "category": "Gaming",
    "description": "Clip Dom's funny and entertaining GTA 6 moments for TikTok and YouTube Shorts. GTA 6-specific accounts required; streamer-clips accounts recommended. Scheduled for Nov 18, 2026. Read the full brief before posting; submissions begin only when the campaign opens.",
    "cpm": 2.0,
-   "budget_left": 807.05,
+   "budget_left": 934.64,
    "budget_total": 1000.0,
    "platforms": [
     "tiktok",
     "youtube"
    ],
    "requires_application": false,
-   "clippers": 46,
+   "clippers": 41,
    "url": "https://contentrewards.com/discover/051002dd-5c46-43d0-a446-43f2957ba3a9",
-   "score": 0.794,
+   "score": 0.819,
    "min_payout": 20.0,
    "max_payout": 150.0,
+   "requirements": "",
+   "reference_links": [],
+   "sources": []
+  },
+  {
+   "id": "783abdca-1e2f-489e-a8b4-1c802a571872",
+   "title": "Genius Bimbos Podcast Clipping Campaign",
+   "brand": "Evangelist",
+   "category": "Entertainment",
+   "description": "Earn 1.75$ for every 1000 views you bring to Genius Bimbos podcast!  To verify your clips you will need to join our Whop community!",
+   "cpm": 1.75,
+   "budget_left": 1548.66,
+   "budget_total": 3000.0,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": false,
+   "clippers": 29,
+   "url": "https://contentrewards.com/discover/783abdca-1e2f-489e-a8b4-1c802a571872",
+   "score": 0.809,
+   "min_payout": 3.5,
+   "max_payout": 350.0,
    "requirements": "",
    "reference_links": [],
    "sources": []
