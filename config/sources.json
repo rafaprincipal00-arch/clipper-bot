@@ -1866,5 +1866,37 @@
     "enabled": false,
     "lang": "English",
     "why_off": "la campana es de Fortnite UEFN (VODs del 15/11), no de GTA; unido 19/11"
+  },
+  {
+    "creator": "Chris Van Vliet (YouTube)",
+    "source": "https://www.youtube.com/@ChrisVanVliet/videos",
+    "account": 1,
+    "lang": "en",
+    "enabled": false,
+    "why": "CR Chris Van Vliet interviews: TikTok/IG 1$/1k, min 5$ (5k vistas), max 125$, presupuesto ~2526$ (22/11). Fuente YouTube: solo via prefetch.",
+    "campaign": "Chris Van Vliet interviews",
+    "campaign_url": "https://contentrewards.com/c/campaigns/c2e7d8ec-2121-41dc-9c0a-f7d7da5fd6c4",
+    "cpm": 1.0,
+    "mention": "@chrisvanvliet",
+    "priority": 2,
+    "requirements": "Clip the best moments from Chris Van Vliet's interviews and get paid per view. Wrestlers breaking down, powerful life stories, and mindset-shifting conversations. 1 rule and 1 file locked until join.",
+    "join_status": "pendiente: cr_join 22/11 fallo SESSION EXPIRED (CR_STATE caducado); rules sin desbloquear",
+    "why_off": "No unido: sesion Content Rewards caducada (CR_STATE). Activar tras cr_join con JOINED: True y leer las reglas desbloqueadas."
+  },
+  {
+    "creator": "First Press podcast (Press On Ventures)",
+    "source": "",
+    "account": 1,
+    "lang": "en",
+    "enabled": false,
+    "why": "CR First Press: TikTok/IG/YT 1.5$/1k, min 1.5$ (1k vistas), max 350$, presupuesto ~338$ (22/11). Episodios en archivo de la campana (bloqueado hasta unirse).",
+    "campaign": "First Press",
+    "campaign_url": "https://contentrewards.com/c/campaigns/71e3d612-5b75-4b30-941b-afb7e0cac36d",
+    "cpm": 1.5,
+    "mention": "First Press",
+    "priority": 2,
+    "requirements": "First Press is a business podcast by Press On Ventures. It shows how brands get built. Clip the provided episodes and make people want to watch the full episodes. 1 rule and 1 file locked until join.",
+    "join_status": "pendiente: cr_join 22/11 fallo SESSION EXPIRED (CR_STATE caducado); rules sin desbloquear",
+    "why_off": "No unido: sesion CR caducada; sin fuente de video hasta ver el archivo de la campana."
   }
 ]
