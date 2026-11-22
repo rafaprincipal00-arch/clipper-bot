@@ -1,61 +1,66 @@
 {
- "updated": "2026-11-21T07:32:00+00:00",
- "clips": 282,
+ "updated": "2026-11-22T07:31:48+00:00",
+ "clips": 291,
  "by_creator": {
+  "Lacy (Twitch)": {
+   "clips": 5,
+   "views": 886,
+   "avg_views": 177
+  },
   "KreekCraft (Twitch)": {
-   "clips": 3,
-   "views": 7,
-   "avg_views": 2
+   "clips": 6,
+   "views": 2115,
+   "avg_views": 352
+  },
+  "Stable Ronaldo (Twitch)": {
+   "clips": 14,
+   "views": 5520,
+   "avg_views": 394
   },
   "Dasgasd3m (Kick)": {
-   "clips": 1,
-   "views": 2,
-   "avg_views": 2
+   "clips": 2,
+   "views": 6,
+   "avg_views": 3
   },
   "Kai Cenat (Twitch)": {
    "clips": 25,
-   "views": 23541,
-   "avg_views": 942
+   "views": 23641,
+   "avg_views": 946
   },
   "elZeein (Kick)": {
    "clips": 4,
-   "views": 937,
-   "avg_views": 234
+   "views": 1230,
+   "avg_views": 308
   },
   "IlloJuan (Twitch)": {
    "clips": 6,
-   "views": 1966,
-   "avg_views": 328
+   "views": 2312,
+   "avg_views": 385
   },
   "JasonTheWeen (Twitch)": {
    "clips": 4,
-   "views": 1753,
-   "avg_views": 438
+   "views": 1844,
+   "avg_views": 461
   },
   "Marlon (Twitch)": {
    "clips": 7,
    "views": 2313,
    "avg_views": 330
   },
-  "Stable Ronaldo (Twitch)": {
-   "clips": 12,
-   "views": 5513,
-   "avg_views": 459
-  },
   "Clix (Twitch)": {
    "clips": 20,
-   "views": 24627,
+   "views": 24620,
    "avg_views": 1231
   },
   "Cuffem (Kick)": {
    "clips": 5,
-   "views": 3522,
-   "avg_views": 704
+   "views": 3523,
+   "avg_views": 705
   },
   "Spreen (Kick)": {
    "clips": 16,
-   "views": 15509,
-   "avg_views": 969
+   "views": 15527,
+   "avg_views": 970
   },
   "Silky (Twitch)": {
    "clips": 2,
@@ -64,28 +69,28 @@
   },
   "LosPollosTV (Kick)": {
    "clips": 13,
-   "views": 5896,
+   "views": 5897,
    "avg_views": 454
   },
   "CaseOh (Twitch)": {
    "clips": 16,
-   "views": 7304,
+   "views": 7301,
    "avg_views": 456
   },
   "Lanah Cherry (Twitch)": {
    "clips": 21,
-   "views": 23198,
-   "avg_views": 1105
+   "views": 23236,
+   "avg_views": 1106
   },
   "Rivers (Twitch)": {
    "clips": 10,
-   "views": 10912,
-   "avg_views": 1091
+   "views": 11076,
+   "avg_views": 1108
   },
   "Auronplay (Twitch)": {
    "clips": 23,
-   "views": 25259,
-   "avg_views": 1098
+   "views": 25315,
+   "avg_views": 1101
   },
   "xQc (Kick)": {
    "clips": 6,
@@ -136,11 +141,6 @@
    "clips": 1,
    "views": 37,
    "avg_views": 37
-  },
-  "Lacy (Twitch)": {
-   "clips": 2,
-   "views": 13,
-   "avg_views": 6
   },
   "Harrison Webb ($7 vs $115 English Breakfast)": {
    "clips": 1,
@@ -243,7 +243,7 @@
    "mood": "funny",
    "hook_type": "revelation",
    "score": 88,
-   "views": 2799,
+   "views": 2804,
    "likes": 24,
    "id": "HVX_1C1azwo"
   }
