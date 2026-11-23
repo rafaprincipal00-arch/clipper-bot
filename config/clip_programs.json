@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-16",
+ "checked": "2026-11-23",
  "note": "Programas de clipping de pago de creadores grandes. Orden: score = CPM base x facilidad (1-5); rank 1 = mejor. 'track' = creadores de config/sources.json cuyas vistas cuentan para el portfolio de ese programa. 'min_views' = umbral publico para empezar a cobrar o para que la solicitud tenga sentido. Datos de paginas publicas; las reglas finas estan dentro de cada Discord/campana y hay que releerlas al entrar.",
  "programs": [
   {
@@ -13,10 +13,10 @@
     "url": "https://vyro.com/campaigns",
     "how": "Cuenta en vyro.com (18+); todas las campanas piden solicitud"
    },
-   "pay": "Vyro: 5 campanas vivas, mediana $2.00/1K ($1.00-2.50), $30.382 libres, 0 nuevas esta semana (clippingalpha 16/11). Marcas: The Lowdown $14,5K, The Drop $11,7K, All's Fair $2,2K, Vyro for Vyro $2K (2 campanas). Ninguna de MrBeast abierta",
-   "cpm": 2.0,
-   "cpm_max": 2.5,
-   "requirements": "Sin seguidores minimos; solicitud por campana; las 8 vivas piden minimo de vistas por post (mediana 5.000); retiro minimo $10 (Stripe/PayPal)",
+   "pay": "Vyro: 3 campanas vivas, mediana $1.75/1K ($1.40-2.00), $17.028 libres, 0 nuevas esta semana (clippingalpha 23/11). Marcas: The Drop $11,4K ($2), Guess the Mystery Man $4,5K ($1.75), Ask the Dentist $1,1K ($1.40). Ninguna de MrBeast abierta",
+   "cpm": 1.75,
+   "cpm_max": 2.0,
+   "requirements": "Sin seguidores minimos; solicitud por campana; minimo de vistas por post (mediana 5.000); retiro minimo $10 (Stripe/PayPal)",
    "rules": "Clip aprobado y por encima del minimo de la campana",
    "ease": 3,
    "account": 1,
@@ -26,9 +26,40 @@
     "https://vyro.com/about",
     "https://clippingalpha.com/boards/vyro"
    ],
-   "score": 6.0,
+   "score": 5.25,
    "who": "MrBeast-related campaigns",
-   "status": "activo (plataforma); ninguna campana de MrBeast abierta (16/11)"
+   "status": "activo (plataforma); ninguna campana de MrBeast abierta (23/11)"
+  },
+  {
+   "id": "cr-sypherpk-reach",
+   "name": "SypherPK $7,500 Clipping Campaign (Reach en Content Rewards)",
+   "lang": "en",
+   "creators": "SypherPK, Replays y Maddynf (Twitch)",
+   "where": {
+    "type": "plataforma",
+    "url": "https://contentrewards.com/discover/f2c529a0-6777-4e8a-b50b-4c8bd4e4d90f",
+    "how": "Content Rewards con la cuenta 1 (unido el 19/11 desde Brave; enviar requiere CR_STATE valido). Reglas en reachclipping.com/SypherPK"
+   },
+   "pay": "$2/1K en TikTok, IG, YouTube y X, min $20 y max $500 por clip; $6.514 de $7.500 libres, 14 clippers (23/11, lanzada el 17/11)",
+   "cpm": 2.0,
+   "cpm_max": 2.0,
+   "requirements": "10.000 vistas minimas por clip ($20). Solo los VODs del stream del 15/11 de Sypher, Replays o Maddynf (timestamps en Resources, visibles al unirse), con los 3 jugando juntos como foco; #SypherPK; audiencia >=50% EN nativa y nicho parecido",
+   "rules": "Reglas de Reach: sin bots, reposts ni collabs; nada negativo",
+   "ease": 2,
+   "account": 1,
+   "min_views": 10000,
+   "track": [
+    "SypherPK (Twitch)"
+   ],
+   "sources": [
+    "https://reachclipping.com/SypherPK",
+    "https://contentrewards.com/discover/f2c529a0-6777-4e8a-b50b-4c8bd4e4d90f",
+    "https://www.clyper.io/clipping-programs/sypherpk"
+   ],
+   "status": "activo (23/11)",
+   "note": "Fuente fijada al VOD de Twitch del 15/11 (v2929935152, 'FINDING THE PIRATE TOKEN', 2:44 h): sin confirmar con los timestamps de Resources",
+   "score": 4.0,
+   "rank": 2
   },
   {
    "id": "cr-marlon-reach",
@@ -40,12 +71,12 @@
     "url": "https://contentrewards.com/discover/e32128fa-fba4-4b01-bebc-f167ed68d1ea",
     "how": "Content Rewards con la cuenta 1 (cr_join; requiere CR_STATE valido, caducado a 16/11). Reglas en reachclipping.com/Marlon (contrasena en la ficha)"
    },
-   "pay": "Ronda nueva (lanzada ~10/11): $2.50/1K en TikTok e IG, min $25 y max $300 por clip; $2.297 de $5.000 libres, 13 clippers (16/11). La ronda 1 (6a478a78, $3/1K) sigue Paused con $0",
+   "pay": "Ronda 2: $2.50/1K en TikTok e IG, min $25 y max $300 por clip; solo $60 de $5.000 libres, 17 clippers (23/11). Ronda 1 (6a478a78, $3/1K) Paused con $0",
    "cpm": 2.5,
    "cpm_max": 2.5,
    "requirements": "10.000 vistas minimas por clip (min $25 a $2.50/1K); solo TikTok e Instagram; 1 requisito y 3 archivos ocultos hasta unirse. Ronda 1: solo footage del viaje de Marlon",
    "rules": "Reglas de Reach: enviar en <30 min, sin bots ni IA (un strike = fuera de todas las campanas de Reach)",
-   "ease": 2,
+   "ease": 1,
    "account": 1,
    "min_views": 10000,
    "track": [
@@ -56,12 +87,12 @@
     "https://contentrewards.com/discover/6a478a78-d3fe-4e07-80fc-4bde2fd215aa",
     "https://reachclipping.com/Marlon"
    ],
-   "status": "activo (16/11); pendiente de cr_join hasta que vuelva CR_STATE",
-   "score": 5.0,
-   "rank": 2
+   "status": "casi agotado: $60 libres (23/11); reachclipping.com/Marlon ahora pide codigo de acceso",
+   "score": 2.5,
+   "rank": 3
   },
   {
-   "rank": 3,
+   "rank": 4,
    "id": "cn-clix-lacy-tapcap",
    "name": "Clix & Lacy - TapCap (clipping.net)",
    "lang": "en",
@@ -71,10 +102,10 @@
     "url": "https://clipping.net/c/clix-lacy-tapcap-x-clipping",
     "how": "Unirse desde clipping.net con Discord"
    },
-   "pay": "Solo queda el bounty 'Gamestop' $110/100k ($1.10/1K), abierto desde el 06/10, 208 clippers (16/11)",
+   "pay": "Bounties 'gamestop' $110/100k ($1.10/1K), 'tapcap' y 'tapcaps-2' $50/100k, PayPal (23/11)",
    "cpm": 1.1,
    "cpm_max": 1.1,
-   "requirements": "Sin solicitud. 100.000 vistas minimas; solo los segmentos de marca (Gamestop)",
+   "requirements": "Sin solicitud. 100.000 vistas combinadas entre bounties; solo los segmentos de marca (Gamestop/TapCap). La campana TapCap de Reach ($1.35/1K) exige video 100% IA: no encaja",
    "rules": "Reglas de marca en Google Docs de la campana",
    "ease": 2,
    "account": 2,
@@ -84,7 +115,7 @@
     "https://clipping.net/c/clix-lacy-tapcap-x-clipping"
    ],
    "score": 2.2,
-   "status": "activo, 1 bounty (16/11)"
+   "status": "activo, 3 bounties (23/11)"
   },
   {
    "id": "cr-ishowspeed-expedia-nov",
@@ -96,10 +127,10 @@
     "url": "https://contentrewards.com/discover/afeca1a0-f44c-46ad-8194-09d62b56589e",
     "how": "Content Rewards con la cuenta 1 (cr_join; requiere CR_STATE valido). Footage en los 3 archivos de la campana (visibles al unirse)"
    },
-   "pay": "$1/1K en TikTok, IG y YouTube, min $10 y max $500 por clip; $7.500 de $8.000 libres, 18 clippers (16/11, lanzada el 07/11)",
+   "pay": "$1/1K en TikTok, IG y YouTube, min $10 y max $500 por clip; $7.268 de $8.000 libres, 26 clippers (23/11)",
    "cpm": 1.0,
    "cpm_max": 1.0,
-   "requirements": "10.000 vistas minimas por clip (min $10). Solo el stream de IShowSpeed del 06/11/2026, desde 2:56:29 hasta el final; otro footage = rechazo. Reglas de la anterior: Speed como foco, #IShowSpeed #Expedia, sin otros logos, cuentas de nicho streamer/viajes",
+   "requirements": "10.000 vistas minimas por clip (min $10). Solo el stream de IShowSpeed del 06/11/2026, desde 2:46:29 hasta el final; otro footage = rechazo. Speed como foco, #IShowSpeed #Expedia, sin otros logos, cuentas de nicho streamer/viajes",
    "rules": "Reglas de Reach: enviar en <30 min, sin bots ni IA (un strike = fuera de Reach)",
    "ease": 2,
    "account": 1,
@@ -108,41 +139,72 @@
    "sources": [
     "https://contentrewards.com/discover/afeca1a0-f44c-46ad-8194-09d62b56589e"
    ],
-   "status": "activo (16/11)",
+   "status": "activo (23/11)",
    "note": "Fuente en YouTube (bloqueado en servidor y Actions). VOD candidato sin confirmar: youtube.com/watch?v=Kyv61l2vF6M (3:04:11, el mas reciente de /streams)",
    "score": 2.0,
-   "rank": 4
-  },
-  {
-   "id": "cr-duke-dennis-danesh",
-   "name": "Duke Dennis Spends $100k On Danesh Diamond Grillz (Danesh Diamonds en Content Rewards)",
-   "lang": "en",
-   "creators": "Duke Dennis (AMP; YouTube @DukeDennisAMP)",
-   "where": {
-    "type": "plataforma",
-    "url": "https://contentrewards.com/discover/4d8d10e9-5c4d-40f4-81b2-10acda995cb7",
-    "how": "Content Rewards con la cuenta 1 (cr_join, sin solicitud; requiere CR_STATE valido)"
-   },
-   "pay": "$1.50/1K en TikTok, IG y YouTube, min $3 y max $200 por clip; $524 de $2.500 libres, 218 clippers (16/11)",
-   "cpm": 1.5,
-   "cpm_max": 1.5,
-   "requirements": "2.000 vistas minimas por clip ($3). Solo footage nuevo de Danesh o del video de Halloween de Duke (16:03-19:00, 23:50...), con Danesh o las grillz en pantalla; titulo en pantalla; #daneshdiamonds y # de cada persona, sin @; tono natural, no promo. 1 requisito oculto hasta unirse",
-   "rules": "Revision de Content Rewards; patrocinador no verificado",
-   "ease": 1,
-   "account": 1,
-   "min_views": 2000,
-   "track": [],
-   "sources": [
-    "https://contentrewards.com/discover/4d8d10e9-5c4d-40f4-81b2-10acda995cb7",
-    "https://www.clyper.io/clipping-programs/duke-dennis"
-   ],
-   "note": "Fuente en YouTube (bloqueado en servidor y Actions); entradas en sources.json apagadas. Presupuesto casi agotado",
-   "status": "activo, casi agotado: $524 libres (16/11)",
-   "score": 1.5,
    "rank": 5
   },
   {
-   "rank": 6,
+   "id": "cn-daph",
+   "name": "Daph x Clipping (clipping.net)",
+   "lang": "en",
+   "creators": "39daph (Twitch, Streamers & IRL)",
+   "where": {
+    "type": "plataforma",
+    "url": "https://clipping.net/c/daph-x-clipping",
+    "how": "Entrar en clipping.net con Discord y unirse"
+   },
+   "pay": "Bounty 'Clip Daph' $100/100k ($1/1K), 69 clippers (23/11, campana nueva del 20/11)",
+   "cpm": 1.0,
+   "cpm_max": 1.0,
+   "requirements": "50.000 vistas minimas por bounty; brief visible solo tras registrarse",
+   "rules": "Solo views organicas; reglas del bounty dentro de la campana",
+   "ease": 2,
+   "account": 2,
+   "min_views": 50000,
+   "track": [
+    "39daph (Twitch)"
+   ],
+   "sources": [
+    "https://clipping.net/c/daph-x-clipping",
+    "https://clipping.net/sitemap.xml"
+   ],
+   "status": "activo (23/11)",
+   "note": "Humor negro/edgy: evitar clips de violencia o insultos (riesgo en TikTok)",
+   "score": 2.0,
+   "rank": 6
+  },
+  {
+   "id": "cr-dasgasd3m-ruckus",
+   "name": "Dasgasd3m x RUCKUS | GTA 6 (Content Rewards)",
+   "lang": "en",
+   "creators": "Dasgasd3m (Kick)",
+   "where": {
+    "type": "plataforma",
+    "url": "https://contentrewards.com/discover/051002dd-5c46-43d0-a446-43f2957ba3a9",
+    "how": "Content Rewards con la cuenta 1 (unido el 19/11 desde Brave)"
+   },
+   "pay": "$2/1K en TikTok y Shorts, min $20 y max $150 por clip; $911 de $1.000 libres, 65 clippers (23/11)",
+   "cpm": 2.0,
+   "cpm_max": 2.0,
+   "requirements": "10.000 vistas por clip ($20). Momentos de GTA 6 de Dom; pide cuentas especificas de GTA 6; 1 requisito oculto hasta unirse",
+   "rules": "Revision de Content Rewards; organizacion no verificada",
+   "ease": 1,
+   "account": 1,
+   "min_views": 10000,
+   "track": [
+    "Dasgasd3m (Kick)"
+   ],
+   "sources": [
+    "https://contentrewards.com/discover/051002dd-5c46-43d0-a446-43f2957ba3a9",
+    "https://www.clyper.io/clipping-programs/dasgasd3m"
+   ],
+   "status": "activo (23/11)",
+   "score": 2.0,
+   "rank": 7
+  },
+  {
+   "rank": 8,
    "id": "cr-clix-reach",
    "name": "$5,000 Clix Pool Campaign [November] (Reach en Content Rewards)",
    "lang": "en",
@@ -152,7 +214,7 @@
     "url": "https://reachclipping.com/Clix",
     "how": "Content Rewards con la cuenta 1 (cr_join; requiere CR_STATE valido). El id de la campana de noviembre no sale en la lista publica: sacarlo del cr_scan logueado"
    },
-   "pay": "Bote de $5.000 de noviembre repartido por vistas aprobadas (el de octubre termino)",
+   "pay": "Bote de $5.000 de noviembre (MVR 500.000) + '$5,000 CLIX GTA VI Marathon Pool' (MVR 400.000, footage del maraton GTA desde el 18/11) + '$4,000 Clix x JBL' a $1/1K (min $10, MVR 10.000, solo el evento JBL Miami del 18/11 y marca de agua JBL obligatoria) (23/11)",
    "cpm": 0.3,
    "cpm_max": 1.0,
    "requirements": "500.000 vistas minimas en total; solo footage de 2026; nombre de Clix en caption o texto y #Clix; audiencia >=50% EN nativa",
@@ -166,14 +228,16 @@
    ],
    "sources": [
     "https://reachclipping.com/Clix",
+    "https://reachclipping.com/ClixGTA",
+    "https://reachclipping.com/ClixMiami",
     "https://contentrewards.com/discover/20141a1a-3147-40a6-87b7-c30525962093"
    ],
    "score": 1.5,
-   "status": "activo: bote de noviembre 'Live' en reachclipping.com/Clix (16/11)",
-   "note": "La campana del mapa 'Pro League Endgame' (20141a1a, $1/1K) esta en pausa con $0 libres (16/11). El id 04640c98 era de Double Coverage, no de Clix"
+   "status": "activo: 3 campanas de Clix en Reach (23/11)",
+   "note": "Clix x JBL pide la marca de agua de JBL (el pipeline no superpone PNG de marca salvo 'logo' en sources.json). Pro League Endgame (20141a1a) en pausa con $0"
   },
   {
-   "rank": 7,
+   "rank": 9,
    "id": "cn-kick-clipping",
    "name": "Kick Clipping (clipping.net)",
    "lang": "en",
@@ -183,7 +247,7 @@
     "url": "https://clipping.net/c/kick-clipping",
     "how": "Entrar en clipping.net con Discord, conectar las cuentas de TikTok/Shorts y unirse (sin solicitud)"
    },
-   "pay": "$10 a $300 por 100k vistas ($0.10-3/1K), 98 bounties vivos, 7.587 clippers (16/11); base $40/100k segun jpclips (19/10). Pago en USDT",
+   "pay": "$10 a $300 por 100k vistas ($0.10-3/1K), 102 bounties vivos, 7.697 clippers (23/11). Pago en USDT",
    "cpm": 0.4,
    "cpm_max": 3.0,
    "requirements": "Ahora SOLO POR INVITACION: bounties, brief y archivos se abren tras ser aprobado (solicitud en el Discord de clipping.net). 100.000 vistas combinadas entre todos los bounties antes de cobrar; cada clip >= 1.000 vistas. Max. 2 cuentas por plataforma y 1 cuenta de clipper por usuario de Discord",
@@ -205,68 +269,68 @@
    ],
    "score": 1.2,
    "who": "top Kick streamers (N3on, xQc, Adin Ross)",
-   "status": "activo pero invite-only desde el 16/11 (antes sin solicitud)"
+   "status": "activo pero invite-only (23/11)"
   },
   {
-   "id": "cn-preme",
-   "name": "Preme x Clipping (clipping.net)",
+   "id": "cr-asianjeff-reach",
+   "name": "$2,500 AsianJeff Clipping Campaign (Reach)",
    "lang": "en",
-   "creators": "Preme (Kick)",
+   "creators": "AsianJeff (Twitch)",
    "where": {
     "type": "plataforma",
-    "url": "https://clipping.net/c/preme-x-clipping",
-    "how": "Unirse desde clipping.net con Discord (sin solicitud)"
+    "url": "https://reachclipping.com/AsianJeff",
+    "how": "Content Rewards con la cuenta 1 (cr_join; id no esta en la lista publica)"
    },
-   "pay": "Bounty 'preme' $50 por 100k vistas ($0.50/1K), USDT",
-   "cpm": 0.5,
-   "cpm_max": 0.5,
-   "requirements": "Sin solicitud. 100.000 vistas minimas",
-   "rules": "Solo views organicas",
-   "ease": 2,
-   "account": 2,
-   "min_views": 100000,
+   "pay": "$1/1K en TikTok, IG, YouTube y X, min $10 y max $300 por clip; presupuesto $2.500 (23/11)",
+   "cpm": 1.0,
+   "cpm_max": 1.0,
+   "requirements": "10.000 vistas por clip. Solo su partida de GTA 6 desde el 19/11; AsianJeff como foco; #AsianJeff; audiencia >=50% EN nativa; sin logos ni hate farming",
+   "rules": "Reglas de Reach",
+   "ease": 1,
+   "account": 1,
+   "min_views": 10000,
    "track": [],
    "sources": [
-    "https://clipping.net/c/preme-x-clipping"
+    "https://reachclipping.com/AsianJeff",
+    "https://reachclipping.com/campaigns"
    ],
-   "status": "activo (16/11)",
-   "note": "Sin fuente en sources.json: streams de club/fiesta, poco encaje y pago bajo. En Content Rewards: 'PREME X DRAKE' $0.50/1K ($982 de $1.000 libres) y 'PREME TAKES OVER AREA 29' $1/1K ($395 libres) (16/11)",
+   "status": "activo (23/11)",
+   "note": "Sin fuente en sources.json: falta el id de Content Rewards (sacarlo del cr_scan logueado cuando vuelva CR_STATE)",
    "score": 1.0,
-   "rank": 8
+   "rank": 10
   },
   {
-   "id": "cr-jshock-reach",
-   "name": "JShock (Reach en Content Rewards: bote de $3.000 + campana de $2.000 a $0.50/1K)",
+   "id": "cr-diegoloveless-gta6",
+   "name": "DiegoLoveless GTA 6 Clipping (ClipLaunch en Content Rewards)",
    "lang": "en",
-   "creators": "JShock (Twitch jshock9nine, YouTube @Jshock9nine)",
+   "creators": "DiegoLoveless (Twitch)",
    "where": {
     "type": "plataforma",
-    "url": "https://contentrewards.com/discover/fb463a98-3b5b-476d-a789-529b4a7120bd",
-    "how": "Content Rewards con la cuenta 1 (cr_join; requiere CR_STATE valido). Reglas en reachclipping.com/JShock"
+    "url": "https://contentrewards.com/discover/5d37d3dd-adf3-401f-9c62-24bb54d5087a",
+    "how": "Content Rewards con la cuenta 1 (cr_join)"
    },
-   "pay": "CR: bote de $3.000 hasta el 27/11, 241 clippers. reachclipping.com/JShock muestra ahora '$2,000 JShock Clipping Campaign' a $0.50/1K en TikTok/IG/YT, min $50 y max $500 por clip (16/11)",
-   "cpm": 0.5,
-   "cpm_max": 0.5,
-   "requirements": "100.000 vistas por clip ($50 a $0.50/1K). Solo streams de Twitch o videos de YouTube recientes; #JShock; TikTok, Reels y Shorts; audiencia >=50% EN nativa y de nicho parecido; sin logos ni IA. La marca de agua 'JShock' era obligatoria en el bote (revisar en la nueva)",
-   "rules": "Reglas de Reach: sin bots ni IA; nada negativo sobre el",
-   "ease": 2,
+   "pay": "$1/1K en TikTok, IG y YouTube, min $2 y max $300 por clip; $448 de $1.400 libres, 127 clippers. La de Marvel Rivals (7c1c6e53, $2/1K) casi agotada: $145 (23/11)",
+   "cpm": 1.0,
+   "cpm_max": 2.0,
+   "requirements": "2.000 vistas por clip ($2). Solo Diego jugando GTA 6, con CTA claro a su Twitch",
+   "rules": "Revision de Content Rewards",
+   "ease": 1,
    "account": 1,
-   "min_views": 100000,
+   "min_views": 2000,
    "track": [
-    "JShock (Twitch)"
+    "DiegoLoveless (Twitch)"
    ],
    "sources": [
-    "https://reachclipping.com/JShock",
-    "https://contentrewards.com/discover/fb463a98-3b5b-476d-a789-529b4a7120bd",
-    "https://www.clyper.io/clipping-programs/jshock"
+    "https://contentrewards.com/discover/5d37d3dd-adf3-401f-9c62-24bb54d5087a",
+    "https://www.clyper.io/clipping-programs/diegoloveless"
    ],
-   "status": "activo (16/11)",
-   "note": "Fuente en sources.json apagada: el pipeline no superpone marcas de agua (PNG: drive.google.com/file/d/1CKPGXWpXBiG3a2s_d5ZF6wzWU2l-P-h6)",
+   "status": "activo, casi agotado (23/11)",
+   "note": "La entrada de sources.json sigue apuntando a Marvel Rivals y apagada",
    "score": 1.0,
-   "rank": 9
+   "rank": 11
   },
   {
-   "rank": 10,
+   "rank": 12,
    "id": "n3on-direct",
    "name": "Programa de clippers de N3on (Discord propio)",
    "lang": "en",
@@ -306,7 +370,7 @@
     "url": "https://clipping.net/c/jasontheween-x-clipping",
     "how": "Unirse desde clipping.net con Discord (sin solicitud)"
    },
-   "pay": "Bote 'Jason' de $7.500 repartido por vistas, hasta el 01/12; 1.328 clippers. El bounty 'camping' ya no esta (16/11)",
+   "pay": "Bote 'Jason' de $7.500 repartido por vistas, hasta el 01/12; 1.464 clippers (23/11)",
    "cpm": 0.3,
    "cpm_max": 1.0,
    "requirements": "Sin solicitud. 700.000 vistas combinadas",
@@ -322,10 +386,10 @@
    ],
    "status": "activo hasta el 01/12 (16/11)",
    "score": 0.9,
-   "rank": 11
+   "rank": 13
   },
   {
-   "rank": 12,
+   "rank": 14,
    "id": "cr-lacy-reach",
    "name": "$25,000 Lacy 30 Day Campaign (Reach en Content Rewards)",
    "lang": "en",
@@ -335,7 +399,7 @@
     "url": "https://contentrewards.com/discover/4479e5e2-9a00-489e-8b0c-345834f37cc7",
     "how": "Content Rewards con la cuenta 1 (cr_join; requiere CR_STATE valido). Reglas en reachclipping.com/Lacy"
    },
-   "pay": "Bote de $25.000 en Content Rewards ($30.000 segun reachclipping.com/Lacy) repartido por vistas aprobadas; 5.436 clippers (16/11). Los clips con 2+ miembros de CORE cuentan tambien para cr-core-pool",
+   "pay": "Bote de $25.000 en Content Rewards ($30.000 en reachclipping.com/Lacy, con $5.000 para X) por vistas aprobadas. Nuevo: '$12,500 LACY GTA VI Marathon Pool' (MVR 750.000, footage desde el 18/11) (23/11)",
    "cpm": 0.3,
    "cpm_max": 1.0,
    "requirements": "1.000.000 de vistas aprobadas (MVR) para entrar en el reparto. Cualquier video/stream con Lacy como foco; TikTok, Reels, Shorts y X; audiencia >=50% EN nativa; nombre de Lacy en caption/texto y #Lacy; sin logos",
@@ -348,9 +412,10 @@
    ],
    "sources": [
     "https://reachclipping.com/Lacy",
+    "https://reachclipping.com/LACYGTA",
     "https://contentrewards.com/discover/4479e5e2-9a00-489e-8b0c-345834f37cc7"
    ],
-   "status": "activo (16/11)",
+   "status": "activo (23/11)",
    "score": 0.9
   },
   {
@@ -363,7 +428,7 @@
     "url": "https://contentrewards.com/discover/0b178e3c-fbd3-4294-8ded-394e3da9c62f",
     "how": "Content Rewards con la cuenta 1 (cr_join). Reglas en reachclipping.com/JasonTheWeen"
    },
-   "pay": "Bote de $9.000 repartido por vistas aprobadas, pagado al cerrar; 2.391 clippers (16/11). Los clips con 2+ miembros de CORE cuentan tambien para cr-core-pool",
+   "pay": "Bote de $9.000 repartido por vistas aprobadas, pagado al cerrar; 3.106 clippers (23/11)",
    "cpm": 0.3,
    "cpm_max": 1.0,
    "requirements": "700.000 vistas aprobadas (MVR); Jason como foco; nombre en caption/texto y #JasonTheWeen; audiencia >=50% EN nativa; sin logos",
@@ -378,9 +443,9 @@
     "https://reachclipping.com/JasonTheWeen",
     "https://contentrewards.com/discover/0b178e3c-fbd3-4294-8ded-394e3da9c62f"
    ],
-   "status": "activo, 'Accepting clips' (16/11)",
+   "status": "activo, 'Accepting clips' (23/11)",
    "score": 0.9,
-   "rank": 13
+   "rank": 15
   },
   {
    "id": "cr-core-pool",
@@ -392,7 +457,7 @@
     "url": "https://contentrewards.com/discover/2886f500-f062-48dd-a9b4-9de5725f8186",
     "how": "Content Rewards con la cuenta 1 (cr_join; requiere CR_STATE valido). Reglas en reachclipping.com/CORE"
    },
-   "pay": "Bote de $20.000 repartido por cuota de vistas aprobadas, pagado al cerrar el 30/11; 548 clippers (16/11, lanzado el 10-11/11). La lista publica muestra tambien '$25,000 CORE Pool Campaign' (da3d9c5c, 890 clippers) y hay un bote de $5.000 solo para el YouTube de CORE (MVR 750.000)",
+   "pay": "Bote de $20.000 por cuota de vistas aprobadas, pagado al cerrar el 30/11; 840 clippers (23/11). Tambien '$25,000 CORE Pool' (da3d9c5c, 1.584 clippers) y '$5,000 CORE YouTube Pool' (MVR 750.000)",
    "cpm": 0.3,
    "cpm_max": 1.0,
    "requirements": "2.000.000 de vistas aprobadas (MVR) para entrar en el reparto. Cualquier video/stream con 2+ miembros de CORE (el YouTube de CORE va al bote de $5K); TikTok, Reels, Shorts y X; audiencia >=50% EN nativa; CORE o nombres de miembros en caption/texto, #CORE + # de cada miembro; solo ingles; sin logos ni collabs. El mismo clip vale tambien para los botes de Lacy y JasonTheWeen",
@@ -412,12 +477,40 @@
     "https://contentrewards.com/discover/2886f500-f062-48dd-a9b4-9de5725f8186",
     "https://www.clyper.io/clipping-programs/silky"
    ],
-   "status": "activo hasta el 30/11 (16/11)",
+   "status": "activo hasta el 30/11 (23/11)",
    "score": 0.9,
-   "rank": 14
+   "rank": 16
   },
   {
-   "rank": 15,
+   "id": "cr-silky-reach",
+   "name": "$7,500 Silky Pool Campaign (Reach)",
+   "lang": "en",
+   "creators": "Silky (Twitch, CORE)",
+   "where": {
+    "type": "plataforma",
+    "url": "https://reachclipping.com/Silky",
+    "how": "Content Rewards con la cuenta 1 (cr_join)"
+   },
+   "pay": "Bote de $7.500 repartido por vistas aprobadas (23/11)",
+   "cpm": 0.3,
+   "cpm_max": 1.0,
+   "requirements": "250.000 vistas aprobadas (MVR). Solo su maraton de GTA desde el 19/11; Silky como foco; nombre en caption/texto y #Silky; audiencia >=50% EN nativa",
+   "rules": "Reglas de Reach",
+   "ease": 3,
+   "account": 1,
+   "min_views": 250000,
+   "track": [
+    "Silky (Twitch)"
+   ],
+   "sources": [
+    "https://reachclipping.com/Silky"
+   ],
+   "status": "activo (23/11)",
+   "score": 0.9,
+   "rank": 17
+  },
+  {
+   "rank": 18,
    "id": "cn-sketch",
    "name": "Sketch x Clipping (clipping.net)",
    "lang": "en",
@@ -427,7 +520,7 @@
     "url": "https://clipping.net/c/sketch-x-clipping",
     "how": "Unirse desde clipping.net con Discord (sin solicitud)"
    },
-   "pay": "Bote de $5.000 repartido por vistas, hasta el 30/11; 271 clippers (16/11)",
+   "pay": "Bote de $5.000 repartido por vistas, hasta el 30/11; 311 clippers (23/11)",
    "cpm": 0.4,
    "cpm_max": 1.0,
    "requirements": "Sin solicitud. 300.000 vistas minimas (bajo de 500.000 el 09/11)",
@@ -441,10 +534,154 @@
    ],
    "note": "Sin fuente en sources.json: no se ha confirmado su canal (twitch.tv/sketch es otro streamer)",
    "score": 0.8,
-   "status": "activo hasta el 30/11 (16/11)"
+   "status": "activo hasta el 30/11 (23/11)"
   },
   {
-   "rank": 16,
+   "id": "cn-curry-barker",
+   "name": "Curry Barker x Clipping (clipping.net)",
+   "lang": "en",
+   "creators": "Curry Barker (YouTube), bounty 'Stokes Twins'",
+   "where": {
+    "type": "plataforma",
+    "url": "https://clipping.net/c/curry-barker-x-clipping",
+    "how": "Unirse desde clipping.net con Discord"
+   },
+   "pay": "Bounty 'Stokes Twins' $75/100k ($0.75/1K), 193 clippers (23/11)",
+   "cpm": 0.75,
+   "cpm_max": 0.75,
+   "requirements": "100.000 vistas minimas por bounty; brief tras registrarse",
+   "rules": "Solo views organicas",
+   "ease": 1,
+   "account": 2,
+   "min_views": 100000,
+   "track": [],
+   "sources": [
+    "https://clipping.net/c/curry-barker-x-clipping"
+   ],
+   "status": "activo (23/11)",
+   "note": "Fuente en YouTube (bloqueado en servidor y Actions)",
+   "score": 0.75,
+   "rank": 19
+  },
+  {
+   "id": "cr-jshock-reach",
+   "name": "$3,000 JShock Pool Campaign (Reach en Content Rewards)",
+   "lang": "en",
+   "creators": "JShock (Twitch jshock9nine, YouTube @Jshock9nine)",
+   "where": {
+    "type": "plataforma",
+    "url": "https://contentrewards.com/discover/fb463a98-3b5b-476d-a789-529b4a7120bd",
+    "how": "Content Rewards con la cuenta 1 (cr_join; requiere CR_STATE valido). Reglas en reachclipping.com/JShock"
+   },
+   "pay": "Bote de $3.000 repartido por vistas aprobadas, hasta el 27/11; 278 clippers. La campana de $2.000 a $0.50/1K ya no aparece (23/11)",
+   "cpm": 0.3,
+   "cpm_max": 1.0,
+   "requirements": "100.000 vistas aprobadas (MVR). Solo streams de Twitch o videos de YouTube recientes; #JShock; marca de agua 'JShock' obligatoria; audiencia >=50% EN nativa y de nicho parecido; sin logos ni IA",
+   "rules": "Reglas de Reach: sin bots ni IA; nada negativo sobre el",
+   "ease": 2,
+   "account": 1,
+   "min_views": 100000,
+   "track": [
+    "JShock (Twitch)"
+   ],
+   "sources": [
+    "https://reachclipping.com/JShock",
+    "https://contentrewards.com/discover/fb463a98-3b5b-476d-a789-529b4a7120bd",
+    "https://www.clyper.io/clipping-programs/jshock"
+   ],
+   "status": "activo hasta el 27/11 (23/11)",
+   "note": "Fuente en sources.json apagada: el pipeline no superpone marcas de agua (PNG: drive.google.com/file/d/1CKPGXWpXBiG3a2s_d5ZF6wzWU2l-P-h6)",
+   "score": 0.6,
+   "rank": 20
+  },
+  {
+   "rank": 21,
+   "id": "cn-kreekcraft",
+   "name": "Kreekcraft x Clipping (clipping.net)",
+   "lang": "en",
+   "creators": "KreekCraft (YouTube, 17.3M subs, Roblox)",
+   "where": {
+    "type": "plataforma",
+    "url": "https://clipping.net/c/kreekcraft-x-clipping",
+    "how": "Unirse desde clipping.net con Discord (sin solicitud)"
+   },
+   "pay": "Bote 'Kreekcraft' de $15.000 repartido por vistas, hasta el 01/01/2027; 357 clippers (23/11). En CR, 'KreekCraft GTA 6 Clipping' (ClipLaunch, 2eaa14fb) bajo a $0.50/1K y esta Paused con $0 de $6.824",
+   "cpm": 0.3,
+   "cpm_max": 1.0,
+   "requirements": "Sin solicitud. 750.000 vistas por bounty para entrar en el reparto; TikTok, Shorts e IG",
+   "rules": "Solo views organicas; reglas en el doc de la campana",
+   "ease": 2,
+   "account": 2,
+   "min_views": 100000,
+   "track": [
+    "KreekCraft (YouTube)"
+   ],
+   "sources": [
+    "https://clipping.net/c/kreekcraft-x-clipping",
+    "https://contentrewards.com/discover/2eaa14fb-6927-4136-897e-b096e0d907d6"
+   ],
+   "score": 0.6,
+   "status": "activo hasta el 01/01/2027 (23/11)"
+  },
+  {
+   "id": "cr-kai-gta-pool",
+   "name": "Kai Cenat - $10,000 GTA 6 Pool Campaign (Clipped & Shipped en Content Rewards)",
+   "lang": "en",
+   "creators": "Kai Cenat (Twitch/YouTube)",
+   "where": {
+    "type": "plataforma",
+    "url": "https://contentrewards.com/discover/1d2bcb00-c904-415f-aa82-f95b96baad86",
+    "how": "Content Rewards con la cuenta 1 (unido el 19/11 desde Brave)"
+   },
+   "pay": "Bote de $10.000 repartido por vistas, pagado al cerrar; 2.468 clippers (23/11, lanzado el 18/11). Organizacion no verificada",
+   "cpm": 0.3,
+   "cpm_max": 1.0,
+   "requirements": "Kai jugando GTA 6 como foco (maraton de GTA 6); TikTok, Shorts, Reels y X; reglas en 3 archivos al unirse",
+   "rules": "Revision de Content Rewards",
+   "ease": 2,
+   "account": 1,
+   "min_views": null,
+   "track": [
+    "Kai Cenat (Twitch)"
+   ],
+   "sources": [
+    "https://contentrewards.com/discover/1d2bcb00-c904-415f-aa82-f95b96baad86",
+    "https://www.clyper.io/clipping-programs/kai-cenat"
+   ],
+   "status": "activo (23/11)",
+   "score": 0.6,
+   "rank": 22
+  },
+  {
+   "id": "cr-yourrage-reach",
+   "name": "YourRAGE $7,500 Pool + $5,000 GTA 6 Pool (Reach)",
+   "lang": "en",
+   "creators": "YourRAGE (Twitch yourragegaming)",
+   "where": {
+    "type": "plataforma",
+    "url": "https://reachclipping.com/YourRAGEPool",
+    "how": "Content Rewards con la cuenta 1 (cr_join)"
+   },
+   "pay": "Dos botes: $7.500 (30 dias, cualquier contenido oficial) y $5.000 (solo maraton de GTA 6), repartidos por vistas aprobadas (23/11)",
+   "cpm": 0.3,
+   "cpm_max": 1.0,
+   "requirements": "250.000 vistas aprobadas (MVR) en cada bote; Rage como foco; nombre en caption/texto y #YourRAGE; audiencia >=50% EN nativa",
+   "rules": "Reglas de Reach",
+   "ease": 2,
+   "account": 1,
+   "min_views": 250000,
+   "track": [],
+   "sources": [
+    "https://reachclipping.com/YourRAGEPool",
+    "https://reachclipping.com/yourRAGE"
+   ],
+   "status": "activo (23/11)",
+   "note": "Sin fuente en sources.json todavia (twitch.tv/yourragegaming)",
+   "score": 0.6,
+   "rank": 23
+  },
+  {
+   "rank": 24,
    "id": "cn-streamer-u",
    "name": "Streamer U x Clipping (clipping.net)",
    "lang": "en",
@@ -468,11 +705,43 @@
    "sources": [
     "https://clipping.net/c/streamer-u-x-clipping"
    ],
-   "status": "ficha contradictoria: 'Paused' con 1 bounty vivo a $50/100k (16/11)",
+   "status": "'Paused' con 1 bounty a $50/100k, 99 clippers (23/11)",
    "score": 0.5
   },
   {
-   "rank": 17,
+   "rank": 25,
+   "id": "cn-kick-hispano",
+   "name": "Kick Hispano (clipping.net)",
+   "lang": "es",
+   "creators": "Streamers hispanos de Kick (Westcol, Spreen, elZeein, Juansguarnizo... lista dentro de la campana)",
+   "where": {
+    "type": "plataforma",
+    "url": "https://clipping.net/c/kick-hispano",
+    "how": "Unirse desde clipping.net (sin solicitud)"
+   },
+   "pay": "Bote de $75.000 repartido por cuota de vistas, USDT; vuelve a 'Accepting clips' pero solo por invitacion, 81 clippers (23/11)",
+   "cpm": 0.4,
+   "cpm_max": 1.0,
+   "requirements": "Solicitud de acceso en clipping.net (invite-only). 1.000.000 de vistas combinadas para entrar en el reparto",
+   "rules": "Solo views organicas; reglas dentro de la campana",
+   "ease": 1,
+   "account": 3,
+   "min_views": 1000000,
+   "track": [
+    "Westcol (Kick)",
+    "Spreen (Kick)",
+    "elZeein (Kick)",
+    "Juansguarnizo (Kick)"
+   ],
+   "sources": [
+    "https://clipping.net/c/kick-hispano"
+   ],
+   "score": 0.4,
+   "who": "los streamers hispanos de Kick (Westcol, Spreen, elZeein, Juansguarnizo)",
+   "status": "activo, invite-only (23/11)"
+  },
+  {
+   "rank": 26,
    "id": "cn-plaqueboymax",
    "name": "PlaqueBoyMax x Clipping (clipping.net)",
    "lang": "en",
@@ -482,7 +751,7 @@
     "url": "https://clipping.net/c/plaqueboymax-x-clipping",
     "how": "Unirse desde clipping.net con Discord (sin solicitud)"
    },
-   "pay": "Bote 'Pbm' de $4.000 repartido por vistas, hasta el 01/12; 1.506 clippers. Los bounties de $50-75/100k ya no estan (16/11)",
+   "pay": "Bote 'Pbm' de $4.000 repartido por vistas, hasta el 01/12; 1.541 clippers (23/11)",
    "cpm": 0.3,
    "cpm_max": 1.0,
    "requirements": "Sin solicitud. 650.000 vistas por bounty. La ficha anterior exigia marca de agua PBM bien visible (no tenemos el logo): revisar al entrar",
@@ -495,10 +764,65 @@
     "https://clipping.net/c/plaqueboymax-x-clipping"
    ],
    "score": 0.3,
-   "status": "activo hasta el 01/12 (16/11)"
+   "status": "activo hasta el 01/12 (23/11)"
   },
   {
-   "rank": 18,
+   "id": "cr-duke-dennis-danesh",
+   "name": "Duke Dennis Spends $100k On Danesh Diamond Grillz (Danesh Diamonds en Content Rewards)",
+   "lang": "en",
+   "creators": "Duke Dennis (AMP; YouTube @DukeDennisAMP)",
+   "where": {
+    "type": "plataforma",
+    "url": "https://contentrewards.com/discover/4d8d10e9-5c4d-40f4-81b2-10acda995cb7",
+    "how": "Content Rewards con la cuenta 1 (cr_join, sin solicitud; requiere CR_STATE valido)"
+   },
+   "pay": "$1.50/1K, min $3 y max $200 por clip; Paused con $0 de $2.500 libres, 218 clippers (23/11)",
+   "cpm": 1.5,
+   "cpm_max": 1.5,
+   "requirements": "2.000 vistas minimas por clip ($3). Solo footage nuevo de Danesh o del video de Halloween de Duke (16:03-19:00, 23:50...), con Danesh o las grillz en pantalla; titulo en pantalla; #daneshdiamonds y # de cada persona, sin @; tono natural, no promo. 1 requisito oculto hasta unirse",
+   "rules": "Revision de Content Rewards; patrocinador no verificado",
+   "ease": 0,
+   "account": 1,
+   "min_views": 2000,
+   "track": [],
+   "sources": [
+    "https://contentrewards.com/discover/4d8d10e9-5c4d-40f4-81b2-10acda995cb7",
+    "https://www.clyper.io/clipping-programs/duke-dennis"
+   ],
+   "note": "Fuente en YouTube (bloqueado en servidor y Actions); entradas en sources.json apagadas. Presupuesto casi agotado",
+   "status": "agotado: Paused con $0 libres (23/11)",
+   "score": 0.0,
+   "rank": 27
+  },
+  {
+   "id": "cn-preme",
+   "name": "Preme x Clipping (clipping.net)",
+   "lang": "en",
+   "creators": "Preme (Kick)",
+   "where": {
+    "type": "plataforma",
+    "url": "https://clipping.net/c/preme-x-clipping",
+    "how": "Unirse desde clipping.net con Discord (sin solicitud)"
+   },
+   "pay": "Sin bounties abiertos, 176 clippers (23/11). En CR: 'PREME TAKES OVER AREA 29' $1/1K con $38 de $2.000 libres; 'PREME X DRAKE' en pausa",
+   "cpm": 0.5,
+   "cpm_max": 0.5,
+   "requirements": "Sin solicitud. 100.000 vistas minimas",
+   "rules": "Solo views organicas",
+   "ease": 0,
+   "account": 2,
+   "min_views": 100000,
+   "track": [],
+   "sources": [
+    "https://clipping.net/c/preme-x-clipping"
+   ],
+   "status": "sin bounties abiertos (23/11)",
+   "note": "Sin fuente en sources.json: streams de club/fiesta, poco encaje y pago bajo. En Content Rewards: 'PREME X DRAKE' $0.50/1K ($982 de $1.000 libres) y 'PREME TAKES OVER AREA 29' $1/1K ($395 libres) (16/11)",
+   "score": 0.0,
+   "rank": 28
+  },
+  {
+   "rank": 29,
    "id": "vyro-speed-vegas",
    "name": "SPEED VEGAS (IShowSpeed en Vyro)",
    "lang": "en",
@@ -522,7 +846,7 @@
     "https://vyro.com/campaigns/speed-vegas-lC81wXFS"
    ],
    "score": 0.0,
-   "status": "cerrado: no sale en vyro.com/campaigns (09/11)"
+   "status": "cerrado: la ficha de Vyro da 404 (23/11)"
   },
   {
    "id": "cn-n3on",
@@ -534,7 +858,7 @@
     "url": "https://clipping.net/c/n3on-x-clipping",
     "how": "Entrar en clipping.net con Discord y unirse (sin solicitud)"
    },
-   "pay": "Sin bounties abiertos (16/11). Antes: bounty 'lizzo' $150/100k ($1.50/1K), PayPal",
+   "pay": "Sin bounties abiertos, 105 clippers (23/11). Antes: bounty 'lizzo' $150/100k",
    "cpm": 1.5,
    "cpm_max": 1.5,
    "requirements": "Sin solicitud. 50.000 vistas minimas; bounty 'lizzo' = segmentos de N3on con Lizzo (reglas dentro de la campana)",
@@ -549,12 +873,12 @@
     "https://clipping.net/c/n3on-x-clipping",
     "https://clipping.net/sitemap.xml"
    ],
-   "status": "sin bounties abiertos: 'No open bounties', 107 clippers (16/11)",
+   "status": "sin bounties abiertos (23/11)",
    "score": 0.0,
-   "rank": 19
+   "rank": 30
   },
   {
-   "rank": 20,
+   "rank": 31,
    "id": "cr-ishowspeed-expedia",
    "name": "IShowSpeed x Expedia, stream 14/10 (Reach en Content Rewards)",
    "lang": "en",
@@ -590,7 +914,7 @@
     "url": "https://clipping.net/c/marlon-x-clipping",
     "how": "Unirse desde clipping.net con Discord (sin solicitud)"
    },
-   "pay": "Sin bounties abiertos (16/11). Antes bounty 'izze' $100/100k",
+   "pay": "Sin bounties abiertos, 87 clippers (23/11)",
    "cpm": 1.0,
    "cpm_max": 1.0,
    "requirements": "Sin solicitud. 100.000 vistas minimas; bounty de marca (Izze): solo esos segmentos",
@@ -604,9 +928,9 @@
    "sources": [
     "https://clipping.net/c/marlon-x-clipping"
    ],
-   "status": "sin bounties abiertos (16/11); para Marlon queda cr-marlon-reach",
+   "status": "sin bounties abiertos (23/11); para Marlon queda cr-marlon-reach (casi agotada)",
    "score": 0.0,
-   "rank": 21
+   "rank": 32
   },
   {
    "id": "cr-core-shibuya",
@@ -630,13 +954,13 @@
    "sources": [
     "https://contentrewards.com/discover/432f45b8-ed16-4cc6-95d7-1655e6c7806a"
    ],
-   "status": "agotado: Paused con $0 libres (16/11)",
+   "status": "agotado: Paused con $0 libres, 19,1M vistas (23/11)",
    "note": "Fuente de YouTube: bloqueada en el servidor y en Actions, solo via prefetch",
    "score": 0.0,
-   "rank": 22
+   "rank": 33
   },
   {
-   "rank": 23,
+   "rank": 34,
    "id": "cn-full-squad-gaming",
    "name": "Full Squad Gaming x Clipping (clipping.net)",
    "lang": "en",
@@ -658,12 +982,12 @@
    "sources": [
     "https://clipping.net/c/full-squad-gaming-x-clipping"
    ],
-   "status": "en pausa, 0 bounties (16/11)",
+   "status": "en pausa, 0 bounties, 86 clippers (23/11)",
    "note": "Sin fuente en sources.json: es YouTube (solo via prefetch del PC) y no se sabe que canal/video cubre el bounty",
    "score": 0.0
   },
   {
-   "rank": 24,
+   "rank": 35,
    "id": "cn-lacy",
    "name": "Lacy x Clipping (Discord de Lacy = clipping.net)",
    "lang": "en",
@@ -689,11 +1013,11 @@
     "https://reelshift.app/streamers/lacy"
    ],
    "score": 0.0,
-   "status": "inactivo: clipping.net la marca Inactive (09/11)",
+   "status": "inactivo (23/11)",
    "note": "Para Lacy queda el bote de Reach (cr-lacy-reach)"
   },
   {
-   "rank": 25,
+   "rank": 36,
    "id": "cn-trainwreckstv",
    "name": "Trainwreckstv Clipping (clipping.net)",
    "lang": "en",
@@ -716,10 +1040,10 @@
     "https://clipping.net/c/trainwreckstv-clipping"
    ],
    "score": 0.0,
-   "status": "en pausa (16/11)"
+   "status": "en pausa e invite-only, 205 clippers (23/11)"
   },
   {
-   "rank": 26,
+   "rank": 37,
    "id": "cn-logan-paul-impaulsive",
    "name": "Logan Paul / Impaulsive x Clipping (clipping.net)",
    "lang": "en",
@@ -742,71 +1066,11 @@
     "https://clipping.net/c/logan-paul-x-clipping",
     "https://clipping.net/c/impaulsive-x-clipping"
    ],
-   "status": "en pausa (16/11)",
+   "status": "en pausa, 0 bounties (23/11)",
    "score": 0.0
   },
   {
-   "rank": 27,
-   "id": "cn-kick-hispano",
-   "name": "Kick Hispano (clipping.net)",
-   "lang": "es",
-   "creators": "Streamers hispanos de Kick (Westcol, Spreen, elZeein, Juansguarnizo... lista dentro de la campana)",
-   "where": {
-    "type": "plataforma",
-    "url": "https://clipping.net/c/kick-hispano",
-    "how": "Unirse desde clipping.net (sin solicitud)"
-   },
-   "pay": "Bote de $75.000 repartido por cuota de vistas, USDT; campana en pausa desde el 19/10 y solo por invitacion (16/11)",
-   "cpm": 0.4,
-   "cpm_max": 1.0,
-   "requirements": "Sin solicitud. 1.000.000 de vistas combinadas para entrar en el reparto",
-   "rules": "Solo views organicas; reglas dentro de la campana",
-   "ease": 0,
-   "account": 3,
-   "min_views": 1000000,
-   "track": [
-    "Westcol (Kick)",
-    "Spreen (Kick)",
-    "elZeein (Kick)",
-    "Juansguarnizo (Kick)"
-   ],
-   "sources": [
-    "https://clipping.net/c/kick-hispano"
-   ],
-   "score": 0.0,
-   "who": "los streamers hispanos de Kick (Westcol, Spreen, elZeein, Juansguarnizo)",
-   "status": "en pausa e invite-only (16/11)"
-  },
-  {
-   "rank": 28,
-   "id": "cn-kreekcraft",
-   "name": "Kreekcraft x Clipping (clipping.net)",
-   "lang": "en",
-   "creators": "KreekCraft (YouTube, 17.3M subs, Roblox)",
-   "where": {
-    "type": "plataforma",
-    "url": "https://clipping.net/c/kreekcraft-x-clipping",
-    "how": "Unirse desde clipping.net con Discord (sin solicitud)"
-   },
-   "pay": "Sin bounties abiertos (16/11). Antes bote de $5.000",
-   "cpm": 0.4,
-   "cpm_max": 1.0,
-   "requirements": "Sin solicitud. 100.000 vistas minimas por bounty (bajo de 400.000 el 09/11); bote 'kreekcraft' de $5K. TikTok, Shorts e IG",
-   "rules": "Solo views organicas; reglas en el doc de la campana",
-   "ease": 0,
-   "account": 2,
-   "min_views": 100000,
-   "track": [
-    "KreekCraft (YouTube)"
-   ],
-   "sources": [
-    "https://clipping.net/c/kreekcraft-x-clipping"
-   ],
-   "score": 0.0,
-   "status": "sin bounties abiertos (16/11)"
-  },
-  {
-   "rank": 29,
+   "rank": 38,
    "id": "clavicular-clipmaxer",
    "name": "Clavicular (Clip Maxer, Discord)",
    "lang": "en",
@@ -816,10 +1080,10 @@
     "url": "https://www.clipmaxer.com/",
     "how": "Discord de Clip Maxer, vincular la cuenta"
    },
-   "pay": "$0.325/1K (USDT); bote de $100.000 AGOTADO ($0 a 18/10)",
-   "cpm": 0.325,
-   "cpm_max": 0.325,
-   "requirements": "500+ seguidores y 500.000 vistas en 30 dias, o una pagina dedicada solo a Clavicular; 1% de engagement; 5K vistas minimas por clip; 200K vistas totales para cobrar; clips del college tour en adelante; captions solo en ingles",
+   "pay": "$0.25/1K (USDT); bote de $50.000 con $0 libres (clipmaxer.com 23/11)",
+   "cpm": 0.25,
+   "cpm_max": 0.25,
+   "requirements": "250.000 vistas totales para cobrar; 3.000 vistas minimas por clip, maximo 2M ($500); captions en ingles",
    "rules": "'Clavicular' en el texto en pantalla y #clavicular; sin logos ni marcas de agua",
    "ease": 0,
    "account": null,
@@ -829,11 +1093,11 @@
     "https://www.clipmaxer.com/"
    ],
    "score": 0.0,
-   "status": "agotado: bote de $100.000 con $0 (clipmaxer.com 09/11)",
+   "status": "agotado: bote de $50.000 con $0 (23/11)",
    "note": "Alternativa: 'Clavicular Dedicated Clipping' en Content Rewards, $1/1K, $9K de $17.5K libres (02/11), solo TikTok/IG, >=40% audiencia US y pagina dedicada"
   },
   {
-   "rank": 30,
+   "rank": 39,
    "id": "cr-kai-cenat-reach",
    "name": "$10,000 Kai Cenat Campaign (Reach en Content Rewards)",
    "lang": "en",
@@ -858,12 +1122,39 @@
     "https://contentrewards.com/discover/44a3ffcb-d4a1-492b-94a4-704919950246",
     "https://reachclipping.com/KaiCenat"
    ],
-   "status": "terminado: reachclipping.com/KaiCenat 'Campaign Ended' (09/11)",
+   "status": "terminado: 'Campaign Ended' (23/11). Para Kai queda cr-kai-gta-pool",
    "score": 0.0
+  },
+  {
+   "id": "cr-faze-flank",
+   "name": "$8,500 FaZe Tournament Clipping Campaign (ClippedIn en Content Rewards)",
+   "lang": "en",
+   "creators": "FaZe Clan / ZooMaa (FaZe Flank Invitational, Twitch)",
+   "where": {
+    "type": "plataforma",
+    "url": "https://contentrewards.com/discover/200ea21b-be80-4db8-b552-8e32b148604e",
+    "how": "Content Rewards, requiere solicitud"
+   },
+   "pay": "$2/1K en TikTok, IG, YouTube y X, min $10 y max $350 por clip; $7.230 de $8.500 libres, 21 clippers (23/11)",
+   "cpm": 2.0,
+   "cpm_max": 2.0,
+   "requirements": "Solicitud. Solo la emision oficial del FaZe Flank Invitational (twitch.tv/faze, zoomaa, 10-12/11) o POVs de jugadores; logo del torneo todo el clip; @FaZeClan @ZooMaa @TheFlank #FaZeFlankInvitational; 60%+ audiencia US",
+   "rules": "Nada negativo, sin resultados falsos",
+   "ease": 0,
+   "account": 1,
+   "min_views": 5000,
+   "track": [],
+   "sources": [
+    "https://contentrewards.com/discover/200ea21b-be80-4db8-b552-8e32b148604e",
+    "https://www.clyper.io/clipping-programs/faze-clan"
+   ],
+   "status": "activo, pero requiere solicitud y logo del torneo (23/11)",
+   "score": 0.0,
+   "rank": 40
   }
  ],
  "no_program_verified": {
-  "note": "Sin programa propio verificable el 17-18/10/2026 (revisado 26/10: Kai Cenat ya tiene campana de Reach): sus clips solo hacen crecer las cuentas (0 $). Los Discord que usan su nombre para clipping son de terceros. Revisado 02/11: Marlon y JasonTheWeen ya tienen campanas (Reach y clipping.net). Revisado 09/11: reelshift.app sin cambios desde 17-19/10; clyper.io lista campanas de Reach para JShock (anadida) y Braeden (bote de $2K, cerrado el 05/11) y una de Clip Farm para Jake Paul ($0.75/1K, un solo video de YouTube). Revisado 16/11: reelshift.app sin cambios; clyper.io anade campanas de patrocinador para Duke Dennis (Danesh Diamonds, anadida) y Flamingo/StinkyAsher/Sinjin (Total Drama Roblox en Vyro, cerradas el 02-06/11); Reach lanzo botes de CORE (anadido) y Silky x Streamer University ya termino.",
+  "note": "Sin programa propio verificable el 17-18/10/2026 (revisado 26/10: Kai Cenat ya tiene campana de Reach): sus clips solo hacen crecer las cuentas (0 $). Los Discord que usan su nombre para clipping son de terceros. Revisado 02/11: Marlon y JasonTheWeen ya tienen campanas (Reach y clipping.net). Revisado 09/11: reelshift.app sin cambios desde 17-19/10; clyper.io lista campanas de Reach para JShock (anadida) y Braeden (bote de $2K, cerrado el 05/11) y una de Clip Farm para Jake Paul ($0.75/1K, un solo video de YouTube). Revisado 16/11: reelshift.app sin cambios; clyper.io anade campanas de patrocinador para Duke Dennis (Danesh Diamonds, anadida) y Flamingo/StinkyAsher/Sinjin (Total Drama Roblox en Vyro, cerradas el 02-06/11); Reach lanzo botes de CORE (anadido) y Silky x Streamer University ya termino. Revisado 23/11: reelshift.app sin cambios desde el 19/10; clipping.net anade Daph (anadida), Morgan Jay ($1.25/1K) y Dane Cook ($2/1K, 'Funny Money'), estos dos comicos y fuera de alcance; Reach tiene 31 campanas (anadidas SypherPK, AsianJeff, Silky, YourRAGE, botes GTA de Lacy y Clix); clyper.io lista campanas GTA 6 de Kai Cenat, DiegoLoveless, Dasgasd3m y KreekCraft (anadidas).",
   "creators": [
    "IShowSpeed (solo campanas de marca)",
    "Stable Ronaldo",
@@ -895,6 +1186,26 @@
   {
    "name": "Stevewilldoit Clipping (clipping.net, $0.30/1K en ETH)",
    "why": "contenido de apuestas habitual y pago bajo"
+  },
+  {
+   "name": "Pilat Clipping (Reach, $2.500)",
+   "why": "acepta solo streams de GTA o de casino; el streamer hace gambling"
+  },
+  {
+   "name": "LUXDROP Clipping (Reach, $7.500) y GATTOUZ x GTA VI x 1WIN (CR)",
+   "why": "sitio de cajas/apuestas y casino (1WIN)"
+  },
+  {
+   "name": "BenDaDonnn x Puffco GTA 6 (CR, $1/1K)",
+   "why": "promo de vaporizadores de cannabis: TikTok la restringe"
+  },
+  {
+   "name": "Duel.com Live Blackjack, Roobet, Polymarket/Novig (CR/Vues)",
+   "why": "casino y apuestas/mercados de prediccion"
+  },
+  {
+   "name": "ThreadGuy Clipping (Reach, $1/1K)",
+   "why": "trading de memecoins en directo: promo financiera de riesgo"
   }
  ]
 }
