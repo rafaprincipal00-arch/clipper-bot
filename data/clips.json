@@ -1,5 +1,90 @@
 [
  {
+  "file": "stable-ronaldo-twitch-tw-2932442046-33999.mp4",
+  "creator": "Stable Ronaldo (Twitch)",
+  "source": "https://www.twitch.tv/videos/2932442046",
+  "start": 33967.46,
+  "end": 34031.42,
+  "cuts": 11,
+  "length": 21.2,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 90,
+  "hook": "RONALDO'S WILD OFFER",
+  "hook_type": "revelation",
+  "emphasis": [
+   "What's your deal",
+   "five bands",
+   "chef's special",
+   "Hell nah",
+   "Fuck you"
+  ],
+  "caption": "Did Stable Ronaldo's offer cross the line? #GTA6 #GTAVI #stableronaldo #stream",
+  "title": "Did Stable Ronaldo's offer cross the line?",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-11-24T07:47:52.824586+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/dHC3ZxiWivQ",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/stable-ronaldo-twitch-tw-2932442046-33999.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/stable-ronaldo-twitch-tw-2932442046-33999.tt.mp4",
+  "tiktok_caption": "Did Stable Ronaldo's offer cross the line? #GTA6 #GTAVI #stableronaldo #stream",
+  "account": 2,
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 190,
+   "publish+submit": 9,
+   "total": 202
+  }
+ },
+ {
+  "file": "lacy-twitch-tw-2932194507-23370.mp4",
+  "creator": "Lacy (Twitch)",
+  "source": "https://www.twitch.tv/videos/2932194507",
+  "start": 23342.69,
+  "end": 23388.06,
+  "cuts": 10,
+  "length": 21.2,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "He was locked up 9 months",
+  "hook_type": "revelation",
+  "emphasis": [
+   "locked up",
+   "nine months",
+   "quick",
+   "Jason"
+  ],
+  "caption": "Lacy was not ready for this timing #GTA6 #GTAVI #lacy #stream\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Lacy was not ready for this timing",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-11-24T07:35:09.184398+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/fRuMdWgjnV0",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lacy-twitch-tw-2932194507-23370.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lacy-twitch-tw-2932194507-23370.tt.mp4",
+  "tiktok_caption": "Lacy was not ready for this timing #GTA6 #GTAVI #lacy #stream",
+  "account": 2,
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 147,
+   "publish+submit": 10,
+   "total": 160
+  }
+ },
+ {
   "file": "kreekcraft-twitch-twchat-2937360376-1740.mp4",
   "creator": "KreekCraft (Twitch)",
   "source": "https://www.twitch.tv/videos/2937360376",
