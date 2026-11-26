@@ -1,36 +1,36 @@
 {
- "updated": "2026-11-25T07:31:54+00:00",
- "clips": 309,
+ "updated": "2026-11-26T07:31:44+00:00",
+ "clips": 311,
  "by_creator": {
+  "Stable Ronaldo (Twitch)": {
+   "clips": 18,
+   "views": 8037,
+   "avg_views": 446
+  },
+  "Lacy (Twitch)": {
+   "clips": 7,
+   "views": 1014,
+   "avg_views": 145
+  },
   "KreekCraft (Twitch)": {
    "clips": 14,
-   "views": 7407,
-   "avg_views": 529
+   "views": 7512,
+   "avg_views": 537
   },
   "JasonTheWeen (Twitch)": {
    "clips": 6,
-   "views": 2210,
-   "avg_views": 368
-  },
-  "Stable Ronaldo (Twitch)": {
-   "clips": 17,
-   "views": 7824,
-   "avg_views": 460
+   "views": 2261,
+   "avg_views": 377
   },
   "Dasgasd3m (Kick)": {
    "clips": 4,
-   "views": 1770,
-   "avg_views": 442
+   "views": 1772,
+   "avg_views": 443
   },
   "Kai Cenat (Twitch)": {
    "clips": 27,
    "views": 23651,
    "avg_views": 876
-  },
-  "Lacy (Twitch)": {
-   "clips": 6,
-   "views": 1014,
-   "avg_views": 169
   },
   "elZeein (Kick)": {
    "clips": 4,
@@ -54,12 +54,12 @@
   },
   "Cuffem (Kick)": {
    "clips": 5,
-   "views": 3525,
-   "avg_views": 705
+   "views": 3528,
+   "avg_views": 706
   },
   "Spreen (Kick)": {
    "clips": 16,
-   "views": 15557,
+   "views": 15559,
    "avg_views": 972
   },
   "Silky (Twitch)": {
@@ -69,22 +69,22 @@
   },
   "LosPollosTV (Kick)": {
    "clips": 13,
-   "views": 5901,
+   "views": 5902,
    "avg_views": 454
   },
   "CaseOh (Twitch)": {
    "clips": 16,
-   "views": 7301,
+   "views": 7302,
    "avg_views": 456
   },
   "Lanah Cherry (Twitch)": {
    "clips": 21,
-   "views": 23264,
+   "views": 23276,
    "avg_views": 1108
   },
   "Rivers (Twitch)": {
    "clips": 10,
-   "views": 11170,
+   "views": 11173,
    "avg_views": 1117
   },
   "Auronplay (Twitch)": {
@@ -104,7 +104,7 @@
   },
   "Ibai (Twitch)": {
    "clips": 17,
-   "views": 7265,
+   "views": 7266,
    "avg_views": 427
   },
   "Jynxzi (Twitch)": {
@@ -243,7 +243,7 @@
    "mood": "funny",
    "hook_type": "revelation",
    "score": 88,
-   "views": 2812,
+   "views": 2816,
    "likes": 24,
    "id": "HVX_1C1azwo"
   }
