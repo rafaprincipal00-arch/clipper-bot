@@ -1,5 +1,265 @@
 [
  {
+  "file": "lacy-twitch-tw-2936518555-5540.mp4",
+  "creator": "Lacy (Twitch)",
+  "source": "https://www.twitch.tv/videos/2936518555",
+  "start": 5506.62,
+  "end": 5570.1,
+  "cuts": 10,
+  "length": 25.6,
+  "layout": "face",
+  "style": "vertical",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 75,
+  "hook": "He relived his worst nightmare",
+  "hook_type": "stakes",
+  "emphasis": [
+   "pepper",
+   "sprayed",
+   "trauma",
+   "PTSD"
+  ],
+  "caption": "Lacy was not ready for this in-game flashback #GTA6 #GTAVI #lacy #stream",
+  "title": "Lacy was not ready for this in-game flashback",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-11-27T08:32:52.080594+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/memsom3LuXA",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lacy-twitch-tw-2936518555-5540.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lacy-twitch-tw-2936518555-5540.tt.mp4",
+  "tiktok_caption": "Lacy was not ready for this in-game flashback #GTA6 #GTAVI #lacy #stream",
+  "account": 2,
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 155,
+   "publish+submit": 11,
+   "total": 169
+  }
+ },
+ {
+  "file": "kai-cenat-twitch-tw-2934866208-35778.mp4",
+  "creator": "Kai Cenat (Twitch)",
+  "source": "https://www.twitch.tv/videos/2934866208",
+  "start": 35789.48,
+  "end": 35828.53,
+  "cuts": 10,
+  "length": 22.3,
+  "layout": "face",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "Kai argues over the cut",
+  "hook_type": "stakes",
+  "emphasis": [
+   "mil",
+   "50",
+   "Cheap",
+   "die"
+  ],
+  "caption": "Kai Cenat was NOT happy with this terrible split #KaiCenat #GTA6 #GTAVI #KaiCenat #twitch\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Kai Cenat was NOT happy with this terrible split",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": "https://contentrewards.com/c/campaigns/1d2bcb00-c904-415f-aa82-f95b96baad86",
+  "created": "2026-11-27T08:21:38.761545+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/w0zoTBOKpPM",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2934866208-35778.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2934866208-35778.tt.mp4",
+  "tiktok_caption": "Kai Cenat was NOT happy with this terrible split #KaiCenat #GTA6 #GTAVI #KaiCenat #twitch",
+  "account": 1,
+  "submission": {
+   "error": "Content Rewards session expired: refresh the CR_STATE secret",
+   "fallback": "queued for the PC (Brave)"
+  },
+  "timing_s": {
+   "download": 4,
+   "transcribe+edit+render": 138,
+   "publish+submit": 19,
+   "total": 162
+  }
+ },
+ {
+  "file": "lacy-twitch-tw-2936518555-23498.mp4",
+  "creator": "Lacy (Twitch)",
+  "source": "https://www.twitch.tv/videos/2936518555",
+  "start": 23511.48,
+  "end": 23562.5,
+  "cuts": 12,
+  "length": 20.1,
+  "layout": "face",
+  "style": "blur",
+  "mood": "funny",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "Lucia caught him in the club",
+  "hook_type": "revelation",
+  "emphasis": [
+   "Lucia",
+   "mission",
+   "let me go"
+  ],
+  "caption": "Lacy was NOT ready to get caught by Lucia #GTA6 #GTAVI #lacy #stream",
+  "title": "Lacy was NOT ready to get caught by Lucia",
+  "bed": null,
+  "campaign": null,
+  "created": "2026-11-27T08:10:24.575722+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/EiADNwQkEog",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lacy-twitch-tw-2936518555-23498.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lacy-twitch-tw-2936518555-23498.tt.mp4",
+  "tiktok_caption": "Lacy was NOT ready to get caught by Lucia #GTA6 #GTAVI #lacy #stream",
+  "account": 2,
+  "timing_s": {
+   "download": 5,
+   "transcribe+edit+render": 165,
+   "publish+submit": 10,
+   "total": 179
+  }
+ },
+ {
+  "file": "kai-cenat-twitch-tw-2935613960-14747.mp4",
+  "creator": "Kai Cenat (Twitch)",
+  "source": "https://www.twitch.tv/videos/2935613960",
+  "start": 14751.62,
+  "end": 14781.44,
+  "cuts": 8,
+  "length": 22.3,
+  "layout": "face",
+  "style": "blur",
+  "mood": "tension",
+  "signal": "twitch-clip",
+  "score": 88,
+  "hook": "He messed with the wrong cartel",
+  "hook_type": "stakes",
+  "emphasis": [
+   "fucked",
+   "Billion",
+   "cartels"
+  ],
+  "caption": "Kai Cenat just walked into the worst possible trap #KaiCenat #GTA6 #GTAVI #KaiCenat #twitch\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Kai Cenat just walked into the worst possible trap",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": "https://contentrewards.com/c/campaigns/1d2bcb00-c904-415f-aa82-f95b96baad86",
+  "created": "2026-11-27T07:58:59.117033+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/ktISyjFUbwo",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2935613960-14747.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/kai-cenat-twitch-tw-2935613960-14747.tt.mp4",
+  "tiktok_caption": "Kai Cenat just walked into the worst possible trap #KaiCenat #GTA6 #GTAVI #KaiCenat #twitch",
+  "account": 1,
+  "submission": {
+   "error": "Content Rewards session expired: refresh the CR_STATE secret",
+   "fallback": "queued for the PC (Brave)"
+  },
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 126,
+   "publish+submit": 18,
+   "total": 148
+  }
+ },
+ {
+  "file": "dasgasd3m-kick-kc-clip-01m7vmk9pvxwxqc5ff7rsb1qfs.mp4",
+  "creator": "Dasgasd3m (Kick)",
+  "source": "https://clips.kick.com/clips/c4/clip_01M7VMK9PVXWXQC5FF7RSB1QFS/playlist.m3u8",
+  "start": 2.18,
+  "end": 31.62,
+  "cuts": 11,
+  "length": 21.0,
+  "layout": "inset",
+  "style": "vertical",
+  "mood": "funny",
+  "signal": "kick-clip",
+  "score": 88,
+  "hook": "GTA 6 HAS INSTAGRAM?!",
+  "hook_type": "revelation",
+  "emphasis": [
+   "Instagram",
+   "feature",
+   "peak"
+  ],
+  "caption": "Dom lost his mind seeing this feature in GTA 6 #dasgasdom3 kick.com/dasgasd3m #GTA6 #GTAVI",
+  "title": "Dom lost his mind seeing this feature in GTA 6",
+  "bed": null,
+  "campaign": "https://contentrewards.com/c/campaigns/051002dd-5c46-43d0-a446-43f2957ba3a9",
+  "created": "2026-11-27T07:47:36.900197+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/8kiyY_AJ3Nc",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/dasgasd3m-kick-kc-clip-01m7vmk9pvxwxqc5ff7rsb1qfs.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/dasgasd3m-kick-kc-clip-01m7vmk9pvxwxqc5ff7rsb1qfs.tt.mp4",
+  "tiktok_caption": "Dom lost his mind seeing this feature in GTA 6 #dasgasdom3 kick.com/dasgasd3m #GTA6 #GTAVI",
+  "account": 1,
+  "submission": {
+   "error": "Content Rewards session expired: refresh the CR_STATE secret",
+   "fallback": "queued for the PC (Brave)"
+  },
+  "timing_s": {
+   "download": 7,
+   "transcribe+edit+render": 96,
+   "publish+submit": 19,
+   "total": 123
+  }
+ },
+ {
+  "file": "lacy-twitch-tw-2935059680-11396.mp4",
+  "creator": "Lacy (Twitch)",
+  "source": "https://www.twitch.tv/videos/2935059680",
+  "start": 11395.97,
+  "end": 11445.84,
+  "cuts": 11,
+  "length": 23.9,
+  "layout": "inset",
+  "style": "blur",
+  "mood": "chaos",
+  "signal": "twitch-clip",
+  "score": 85,
+  "hook": "He's modding GTA 6 for Lucia",
+  "hook_type": "revelation",
+  "emphasis": [
+   "shower",
+   "screenshot",
+   "mod"
+  ],
+  "caption": "Lacy is already down astronomical for GTA 6 Lucia #GTA6 #GTAVI #lacy #stream\nMusic: Kevin MacLeod (incompetech.com) CC BY 4.0",
+  "title": "Lacy is already down astronomical for GTA 6 Lucia",
+  "bed": "Local_Forecast_Elevator",
+  "campaign": null,
+  "created": "2026-11-27T07:35:27.437293+00:00",
+  "posts": {
+   "youtube": "https://youtube.com/shorts/-grDm-aY9Us",
+   "tiktok": "scheduled (PC poster)",
+   "instagram": "skipped (no credentials)"
+  },
+  "video_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lacy-twitch-tw-2935059680-11396.mp4",
+  "tiktok_url": "https://github.com/rafaprincipal00-arch/clipper-bot/releases/download/clips/lacy-twitch-tw-2935059680-11396.tt.mp4",
+  "tiktok_caption": "Lacy is already down astronomical for GTA 6 Lucia #GTA6 #GTAVI #lacy #stream",
+  "account": 2,
+  "timing_s": {
+   "download": 3,
+   "transcribe+edit+render": 177,
+   "publish+submit": 10,
+   "total": 190
+  }
+ },
+ {
   "file": "lacy-twitch-tw-2935059680-2395.mp4",
   "creator": "Lacy (Twitch)",
   "source": "https://www.twitch.tv/videos/2935059680",
