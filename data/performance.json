@@ -1,36 +1,41 @@
 {
- "updated": "2026-11-27T07:31:46+00:00",
- "clips": 311,
+ "updated": "2026-11-28T07:31:56+00:00",
+ "clips": 321,
  "by_creator": {
+  "Lacy (Twitch)": {
+   "clips": 8,
+   "views": 1132,
+   "avg_views": 142
+  },
+  "Kai Cenat (Twitch)": {
+   "clips": 31,
+   "views": 25226,
+   "avg_views": 814
+  },
+  "Dasgasd3m (Kick)": {
+   "clips": 5,
+   "views": 1772,
+   "avg_views": 354
+  },
+  "Clix (Twitch)": {
+   "clips": 23,
+   "views": 24666,
+   "avg_views": 1072
+  },
+  "JasonTheWeen (Twitch)": {
+   "clips": 7,
+   "views": 2401,
+   "avg_views": 343
+  },
   "Stable Ronaldo (Twitch)": {
    "clips": 18,
-   "views": 8067,
+   "views": 8068,
    "avg_views": 448
-  },
-  "Lacy (Twitch)": {
-   "clips": 7,
-   "views": 1014,
-   "avg_views": 145
   },
   "KreekCraft (Twitch)": {
    "clips": 14,
    "views": 7515,
    "avg_views": 537
-  },
-  "JasonTheWeen (Twitch)": {
-   "clips": 6,
-   "views": 2260,
-   "avg_views": 377
-  },
-  "Dasgasd3m (Kick)": {
-   "clips": 4,
-   "views": 1772,
-   "avg_views": 443
-  },
-  "Kai Cenat (Twitch)": {
-   "clips": 27,
-   "views": 23651,
-   "avg_views": 876
   },
   "elZeein (Kick)": {
    "clips": 4,
@@ -47,11 +52,6 @@
    "views": 2315,
    "avg_views": 331
   },
-  "Clix (Twitch)": {
-   "clips": 20,
-   "views": 24623,
-   "avg_views": 1231
-  },
   "Cuffem (Kick)": {
    "clips": 5,
    "views": 3528,
@@ -59,8 +59,8 @@
   },
   "Spreen (Kick)": {
    "clips": 16,
-   "views": 15559,
-   "avg_views": 972
+   "views": 15563,
+   "avg_views": 973
   },
   "Silky (Twitch)": {
    "clips": 2,
@@ -79,13 +79,13 @@
   },
   "Lanah Cherry (Twitch)": {
    "clips": 21,
-   "views": 23286,
+   "views": 23288,
    "avg_views": 1109
   },
   "Rivers (Twitch)": {
    "clips": 10,
-   "views": 11173,
-   "avg_views": 1117
+   "views": 11179,
+   "avg_views": 1118
   },
   "Auronplay (Twitch)": {
    "clips": 23,
@@ -109,7 +109,7 @@
   },
   "Jynxzi (Twitch)": {
    "clips": 13,
-   "views": 13166,
+   "views": 13167,
    "avg_views": 1013
   },
   "Westcol (Kick)": {
@@ -243,7 +243,7 @@
    "mood": "funny",
    "hook_type": "revelation",
    "score": 88,
-   "views": 2820,
+   "views": 2822,
    "likes": 24,
    "id": "HVX_1C1azwo"
   }
